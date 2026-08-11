@@ -250,9 +250,216 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
         </div>
       </div>
 
-      {/* Side-by-side Table/Grid */}
-      <div className="overflow-x-auto pb-4">
-        <div className={`grid gap-5 min-w-[700px] ${
+      {/* VISTA MOBILE: TABLA VERTICAL (< md) */}
+      <div className="block md:hidden space-y-4">
+        {/* Cabecera Fija / Sticky con Foto, Nombre y Botón Eliminar */}
+        <div className="sticky top-[56px] z-20 bg-[#0A0A0A]/95 backdrop-blur-md pt-2 pb-3 border-b border-white/10 -mx-4 px-4">
+          <div className={`grid gap-2 ${
+            comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
+          }`}>
+            {comparedBreeds.map((breed) => {
+              const imageUrl = breed.imageUrl || getBreedImageUrl(breed.id);
+              return (
+                <div key={breed.id} className="bg-[#141414] border border-white/10 rounded-2xl p-2.5 flex flex-col justify-between relative shadow-lg">
+                  <button
+                    type="button"
+                    onClick={() => onRemoveCompare(breed.id)}
+                    className="absolute -top-1.5 -right-1.5 p-1 rounded-full bg-rose-600 text-white hover:bg-rose-700 shadow-md cursor-pointer z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-400"
+                    title={`Quitar ${breed.breed} de comparación`}
+                    aria-label={`Quitar ${breed.breed} de comparación`}
+                  >
+                    <X className="w-3.5 h-3.5 stroke-[2.5]" />
+                  </button>
+
+                  <div className="flex items-center gap-2">
+                    <img
+                      src={imageUrl}
+                      alt={breed.breed}
+                      className="w-10 h-10 rounded-xl object-cover border border-white/10 shrink-0"
+                    />
+                    <div className="min-w-0 flex-1">
+                      <h4 className="text-xs font-bold text-white truncate leading-tight">
+                        {breed.breed}
+                      </h4>
+                      <p className="text-[10px] text-amber-400 italic truncate mt-0.5">
+                        "{breed.epithet}"
+                      </p>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={() => onSelectBreed(breed)}
+                    className="mt-2 w-full text-[10px] font-bold text-amber-400 hover:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 py-1 rounded-lg border border-amber-500/20 transition-colors text-center focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-500"
+                  >
+                    Ver Ficha
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Filas de Atributos Agrupados lado a lado */}
+        <div className="space-y-3 pt-1">
+          
+          {/* Fila: Arquetipos */}
+          <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
+            <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest block">
+              Arquetipos Psicológicos
+            </span>
+            <div className={`grid gap-2 ${
+              comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
+            }`}>
+              {comparedBreeds.map(b => (
+                <div key={b.id} className="bg-neutral-900/90 p-2 rounded-xl border border-white/5 flex flex-wrap gap-1">
+                  {b.archetypes.map(a => (
+                    <span key={a} className="px-2 py-0.5 bg-purple-500/10 text-purple-300 rounded-full font-bold text-[9px] border border-purple-500/20">
+                      {a}
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Fila: Resiliencia Emocional */}
+          <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
+            <div className="flex items-center gap-1.5 text-neutral-300 text-[10px] font-bold uppercase tracking-widest">
+              <Shield className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+              <span>Resiliencia Emocional</span>
+            </div>
+            <div className={`grid gap-2 ${
+              comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
+            }`}>
+              {comparedBreeds.map(b => (
+                <div key={b.id} className="bg-neutral-900/90 p-2.5 rounded-xl border border-white/5">
+                  <p className="font-bold text-white text-xs">
+                    {b.metrics.resiliencia_emocional}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Fila: Sociabilidad */}
+          <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
+            <div className="flex items-center gap-1.5 text-neutral-300 text-[10px] font-bold uppercase tracking-widest">
+              <Users className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+              <span>Sociabilidad</span>
+            </div>
+            <div className={`grid gap-2 ${
+              comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
+            }`}>
+              {comparedBreeds.map(b => (
+                <div key={b.id} className="bg-neutral-900/90 p-2.5 rounded-xl border border-white/5">
+                  <p className="font-bold text-white text-xs">
+                    {b.metrics.sociabilidad}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Fila: Independencia Cognitiva */}
+          <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
+            <div className="flex items-center gap-1.5 text-neutral-300 text-[10px] font-bold uppercase tracking-widest">
+              <Brain className="w-3.5 h-3.5 text-purple-400 shrink-0" />
+              <span>Independencia Cognitiva</span>
+            </div>
+            <div className={`grid gap-2 ${
+              comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
+            }`}>
+              {comparedBreeds.map(b => (
+                <div key={b.id} className="bg-neutral-900/90 p-2.5 rounded-xl border border-white/5">
+                  <p className="font-bold text-white text-xs">
+                    {b.metrics.independencia_cognitiva}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Fila: Umbral de Estimulación */}
+          <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
+            <div className="flex items-center gap-1.5 text-neutral-300 text-[10px] font-bold uppercase tracking-widest">
+              <Activity className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span>Umbral de Estimulación</span>
+            </div>
+            <div className={`grid gap-2 ${
+              comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
+            }`}>
+              {comparedBreeds.map(b => (
+                <div key={b.id} className="bg-neutral-900/90 p-2.5 rounded-xl border border-white/5">
+                  <p className="font-bold text-white text-xs">
+                    {b.metrics.umbral_de_estimulacion}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Fila: Motivación Intrínseca */}
+          <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
+            <div className="flex items-center gap-1.5 text-neutral-300 text-[10px] font-bold uppercase tracking-widest">
+              <Heart className="w-3.5 h-3.5 text-rose-400 shrink-0" />
+              <span>Motivación Intrínseca</span>
+            </div>
+            <div className={`grid gap-2 ${
+              comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
+            }`}>
+              {comparedBreeds.map(b => (
+                <div key={b.id} className="bg-neutral-900/90 p-2.5 rounded-xl border border-white/5">
+                  <p className="font-bold text-white text-[11px] leading-tight">
+                    {b.metrics.motivacion_intrinseca}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Fila: Rasgos Clave */}
+          <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
+            <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest block">
+              Rasgos Clave
+            </span>
+            <div className={`grid gap-2 ${
+              comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
+            }`}>
+              {comparedBreeds.map(b => (
+                <div key={b.id} className="bg-neutral-900/90 p-2 rounded-xl border border-white/5 flex flex-wrap gap-1">
+                  {b.traits.map(t => (
+                    <span key={t} className="px-2 py-0.5 bg-neutral-800 text-slate-300 rounded-full font-medium text-[9px] border border-white/5">
+                      #{t}
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Fila: Grupo Clasificación */}
+          <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
+            <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest block">
+              Grupo FCI
+            </span>
+            <div className={`grid gap-2 ${
+              comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
+            }`}>
+              {comparedBreeds.map(b => (
+                <div key={b.id} className="bg-neutral-900/90 p-2.5 rounded-xl border border-white/5">
+                  <p className="text-[10px] text-amber-400 font-semibold leading-tight">{b.fciGroup}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/* VISTA DESKTOP: TARJETAS EN Malla (>= md) */}
+      <div className="hidden md:block overflow-x-auto pb-4">
+        <div className={`grid gap-5 ${
           comparedBreeds.length === 1 ? 'grid-cols-1 max-w-xl mx-auto' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
         }`}>
           
