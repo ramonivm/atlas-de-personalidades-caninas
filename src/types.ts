@@ -131,10 +131,12 @@ export interface FilterState {
   sortBy: 'name-asc' | 'name-desc' | 'fci' | 'traits-count';
 }
 
+export type PriorityTrait = 'affection' | 'protection' | 'independence' | 'trainability' | 'calm';
+
 export interface QuizAnswers {
   experience: 'novice' | 'intermediate' | 'expert';
   activity: 'low' | 'moderate' | 'high' | 'extreme';
   space: 'apartment' | 'house_yard' | 'rural_nature';
   timeWithDog: 'few_hours' | 'part_time' | 'full_time';
-  priorityTrait: 'affection' | 'protection' | 'independence' | 'trainability' | 'calm';
+  priorityTraits: PriorityTrait[];
 }
