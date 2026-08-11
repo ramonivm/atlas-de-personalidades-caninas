@@ -134,9 +134,9 @@ export interface FilterState {
 export type PriorityTrait = 'affection' | 'protection' | 'independence' | 'trainability' | 'calm';
 
 export interface QuizAnswers {
-  experience: 'novice' | 'intermediate' | 'expert';
-  activity: 'low' | 'moderate' | 'high' | 'extreme';
-  space: 'apartment' | 'house_yard' | 'rural_nature';
-  timeWithDog: 'few_hours' | 'part_time' | 'full_time';
+  experience: 'novice' | 'intermediate' | 'expert' | null;
+  activity: 'low' | 'moderate' | 'high' | 'extreme' | null;
+  space: 'apartment' | 'house_yard' | 'rural_nature' | null;
+  timeWithDog: 'few_hours' | 'part_time' | 'full_time' | null;
   priorityTraits: PriorityTrait[];
 }

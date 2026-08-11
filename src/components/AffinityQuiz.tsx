@@ -10,11 +10,11 @@ interface AffinityQuizProps {
 
 export const AffinityQuiz: React.FC<AffinityQuizProps> = ({ breeds, onSelectBreed }) => {
   const [answers, setAnswers] = useState<QuizAnswers>({
-    experience: 'intermediate',
-    activity: 'moderate',
-    space: 'house_yard',
-    timeWithDog: 'part_time',
-    priorityTraits: ['affection']
+    experience: null,
+    activity: null,
+    space: null,
+    timeWithDog: null,
+    priorityTraits: []
   });
 
   const [submittedAnswers, setSubmittedAnswers] = useState<QuizAnswers | null>(null);
@@ -110,11 +110,11 @@ export const AffinityQuiz: React.FC<AffinityQuizProps> = ({ breeds, onSelectBree
 
   const handleClear = () => {
     setAnswers({
-      experience: 'intermediate',
-      activity: 'moderate',
-      space: 'house_yard',
-      timeWithDog: 'part_time',
-      priorityTraits: ['affection']
+      experience: null,
+      activity: null,
+      space: null,
+      timeWithDog: null,
+      priorityTraits: []
     });
     setSubmittedAnswers(null);
   };
@@ -355,41 +355,46 @@ export const AffinityQuiz: React.FC<AffinityQuizProps> = ({ breeds, onSelectBree
               <div
                 key={breed.id}
                 onClick={() => onSelectBreed(breed)}
-                className="bg-neutral-900 hover:bg-neutral-800 border border-white/5 hover:border-amber-500/40 rounded-[2rem] p-5 cursor-pointer transition-all flex flex-col justify-between group relative overflow-hidden"
+                className="bg-neutral-900 hover:bg-neutral-800 border border-white/5 hover:border-amber-500/40 rounded-[2rem] p-5 cursor-pointer transition-all flex flex-col justify-between group relative overflow-hidden space-y-3.5"
               >
-                <div className="flex items-start gap-3 mb-3">
+                {/* Nombre de la raza en la parte superior absoluta como título principal */}
+                <div>
+                  <h4 className="text-base font-bold text-white group-hover:text-amber-400 transition-colors w-full truncate">
+                    {breed.breed}
+                  </h4>
+                  <p className="text-xs text-neutral-400 italic line-clamp-1 mt-0.5">
+                    "{breed.epithet}"
+                  </p>
+                </div>
+
+                {/* Fotografía inmediatamente debajo del título + Etiqueta de porcentaje de compatibilidad independiente */}
+                <div className="flex items-center gap-3">
                   <img
                     src={breed.imageUrl || getBreedImageUrl(breed.id)}
                     alt={`Fotografía de la raza ${breed.breed}`}
-                    className="w-14 h-14 aspect-square rounded-2xl object-cover border border-white/5 shrink-0"
+                    className="w-16 h-16 aspect-square rounded-2xl object-cover border border-white/5 shrink-0"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
                       e.currentTarget.src = "https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg";
                     }}
                   />
-                  <div className="min-w-0 flex-1">
-                    <div className="flex justify-between items-start gap-2">
-                      <h4 className="text-sm font-bold text-white group-hover:text-amber-400 transition-colors truncate min-w-0">
-                        {breed.breed}
-                      </h4>
-                      <div className="bg-amber-500 text-black font-bold text-xs px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1 shrink-0">
-                        <Award className="w-3.5 h-3.5" />
-                        <span>{score}% Compat.</span>
-                      </div>
+                  <div className="flex flex-col items-start gap-1.5 min-w-0">
+                    <div className="inline-flex items-center gap-1 bg-amber-500 text-black font-bold text-[10px] px-2 py-0.5 rounded-full shadow-sm shrink-0">
+                      <Award className="w-3 h-3" />
+                      <span>{score}% Compat.</span>
                     </div>
-                    <p className="text-xs text-neutral-400 italic line-clamp-1 mt-0.5">
-                      "{breed.epithet}"
-                    </p>
-                    <span className="text-[10px] text-amber-500 font-semibold block mt-0.5">
+                    <span className="text-[10px] text-amber-500 font-semibold truncate max-w-full">
                       {breed.fciGroup.split(':')[0]}
                     </span>
                   </div>
                 </div>
 
-                <p className="text-xs text-slate-300 line-clamp-2 leading-relaxed mb-4">
+                {/* Resumen */}
+                <p className="text-xs text-slate-300 line-clamp-2 leading-relaxed">
                   {breed.summary}
                 </p>
 
+                {/* Footer */}
                 <div className="pt-3 border-t border-white/5 flex items-center justify-between text-xs text-amber-400 font-bold">
                   <span>Ver perfil de la raza</span>
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

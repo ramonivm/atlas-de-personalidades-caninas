@@ -1,0 +1,6 @@
+{
+  "name": "Atlas de Personalidades Caninas",
+  "description": "Explorador interactivo de razas de perros, arquetipos psicológicos, métricas de temperamento, comparador y recomendador de afinidad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
