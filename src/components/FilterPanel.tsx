@@ -1,8 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import { Filter, RotateCcw, SlidersHorizontal, ChevronDown, ChevronUp } from 'lucide-react';
+import { Filter, RotateCcw, SlidersHorizontal, ChevronDown, ChevronUp, HelpCircle } from 'lucide-react';
 import { FilterState, Facets, Breed } from '../types';
 import { canineData } from '../data/canineData';
 import { parseMetricLevel, mapMotivationGroup, mapTraitGroup } from '../utils/dataParser';
+import { FilterGuideModal } from './FilterGuideModal';
 
 interface FilterPanelProps {
   facets?: Facets;
@@ -23,6 +24,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
   resetFilters
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isGuideOpen, setIsGuideOpen] = useState(false);
 
   const breedList = breeds || canineData.breeds;
 
@@ -82,7 +84,17 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          {/* Entender Filtros button */}
+          <button
+            onClick={() => setIsGuideOpen(true)}
+            className="min-h-[44px] flex items-center gap-1.5 text-xs text-amber-400 hover:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 px-3.5 py-2 rounded-full border border-amber-500/30 font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+            title="Guía interactiva para entender los filtros etológicos"
+          >
+            <HelpCircle className="w-3.5 h-3.5 text-amber-500" />
+            <span>Entender Filtros</span>
+          </button>
+
           {/* Quick Sort dropdown */}
           <div className="flex items-center gap-2 text-xs text-neutral-300 bg-neutral-900 px-4 py-2 rounded-full border border-neutral-800">
             <span className="font-semibold text-slate-400 hidden sm:inline">Orden:</span>
@@ -277,6 +289,11 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             </span>
           )}
         </div>
+      )}
+
+      {/* Filter Guide Modal */}
+      {isGuideOpen && (
+        <FilterGuideModal onClose={() => setIsGuideOpen(false)} />
       )}
     </div>
   );
