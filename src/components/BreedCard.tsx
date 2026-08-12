@@ -43,7 +43,7 @@ export const BreedCard: React.FC<BreedCardProps> = ({
           alt={`Fotografía de la raza ${breed.breed}`}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading={priority ? undefined : "lazy"}
-          {...(priority ? { fetchpriority: "high" } : {})}
+          {...(priority ? { fetchPriority: "high" } : {})}
           onError={handleImageError}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-[#141414]/30 to-transparent" />
@@ -121,10 +121,11 @@ export const BreedCard: React.FC<BreedCardProps> = ({
                   onSelectArchetypeFilter?.(arch);
                 }}
                 aria-label={`Filtrar por arquetipo ${arch}`}
-                className="text-[10px] font-semibold px-3 py-1 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20 hover:bg-purple-500/20 cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                className="text-[10px] font-semibold px-3 py-1 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20 hover:bg-purple-500/20 cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 inline-flex items-center gap-1"
                 title={`Filtrar por arquetipo: ${arch}`}
               >
-                🔮 {arch}
+                <img src="/assets/icoadn.svg" alt="" className="w-3 h-3 object-contain shrink-0" />
+                <span>{arch}</span>
               </button>
             ))}
           </div>

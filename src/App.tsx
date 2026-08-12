@@ -464,7 +464,11 @@ export default function App() {
       <footer className="bg-[#141414] border-t border-white/5 text-neutral-400 text-xs py-8 mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <Dog className="w-5 h-5 text-amber-500" />
+            <img 
+              src="/assets/logoisotipo_atlascanino.svg" 
+              alt="AtlasCanino Logo" 
+              className="w-5 h-5 object-contain" 
+            />
             <span className="font-bold text-white">
               Atlas de Personalidades Caninas
             </span>
