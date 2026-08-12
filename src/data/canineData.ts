@@ -903,7 +903,7 @@ export const canineData: CanineDatabase = {
       "breed": "Boxer",
       "title": "Boxer: El Niño Eterno con Corazón de Guardián",
       "epithet": "El Niño Eterno con Corazón de Guardián",
-      "fciGroup": "Grupo 8: Perros Cobradores levantadores de caza y de agua",
+      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
       "akcGroup": "Working Group",
       "archetypes": [
         "Cooperación Humana Clásica",
@@ -4663,7 +4663,7 @@ export const canineData: CanineDatabase = {
       "breed": "Pastor de Anatolia (Kangal)",
       "title": "Kangal: El Guardián de los Toros de Turquía",
       "epithet": "El Guardián de Turquía",
-      "fciGroup": "Grupo 2: Molosoides",
+      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
       "akcGroup": "Working Group",
       "archetypes": [
         "Protección Territorial Absoluta",
@@ -4705,7 +4705,7 @@ export const canineData: CanineDatabase = {
       "breed": "Pastor de Brie (Briard)",
       "title": "Briard: Corazón Envalentonado bajo Pelaje Mop",
       "epithet": "Corazón Envalentonado",
-      "fciGroup": "Grupo 1: Pastor",
+      "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
       "akcGroup": "Herding Group",
       "archetypes": [
         "Protección Estructurada Moderna"
@@ -4746,7 +4746,7 @@ export const canineData: CanineDatabase = {
       "breed": "Pastor de los Pirineos",
       "title": "Pastor de los Pirineos: La Centella de la Montaña",
       "epithet": "La Centella de la Montaña",
-      "fciGroup": "Grupo 1: Pastor",
+      "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
       "akcGroup": "Herding Group",
       "archetypes": [
         "Inteligencia Funcional Obsesiva"
@@ -4787,7 +4787,7 @@ export const canineData: CanineDatabase = {
       "breed": "Old English Sheepdog (Bobtail)",
       "title": "Bobtail: El Peluche Gigante Pastor",
       "epithet": "El Peluche Gigante Pastor",
-      "fciGroup": "Grupo 1: Pastor",
+      "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
       "akcGroup": "Herding Group",
       "archetypes": [
         "Cooperación Humana Clásica"
@@ -4828,7 +4828,7 @@ export const canineData: CanineDatabase = {
       "breed": "Hovawart",
       "title": "Hovawart: El Guardián de la Granja",
       "epithet": "El Guardián de la Granja",
-      "fciGroup": "Grupo 2: Molosoides",
+      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
       "akcGroup": "Working Group",
       "archetypes": [
         "Protección Estructurada Moderna"
@@ -4869,7 +4869,7 @@ export const canineData: CanineDatabase = {
       "breed": "Leonberger",
       "title": "Leonberger: El León Dulce de Baden",
       "epithet": "El León Dulce de Baden",
-      "fciGroup": "Grupo 2: Molosoides",
+      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
       "akcGroup": "Working Group",
       "archetypes": [
         "Contención Pesada / Calma Profunda"
@@ -4910,7 +4910,7 @@ export const canineData: CanineDatabase = {
       "breed": "Landseer",
       "title": "Landseer: El Guardián Blanco y Negro del Agua",
       "epithet": "El Guardián del Agua",
-      "fciGroup": "Grupo 2: Molosoides",
+      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
       "akcGroup": "Working Group",
       "archetypes": [
         "Contención Pesada / Calma Profunda"
@@ -4951,7 +4951,7 @@ export const canineData: CanineDatabase = {
       "breed": "Ca de Bou (Dogo Mallorquín)",
       "title": "Ca de Bou: El Guardián Balear",
       "epithet": "El Guardián Balear",
-      "fciGroup": "Grupo 2: Molosoides",
+      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
       "akcGroup": "Working Group",
       "archetypes": [
         "Protección Territorial Absoluta"
@@ -4992,7 +4992,7 @@ export const canineData: CanineDatabase = {
       "breed": "Pinscher Alemán",
       "title": "Pinscher Alemán: La Elegancia Atlética",
       "epithet": "La Elegancia Atlética",
-      "fciGroup": "Grupo 2: Pinscher",
+      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
       "akcGroup": "Working Group",
       "archetypes": [
         "Protección Estructurada Moderna"
@@ -5375,11 +5375,11 @@ export const canineData: CanineDatabase = {
       ]
     },
     {
-      "id": "akita-americano-2",
+      "id": "finnish-spitz",
       "breed": "Finnish Spitz",
       "title": "Finnish Spitz: El Cantante de los Bosques",
       "epithet": "El Cantante de los Bosques",
-      "fciGroup": "Grupo 5: Spitz",
+      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
       "akcGroup": "Non-Sporting Group",
       "archetypes": [
         "Autonomía Primitiva / Dignidad"
@@ -5420,7 +5420,7 @@ export const canineData: CanineDatabase = {
       "breed": "Norwegian Elkhound",
       "title": "Norwegian Elkhound: El Cazador de Alces Noruego",
       "epithet": "El Cazador de Alces",
-      "fciGroup": "Grupo 5: Spitz",
+      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
       "akcGroup": "Hound Group",
       "archetypes": [
         "Autonomía Primitiva / Dignidad"
@@ -5457,11 +5457,11 @@ export const canineData: CanineDatabase = {
       ]
     },
     {
-      "id": "basenji-2",
+      "id": "kishu-ken",
       "breed": "Kishu Ken",
       "title": "Kishu Ken: La Pureza Blanca de la Caza Japonesa",
       "epithet": "La Pureza Blanca",
-      "fciGroup": "Grupo 5: Spitz",
+      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
       "akcGroup": "Working Group",
       "archetypes": [
         "Autonomía Primitiva / Dignidad"
@@ -5502,7 +5502,7 @@ export const canineData: CanineDatabase = {
       "breed": "Sabueso Español",
       "title": "Sabueso Español: La Voz Profunda del Rastro Cantábrico",
       "epithet": "La Voz Profunda del Rastro",
-      "fciGroup": "Grupo 6: Sabuesos",
+      "fciGroup": "Grupo 6: Perros Tipo Sabueso rastro y semejantes",
       "akcGroup": "Hound Group",
       "archetypes": [
         "Sensorialidad Olfativa Profunda"
@@ -5543,7 +5543,7 @@ export const canineData: CanineDatabase = {
       "breed": "Basset Leonado de Bretaña",
       "title": "Basset Leonado: El Pequeño Rústico de Monte Bajo",
       "epithet": "El Pequeño Rústico",
-      "fciGroup": "Grupo 6: Sabuesos",
+      "fciGroup": "Grupo 6: Perros Tipo Sabueso rastro y semejantes",
       "akcGroup": "Hound Group",
       "archetypes": [
         "Sensorialidad Olfativa Profunda"
@@ -5584,7 +5584,7 @@ export const canineData: CanineDatabase = {
       "breed": "Petit Basset Griffon Vendéen",
       "title": "Petit Basset Griffon: La Energía Despeinada",
       "epithet": "La Energía Despeinada",
-      "fciGroup": "Grupo 6: Sabuesos",
+      "fciGroup": "Grupo 6: Perros Tipo Sabueso rastro y semejantes",
       "akcGroup": "Hound Group",
       "archetypes": [
         "Sensorialidad Olfativa Profunda"
@@ -5625,7 +5625,7 @@ export const canineData: CanineDatabase = {
       "breed": "Setter Gordon",
       "title": "Setter Gordon: El Caballero Negro y Fuego de Escocia",
       "epithet": "El Caballero Escocés",
-      "fciGroup": "Grupo 7: Muestra",
+      "fciGroup": "Grupo 7: Perros de Muestra",
       "akcGroup": "Sporting Group",
       "archetypes": [
         "Cooperación Humana Clásica"
@@ -5666,7 +5666,7 @@ export const canineData: CanineDatabase = {
       "breed": "Braco Alemán de Pelo Corto (GSP)",
       "title": "Braco Alemán: El Atleta Total de la Caza",
       "epithet": "El Atleta Total",
-      "fciGroup": "Grupo 7: Muestra",
+      "fciGroup": "Grupo 7: Perros de Muestra",
       "akcGroup": "Sporting Group",
       "archetypes": [
         "Cooperación Humana Clásica",
@@ -5709,7 +5709,7 @@ export const canineData: CanineDatabase = {
       "breed": "Flat-Coated Retriever",
       "title": "Flat-Coated Retriever: El Peter Pan de los Cobradores",
       "epithet": "El Peter Pan de los Cobradores",
-      "fciGroup": "Grupo 8: Cobradores",
+      "fciGroup": "Grupo 8: Perros Cobradores levantadores de caza y de agua",
       "akcGroup": "Sporting Group",
       "archetypes": [
         "Cooperación Humana Clásica"
@@ -5751,7 +5751,7 @@ export const canineData: CanineDatabase = {
       "breed": "Nova Scotia Duck Tolling Retriever",
       "title": "Nova Scotia Duck Tolling Retriever: El Pequeño Zorro Cobrador",
       "epithet": "El Pequeño Zorro Cobrador",
-      "fciGroup": "Grupo 8: Cobradores",
+      "fciGroup": "Grupo 8: Perros Cobradores levantadores de caza y de agua",
       "akcGroup": "Sporting Group",
       "archetypes": [
         "Cooperación Humana Clásica",
@@ -5793,7 +5793,7 @@ export const canineData: CanineDatabase = {
       "breed": "Lhasa Apso",
       "title": "Lhasa Apso: El Centinela del Tíbet",
       "epithet": "El Centinela del Tíbet",
-      "fciGroup": "Grupo 9: Compañía",
+      "fciGroup": "Grupo 9: Perros de Compañía",
       "akcGroup": "Non-Sporting Group",
       "archetypes": [
         "Autonomía Primitiva / Dignidad",
@@ -5835,7 +5835,7 @@ export const canineData: CanineDatabase = {
       "breed": "Pekinés (Pekingese)",
       "title": "Pekinés: El León Sagrado en Miniatura",
       "epithet": "El León Sagrado en Miniatura",
-      "fciGroup": "Grupo 9: Compañía",
+      "fciGroup": "Grupo 9: Perros de Compañía",
       "akcGroup": "Toy Group",
       "archetypes": [
         "Autonomía Primitiva / Dignidad"
@@ -5876,7 +5876,7 @@ export const canineData: CanineDatabase = {
       "breed": "Crestado Chino (Chinese Crested)",
       "title": "Crestado Chino: El Gracejo Desnudo",
       "epithet": "El Gracejo Desnudo",
-      "fciGroup": "Grupo 9: Compañía",
+      "fciGroup": "Grupo 9: Perros de Compañía",
       "akcGroup": "Toy Group",
       "archetypes": [
         "Apego Extremo (Fusión Emocional)"

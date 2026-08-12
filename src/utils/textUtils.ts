@@ -12,3 +12,6 @@ export function normalizeText(str: string | null | undefined): string {
     .replace(/[\u0300-\u036f]/g, '')
     .trim();
 }
+
+export { parseMetricLevel } from './dataParser';
+

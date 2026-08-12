@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
-import { Filter, RotateCcw, SlidersHorizontal, ChevronDown, ChevronUp, Sparkles } from 'lucide-react';
-import { FilterState, Facets } from '../types';
+import React, { useState, useMemo } from 'react';
+import { Filter, RotateCcw, SlidersHorizontal, ChevronDown, ChevronUp } from 'lucide-react';
+import { FilterState, Facets, Breed } from '../types';
+import { canineData } from '../data/canineData';
+import { parseMetricLevel, mapMotivationGroup, mapTraitGroup } from '../utils/dataParser';
 
 interface FilterPanelProps {
-  facets: Facets;
+  facets?: Facets;
+  breeds?: Breed[];
   filters: FilterState;
   setFilters: React.Dispatch<React.SetStateAction<FilterState>>;
   totalBreeds: number;
@@ -12,7 +15,7 @@ interface FilterPanelProps {
 }
 
 export const FilterPanel: React.FC<FilterPanelProps> = ({
-  facets,
+  breeds,
   filters,
   setFilters,
   totalBreeds,
@@ -20,6 +23,32 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
   resetFilters
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const breedList = breeds || canineData.breeds;
+
+  const archetypes = useMemo(() => {
+    return Array.from(new Set(breedList.flatMap(b => b.archetypes || []).filter(Boolean))).sort();
+  }, [breedList]);
+
+  const motivations = useMemo(() => {
+    return Array.from(new Set(breedList.flatMap(b => b.motivations || []).map(mapMotivationGroup).filter(Boolean))).sort();
+  }, [breedList]);
+
+  const traits = useMemo(() => {
+    return Array.from(new Set(breedList.flatMap(b => b.traits || []).map(mapTraitGroup).filter(Boolean))).sort();
+  }, [breedList]);
+
+  const resilienceLevels = useMemo(() => {
+    return Array.from(new Set(breedList.map(b => parseMetricLevel(b.metrics?.resiliencia_emocional)).filter(Boolean))).sort();
+  }, [breedList]);
+
+  const sociabilityLevels = useMemo(() => {
+    return Array.from(new Set(breedList.map(b => parseMetricLevel(b.metrics?.sociabilidad)).filter(Boolean))).sort();
+  }, [breedList]);
+
+  const independenceLevels = useMemo(() => {
+    return Array.from(new Set(breedList.map(b => parseMetricLevel(b.metrics?.independencia_cognitiva)).filter(Boolean))).sort();
+  }, [breedList]);
 
   const activeFilterCount = [
     filters.archetype,
@@ -94,10 +123,10 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
         </div>
       </div>
 
-      {/* Filter Options Grid */}
-      <div className={`mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ${isOpen ? 'block' : 'hidden md:grid'}`}>
+      {/* Filter Options Grid - Dynamic filter fields */}
+      <div className={`mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 ${isOpen ? 'block' : 'hidden md:grid'}`}>
         
-        {/* Archetype */}
+        {/* 1. Archetype */}
         <div>
           <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-500 mb-2 block">
             Arquetipo Psicológico
@@ -108,14 +137,14 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             onChange={(e) => handleFilterChange('archetype', e.target.value)}
             className="w-full bg-neutral-900 border border-neutral-800 rounded-2xl px-3.5 py-2.5 text-xs text-slate-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus:border-amber-500/50 cursor-pointer min-h-[44px]"
           >
-            <option value="" className="bg-neutral-900">Todos los 14 arquetipos</option>
-            {facets.archetypes.map(arch => (
+            <option value="" className="bg-neutral-900">Todos los arquetipos ({archetypes.length})</option>
+            {archetypes.map(arch => (
               <option key={arch} value={arch} className="bg-neutral-900">{arch}</option>
             ))}
           </select>
         </div>
 
-        {/* Primary Motivation */}
+        {/* 2. Primary Motivation */}
         <div>
           <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-500 mb-2 block">
             Motivación Principal
@@ -126,14 +155,14 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             onChange={(e) => handleFilterChange('motivation', e.target.value)}
             className="w-full bg-neutral-900 border border-neutral-800 rounded-2xl px-3.5 py-2.5 text-xs text-slate-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus:border-amber-500/50 cursor-pointer min-h-[44px]"
           >
-            <option value="" className="bg-neutral-900">Todas las motivaciones</option>
-            {facets.motivations.slice().sort().map(mot => (
+            <option value="" className="bg-neutral-900">Todas las motivaciones ({motivations.length})</option>
+            {motivations.map(mot => (
               <option key={mot} value={mot} className="bg-neutral-900">{mot}</option>
             ))}
           </select>
         </div>
 
-        {/* Traits */}
+        {/* 3. Traits */}
         <div>
           <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-500 mb-2 block">
             Rasgo de Carácter
@@ -144,14 +173,14 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             onChange={(e) => handleFilterChange('trait', e.target.value)}
             className="w-full bg-neutral-900 border border-neutral-800 rounded-2xl px-3.5 py-2.5 text-xs text-slate-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus:border-amber-500/50 cursor-pointer min-h-[44px]"
           >
-            <option value="" className="bg-neutral-900">Todos los rasgos</option>
-            {facets.traits.slice().sort().map(trait => (
+            <option value="" className="bg-neutral-900">Todos los rasgos ({traits.length})</option>
+            {traits.map(trait => (
               <option key={trait} value={trait} className="bg-neutral-900">{trait}</option>
             ))}
           </select>
         </div>
 
-        {/* Resilience Level */}
+        {/* 4. Resilience Level */}
         <div>
           <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-500 mb-2 block">
             Resiliencia Emocional
@@ -162,14 +191,14 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             onChange={(e) => handleFilterChange('resilienceLevel', e.target.value)}
             className="w-full bg-neutral-900 border border-neutral-800 rounded-2xl px-3.5 py-2.5 text-xs text-slate-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus:border-amber-500/50 cursor-pointer min-h-[44px]"
           >
-            <option value="" className="bg-neutral-900">Cualquier resiliencia</option>
-            <option value="Alta" className="bg-neutral-900">Alta / Muy Alta</option>
-            <option value="Media" className="bg-neutral-900">Media</option>
-            <option value="Baja" className="bg-neutral-900">Baja / Media-Baja</option>
+            <option value="" className="bg-neutral-900">Todas las resiliencias ({resilienceLevels.length})</option>
+            {resilienceLevels.map(lvl => (
+              <option key={lvl} value={lvl} className="bg-neutral-900">{lvl}</option>
+            ))}
           </select>
         </div>
 
-        {/* Sociability Level */}
+        {/* 5. Sociability Level */}
         <div>
           <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-500 mb-2 block">
             Sociabilidad
@@ -180,14 +209,14 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             onChange={(e) => handleFilterChange('sociabilityLevel', e.target.value)}
             className="w-full bg-neutral-900 border border-neutral-800 rounded-2xl px-3.5 py-2.5 text-xs text-slate-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus:border-amber-500/50 cursor-pointer min-h-[44px]"
           >
-            <option value="" className="bg-neutral-900">Cualquier sociabilidad</option>
-            <option value="Alta" className="bg-neutral-900">Alta / Muy Alta</option>
-            <option value="Media" className="bg-neutral-900">Media</option>
-            <option value="Baja" className="bg-neutral-900">Baja / Selectiva</option>
+            <option value="" className="bg-neutral-900">Todas las sociabilidades ({sociabilityLevels.length})</option>
+            {sociabilityLevels.map(lvl => (
+              <option key={lvl} value={lvl} className="bg-neutral-900">{lvl}</option>
+            ))}
           </select>
         </div>
 
-        {/* Independence Level */}
+        {/* 6. Independence Level */}
         <div>
           <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-500 mb-2 block">
             Independencia Cognitiva
@@ -198,10 +227,10 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             onChange={(e) => handleFilterChange('independenceLevel', e.target.value)}
             className="w-full bg-neutral-900 border border-neutral-800 rounded-2xl px-3.5 py-2.5 text-xs text-slate-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus:border-amber-500/50 cursor-pointer min-h-[44px]"
           >
-            <option value="" className="bg-neutral-900">Cualquier independencia</option>
-            <option value="Alta" className="bg-neutral-900">Alta / Extrema</option>
-            <option value="Media" className="bg-neutral-900">Media</option>
-            <option value="Baja" className="bg-neutral-900">Baja / Media-Baja</option>
+            <option value="" className="bg-neutral-900">Todas las independencias ({independenceLevels.length})</option>
+            {independenceLevels.map(lvl => (
+              <option key={lvl} value={lvl} className="bg-neutral-900">{lvl}</option>
+            ))}
           </select>
         </div>
 

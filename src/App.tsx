@@ -1,7 +1,8 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { canineData } from './data/canineData';
 import { Breed, FilterState } from './types';
-import { normalizeText } from './utils/textUtils';
+import { normalizeText, parseMetricLevel } from './utils/textUtils';
+import { mapMotivationGroup, mapTraitGroup } from './utils/dataParser';
 import { Header } from './components/Header';
 import { FilterPanel } from './components/FilterPanel';
 import { BreedCard } from './components/BreedCard';
@@ -183,41 +184,36 @@ export default function App() {
 
     // Motivation
     if (filters.motivation) {
-      const targetMot = normalizeText(filters.motivation);
       list = list.filter(b => 
-        b.motivations.some(m => normalizeText(m) === targetMot)
+        b.motivations && b.motivations.some(m => mapMotivationGroup(m) === filters.motivation)
       );
     }
 
     // Trait
     if (filters.trait) {
-      const targetTrait = normalizeText(filters.trait);
       list = list.filter(b => 
-        b.traits.some(t => normalizeText(t) === targetTrait)
+        b.traits && b.traits.some(t => mapTraitGroup(t) === filters.trait)
       );
     }
 
     // Resilience
     if (filters.resilienceLevel) {
-      const targetRes = normalizeText(filters.resilienceLevel);
       list = list.filter(b => 
-        normalizeText(b.metrics.resiliencia_emocional).includes(targetRes)
+        parseMetricLevel(b.metrics.resiliencia_emocional) === filters.resilienceLevel
       );
     }
 
     // Sociability
     if (filters.sociabilityLevel) {
-      const targetSoc = normalizeText(filters.sociabilityLevel);
       list = list.filter(b => 
-        normalizeText(b.metrics.sociabilidad).includes(targetSoc)
+        parseMetricLevel(b.metrics.sociabilidad) === filters.sociabilityLevel
       );
     }
 
     // Independence
     if (filters.independenceLevel) {
-      const targetInd = normalizeText(filters.independenceLevel);
       list = list.filter(b => 
-        normalizeText(b.metrics.independencia_cognitiva).includes(targetInd)
+        parseMetricLevel(b.metrics.independencia_cognitiva) === filters.independenceLevel
       );
     }
 
@@ -281,7 +277,7 @@ export default function App() {
               {/* Quick Stat Counter */}
               <div className="grid grid-cols-3 gap-3 bg-neutral-900/90 p-4 rounded-2xl border border-white/5 text-center w-full md:w-auto flex-shrink-0">
                 <div>
-                  <div className="text-xl font-bold text-amber-500">121</div>
+                  <div className="text-xl font-bold text-amber-500">{canineData.breeds.length}</div>
                   <div className="text-[10px] text-neutral-400 uppercase font-bold tracking-wider">Razas</div>
                 </div>
                 <div>
@@ -298,6 +294,7 @@ export default function App() {
             {/* Filter Panel */}
             <FilterPanel
               facets={canineData.facets}
+              breeds={canineData.breeds}
               filters={filters}
               setFilters={setFilters}
               totalBreeds={canineData.breeds.length}

@@ -124,7 +124,7 @@ export const BreedCard: React.FC<BreedCardProps> = ({
                 className="text-[10px] font-semibold px-3 py-1 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20 hover:bg-purple-500/20 cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 inline-flex items-center gap-1"
                 title={`Filtrar por arquetipo: ${arch}`}
               >
-                <img src="/assets/icoadn.svg" alt="" className="w-3 h-3 object-contain shrink-0" />
+                <img src="/assets/archetype.svg" alt="" className="w-3 h-3 object-contain shrink-0" />
                 <span>{arch}</span>
               </button>
             ))}
