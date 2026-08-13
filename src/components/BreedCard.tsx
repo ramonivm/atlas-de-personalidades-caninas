@@ -34,7 +34,10 @@ export const BreedCard: React.FC<BreedCardProps> = ({
   };
 
   return (
-    <article className="group bg-[#141414] rounded-[2rem] border border-white/5 hover:border-amber-500/40 shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden relative">
+    <article
+      onClick={() => onSelect(breed)}
+      className="group bg-[#141414] rounded-[2rem] border border-white/5 hover:border-amber-500/40 shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden relative cursor-pointer"
+    >
       
       {/* Top Banner Image with Overlay Actions */}
       <div className="relative h-52 w-full aspect-[16/9] bg-neutral-900 overflow-hidden">

@@ -58,7 +58,10 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-xl flex items-center justify-center p-3 sm:p-6 animate-fade-in">
+    <div 
+      onClick={onClose}
+      className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-xl flex items-center justify-center p-3 sm:p-6 animate-fade-in"
+    >
       <div 
         className="bg-[#0A0A0A] text-slate-200 rounded-[2.5rem] max-w-4xl w-full max-h-[92vh] flex flex-col shadow-2xl overflow-hidden border border-neutral-800 relative"
         onClick={(e) => e.stopPropagation()}
