@@ -372,215 +372,235 @@ export const canineData: CanineDatabase = {
       ]
     },
     {
-      "id": "alaskan-malamute",
-      "breed": "Alaskan Malamute",
-      "title": "Alaskan Malamute: El Poder de la Resiliencia Primitiva",
-      "epithet": "El Poder de la Resiliencia Primitiva",
-      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
-      "akcGroup": "Working Group",
-      "archetypes": [
-        "Autonomía Primitiva / Dignidad",
-        "Contención Pesada / Calma Profunda"
-      ],
-      "motivations": [
-        "Movimiento",
-        "Posesión"
-      ],
-      "traits": [
-        "Dignidad",
-        "Nobleza",
-        "Resiliencia",
-        "Terquedad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Posesión y Movimiento de Carga",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Media – Jerárquica y Grupal",
-        "independencia_cognitiva": "Extrema"
-      },
-      "summary": "El Alaskan Malamute es el estudio definitivo sobre la fortaleza ancestral y la economía de esfuerzo. A diferencia del Siberian Husky, fue forjado para la carga pesada y la supervivencia extrema. Representa la voluntad inamovible y una psicología que no busca complacer, sino coexistir bajo leyes de jerarquía y respeto mutuo muy antiguas.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento es digno, afectuoso, leal y profundamente juguetón, aunque con una seriedad subyecente. Posee una autoconfianza masiva; no es un perro que se impresione fácilmente por el entorno. Su inteligencia es de tipo práctico-superviviente: solo gasta energía en aquello que considera necesario o gratificante. Es un perro de rituales sociales claros y una honestidad comunicativa que no deja lugar a dudas."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "El vínculo se define como \"Pertenencia de Manada con Respeto Jerárquico\". El Malamute ve al guía como el líder de una expedición. Su afecto es expansivo y cálido, pero no es servil. La conexión se construye a través de la coherencia y la capacidad del guía para establecer límites claros. Si siente que el líder es errático, asumirá la toma de decisiones por seguridad del grupo."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Es un perro de una nobleza y una paciencia admirables con su núcleo familiar. Su resistencia física es legendaria, siendo el compañero ideal para travesías de larga distancia. Es un perro muy limpio, silencioso (aunque suele \"hablar\" o aúllar) y posee una resiliencia ante la adversidad climática y física que pocas razas pueden igualar. Su presencia aporta estabilidad y calma rústica al hogar."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su independencia y terquedad son un desafío para el manejo; no posee obediencia ciega. Presenta un instinto de presa muy alto que requiere gestión constante. No tolera bien el calor extremo debido a su denso pelaje. Además, su jerarquía con otros perros de su mismo sexo suele ser muy marcada, lo que puede derivar en conflictos de dominancia si no se gestiona la socialización de forma experta."
-        }
-      ]
+    "id": "alaskan-malamute",
+    "breed": "Alaskan Malamute",
+    "title": "Alaskan Malamute: El Poder de la Resiliencia Primitiva",
+    "epithet": "El Poder de la Resiliencia Primitiva",
+    "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
+    "akcGroup": "Working Group",
+    "archetypes": [
+      "Autonomía Primitiva / Dignidad",
+      "Contención Pesada / Calma Profunda"
+    ],
+    "motivations": [
+      "Movimiento",
+      "Posesión"
+    ],
+    "traits": [
+      "Dignidad",
+      "Nobleza",
+      "Resiliencia",
+      "Terquedad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Alto",
+      "motivacion_intrinseca": "Posesión y Movimiento de Carga",
+      "resiliencia_emocional": "Muy Alta",
+      "sociabilidad": "Media – Jerárquica y Grupal",
+      "independencia_cognitiva": "Extrema"
     },
-    {
-      "id": "american-pit-bull-terrier",
-      "breed": "American Pit Bull Terrier",
-      "title": "American Pit Bull Terrier: El Atleta de Voluntad Compacta",
-      "epithet": "El Atleta de Voluntad Compacta",
-      "fciGroup": "Grupo 3: Terriers",
-      "akcGroup": null,
-      "archetypes": [
-        "Cooperación Humana Clásica",
-        "Protección Estructurada Moderna",
-        "Terriers Instrumentales"
-      ],
-      "motivations": [
-        "Cooperación",
-        "Resolución"
-      ],
-      "traits": [
-        "Afiliación",
-        "Coraje",
-        "Energía",
-        "Tenacidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio–Bajo",
-        "motivacion_intrinseca": "Cooperación Afiliativa y Resolución",
-        "resiliencia_emocional": "Media–Alta",
-        "sociabilidad": "Media (muy humana; selectiva con perros)",
-        "independencia_cognitiva": "Media"
+    "summary": "El Alaskan Malamute es el estudio definitivo sobre la fortaleza ancestral y la economía de esfuerzo dentro del grupo de perros nórdicos. Forjado en las gélidas tierras árticas para la carga pesada y la supervivencia extrema, posee una osamenta masiva, pecho profundo y un denso manto protector. Su psicología se rige por una voluntad inamovible, una resiliencia emocional muy alta, gran dignidad y un comportamiento social gobernado por leyes de jerarquía tradicionales.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es digno, afectuoso, leal, sereno y profundamente juguetón, aunque respaldado por una firmeza subyacente de perro rústico. El Alaskan Malamute posee una autoconfianza masiva, manteniéndose imperturbable ante los estímulos cotidianos de su entorno. Su inteligencia práctica está orientada a la supervivencia y a la economía de energía, actuando solo cuando considera que la tarea lo merece. Muestra un comportamiento honesto y transparente en sus rituales comunicativos."
       },
-      "summary": "El American Pit Bull Terrier es un perro que concentra potencia y determinación en un formato medio, sin adornos. Su esencia real —cuando está bien criado y bien llevado— es la de un animal atlético, intensamente presente y muy orientado al vínculo. Es un cuerpo diseñado para rendir y una mente que, si no tiene dirección, se inventa una.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Es intenso, tenaz y sorprendentemente sensible a la dinámica humana. Tiene un tipo de confianza que no se expresa como calma flemática, sino como determinación: cuando algo lo motiva, cuesta sacarlo del foco. En casa puede ser muy cariñoso y relajado, pero su sistema nervioso no es de \"modo ahorro\" como un mastín; es más bien un motor que necesita regulación y límites claros. Bien equilibrado, tiende a ser estable; mal gestionado, puede volverse impulsivo, demandante o reactivo por frustración."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Suele ser un vínculo afiliativo e intenso, con mucha necesidad de contacto y participación. No tanto desde la fragilidad, sino desde una lógica de pertenencia: \"yo estoy contigo y tú estás conmigo\". El APBT normalmente busca feedback humano y se ordena mejor cuando siente estructura, rutina y coherencia."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Su corazón social (con su familia) suele ser enorme. Es un perro muy dispuesto a vincular, con una alegría física que se nota en cómo usa el cuerpo: juega con todo, abraza, se pega, se entrega. También tiene una tolerancia alta al esfuerzo y una capacidad atlética real, lo que lo vuelve excelente para actividades estructuradas. Con buena guía, puede ser un compañero profundamente leal, estable y \"de equipo\" en la vida cotidiana."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su tenacidad es un arma de doble filo: cuando se fija, insiste. Esto exige un humano capaz de entrenar autocontrol (pausas, límites, manejo de impulsos) y no solo \"cansarlo\". Además, como tipo terrier, puede tener una predisposición a escalar en conflictos si no se socializa y maneja con criterio, especialmente en situaciones de alta excitación."
-        }
-      ]
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece un lazo de pertenencia a la manada basado en el respeto a la jerarquía y la coherencia del guía. El Malamute considera a su tutor como el líder de una expedición compartida, ofreciéndole un afecto cálido, devoto y expansivo pero exento de servilismo. Su adiestramiento exige tutores experimentados que sepan marcar límites claros con serenidad; si percibe debilidad o inconsistencia, asumirá la toma de decisiones para proteger al grupo."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una nobleza extraordinaria, paciencia con la familia y una presencia serena que transmite calma rústica en el hogar. Es un perro muy limpio que cuida su higiene de forma similar a un felino y rara vez ladra en vano. Su resistencia física es legendaria, siendo un compañero inigualable para travesías de larga distancia, montañismo y deportes de tiro en nieve, manteniendo siempre un espíritu sereno ante inclemencias ambientales."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su marcada independencia cognitiva y terquedad natural dificultan el adiestramiento tradicional, requiriendo paciencia constante ya que no posee obediencia ciega. Presenta un fuerte instinto de caza y posesión hacia animales pequeños que exige supervisión atenta. Su espeso manto no tolera el calor sofocante, demandando espacios frescos. Asimismo, su dominancia jerárquica con perros del mismo sexo puede generar conflictos si no se gestiona la socialización desde temprana edad."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como especialista en el arrastre y tracción de cargas pesadas a través de distancias masivas en terrenos helados. Posee una orientación geográfica instintiva y una capacidad formidable para navegar en ventiscas. En el entorno doméstico, su principal virtud es ofrecer una vigilancia calmada, digna y equilibrada, destacando también en actividades de tracción como weight pulling, mushing recreativo y senderismo técnico de alta montaña."
+      }
+    ]
+  },
+  {
+    "id": "american-pit-bull-terrier",
+    "breed": "American Pit Bull Terrier",
+    "title": "American Pit Bull Terrier: El Atleta de Voluntad Compacta",
+    "epithet": "El Atleta de Voluntad Compacta",
+    "fciGroup": "Grupo 3: Terriers",
+    "akcGroup": null,
+    "archetypes": [
+      "Cooperación Humana Clásica",
+      "Protección Estructurada Moderna",
+      "Terriers Instrumentales"
+    ],
+    "motivations": [
+      "Cooperación",
+      "Resolución"
+    ],
+    "traits": [
+      "Afiliación",
+      "Coraje",
+      "Energía",
+      "Tenacidad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio–Bajo",
+      "motivacion_intrinseca": "Cooperación Afiliativa y Resolución",
+      "resiliencia_emocional": "Media–Alta",
+      "sociabilidad": "Media (muy humana; selectiva con perros)",
+      "independencia_cognitiva": "Media"
     },
-    {
-      "id": "american-staffordshire-terrier",
-      "breed": "American Staffordshire Terrier",
-      "title": "American Staffordshire Terrier: El Gladiador Gentil",
-      "epithet": "El Gladiador Gentil",
-      "fciGroup": "Grupo 3: Terriers",
-      "akcGroup": "Terrier Group",
-      "archetypes": [
-        "Cooperación Humana Clásica",
-        "Protección Estructurada Moderna"
-      ],
-      "motivations": [
-        "Contacto físico",
-        "Trabajo conjunto"
-      ],
-      "traits": [
-        "Coraje",
-        "Devoción",
-        "Entusiasmo",
-        "Tenacidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio-Bajo",
-        "motivacion_intrinseca": "Contacto Físico y Trabajo Conjunto",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Muy Alta (Humanos) / Media-Baja (Perros)",
-        "independencia_cognitiva": "Media-Baja"
+    "summary": "El American Pit Bull Terrier es un atleta compacto que concentra una fuerza y determinación prodigiosas en un formato mediano. De musculatura esculpida, agilidad física superior y mirada inteligente, es un perro profundamente orientado a la cooperación con el ser humano. Su psicología destaca por una tenacidad inquebrantable, motivación intrínseca por la resolución de tareas, resiliencia emocional elevada, coraje sin vacilaciones y un deseo apasionado de vincularse estrechamente con su núcleo familiar.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es intenso, apasionado, tenaz, enérgico y sensible a los estados emocionales de sus guías. El Pit Bull posee una determinación sobresaliente: cuando enfoca su atención en un objetivo, muestra una perseverancia admirable. En el espacio doméstico se comporta como un compañero cariñoso y juguetón, pero su sistema nervioso requiere canales adecuados de regulación, estimulación física y límites claros para evitar estados de sobreexcitación."
       },
-      "summary": "El American Staffordshire Terrier es un estudio sobre la dualidad: una potencia física explosiva envuelta en una de las naturalezas más afectuosas que existen hacia el ser humano. Su estampa es la de un atleta de fuerza pura; musculoso, de centro de gravedad bajo y una mandíbula que denota una tenacidad histórica. Sin embargo, su mirada es brillante, curiosa y profundamente conectada con las emociones de su guía.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento es audaz, vital y sumamente entusiasta. El Amstaff posee una confianza en sí mismo que roza lo imperturbable, lo que le otorga una estabilidad emocional notable en entornos humanos. Es un perro que vive con intensidad: cuando juega, lo hace con todo su cuerpo, y cuando descansa, busca la calma total. A diferencia de otras razas de guardia que son reservadas, el Amstaff suele ser expansivo y optimista."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "El vínculo con su dueño es de una dependencia afectiva muy alta. Para el Amstaff, el ser humano no es solo un guía, es su centro de gravedad. Es un perro que sufre profundamente con el aislamiento, ya que su psicología está diseñada para la interacción constante. Su lealtad es absoluta y su deseo de agradar es uno de los motores más fuertes de su comportamiento."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Su equilibrio emocional y su paciencia con el núcleo familiar son extraordinarios. Es una raza de una nobleza inmensa, capaz de soportar el ajetreo de un hogar activo con una sonrisa perenne. Su inteligencia es muy alta y su disposición para el aprendizaje es excelente, siempre que se base en el refuerzo positivo."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su potencia física puede ser difícil de gestionar si no se entrena el control de impulsos desde cachorro. Posee una baja tolerancia a la frustración si no se trabaja correctamente, lo que puede derivar en conductas destructivas por exceso de energía. Además, debido a su herencia genética, puede presentar una alta reactividad hacia otros perros si no ha sido socializado de manera exquisita."
-        }
-      ]
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye un lazo afectivo de pertenencia e intensidad profunda, buscando el contacto corporal y la participación activa con sus referentes. Se ordena de forma brillante cuando percibe estructura, rutina y coherencia en su entorno. Su adiestramiento es sumamente fluido gracias a su deseo de complacer, requiriendo métodos de refuerzo positivo que premien el autocontrol y canalicen su enorme tenacidad en tareas deportivas estructuradas."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una lealtad conmovedora y un entusiasmo contagioso que llena el hogar de dinamismo y alegría física. Su disposición para cooperar y aprender es extraordinaria, adaptándose de maravilla al trabajo en equipo. Es un perro atlético de gran resiliencia y salud resistente que disfruta de juegos exigentes. Con una guía adecuada, se convierte en un compañero leal, noble, sumamente dulce y estable en la convivencia cotidiana."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su tenacidad extrema puede convertirse en terquedad u obsesión si no se entrena el manejo de impulsos y la calma desde temprana edad. Como tipo terrier, puede mostrar una reactividad marcada hacia otros caninos si carece de socialización atenta y control en situaciones de alta excitación. Además, su necesidad de actividad física y cognitiva demanda tiempo abundante, sufriendo frustración o conductas destructivas si se le descuida."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en competencias atléticas exigentes como peso muerto (weight pulling), salto vertical, agility y pruebas de trabajo funcional por su fuerza explosiva y tenacidad física. Su destreza para resolver problemas mecánicos mediante la presa y la tracción es asombrosa. En la vida familiar, destaca por brindar una presencia leal y protectora, respondiendo de forma estelar a programas de adiestramiento de obediencia avanzada y trabajo deportivo."
+      }
+    ]
+  },
+  {
+    "id": "american-staffordshire-terrier",
+    "breed": "American Staffordshire Terrier",
+    "title": "American Staffordshire Terrier: El Gladiador Gentil",
+    "epithet": "El Gladiador Gentil",
+    "fciGroup": "Grupo 3: Terriers",
+    "akcGroup": "Terrier Group",
+    "archetypes": [
+      "Cooperación Humana Clásica",
+      "Protección Estructurada Moderna"
+    ],
+    "motivations": [
+      "Contacto físico",
+      "Trabajo conjunto"
+    ],
+    "traits": [
+      "Coraje",
+      "Devoción",
+      "Entusiasmo",
+      "Tenacidad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio-Bajo",
+      "motivacion_intrinseca": "Contacto Físico y Trabajo Conjunto",
+      "resiliencia_emocional": "Muy Alta",
+      "sociabilidad": "Muy Alta (Humanos) / Media-Baja (Perros)",
+      "independencia_cognitiva": "Media-Baja"
     },
-    {
-      "id": "australian-cattle-dog",
-      "breed": "Australian Cattle Dog",
-      "title": "Australian Cattle Dog: El Centinela de Hierro",
-      "epithet": "El Centinela de Hierro",
-      "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
-      "akcGroup": "Herding Group",
-      "archetypes": [
-        "Inteligencia Funcional Obsesiva"
-      ],
-      "motivations": [
-        "Control",
-        "Movimiento coordinado"
-      ],
-      "traits": [
-        "Aspereza",
-        "Fidelidad",
-        "Tenacidad",
-        "Vigilancia"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Muy Bajo",
-        "motivacion_intrinseca": "Control y Movimiento Coordinado",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Media-Baja – Selectiva y Territorial",
-        "independencia_cognitiva": "Alta"
+    "summary": "El American Staffordshire Terrier o Amstaff es un prodigio de fuerza atlética y sensibilidad afectuosa, combinando un físico muscular imponente con un carácter dulce hacia las personas. De mandíbulas potentes, centro de gravedad bajo y mirada expresiva, encarna la dualidad entre la firmeza protectora y la ternura familiar. Su psicología destaca por un amor incondicional hacia el ser humano, resiliencia emocional muy alta, entusiasmo contagioso, coraje indomable y una motivación intrínseca centrada en el contacto físico.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es audaz, alegre, noble, vital y enormemente entusiasta en todas sus vivencias. El Amstaff posee una autoconfianza sólida que le otorga una gran estabilidad emocional en entornos urbanos y familiares. Vive con pasión desbordante: juega con todo su cuerpo y descansa en calma total junto a sus seres queridos. A diferencia de razas de guarda distantes, muestra una actitud abierta, confiada y optimista hacia la vida."
       },
-      "summary": "El Australian Cattle Dog, también conocido como Blue Heeler, es un monumento a la funcionalidad y la resistencia. No es un perro diseñado para la estética, sino para la utilidad absoluta bajo el sol abrasador y terrenos implacables. Su cuerpo es compacto, denso y extremadamente potente, proyectando una sensación de fuerza inagotable. Su mirada es una de las más intensas del mundo canino: vigilante, inteligente y carente de cualquier rastro de duda.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento es intensamente valiente, decidido y dotado de una lealtad que raya en la obsesión. El Cattle Dog es un perro de \"misión\": siempre necesita estar haciendo algo. Posee una seriedad operativa que lo distingue de la alegría juguetona de otros pastores. Es un animal de un solo dueño, extremadamente protector y con una desconfianza natural hacia lo desconocido."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "El vínculo con su dueño es de una profundidad absoluta, pero de naturaleza posesiva. Se le conoce como un \"perro velcro\" porque su lugar favorito es pegado a la pierna de su referente. A diferencia de razas más independientes, el Cattle Dog siente la necesidad de supervisar cada movimiento de su dueño. Su lealtad es activa y vigilante: no solo te acompaña, te protege y te asiste."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Su ética de trabajo es inigualable; es un perro que nunca se rinde ante la fatiga o el dolor. Posee una salud física y mental extremadamente robusta, siendo una de las razas más longevas entre los perros de trabajo. Su capacidad de aprendizaje es asombrosa, especialmente en tareas que requieren resolución de problemas complejos."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su alta energía y su instinto de pastoreo pueden ser problemáticos si no se canalizan. Al ser un \"Heeler\" (perro que muerde los talones para mover el ganado), tiene una tendencia natural a morder tobillos o manos si se sobreexcita. Un Cattle Dog sin propósito se volverá obsesivo, territorial o destructivo."
-        }
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una dependencia afectiva profunda e intensa con sus cuidadores, convirtiendo a su humano en el centro de su universo. El Amstaff necesita sentirse integrado en la vida diaria y sufre si se le aísla. Su adiestramiento resulta gratificante gracias a su ardiente deseo de complacer, respondiendo de forma brillante a métodos de educación positiva basados en caricias, elogios y recompensas que fortalezcan el respeto mutuo."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un equilibrio emocional y una paciencia conmovedora con su núcleo familiar, siendo un perro noble y extremadamente afable. Su inteligencia funcional y su disposición para aprender son sobresalientes en dinámicas de obediencia. Es un guardián disuasorio de gran coraje que defiende con lealtad. Su carácter alegre, afectuoso y cariñoso lo convierte en un amigo leal que llena el hogar de calidez y momentos entrañables."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su extraordinaria fuerza física requiere un trabajo constante de autocontrol y manejo desde cachorro para evitar tirones de correa o efusividad excesiva. Puede presentar reactividad marcada hacia otros perros del mismo sexo si no se le socializa de forma rigurosa. Además, no tolera bien la soledad prolongada, pudiendo desarrollar ansiedad por separación o conductas destructivas si no ejercita adecuadamente su mente y su musculatura."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en disciplinas deportivas de alta exigencia física como agility, weight pulling, tiro de arrastre y pruebas de obediencia técnica por su potencia muscular y agilidad. Destaca por su capacidad para saltar y maniobrar con precisión giroscópica. En el ámbito doméstico, su mayor destreza es brindar una protección disuasoria y una compañía sumamente afectuosa, siendo un modelo de lealtad y ternura familiar."
+      }
+    ]
+  },
+  {
+    "id": "australian-cattle-dog",
+    "breed": "Australian Cattle Dog",
+    "title": "Australian Cattle Dog: El Centinela de Hierro",
+    "epithet": "El Centinela de Hierro",
+    "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
+    "akcGroup": "Herding Group",
+    "archetypes": [
+      "Inteligencia Funcional Obsesiva"
+    ],
+    "motivations": [
+      "Control",
+      "Movimiento coordinado"
+    ],
+    "traits": [
+      "Aspereza",
+      "Fidelidad",
+      "Tenacidad",
+      "Vigilancia"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Muy Bajo",
+      "motivacion_intrinseca": "Control y Movimiento Coordinado",
+      "resiliencia_emocional": "Muy Alta",
+      "sociabilidad": "Media-Baja – Selectiva y Territorial",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Australian Cattle Dog o Blue Heeler es una obra maestra de resistencia rústica y funcionalidad absoluta, moldeado para el control de ganado vacuno en los inhóspitos terrenos de Australia. De cuerpo denso, mirada penetrante y agilidad sobrehumana, proyecta una energía inagotable. Su psicología destaca por un umbral de estimulación muy bajo, inteligencia funcional obsesiva, motivación por el movimiento coordinado y el control, resiliencia emocional extrema e independencia cognitiva combinada con lealtad feraz.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es intensamente valiente, hiperatento, decidido, severo y guiado por una devoción total hacia el trabajo. El Cattle Dog vive orientado a cumplir misiones, mostrando una seriedad operativa que lo distingue de otros pastores. Es un perro de un solo tutor, extremadamente vigilante y receloso ante personas extrañas. En el ámbito doméstico se mantiene en constante alerta, supervisando cada movimiento y protegiendo su territorio con tenacidad."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla una relación de lealtad posesiva e hipervínculo conocido como 'perro velcro', pegándose a la pierna de su referente de forma incondicional. Siente la necesidad de supervisar y custodiar a su tutor en todo momento. Su adiestramiento exige un liderazgo firme, estructurado y muy coherente que canalice su agudeza mental en tareas desafiantes, respondiendo extraordinariamente al adiestramiento positivo basado en retos y trabajo colaborativo."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una ética de trabajo inquebrantable, una inteligencia resolutiva asombrosa y una resistencia física que soporta las condiciones más extremas. Su salud rústica y longevidad son notables dentro de las razas de trabajo. Es un guardián incorruptible que ofrece seguridad absoluta a su hogar. Su fidelidad sin fisuras y su capacidad para aprender complejos comandos lo convierten en un compañero formidable para tutores activos."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su desbordante energía física y mental puede transformarse en conductas obsesivas, territoriales o destructivas si no se le proporciona un propósito diario. Como buen 'heeler', posee la tendencia instintiva a morder talones cuando se sobreexcita o intenta controlar el movimiento de personas y vehículos. Además, su baja sociabilidad con extraños y otros perros exige una gestión atenta y socialización temprana impecable."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en el pastoreo y conducción de ganado vacuno bravo mediante mordiscos rápidos en los corvejones seguidos de un agachado esquivo inmediato. Destaca brillantemente en disciplinas deportivas como herding, disc dog, agility y obediencia competitiva por su velocidad y precisión. En la vida diaria, su habilidad principal es brindar una custodia atenta y una protección férrea, siendo un centinela incansable del territorio."
+      }
       ]
     },
     {
@@ -4734,1917 +4754,2582 @@ export const canineData: CanineDatabase = {
       ]
     },
     {
-      "id": "english-springer-spaniel",
-      "breed": "English Springer Spaniel",
-      "title": "English Springer Spaniel: El Levantador Incansable",
-      "epithet": "El Levantador Incansable",
-      "fciGroup": "Grupo 8: Perros Cobradores levantadores de caza y de agua",
-      "akcGroup": "Sporting Group",
-      "archetypes": [
-        "Cooperación Humana Clásica",
-        "Inteligencia Funcional Obsesiva"
-      ],
-      "motivations": [
-        "Caza",
-        "Cobro",
-        "Afecto"
-      ],
-      "traits": [
-        "Entusiasmo",
-        "Vivacidad",
-        "Gentileza",
-        "Persistencia"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Levantar Aves en Espesuras y Cobro",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Muy Cariñoso y Afable",
-        "independencia_cognitiva": "Media"
+    "id": "english-springer-spaniel",
+    "breed": "English Springer Spaniel",
+    "title": "English Springer Spaniel: El Levantador Incansable",
+    "epithet": "El Levantador Incansable",
+    "fciGroup": "Grupo 8: Perros Cobradores levantadores de caza y de agua",
+    "akcGroup": "Sporting Group",
+    "archetypes": [
+      "Cooperación Humana Clásica",
+      "Inteligencia Funcional Obsesiva"
+    ],
+    "motivations": [
+      "Caza",
+      "Cobro",
+      "Afecto"
+    ],
+    "traits": [
+      "Entusiasmo",
+      "Vivacidad",
+      "Gentileza",
+      "Persistencia"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Levantar Aves en Espesuras y Cobro",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Muy Cariñoso y Afable",
+      "independencia_cognitiva": "Media"
+    },
+    "summary": "El English Springer Spaniel es un emblemático levantador y cobrador de caza británico, reconocido por su entusiasmo inagotable, orejas afelpadas y movimiento constante de cola. Desarrollado históricamente para irrumpir en espesuras tupidas y levantar aves para el cazador, posee una estructura atlética bien balanceada y una energía vibrante. Su psicología destaca por un umbral de estimulación bajo ante rastros de caza, una inteligencia funcional brillante, una sociabilidad desbordante y un temperamento afable, alegre, cooperativo y profundamente cariñoso con toda su familia.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es sumamente alegre, dinámico, trabajador, dócil y lleno de una expresividad sumamente simpática. El Springer Spaniel posee una mente despierta que disfruta explorando senderos, matorrales y zonas acuáticas con entusiasmo incansable. En el entorno doméstico se comporta como un perro apacible, limpio y cariñoso si ha satisfecho su cuota de ejercicio diario. Muestra una sociabilidad extraordinaria con personas extrañas, niños y otros perros, careciendo por completo de tendencias agresivas o territoriales en su vida cotidiana."
       },
-      "summary": "Ancestral perro de cobro y levantamiento. Mueve la cola incesantemente mientras explora matorrales con energía alegre.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Alegre, trabajador y sumamente dócil. Ama el agua y los senderos."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Forma apegos entusiastas con toda la familia."
-        }
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una relación de lealtad entusiasta, devoción sincera y cooperación constante con sus tutores de referencia. El English Springer Spaniel es un colaborador nato que busca complacer continuamente a su guía en cada actividad que comparte. Su adiestramiento resulta fácil y fluido debido a su inteligencia y deseo de trabajar en equipo. Responde maravillosamente al adiestramiento motivacional basado en premios y juegos, mientras que la brusquedad o la indiferencia afectan seriamente su confianza y su entusiasmo habitual."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una vitalidad contagiosa, una simpatía arrolladora y un compañerismo incondicional que llena de alegría el hogar. Es un perro sumamente versátil, adaptado a múltiples actividades al aire libre y deportes caninos, con un excelente carácter familiar. Su paciencia infinita con los niños, su amor por la natación y su capacidad para aprender normas de convivencia con rapidez lo convierten en un compañero extraordinario para familias activas que disfrutan de la naturaleza y del contacto animal constante."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su elevado nivel de energía física y estimulación mental requiere un compromiso diario de paseos largos y ejercicio intenso en libertad. Si se le priva de actividad física o trabajo olfativo, puede canalizar su aburrimiento en hiperactividad doméstica o ladridos insistentes. Asimismo, sus orejas largas y caídas requieren una limpieza frecuente para prevenir otitis, mientras que su pelaje sedoso necesita cepillados periódicos tras paseos por el campo para retirar barro, enredos o espigas enganchadas."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como especialista supremo en el levantamiento de aves en espesuras tupidas, matorrales y zanjas de difícil acceso por su intrepidez y agilidad. Posee un cobro instintivo magnífico tanto en tierra firme como en agua dulce con agarre suave de las piezas. Destaca además en pruebas de agilidad, canicross, rastreo de rastro y detección olfativa gracias a su finísimo olfato, rapidez de respuesta física y capacidad de concentración bajo motivación."
+      }
+    ]
+  },
+  {
+    "id": "bichon-frise",
+    "breed": "Bichón Frisé",
+    "title": "Bichón Frisé: La Nube Alegre de la Simpatía",
+    "epithet": "La Nube Alegre de la Simpatía",
+    "fciGroup": "Grupo 9: Perros de Compañía",
+    "akcGroup": "Non-Sporting Group",
+    "archetypes": [
+      "Apego Frágil Afiliativo",
+      "Hiperreactividad Ornamental"
+    ],
+    "motivations": [
+      "Afecto",
+      "Atención",
+      "Juego"
+    ],
+    "traits": [
+      "Alegría",
+      "Dulzura",
+      "Adaptabilidad",
+      "Sociabilidad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Compañía Cercana y Juegos Suaves",
+      "resiliencia_emocional": "Media",
+      "sociabilidad": "Excelente con Niños, Ancianos y Extraños",
+      "independencia_cognitiva": "Baja"
+    },
+    "summary": "El Bichón Frisé es la viva imagen de la alegría y la elegancia, célebre por su espeso pelaje blanco rizado que asemeja una suave nube de algodón. Desarrollado en la cuenca mediterránea y popularizado entre la realeza europea, este pequeño canino de compañía destaca por su naturaleza afectuosa, mirada vivaz y expresión dulce. Su psicología se rige por un apego afiliativo cercano, un umbral de estimulación medio, una sociabilidad extraordinaria sin agresividad y una empatía constante hacia su entorno humano.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es encantador, alegre, extrovertido, afable y completamente libre de agresión o recelo hacia los demás. El Bichón Frisé aborda la vida con una positividad radiante que contagia entusiasmo a todo el hogar. Posee un estado de ánimo estable que no genera tensiones ni ladridos innecesarios en la convivencia diaria. Muestra un comportamiento sumamente amigable con niños, personas mayores, extraños y otros animales, siendo un perro de compañía pacífico y equilibrado."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de cariño profundo, dulce dependencia y búsqueda constante de contacto físico con sus tutores. Al Bichón Frisé le apasiona descansar en el regazo, participar en juegos tranquilos y acompañar a su familia a todas partes. Su adiestramiento es ágil y gratificante cuando se utilizan métodos positivos y amables, respondiendo con entusiasmo ante recompensas verbales y mimos, mientras que el aislamiento o la distancia afectiva le provocan cierta tristeza."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Ofrece una convivencia doméstica pacífica, caracterizada por la armonía, el afecto continuo y una empatía reconfortante. Es un perro de tamaño práctico, ideal para pisos urbanos o espacios reducidos, cuyo manto rizado casi no suelta pelo, siendo muy apreciado por personas con alergias. Su carácter amigable con todo el mundo, su paciencia con los más pequeños y su capacidad para adaptarse al ritmo familiar lo convierten en una mascota ideal."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su necesidad de compañía humana constante puede derivar en ansiedad por separación si no se le enseña a gestionar la soledad gradualmente desde cachorro. Asimismo, su refinado manto blanco rizado exige un mantenimiento riguroso de cepillado diario, baños periódicos y cortes profesionales de peluquería para evitar nudos. Requiere también cuidados específicos en la zona ocular para limpiar las manchas del lagrimal y mantener su aspecto blanco e impecable."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como perro de compañía y terapia asistida debido a su empatía natural, dulzura y temperamento reconfortante con personas de todas las edades. Destaca en la ejecución de trucos de agilidad cognitiva, juegos de interacción y rutinas de obediencia básica por su inteligencia vivaz. Posee además una adaptabilidad física notable para caminatas urbanas y actividades recreativas en interiores sin requerir esfuerzos físicos extenuantes para mantenerse equilibrado."
+      }
+    ]
+  },
+  {
+    "id": "bichon-maltes",
+    "breed": "Bichón Maltés",
+    "title": "Bichón Maltés: La Elegancia de Manto Sedoso",
+    "epithet": "La Elegancia de Manto Sedoso",
+    "fciGroup": "Grupo 9: Perros de Compañía",
+    "akcGroup": "Toy Group",
+    "archetypes": [
+      "Apego Extremo (Fusión Emocional)",
+      "Hiperreactividad Ornamental"
+    ],
+    "motivations": [
+      "Afecto",
+      "Cercanía",
+      "Atención"
+    ],
+    "traits": [
+      "Dulzura",
+      "Sensibilidad",
+      "Vivacidad",
+      "Fidelidad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo-Medio",
+      "motivacion_intrinseca": "Afecto Humano Directo",
+      "resiliencia_emocional": "Media-Baja",
+      "sociabilidad": "Muy Cariñoso con su Dueño, Atento a Visitas",
+      "independencia_cognitiva": "Baja"
+    },
+    "summary": "El Bichón Maltés es una de las razas de compañía más antiguas y veneradas del Mediterráneo, célebre por su suntuoso manto blanco, sedoso y de caída recta. Conocido históricamente como el perro faldero de la nobleza, combina una estampa refinada con una vivacidad entrañable y una mirada oscura sumamente expresiva. Su psicología se fundamenta en el apego extremo y la fusión emocional con sus tutores, un umbral de estimulación bajo-medio, una alta reactividad afectiva y una fidelidad incondicional.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es dulce, afectuoso, alerta, alegre y sumamente fiel a su grupo humano de referencia. A pesar de su diminuto tamaño y aspecto delicado, el Bichón Maltés posee una valentía curiosa que lo mantiene atento a los pasos y movimientos en el hogar. Muestra una actitud cariñosa y cercana con sus tutores, aunque puede manifestar cierta reserva inicial o aviso sonoro ante la llegada de personas extrañas a su territorio."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de fusión emocional intensa y dependencia afectiva entrañable con sus personas de referencia. El Maltés necesita sentirse querido e incluido en el día a día familiar, adorando seguir a su tutor como una pequeña sombra blanca. Su adiestramiento resulta sencillo mediante refuerzo positivo y caricias, requiriendo tutores amorosos y consistentes que establezcan límites suaves para evitar que se vuelva excesivamente caprichoso o sobreprotector."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un afecto incondicional, una elegancia clásica y una compañía sumamente reconfortante que llena de ternura cualquier vivienda. Es una mascota excelente para pisos pequeños, personas mayores y vida urbana, cuyo pelaje no suelta pelo de forma habitual en la casa. Su inteligencia rápida para aprender normas básicas, su fidelidad devota y su alegría sutil la convierten en una compañera de vida encantadora y profundamente amada."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Presenta una marcada propensión a sufrir ansiedad por separación si se le deja solo durante periodos prolongados sin preparación previa. Su tendencia a ladrar ante ruidos lejanos o timbres puede volverse molesta si no se educa con serenidad desde edad temprana. Además, su largo y sedoso manto exige cepillados diarios indispensables para evitar enredos dolorosos, junto con la limpieza frecuente del área facial y lagrimal."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en labores de acompañamiento afectivo y apoyo emocional gracias a su sensibilidad receptiva para percibir los estados de ánimo de sus dueños. Destaca como centinela de aviso sonoro doméstico de oído agudo ante presencias ajenas. Posee además aptitudes excelentes para el aprendizaje de trucos de obediencia en miniatura, rutinas de baile canino y actividades de interacción en interiores que estimulan su inteligencia vivaz."
+      }
+    ]
+  },
+  {
+    "id": "shih-tzu",
+    "breed": "Shih Tzu",
+    "title": "Shih Tzu: El Pequeño León Sagrado de los Palacios",
+    "epithet": "El Pequeño León Sagrado",
+    "fciGroup": "Grupo 9: Perros de Compañía",
+    "akcGroup": "Toy Group",
+    "archetypes": [
+      "Contención Pesada / Calma Profunda",
+      "Apego Frágil Afiliativo"
+    ],
+    "motivations": [
+      "Comodidad",
+      "Afecto",
+      "Reposo"
+    ],
+    "traits": [
+      "Calma",
+      "Dignidad",
+      "Dulzura",
+      "Amabilidad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Alto",
+      "motivacion_intrinseca": "Descanso Cómodo y Convivencia Apacible",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Amigable y Confiado con Todos",
+      "independencia_cognitiva": "Media-Alta"
+    },
+    "summary": "El Shih Tzu es el venerable pequeño león sagrado criado en los palacios imperiales chinos, apreciado por su majestuoso manto largo, cola curvada y rostro amigable de hocico chato. A pesar de su aristocrático pasado palaciego, es un perro de compañía robusto, tranquilo y extraordinariamente dulce. Su psicología destaca por un umbral de estimulación alto, un temperamento dócil sin agresividad, un apetito por la comodidad y el descanso, y una sociabilidad confiada con todos.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es extremadamente sereno, pacífico, afectuoso, digno y caracterizado por una amabilidad contagiosa. El Shih Tzu aborda la vida diaria con una calma apacible, sin mostrar nerviosismo ni agresividad innecesaria en sus interacciones. Rara vez ladra sin motivo, prefiriendo observar su entorno con curiosidad simpática. Se comporta como un perro seguro de sí mismo que disfruta de la compañía humana y del confort de lugares blandos en el hogar."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una relación de lealtad afable, cariño dulce y convivencia pacífica con todos los miembros de la casa. El Shih Tzu se adapta con enorme flexibilidad a la rutina de sus tutores, disfrutando tanto de un paseo relajado como de una tarde de descanso en el sofá. Su adiestramiento debe basarse en la amabilidad y la paciencia, respondiendo bien al refuerzo positivo cuando se respeta su ritmo tranquilo e independiente."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Ofrece una compañía sumamente silenciosa, relajada y afectuosa, ideal para personas de cualquier edad, familias y habitantes de pisos urbanos. Es un perro muy amigable con desconocidos, visitas y otros animales, careciendo de instintos cazadores o territoriales problemáticos. Su naturaleza robusta, su dulce temperamento y su capacidad para brindar paz al entorno doméstico lo convierten en un amigo de piso ejemplar y reconfortante."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su estructura braquicefálica de hocico corto lo hace sensible a las altas temperaturas, exigiendo precauciones durante el verano para evitar golpes de calor. Su abundante pelaje largo requiere cepillados frecuentes y aseo continuado para prevenir nudos, además de atención a la higiene de sus ojos y pliegues faciales. Asimismo, su independencia pacífica puede traducirse en cierta terquedad si se intenta apresurar su aprendizaje con órdenes estrictas."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como especialista en terapia de acompañamiento y confort emocional debido a su presencia pacífica, baja reactividad y naturaleza mansa. Posee aptitudes excelentes para la convivencia pacífica con múltiples mascotas, paseos relajados a ritmo pausado y adaptación a viajes en transporte. Su capacidad para mantener la calma en situaciones concurridas lo convierte en un perro de compañía urbano de primer orden."
+      }
+    ]
+  },
+  {
+    "id": "cavalier-king-charles",
+    "breed": "Cavalier King Charles Spaniel",
+    "title": "Cavalier King Charles: El Regazo Dulce de la Realeza",
+    "epithet": "El Regazo Dulce de la Realeza",
+    "fciGroup": "Grupo 9: Perros de Compañía",
+    "akcGroup": "Toy Group",
+    "archetypes": [
+      "Apego Extremo (Fusión Emocional)",
+      "Apego Frágil Afiliativo"
+    ],
+    "motivations": [
+      "Afecto",
+      "Contacto físico",
+      "Sintonía"
+    ],
+    "traits": [
+      "Gentileza",
+      "Sensibilidad",
+      "Ternura",
+      "Calidez"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Contacto Físico Humano y Mimos",
+      "resiliencia_emocional": "Media",
+      "sociabilidad": "Amoroso con Todo el Mundo",
+      "independencia_cognitiva": "Muy Baja"
+    },
+    "summary": "El Cavalier King Charles Spaniel es el regazo dulce de la realeza británica, famoso por sus grandes ojos oscuros de expresión melting, orejas sedosas caídas y elegancia natural. Esta raza de compañía combina la ternura incondicional de un perro faldero con la jovialidad sutil de sus ancestros de caza. Su psicología destaca por un apego extremo y afiliativo, un umbral de estimulación medio, una empatía emocional sobresaliente y una incapacidad absoluta para la malicia o la agresividad.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es dulce, apacible, gentil, cariñoso y totalmente desprovisto de agresividad o aspereza en su conducta. El Cavalier King Charles aborda al mundo con una ternura infinita que desarma a cualquier persona. Posee un estado de ánimo alegre y adaptable que se ajusta sin esfuerzo al ritmo de vida familiar. Muestra una sociabilidad fabulosa con niños, adultos, extraños y otros animales, siendo un perro amoroso de naturaleza pacífica."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de lealtad profunda, sintonía emocional y dependencia afectiva intensa con sus personas de referencia. El Cavalier sigue a sus tutores por la casa como una sombra amorosa, buscando siempre el contacto físico directo y los mimos. Su adiestramiento es sumamente sencillo gracias a su inteligencia cooperativa y deseo de complacer; responde con entusiasmo a palabras dulces y recompensas, sufriendo si se le trata con brusquedad."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una calidez reconfortante, una empatía conmovedora y un comportamiento doméstico pacífico que llena de amor el hogar. Es un perro sumamente paciente con los niños, adaptable tanto a pisos urbanos como a casas rurales, y con una simpatía nativa que facilita los paseos en sociedad. Su carácter dulce, su mirada expresiva y su lealtad constante lo convierten en uno de los perros de compañía más queridos del mundo."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Presenta una marcada propensión a desarrollar problemas cardiacos hereditarios, como la soplos en la válvula mitral, requiriendo revisiones veterinarias periódicas. Su necesidad de afecto y compañía puede derivar en ansiedad por separación si se le deja solo durante periodos largos de tiempo. Además, sus orejas largas y sedosas exigen cuidados de cepillado e higiene frecuente para evitar infecciones y acumulaciones de suciedad tras salir al campo."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale de forma estelar como perro de terapia asistida y apoyo emocional debido a su capacidad única para brindar consuelo con su presencia mansa y cariñosa. Destaca en pruebas de obediencia básica, juegos de cobro suave de pelota y caminatas familiares por su naturaleza cooperativa. Su olfato heredado de los spaniels le otorga también aptitudes divertidas para juegos de rastreo casual en jardines."
+      }
+    ]
+  },
+  {
+    "id": "papillon",
+    "breed": "Papillon (Epagneul Enano Continental)",
+    "title": "Papillon: La Mariposa Inteligente del Grupo Toy",
+    "epithet": "La Mariposa Inteligente",
+    "fciGroup": "Grupo 9: Perros de Compañía",
+    "akcGroup": "Toy Group",
+    "archetypes": [
+      "Inteligencia Funcional Obsesiva",
+      "Hiperreactividad Ornamental"
+    ],
+    "motivations": [
+      "Juego",
+      "Desafío mental",
+      "Aprobación social"
+    ],
+    "traits": [
+      "Inteligencia",
+      "Agilidad",
+      "Vivacidad",
+      "Afecto"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Aprender Trucos y Agility Miniatura",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Sociable, Extrovertido y Despierto",
+      "independencia_cognitiva": "Media"
+    },
+    "summary": "El Papillon o Epagneul Enano Continental es la mariposa inteligente del grupo Toy, distinguido por sus grandes orejas erguidas con flecos sedosos que recuerdan las alas abiertas de una mariposa. Clasificado entre las razas más inteligentes del mundo canino, combina una estampa ligera con un intelecto privilegiado y un cuerpo atlético. Su psicología está guiada por la curiosidad vivaz, una alta motivación hacia el juego cognitivo, un umbral de estimulación bajo y una sociabilidad extrovertida y alegre.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es vivaz, despierto, curioso, alegre, afectuoso e intensamente enfocado en aprender todo de su entorno. El Papillon posee una agudeza mental sorprendente que procesa estímulos con rapidez pasmosa, manteniendo una actitud siempre alerta pero sin manifestar agresividad ni timidez. Muestra una sociabilidad abierta con personas y otros perros, disfrutando de las interacciones dinámicas. Es un pequeño canino lleno de energía positiva y encanto natural."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una relación de lealtad entusiasta, colaboración rápida y búsqueda de aprobación constante con su grupo familiar. Al Papillon le apasiona participar en juegos interactivos, aprender trucos y compartir actividades físicas con sus tutores. Su adiestramiento es facilísimo y rapidísimo debido a su inteligencia superior; responde maravillosamente al refuerzo positivo y a los desafíos cognitivos, disfrutando cuando se estimula su mente despierta."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una brillantez intelectual, un dinamismo divertido y una elegancia estética que deslumbran en la convivencia diaria. Es un perro de tamaño práctico pero con la resistencia física y agilidad de un perro de trabajo de gran talla. Su capacidad para aprender órdenes complejas en tiempo récord, su excelente salud en comparación con otros perros pequeños y su afecto constante lo convierten en un compañero fascinante."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su aguda inteligencia y umbral de estimulación bajo pueden convertirse en un reto si se le priva de retos mentales, desarrollando aburrimiento o ladridos de aviso persistentes. Sus finas extremidades requieren precaución durante su etapa de cachorro para evitar fracturas por caídas de muebles altos. Además, su pelaje sedoso con flecos largos en orejas y cola requiere cepillados frecuentes para mantenerlo libre de enredos."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Es la figura estelar absoluta del grupo Toy en pruebas de agility por su impresionante velocidad de carrera, flexibilidad y precisión de giro. Destaca de forma sobresaliente en obediencia competitiva, aprendizaje de trucos complejos y rutinas de freestyle canino gracias a su procesador cognitivo brillante. Posee además aptitudes magníficas como perro de aviso sonoro y acompañante atlético en caminatas."
+      }
+    ]
+  },
+  {
+    "id": "boston-terrier",
+    "breed": "Boston Terrier",
+    "title": "Boston Terrier: El Caballero Americano de Esmoquin",
+    "epithet": "El Caballero Americano de Esmoquin",
+    "fciGroup": "Grupo 9: Perros de Compañía",
+    "akcGroup": "Non-Sporting Group",
+    "archetypes": [
+      "Cooperación Humana Clásica",
+      "Apego Frágil Afiliativo"
+    ],
+    "motivations": [
+      "Afecto",
+      "Juego",
+      "Compañía"
+    ],
+    "traits": [
+      "Humor",
+      "Dulzura",
+      "Adaptabilidad",
+      "Gentileza"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Juego Dinámico en Casa y Descanso",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Muy Amistoso con Todos",
+      "independencia_cognitiva": "Media"
+    },
+    "summary": "El Boston Terrier es el célebre caballero americano de esmoquin, inconfundible por su patrón de pelaje que simula un traje de gala, su cabeza cuadrada y su mirada redonda e inteligente. Desarrollado en Estados Unidos a partir de cruces entre Bulldog y Terrier, se ha consolidado como un perro urbano ejemplar, simpático, limpio y adaptado a la vida moderna. Su psicología destaca por un temperamento ecuánime, un umbral de estimulación medio, alta resiliencia emocional y una amabilidad genuina.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es divertido, educado, dulce, dócil, inteligente y caracterizado por un fino sentido del humor. El Boston Terrier posee una personalidad equilibrada que combina momentos de juego entusiasta con periodos de descanso apacible. Rara vez ladra sin motivo, siendo un perro de modales ejemplares en la vivienda. Muestra una sociabilidad abierta y amistosa con adultos, niños, visitas y otros perros, careciendo de agresividad."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de lealtad afable, cariño cercano y gran adaptabilidad con su grupo familiar. El Boston Terrier adora participar en las actividades del hogar, buscando el contacto afectuoso sin resultar agobiante. Su adiestramiento es fluido y agradable gracias a su inteligencia cooperativa; responde de forma excelente al refuerzo positivo, las recompensas en juego y la amabilidad, requiriendo una guía serena y coherente."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Ofrece una convivencia doméstica modélica por su limpieza, silencio, comportamiento educado y tamaño práctico para pisos urbanos. Es un compañero de vida tremendamente divertido, cariñoso y paciente con los niños, cuyo pelaje corto requiere un mantenimiento facilísimo. Su carácter amistoso con todo el mundo, su expresividad facial encantadora y su adaptabilidad a la vida moderna lo convierten en un perro familiar sensacional."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su estructura facial braquicefálica lo hace vulnerable a los golpes de calor y al cansancio excesivo en días calurosos, exigiendo precauciones estivales. Sus grandes ojos prominentes requieren atención para prevenir irritaciones o arañazos durante sus paseos por zonas de vegetación. Asimismo, puede presentar propensión a ronquidos nocturnos suaves o flatulencias si no recibe una dieta equilibrada de alta digestibilidad."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en la ejecución de trucos domésticos, juegos de pelota y rutinas de obediencia urbana por su mente despierta y deseo de agradar. Destaca en pruebas de agilidad adaptada para razas pequeñas y en terapia de acompañamiento por su carácter afable y simpático. Su capacidad para mantener modales perfectos en lugares públicos lo convierte en un perro de compañía en ciudad insuperable."
+      }
       ]
     },
     {
-      "id": "bichon-frise",
-      "breed": "Bichón Frisé",
-      "title": "Bichón Frisé: La Nube Alegre de la Simpatía",
-      "epithet": "La Nube Alegre de la Simpatía",
-      "fciGroup": "Grupo 9: Perros de Compañía",
-      "akcGroup": "Non-Sporting Group",
-      "archetypes": [
-        "Apego Frágil Afiliativo",
-        "Hiperreactividad Ornamental"
-      ],
-      "motivations": [
-        "Afecto",
-        "Atención",
-        "Juego"
-      ],
-      "traits": [
-        "Alegría",
-        "Dulzura",
-        "Adaptabilidad",
-        "Sociabilidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Compañía Cercana y Juegos Suaves",
-        "resiliencia_emocional": "Media",
-        "sociabilidad": "Excelente con Niños, Ancianos y Extraños",
-        "independencia_cognitiva": "Baja"
+    "id": "borzoi",
+    "breed": "Borzoi (Galgo Ruso)",
+    "title": "Borzoi: La Aristocracia Escultórica de la Estepa",
+    "epithet": "La Aristocracia Escultórica",
+    "fciGroup": "Grupo 10: Lebreles",
+    "akcGroup": "Hound Group",
+    "archetypes": [
+      "Lebreles (Desapego y Movimiento)",
+      "Autonomía Primitiva / Dignidad"
+    ],
+    "motivations": [
+      "Carrera",
+      "Caza visual",
+      "Reposo"
+    ],
+    "traits": [
+      "Silencio",
+      "Elegancia",
+      "Reserva",
+      "Velocidad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Alto en Reposo, Nulo ante Presas",
+      "motivacion_intrinseca": "Sprint Exclusivo y Descanso Silencioso",
+      "resiliencia_emocional": "Muy Alta",
+      "sociabilidad": "Extremadamente Reservado e Indiferente",
+      "independencia_cognitiva": "Muy Alta"
+    },
+    "summary": "El Borzoi o Galgo Ruso es la personificación de la aristocracia canina, reconocido por su silueta estilizada, rostro alargado y suntuoso pelaje sedoso. Desarrollado por la nobleza zarista para la caza de lobos y liebres en las vastas estepas, combina velocidad explosiva en carrera con calma monacal en interiores. Su psicología destaca por un temperamento reservado, silencioso e independiente, resiliencia elevada y nobleza serena.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es independiente, educado, digno, silencioso y caracterizado por una reserva natural que evita estridencias en el día a día. En el hogar, el Borzoi se comporta con la tranquilidad de un felino gigante, descansando plácidamente sin causar molestias ni emitir ladridos. Muestra una actitud educada e indiferente hacia personas extrañas, manteniendo siempre una distancia prudente, refinada y serena."
       },
-      "summary": "Aspecto de bola de algodón blanco. Extrovertido, afectuoso y sin agresión, diseñado para acompañar con dulzura.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Encantador, alegre y sumamente cariñoso. No genera tensiones."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Prospera en el regazo y en el ambiente familiar cálido."
-        }
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de afecto discreto, lealtad serena y respeto mutuo con su guía y familia, sin recurrir a demandas insistentes de atención física. El Galgo Ruso no es un perro de obediencia servil ni repetición monótona. Su adiestramiento debe guiarse mediante métodos positivos y paciencia, comprendiendo su alta independencia cognitiva y evitando correcciones duras que dañen su sensibilidad."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Ofrece un comportamiento doméstico de una pulcritud y silencio admirables, siendo un habitante del hogar que apenas se hace notar cuando descansa. Su belleza plástica aporta una presencia aristocrática única al entorno familiar. Es un perro pacífico que no genera conflictos con otros caninos. Para tutores tranquilos que valoran la serenidad y la independencia, representa una opción de convivencia idónea."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su potente instinto de caza por persecución visual significa que ante el movimiento de un animal pequeño en campo abierto arrancará en sprint fulgurante, siendo difícil detenerlo mediante llamada verbal. Requiere pasear en áreas cercadas y seguras cuando se le suelta. Además, su gran tamaño necesita camas amplias, mientras que su fino pelaje sedoso exige cepillado continuo para evitar enredos."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como velocista excepcional de persecución en distancias intermedias, combinando zancada elástica de gran amplitud con aceleración impresionante. Posee una visión periférica y telescópica sumamente aguda para detectar movimientos a largas distancias. Destaca además en carreras de lebreles en pista y señuelo artificial, mostrando una plasticidad gimnástica prodigiosa y una conducta doméstica higiénica que armoniza la convivencia familiar."
+      }
+    ]
+  },
+  {
+    "id": "galgo-espanol",
+    "breed": "Galgo Español",
+    "title": "Galgo Español: La Nobleza Silenciosa de los Campos",
+    "epithet": "La Nobleza Silenciosa de los Campos",
+    "fciGroup": "Grupo 10: Lebreles",
+    "akcGroup": "Hound Group",
+    "archetypes": [
+      "Lebreles (Desapego y Movimiento)",
+      "Apego Frágil Afiliativo"
+    ],
+    "motivations": [
+      "Carrera",
+      "Reposo",
+      "Afecto"
+    ],
+    "traits": [
+      "Timidez noble",
+      "Silencio",
+      "Dulzura",
+      "Velocidad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio en Casa, Nulo en Carrera",
+      "motivacion_intrinseca": "Sprint en Abierto y Sofá Cálido",
+      "resiliencia_emocional": "Media",
+      "sociabilidad": "Dulce y Cauteloso pero Pacifico",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Galgo Español es el atleta milenario de la península ibérica, célebre por su silueta enjuta, mirada dulce y nobleza silenciosa. Criado históricamente para la carrera y la caza de liebres en campos abiertos, posee un corazón atlético y aceleración asombrosa. Su psicología combina delicadeza doméstica con un impulso de sprint libre, umbral bajo en carrera, sociabilidad pacífica y descanso constante.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es humilde, reservado, dulce, silencioso y marcado por una timidez noble que evita cualquier conflicto. En la casa es la serenidad personificada, pasando gran parte de la jornada durmiendo plácidamente en camas mullidas junto a sus tutores. El Galgo Español no manifiesta agresividad hacia personas ni caninos, relacionándose con prudencia, respeto y gran calma en el entorno."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla un apego profundo, sutil y reconfortante con sus cuidadores, expresando su afecto a través de miradas tiernas y presencia calmada. Es un perro sumamente sensible que necesita un trato respetuoso, cariñoso y empático. Su adiestramiento debe basarse en la motivación positiva y la paciencia, ya que cualquier grito o método coercitivo lo asusta y destruye su confianza con rapidez."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una convivencia hogareña llena de paz, sin ladridos ni comportamientos destructivos, siendo uno de los perros más tranquilos en interiores. Su manto fino de poco mantenimiento es sumamente limpio y libre de olores. Además, es un perro muy pacífico con otros caninos, adaptándose magníficamente a pisos de ciudad si se le brindan paseos diarios y camas cálidas."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su marcado instinto de caza por persecución visual exige prudencia al soltarlo en espacios abiertos que no estén vallados, ya que perseguirá presas ignorando la llamada verbal. Al poseer capa fina de piel y escasa grasa corporal, es sensible al frío de invierno y al calor extremo, requiriendo abrigos adecuados. Algunos ejemplares rescatados necesitan socialización gradual para superar miedos."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Destaca como corredor de resistencia y velocidad sobresaliente en terreno rústico y desigual, capaz de realizar giros cerrados a gran velocidad persiguiendo un señuelo. Posee una visión panorámica privilegiada para detectar estímulos en movimiento. En el ámbito deportivo, brilla en carreras de coursing. En el hogar, su habilidad distintiva es brindar un acompañamiento silencioso, afectuoso e higiénico en la convivencia."
+      }
+    ]
+  },
+  {
+    "id": "greyhound",
+    "breed": "Greyhound (Galgo Inglés)",
+    "title": "Greyhound: El Guepardo Canino del Sofá",
+    "epithet": "El Guepardo Canino del Sofá",
+    "fciGroup": "Grupo 10: Lebreles",
+    "akcGroup": "Hound Group",
+    "archetypes": [
+      "Lebreles (Desapego y Movimiento)",
+      "Contención Pesada / Calma Profunda"
+    ],
+    "motivations": [
+      "Carrera",
+      "Reposo",
+      "Confort"
+    ],
+    "traits": [
+      "Velocidad extrema",
+      "Calma doméstica",
+      "Dulzura",
+      "Silencio"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Alto en Reposo",
+      "motivacion_intrinseca": "Sprint de Corta Distancia y Descanso",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Amable y Tranquilo con Todos",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Greyhound o Galgo Inglés es el velocista supremo del reino animal, capaz de alcanzar 70 km/h gracias a su poderosa musculatura y corazón atlético. A pesar de su imponente aceleración, en el hogar es conocido como el 'dormilón de 45 kilos' por su carácter sereno. Su psicología combina un umbral de estimulación alto en descanso, sprint explosivo y afabilidad.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es apacible, silencioso, dulce, educado y marcado por una calma imperturbable dentro de la vivienda. El Greyhound pasa la mayor parte del día durmiendo plácidamente estirado en sofás o camas mullidas, comportándose como un compañero dócil y nada invasivo. Muestra una actitud amigable hacia personas, niños y otros perros, careciendo de agresividad y disfrutando de paseos tranquilos."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una relación de cariño apacible, lealtad constante y devoción sin estridencias hacia todos los integrantes del hogar. El Galgo Inglés disfruta de la cercanía de sus tutores, apoyando suavemente su cabeza en el regazo para pedir afecto. Su educación es sencilla debido a su docilidad natural; responde con gratitud a elogios amables, caricias y premios, mientras que correcciones bruscas son innecesarias."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Ofrece un comportamiento doméstico de una tranquilidad inigualable, siendo una mascota limpia y silenciosa que rara vez ladra en casa. A pesar de su condición de atleta supremo, requiere moderada actividad diaria, conformándose con paseos tranquilos y momentos puntuales de libertad. Su carácter amigable con extraños y su pelaje corto fácil de mantener lo convierten en un compañero maravilloso."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su instinto innato de persecución visual ante animales pequeños exige precaución si hay gatos en la casa, requiriendo pruebas de compatibilidad previas. En el exterior, si divisa una presa en movimiento, acelerará a máxima velocidad ignorando las llamadas, por lo que debe soltarse solo en zonas cercadas. Además, su fina piel y escasa grasa corporal lo hacen sensible al frío."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Es el plusmarquista absoluto de la velocidad canina en sprint corto, con una potencia de aceleración y elasticidad espinal que superan a cualquier otra raza. Brilla de forma estelar en carreras de pista y coursing sobre señuelo artificial. En el plano doméstico, destaca por su habilidad para integrarse pacíficamente en la dinámica familiar, aportando una convivencia silenciosa, limpia y reconfortante."
+      }
+    ]
+  },
+  {
+    "id": "whippet",
+    "breed": "Whippet",
+    "title": "Whippet: La Gracia Veloz en Miniatura",
+    "epithet": "La Gracia Veloz en Miniatura",
+    "fciGroup": "Grupo 10: Lebreles",
+    "akcGroup": "Hound Group",
+    "archetypes": [
+      "Lebreles (Desapego y Movimiento)",
+      "Apego Frágil Afiliativo"
+    ],
+    "motivations": [
+      "Carrera",
+      "Contacto físico",
+      "Confort"
+    ],
+    "traits": [
+      "Sensibilidad",
+      "Velocidad",
+      "Dulzura",
+      "Silencio"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo en Movimiento",
+      "motivacion_intrinseca": "Carrera de Agilidad y Cobijo en la Cama",
+      "resiliencia_emocional": "Media",
+      "sociabilidad": "Muy Afable y Cariñoso",
+      "independencia_cognitiva": "Media-Alta"
+    },
+    "summary": "El Whippet es la gracia veloz en miniatura, desarrollado en Gran Bretaña mediante el cruce entre galgos y terriers para carreras populares y caza menor. De silueta aerodinámica y mirada tierna, combina la velocidad explosiva de sus parientes lebreles con una dimensión práctica y afectuosidad desbordante. Su psicología destaca por apego afiliativo, umbral bajo en movimiento, dulzura profunda y confort.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es extremadamente sensible, dulce, cariñoso, silencioso y lleno de una delicadeza encantadora en el entorno doméstico. El Whippet en casa se comporta como un peluche mimoso que busca continuamente rincones cálidos y cobijos bajo las mantas. No emite ladridos molestos ni muestra actitudes agresivas, siendo muy educado. Sin embargo, al salir al campo, se transforma en un rayo de agilidad."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de afecto estrecho, apego dulce y profunda necesidad de sentir el calor corporal de sus cuidadores. Al Whippet le encanta dormir pegado a su tutor o acurrucarse a su lado mientras descansa en el salón. Su adiestramiento es muy sencillo gracias a su docilidad y sensibilidad; responde maravillosamente al refuerzo positivo, caricias y tono suave de voz."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Ofrece un tamaño mediano ideal que facilita la convivencia en departamentos pequeños y el transporte en viajes. Es un perro sumamente limpio, casi sin olor corporal y cuyo pelaje fino apenas requiere mantenimiento. Su carácter afectuoso, silencioso y paciente lo convierte en un compañero fabuloso para familias. Su mezcla de elegancia visual y ternura cariñosa hace que convivir sea un deleite."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Al carecer de subpelo y poseer una grasa corporal mínima, es muy propenso a pasar frío en invierno, requiriendo ropa de abrigo adecuada para pasear. Su potente instinto de persecución visual ante animales pequeños puede hacer que eche a correr tras presas ignorando la llamada, por lo que exige precaución en zonas no valladas. Su sensibilidad requiere tutores afectuosos."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Destaca por una aceleración relámpago y agilidad asombrosa en distancias cortas y medias, alcanzando velocidades de hasta 55 km/h. Brilla de forma estelar en competencias de coursing, agility y carreras de lebreles. En el ámbito doméstico, su mayor destreza es brindar un contacto físico afable, una compañía silenciosa e higiénica y una capacidad única para acurrucarse plácidamente en casa."
+      }
+    ]
+  },
+  {
+    "id": "afghan-hound",
+    "breed": "Lebrel Afgano (Afghan Hound)",
+    "title": "Lebrel Afgano: La Majestad Sedosa del Desierto",
+    "epithet": "La Majestad Sedosa del Desierto",
+    "fciGroup": "Grupo 10: Lebreles",
+    "akcGroup": "Hound Group",
+    "archetypes": [
+      "Autonomía Primitiva / Dignidad",
+      "Lebreles (Desapego y Movimiento)"
+    ],
+    "motivations": [
+      "Libertad",
+      "Carrera",
+      "Autonomía"
+    ],
+    "traits": [
+      "Independencia",
+      "Soberanía",
+      "Elegancia",
+      "Orgullo"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Alto",
+      "motivacion_intrinseca": "Carrera Libre Autónoma y Dignidad",
+      "resiliencia_emocional": "Muy Alta",
+      "sociabilidad": "Muy Distante e Indiferente a Extraños",
+      "independencia_cognitiva": "Extrema"
+    },
+    "summary": "El Lebrel Afgano es la soberana majestad sedosa del desierto, famoso por su espectacular manto largo, porte distinguido y agilidad montañesa. Criado en la geografía accidentada de Afganistán para la caza autónoma de felinos y gazelas, combina un físico de pasarela con la resistencia rústica de un cazador primitivo. Su psicología destaca por independencia cognitiva extrema, orgullo, reserva e imprevisibilidad.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es orgulloso, soberano, independiente, distante y caracterizado por una serenidad misteriosa que no busca complacer por sumisión. El Lebrel Afgano se comporta en el hogar con una calma aristocrática, observando su entorno con una mirada lejana que parece atravesar a las personas. Muestra una actitud sumamente reservada e indiferente hacia visitas extrañas, relacionándose sin agresividad pero guardando una marcada distancia."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de igual a igual basada en la fascinación mutua, el respeto silencioso y un afecto reservado que entrega a muy pocos. El Afgano no es un perro servil ni obediente en el sentido tradicional, exigiendo tutores que comprendan su naturaleza felina e independiente. Su adiestramiento requiere paciencia infinita, creatividad y motivación positiva pura, evitando cualquier tipo de imposición o gritos."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una belleza plástica deslumbrante y una presencia majestuosa que cautiva a los amantes de la estética canina. En el hogar es un habitante limpio, silencioso y tranquilo que no genera alboroto ni ladridos molestos. Su nobleza primitiva, su trote flotante de gran vistosidad y su lealtad serena hacia sus elegidos convierten la convivencia con este lebrel en una experiencia única."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su largo, denso y sedoso pelaje exige un compromiso abrumador de mantenimiento, con varias horas de cepillado meticuloso a la semana y baños regulares para evitar nudos. Su extrema independencia cognitiva hace que el control de llamada sin correa sea casi imposible si detecta un estímulo en movimiento. Tampoco es adecuado para personas que busquen un perro sumiso u obediente."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale por una agilidad física prodigiosa para negociar terrenos rocosos y desérticos a gran velocidad, utilizando sus articulaciones cadéricas flexibles para giros imposibles. Brilla de forma estelar en competencias de coursing por señuelo por su velocidad y visión telescópica. En el ámbito de exhibición, su trote flotante con la cabeza en alto y el pelaje al viento ofrece un espectáculo estético."
+      }
+    ]
+  },
+  {
+    "id": "saluki",
+    "breed": "Saluki (Galgo Persa)",
+    "title": "Saluki: La Perla del Viento de Arabia",
+    "epithet": "La Perla del Viento de Arabia",
+    "fciGroup": "Grupo 10: Lebreles",
+    "akcGroup": "Hound Group",
+    "archetypes": [
+      "Lebreles (Desapego y Movimiento)",
+      "Autonomía Primitiva / Dignidad"
+    ],
+    "motivations": [
+      "Carrera",
+      "Caza visual",
+      "Respeto"
+    ],
+    "traits": [
+      "Gracejo",
+      "Dignidad",
+      "Velocidad de fondo",
+      "Sensibilidad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Alto",
+      "motivacion_intrinseca": "Acoso Visual de Gacelas y Serenidad",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Reservado y Muy Digno",
+      "independencia_cognitiva": "Muy Alta"
+    },
+    "summary": "El Saluki o Galgo Persa es la legendaria perla del viento de Arabia, venerado históricamente por tribus beduinas como regalo divino de gracia y velocidad. Diseñado para la persecución de gacelas en las abrasadoras arenas del desierto, posee anatomía grácil, orejas plumadas y resistencia de fondo inigualable. Su psicología se rige por temperamento reservado, nobleza, resiliencia elevada y serenidad.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es sereno, tranquilo, limpio, reservado y caracterizado por una dignidad misteriosa que impone respeto sin agresividad. En la vivienda, el Saluki es la calma encarnada, reposando pacíficamente en lugares cómodos y aislados sin generar ruido ni desorden. Muestra una actitud distanciada e indiferente hacia personas desconocidas, pero mantiene un comportamiento pacífico y educado en todo momento dentro del hogar."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una lealtad silenciosa, profunda y sincera con su grupo familiar, expresando su afecto de forma refinada y sin caer en conductas pegajosas. El Galgo Persa respeta a sus cuidadores y busca una convivencia armoniosa basada en la confianza mutua. Su educación requiere sensibilidad, paciencia y métodos positivos suaves, comprendiendo su alta independencia cognitiva y evitando cualquier trato brusco o impositivo."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un comportamiento doméstico de una pulcritud e higiene ejemplares, siendo un animal silencioso que no ladra en casa. Su belleza oriental, sus orejas plumadas y su estampa liviana brindan una presencia estética fascinante al hogar. Es un perro sumamente pacífico que no busca pleitos con otros caninos, ofreciendo una compañía fiel, serena y profundamente agradecida a sus tutores."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su potente instinto de persecución visual ante animales pequeños exige mantenerlo sujeto con correa en entornos no cercados, ya que saldrá corriendo tras presas potenciales ignorando las llamadas verbales. Su anatomía delgada y baja grasa corporal lo hacen sensible al frío intenso y a superficies duras para dormir. Además, requiere un cepillado periódico en los flecos de orejas y cola."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como un galgo de resistencia inigualable en carrera de larga distancia sobre terrenos secos y arenosos, manteniendo altas velocidades donde otros lebreles se agotan. Posee una vista privilegeda de gran alcance para detectar presas lejanas. En deportes caninos, destaca brillantemente en pruebas de coursing sobre señuelo artificial por su combinación única de velocidad, resistencia de fondo y ligereza corporal."
+      }
+    ]
+  },
+  {
+    "id": "irish-wolfhound",
+    "breed": "Irish Wolfhound (Lobero Irlandés)",
+    "title": "Lobero Irlandés: El Gigante Amable de la Galia",
+    "epithet": "El Gigante Amable de la Galia",
+    "fciGroup": "Grupo 10: Lebreles",
+    "akcGroup": "Hound Group",
+    "archetypes": [
+      "Contención Pesada / Calma Profunda",
+      "Lebreles (Desapego y Movimiento)"
+    ],
+    "motivations": [
+      "Afecto",
+      "Reposo",
+      "Auxilio"
+    ],
+    "traits": [
+      "Gentileza",
+      "Soberanía",
+      "Calma",
+      "Poder contenido"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Muy Alto",
+      "motivacion_intrinseca": "Compañía Pacífica y Galope Noble",
+      "resiliencia_emocional": "Muy Alta",
+      "sociabilidad": "Pacífico y Tolerante con Todos",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Irish Wolfhound o Lobero Irlandés es el gigante amable de la Galia y una de las razas más altas, alcanzando 90 cm a la cruz. Criado ancestralmente para la caza de lobos y alces en la verde Irlanda, encarna la máxima 'cordero en casa, león en la caza'. Su psicología destaca por poder contenido, gentileza, umbral alto y benevolencia.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es pacífico, extremadamente dulce, sereno, noble y poseedor de un autocontrol sorprendente en todas sus acciones. A pesar de su imponente tamaño corporal, el Lobero Irlandés no manifiesta agresividad hacia las personas ni busca conflictos con otros animales. En el hogar es la calma hecha perro, moviéndose con cuidado y pasando largos ratos descansando tranquilamente en camas mullidas."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla una relación de afecto profundo, lealtad entrañable y cariño sereno con su familia humana. Al Lobero Irlandés le encanta recostar su enorme cabeza o apoyarse suavemente contra las piernas de sus tutores para pedir mimos. Su educación es fluida debido a su docilidad y sensibilidad; responde maravillosamente a la motivación positiva y palabras amables, sufriendo ante la dureza."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una presencia majestuosa y una bondad infinita que transforma el ambiente del hogar en un espacio de paz absoluta. Es un perro sumamente paciente y tolerante con todos los miembros de la casa, actuando con delicadeza. A pesar de su enorme corpulencia, no es hiperactivo en casa y su pelaje duro requiere un mantenimiento sencillo de cepillado periódico y bañado."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su gigantesco volumen físico requiere espacios habitables amplios, vehículos adaptados para su transporte y un presupuesto financiero considerable en alimentación de alta calidad y cuidados veterinarios. Trágicamente, al igual que ocurre con otras razas de talla gigante, posee una esperanza de vida sensiblemente más reducida que la media canina. Además, requiere supervisión rigurosa durante su desarrollo óseo para prevenir patologías."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como un corredor de potencia y galope elástico imponente, capaz de cubrir distancias masivas a gran velocidad con zancadas colosales. Posee una fuerza de contención natural disuasoria insuperable combinada con un carácter apacible. En el hogar, su habilidad principal es brindar una compañía afectuosa, paciente y serena que llena de paz la convivencia familiar, siendo un embajador noble."
+      }
+    ]
+  },
+  {
+    "id": "italian-greyhound",
+    "breed": "Pequeño Lebrel Italiano (Piccolo Levriero)",
+    "title": "Pequeño Lebrel Italiano: La Escultura de Cristal y Viento",
+    "epithet": "La Escultura de Cristal y Viento",
+    "fciGroup": "Grupo 10: Lebreles",
+    "akcGroup": "Toy Group",
+    "archetypes": [
+      "Apego Frágil Afiliativo",
+      "Lebreles (Desapego y Movimiento)"
+    ],
+    "motivations": [
+      "Contacto físico",
+      "Confort",
+      "Afecto"
+    ],
+    "traits": [
+      "Sensibilidad",
+      "Ternura",
+      "Velocidad mini",
+      "Fragilidad aparente"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Calor Humano y Piques de Carrera",
+      "resiliencia_emocional": "Baja-Media",
+      "sociabilidad": "Muy Afectuoso pero Asustadizo con Ruidos",
+      "independencia_cognitiva": "Media"
+    },
+    "summary": "El Pequeño Lebrel Italiano es la refinada escultura de cristal y viento del renacimiento, admirado por su silueta grácil, movimientos etéreos y devoción amorosa. De origen milenario y predilecto entre la nobleza europea, combina la velocidad miniatura de un lebrel con la ternura delicada de un perro de regazo. Su psicología destaca por apego afiliativo, sensibilidad emocional y confort.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es sensible, afectuoso, alegre, refinado y caracterizado por una delicadeza etérea en sus movimientos. El Piccolo Levriero es una joya de compañía que busca estar siempre cerca de sus cuidadores, sintiendo devoción por el confort. En el hogar se comporta de forma limpia y cariñosa, aunque puede mostrar cierta timidez ante desconocidos y ruidos estruendosos, prefiriendo la calma."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla una relación de apego estrecho, ternura incondicional y profunda necesidad de estar en contacto físico directo con su tutor. Le fascina acurrucarse bajo las cobijas de la cama, descansar en el regazo y recibir caricias constantes. Su adiestramiento requiere una suavidad extrema y refuerzo positivo suave, ya que cualquier tono de voz duro o impaciencia lo asusta."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un afecto entrañable, una estética refinada y un tamaño diminuto sumamente práctico para pisos de ciudad. Es un perro excepcionalmente limpio, sin olor corporal y cuyo manto corto requiere mínimos cuidados de aseo. Su dulzura constante, su trote elativo de alta gracia y su profunda devoción cariñosa convierten a este pequeño lebrel en una mascota verdaderamente encantadora."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Sus finas y delicadas extremidades requieren cuidados especiales y atentos durante la etapa de cachorro para evitar fracturas óseas por saltos desafortunados desde muebles altos. Es un perro extremadamente friolero que sufre con las bajas temperaturas, necesitando ropa de abrigo adecuada en invierno y buscando continuamente fuentes de calor. Además, su aprendizaje de la higiene del baño puede requerir tiempo."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como un atleta miniatura de aceleración y galope elástico asombroso, capaz de alcanzar velocidades de hasta 40 km/h a pesar de su diminuto tamaño. Destaca en competencias de agility en categoría toy y coursing con señuelo artificial. En el hogar, su habilidad distintiva es brindar un cariño reconfortante, buscar cobijo bajo cobijas con extrema gracia y ser cariñoso."
+      }
       ]
     },
     {
-      "id": "bichon-maltes",
-      "breed": "Bichón Maltés",
-      "title": "Bichón Maltés: La Elegancia de Manto Sedoso",
-      "epithet": "La Elegancia de Manto Sedoso",
-      "fciGroup": "Grupo 9: Perros de Compañía",
-      "akcGroup": "Toy Group",
-      "archetypes": [
-        "Apego Extremo (Fusión Emocional)",
-        "Hiperreactividad Ornamental"
-      ],
-      "motivations": [
-        "Afecto",
-        "Cercanía",
-        "Atención"
-      ],
-      "traits": [
-        "Dulzura",
-        "Sensibilidad",
-        "Vivacidad",
-        "Fidelidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo-Medio",
-        "motivacion_intrinseca": "Afecto Humano Directo",
-        "resiliencia_emocional": "Media-Baja",
-        "sociabilidad": "Muy Cariñoso con su Dueño, Atento a Visitas",
-        "independencia_cognitiva": "Baja"
+    "id": "pastor-de-anatolia",
+    "breed": "Pastor de Anatolia (Kangal)",
+    "title": "Kangal: El Guardián de los Toros de Turquía",
+    "epithet": "El Guardián de Turquía",
+    "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
+    "akcGroup": "Working Group",
+    "archetypes": [
+      "Protección Territorial Absoluta",
+      "Guardia Ancestral de Tiempo Largo"
+    ],
+    "motivations": [
+      "Territorialidad",
+      "Custodia"
+    ],
+    "traits": [
+      "Inflexibilidad",
+      "Poder",
+      "Silencio"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Alto",
+      "motivacion_intrinseca": "Custodia de Rebaño",
+      "resiliencia_emocional": "Extrema",
+      "sociabilidad": "Inflexible con Intrusos",
+      "independencia_cognitiva": "Extrema"
+    },
+    "summary": "El Pastor de Anatolia o Kangal es un coloso guardián de rebaños originario de las mesetas turcas, reconocido mundialmente por poseer la mordida más potente de la especie canina. Moldado por siglos de selección rústica para defender el ganado frente a lobos y osos, combina una osamenta pesada con agilidad funcional y resistencia al clima extremo. Su psicología está marcada por un instinto de protección territorial absoluto, serenidad majestuosa, independencia cognitiva extrema y una determinación inflexible ante amenazas reales.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es sumamente reservado, sereno, paciente, observador y dotado de un temple imperturbable mientras no detecte peligro en su perímetro. El Kangal pasa el día vigilando su territorio desde posiciones elevadas con aparente calma, pero manteniendo una alerta constante sobre el entorno. No muestra agitación ni ladridos innecesarios en su rutina diaria. Ante la presencia de extraños o intrusos no autorizados, su actitud se vuelve rígida, disuasoria e inflexible, protegiendo su dominio con firmeza soberana."
       },
-      "summary": "Una de las razas de compañía más antiguas del Mediterráneo. Pelo largo blanco y sedoso con temperamento cariñoso.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Alerta, dulce y fiel. Reacciona a los pasos con curiosidad."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Desarrolla una dependencia afectiva profunda y dulce."
-        }
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una relación de lealtad noble, devoción protectora y respeto ancestral hacia su guía y la familia que considera bajo su tutela. El Pastor de Anatolia no es un perro sumiso ni obediente por simple complacencia, sino un protector autónomo que analiza las situaciones con criterio propio. Su adiestramiento requiere tutores experimentados, serenos y coherentes que se ganen su respeto a través del liderazgo tranquilo, evitando rotundamente cualquier violencia o coerción física."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un valor de custodia y seguridad territorial inigualable, siendo el guardián de rebaños y propiedades más eficaz del mundo frente a depredadores o intrusos. Su comportamiento en el hogar es silencioso, limpio y sumamente calmado cuando reconoce la normalidad del ambiente. Su rusticidad física es extraordinaria, con una salud fuerte y pocas necesidades de aseo especializado, convirtiéndolo en un protector noble, independiente y profundamente leal para entornos rurales amplios."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su dominancia territorial y extrema sospecha hacia extraños imposibilitan su adaptación a pisos urbanos o vecindarios concurridos sin espacios vallados. Si no se gestiona con conocimiento etológico desde cachorro, puede volverse peligroso e inmanejable ante visitas o personas ajenas al hogar. Además, su descomunal fuerza física y elevada independencia cognitiva requieren instalaciones de alta seguridad, junto con un manejo firme que prevenga incidentes de agresión territorial."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como guardián disuasorio y defensor activo de rebaños frente a grandes depredadores en condiciones climáticas adversas y terrenos accidentados. Posee una fuerza de presión maxilar colosal, una visión panorámica de largo alcance y la capacidad de patrullar perímetros masivos durante jornadas nocturnas prolongadas sin fatiga. En el trabajo de campo, su mayor destreza radica en neutralizar amenazas sin necesidad de conflicto físico si el intruso retrocede."
+      }
+    ]
+  },
+  {
+    "id": "briard",
+    "breed": "Pastor de Brie (Briard)",
+    "title": "Briard: Corazón Envalentonado bajo Pelaje Mop",
+    "epithet": "Corazón Envalentonado",
+    "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
+    "akcGroup": "Herding Group",
+    "archetypes": [
+      "Protección Estructurada Moderna"
+    ],
+    "motivations": [
+      "Familia",
+      "Trabajo"
+    ],
+    "traits": [
+      "Lealtad",
+      "Energía",
+      "Vigilancia"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Pastoreo y Guardia",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Atento con la Familia",
+      "independencia_cognitiva": "Media"
+    },
+    "summary": "El Pastor de Brie o Briard es un ancestral perro de trabajo francés, célebre por su abundante manto largo de aspecto rústico y un carácter equilibrado que combina valentía con sensibilidad. Desarrollado para el pastoreo y la guardia de propiedades, posee una estructura fuerte, agilidad atlética y una mirada expresiva bajo su característico flequillo. Su psicología destaca por una lealtad incondicional hacia su grupo familiar, agudeza cognitiva, instinto de protección estructurado y energía constante.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es alegre, alerta, valeroso, inteligente y profundamente devoto de su núcleo familiar. El Briard conserva un marcado instinto guardián que lo mantiene vigilante ante la presencia de desconocidos, mostrando reserva inicial pero sin agresividad injustificada. En el ámbito doméstico se comporta con gran afectuosidad y entusiasmo, disfrutando de las dinámicas de juego con niños. Su mente despierta procesa los cambios ambientales rápidamente, manteniéndose siempre dispuesto a participar en actividades."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de apego intenso, lealtad inquebrantable y necesidad de integración total en la vida familiar cotidiana. El Pastor de Brie necesita sentirse parte activa del grupo, sufriendo si se le aisla en un patio sin interacción. Su educación requiere firmeza respetuosa, consistencia y métodos de motivación positiva, ya que es una raza sensible que responde mal a la brusquedad, pero aprende con enorme rapidez cuando confía."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Ofrece una combinación perfecta entre un excelente perro de guardia disuasorio y un compañero familiar afectuoso, alegre y protector con los niños. Su inteligencia funcional facilita el aprendizaje de tareas complejas, deportes caninos y rutinas de obediencia. Es un perro versátil, enérgico y rústico que aporta vitalidad al hogar, mostrando un compromiso afectuoso constante con todas las personas a quienes considera miembros de su manada."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su abundante pelaje largo exige un compromiso constante de cepillado meticuloso varias veces por semana para evitar nudos dolorosos y acumulación de suciedad. Requiere un nivel de ejercicio físico y estimulación mental elevado para prevenir la frustración o comportamientos destructivos por aburrimiento. Además, su marcada tendencia protectora exige una socialización temprana rigurosa para evitar que se vuelva excesivamente receloso ante visitas o personas extrañas."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Destaca por sus aptitudes tradicionales para el pastoreo y la conducción de rebaños mediante movimientos precisos y control territorial. Posee una gran agilidad física, potencia de salto y resistencia atlética que lo hacen sobresalir en pruebas de agility, obediencia y trabajo de salvamento. Asimismo, sus cualidades innatas para la guardia disuasoria y la detección sonora lo convierten en un protector doméstico atento, valiente y sumamente confiable."
+      }
+    ]
+  },
+  {
+    "id": "pastor-de-los-pirineos",
+    "breed": "Pastor de los Pirineos",
+    "title": "Pastor de los Pirineos: La Centella de la Montaña",
+    "epithet": "La Centella de la Montaña",
+    "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
+    "akcGroup": "Herding Group",
+    "archetypes": [
+      "Inteligencia Funcional Obsesiva"
+    ],
+    "motivations": [
+      "Agilidad",
+      "Trabajo"
+    ],
+    "traits": [
+      "Vivacidad",
+      "Astucia",
+      "Nervio"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Mover Ganado",
+      "resiliencia_emocional": "Media",
+      "sociabilidad": "Reservado",
+      "independencia_cognitiva": "Media"
+    },
+    "summary": "El Pastor de los Pirineos es el más pequeño y vivaz de los perros de pastor franceses, famoso por su agilidad felina, mirada astuta y energía incansable. Moldado en la alta montaña para la conducción de rebaños en terrenos escarpados, posee una anatomía ligada al nervio, ligereza física y gran resistencia. Su psicología destaca por un umbral de estimulación bajo, una inteligencia brillante orientada al trabajo y una hiperconexión constante con su guía.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es vivaz, despierto, astuto, alegre e hiperactivo si no dispone de tareas que canalicen su inagotable energía mental. El Pastor de los Pirineos vive en permanente estado de alerta, reaccionando con rapidez de centella ante cualquier estímulo del entorno. Muestra una actitud reservada e indecisa frente a personas ajenas a su círculo, prefiriendo mantener la distancia hasta evaluar la situación con su inteligencia analítica habitual."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una relación de lealtad obsesiva, devoción absoluta e intensa comunicación corporal con su tutor de referencia. Este pequeño pastor vive pendiente de cada gesto, mirada o palabra de su guía, buscando complacerlo en todo momento. Su educación requiere paciencia, sensibilidad y un adiestramiento positivo dinámico, evitando correcciones bruscas que puedan dañar su temperamento nervioso, mientras se potencia su gran deseo de aprendizaje."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un entusiasmo desbordante, una inteligencia prodigiosa y una capacidad de aprendizaje que deslumbran en cualquier disciplina deportiva o de trabajo. Es un compañero inseparable para amantes del senderismo de montaña, canicross y actividades al aire libre que exijan resistencia física. Su tamaño compacto facilita su transporte, mientras que su devoción afectuosa hacia la familia lo convierte en un amigo leal, simpático y muy divertido."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su bajo umbral de estimulación y alta reactividad pueden desencadenar ladridos compulsivos o nerviosismo si carece de ejercicio físico diario y retos cognitivos exigentes. No es adecuado para personas sedentarias o pisos sin actividad constante, ya que el aburrimiento deteriora su equilibrio emocional. Además, su reserva hacia extraños requiere una socialización temprana cuidada para evitar conductas miedosas o desconfiadas en entornos urbanos concurridos."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale de forma estelar en pruebas de agility por su impresionante velocidad de giro, aceleración, ligereza física y capacidad de anticipación a las órdenes de su guía. Es un especialista nato en la conducción de ganado en pendientes pronunciadas y pasos estrechos de montaña. Destaca también en obediencia deportiva, aprendizaje de trucos complejos y juegos de disco volador gracias a su reflejo atlético único."
+      }
+    ]
+  },
+  {
+    "id": "bobtail",
+    "breed": "Old English Sheepdog (Bobtail)",
+    "title": "Bobtail: El Peluche Gigante Pastor",
+    "epithet": "El Peluche Gigante Pastor",
+    "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
+    "akcGroup": "Herding Group",
+    "archetypes": [
+      "Cooperación Humana Clásica"
+    ],
+    "motivations": [
+      "Familia",
+      "Juego"
+    ],
+    "traits": [
+      "Alegría",
+      "Dulzura",
+      "Paciencia"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Juego y Pastoreo",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Excelente",
+      "independencia_cognitiva": "Media"
+    },
+    "summary": "El Old English Sheepdog o Bobtail es el simpático gigante bonachón del grupo de pastor, famoso por su denso manto frondoso gris y blanco y su característico ladrido de tono hueco. Desarrollado en Gran Bretaña para la conducción de ganado al mercado, combina una corpulencia fuerte con una agilidad alegre y juguetona. Su psicología destaca por una gran resiliencia emocional, dulzura inagotable, paciencia infinita con los niños y una sociabilidad abierta con todos.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es jovial, apacible, cariñoso, extrovertido y dotado de un espíritu juguetón que conserva hasta edad avanzada. El Bobtail aborda la vida cotidiana con un entusiasmo amigable que contagia alegría a toda la familia. No muestra agresividad ni tendencias territoriales problemáticas, relacionándose con niños, visitas y otros caninos con suma paciencia. Su andar contoneado y su expresión afectuosa reflejan un carácter estable, equilibrado y noble."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla una relación de afecto profundo, lealtad constante y devoción entrañable con todos los integrantes del hogar. Al Bobtail le apasiona sentirse rodeado de sus seres queridos y participar en dinámicas de juego familiar. Su educación es fluida y gratificante cuando se emplean métodos de refuerzo positivo y paciencia, respondiendo maravillosamente al afecto y las caricias, ya que busca agradar de manera natural a sus tutores."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un carácter extraordinariamente amigable, tierno y paciente que lo convierte en uno de los mejores compañeros para familias con niños pequeños. Es un perro muy dócil, equilibrado y sin malicia, que tolera con calma el alboroto doméstico. Su adaptabilidad a la convivencia, su sociabilidad con desconocidos y su naturaleza afectuosa hacen que tener un Bobtail llene el hogar de momentos alegres y reconfortantes."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su profuso y largo pelaje requiere un compromiso de acicalado abrumador, exigiendo cepillados meticulosos casi diarios para prevenir nudos masivos y mantener la higiene en hocico y patas. Además, durante paseos en días lluviosos o por el campo, su manto arrastra barro, ramas y suciedad al hogar. Requiere también ejercicio moderado a diario para evitar el sobrepeso y canalizar su energía juguetona en interiores."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale históricamente en la conducción de ganado bovino y ovino mediante empuje corporal suave y ladridos disuasorios característicos. Posee una gran aptitud para deportes de cobro, obediencia básica y actividades recreativas en familia. Asimismo, su enorme paciencia y dulzura innata lo convierten en un perro excepcional para labores de terapia asistida y apoyo emocional con personas de todas las edades."
+      }
+    ]
+  },
+  {
+    "id": "hovawart",
+    "breed": "Hovawart",
+    "title": "Hovawart: El Guardián de la Granja",
+    "epithet": "El Guardián de la Granja",
+    "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
+    "akcGroup": "Working Group",
+    "archetypes": [
+      "Protección Estructurada Moderna"
+    ],
+    "motivations": [
+      "Custodia",
+      "Familia"
+    ],
+    "traits": [
+      "Equilibrio",
+      "Lealtad",
+      "Nivel de alerta"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio-Alto",
+      "motivacion_intrinseca": "Vigilancia de Finca",
+      "resiliencia_emocional": "Muy Alta",
+      "sociabilidad": "Reservado",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Hovawart es un rústico e imponente perro de trabajo alemán cuyo nombre significa literalmente 'guardián de la granja'. Criado históricamente en la Selva Negra para la custodia de propiedades y ganado, posee una silueta atlética, pelaje ondulado resistente y un temperamento de gran equilibrio emocional. Su psicología se rige por una protección territorial estructurada, lealtad incondicional hacia su familia, discreción en la guardia y alta resiliencia ante situaciones estresantes.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es equilibrado, seguro de sí mismo, sereno, valeroso y dotado de un nivel de alerta natural muy desarrollado. El Hovawart no es un perro reactivo ni propenso a ladrar sin motivo; observa su entorno con calma analítica antes de intervenir. Muestra una actitud reservada e indiferente ante extraños, pero mantiene una conducta profundamente afectuosa, dulce y relajada con los miembros de su grupo familiar."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de lealtad abnegada, protección constante y apego respetuoso con sus cuidadores de referencia. El Hovawart busca la cercanía de sus tutores sin resultar empalagoso, comportándose como un guardián atento. Su educación requiere una guía firme, serena y coherente que utilice el refuerzo positivo, ya que posee una alta independencia cognitiva que rechaza los métodos autoritarios o la brusquedad sin sentido."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una protección territorial disuasoria de altísima eficacia y fiabilidad, siendo un perro de guardia inteligente que distingue perfectamente situaciones de amenaza real. Su gran equilibrio emocional y paciencia lo convierten en un excelente compañero para familias activas. Es un perro rústico, saludable y polivalente, capaz de destacar en múltiples tareas de trabajo, salvamento o custodia mientras mantiene una convivencia hogareña apacible."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su madurez tardía, tanto física como mental, requiere paciencia durante los primeros años para consolidar su adiestramiento. Si no recibe suficiente estimulación mental y física, su instinto de guardia puede canalizarse en una sobreprotección territorial excesiva o conductas destructivas por aburrimiento. Requiere también tutores experimentados que sepan canalizar su independencia cognitiva sin recurrir a correcciones autoritarias."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en la custodia de propiedades, vigilancia de fincas rústicas y protección de familias frente a todo tipo de intrusos. Posee aptitudes excelentes para el rastreo olfativo de personas desaparecidas, trabajo de salvamento en escombros y disciplinas de defensa deportiva como IGP por su versatilidad física, resistencia al esfuerzo y mente sumamente equilibrada en situaciones complejas."
+      }
+    ]
+  },
+  {
+    "id": "leonberger",
+    "breed": "Leonberger",
+    "title": "Leonberger: El León Dulce de Baden",
+    "epithet": "El León Dulce de Baden",
+    "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
+    "akcGroup": "Working Group",
+    "archetypes": [
+      "Contención Pesada / Calma Profunda"
+    ],
+    "motivations": [
+      "Afecto",
+      "Compañía"
+    ],
+    "traits": [
+      "Nobleza",
+      "Paciencia",
+      "Bondad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Muy Alto",
+      "motivacion_intrinseca": "Afecto y Convivencia",
+      "resiliencia_emocional": "Muy Alta",
+      "sociabilidad": "Extraordinaria",
+      "independencia_cognitiva": "Media"
+    },
+    "summary": "El Leonberger es el gigante majestuoso de Baden-Wurtemberg, creado en el siglo XIX para asemejarse al león del escudo municipal de Leonberg mediante cruces de Terranova, San Bernardo y Perro de Montaña de los Pirineos. De imponente melena, osamenta masiva y máscara negra expresiva, combina el aspecto de una fiera con un corazón profundamente pacífico. Su psicología destaca por un umbral de estimulación muy alto, paciencia infinita y nobleza entrañable.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es extremadamente sereno, bondadoso, paciente, apacible y dotado de un autocontrol asombroso en cualquier entorno. El Leonberger no se altera fácilmente con ruidos o movimientos bruscos, manteniendo una calma imperturbable en la casa. Muestra una sociabilidad abierta y amigable con adultos, niños, visitas y otros animales, careciendo de agresividad. Se comporta como un gigante afectuoso que disfruta de la compañía y la paz doméstica."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla una relación de lealtad noble, afecto profundo y necesidad de convivencia cercana con todos los miembros de la familia. El Leonberger adora sentirse incluido en la vida cotidiana, apoyando suavemente su gran cabeza en sus tutores para pedir mimos. Su adiestramiento es fluido debido a su deseo de agradar y su carácter dócil, respondiendo de maravilla a palabras amables, caricias y recompensas en un ambiente amoroso."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una presencia imponente y una bondad gigantesca que llena el hogar de tranquilidad, seguridad y cariño incondicional. Es un perro fantásticamente paciente con los niños, tolerando sus juegos con una dulzura conmovora. A pesar de su enorme corpulencia, es una mascota muy equilibrada en interiores, limpia y cuyo carácter amigable facilita la interacción social durante paseos y reuniones familiares."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su colosal tamaño corporal requiere espacios amplios en la vivienda, vehículos adaptados para su transporte y un presupuesto elevado en alimentación y cuidados veterinarios. Produce abundante muda de pelo que exige cepillados frecuentes para controlar el pelo suelto en casa. Además, como ocurre con las razas molosas de gran volumen, posee una esperanza de vida más corta y es sensible al golpe de calor estival."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale por sus aptitudes naturales para el salvamento acuático y el tiro de carros pesados gracias a su fuerza física muscular y resistencia en agua. Posee una gran capacidad disuasoria por su simple volumen de león, sin requerir conductas agresivas. Destaca también como perro de terapia y apoyo emocional por su temple sereno, paciencia inagotable y afectuosidad dócil con personas vulnerables."
+      }
+    ]
+  },
+  {
+    "id": "landseer",
+    "breed": "Landseer",
+    "title": "Landseer: El Guardián Blanco y Negro del Agua",
+    "epithet": "El Guardián del Agua",
+    "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
+    "akcGroup": "Working Group",
+    "archetypes": [
+      "Contención Pesada / Calma Profunda"
+    ],
+    "motivations": [
+      "Nadar",
+      "Auxilio"
+    ],
+    "traits": [
+      "Bondad",
+      "Fuerza",
+      "Gentileza"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Alto",
+      "motivacion_intrinseca": "Rescate y Nado",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Pacífica",
+      "independencia_cognitiva": "Media"
+    },
+    "summary": "El Landseer es el imponente guardián blanco y negro de las zonas costeras y fluviales, inmortalizado por el pintor Sir Edwin Landseer por su heroico instinto de salvamento. Pariente cercano del Terranova, posee una alzada ligeramente más alta, estructura fuerte y un tupido pelaje impermeable. Su psicología se rige por una paciencia infinita, pasional atracción por el agua, vocación de auxilio, umbral de estimulación alto y bondad doméstica serena.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es pacífico, noble, dócil, amigable y caracterizado por una calma majestuosa en todas sus interacciones diarias. El Landseer observa el mundo con una benevolencia tranquila, sin mostrar nerviosismo ni agresividad hacia personas o caninos. Le apasiona la naturaleza y especialmente los entornos acuáticos, donde despliega una alegría entusiasta. En casa se comporta con serenidad, buscando la compañía de su familia con delicadeza."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una lealtad sincera, afecto constante y devota protección hacia su grupo humano, mostrando un instinto natural de cuidado. El Landseer disfruta formando parte activa del día a día familiar, acompañando a sus tutores con una presencia reconfortante. Su adiestramiento resulta sencillo gracias a su docilidad y deseo de colaborar, respondiendo excelentemente a métodos motivacionales positivos y al trato cariñoso y constante."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un comportamiento noble, protector y pacifico que brinda una gran sensación de seguridad y armonía en la vivienda. Es un perro excepcionalmente gentil y paciente con los niños, actuando con sumo cuidado dada su corpulencia. Su amor por el agua y su carácter amigable hacen que sea un compañero de aventuras al aire libre maravilloso para familias amantes de la naturaleza y los deportes acuáticos."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su gran tamaño y denso pelaje bicapa requieren cuidados constantes de cepillado para evitar nudos y controlar el desprendimiento de pelo. Tras baños en lagos o ríos, su manto tarda horas en secar, requiriendo secado manual para prevenir olores en casa. Además, su volumen corporal exige espacios habitables amplios, alimentación de alta calidad y supervisión del ejercicio intenso en días de calor estival."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como especialista supremo e insuperable en salvamento acuático y rescate de personas en mares, ríos y lagos agitados. Posee patas con membranas interdigitales muy desarrolladas que le otorgan una propulsión anfibia prodigiosa. Destaca además en el arrastre de cargas pesadas en nieve o tierra, y en labores de terapia emocional gracias a su temperamento paciente, dócil y protector."
+      }
+    ]
+  },
+  {
+    "id": "dogo-de-palma",
+    "breed": "Ca de Bou (Dogo Mallorquín)",
+    "title": "Ca de Bou: El Guardián Balear",
+    "epithet": "El Guardián Balear",
+    "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
+    "akcGroup": "Working Group",
+    "archetypes": [
+      "Protección Territorial Absoluta"
+    ],
+    "motivations": [
+      "Custodia",
+      "Defensa"
+    ],
+    "traits": [
+      "Fuerza",
+      "Seriedad",
+      "Valentía"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Alto",
+      "motivacion_intrinseca": "Guarda de Finca",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Firme con Extraños",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Ca de Bou o Dogo Mallorquín es el moloso autóctono de las Islas Baleares, criado históricamente para la guarda de fincas, manejo de ganado vacuno y defensa territorial. De cabeza masiva, pecho ancho y musculatura potente, combina una presencia física disuasoria con un carácter firme y seguro. Su psicología destaca por un instinto de custodia territorial absoluto, seriedad ante extraños, resiliencia emocional elevada y lealtad tranquila hacia su tutor.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es serio, sereno, seguro de sí mismo, valeroso y dotado de una marcada calma cuando no hay amenazas presentes. El Ca de Bou no es un perro ruidoso ni impulsivo; analiza las situaciones con cabeza fría antes de reaccionar. Muestra una actitud reservada, firme y vigilante ante personas extrañas, mientras que en la intimidad del hogar se transforma en un compañero apacible, cariñoso y limpio."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla una relación de lealtad inquebrantable, devoción protectora y respeto profundo hacia su guía y la familia cercana. El Dogo Mallorquín reconoce a un tutor equilibrado y busca complacerlo activamente con una conducta obediente. Su adiestramiento exige experiencia, firmeza serena y socialización constante basada en refuerzo positivo, rechazando métodos violentos que puedan arruinar su temperamento o generar desconfianza."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un valor de guarda territorial e integridad física incomparable, siendo un disuasor natural implacable contra intrusos o robos en fincas. Es un perro muy tranquilo, silencioso y limpio en la vivienda, que no causa destrozos si está bien ejercitado. Su pelaje corto requiere muy poco mantenimiento y su fidelidad devota por la familia lo convierte en un protector noble y seguro de su hogar."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su gran potencia física y dominancia innata requieren un manejo firme y experimentado, no siendo adecuado para tutores novatos. Muestra poca tolerancia hacia otros perros del mismo sexo si no se le socializa rigurosamente desde cachorro. Además, su fuerte sentido territorial exige cierres de seguridad adecuados en la propiedad para evitar incidentes con personas ajenas que intenten acceder sin permiso."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en la guarda y custodia de fincas, propiedades rústicas y bienes contra todo tipo de intrusiones sin mostrar titubeo. Posee una potencia maxilar de agarre sobresaliente y una resistencia física destacada para el trabajo de defensa. En el hogar, su principal habilidad radica en brindar una vigilancia silenciosa, disuasoria y equilibrada que garantiza la tranquilidad de sus tutores en todo momento."
+      }
+    ]
+  },
+  {
+    "id": "pinscher-mediano",
+    "breed": "Pinscher Alemán",
+    "title": "Pinscher Alemán: La Elegancia Atlética",
+    "epithet": "La Elegancia Atlética",
+    "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
+    "akcGroup": "Working Group",
+    "archetypes": [
+      "Protección Estructurada Moderna"
+    ],
+    "motivations": [
+      "Alerta",
+      "Trabajo"
+    ],
+    "traits": [
+      "Vivacidad",
+      "Velocidad",
+      "Valentía"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Guarda Ligera",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Alerta con Extraños",
+      "independencia_cognitiva": "Media"
+    },
+    "summary": "El Pinscher Alemán es la elegante cepa mediana original de la familia Pinscher, célebre por sus líneas musculosas, manto corto brillante y mirada despierta. Criado en granjas centroeuropeas para la caza de roedores y aviso de intrusos, combina la agilidad de un atleta con la valentía de un perro de guardia. Su psicología destaca por un umbral de estimulación bajo, vivacidad constante, inteligencia ágil y un instinto de alerta bien estructurado.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es vivaz, despierto, valeroso, juguetón, inteligente y caracterizado por un estado de alerta continuo ante estímulos ambientales. El Pinscher Alemán posee un intelecto agudo que aprende ruidos y patrones con rapidez. Muestra una actitud desconfiada y vigilante frente a personas desconocidas, ladrando para avisar la llegada de visitas, pero en el entorno familiar es sumamente afectuoso, dinámico y muy divertido."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de lealtad apasionada, colaboración cercana y apego enérgico con sus tutores de referencia. Al Pinscher Alemán le encanta participar en todas las actividades físicas del hogar y acompañar a su guía. Su adiestramiento es fluido debido a su alta inteligibilidad cognitiva, requiriendo métodos de motivación positiva, retos variados y coherencia para evitar que su astucia natural intente sobrepasar las normas establecidas."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un excelente perro de alerta sonora doméstica, cuyo tamaño mediano y pelaje corto liso hacen que sea sumamente limpio y de fácil mantenimiento en piso. Su energía vital, inteligencia y simpatía llenan el hogar de momentos activos y dinámicos. Es un compañero perfecto para personas deportistas que disfruten del running, la agilidad canina y las excursiones, mostrando una fidelidad absoluta hacia su tutor."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su umbral de estimulación bajo y tendencia a la alerta sonora pueden traducirse en ladridos frecuentes si no se educa adecuadamente desde cachorro. Su alto nivel de energía física y mental requiere paseos diarios activos y juegos para evitar frustración o nerviosismo en casa. Además, su instinto cazador de roedores exige precaución en presencia de pequeñas mascotas en el hogar."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en la detección olfativa y eliminación de roedores o alimañas con rapidez y precisión quirúrgica. Destaca de forma estelar en disciplinas deportivas como agility, canicross y obediencia competitiva por su velocidad, reflejos elásticos e inteligencia de trabajo. Es además un perro de aviso sonoro doméstico sumamente efectivo que detecta presencias o anomalías en el perímetro a gran distancia."
+      }
       ]
     },
     {
-      "id": "shih-tzu",
-      "breed": "Shih Tzu",
-      "title": "Shih Tzu: El Pequeño León Sagrado de los Palacios",
-      "epithet": "El Pequeño León Sagrado",
-      "fciGroup": "Grupo 9: Perros de Compañía",
-      "akcGroup": "Toy Group",
-      "archetypes": [
-        "Contención Pesada / Calma Profunda",
-        "Apego Frágil Afiliativo"
-      ],
-      "motivations": [
-        "Comodidad",
-        "Afecto",
-        "Reposo"
-      ],
-      "traits": [
-        "Calma",
-        "Dignidad",
-        "Dulzura",
-        "Amabilidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Descanso Cómodo y Convivencia Apacible",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Amigable y Confiado con Todos",
-        "independencia_cognitiva": "Media-Alta"
+    "id": "pinscher-miniatura",
+    "breed": "Pinscher Miniatura",
+    "title": "Pinscher Miniatura: La Dinamita Guardiana en Formato Bolsillo",
+    "epithet": "La Dinamita Guardiana en Formato Bolsillo",
+    "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
+    "akcGroup": "Toy Group",
+    "archetypes": [
+      "Terriers Instrumentales",
+      "Protección Estructurada Moderna",
+      "Hiperreactividad Ornamental"
+    ],
+    "motivations": [
+      "Alarma",
+      "Acción",
+      "Atención",
+      "Custodia"
+    ],
+    "traits": [
+      "Alerta",
+      "Valentía",
+      "Inteligencia",
+      "Energía",
+      "Tenacidad",
+      "Lealtad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Vigilancia y Protección del Espacio",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Media – Evaluador y Guardián Compacto",
+      "independencia_cognitiva": "Media-Alta"
+    },
+    "summary": "El Pinscher Miniatura es una raza menuda pero de temperamento ardiente, desarrollada en Alemania para el control de roedores y la vigilancia doméstica. Posee un cuerpo compacto, musculado y de líneas elegantes, complementado por una mirada vivaz y orejas erguidas. Su psicología destaca por un temperamento valiente, umbral de estimulación bajo ante ruidos ambientales, curiosidad inagotable y un instinto de guarda desproporcionado a su tamaño.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es audaz, intrépido, dinámico, curioso y caracterizado por una alerta constante hacia todo lo que sucede a su alrededor. El Pinscher Miniatura se comporta con la seguridad de un perro grande, patrullando el hogar con orgullo y vivacidad. Muestra una actitud sumamente recelosa ante personas desconocidas, anunciando cualquier presencia extraña con ladridos potentes. En la intimidad familiar se revela como un compañero alegre y sumamente juguetón."
       },
-      "summary": "Criado en los palacios imperiales chinos. Pese a su aspecto aristocrático, es un perro robusto, tranquilo y extremadamente dulce.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Tranquilo, confiado y cariñoso. Rara vez ladra o se altera."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Un verdadero compañero de piso sereno y amoroso."
-        }
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de lealtad apasionada, cariño profundo y devoción entrañable con sus cuidadores de referencia. Le encanta ser el centro de atención en el hogar y participar activamente en todas las rutinas diarias. Su adiestramiento requiere consistencia, paciencia y métodos de refuerzo positivo suave, ya que posee una mente astuta que intentará poner a prueba los límites si detecta inconsistencias o vacíos en las normas establecidas."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una capacidad de aviso sonoro y vigilancia doméstica excepcional, detectando cualquier anomalía antes que otros perros. Su tamaño compacto facilita la vida en pisos pequeños y el transporte en viajes cotidianos. Posee un pelaje liso de bajísimo mantenimiento que requiere solo cepillados ocasionales. Su salud atlética, gran vivacidad y dinamismo divertido llenan la casa de energía y momentos entretenidos para tutores activos."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su tendencia a la hipervigilancia puede derivar en ladridos excesivos y molestos si no se educa adecuadamente desde temprana edad. Su fuerte carácter y terquedad ocasional pueden convertirlo en un perro tiránico si no se le marcan límites claros. Además, su alta reactividad ante pequeños animales o extraños exige pasearlo con correa y supervisar sus interacciones en entornos urbanos ruidosos o concurridos."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en la detección de roedores y pequeños intrusos con una rapidez y agilidad física impresionantes. Destaca de forma estelar en competencias deportivas como agility toy y aprendizaje de trucos complejos por su agudeza cognitiva. En el hogar, su habilidad principal es ofrecer una guardia ligera y aviso sonoro sumamente efectivo, combinado con una capacidad atlética sorprendente para saltar y correr."
+      }
+    ],
+    "imageUrl": "https://images.dog.ceo/breeds/pinscher-miniature/n02107312_4057.jpg"
+  },
+  {
+    "id": "kerry-blue-terrier",
+    "breed": "Kerry Blue Terrier",
+    "title": "Kerry Blue Terrier: El Dragón Azul de Irlanda",
+    "epithet": "El Dragón Azul de Irlanda",
+    "fciGroup": "Grupo 3: Terriers",
+    "akcGroup": "Terrier Group",
+    "archetypes": [
+      "Terriers Instrumentales"
+    ],
+    "motivations": [
+      "Caza",
+      "Desafío"
+    ],
+    "traits": [
+      "Intrepidez",
+      "Orgullo",
+      "Versatilidad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Madriguera y Guarda",
+      "resiliencia_emocional": "Muy Alta",
+      "sociabilidad": "Firme con Otros Perros",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Kerry Blue Terrier es el emblemático perro de trabajo del condado de Kerry en Irlanda, famoso por su suave pelaje ondulado de tono azulado y su barba característica. Criado como cazador polivalente de alimañas, cobrador y guardián de granjas, posee un cuerpo musculoso, ágil y de porte distinguido. Su psicología combina intrepidez de terrier instrumental, resiliencia emocional muy alta, orgullo natural y devoción apasionada hacia su familia.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es valiente, alegre, decidido, orgulloso e inteligente, mostrando una gran seguridad en cada uno de sus movimientos. El Kerry Blue Terrier posee una energía inagotable y un espíritu despierto que disfruta explorando el entorno. Aunque es cariñoso y afable con las personas de su núcleo, tiende a mostrar una actitud firme y poco tolerante ante otros perros, exigiendo una presencia tranquila por parte del tutor."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla una relación de lealtad absoluta, profundo afecto y compañerismo constante con los miembros de su hogar. Es un perro que adora involucrarse en las actividades familiares y defender a sus allegados si percibe peligro. Su educación requiere firmeza coherente, socialización temprana y motivación positiva, ya que su alta independencia cognitiva y fuerte personalidad rechazan los métodos autoritarios, aprendiendo mejor con retos estimulantes."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un carácter versátil y una fidelidad incondicional, siendo un excelente guardián y un compañero doméstico divertido y afectuoso. Su característico pelaje rizado no desprende pelo suelto en casa, lo que resulta ideal para personas con alergias. Es un animal fuerte, saludable y lleno de vitalidad que se adapta de maravilla a familias activas que disfruten de actividades físicas, excursiones y deportes caninos variados."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su inclinación a desafiar o no tolerar a otros perros del mismo sexo requiere supervisión estrecha y un manejo experto durante los paseos. Su pelaje suave exige cuidados de peluquería profesional, lavados y cepillados periódicos para evitar que se anude o acumule suciedad. Además, si no canaliza su potente energía diaria mediante ejercicio físico y estimulación cognitiva, puede volverse destructor o terco."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en la caza de alimañas en madrigueras, cobro en agua y tareas de guarda de propiedades agrícolas por su versatilidad física. Destaca también en deportes caninos como agility, obediencia y rastreo olfativo debido a su resistencia y agilidad muscular. En el hogar, su principal destreza es brindar una protección atenta y alegre, actuando como un custodio polivalente y devoto de la familia."
+      }
+    ]
+  },
+  {
+    "id": "bedlington-terrier",
+    "breed": "Bedlington Terrier",
+    "title": "Bedlington Terrier: El Corazón de León con Piel de Cordero",
+    "epithet": "Corazón de León con Piel de Cordero",
+    "fciGroup": "Grupo 3: Terriers",
+    "akcGroup": "Terrier Group",
+    "archetypes": [
+      "Terriers Instrumentales"
+    ],
+    "motivations": [
+      "Carrera",
+      "Caza"
+    ],
+    "traits": [
+      "Velocidad",
+      "Valor",
+      "Dulzura"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Carrera y Caza de Roedores",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Afectuoso",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Bedlington Terrier es el singular cazador de las minas de Northumberland en Inglaterra, célebre por su apariencia de corderito suave con cabeza arqueada y esquilado característico. A pesar de su aspecto delicado, esconde la resistencia, velocidad y valentía propia de un terrier de trabajo rústico. Su psicología combina un temperamento dulce y tranquilo en la casa con un impulso atlético de carrera, valentía noble y afectuosidad constante.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es apacible, afectuoso, noble, sereno en interiores y sorprendentemente audaz cuando se le presenta un reto o una presa. El Bedlington Terrier se comporta en el hogar con una elegancia tranquila, disfrutando del descanso junto a sus tutores. No es un perro buscador de conflictos, pero si se le provoca, desplegará el coraje indomable de sus ancestros mineros para defenderse con gran firmeza y potencia."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una lealtad profunda, cariñosa y delicada con su grupo familiar, mostrando una devoción especial hacia los niños de la casa. Disfruta enormemente de las caricias, el contacto físico y la compañía constante de sus seres queridos. Su adiestramiento resulta muy fluido debido a su inteligencia y docilidad relativa dentro del grupo terrier, respondiendo de manera excelente a métodos positivos basados en recompensas y amabilidad."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un comportamiento doméstico pacífico, limpio y cariñoso, siendo un perro de compañía encantador que no suelta pelo en la vivienda. Su apariencia elegante y refinada atrae miradas, mientras que su carácter dulce lo convierte en una mascota maravillosa para familias. Es adaptativo, pudiendo vivir felizmente en un piso si se le brindan oportunidades diarias para correr en espacios abiertos y seguros."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su pelaje rizado requiere un mantenimiento de peluquería especializado de forma regular para conservar su forma característica y evitar enredos. Posee un fuerte instinto de persecución visual ante roedores o pequeños animales, por lo que puede salir corriendo si no se le controla en zonas abiertas. Asimismo, aunque sea pacífico, no duda en enfrentarse con firmeza si otro perro inicia una pelea."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como un velocista excepcional de corta y media distancia, capaz de alcanzar velocidades sorprendentes gracias a su lomo flexible y estructura galgueada. Destaca en la caza de roedores, competencias de agility y carreras en pista o coursing. En la vida familiar, su mayor habilidad es ofrecer una compañía reconfortante, limpia y afable, combinando la dulzura de un perro de regazo con el coraje terrier."
+      }
+    ]
+  },
+  {
+    "id": "fox-terrier-pelo-duro",
+    "breed": "Fox Terrier de Pelo Duro",
+    "title": "Fox Terrier: El Nervio del Cazador de Zorreras",
+    "epithet": "El Nervio del Cazador de Zorreras",
+    "fciGroup": "Grupo 3: Terriers",
+    "akcGroup": "Terrier Group",
+    "archetypes": [
+      "Terriers Instrumentales"
+    ],
+    "motivations": [
+      "Caza",
+      "Exploración"
+    ],
+    "traits": [
+      "Impulsividad",
+      "Valentía",
+      "Vivacidad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Muy Bajo",
+      "motivacion_intrinseca": "Desalojar Presas",
+      "resiliencia_emocional": "Extrema",
+      "sociabilidad": "Entusiasta",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Fox Terrier de Pelo Duro es el clásico y enérgico cazador británico desarrollado para desalojar zorras de sus guaridas subterráneas. Posee una estampa elegante de dorso corto, manto de alambre denso y una expresión viva con barba pronunciada. Su psicología destaca por un umbral de estimulación muy bajo, impulsividad innata, resiliencia emocional extrema, valentía sin límites y una inagotable motivación por la exploración y la acción constante.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es alegre, efervescente, audaz, intrépido e hiperatento a cualquier movimiento o sonido en su entorno. El Fox Terrier vive en un estado de permanente entusiasmo y curiosidad, buscando constantemente estímulos con los que interactuar. Es un perro extrovertido que aborda el mundo sin temores, mostrando una gran valentía. En casa es una fuente continua de energía y juegos, requiriendo tutores que disfruten de su dinamismo."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de complicidad alegre, afecto enérgico y lealtad divertida con sus cuidadores. Le encanta participar en aventuras al aire libre y juegos de pelota o cobro. Su adiestramiento es un reto interesante por su mente independiente y tendencia a distraerse con facilidad; requiere sesiones breves, muy variadas y basadas en la motivación positiva para mantener su atención sin generar frustración o terquedad."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un dinamismo contagioso, una simpatía arrolladora y una vitalidad que llena el hogar de momentos divertidos. Es un perro sumamente resistente, saludable y longevo que soporta largas caminatas y juegos sin fatiga. Su tamaño compacto facilita su transporte, mientras que su manto duro, con el stripping adecuado, apenas desprende pelo en casa, siendo un compañero intrépido para tutores dinámicos que busquen un perro activo."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su alta reactividad e instinto cazador lo llevan a perseguir gatos o pequeñas mascotas con tenacidad obsesiva si no se le supervisa. Muestra una fuerte propensión a ladrar y excavar en jardines si se aburre o pasa mucho tiempo solo. Además, su carácter dominante con otros caninos exige una socialización firme desde cachorro y precaución al soltarlo en parques infantiles o espacios concurridos."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como especialista subterráneo en la excavación y desalojo de presas en madrigueras con una determinación física asombrosa. Brilla en pruebas de agility, flyball y juegos de rastreo por su rapidez de reflejos y potencia de salto. En el plano doméstico, destaca por su capacidad para mantener la casa libre de roedores y por su habilidad inigualable para inventar juegos y entretener a la familia."
+      }
+    ]
+  },
+  {
+    "id": "border-terrier",
+    "breed": "Border Terrier",
+    "title": "Border Terrier: La Nobleza Rústica de la Frontera",
+    "epithet": "La Nobleza Rústica de la Frontera",
+    "fciGroup": "Grupo 3: Terriers",
+    "akcGroup": "Terrier Group",
+    "archetypes": [
+      "Terriers Instrumentales"
+    ],
+    "motivations": [
+      "Caza",
+      "Trabajo"
+    ],
+    "traits": [
+      "Rusticidad",
+      "Equilibrio",
+      "Tenacidad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Seguir a los Sabuesos",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Buena con Perros",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Border Terrier es el rústico y equilibrado trabajador de la frontera entre Inglaterra y Escocia, diseñado para acompañar a las jaurías de sabuesos y desalojar zorras. Con su característica cabeza en forma de nutria y su piel gruesa, combina durabilidad física con una disposición amigable. Su psicología destaca por un temperamento más sereno que otros terriers, alta resiliencia emocional, tenacidad laboral y una excelente sociabilidad canina.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es afectuoso, alegre, equilibrado, sensato y caracterizado por una rusticidad sin artificios en el día a día. El Border Terrier posee el valor y la tenacidad de un cazador, pero muestra un trato mucho más dócil y pacífico en el hogar. Es un perro curioso y alerta que disfruta del aire libre, relacionándose con amabilidad y sin la agresividad típica de otros representantes del grupo terrier."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla una lealtad entrañable, cariño sincero y un fuerte deseo de integración con su grupo familiar. Es un perro sumamente dulce que agradece las muestras de afecto y busca agradar a sus tutores de forma constante. Su adiestramiento resulta muy llevadero gracias a su disposición colaborativa, respondiendo excelentemente al refuerzo positivo, premios comestibles y palabras amables en un ambiente de aprendizaje relajado y constante."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un equilibrio emocional fabuloso que facilita una convivencia pacífica tanto en entornos rurales como en pisos urbanos. Su excelente sociabilidad con otros perros permite paseos tranquilos y juegos en grupo sin conflictos. Es un animal rústico de salud robusta, cuyo pelaje duro requiere mantenimientos sencillos de arranque manual. Su carácter bondadoso, tamaño práctico y cariño incondicional lo convierten en un compañero de vida maravilloso."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su instinto de persecución hacia animales pequeños como roedores o conejos se mantiene vivo, requiriendo atención al pasear sin correa por el campo. Si se siente aburrido o pasa jornadas largas sin atención, puede manifestar tendencias a excavar pozos en el jardín. Asimismo, su piel gruesa y alta tolerancia al dolor pueden enmascarar heridas o lesiones que requieren una revisión veterinaria atenta tras paseos rústicos."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en el trabajo de madriguera y seguimiento de rastro en terrenos escarpados gracias a su resistencia física y piel protectora. Destaca en pruebas de agilidad, rastreo olfativo y juegos de búsqueda por su tenacidad e inteligencia funcional. En el hogar, su principal destreza radica en ofrecer un acompañamiento afectuoso, tranquilo y equilibrado, integrándose de maravilla en grupos multiperro y dinámicas familiares."
+      }
+    ]
+  },
+  {
+    "id": "cairn-terrier",
+    "breed": "Cairn Terrier",
+    "title": "Cairn Terrier: El Escarbador de las Tierras Altas",
+    "epithet": "El Escarbador de las Tierras Altas",
+    "fciGroup": "Grupo 3: Terriers",
+    "akcGroup": "Terrier Group",
+    "archetypes": [
+      "Terriers Instrumentales"
+    ],
+    "motivations": [
+      "Exploración",
+      "Caza"
+    ],
+    "traits": [
+      "Curiosidad",
+      "Audacia",
+      "Simpatía"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Escarbar y Explorar",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Alegré",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Cairn Terrier es uno de los perros de trabajo más antiguos de Escocia, célebre por su habilidad para escarbar entre los montones de piedras (cairns) para expulsar alimañas. Inmortalizado por interpretar a 'Toto' en El Mago de Oz, posee un cuerpo compacto, pelaje áspero rústico y mirada curiosa. Su psicología destaca por audacia indomable, alegría constante, motivación intrínseca por escarbar y explorar, y gran simpatía.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es alegre, extrovertido, valiente, curioso y repleto de una astucia simpática que cautiva a su entorno. El Cairn Terrier aborda cada jornada como una emocionante aventura, explorando rincones con entusiasmo desbordante. Muestra una actitud confiada y amigable con las personas, conservando esa chispa independiente de terrier de montaña. En la casa se comporta con gran vitalidad, manteniéndose siempre dispuesto a jugar o investigar."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una relación de afecto estrecho, lealtad divertida y compañerismo constante con todos los integrantes del hogar. Le encanta estar presente en el centro de las actividades familiares y recibir atención afectuosa. Su educación requiere creatividad, paciencia y consistencia en el refuerzo positivo, ya que su mente inquieta y tenaz se aburre con repeticiones monótonas, aprendiendo rápido cuando el adiestramiento se plantea como un juego motivador."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una alegría arrolladora y una vitalidad simpática que llena el hogar de momentos divertidos e inolvidables. Su tamaño pequeño y su anatomía robusta lo hacen muy adaptable a la vida en piso y a excursiones rurales. Es un perro resistente, de salud fuerte y pelaje rústico que protege contra la intemperie. Su carácter extrovertido y afectuoso lo convierte en un amigo genial para familias activas."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su desmedida pasión por escarbar puede causar destrozos en jardines o macetas si no se canaliza adecuadamente en zonas permitidas. Muestra una tendencia marcada a ladrar ante ruidos extraños o presencia de pequeños animales, exigiendo educación temprana. Además, su instinto cazador hacia roedores requiere cautela si convive con pequeñas mascotas, necesitando paseos con correa en entornos donde haya presencia de fauna silvestre."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en la excavación y búsqueda de presas ocultas entre rocas y madrigueras gracias a sus patas fuertes y uñas resistentes. Brilla en pruebas de agility, rastreo olfativo y actividades recreativas de cobro por su agilidad y perseverancia. En la convivencia diaria, su habilidad más destacada es brindar un compañerismo alegre, afectuoso y vigilante, actuando como un pequeño guardián simpático y lleno de energía."
+      }
+    ]
+  },
+  {
+    "id": "irish-terrier",
+    "breed": "Terrier Irlandés",
+    "title": "Irish Terrier: El Temerario Rojo",
+    "epithet": "El Temerario Rojo",
+    "fciGroup": "Grupo 3: Terriers",
+    "akcGroup": "Terrier Group",
+    "archetypes": [
+      "Terriers Instrumentales"
+    ],
+    "motivations": [
+      "Caza",
+      "Acción"
+    ],
+    "traits": [
+      "Valentía",
+      "Lealtad",
+      "Impulsividad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Acción y Guardia",
+      "resiliencia_emocional": "Extrema",
+      "sociabilidad": "Cariñoso con la Gente",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Terrier Irlandés o Irish Terrier es el legendario 'temerario rojo' de la isla esmeralda, admirado por su hermoso manto de alambre pelirrojo, silueta atlética y valor sin límites. Criado como cazador polivalente, guardián de granjas y perro de mensajería en guerras, posee un físico estilizado y músculos potentes. Su psicología destaca por un valor indomable, resiliencia emocional extrema, lealtad apasionadamente afectuosa hacia su humano y una impulsividad enérgica.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es valeroso, apasionado, noble, vivaz y caracterizado por una intrepidez absoluta cuando enfrenta desafíos. El Terrier Irlandés posee un corazón ardiente que no retrocede ante el peligro, mostrando una lealtad feroz en la defensa de los suyos. En el ámbito doméstico se comporta con sorprendente dulzura y afecto hacia su familia, pero mantiene una actitud firme y dominante frente a otros perros del mismo sexo."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una lealtad incondicional, profunda y sumamente afectuosa con sus cuidadores, demostrando una devoción que roza el enamoramiento. Le encanta estar cerca de sus tutores y participar en juegos intensos. Su adiestramiento exige tutores experimentados que empleen firmeza serena, empatía y métodos de motivación positiva, ya que su orgullo noble y alto temperamento rechazan la brusquedad, respondiendo maravillosamente al respeto mutuo y la coherencia."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un valor de protección y una fidelidad inquebrantable, siendo un guardián valiente y un compañero cariñoso con la familia. Su pelaje de alambre pelirrojo es muy limpio y apenas desprende pelo en casa cuando se le realiza el stripping adecuado. Es un perro atlético, de salud rústica y energía inagotable, ideal para amantes del deporte outdoor que busquen un compañero intrépido, leal y lleno de carácter."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su tendencia a entrar en conflicto con otros perros si es provocado exige un manejo responsable y atento durante los paseos diarios. Su impulsividad y alto nivel de energía requieren ejercicio físico significativo para evitar frustración o nerviosismo en la vivienda. Además, su instinto de caza hacia pequeños animales exige cautela en zonas abiertas o presencia de mascotas menores en el entorno doméstico."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como cazador polivalente, cobrador de agua y perro de guarda o mensajería histórica por su valor y resistencia física excepcional. Destaca en deportes caninos exigentes como canicross, agility y pruebas de trabajo por su velocidad y potencia muscular. En el hogar, su habilidad principal es ofrecer una lealtad devota y una protección activa, defendiendo a su familia con una nobleza e intrepidez legendarias."
+      }
+    ]
+  },
+  {
+    "id": "welsh-terrier",
+    "breed": "Welsh Terrier",
+    "title": "Welsh Terrier: El Espíritu Galés Negro y Fuego",
+    "epithet": "El Espíritu Galés",
+    "fciGroup": "Grupo 3: Terriers",
+    "akcGroup": "Terrier Group",
+    "archetypes": [
+      "Terriers Instrumentales"
+    ],
+    "motivations": [
+      "Juego",
+      "Caza"
+    ],
+    "traits": [
+      "Alegría",
+      "Resistencia",
+      "Equilibrio"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Rastreo y Juego",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Sociable",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Welsh Terrier es el enérgico y simpático cazador de las montañas de Gales, distinguible por su manto denso negro y fuego y su silueta compacta similar al Airedale en miniatura. Desarrollado para la caza de zorros, tejones y nutrias, combina una salud rústica con un carácter extrovertido. Su psicología destaca por mayor equilibrio emocional que otros terriers, alegría constante, motivación por el rastreo y juego, y excelente resistencia.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es alegre, constante, valiente, curioso y dotado de una serenidad afectuosa que facilita la convivencia. El Welsh Terrier posee la energía típica del grupo terrier, pero muestra una actitud menos impulsiva y más reflexiva en sus interacciones cotidianas. Disfruta investigando su entorno con una simpatía contagiosa, relacionándose con amabilidad con las personas y manteniendo un nivel de alerta adecuado sin caer en nerviosismos innecesarios."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una relación de afecto sincero, lealtad constante y compañerismo divertido con su núcleo familiar. Le apasiona compartir momentos de juego, paseos por la naturaleza y descansar cerca de sus cuidadores. Su adiestramiento es fluido dentro del contexto terrier gracias a su carácter tratable, respondiendo de maravilla a métodos de educación positivos, recompensas jugosas y dinámicas variadas que despierten su inteligencia de forma amena."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un dinamismo equilibrado, una estética clásica preciosa y un carácter simpático que encaja genial en la vida familiar. Su pelaje duro negro y fuego apenas desprende pelo suelto en casa con el mantenimiento adecuado de peluquería. Es un perro de tamaño mediano compacto muy manejable, de salud sólida y espíritu alegre, ideal para familias que busquen un terrier activo, noble y afectuoso en todo momento."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su instinto cazador hacia roedores o presas pequeñas exige mantener el control mediante correa en zonas de campo o parques. Si carece de ejercicio adecuado o estimulación mental, puede manifestar conductas de excavación o ladridos de aburrimiento en el jardín. Asimismo, requiere un mantenimiento periódico de peluquería especializado para conservar la textura rústica y el color brillante de su característico manto."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en la caza de madriguera y cobro en terrenos difíciles por su tenacidad, agilidad física y resistencia muscular. Destaca en disciplinas deportivas como agility, flyball y juegos de olfato por su rapidez de aprendizaje y entusiasmo. En el ámbito cotidiano, su principal destreza es brindar una compañía equilibrada, alegre e higiénica, siendo un guardián ligero y un amigo fiel para toda la familia."
+      }
+    ]
+  },
+  {
+    "id": "finnish-spitz",
+    "breed": "Finnish Spitz",
+    "title": "Finnish Spitz: El Cantante de los Bosques",
+    "epithet": "El Cantante de los Bosques",
+    "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
+    "akcGroup": "Non-Sporting Group",
+    "archetypes": [
+      "Autonomía Primitiva / Dignidad"
+    ],
+    "motivations": [
+      "Vocalización",
+      "Caza"
+    ],
+    "traits": [
+      "Vivacidad",
+      "Alerta",
+      "Independencia"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Aviso por Ladrido Rítmico",
+      "resiliencia_emocional": "Media",
+      "sociabilidad": "Afectuoso",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Finnish Spitz o Spitz Finlandés es el orgulloso perro nacional de Finlandia, célebre por su espeso manto rojo zorro, cola enroscada y su particular ladrido rítmico utilizado para señalar aves en los árboles. Desarrollado en los bosques nórdicos para la caza autónoma, posee una estampa canina bella y una mente alerta. Su psicología destaca por una alta independencia cognitiva, vocalización expresiva, vivacidad constante y un temperamento afectuoso y digno.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es vivaz, despierto, independiente, afectuoso y caracterizado por una expresividad vocal única en el reino canino. El Spitz Finlandés aborda la vida con curiosidad e inteligencia, manteniéndose atento a todo lo que ocurre en su entorno. Muestra una actitud cariñosa y alegre con su familia, mientras que ante desconocidos se muestra educado y reservado. Su naturaleza nórdica le otorga una dignidad serena en interiores y entusiasmo al aire libre."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla una lealtad profunda, cariñosa y respetuosa hacia sus cuidadores, sintiéndose muy vinculado a su grupo humano. Le gusta estar presente en las actividades del hogar y recibir trato afectuoso. Su educación requiere sensibilidad, paciencia y métodos positivos suaves, respetando su independencia cognitiva primitiva; las correcciones duras causan rechazo en esta raza, mientras que el liderazgo sereno consigue una colaboración fluida y receptiva."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un afecto sincero, una belleza estética nórdica deslumbrante y una compañía alegre y vigilante en el hogar. Es un perro de tamaño mediano limpio, sin olor corporal y de salud robusta adaptada al clima frío. Su inteligencia y sensibilidad lo convierten en un amigo devoto para familias que valoren su carácter primitivo, ofreciendo momentos entrañables y una alerta sonora eficaz ante cualquier visita o presencia."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su tendencia natural a la vocalización y el ladrido rítmico requiere trabajo educativo desde temprana edad para evitar molestias a vecinos en entornos urbanos. Produce mudas de pelo intensas dos veces al año que exigen cepillado diario para eliminar el subpelo suelto en casa. Además, su alta independencia cognitiva significa que no mostrará una obediencia ciega, requiriendo tutores que comprendan y respeten su naturaleza nórdica."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale en la caza de aves forestales mediante el rastreo visual y su ladrido rítmico ininterrumpido que ubica a la presa para el cazador. Destaca en competencias de agility, senderismo invernal y deportes de olfato por su agilidad física y resistencia al frío. En el hogar, su habilidad principal es actuar como un guardián de aviso sonoro sumamente atento, brindando un cariño limpio y noble a la familia."
+      }
       ]
     },
     {
-      "id": "cavalier-king-charles",
-      "breed": "Cavalier King Charles Spaniel",
-      "title": "Cavalier King Charles: El Regazo Dulce de la Realeza",
-      "epithet": "El Regazo Dulce de la Realeza",
-      "fciGroup": "Grupo 9: Perros de Compañía",
-      "akcGroup": "Toy Group",
-      "archetypes": [
-        "Apego Extremo (Fusión Emocional)",
-        "Apego Frágil Afiliativo"
-      ],
-      "motivations": [
-        "Afecto",
-        "Contacto físico",
-        "Sintonía"
-      ],
-      "traits": [
-        "Gentileza",
-        "Sensibilidad",
-        "Ternura",
-        "Calidez"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Contacto Físico Humano y Mimos",
-        "resiliencia_emocional": "Media",
-        "sociabilidad": "Amoroso con Todo el Mundo",
-        "independencia_cognitiva": "Muy Baja"
+    "id": "norwegian-elkhound",
+    "breed": "Norwegian Elkhound",
+    "title": "Norwegian Elkhound: El Cazador de Alces Noruego",
+    "epithet": "El Cazador de Alces",
+    "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
+    "akcGroup": "Hound Group",
+    "archetypes": [
+      "Autonomía Primitiva / Dignidad"
+    ],
+    "motivations": [
+      "Caza",
+      "Resistencia"
+    ],
+    "traits": [
+      "Valentía",
+      "Sobriedad",
+      "Rusticidad"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Acoso de Caza Mayor",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Sociable con la Familia",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Norwegian Elkhound o Cazador de Alces Noruego es el antiguo compañero de los vikingos, moldeado en la dura geografía escandinava para la caza de grandes mamíferos como alces y osos. De constitución robusta, pelaje denso de tono gris plateado y cola enroscada sobre el lomo, combina sobriedad atlética con una resistencia climática extraordinaria. Su psicología destaca por un temperamento valiente, alta independencia cognitiva, motivación intrínseca por la caza mayor y devoción equilibrada.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es sereno, seguro de sí mismo, valeroso, independiente y dotado de una gran sobriedad en sus interacciones cotidianas. El Cazador de Alces Noruego se comporta en el hogar con calma y dignidad, mostrando una observación atenta sobre todo lo que sucede a su alrededor. Ante extraños se mantiene reservado y cauteloso, sin manifestar agresividad injustificada. Mantiene un espíritu firme y rústico que disfruta de la vida al aire libre en climas fríos."
       },
-      "summary": "Ojos grandes expresivos y orejas sedosas. Combina la dulzura de un perro de regazo con el toque alegre de un spaniel.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Incapaz de tener malicia. Tierno, adaptable y pacífico."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Sigue a sus dueños como una sombra amorosa."
-        }
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una lealtad sincera, profunda y respetuosa hacia su guía y la familia, mostrando un afecto equilibrado que no resulta empalagoso. Es un compañero fiel que busca estar presente en las actividades del hogar sin exigir atención física continua. Su adiestramiento requiere tutores experimentados que comprendan su alta independencia cognitiva, empleando firmeza calmada y métodos positivos basados en el respeto mutuo, ya que rechaza frontalmente la brusquedad o el trato autoritario."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una compañía noble, serena y muy resistente, siendo un perro de familia sumamente leal y protector sin caer en conductas destructivas. Su constitución rústica y salud sólida le otorgan una gran longevidad y tolerancia a climas invernales exigentes. Es un excelente guardián de aviso que alerta ante presencias extrañas con firmeza. Su personalidad digna y equilibrada lo convierte en un compañero maravilloso para personas amantes de la naturaleza y el senderismo."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su tendencia natural a acosar presas mediante ladridos rítmicos puede traducirse en una vocalización frecuente si no se gestiona mediante educación y ejercicio diario. Produce mudas de pelo muy abundantes dos veces al año que exigen cepillado constante para controlar el subpelo suelto en la casa. Además, su marcada independencia cognitiva significa que no mostrará una obediencia ciega o servil, requiriendo tutores pacientes que sepan guiar su instinto nórdico."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como un rastreador y acosador de caza mayor insuperable, capaz de acorralar presas gigantescas como alces mediante ladridos intermitentes mientras esquiva sus embestidas con agilidad. Destaca por su resistencia física para recorrer distancias masivas en terrenos nevados o escarpados sin dar muestras de fatiga. En el hogar, su habilidad principal es ofrecer una vigilancia serena, protectora e inteligente que brinda seguridad constante a su grupo familiar."
+      }
+    ]
+  },
+  {
+    "id": "kishu-ken",
+    "breed": "Kishu Ken",
+    "title": "Kishu Ken: La Pureza Blanca de la Caza Japonesa",
+    "epithet": "La Pureza Blanca",
+    "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
+    "akcGroup": "Working Group",
+    "archetypes": [
+      "Autonomía Primitiva / Dignidad"
+    ],
+    "motivations": [
+      "Autonomía",
+      "Caza"
+    ],
+    "traits": [
+      "Silencio",
+      "Nobleza",
+      "Independencia"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Alto",
+      "motivacion_intrinseca": "Caza Silenciosa de Jabalí",
+      "resiliencia_emocional": "Muy Alta",
+      "sociabilidad": "Reservado",
+      "independencia_cognitiva": "Extrema"
+    },
+    "summary": "El Kishu Ken es una noble raza primitiva originaria de las regiones montañosas de Japón, venerada ancestralmente por su capacidad para la caza silenciosa del jabalí y el ciervo. De pelaje predominantemente blanco, orejas erguidas y cola curvada, posee una presencia física majestuosa y pulcra. Su psicología destaca por un temperamento calmo, silencio ético, extrema independencia cognitiva, alta resiliencia emocional y una devoción sincera y reservada hacia su cuidador.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es sumamente sereno, digno, silencioso, reservado e impregnado de una majestuosidad calma que impone respeto. El Kishu Ken rara vez ladra sin motivo, prefiriendo observar el entorno con una mirada profunda y analítica. Muestra una actitud distanciada e indiferente hacia personas desconocidas, evitando acercamientos efusivos. En la intimidad de su hogar es la tranquilidad personificada, comportándose con una pulcritud y paciencia que recuerdan al temperamento felino."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una lealtad inquebrantable, devota y silenciosa hacia su guía de referencia, creando un lazo afectivo de enorme profundidad y respeto mutuo. El Kishu Ken expresa su cariño mediante la presencia tranquila y la mirada atenta, sin requerir mimos excesivos. Su adiestramiento exige tutores con experiencia en razas primitivas que utilicen la motivación positiva y el liderazgo sereno, comprendiendo su extrema independencia cognitiva y su rechazo absoluto a cualquier corrección dura."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un comportamiento doméstico de una limpieza y silencio impecables, siendo un habitante del hogar extraordinariamente pacífico que no causa molestias ni ladridos innecesarios. Su belleza estética de blanco inmaculado y su porte noble otorgan una presencia cautivadora. Es un perro sumamente resistente, saludable y longevo que no busca conflictos. Para tutores que valoran la serenidad y la independencia dócil, representa un compañero de vida de valor incalculable."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su potente instinto cazador y su naturaleza de persecución silenciosa representan un riesgo serio para gatos o pequeñas mascotas si no se le socializa rigurosamente desde cachorro. Su extrema independencia cognitiva exige mantenerlo sujeto con correa en espacios abiertos no vallados, ya que puede seguir rastros sin atender llamadas verbales. Asimismo, su reserva hacia extraños requiere una socialización cuidada para prevenir conductas excesivamente territoriales o distantes en la convivencia."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como un cazador de acoso y agarre silencioso en terrenos accidentados de alta montaña, capaz de acorralar jabalíes con una valentía y agilidad físicas extraordinarias. Posee un sentido del olfato agudísimo y una capacidad de movimiento sigiloso que le permite aproximarse a las presas sin ser detectado. En el entorno familiar, su mayor destreza es brindar una convivencia pulcra, pacífica y profundamente leal sin emitir un solo ruido."
+      }
+    ]
+  },
+  {
+    "id": "sabueso-espanol",
+    "breed": "Sabueso Español",
+    "title": "Sabueso Español: La Voz Profunda del Rastro Cantábrico",
+    "epithet": "La Voz Profunda del Rastro",
+    "fciGroup": "Grupo 6: Perros Tipo Sabueso rastro y semejantes",
+    "akcGroup": "Hound Group",
+    "archetypes": [
+      "Sensorialidad Olfativa Profunda"
+    ],
+    "motivations": [
+      "Rastreo",
+      "Olfato"
+    ],
+    "traits": [
+      "Tenacidad",
+      "Nieve de rastro",
+      "Gentileza"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo en Rastro",
+      "motivacion_intrinseca": "Seguir Latidos de Rastro",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Pacífico",
+      "independencia_cognitiva": "Muy Alta"
+    },
+    "summary": "El Sabueso Español es el ancestral rastreador de las cordilleras del norte de la península ibérica, célebre por su portentoso olfato, sus largas orejas caídas y su melodiosa voz de rastro. Estructurado para el seguimiento de caza mayor y menor en terrenos montañosos difíciles, posee una musculatura fuerte y gran resistencia física. Su psicología destaca por una tenacidad inquebrantable en el rastreo, gentileza doméstica, independencia cognitiva y temperamento pacífico.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es noble, gentil, tranquilo, afectuoso y caracterizado por una doble personalidad fascinante según el entorno en que se encuentre. En el hogar es la mansedumbre encarnada, reposando placenteramente durante horas en camas cálidas sin causar estridencias. Sin embargo, cuando sale al campo y detecta un rastro olfativo, se transforma en un trabajador incombustible, apasionado y tenaz que sigue la huella con una concentración casi hipnótica."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla un apego sincero, dulce y sumamente afectuoso con sus cuidadores, disfrutando de la compañía constante de la familia. El Sabueso Español es un perro de corazón blando que busca el contacto físico amable y reconfortante. Su educación requiere paciencia, tono suave y refuerzo positivo con recompensas sabrosas; las brusquedades destruyen su confianza, mientras que una guía respetuosa canaliza su inteligencia y predisposición colaborativa de forma fluida."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una convivencia familiar llena de paz, afecto y dulzura, siendo un perro sumamente pacífico que se lleva de maravilla con otros caninos y niños. Su carácter noble e incapaz de guardar rencor facilita una integración armoniosa en el hogar. Es un animal rústico de salud fuerte que disfruta acompañando a sus tutores en largas caminatas al aire libre, ofreciendo una fidelidad entrañable y un comportamiento limpio y respetuoso."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su desmedida pasión olfativa lo lleva a desconectar del entorno cuando detecta un rastro interesante, ignorando por completo la llamada verbal del tutor si no está sujeto con correa. Sus largas orejas caídas requieren revisiones e higiene periódicas para prevenir infecciones óticas causadas por humedad o suciedad acumulada. Además, su voz potente y sonora en el rastro puede manifestarse como un aullido melódico si se siente frustrado."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale por poseer una capacidad olfativa de rastreo en sangre o huella fría verdaderamente prodigiosa, capaz de descifrar rumbos complejos en vegetación densa. Posee una modulada voz de rastro o 'latido' que informa al cazador sobre la distancia de la presa. En la vida diaria, su habilidad principal es brindar una compañía dulce, serena e higiénica, destacando además en deportes de búsqueda olfativa y juegos de nariz."
+      }
+    ]
+  },
+  {
+    "id": "basset-leonado",
+    "breed": "Basset Leonado de Bretaña",
+    "title": "Basset Leonado: El Pequeño Rústico de Monte Bajo",
+    "epithet": "El Pequeño Rústico",
+    "fciGroup": "Grupo 6: Perros Tipo Sabueso rastro y semejantes",
+    "akcGroup": "Hound Group",
+    "archetypes": [
+      "Sensorialidad Olfativa Profunda"
+    ],
+    "motivations": [
+      "Rastreo",
+      "Caza"
+    ],
+    "traits": [
+      "Rusticidad",
+      "Tenacidad",
+      "Simpatía"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Rastreo de Conejos",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Muy Sociable",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Basset Leonado de Bretaña es un pequeño y rústico sabueso francés de patas cortas, famoso por su manto duro de color dorado y su mirada vivaz llena de simpatía. Criado para el rastreo de conejos y zorros en tupidos matorrales de monte bajo, combina una agilidad sorprendente con resistencia incansable. Su psicología destaca por un temperamento alegre, excelente sociabilidad con otros perros, tenacidad olfativa y afectuosidad constante.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es alegre, dinámico, extrovertido, rústico e incansable cuando se encuentra en espacios abiertos explora el terreno. El Basset Leonado de Bretaña aborda la vida cotidiana con un optimismo contagioso y una simpatía natural que encanta a todos. En casa es un perro sociable y cariñoso que disfruta del descanso reconfortante, pero conserva esa chispa inquieta que lo impulsa a olfatear cualquier rincón con curiosidad divertida."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de afecto sincero, lealtad divertida y compañerismo constante con todos los integrantes de su hogar. Le apasiona participar en las actividades familiares y recibir muestras de cariño. Su adiestramiento es fluido dentro del grupo de sabuesos gracias a su disposición amigable, respondiendo de maravilla a métodos de motivación positiva con premios apetitosos y juegos de olfato, evitando la monotonía para mantener activa su motivación."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una alegría constante y una vitalidad equilibrada que llena el hogar de momentos entrañables y sonrisas. Su tamaño compacto de patas cortas y su estructura rústica lo hacen fácil de transportar y muy adaptable a diferentes tipos de vivienda. Su excelente sociabilidad con otros perros facilita los paseos en grupo sin conflictos. Su pelaje duro es muy limpio y requiere mantenimientos sencillos para mantenerse libre de suciedad."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su desarrollado instinto de rastreo olfativo significa que si detecta un olor fascinante en el campo, echará a correr tras él ignorando las llamadas de su tutor. Sus orejas caídas exigen revisiones regulares para evitar acumulación de cera o humedad. Además, su energía rústica requiere paseos diarios activos y oportunidades para usar su olfato, ya que el aburrimiento prolongado puede derivar en excavaciones o ladridos en el jardín."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale por su capacidad para penetrar matorrales densos y zarzamoras inaccesibles para otros perros, siguiendo rastros de caza menor con tenacidad inagotable. Posee un sentido del olfato finísimo y un ladrido claro que orienta en el monte. En el contexto familiar, su mayor destreza es brindar una compañía afectuosa, sociable e higiénica, destacando también en juegos recreativos de búsqueda y deportes de olfato."
+      }
+    ]
+  },
+  {
+    "id": "petit-basset",
+    "breed": "Petit Basset Griffon Vendéen",
+    "title": "Petit Basset Griffon: La Energía Despeinada",
+    "epithet": "La Energía Despeinada",
+    "fciGroup": "Grupo 6: Perros Tipo Sabueso rastro y semejantes",
+    "akcGroup": "Hound Group",
+    "archetypes": [
+      "Sensorialidad Olfativa Profunda"
+    ],
+    "motivations": [
+      "Exploración",
+      "Rastreo"
+    ],
+    "traits": [
+      "Vivacidad",
+      "Entusiasmo",
+      "Simpatía"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Rastreo Alegre",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Extrovertido",
+      "independencia_cognitiva": "Alta"
+    },
+    "summary": "El Petit Basset Griffon Vendéen es un extasiado y despeinado sabueso de origen francés, famoso por su manto áspero de aspecto rústico, cejas frondosas y cola de sable levantada. Diseñado para la caza de conejos en el agreste terreno costero de la Vendée, posee una constitución fuerte y patas cortas de gran movilidad. Su psicología destaca por un temperamento extrovertido, entusiasmo arrollador, vivacidad constante, sociabilidad brillante e independencia cognitiva.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es alegre, efervescente, audaz, simpático e infinitamente entusiasta ante cualquier novedad del entorno. El Petit Basset Griffon Vendéen vive en un estado de júbilo permanente que contagia vitalidad a su alrededor. Es un perro extrovertido que saluda a conocidos y extraños con un movimiento de cola incansable. En la casa es cariñoso y juguetón, mostrando una personalidad cómica, curiosa y llena de iniciativas divertidas."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una lealtad alegre, afectuosa y profundamente amigable con todos los miembros de la familia, considerándose un integrante indispensable de la manada. Le encanta formar parte del alboroto cotidiano y compartir aventuras al aire libre. Su adiestramiento requiere paciencia, sentido del humor y métodos positivos dinámicos, ya que su mente independiente de sabueso se distrae fácilmente con olores, respondiendo mejor cuando la educación se plantea como un juego."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una simpatía inigualable y un buen humor contagioso que transforma cualquier hogar en un espacio alegre. Su sociabilidad extraordinaria lo convierte en un amigo genial para niños, visitas y otros perros de todas las razas. Es un animal rústico, resistente y de tamaño muy práctico, cuyo pelaje duro despeinado le da una belleza rústica encantadora que requiere cuidados sencillos de cepillado semanal para mantenerse saludable."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su marcada voz de sabueso y su tendencia al ladrido festivo exigen pautas educativas tempranas para controlar las vocalizaciones en pisos o zonas residenciales. Su pasión por explorar mediante el olfato hace que pasear sin correa en espacios no cercados sea arriesgado, pues seguirá rastros sin mirar atrás. Además, su energía efervescente necesita salidas diarias donde pueda liberar su entusiasmo acumulado mediante ejercicio y olfateo."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale por su agilidad para negociar terrenos de maleza espinosa y rocas costeras a gran velocidad mientras sigue pistas olfativas con determinación. Posee un olfato privilegeda y un 'latido' vocal muy expresivo que señala sus descubrimientos. En el hogar, su habilidad principal es ofrecer una compañía cómica, afectuosa y vitalista, destacando además en pruebas de trabajo de olfato, agilidad y caminatas de montaña."
+      }
+    ]
+  },
+  {
+    "id": "setter-gordon",
+    "breed": "Setter Gordon",
+    "title": "Setter Gordon: El Caballero Negro y Fuego de Escocia",
+    "epithet": "El Caballero Escocés",
+    "fciGroup": "Grupo 7: Perros de Muestra",
+    "akcGroup": "Sporting Group",
+    "archetypes": [
+      "Cooperación Humana Clásica"
+    ],
+    "motivations": [
+      "Caza",
+      "Familia"
+    ],
+    "traits": [
+      "Dignidad",
+      "Lealtad",
+      "Potencia"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Muestra y Compañía",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Afectuoso",
+      "independencia_cognitiva": "Media"
+    },
+    "summary": "El Setter Gordon es el aristocrático y robusto cazador de las Tierras Altas escocesas, célebre por su deslumbrante manto de seda negro y fuego, constitución musculosa y trote poderoso. Desarrollado en el castillo del Duque de Gordon para la muestra de aves en brezales escarpados, es el más fuerte y pesado del grupo setter. Su psicología destaca por dignidad sobria, lealtad profunda, motivación por la muestra y la familia, y temperamento afectuoso.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es sobrio, sereno, digno, noble e intensamente afectuoso con las personas a quienes otorga su confianza. El Setter Gordon posee una presencia calmada en el hogar que transmite seguridad y paz cotidiana. Muestra una actitud prudente y educada ante desconocidos, manteniendo una reserva distinguida sin manifestar timidez ni agresividad. En el campo despliega una potencia física imponente y un trabajo de muestra concentrado y elegante."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla una lealtad profunda, devota y sumamente afectuosa con sus tutores, creando un vínculo familiar sólido e inquebrantable. El Caballero Escocés es un perro protector de corazón blando que adora sentirse cerca de sus seres queridos. Su adiestramiento requiere una guía serena, coherente y basada en el refuerzo positivo; su madurez tardía exige paciencia, aprendiendo con brillantez cuando se establece una relación basada en la confianza y el afecto."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una belleza plástica majestuosa y un comportamiento doméstico de una nobleza y tranquilidad admirables. Es un perro de familia dulce, paciente y afectuoso que actúa como un guardián tranquilo que vela por la seguridad del hogar. Su inteligencia funcional facilita un aprendizaje profundo de tareas de trabajo y convivencia. Su resistencia atlética lo convierte en un compañero fabuloso para personas apasionadas de la naturaleza y excursiones."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su madurez mental y física es más lenta que en otras razas, requiriendo un periodo de desarrollo más prolongado antes de consolidar su adiestramiento definitivo. Su sedoso manto negro con flecos necesita cepillados periódicos para evitar que se formen nudos o se acumulen abrojos tras paseos por el monte. Requiere también ejercicio físico diario significativo para canalizar su potencia muscular y mantener su equilibrio emocional en casa."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale por su capacidad para cubrir amplios terrenos de brezal y montaña con un trote elástico y potente, realizando muestras estatuarias ante la presencia de aves silvestres. Posee un olfato privilegeda para la detección de piezas a gran distancia y excelentes aptitudes de cobro. En la vida familiar, su mayor destreza es brindar una protección calmada, noble y profundamente afectuosa como guardián de la casa."
+      }
+    ]
+  },
+  {
+    "id": "braco-aleman",
+    "breed": "Braco Alemán de Pelo Corto (GSP)",
+    "title": "Braco Alemán: El Atleta Total de la Caza",
+    "epithet": "El Atleta Total",
+    "fciGroup": "Grupo 7: Perros de Muestra",
+    "akcGroup": "Sporting Group",
+    "archetypes": [
+      "Cooperación Humana Clásica",
+      "Inteligencia Funcional Obsesiva"
+    ],
+    "motivations": [
+      "Caza",
+      "Cobro",
+      "Trabajo"
+    ],
+    "traits": [
+      "Versatilidad",
+      "Energía",
+      "Foco"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Muestra, Cobro y Rastreo",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Sociable",
+      "independencia_cognitiva": "Media"
+    },
+    "summary": "El Braco Alemán de Pelo Corto (GSP) es el atleta total de la caza moderna, reconocido como el perro de muestra más polivalente y extendido en todo el mundo. De silueta aerodinámica, musculatura esculpida y mirada inteligente, combina elegancia física con una potencia de trabajo inagotable. Su psicología destaca por una motivación intrínseca por la muestra y el cobro, bajo umbral de estimulación en campo, resiliencia emocional elevada y constante necesidad de cooperación.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es enérgico, inteligente, equilibrado, seguro de sí mismo y caracterizado por una pasión inquebrantable por la actividad física y mental. El Braco Alemán posee un foco de atención agudísimo cuando trabaja o juega, respondiendo a los estímulos con velocidad atlética. En el hogar es un perro sumamente afectuoso, sociable y noble que busca la cercanía de la familia, comportándose con tranquilidad si satisface sus necesidades de ejercicio."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de cooperación estrecha, lealtad absoluta e hiperconexión constante con su tutor de referencia. Este atleta necesita sentirse útil y trabajar en equipo con su humano en disciplinas diversas. Su adiestramiento es un deleite por su brillante inteligencia funcional y deseo de agradar, respondiendo de manera sobresaliente al refuerzo positivo, retos complejos y pautas claras que encaucen su enorme dinamismo hacia conductas deseadas."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una capacidad de aprendizaje y versatilidad extraordinarias que deslumbran en cualquier deporte canino o tarea al aire libre. Su pelaje corto y apretado es de bajísimo mantenimiento, requiriendo solo cepillados ocasionales para lucir brillante y limpio. Es un compañero afectuoso, alegre y deportista incansable que llena de energía la vida de tutores activos, mostrando una gran nobleza y adaptabilidad a entornos familiares dinámicos."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su descomunal nivel de energía física y mental requiere varias horas de ejercicio diario significativo y estimulación cognitiva para prevenir frustración, nerviosismo o conductas compulsivas en casa. Su fuerte instinto cazador exige un trabajo firme en el control de llamada para evitar que persiga fauna silvestre. Además, no es apto para personas sedentarias o familias que no dispongan de tiempo abundante para dedicarle cada día."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como cazador polivalente capaz de realizar muestras estatuarias, rastreo de rastro de sangre y cobro impecable tanto en tierra firme como en aguas profundas. Destaca de forma estelar en disciplinas deportivas como canicross, bikejoring, agility y búsqueda y rescate por su potencia atlética y olfato superior. En el hogar, su habilidad principal es ofrecer una lealtad devota y un compañerismo deportivo apasionado."
+      }
+    ]
+  },
+  {
+    "id": "flat-coated-retriever",
+    "breed": "Flat-Coated Retriever",
+    "title": "Flat-Coated Retriever: El Peter Pan de los Cobradores",
+    "epithet": "El Peter Pan de los Cobradores",
+    "fciGroup": "Grupo 8: Perros Cobradores levantadores de caza y de agua",
+    "akcGroup": "Sporting Group",
+    "archetypes": [
+      "Cooperación Humana Clásica"
+    ],
+    "motivations": [
+      "Juego",
+      "Cobro",
+      "Afecto"
+    ],
+    "traits": [
+      "Optimismo",
+      "Dulzura",
+      "Energía"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Medio",
+      "motivacion_intrinseca": "Cobro en Agua y Juego",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Extraordinaria",
+      "independencia_cognitiva": "Baja"
+    },
+    "summary": "El Flat-Coated Retriever es el 'Peter Pan' del mundo canino, célebre por conservar un espíritu juguetón, alegre y jovial de cachorro durante toda su existencia. De elegante manto liso brillante de color negro o hígado, silueta estilizada y cola oscilante permanente, es un cobrador acuático de primera categoría. Su psicología destaca por un optimismo inagotable, dulzura profunda, motivación por el cobro y el agua, extraordinaria sociabilidad y un deseo constante de agradar.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es efervescente, extremadamente afectuoso, alegre, confiado y lleno de una amabilidad arrolladora que no conoce la malicia. El Flat-Coated Retriever aborda la existencia con un entusiasmo contagioso, moviendo su cola de forma ininterrumpida. Muestra una sociabilidad abierta y cariñosa con todas las personas, niños y otros animales, comportándose como un eterno adolescente juguetón que busca convertir cada instante en un motivo de fiesta."
+      },
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla un apego profundo, devoto y sumamente cariñoso con su núcleo familiar, necesitando formar parte central de la vida cotidiana. Su mayor satisfacción es agradar a sus tutores y recibir muestras constantes de afecto. Su adiestramiento resulta muy gratificante por su inteligencia receptiva y su motivación por colaborar, requiriendo métodos de educación suaves, positivos y muy amables, ya que es un perro sensible que florece con el elogio."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una alegría de vivir única y una dulzura reconfortante que llena la vivienda de paz, cariño y momentos divertidos. Su sociabilidad extraordinaria y su paciencia con los niños lo convierten en un compañero familiar excepcional. Es un perro acuático maravilloso y deportista entusiasta que disfruta acompañando a su familia en excursiones, mostrando siempre una actitud optimista, limpia y profundamente devota con todos sus allegados."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su entusiasmo desbordante y madurez tardía pueden hacer que mantenga conductas de salto o hiperactividad juguetona si no se canaliza con paciencia y educación suave. Su amor por el agua lo llevará a lanzarse a cualquier charco o río durante los paseos, requiriendo secado constante de su pelaje. Asimismo, necesita ejercicio físico diario y estimulación cognitiva para canalizar su energía alegre y evitar aburrimiento en interiores."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como especialista de élite en el cobro de presas en agua y terreno pantanoso gracias a su boca suave y natación potente. Destaca en competencias de cobro (dummy trial), agilidad, deportes acuáticos y cobro de pelotas con una rapidez y júbilo asombrosos. En la convivencia familiar, su mayor habilidad es brindar un cariño reconfortante e incondicional, actuando además como perro de terapia por su dulzura."
+      }
       ]
     },
     {
-      "id": "papillon",
-      "breed": "Papillon (Epagneul Enano Continental)",
-      "title": "Papillon: La Mariposa Inteligente del Grupo Toy",
-      "epithet": "La Mariposa Inteligente",
-      "fciGroup": "Grupo 9: Perros de Compañía",
-      "akcGroup": "Toy Group",
-      "archetypes": [
-        "Inteligencia Funcional Obsesiva",
-        "Hiperreactividad Ornamental"
-      ],
-      "motivations": [
-        "Juego",
-        "Desafío mental",
-        "Aprobación social"
-      ],
-      "traits": [
-        "Inteligencia",
-        "Agilidad",
-        "Vivacidad",
-        "Afecto"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Aprender Trucos y Agility Miniatura",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Sociable, Extrovertido y Despierto",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "Orejas erguidas que recuerdan las alas de una mariposa. Una de las razas pequeñas más inteligentes del mundo.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Curioso, despierto y extraordinariamente hábil para aprender."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Ama participar en juegos interactivos y trucos."
-        }
-      ]
+    "id": "tolling-retriever",
+    "breed": "Nova Scotia Duck Tolling Retriever",
+    "title": "Nova Scotia Duck Tolling Retriever: El Pequeño Zorro Cobrador",
+    "epithet": "El Pequeño Zorro Cobrador",
+    "fciGroup": "Grupo 8: Perros Cobradores levantadores de caza y de agua",
+    "akcGroup": "Sporting Group",
+    "archetypes": [
+      "Cooperación Humana Clásica",
+      "Inteligencia Funcional Obsesiva"
+    ],
+    "motivations": [
+      "Juego",
+      "Cobro"
+    ],
+    "traits": [
+      "Agilidad",
+      "Inteligencia",
+      "Entusiasmo"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Atraer Patos jugando en la orilla",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Amistoso",
+      "independencia_cognitiva": "Media"
     },
-    {
-      "id": "boston-terrier",
-      "breed": "Boston Terrier",
-      "title": "Boston Terrier: El Caballero Americano de Esmoquin",
-      "epithet": "El Caballero Americano de Esmoquin",
-      "fciGroup": "Grupo 9: Perros de Compañía",
-      "akcGroup": "Non-Sporting Group",
-      "archetypes": [
-        "Cooperación Humana Clásica",
-        "Apego Frágil Afiliativo"
-      ],
-      "motivations": [
-        "Afecto",
-        "Juego",
-        "Compañía"
-      ],
-      "traits": [
-        "Humor",
-        "Dulzura",
-        "Adaptabilidad",
-        "Gentileza"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Juego Dinámico en Casa y Descanso",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Muy Amistoso con Todos",
-        "independencia_cognitiva": "Media"
+    "summary": "El Nova Scotia Duck Tolling Retriever o Toller es el más pequeño de los perros cobradores, famoso por su brillante manto rojizo con marcas blancas y su cola frondosa. Desarrollado en Canadá para atraer aves acuáticas jugando alegremente en la orilla antes de cobrarlas, posee una agilidad atlética excepcional y una mirada despierta. Su psicología destaca por un umbral de estimulación bajo, motivación intrínseca desbordante por el juego y el agua, inteligencia funcional obsesiva y gran entusiasmo colaborativo en cada jornada.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es sumamente enérgico, astuto, alegre, alerta e hiperactivo cuando detecta la oportunidad de trabajar o jugar. El Toller posee un intelecto despierto y una curiosidad inagotable que lo impulsan a interactuar constantemente con su entorno. Muestra un comportamiento entusiasta en exteriores y una actitud amistosa pero algo reservada ante personas desconocidas. En la intimidad de su hogar es afectuoso y cariñoso, manteniendo siempre un nivel de atención elevado hacia cualquier dinámica que implique juguetes o agua."
       },
-      "summary": "Patrón de manto en 'esmoquin'. Perro urbano ideal, simpático, limpio y de temperamento sumamente agradable.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Divertido, educado y muy dócil. Rara vez ladra sin motivo."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Compañero adaptable para la vida moderna en ciudad."
-        }
-      ]
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de lealtad apasionada, colaboración estrecha e intensa complicidad con sus cuidadores de referencia. Al Toller le apasiona trabajar en equipo con su humano, estando siempre dispuesto a participar en actividades físicas y retos cognitivos. Su adiestramiento es muy gratificante gracias a su extraordinaria inteligencia y deseo de complacer, requiriendo métodos de motivación positiva dinámicos que canalicen su alta energía con diversión, pautas claras y cariño constante para evitar la frustración por aburrimiento."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un entusiasmo contagioso y una agilidad atlética deslumbrante que llena el hogar de vitalidad y momentos divertidos. Su tamaño mediano compacto facilita el transporte en viajes cotidianos y la adaptabilidad a diferentes tipos de vivienda. Es un perro sumamente versátil, inteligente y trabajador que destaca en deportes caninos y actividades al aire libre. Su carácter afectuoso, limpio y devoto lo convierte en un compañero incondicional para familias deportistas que disfruten del contacto directo con la naturaleza."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su altísimo nivel de energía y su baja tolerancia a la monotonía requieren ejercicio físico diario significativo y estimulación mental frecuente para prevenir comportamientos destructivos en casa. Posee una vocalización particular conocida como el 'grito del Toller', un chillido agudo de excitación que puede resultar molesto si no se educa desde cachorro. Además, su intenso impulso por perseguir pelotas o aves exige supervisar atentamente sus paseos sin correa para evitar fugas no deseadas."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale de forma única por su técnica tradicional de 'tolling', jugando e interactuando en las orillas para atraer patos curiosos a tiro de cobro. Es un nadador excelente de boca suave con una capacidad gimnástica para el cobro en aguas frías. Destaca de manera sobresaliente en pruebas de agility, flyball y deportes de cobro por su rapidez de respuesta, reflejos atléticos e inteligencia resolutiva ante problemas complejos durante el trabajo."
+      }
+    ]
+  },
+  {
+    "id": "lhasa-apso",
+    "breed": "Lhasa Apso",
+    "title": "Lhasa Apso: El Centinela del Tíbet",
+    "epithet": "El Centinela del Tíbet",
+    "fciGroup": "Grupo 9: Perros de Compañía",
+    "akcGroup": "Non-Sporting Group",
+    "archetypes": [
+      "Autonomía Primitiva / Dignidad",
+      "Protección Territorial Absoluta"
+    ],
+    "motivations": [
+      "Custodia",
+      "Comodidad"
+    ],
+    "traits": [
+      "Independencia",
+      "Vigilancia",
+      "Reserva"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Alto",
+      "motivacion_intrinseca": "Aviso Sonoro de Intrusión",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Reservado con Extraños",
+      "independencia_cognitiva": "Muy Alta"
     },
-    {
-      "id": "borzoi",
-      "breed": "Borzoi (Galgo Ruso)",
-      "title": "Borzoi: La Aristocracia Escultórica de la Estepa",
-      "epithet": "La Aristocracia Escultórica",
-      "fciGroup": "Grupo 10: Lebreles",
-      "akcGroup": "Hound Group",
-      "archetypes": [
-        "Lebreles (Desapego y Movimiento)",
-        "Autonomía Primitiva / Dignidad"
-      ],
-      "motivations": [
-        "Carrera",
-        "Caza visual",
-        "Reposo"
-      ],
-      "traits": [
-        "Silencio",
-        "Elegancia",
-        "Reserva",
-        "Velocidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto en Reposo, Nulo ante Presas",
-        "motivacion_intrinseca": "Sprint Exclusivo y Descanso Silencioso",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Extremadamente Reservado e Indiferente",
-        "independencia_cognitiva": "Muy Alta"
+    "summary": "El Lhasa Apso es el milenario centinela místico de los monasterios del Tíbet, considerado tradicionalmente como un amuleto sagrado de buena suerte. De abundante manto largo que cae hasta el suelo, rostro cubierto por largos bigotes y cola pluma curvada sobre el lomo, posee una presencia soberana y equilibrada. Su psicología se rige por un instinto de guarda y aviso sonoro territorial absoluto, finísimo oído, independencia cognitiva muy elevada, dignidad serena y una reserva natural ante personas ajenas al hogar.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es independiente, vigilante, reservado, sereno y dotado de una firmeza de carácter que contrasta con su tamaño pequeño. El Lhasa Apso actúa en el hogar con la dignidad de un guardián aristocrático, analizando los ruidos con un oído prodigioso. Muestra una actitud prudente e indiferente hacia personas desconocidas, no aceptando familiaridades de extraños. En la convivencia con su familia es cariñoso, apacible y alegre, manteniendo siempre una postura noble y sobria."
       },
-      "summary": "Galgo ruso de pelaje ondulado largo. Su estampa es pura poesía visual: silencioso y calmado en casa, un rayo en campo abierto.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Independiente, educado y silencioso. En el hogar parece un felino gigante."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Afecto discreto y digno sin pedir atención constante."
-        }
-      ]
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Establece una lealtad profunda, respetuosa y calmada con su núcleo familiar, otorgando su afecto de forma selectiva a quienes se ganan su confianza. El Lhasa Apso no es un perro servil ni dependiente, prefiriendo una relación basada en la dignidad y el respeto mutuo. Su educación requiere paciencia, tacto suave y métodos de motivación positiva, ya que su altísima independencia cognitiva rechaza los mandatos autoritarios o los tonos bruscos, respondiendo bien al liderazgo sereno."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta una vigilancia sonora y protección territorial excepcional para la vivienda, alertando ante presencias extrañas con rapidez sin mostrar agresividad física sin motivo. Su comportamiento doméstico es tranquilo, limpio y de baja destructividad, siendo ideal para la vida en pisos. Su belleza estética de pelaje largo le otorga un encanto exótico refinado. Es un compañero longevo, de salud resistente y carácter firme que brinda una lealtad sincera y serena a sus tutores."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su abundante y denso pelaje largo requiere un compromiso constante de cepillado meticuloso diario y baños periódicos para evitar que se anude dolorosamente o acumule suciedad. Su marcada terquedad e independencia cognitiva pueden dificultar el adiestramiento convencional si el tutor carece de paciencia y consistencia. Además, su inclinación al aviso sonoro puede traducirse en ladridos repetitivos si no se educa adecuadamente desde cachorro su instinto guardián en entornos comunitarios."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como perro de alarma e intromisión por su capacidad auditiva superior, capaz de diferenciar pasos de conocidos frente a los de extraños a gran distancia. Posee una gran resiliencia para adaptarse a climas fríos y terrenos interiores. En el entorno familiar, su mayor habilidad es brindar un acompañamiento noble, silencioso y vigilante, destacando además en exhibiciones caninas por su elegante caminata y la majestuosidad de su extenso manto sedoso."
+      }
+    ]
+  },
+  {
+    "id": "pekingese",
+    "breed": "Pekinés (Pekingese)",
+    "title": "Pekinés: El León Sagrado en Miniatura",
+    "epithet": "El León Sagrado en Miniatura",
+    "fciGroup": "Grupo 9: Perros de Compañía",
+    "akcGroup": "Toy Group",
+    "archetypes": [
+      "Autonomía Primitiva / Dignidad"
+    ],
+    "motivations": [
+      "Reposo",
+      "Respeto"
+    ],
+    "traits": [
+      "Dignidad",
+      "Orgullo",
+      "Independencia"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Muy Alto",
+      "motivacion_intrinseca": "Compañía Soberana",
+      "resiliencia_emocional": "Alta",
+      "sociabilidad": "Distante",
+      "independencia_cognitiva": "Extrema"
     },
-    {
-      "id": "galgo-espanol",
-      "breed": "Galgo Español",
-      "title": "Galgo Español: La Nobleza Silenciosa de los Campos",
-      "epithet": "La Nobleza Silenciosa de los Campos",
-      "fciGroup": "Grupo 10: Lebreles",
-      "akcGroup": "Hound Group",
-      "archetypes": [
-        "Lebreles (Desapego y Movimiento)",
-        "Apego Frágil Afiliativo"
-      ],
-      "motivations": [
-        "Carrera",
-        "Reposo",
-        "Afecto"
-      ],
-      "traits": [
-        "Timidez noble",
-        "Silencio",
-        "Dulzura",
-        "Velocidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio en Casa, Nulo en Carrera",
-        "motivacion_intrinseca": "Sprint en Abierto y Sofá Cálido",
-        "resiliencia_emocional": "Media",
-        "sociabilidad": "Dulce y Cauteloso pero Pacifico",
-        "independencia_cognitiva": "Alta"
+    "summary": "El Pekinés es el milenario león sagrado de la Ciudad Prohibida de China, criado exclusivamente para la realeza imperial como perro de regazo y compañía soberana. De característico andar meciéndose, melena abundante alrededor del cuello y hocico chato expresivo, encarna una presencia majestuosa y única. Su psicología destaca por un orgullo innato, temperamento independiente, umbral de estimulación muy alto, resiliencia emocional elevada y un afecto reservado pero inquebrantable hacia su tutor principal.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es independiente, orgulloso, digno, sereno, valeroso y marcado por una actitud soberana que no busca complacer por sumisión. El Pekinés se comporta en la vivienda con una calma majestuosa, desplazándose con seguridad sin mostrar agitación innecesaria. Muestra una actitud distante e indiferente hacia extraños, manteniendo una reserva aristocrática. A pesar de su diminuta estatura, posee el coraje intrépido de un león, enfrentando cualquier situación percibida como amenaza con audacia imperturbable."
       },
-      "summary": "Atleta milenario hispano. Famoso por su dulzura profunda, su hábito de dormir largas horas y su estallido de velocidad en libertad.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Sensible, dulce, silencioso y humilde. Un alma pacífica."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Forma apegos sutiles y reconfortantes de presencia tranquila."
-        }
-      ]
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Desarrolla un lazo afectivo exclusivo, profundo y sumamente leal con su tutor de referencia, a quien considera su compañero de igual a igual. El Pekinés demuestra su cariño de forma sutil y tranquila, evitando demostraciones efusivas pero buscando estar presente cerca de su humano. Su adiestramiento exige una paciencia infinita y delicadeza, ya que su extrema independencia cognitiva hace que ignore las órdenes si considera que carecen de elegancia o sentido inmediato."
+      },
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un comportamiento doméstico pacifico, silencioso y limpio, siendo un habitante del hogar que no causa desorden ni requiere ejercicio intenso. Su belleza exótica de melena leonina y su porte aristocrático convierten la convivencia en una experiencia visual cautivadora. Es un guardián de alarma valiente y muy observador que cuida su espacio con determinación. Su lealtad exclusiva brinda un compañerismo noble, tranquilo y reconfortante para personas que valoren la independencia."
+      },
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su estructura braquicefálica de hocico muy chato lo hace sumamente sensible al calor extremo y al ejercicio físico intenso, requiriendo ambientes frescos y paseos breves. Su denso manto largo necesita un cepillado diario meticuloso para prevenir nudos y cuidar la higiene en ojos y pliegues faciales. Asimismo, su terquedad imperial puede dificultar la enseñanza de obediencia si no se gestiona con respeto absoluto y premios atractivos sin brusquedad."
+      },
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como perro de compañía soberana y guardián de regazo imperial por su valor incorruptible y su aguda percepción del entorno. Posee una gran resistencia emocional para mantener la calma en situaciones concurridas sin mostrar miedo. En la vida diaria, su habilidad principal es ofrecer una presencia serena, limpia e higiénica, destacando por su andadura mecida característica y su capacidad para brindar una compañía noble y tranquilizadora a su cuidador."
+      }
+    ]
+  },
+  {
+    "id": "chinese-crested",
+    "breed": "Crestado Chino (Chinese Crested)",
+    "title": "Crestado Chino: El Gracejo Desnudo",
+    "epithet": "El Gracejo Desnudo",
+    "fciGroup": "Grupo 9: Perros de Compañía",
+    "akcGroup": "Toy Group",
+    "archetypes": [
+      "Apego Extremo (Fusión Emocional)"
+    ],
+    "motivations": [
+      "Calor",
+      "Afecto"
+    ],
+    "traits": [
+      "Sensibilidad",
+      "Ternura",
+      "Dependencia"
+    ],
+    "sourceValues": null,
+    "metrics": {
+      "umbral_de_estimulacion": "Bajo",
+      "motivacion_intrinseca": "Calor Corporal y Mimos",
+      "resiliencia_emocional": "Baja",
+      "sociabilidad": "Muy Cariñoso",
+      "independencia_cognitiva": "Muy Baja"
     },
-    {
-      "id": "greyhound",
-      "breed": "Greyhound (Galgo Inglés)",
-      "title": "Greyhound: El Guepardo Canino del Sofá",
-      "epithet": "El Guepardo Canino del Sofá",
-      "fciGroup": "Grupo 10: Lebreles",
-      "akcGroup": "Hound Group",
-      "archetypes": [
-        "Lebreles (Desapego y Movimiento)",
-        "Contención Pesada / Calma Profunda"
-      ],
-      "motivations": [
-        "Carrera",
-        "Reposo",
-        "Confort"
-      ],
-      "traits": [
-        "Velocidad extrema",
-        "Calma doméstica",
-        "Dulzura",
-        "Silencio"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto en Reposo",
-        "motivacion_intrinseca": "Sprint de Corta Distancia y Descanso",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Amable y Tranquilo con Todos",
-        "independencia_cognitiva": "Alta"
+    "summary": "El Crestado Chino es una exótica y delicada raza de compañía, célebre por su variante sin pelo con elegantes mechones en cabeza, cola y patas. De cuerpo fino, mirada tierna y movimientos gráciles, es un animal sumamente cariñoso desarrollado para brindar calor corporal y afecto incondicional. Su psicología destaca por un apego afiliativo extremo, dependencia emocional muy alta, sensibilidad fina, umbral de estimulación bajo y una necesidad constante de cobijo y caricias humanas.",
+    "sections": [
+      {
+        "title": "Personalidad",
+        "sourceLevel": 1,
+        "content": "Su temperamento es dulce, afectuoso, sensible, juguetón, atento y caracterizado por una ternura desbordante en su trato cotidiano. El Crestado Chino busca la cercanía humana de forma continua, comportándose con una delicadeza encantadora en la vivienda. Muestra una actitud amigable e inquisitiva con su núcleo familiar, aunque puede manifestar timidez o cautela ante desconocidos y ruidos estruendosos, prefiriendo siempre refugiarse en los brazos o regazo de sus tutores para sentirse protegido."
       },
-      "summary": "El perro más rápido del mundo (hasta 70 km/h). Curiosamente, en casa es conocido como el 'dormilón de 45 kilos' por su calma total.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Apacible, silencioso y enormemente cariñoso."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Disfruta de la comodidad del hogar y paseos estirando sus patas."
-        }
-      ]
-    },
-    {
-      "id": "whippet",
-      "breed": "Whippet",
-      "title": "Whippet: La Gracia Veloz en Miniatura",
-      "epithet": "La Gracia Veloz en Miniatura",
-      "fciGroup": "Grupo 10: Lebreles",
-      "akcGroup": "Hound Group",
-      "archetypes": [
-        "Lebreles (Desapego y Movimiento)",
-        "Apego Frágil Afiliativo"
-      ],
-      "motivations": [
-        "Carrera",
-        "Contacto físico",
-        "Confort"
-      ],
-      "traits": [
-        "Sensibilidad",
-        "Velocidad",
-        "Dulzura",
-        "Silencio"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo en Movimiento",
-        "motivacion_intrinseca": "Carrera de Agilidad y Cobijo en la Cama",
-        "resiliencia_emocional": "Media",
-        "sociabilidad": "Muy Afable y Cariñoso",
-        "independencia_cognitiva": "Media-Alta"
+      {
+        "title": "El vínculo con su humano",
+        "sourceLevel": 1,
+        "content": "Construye una relación de dependencia afectiva intensa, fusión emocional y devoción incondicional con su guía y la familia. Al Crestado Chino le fascina el contacto piel con piel, acurrucarse bajo las cobijas y acompañar a su tutor a cualquier rincón de la casa. Su educación requiere extrema suavidad, paciencia y motivación positiva, ya que es una raza emocionalmente frágil que se asusta ante tonos de voz duros o la impaciencia."
       },
-      "summary": "Versión mediana del Galgo. Elegante, hiper-afectuoso y extraordinariamente limpio y silencioso en departamentos.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Sensible, dulce y mimoso en la casa. Un rayo de agilidad al aire libre."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Adora dormir pegado a su dueño sintiendo su calor corporal."
-        }
-      ]
-    },
-    {
-      "id": "afghan-hound",
-      "breed": "Lebrel Afgano (Afghan Hound)",
-      "title": "Lebrel Afgano: La Majestad Sedosa del Desierto",
-      "epithet": "La Majestad Sedosa del Desierto",
-      "fciGroup": "Grupo 10: Lebreles",
-      "akcGroup": "Hound Group",
-      "archetypes": [
-        "Autonomía Primitiva / Dignidad",
-        "Lebreles (Desapego y Movimiento)"
-      ],
-      "motivations": [
-        "Libertad",
-        "Carrera",
-        "Autonomía"
-      ],
-      "traits": [
-        "Independencia",
-        "Soberanía",
-        "Elegancia",
-        "Orgullo"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Carrera Libre Autónoma y Dignidad",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Muy Distante e Indiferente a Extraños",
-        "independencia_cognitiva": "Extrema"
+      {
+        "title": "Lo positivo",
+        "sourceLevel": 1,
+        "content": "Aporta un afecto inagotable, una dulzura única y una compañía reconfortante que llena la vivienda de cariño y calidez. Al carecer de pelo en la mayor parte del cuerpo, no desprende pelusa en el hogar ni genera alergias típicas por caspa. Su tamaño diminuto y carácter dócil facilitan su transporte y convivencia en pisos de ciudad. Es un perro alegre y limpio que premia el trato amoroso con una devoción entrañable."
       },
-      "summary": "Manto largo y sedoso de valor de pasarela con la agilidad de un cazador de leopardos de las montañas de Afganistán.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Orgulloso, independiente y distante. No responde a la complacencia sumisa."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Una relación de igual a igual basada en la fascinación mutua."
-        }
-      ]
-    },
-    {
-      "id": "saluki",
-      "breed": "Saluki (Galgo Persa)",
-      "title": "Saluki: La Perla del Viento de Arabia",
-      "epithet": "La Perla del Viento de Arabia",
-      "fciGroup": "Grupo 10: Lebreles",
-      "akcGroup": "Hound Group",
-      "archetypes": [
-        "Lebreles (Desapego y Movimiento)",
-        "Autonomía Primitiva / Dignidad"
-      ],
-      "motivations": [
-        "Carrera",
-        "Caza visual",
-        "Respeto"
-      ],
-      "traits": [
-        "Gracejo",
-        "Dignidad",
-        "Velocidad de fondo",
-        "Sensibilidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Acoso Visual de Gacelas y Serenidad",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Reservado y Muy Digno",
-        "independencia_cognitiva": "Muy Alta"
+      {
+        "title": "Lo negativo",
+        "sourceLevel": 1,
+        "content": "Su piel expuesta requiere cuidados especiales diarios, incluyendo protector solar para evitar quemaduras en verano y cremas hidratantes periódicas. Es extremadamente friolero y sensible a las bajas temperaturas, necesitando ropa de abrigo adecuada en invierno. Además, su alta dependencia emocional lo hace propenso a sufrir ansiedad por separación si se le deja solo durante periodos prolongados, requiriendo tutores con tiempo abundante para brindarle compañía continua y afectuosa."
       },
-      "summary": "Cazador sagrado de los beduinos. Estampa liviana, orejas plumadas y una resistencia a la carrera en desierto inigualable.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Tranquilo, limpio y misterioso. Profundamente fiel pero sin empalagar."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Respeta a su tutor en una convivencia serena y armoniosa."
-        }
-      ]
-    },
-    {
-      "id": "irish-wolfhound",
-      "breed": "Irish Wolfhound (Lobero Irlandés)",
-      "title": "Lobero Irlandés: El Gigante Amable de la Galia",
-      "epithet": "El Gigante Amable de la Galia",
-      "fciGroup": "Grupo 10: Lebreles",
-      "akcGroup": "Hound Group",
-      "archetypes": [
-        "Contención Pesada / Calma Profunda",
-        "Lebreles (Desapego y Movimiento)"
-      ],
-      "motivations": [
-        "Afecto",
-        "Reposo",
-        "Auxilio"
-      ],
-      "traits": [
-        "Gentileza",
-        "Soberanía",
-        "Calma",
-        "Poder contenido"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Muy Alto",
-        "motivacion_intrinseca": "Compañía Pacífica y Galope Noble",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Pacífico y Tolerante con Todos",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Una de las razas más altas del mundo (hasta 90 cm a la cruz). 'Cordero en casa, león en la caza', su presencia impone respeto pero transmite paz.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Noble, paciente y extraordinariamente dulce. No guarda rencores."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Se apoya suavemente en las piernas de su dueño pidiendo afecto."
-        }
-      ]
-    },
-    {
-      "id": "italian-greyhound",
-      "breed": "Pequeño Lebrel Italiano (Piccolo Levriero)",
-      "title": "Pequeño Lebrel Italiano: La Escultura de Cristal y Viento",
-      "epithet": "La Escultura de Cristal y Viento",
-      "fciGroup": "Grupo 10: Lebreles",
-      "akcGroup": "Toy Group",
-      "archetypes": [
-        "Apego Frágil Afiliativo",
-        "Lebreles (Desapego y Movimiento)"
-      ],
-      "motivations": [
-        "Contacto físico",
-        "Confort",
-        "Afecto"
-      ],
-      "traits": [
-        "Sensibilidad",
-        "Ternura",
-        "Velocidad mini",
-        "Fragilidad aparente"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Calor Humano y Piques de Carrera",
-        "resiliencia_emocional": "Baja-Media",
-        "sociabilidad": "Muy Afectuoso pero Asustadizo con Ruidos",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "Diminuto lebrel renacentista de elegancia sublime. Busca cobijo bajo las cobijas y calor constante.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Sensible, cariñoso y de movimientos etéreos."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Un mimado de la casa que premia el cariño suave."
-        }
-      ]
-    },
-    {
-      "id": "pastor-de-anatolia",
-      "breed": "Pastor de Anatolia (Kangal)",
-      "title": "Kangal: El Guardián de los Toros de Turquía",
-      "epithet": "El Guardián de Turquía",
-      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
-      "akcGroup": "Working Group",
-      "archetypes": [
-        "Protección Territorial Absoluta",
-        "Guardia Ancestral de Tiempo Largo"
-      ],
-      "motivations": [
-        "Territorialidad",
-        "Custodia"
-      ],
-      "traits": [
-        "Inflexibilidad",
-        "Poder",
-        "Silencio"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Custodia de Rebaño",
-        "resiliencia_emocional": "Extrema",
-        "sociabilidad": "Inflexible con Intrusos",
-        "independencia_cognitiva": "Extrema"
-      },
-      "summary": "Guardián turco con la mordida más fuerte del mundo canino. Implacable contra depredadores.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Inflexión absoluta ante amenazas. Tranquilo si nada turba su dominio."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Lealtad ancestral y protectora."
-        }
-      ]
-    },
-    {
-      "id": "briard",
-      "breed": "Pastor de Brie (Briard)",
-      "title": "Briard: Corazón Envalentonado bajo Pelaje Mop",
-      "epithet": "Corazón Envalentonado",
-      "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
-      "akcGroup": "Herding Group",
-      "archetypes": [
-        "Protección Estructurada Moderna"
-      ],
-      "motivations": [
-        "Familia",
-        "Trabajo"
-      ],
-      "traits": [
-        "Lealtad",
-        "Energía",
-        "Vigilancia"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Pastoreo y Guardia",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Atento con la Familia",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "Pastor francés de pelo largo e instinto guardián refinado.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Sensible pero valiente."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Muy unido a su núcleo."
-        }
-      ]
-    },
-    {
-      "id": "pastor-de-los-pirineos",
-      "breed": "Pastor de los Pirineos",
-      "title": "Pastor de los Pirineos: La Centella de la Montaña",
-      "epithet": "La Centella de la Montaña",
-      "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
-      "akcGroup": "Herding Group",
-      "archetypes": [
-        "Inteligencia Funcional Obsesiva"
-      ],
-      "motivations": [
-        "Agilidad",
-        "Trabajo"
-      ],
-      "traits": [
-        "Vivacidad",
-        "Astucia",
-        "Nervio"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Mover Ganado",
-        "resiliencia_emocional": "Media",
-        "sociabilidad": "Reservado",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "Pequeño pastor ágil de mirada vivaz.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Puro nervio e inteligencia."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Hiperconectado con su guía."
-        }
-      ]
-    },
-    {
-      "id": "bobtail",
-      "breed": "Old English Sheepdog (Bobtail)",
-      "title": "Bobtail: El Peluche Gigante Pastor",
-      "epithet": "El Peluche Gigante Pastor",
-      "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
-      "akcGroup": "Herding Group",
-      "archetypes": [
-        "Cooperación Humana Clásica"
-      ],
-      "motivations": [
-        "Familia",
-        "Juego"
-      ],
-      "traits": [
-        "Alegría",
-        "Dulzura",
-        "Paciencia"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Juego y Pastoreo",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Excelente",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "Famoso pelaje abundante con tono de ladrido hueco y alegre.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Juguetón y cariñoso."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Amigo incondicional de los niños."
-        }
-      ]
-    },
-    {
-      "id": "hovawart",
-      "breed": "Hovawart",
-      "title": "Hovawart: El Guardián de la Granja",
-      "epithet": "El Guardián de la Granja",
-      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
-      "akcGroup": "Working Group",
-      "archetypes": [
-        "Protección Estructurada Moderna"
-      ],
-      "motivations": [
-        "Custodia",
-        "Familia"
-      ],
-      "traits": [
-        "Equilibrio",
-        "Lealtad",
-        "Nivel de alerta"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio-Alto",
-        "motivacion_intrinseca": "Vigilancia de Finca",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Reservado",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Raza alemana de trabajo rústico con equilibrio emocional excepcional.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Calmado pero seguro."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Protector abnegado."
-        }
-      ]
-    },
-    {
-      "id": "leonberger",
-      "breed": "Leonberger",
-      "title": "Leonberger: El León Dulce de Baden",
-      "epithet": "El León Dulce de Baden",
-      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
-      "akcGroup": "Working Group",
-      "archetypes": [
-        "Contención Pesada / Calma Profunda"
-      ],
-      "motivations": [
-        "Afecto",
-        "Compañía"
-      ],
-      "traits": [
-        "Nobleza",
-        "Paciencia",
-        "Bondad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Muy Alto",
-        "motivacion_intrinseca": "Afecto y Convivencia",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Extraordinaria",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "Aspecto simiesco de león con un corazón de oro pacífico.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Tranquilísimo y bondadoso."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Un miembro gentil de la familia."
-        }
-      ]
-    },
-    {
-      "id": "landseer",
-      "breed": "Landseer",
-      "title": "Landseer: El Guardián Blanco y Negro del Agua",
-      "epithet": "El Guardián del Agua",
-      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
-      "akcGroup": "Working Group",
-      "archetypes": [
-        "Contención Pesada / Calma Profunda"
-      ],
-      "motivations": [
-        "Nadar",
-        "Auxilio"
-      ],
-      "traits": [
-        "Bondad",
-        "Fuerza",
-        "Gentileza"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Rescate y Nado",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Pacífica",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "Pariente del Terranova en manto blanco y negro.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Amante del agua y las personas."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Devoto y protector."
-        }
-      ]
-    },
-    {
-      "id": "dogo-de-palma",
-      "breed": "Ca de Bou (Dogo Mallorquín)",
-      "title": "Ca de Bou: El Guardián Balear",
-      "epithet": "El Guardián Balear",
-      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
-      "akcGroup": "Working Group",
-      "archetypes": [
-        "Protección Territorial Absoluta"
-      ],
-      "motivations": [
-        "Custodia",
-        "Defensa"
-      ],
-      "traits": [
-        "Fuerza",
-        "Seriedad",
-        "Valentía"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Guarda de Finca",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Firme con Extraños",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Moloso balear autóctono potente e imponente.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Serio y seguro."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Fiel a su hogar."
-        }
-      ]
-    },
-    {
-      "id": "pinscher-mediano",
-      "breed": "Pinscher Alemán",
-      "title": "Pinscher Alemán: La Elegancia Atlética",
-      "epithet": "La Elegancia Atlética",
-      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
-      "akcGroup": "Working Group",
-      "archetypes": [
-        "Protección Estructurada Moderna"
-      ],
-      "motivations": [
-        "Alerta",
-        "Trabajo"
-      ],
-      "traits": [
-        "Vivacidad",
-        "Velocidad",
-        "Valentía"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Guarda Ligera",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Alerta con Extraños",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "Tamaño mediano de pelo corto y músculos definidos.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Despierto y vivaz."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Guardián ágil."
-        }
-      ]
-    },
-    {
-      "id": "pinscher-miniatura",
-      "breed": "Pinscher Miniatura",
-      "title": "Pinscher Miniatura: La Dinamita Guardiana en Formato Bolsillo",
-      "epithet": "La Dinamita Guardiana en Formato Bolsillo",
-      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
-      "akcGroup": "Toy Group",
-      "archetypes": [
-        "Terriers Instrumentales",
-        "Protección Estructurada Moderna",
-        "Hiperreactividad Ornamental"
-      ],
-      "motivations": [
-        "Alarma",
-        "Acción",
-        "Atención",
-        "Custodia"
-      ],
-      "traits": [
-        "Alerta",
-        "Valentía",
-        "Inteligencia",
-        "Energía",
-        "Tenacidad",
-        "Lealtad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Vigilancia y Protección del Espacio",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Media – Evaluador y Guardián Compacto",
-        "independencia_cognitiva": "Media-Alta"
-      },
-      "summary": "Raza valiente, hiperatenta y llena de energía. Posee el temperamento y carácter firme de un perro de guarda de gran tamaño en una estructura pequeña y estilizada.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Audaz, dinámico y extremadamente alerta. Es un guardián natural con un gran temperamento y una curiosidad inagotable."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Extremadamente afable, devoto y cariñoso con su núcleo familiar, aunque tiende a ser reservado y desconfiado ante desconocidos."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Excelente perro de alarma, gran agilidad e inteligencia, pelaje de bajo mantenimiento y salud atlética y resistente."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Propenso a ladridos excesivos y territorialidad si no se le proporciona estimulación mental y límites claros."
-        }
-      ],
-      "imageUrl": "https://images.dog.ceo/breeds/pinscher-miniature/n02107312_4057.jpg"
-    },
-    {
-      "id": "kerry-blue-terrier",
-      "breed": "Kerry Blue Terrier",
-      "title": "Kerry Blue Terrier: El Dragón Azul de Irlanda",
-      "epithet": "El Dragón Azul de Irlanda",
-      "fciGroup": "Grupo 3: Terriers",
-      "akcGroup": "Terrier Group",
-      "archetypes": [
-        "Terriers Instrumentales"
-      ],
-      "motivations": [
-        "Caza",
-        "Desafío"
-      ],
-      "traits": [
-        "Intrepidez",
-        "Orgullo",
-        "Versatilidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Madriguera y Guarda",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Firme con Otros Perros",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Manto suave azulado y barba distintiva.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Orgulloso y valiente."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Un todoterreno fiel."
-        }
-      ]
-    },
-    {
-      "id": "bedlington-terrier",
-      "breed": "Bedlington Terrier",
-      "title": "Bedlington Terrier: El Corazón de León con Piel de Cordero",
-      "epithet": "Corazón de León con Piel de Cordero",
-      "fciGroup": "Grupo 3: Terriers",
-      "akcGroup": "Terrier Group",
-      "archetypes": [
-        "Terriers Instrumentales"
-      ],
-      "motivations": [
-        "Carrera",
-        "Caza"
-      ],
-      "traits": [
-        "Velocidad",
-        "Valor",
-        "Dulzura"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Carrera y Caza de Roedores",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Afectuoso",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Aspecto de corderito pero con la velocidad y valor de un terrier de minas.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Dulce en casa, veloz en el campo."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Compañero noble."
-        }
-      ]
-    },
-    {
-      "id": "fox-terrier-pelo-duro",
-      "breed": "Fox Terrier de Pelo Duro",
-      "title": "Fox Terrier: El Nervio del Cazador de Zorreras",
-      "epithet": "El Nervio del Cazador de Zorreras",
-      "fciGroup": "Grupo 3: Terriers",
-      "akcGroup": "Terrier Group",
-      "archetypes": [
-        "Terriers Instrumentales"
-      ],
-      "motivations": [
-        "Caza",
-        "Exploración"
-      ],
-      "traits": [
-        "Impulsividad",
-        "Valentía",
-        "Vivacidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Muy Bajo",
-        "motivacion_intrinseca": "Desalojar Presas",
-        "resiliencia_emocional": "Extrema",
-        "sociabilidad": "Entusiasta",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Clásico terrier británico repleto de chispa y agilidad.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Inagotable y vivaz."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Cómplice de aventuras."
-        }
-      ]
-    },
-    {
-      "id": "border-terrier",
-      "breed": "Border Terrier",
-      "title": "Border Terrier: La Nobleza Rústica de la Frontera",
-      "epithet": "La Nobleza Rústica de la Frontera",
-      "fciGroup": "Grupo 3: Terriers",
-      "akcGroup": "Terrier Group",
-      "archetypes": [
-        "Terriers Instrumentales"
-      ],
-      "motivations": [
-        "Caza",
-        "Trabajo"
-      ],
-      "traits": [
-        "Rusticidad",
-        "Equilibrio",
-        "Tenacidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Seguir a los Sabuesos",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Buena con Perros",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Cabeza con forma de nutria y temperamento más equilibrado que otros terriers.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Sociable y rústico."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Amable y afectuoso."
-        }
-      ]
-    },
-    {
-      "id": "cairn-terrier",
-      "breed": "Cairn Terrier",
-      "title": "Cairn Terrier: El Escarbador de las Tierras Altas",
-      "epithet": "El Escarbador de las Tierras Altas",
-      "fciGroup": "Grupo 3: Terriers",
-      "akcGroup": "Terrier Group",
-      "archetypes": [
-        "Terriers Instrumentales"
-      ],
-      "motivations": [
-        "Exploración",
-        "Caza"
-      ],
-      "traits": [
-        "Curiosidad",
-        "Audacia",
-        "Simpatía"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Escarbar y Explorar",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Alegré",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Raza famosa por interpretar a 'Toto' en El Mago de Oz.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Curioso y simpático."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Siempre listo para jugar."
-        }
-      ]
-    },
-    {
-      "id": "irish-terrier",
-      "breed": "Terrier Irlandés",
-      "title": "Irish Terrier: El Temerario Rojo",
-      "epithet": "El Temerario Rojo",
-      "fciGroup": "Grupo 3: Terriers",
-      "akcGroup": "Terrier Group",
-      "archetypes": [
-        "Terriers Instrumentales"
-      ],
-      "motivations": [
-        "Caza",
-        "Acción"
-      ],
-      "traits": [
-        "Valentía",
-        "Lealtad",
-        "Impulsividad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Acción y Guardia",
-        "resiliencia_emocional": "Extrema",
-        "sociabilidad": "Cariñoso con la Gente",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Pelo rojo alambrado con un corazón intrépido sin límites.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Apasionado y valeroso."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Un amigo incondicional."
-        }
-      ]
-    },
-    {
-      "id": "welsh-terrier",
-      "breed": "Welsh Terrier",
-      "title": "Welsh Terrier: El Espíritu Galés Negro y Fuego",
-      "epithet": "El Espíritu Galés",
-      "fciGroup": "Grupo 3: Terriers",
-      "akcGroup": "Terrier Group",
-      "archetypes": [
-        "Terriers Instrumentales"
-      ],
-      "motivations": [
-        "Juego",
-        "Caza"
-      ],
-      "traits": [
-        "Alegría",
-        "Resistencia",
-        "Equilibrio"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Rastreo y Juego",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Sociable",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Aspecto similar al Airedale pero en tamaño compacto.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Alegre y constante."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Tratable y simpático."
-        }
-      ]
-    },
-    {
-      "id": "finnish-spitz",
-      "breed": "Finnish Spitz",
-      "title": "Finnish Spitz: El Cantante de los Bosques",
-      "epithet": "El Cantante de los Bosques",
-      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
-      "akcGroup": "Non-Sporting Group",
-      "archetypes": [
-        "Autonomía Primitiva / Dignidad"
-      ],
-      "motivations": [
-        "Vocalización",
-        "Caza"
-      ],
-      "traits": [
-        "Vivacidad",
-        "Alerta",
-        "Independencia"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Aviso por Ladrido Rítmico",
-        "resiliencia_emocional": "Media",
-        "sociabilidad": "Afectuoso",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Perro nacional de Finlandia conocido por su ladrido rítmico al señalar aves.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Vivaz y expresivo."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Compañero atento."
-        }
-      ]
-    },
-    {
-      "id": "norwegian-elkhound",
-      "breed": "Norwegian Elkhound",
-      "title": "Norwegian Elkhound: El Cazador de Alces Noruego",
-      "epithet": "El Cazador de Alces",
-      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
-      "akcGroup": "Hound Group",
-      "archetypes": [
-        "Autonomía Primitiva / Dignidad"
-      ],
-      "motivations": [
-        "Caza",
-        "Resistencia"
-      ],
-      "traits": [
-        "Valentía",
-        "Sobriedad",
-        "Rusticidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Acoso de Caza Mayor",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Sociable con la Familia",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Antiguo compañero de los vikingos en la caza de grandes mamíferos.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Valiente y rústico."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Fiel e independiente."
-        }
-      ]
-    },
-    {
-      "id": "kishu-ken",
-      "breed": "Kishu Ken",
-      "title": "Kishu Ken: La Pureza Blanca de la Caza Japonesa",
-      "epithet": "La Pureza Blanca",
-      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
-      "akcGroup": "Working Group",
-      "archetypes": [
-        "Autonomía Primitiva / Dignidad"
-      ],
-      "motivations": [
-        "Autonomía",
-        "Caza"
-      ],
-      "traits": [
-        "Silencio",
-        "Nobleza",
-        "Independencia"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Caza Silenciosa de Jabalí",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Reservado",
-        "independencia_cognitiva": "Extrema"
-      },
-      "summary": "Raza sagrada japonesa de pelaje blanco y carácter calmo y digno.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Silencioso e imponente."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Devoto a su guía."
-        }
-      ]
-    },
-    {
-      "id": "sabueso-espanol",
-      "breed": "Sabueso Español",
-      "title": "Sabueso Español: La Voz Profunda del Rastro Cantábrico",
-      "epithet": "La Voz Profunda del Rastro",
-      "fciGroup": "Grupo 6: Perros Tipo Sabueso rastro y semejantes",
-      "akcGroup": "Hound Group",
-      "archetypes": [
-        "Sensorialidad Olfativa Profunda"
-      ],
-      "motivations": [
-        "Rastreo",
-        "Olfato"
-      ],
-      "traits": [
-        "Tenacidad",
-        "Nieve de rastro",
-        "Gentileza"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo en Rastro",
-        "motivacion_intrinseca": "Seguir Latidos de Rastro",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Pacífico",
-        "independencia_cognitiva": "Muy Alta"
-      },
-      "summary": "Sabueso autóctono del norte de España con una voz melódica y potente.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Incombustible en el campo."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Noble y cariñoso."
-        }
-      ]
-    },
-    {
-      "id": "basset-leonado",
-      "breed": "Basset Leonado de Bretaña",
-      "title": "Basset Leonado: El Pequeño Rústico de Monte Bajo",
-      "epithet": "El Pequeño Rústico",
-      "fciGroup": "Grupo 6: Perros Tipo Sabueso rastro y semejantes",
-      "akcGroup": "Hound Group",
-      "archetypes": [
-        "Sensorialidad Olfativa Profunda"
-      ],
-      "motivations": [
-        "Rastreo",
-        "Caza"
-      ],
-      "traits": [
-        "Rusticidad",
-        "Tenacidad",
-        "Simpatía"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Rastreo de Conejos",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Muy Sociable",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Basset francés de pelo duro dorado y temperamento alegre.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Alegre e incansable."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Amable y divertido."
-        }
-      ]
-    },
-    {
-      "id": "petit-basset",
-      "breed": "Petit Basset Griffon Vendéen",
-      "title": "Petit Basset Griffon: La Energía Despeinada",
-      "epithet": "La Energía Despeinada",
-      "fciGroup": "Grupo 6: Perros Tipo Sabueso rastro y semejantes",
-      "akcGroup": "Hound Group",
-      "archetypes": [
-        "Sensorialidad Olfativa Profunda"
-      ],
-      "motivations": [
-        "Exploración",
-        "Rastreo"
-      ],
-      "traits": [
-        "Vivacidad",
-        "Entusiasmo",
-        "Simpatía"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Rastreo Alegre",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Extrovertido",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "Cazador galo despeinado de temperamento extasiado.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Lleno de energía y buen humor."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Compañero simpático."
-        }
-      ]
-    },
-    {
-      "id": "setter-gordon",
-      "breed": "Setter Gordon",
-      "title": "Setter Gordon: El Caballero Negro y Fuego de Escocia",
-      "epithet": "El Caballero Escocés",
-      "fciGroup": "Grupo 7: Perros de Muestra",
-      "akcGroup": "Sporting Group",
-      "archetypes": [
-        "Cooperación Humana Clásica"
-      ],
-      "motivations": [
-        "Caza",
-        "Familia"
-      ],
-      "traits": [
-        "Dignidad",
-        "Lealtad",
-        "Potencia"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Muestra y Compañía",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Afectuoso",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "El más pesado y fuerte de los setters, de manto negro y fuego.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Sobrio y fiel."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Guardia afectuoso de la casa."
-        }
-      ]
-    },
-    {
-      "id": "braco-aleman",
-      "breed": "Braco Alemán de Pelo Corto (GSP)",
-      "title": "Braco Alemán: El Atleta Total de la Caza",
-      "epithet": "El Atleta Total",
-      "fciGroup": "Grupo 7: Perros de Muestra",
-      "akcGroup": "Sporting Group",
-      "archetypes": [
-        "Cooperación Humana Clásica",
-        "Inteligencia Funcional Obsesiva"
-      ],
-      "motivations": [
-        "Caza",
-        "Cobro",
-        "Trabajo"
-      ],
-      "traits": [
-        "Versatilidad",
-        "Energía",
-        "Foco"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Muestra, Cobro y Rastreo",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Sociable",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "El perro de muestra más polivalente y extendido en el mundo.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Energético e inteligente."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Compañero incansable."
-        }
-      ]
-    },
-    {
-      "id": "flat-coated-retriever",
-      "breed": "Flat-Coated Retriever",
-      "title": "Flat-Coated Retriever: El Peter Pan de los Cobradores",
-      "epithet": "El Peter Pan de los Cobradores",
-      "fciGroup": "Grupo 8: Perros Cobradores levantadores de caza y de agua",
-      "akcGroup": "Sporting Group",
-      "archetypes": [
-        "Cooperación Humana Clásica"
-      ],
-      "motivations": [
-        "Juego",
-        "Cobro",
-        "Afecto"
-      ],
-      "traits": [
-        "Optimismo",
-        "Dulzura",
-        "Energía"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Cobro en Agua y Juego",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Extraordinaria",
-        "independencia_cognitiva": "Baja"
-      },
-      "summary": "Conserva un espíritu juguetón de cachorro durante toda su vida.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Eternamente jovial y afectuoso."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Busca agradar sin parar."
-        }
-      ]
-    },
-    {
-      "id": "tolling-retriever",
-      "breed": "Nova Scotia Duck Tolling Retriever",
-      "title": "Nova Scotia Duck Tolling Retriever: El Pequeño Zorro Cobrador",
-      "epithet": "El Pequeño Zorro Cobrador",
-      "fciGroup": "Grupo 8: Perros Cobradores levantadores de caza y de agua",
-      "akcGroup": "Sporting Group",
-      "archetypes": [
-        "Cooperación Humana Clásica",
-        "Inteligencia Funcional Obsesiva"
-      ],
-      "motivations": [
-        "Juego",
-        "Cobro"
-      ],
-      "traits": [
-        "Agilidad",
-        "Inteligencia",
-        "Entusiasmo"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Atraer Patos jugando en la orilla",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Amistoso",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "El más pequeño de los retrievers con un pelaje rojizo brillante.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Astuto e hiper-activo."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Adora la pelota y el agua."
-        }
-      ]
-    },
-    {
-      "id": "lhasa-apso",
-      "breed": "Lhasa Apso",
-      "title": "Lhasa Apso: El Centinela del Tíbet",
-      "epithet": "El Centinela del Tíbet",
-      "fciGroup": "Grupo 9: Perros de Compañía",
-      "akcGroup": "Non-Sporting Group",
-      "archetypes": [
-        "Autonomía Primitiva / Dignidad",
-        "Protección Territorial Absoluta"
-      ],
-      "motivations": [
-        "Custodia",
-        "Comodidad"
-      ],
-      "traits": [
-        "Independencia",
-        "Vigilancia",
-        "Reserva"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Aviso Sonoro de Intrusión",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Reservado con Extraños",
-        "independencia_cognitiva": "Muy Alta"
-      },
-      "summary": "Aviso sagrado de los monasterios tibetanos con fino oído.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Independiente y vigilante."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Respetuoso y calmado."
-        }
-      ]
-    },
-    {
-      "id": "pekingese",
-      "breed": "Pekinés (Pekingese)",
-      "title": "Pekinés: El León Sagrado en Miniatura",
-      "epithet": "El León Sagrado en Miniatura",
-      "fciGroup": "Grupo 9: Perros de Compañía",
-      "akcGroup": "Toy Group",
-      "archetypes": [
-        "Autonomía Primitiva / Dignidad"
-      ],
-      "motivations": [
-        "Reposo",
-        "Respeto"
-      ],
-      "traits": [
-        "Dignidad",
-        "Orgullo",
-        "Independencia"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Muy Alto",
-        "motivacion_intrinseca": "Compañía Soberana",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Distante",
-        "independencia_cognitiva": "Extrema"
-      },
-      "summary": "Andar meciéndose característico y carácter incorruptible.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Majestuoso e independiente."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Lazo exclusivo con su tutor."
-        }
-      ]
-    },
-    {
-      "id": "chinese-crested",
-      "breed": "Crestado Chino (Chinese Crested)",
-      "title": "Crestado Chino: El Gracejo Desnudo",
-      "epithet": "El Gracejo Desnudo",
-      "fciGroup": "Grupo 9: Perros de Compañía",
-      "akcGroup": "Toy Group",
-      "archetypes": [
-        "Apego Extremo (Fusión Emocional)"
-      ],
-      "motivations": [
-        "Calor",
-        "Afecto"
-      ],
-      "traits": [
-        "Sensibilidad",
-        "Ternura",
-        "Dependencia"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Calor Corporal y Mimos",
-        "resiliencia_emocional": "Baja",
-        "sociabilidad": "Muy Cariñoso",
-        "independencia_cognitiva": "Muy Baja"
-      },
-      "summary": "Sin pelo salvo en cabeza y patas. Cariñoso como pocos.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Dulce y sensible."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Inseparable en el hogar."
-        }
+      {
+        "title": "Habilidades características",
+        "sourceLevel": 1,
+        "content": "Sobresale como animal de compañía terapéutica y apoyo emocional por su capacidad para emitir calor corporal reconfortante y brindar afecto incondicional. Posee una agilidad física sorprendente y movimientos elásticos que le permiten destacar en juegos de destreza y habilidades toy. En el hogar, su mayor virtud es ofrecer un contacto directo sumamente cariñoso, buscando siempre el amparo del regazo y la tranquilidad de la convivencia familiar."
+      }
       ]
     }
   ],
