@@ -16,6 +16,8 @@ interface BreedCardProps {
 
 const FALLBACK_DOG_IMAGE = "https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg";
 
+const formatMetric = (val: string) => val ? val.split(/ \– | \- | \(/)[0].trim() : '';
+
 export const BreedCard: React.FC<BreedCardProps> = ({
   breed,
   onSelect,
@@ -160,22 +162,22 @@ export const BreedCard: React.FC<BreedCardProps> = ({
         <div className="grid grid-cols-2 gap-2 text-[11px] bg-neutral-900/80 p-3 rounded-2xl border border-white/5 text-slate-300">
           <div className="flex items-center gap-1.5 truncate" title={`Resiliencia: ${breed.metrics.resiliencia_emocional}`}>
             <Shield className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
-            <span className="truncate">Resil.: <span className="font-bold text-white">{breed.metrics.resiliencia_emocional}</span></span>
+            <span className="truncate text-neutral-400">Resiliencia: <span className="font-bold text-white">{formatMetric(breed.metrics.resiliencia_emocional)}</span></span>
           </div>
 
           <div className="flex items-center gap-1.5 truncate" title={`Sociabilidad: ${breed.metrics.sociabilidad}`}>
             <Users className="w-3.5 h-3.5 text-blue-400 flex-shrink-0" />
-            <span className="truncate">Soc.: <span className="font-bold text-white">{breed.metrics.sociabilidad}</span></span>
+            <span className="truncate text-neutral-400">Sociabilidad: <span className="font-bold text-white">{formatMetric(breed.metrics.sociabilidad)}</span></span>
           </div>
 
           <div className="flex items-center gap-1.5 truncate" title={`Independencia Cognitiva: ${breed.metrics.independencia_cognitiva}`}>
             <Brain className="w-3.5 h-3.5 text-purple-400 flex-shrink-0" />
-            <span className="truncate">Indep.: <span className="font-bold text-white">{breed.metrics.independencia_cognitiva}</span></span>
+            <span className="truncate text-neutral-400">Independencia: <span className="font-bold text-white">{formatMetric(breed.metrics.independencia_cognitiva)}</span></span>
           </div>
 
           <div className="flex items-center gap-1.5 truncate" title={`Umbral de Estimulación: ${breed.metrics.umbral_de_estimulacion}`}>
             <Activity className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
-            <span className="truncate">Umbral: <span className="font-bold text-white">{breed.metrics.umbral_de_estimulacion}</span></span>
+            <span className="truncate text-neutral-400">Umbral: <span className="font-bold text-white">{formatMetric(breed.metrics.umbral_de_estimulacion)}</span></span>
           </div>
         </div>
 
