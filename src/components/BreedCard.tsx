@@ -12,6 +12,8 @@ interface BreedCardProps {
   onToggleCompare: (breedId: string) => void;
   onSelectArchetypeFilter?: (archetype: string) => void;
   priority?: boolean;
+  style?: React.CSSProperties;
+  className?: string;
 }
 
 const FALLBACK_DOG_IMAGE = "https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg";
@@ -26,7 +28,9 @@ export const BreedCard: React.FC<BreedCardProps> = ({
   isCompared,
   onToggleCompare,
   onSelectArchetypeFilter,
-  priority = false
+  priority = false,
+  style,
+  className = ''
 }) => {
   const imageUrl = breed.imageUrl || getBreedImageUrl(breed.id);
 
@@ -38,7 +42,8 @@ export const BreedCard: React.FC<BreedCardProps> = ({
   return (
     <article
       onClick={() => onSelect(breed)}
-      className="group bg-[#141414] rounded-[2rem] border border-white/5 hover:border-amber-500/40 shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden relative cursor-pointer"
+      style={style}
+      className={`group bg-[#141414] rounded-[2rem] border border-white/5 hover:border-amber-500/40 shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden relative cursor-pointer animate-card-fade-in ${className}`}
     >
       
       {/* Top Banner Image with Overlay Actions */}
@@ -184,13 +189,10 @@ export const BreedCard: React.FC<BreedCardProps> = ({
       </div>
 
       {/* Footer Action */}
-      <div className="px-5 py-3.5 bg-neutral-900/50 border-t border-white/5 flex items-center justify-between">
-        <span className="text-xs text-slate-400 font-medium">
-          Ficha etológica
-        </span>
+      <div className="px-5 py-3.5 bg-neutral-900/50 border-t border-white/5 flex items-center justify-end">
         <button
           onClick={() => onSelect(breed)}
-          className="min-h-[44px] flex items-center gap-1.5 text-xs font-bold text-black bg-amber-500 hover:bg-amber-400 px-4 py-2.5 rounded-full transition-all cursor-pointer shadow-md shadow-amber-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+          className="min-h-[44px] w-full sm:w-auto flex items-center justify-center gap-1.5 text-xs font-bold text-black bg-amber-500 hover:bg-amber-400 px-4 py-2.5 rounded-full transition-all cursor-pointer shadow-md shadow-amber-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
         >
           <span>Ver Detalles</span>
           <ChevronRight className="w-3.5 h-3.5" />

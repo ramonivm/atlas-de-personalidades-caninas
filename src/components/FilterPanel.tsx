@@ -88,7 +88,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
           {/* Entender Filtros button */}
           <button
             onClick={() => setIsGuideOpen(true)}
-            className="min-h-[44px] flex items-center gap-1.5 text-xs text-amber-400 hover:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 px-3.5 py-2 rounded-full border border-amber-500/30 font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+            className="flex items-center gap-1.5 text-xs text-amber-400 hover:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 px-3.5 py-2 rounded-full border border-amber-500/30 font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
             title="Guía interactiva para entender los filtros etológicos"
           >
             <HelpCircle className="w-3.5 h-3.5 text-amber-500" />
@@ -115,7 +115,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
           {activeFilterCount > 0 && (
             <button
               onClick={resetFilters}
-              className="min-h-[44px] flex items-center gap-1.5 text-xs text-amber-400 hover:text-black bg-amber-500/10 hover:bg-amber-500 px-4 py-2 rounded-full border border-amber-500/30 font-bold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+              className="flex items-center gap-1.5 text-xs text-amber-400 hover:text-black bg-amber-500/10 hover:bg-amber-500 px-4 py-2 rounded-full border border-amber-500/30 font-bold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
               title="Restablecer todos los filtros"
             >
               <RotateCcw className="w-3.5 h-3.5" />
@@ -126,7 +126,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
           {/* Mobile toggle button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden min-h-[44px] flex items-center gap-1.5 text-xs font-semibold text-slate-300 bg-neutral-900 hover:bg-neutral-800 px-4 py-2 rounded-full border border-neutral-800 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+            className="md:hidden flex items-center gap-1.5 text-xs font-semibold text-slate-300 bg-neutral-900 hover:bg-neutral-800 px-4 py-2 rounded-full border border-neutral-800 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
           >
             <SlidersHorizontal className="w-3.5 h-3.5" />
             <span>{isOpen ? 'Ocultar' : 'Filtros'}</span>

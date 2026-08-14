@@ -13,8 +13,12 @@ import {
   CheckCircle2, 
   XCircle, 
   Sparkles,
-  Printer,
-  Heart
+  Heart,
+  Share2,
+  Link,
+  Check,
+  Facebook,
+  Twitter
 } from 'lucide-react';
 
 interface BreedDetailModalProps {
@@ -42,14 +46,42 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
 
   const imageUrl = breed.imageUrl || getBreedImageUrl(breed.id);
   const [activeTab, setActiveTab] = useState<'overview' | 'sections' | 'metrics'>('overview');
+  const [showShareMenu, setShowShareMenu] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   // Ensure active tab resets to overview whenever a new breed is loaded
   useEffect(() => {
     setActiveTab('overview');
+    setShowShareMenu(false);
   }, [breed.id]);
 
-  const handlePrint = () => {
-    window.print();
+  const handleShare = async () => {
+    const shareData = {
+      title: `${breed.breed} - Ficha Etológica Canina`,
+      text: `Conoce las características, motivaciones y perfil etológico de la raza ${breed.breed}: "${breed.epithet}"`,
+      url: window.location.href,
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (error) {
+        // Fallback to custom menu if native share is cancelled or fails
+        if ((error as Error).name !== 'AbortError') {
+          setShowShareMenu(prev => !prev);
+        }
+      }
+    } else {
+      setShowShareMenu(prev => !prev);
+    }
+  };
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(window.location.href);
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
   };
 
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
@@ -115,36 +147,95 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
               <div className="flex items-center gap-2 mt-2 sm:mt-0">
                 <button
                   onClick={() => onToggleCompare(breed.id)}
-                  className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold transition-all backdrop-blur-md cursor-pointer ${
+                  aria-label={isCompared ? 'Quitar de comparar' : 'Comparar raza'}
+                  className={`flex items-center gap-1.5 p-2.5 sm:px-4 sm:py-2 rounded-full text-xs font-bold transition-all backdrop-blur-md cursor-pointer ${
                     isCompared
                       ? 'bg-amber-500 text-black shadow-lg shadow-amber-500/20'
                       : 'bg-black/80 text-slate-200 hover:bg-neutral-800 border border-white/10'
                   }`}
                 >
                   <GitCompare className="w-3.5 h-3.5" />
-                  <span>{isCompared ? 'Comparando' : 'Comparar'}</span>
+                  <span className="hidden sm:inline">{isCompared ? 'Comparando' : 'Comparar'}</span>
                 </button>
 
                 <button
                   onClick={() => onToggleFavorite(breed.id)}
-                  className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold transition-all backdrop-blur-md cursor-pointer ${
+                  aria-label={isFavorite ? 'Quitar de guardados' : 'Guardar en favoritos'}
+                  className={`flex items-center gap-1.5 p-2.5 sm:px-4 sm:py-2 rounded-full text-xs font-bold transition-all backdrop-blur-md cursor-pointer ${
                     isFavorite
                       ? 'bg-rose-500 text-white shadow-lg shadow-rose-500/20'
                       : 'bg-black/80 text-slate-200 hover:bg-neutral-800 border border-white/10'
                   }`}
                 >
                   <Bookmark className={`w-3.5 h-3.5 ${isFavorite ? 'fill-current' : ''}`} />
-                  <span>{isFavorite ? 'Guardado' : 'Guardar'}</span>
+                  <span className="hidden sm:inline">{isFavorite ? 'Guardado' : 'Guardar'}</span>
                 </button>
 
-                <button
-                  onClick={handlePrint}
-                  aria-label="Imprimir ficha de la raza o guardar en PDF"
-                  className="p-2.5 rounded-full text-xs bg-black/80 text-slate-200 hover:bg-neutral-800 border border-white/10 transition-colors cursor-pointer"
-                  title="Imprimir o guardar como PDF"
-                >
-                  <Printer className="w-4 h-4" />
-                </button>
+                {/* Share Button & Dropdown */}
+                <div className="relative">
+                  <button
+                    onClick={handleShare}
+                    aria-label="Compartir ficha etológica"
+                    className="p-2.5 rounded-full text-xs bg-black/80 text-slate-200 hover:bg-neutral-800 border border-white/10 transition-colors cursor-pointer"
+                    title="Compartir ficha"
+                  >
+                    <Share2 className="w-4 h-4" />
+                  </button>
+
+                  {showShareMenu && (
+                    <div 
+                      className="absolute top-full right-0 mt-2 bg-[#141414] border border-white/10 rounded-xl shadow-2xl p-2 flex flex-col gap-1 w-48 z-50 animate-fade-in"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <button
+                        onClick={copyToClipboard}
+                        className="flex items-center gap-2.5 px-3 py-2 text-xs font-semibold text-slate-200 hover:text-white hover:bg-neutral-800 rounded-lg transition-colors cursor-pointer text-left w-full"
+                      >
+                        {copied ? (
+                          <>
+                            <Check className="w-3.5 h-3.5 text-emerald-400" />
+                            <span className="text-emerald-400">¡Enlace copiado!</span>
+                          </>
+                        ) : (
+                          <>
+                            <Link className="w-3.5 h-3.5 text-amber-400" />
+                            <span>Copiar Enlace</span>
+                          </>
+                        )}
+                      </button>
+
+                      <a
+                        href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`Conoce el perfil etológico de la raza ${breed.breed}: ${window.location.href}`)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2.5 px-3 py-2 text-xs font-semibold text-slate-200 hover:text-white hover:bg-neutral-800 rounded-lg transition-colors"
+                      >
+                        <span className="w-3.5 h-3.5 flex items-center justify-center font-bold text-emerald-400 text-[11px]">W</span>
+                        <span>WhatsApp</span>
+                      </a>
+
+                      <a
+                        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(`Ficha etológica de ${breed.breed}: "${breed.epithet}"`)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2.5 px-3 py-2 text-xs font-semibold text-slate-200 hover:text-white hover:bg-neutral-800 rounded-lg transition-colors"
+                      >
+                        <Twitter className="w-3.5 h-3.5 text-sky-400" />
+                        <span>X / Twitter</span>
+                      </a>
+
+                      <a
+                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2.5 px-3 py-2 text-xs font-semibold text-slate-200 hover:text-white hover:bg-neutral-800 rounded-lg transition-colors"
+                      >
+                        <Facebook className="w-3.5 h-3.5 text-blue-500" />
+                        <span>Facebook</span>
+                      </a>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>

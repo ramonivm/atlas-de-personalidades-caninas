@@ -227,6 +227,11 @@ export default function App() {
     });
   }, [filters]);
 
+  // Active filter signature for triggering staggered entrance transitions
+  const filterSignature = useMemo(() => {
+    return `${filters.fciGroup}|${filters.akcGroup}|${filters.archetype}|${filters.motivation}|${filters.trait}|${filters.resilienceLevel}|${filters.sociabilityLevel}|${filters.independenceLevel}|${filters.sortBy}|${filters.searchQuery}`;
+  }, [filters]);
+
   // Favorites Breeds List
   const favoriteBreeds = useMemo(() => {
     return canineData.breeds.filter(b => favorites.includes(b.id));
@@ -322,12 +327,15 @@ export default function App() {
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div key={filterSignature} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {filteredBreeds.map((breed, index) => (
                   <BreedCard
                     key={breed.id}
                     breed={breed}
                     priority={index < 4}
+                    style={{
+                      animationDelay: `${Math.min(index, 15) * 35}ms`
+                    }}
                     onSelect={setSelectedBreed}
                     isFavorite={favorites.includes(breed.id)}
                     onToggleFavorite={toggleFavorite}
@@ -422,10 +430,13 @@ export default function App() {
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {favoriteBreeds.map(breed => (
+                {favoriteBreeds.map((breed, index) => (
                   <BreedCard
                     key={breed.id}
                     breed={breed}
+                    style={{
+                      animationDelay: `${Math.min(index, 15) * 35}ms`
+                    }}
                     onSelect={setSelectedBreed}
                     isFavorite={true}
                     onToggleFavorite={toggleFavorite}
