@@ -72,10 +72,10 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
           <img
             src={imageUrl}
             alt={`Fotografía en alta resolución de ${breed.breed}`}
-            className="w-full h-full object-cover opacity-70"
+            className="w-full h-full object-cover opacity-80"
             onError={handleImageError}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/20 to-transparent" />
 
           {/* Close Button */}
           <button
