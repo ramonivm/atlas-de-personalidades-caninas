@@ -20,12 +20,12 @@ import {
 } from 'lucide-react';
 import {
   ResponsiveContainer,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  Tooltip,
-  CartesianGrid
+  RadarChart,
+  Radar,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  Tooltip
 } from 'recharts';
 
 interface BreedCompareProps {
@@ -495,6 +495,188 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
         </div>
       </div>
 
+      {/* SECCIÓN DE FICHAS Y MATRIZ DETALLADA */}
+      {(viewMode === 'both' || viewMode === 'matrix') && (
+        <div className="bg-[#141414] border border-white/5 rounded-[2.5rem] p-4 sm:p-7 shadow-2xl overflow-hidden">
+          
+          <div className="w-full overflow-x-auto overscroll-x-contain rounded-xl border border-white/10">
+            <table className="w-full text-left border-collapse min-w-[600px] table-fixed">
+              
+              {/* CABECERA: Avatares y Nombres */}
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="sticky left-0 z-20 bg-neutral-900 border-r border-white/10 p-4 shadow-[2px_0_5px_rgba(0,0,0,0.5)] w-40 sm:w-48 align-bottom">
+                    <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest block">
+                      Parámetro
+                    </span>
+                  </th>
+                  {comparedBreeds.map((breed, index) => {
+                    const imageUrl = breed.imageUrl || getBreedImageUrl(breed.id);
+                    const palette = BREED_PALETTE[index % BREED_PALETTE.length];
+
+                    return (
+                      <th key={`header-${breed.id}`} className="p-4 border-r border-white/10 last:border-r-0 bg-[#141414] align-top min-w-[160px] relative">
+                        {/* Botón Quitar Raza */}
+                        <button
+                          type="button"
+                          onClick={() => onRemoveCompare(breed.id)}
+                          className="absolute top-2 right-2 p-1.5 rounded-full bg-rose-600/90 text-white hover:bg-rose-600 shadow-md cursor-pointer z-10 transition-transform active:scale-95"
+                          title="Quitar de la comparación"
+                        >
+                          <X className="w-3 h-3 stroke-[2.5]" />
+                        </button>
+
+                        <div className="flex flex-row items-center text-left gap-3">
+  {/* Columna Izquierda: Foto */}
+  <div className="relative shrink-0">
+    <img
+      src={imageUrl}
+      alt={breed.breed}
+      className="w-14 h-14 aspect-square object-cover rounded-xl border border-white/10 shadow-sm"
+    />
+    <span
+      className="absolute -bottom-1 -right-1 w-3 h-3 rounded-full border-2 border-[#141414]"
+      style={{ backgroundColor: palette.fill }}
+    />
+  </div>
+  
+  {/* Columna Derecha: Textos y Botón */}
+  <div className="flex flex-col items-start gap-1">
+    <h4 className="text-sm font-bold text-white leading-tight">
+      {breed.breed}
+    </h4>
+    <button
+      type="button"
+      onClick={() => onSelectBreed(breed)}
+      className="px-3 py-1 text-[10px] font-bold text-black bg-amber-500 hover:bg-amber-400 rounded-full transition-all cursor-pointer shadow-md active:scale-95"
+    >
+      Ver Ficha
+    </button>
+  </div>
+</div>
+                      </th>
+                    );
+                  })}
+                </tr>
+              </thead>
+
+              {/* CUERPO DE LA TABLA: Datos Comparativos */}
+              <tbody className="divide-y divide-white/10">
+                
+                {/* Fila: Arquetipos */}
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <th className="sticky left-0 z-10 bg-neutral-900 border-r border-white/10 p-3 shadow-[2px_0_5px_rgba(0,0,0,0.5)] align-middle">
+                    <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-wider block">
+                      Arquetipos Psicológicos
+                    </span>
+                  </th>
+                  {comparedBreeds.map((breed) => (
+                    <td key={`arq-${breed.id}`} className="p-3 border-r border-white/10 last:border-r-0 bg-[#141414] align-middle">
+                      <div className="flex flex-wrap gap-1">
+                        {breed.archetypes.map((a) => (
+                          <span
+                            key={a}
+                            className="px-2 py-1 bg-purple-500/10 text-purple-300 rounded text-[10px] font-semibold border border-purple-500/20 leading-none"
+                          >
+                            {a}
+                          </span>
+                        ))}
+                      </div>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Fila: Resiliencia Emocional */}
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <th className="sticky left-0 z-10 bg-neutral-900 border-r border-white/10 p-3 shadow-[2px_0_5px_rgba(0,0,0,0.5)] align-middle">
+                    <div className="flex items-center gap-1.5 text-neutral-400">
+                      <Shield className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      <span className="text-[10px] font-bold uppercase tracking-wider">Resiliencia Emocional</span>
+                    </div>
+                  </th>
+                  {comparedBreeds.map((breed) => (
+                    <td key={`res-${breed.id}`} className="p-3 border-r border-white/10 last:border-r-0 bg-[#141414] align-middle">
+                      <span className="text-xs font-bold text-white">
+                        {breed.metrics.resiliencia_emocional}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Fila: Sociabilidad */}
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <th className="sticky left-0 z-10 bg-neutral-900 border-r border-white/10 p-3 shadow-[2px_0_5px_rgba(0,0,0,0.5)] align-middle">
+                    <div className="flex items-center gap-1.5 text-neutral-400">
+                      <Users className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+                      <span className="text-[10px] font-bold uppercase tracking-wider">Sociabilidad</span>
+                    </div>
+                  </th>
+                  {comparedBreeds.map((breed) => (
+                    <td key={`soc-${breed.id}`} className="p-3 border-r border-white/10 last:border-r-0 bg-[#141414] align-middle">
+                      <span className="text-xs font-bold text-white">
+                        {breed.metrics.sociabilidad}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Fila: Independencia Cognitiva */}
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <th className="sticky left-0 z-10 bg-neutral-900 border-r border-white/10 p-3 shadow-[2px_0_5px_rgba(0,0,0,0.5)] align-middle">
+                    <div className="flex items-center gap-1.5 text-neutral-400">
+                      <Brain className="w-3.5 h-3.5 text-purple-400 shrink-0" />
+                      <span className="text-[10px] font-bold uppercase tracking-wider">Independencia Cognitiva</span>
+                    </div>
+                  </th>
+                  {comparedBreeds.map((breed) => (
+                    <td key={`ind-${breed.id}`} className="p-3 border-r border-white/10 last:border-r-0 bg-[#141414] align-middle">
+                      <span className="text-xs font-bold text-white">
+                        {breed.metrics.independencia_cognitiva}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Fila: Umbral de Estimulación */}
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <th className="sticky left-0 z-10 bg-neutral-900 border-r border-white/10 p-3 shadow-[2px_0_5px_rgba(0,0,0,0.5)] align-middle">
+                    <div className="flex items-center gap-1.5 text-neutral-400">
+                      <Activity className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                      <span className="text-[10px] font-bold uppercase tracking-wider">Umbral Estimulación</span>
+                    </div>
+                  </th>
+                  {comparedBreeds.map((breed) => (
+                    <td key={`umb-${breed.id}`} className="p-3 border-r border-white/10 last:border-r-0 bg-[#141414] align-middle">
+                      <span className="text-xs font-bold text-white">
+                        {breed.metrics.umbral_de_estimulacion}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Fila: Motivación Intrínseca */}
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <th className="sticky left-0 z-10 bg-neutral-900 border-r border-white/10 p-3 shadow-[2px_0_5px_rgba(0,0,0,0.5)] align-middle">
+                    <div className="flex items-center gap-1.5 text-neutral-400">
+                      <Heart className="w-3.5 h-3.5 text-rose-400 shrink-0" />
+                      <span className="text-[10px] font-bold uppercase tracking-wider">Motivación Intrínseca</span>
+                    </div>
+                  </th>
+                  {comparedBreeds.map((breed) => (
+                    <td key={`mot-${breed.id}`} className="p-3 border-r border-white/10 last:border-r-0 bg-[#141414] align-middle">
+                      <span className="text-xs font-medium text-slate-300 leading-snug">
+                        {breed.metrics.motivacion_intrinseca}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+
       {/* SECCIÓN DEL GRÁFICO COMPARATIVO (RECHARTS) */}
       {(viewMode === 'both' || viewMode === 'chart') && (
         <div className="bg-[#141414] border border-white/5 rounded-[2.5rem] p-5 sm:p-7 shadow-2xl space-y-6">
@@ -533,53 +715,41 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
           </div>
 
           {/* Recharts Bar Chart Container */}
-          <div className="w-full h-80 sm:h-96">
+          <div className="w-full h-64 sm:h-72 mt-4">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart
-                data={chartData}
-                margin={{ top: 20, right: 15, left: -20, bottom: 25 }}
-                barGap={8}
-                barCategoryGap="20%"
-              >
-                <CartesianGrid strokeDasharray="3 3" stroke="#262626" vertical={false} />
-                <XAxis
+              <RadarChart cx="50%" cy="50%" outerRadius="70%" data={chartData}>
+                <PolarGrid stroke="#333333" />
+                <PolarAngleAxis
                   dataKey="metric"
                   tick={{ fill: '#A3A3A3', fontSize: 11, fontWeight: 600 }}
-                  axisLine={{ stroke: '#333333' }}
-                  tickLine={false}
-                  dy={10}
                 />
-                <YAxis
+                <PolarRadiusAxis
+                  angle={90}
                   domain={[0, 5]}
-                  ticks={[1, 2, 3, 4, 5]}
                   tick={{ fill: '#737373', fontSize: 10 }}
-                  axisLine={{ stroke: '#333333' }}
-                  tickLine={false}
-                  tickFormatter={(val) => {
-                    if (val === 1) return '1 (Bajo)';
-                    if (val === 3) return '3 (Medio)';
-                    if (val === 5) return '5 (Alto)';
-                    return `${val}`;
-                  }}
+                  tickCount={6}
+                  axisLine={false}
                 />
                 <Tooltip
                   content={<CustomChartTooltip />}
-                  cursor={{ fill: 'rgba(255, 255, 255, 0.03)' }}
+                  cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }}
                 />
                 {comparedBreeds.map((breed, index) => {
                   const palette = BREED_PALETTE[index % BREED_PALETTE.length];
                   return (
-                    <Bar
+                    <Radar
                       key={breed.id}
                       dataKey={breed.id}
                       name={breed.breed}
+                      stroke={palette.fill}
                       fill={palette.fill}
-                      radius={[6, 6, 0, 0]}
+                      fillOpacity={0.4}
+                      strokeWidth={2}
                       animationDuration={800}
                     />
                   );
                 })}
-              </BarChart>
+              </RadarChart>
             </ResponsiveContainer>
           </div>
 
@@ -615,364 +785,6 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
           </div>
 
         </div>
-      )}
-
-      {/* SECCIÓN DE FICHAS Y MATRIZ DETALLADA */}
-      {(viewMode === 'both' || viewMode === 'matrix') && (
-        <>
-          {/* VISTA MOBILE: TABLA VERTICAL (< md) */}
-          <div className="block md:hidden space-y-4">
-            {/* Cabecera Fija / Sticky con Foto, Nombre y Botón Eliminar */}
-            <div className="sticky top-[56px] z-20 bg-[#0A0A0A]/95 backdrop-blur-md pt-2 pb-3 border-b border-white/10 -mx-4 px-4">
-              <div className={`grid gap-2 ${
-                comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
-              }`}>
-                {comparedBreeds.map((breed, index) => {
-                  const imageUrl = breed.imageUrl || getBreedImageUrl(breed.id);
-                  const palette = BREED_PALETTE[index % BREED_PALETTE.length];
-                  return (
-                    <div key={breed.id} className="bg-[#141414] border border-white/10 rounded-2xl p-2.5 flex flex-col justify-between relative shadow-lg">
-                      <button
-                        type="button"
-                        onClick={() => onRemoveCompare(breed.id)}
-                        className="absolute -top-1.5 -right-1.5 p-1 rounded-full bg-rose-600 text-white hover:bg-rose-700 shadow-md cursor-pointer z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-400"
-                        title={`Quitar ${breed.breed} de comparación`}
-                        aria-label={`Quitar ${breed.breed} de comparación`}
-                      >
-                        <X className="w-3.5 h-3.5 stroke-[2.5]" />
-                      </button>
-
-                      <div className="flex items-center gap-2">
-                        <img
-                          src={imageUrl}
-                          alt={breed.breed}
-                          className="w-10 h-10 rounded-xl object-cover border border-white/10 shrink-0"
-                        />
-                        <div className="min-w-0 flex-1">
-                          <h4 className="text-xs font-bold text-white truncate leading-tight flex items-center gap-1">
-                            <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: palette.fill }} />
-                            <span className="truncate">{breed.breed}</span>
-                          </h4>
-                          <p className="text-[10px] text-amber-400 italic truncate mt-0.5">
-                            "{breed.epithet}"
-                          </p>
-                        </div>
-                      </div>
-
-                      <button
-                        type="button"
-                        onClick={() => onSelectBreed(breed)}
-                        className="mt-2 w-full text-[10px] font-bold text-amber-400 hover:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 py-1 rounded-lg border border-amber-500/20 transition-colors text-center focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-500"
-                      >
-                        Ver Ficha
-                      </button>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Filas de Atributos Agrupados lado a lado */}
-            <div className="space-y-3 pt-1">
-              
-              {/* Fila: Arquetipos */}
-              <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
-                <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest block">
-                  Arquetipos Psicológicos
-                </span>
-                <div className={`grid gap-2 ${
-                  comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
-                }`}>
-                  {comparedBreeds.map(b => (
-                    <div key={b.id} className="bg-neutral-900/90 p-2 rounded-xl border border-white/5 flex flex-wrap gap-1">
-                      {b.archetypes.map(a => (
-                        <span key={a} className="px-2 py-0.5 bg-purple-500/10 text-purple-300 rounded-full font-bold text-[9px] border border-purple-500/20">
-                          {a}
-                        </span>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Fila: Resiliencia Emocional */}
-              <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
-                <div className="flex items-center gap-1.5 text-neutral-300 text-[10px] font-bold uppercase tracking-widest">
-                  <Shield className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                  <span>Resiliencia Emocional</span>
-                </div>
-                <div className={`grid gap-2 ${
-                  comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
-                }`}>
-                  {comparedBreeds.map(b => (
-                    <div key={b.id} className="bg-neutral-900/90 p-2.5 rounded-xl border border-white/5">
-                      <p className="font-bold text-white text-xs">
-                        {b.metrics.resiliencia_emocional}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Fila: Sociabilidad */}
-              <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
-                <div className="flex items-center gap-1.5 text-neutral-300 text-[10px] font-bold uppercase tracking-widest">
-                  <Users className="w-3.5 h-3.5 text-blue-400 shrink-0" />
-                  <span>Sociabilidad</span>
-                </div>
-                <div className={`grid gap-2 ${
-                  comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
-                }`}>
-                  {comparedBreeds.map(b => (
-                    <div key={b.id} className="bg-neutral-900/90 p-2.5 rounded-xl border border-white/5">
-                      <p className="font-bold text-white text-xs">
-                        {b.metrics.sociabilidad}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Fila: Independencia Cognitiva */}
-              <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
-                <div className="flex items-center gap-1.5 text-neutral-300 text-[10px] font-bold uppercase tracking-widest">
-                  <Brain className="w-3.5 h-3.5 text-purple-400 shrink-0" />
-                  <span>Independencia Cognitiva</span>
-                </div>
-                <div className={`grid gap-2 ${
-                  comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
-                }`}>
-                  {comparedBreeds.map(b => (
-                    <div key={b.id} className="bg-neutral-900/90 p-2.5 rounded-xl border border-white/5">
-                      <p className="font-bold text-white text-xs">
-                        {b.metrics.independencia_cognitiva}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Fila: Umbral de Estimulación */}
-              <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
-                <div className="flex items-center gap-1.5 text-neutral-300 text-[10px] font-bold uppercase tracking-widest">
-                  <Activity className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                  <span>Umbral de Estimulación</span>
-                </div>
-                <div className={`grid gap-2 ${
-                  comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
-                }`}>
-                  {comparedBreeds.map(b => (
-                    <div key={b.id} className="bg-neutral-900/90 p-2.5 rounded-xl border border-white/5">
-                      <p className="font-bold text-white text-xs">
-                        {b.metrics.umbral_de_estimulacion}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Fila: Motivación Intrínseca */}
-              <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
-                <div className="flex items-center gap-1.5 text-neutral-300 text-[10px] font-bold uppercase tracking-widest">
-                  <Heart className="w-3.5 h-3.5 text-rose-400 shrink-0" />
-                  <span>Motivación Intrínseca</span>
-                </div>
-                <div className={`grid gap-2 ${
-                  comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
-                }`}>
-                  {comparedBreeds.map(b => (
-                    <div key={b.id} className="bg-neutral-900/90 p-2.5 rounded-xl border border-white/5">
-                      <p className="font-bold text-white text-[11px] leading-tight">
-                        {b.metrics.motivacion_intrinseca}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Fila: Rasgos Clave */}
-              <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
-                <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest block">
-                  Rasgos Clave
-                </span>
-                <div className={`grid gap-2 ${
-                  comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
-                }`}>
-                  {comparedBreeds.map(b => (
-                    <div key={b.id} className="bg-neutral-900/90 p-2 rounded-xl border border-white/5 flex flex-wrap gap-1">
-                      {b.traits.map(t => (
-                        <span key={t} className="px-2 py-0.5 bg-neutral-800 text-slate-300 rounded-full font-medium text-[9px] border border-white/5">
-                          #{t}
-                        </span>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Fila: Grupo Clasificación */}
-              <div className="bg-[#141414] border border-white/5 rounded-2xl p-3 space-y-2">
-                <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest block">
-                  Grupo FCI
-                </span>
-                <div className={`grid gap-2 ${
-                  comparedBreeds.length === 1 ? 'grid-cols-1' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
-                }`}>
-                  {comparedBreeds.map(b => (
-                    <div key={b.id} className="bg-neutral-900/90 p-2.5 rounded-xl border border-white/5">
-                      <p className="text-[10px] text-amber-400 font-semibold leading-tight">{b.fciGroup}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          {/* VISTA DESKTOP: TARJETAS EN Malla (>= md) */}
-          <div className="hidden md:block overflow-x-auto pb-4">
-            <div className={`grid gap-5 ${
-              comparedBreeds.length === 1 ? 'grid-cols-1 max-w-xl mx-auto' : comparedBreeds.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
-            }`}>
-              
-              {comparedBreeds.map((breed, index) => {
-                const imageUrl = breed.imageUrl || getBreedImageUrl(breed.id);
-                const palette = BREED_PALETTE[index % BREED_PALETTE.length];
-
-                return (
-                  <div key={breed.id} className="bg-[#141414] border border-white/5 rounded-[2.5rem] shadow-xl flex flex-col justify-between overflow-hidden">
-                    
-                    {/* Header Image */}
-                    <div className="relative h-48 w-full bg-neutral-900">
-                      <img src={imageUrl} alt={breed.breed} className="w-full h-full object-cover opacity-80" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-[#141414]/30 to-transparent" />
-                      
-                      <button
-                        onClick={() => onRemoveCompare(breed.id)}
-                        className="absolute top-3 right-3 p-2 rounded-full bg-black/80 text-slate-200 hover:text-white hover:bg-rose-600 border border-white/10 transition-colors cursor-pointer"
-                        title="Quitar de comparación"
-                      >
-                        <X className="w-4 h-4" />
-                      </button>
-
-                      <div className="absolute bottom-3 left-4 right-4 text-white">
-                        <div className="flex items-center gap-2">
-                          <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: palette.fill }} />
-                          <h3 className="text-xl font-bold tracking-tight leading-tight">
-                            {breed.breed}
-                          </h3>
-                        </div>
-                        <p className="text-xs text-amber-400 font-serif italic truncate mt-0.5">
-                          "{breed.epithet}"
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Metrics Breakdown */}
-                    <div className="p-5 space-y-4 flex-1 text-xs text-slate-300">
-                      
-                      {/* Archetypes */}
-                      <div>
-                        <span className="font-bold text-amber-500 uppercase text-[10px] block mb-1.5 tracking-[0.2em]">
-                          Arquetipos
-                        </span>
-                        <div className="flex flex-wrap gap-1.5">
-                          {breed.archetypes.map(a => (
-                            <span key={a} className="px-3 py-1 bg-purple-500/10 text-purple-300 rounded-full font-bold text-[10px] border border-purple-500/20">
-                              {a}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-
-                      {/* Resiliencia */}
-                      <div className="bg-neutral-900/90 p-3 rounded-2xl border border-white/5">
-                        <div className="flex items-center gap-1.5 text-neutral-400 font-medium mb-1">
-                          <Shield className="w-3.5 h-3.5 text-emerald-400" />
-                          <span>Resiliencia Emocional</span>
-                        </div>
-                        <p className="font-bold text-white text-sm">
-                          {breed.metrics.resiliencia_emocional}
-                        </p>
-                      </div>
-
-                      {/* Sociabilidad */}
-                      <div className="bg-neutral-900/90 p-3 rounded-2xl border border-white/5">
-                        <div className="flex items-center gap-1.5 text-neutral-400 font-medium mb-1">
-                          <Users className="w-3.5 h-3.5 text-blue-400" />
-                          <span>Sociabilidad</span>
-                        </div>
-                        <p className="font-bold text-white text-sm">
-                          {breed.metrics.sociabilidad}
-                        </p>
-                      </div>
-
-                      {/* Independencia */}
-                      <div className="bg-neutral-900/90 p-3 rounded-2xl border border-white/5">
-                        <div className="flex items-center gap-1.5 text-neutral-400 font-medium mb-1">
-                          <Brain className="w-3.5 h-3.5 text-purple-400" />
-                          <span>Independencia Cognitiva</span>
-                        </div>
-                        <p className="font-bold text-white text-sm">
-                          {breed.metrics.independencia_cognitiva}
-                        </p>
-                      </div>
-
-                      {/* Umbral */}
-                      <div className="bg-neutral-900/90 p-3 rounded-2xl border border-white/5">
-                        <div className="flex items-center gap-1.5 text-neutral-400 font-medium mb-1">
-                          <Activity className="w-3.5 h-3.5 text-amber-400" />
-                          <span>Umbral de Estimulación</span>
-                        </div>
-                        <p className="font-bold text-white text-sm">
-                          {breed.metrics.umbral_de_estimulacion}
-                        </p>
-                      </div>
-
-                      {/* Motivación Intrínseca */}
-                      <div className="bg-neutral-900/90 p-3 rounded-2xl border border-white/5">
-                        <div className="flex items-center gap-1.5 text-neutral-400 font-medium mb-1">
-                          <Heart className="w-3.5 h-3.5 text-rose-400" />
-                          <span>Motivación Intrínseca</span>
-                        </div>
-                        <p className="font-bold text-white text-xs">
-                          {breed.metrics.motivacion_intrinseca}
-                        </p>
-                      </div>
-
-                      {/* Motivadores y Rasgos */}
-                      <div>
-                        <span className="font-bold text-amber-500 uppercase text-[10px] block mb-1.5 tracking-[0.2em]">
-                          Rasgos Clave
-                        </span>
-                        <div className="flex flex-wrap gap-1.5">
-                          {breed.traits.map(t => (
-                            <span key={t} className="px-2.5 py-0.5 bg-neutral-900 text-slate-300 rounded-full font-medium text-[10px] border border-white/5">
-                              #{t}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-
-                    </div>
-
-                    {/* Footer Button */}
-                    <div className="p-4 bg-neutral-900/50 border-t border-white/5">
-                      <button
-                        onClick={() => onSelectBreed(breed)}
-                        className="w-full py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs rounded-full transition-all cursor-pointer shadow-md shadow-amber-500/10"
-                      >
-                        Ver Ficha Completa
-                      </button>
-                    </div>
-
-                  </div>
-                );
-              })}
-
-            </div>
-          </div>
-        </>
       )}
 
     </div>
