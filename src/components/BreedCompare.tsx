@@ -499,7 +499,8 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
       {(viewMode === 'both' || viewMode === 'matrix') && (
         <div className="bg-[#141414] border border-white/5 rounded-[2.5rem] p-4 sm:p-7 shadow-2xl overflow-hidden">
           
-          <div className="w-full overflow-x-auto overscroll-x-contain rounded-xl border border-white/10">
+          {/* TABLA ORIGINAL PARA ESCRITORIO (>= md) */}
+          <div className="hidden md:block w-full overflow-x-auto overscroll-x-contain rounded-xl border border-white/10">
             <table className="w-full text-left border-collapse min-w-[600px] table-fixed">
               
               {/* CABECERA: Avatares y Nombres */}
@@ -527,33 +528,33 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
                         </button>
 
                         <div className="flex flex-row items-center text-left gap-3">
-  {/* Columna Izquierda: Foto */}
-  <div className="relative shrink-0">
-    <img
-      src={imageUrl}
-      alt={breed.breed}
-      className="w-14 h-14 aspect-square object-cover rounded-xl border border-white/10 shadow-sm"
-    />
-    <span
-      className="absolute -bottom-1 -right-1 w-3 h-3 rounded-full border-2 border-[#141414]"
-      style={{ backgroundColor: palette.fill }}
-    />
-  </div>
-  
-  {/* Columna Derecha: Textos y Botón */}
-  <div className="flex flex-col items-start gap-1">
-    <h4 className="text-sm font-bold text-white leading-tight">
-      {breed.breed}
-    </h4>
-    <button
-      type="button"
-      onClick={() => onSelectBreed(breed)}
-      className="px-3 py-1 text-[10px] font-bold text-black bg-amber-500 hover:bg-amber-400 rounded-full transition-all cursor-pointer shadow-md active:scale-95"
-    >
-      Ver Ficha
-    </button>
-  </div>
-</div>
+                          {/* Columna Izquierda: Foto */}
+                          <div className="relative shrink-0">
+                            <img
+                              src={imageUrl}
+                              alt={breed.breed}
+                              className="w-14 h-14 aspect-square object-cover rounded-xl border border-white/10 shadow-sm"
+                            />
+                            <span
+                              className="absolute -bottom-1 -right-1 w-3 h-3 rounded-full border-2 border-[#141414]"
+                              style={{ backgroundColor: palette.fill }}
+                            />
+                          </div>
+                          
+                          {/* Columna Derecha: Textos y Botón */}
+                          <div className="flex flex-col items-start gap-1">
+                            <h4 className="text-sm font-bold text-white leading-tight">
+                              {breed.breed}
+                            </h4>
+                            <button
+                              type="button"
+                              onClick={() => onSelectBreed(breed)}
+                              className="px-3 py-1 text-[10px] font-bold text-black bg-amber-500 hover:bg-amber-400 rounded-full transition-all cursor-pointer shadow-md active:scale-95"
+                            >
+                              Ver Ficha
+                            </button>
+                          </div>
+                        </div>
                       </th>
                     );
                   })}
@@ -674,6 +675,172 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
               </tbody>
             </table>
           </div>
+
+          {/* VISTA MÓVIL: STACKED MATRIX (< md) */}
+          <div className="block md:hidden w-full">
+            
+            {/* Cabecera de Razas (Sticky) */}
+            <div className="sticky top-0 z-20 bg-[#141414] flex gap-2 pb-4 border-b border-white/10 pt-2">
+              {comparedBreeds.map((breed, index) => {
+                const imageUrl = breed.imageUrl || getBreedImageUrl(breed.id);
+                const palette = BREED_PALETTE[index % BREED_PALETTE.length];
+
+                return (
+                  <div key={`mob-head-${breed.id}`} className="flex-1 flex flex-col items-center text-center relative">
+                    {/* Botón Quitar Raza */}
+                    <button
+                      type="button"
+                      onClick={() => onRemoveCompare(breed.id)}
+                      className="absolute -top-1 -right-1 p-1 rounded-full bg-rose-600 text-white hover:bg-rose-500 shadow-md cursor-pointer z-10 transition-transform active:scale-95"
+                      title={`Quitar ${breed.breed}`}
+                    >
+                      <X className="w-3 h-3 stroke-[2.5]" />
+                    </button>
+
+                    {/* Foto */}
+                    <div className="relative">
+                      <img
+                        src={imageUrl}
+                        alt={breed.breed}
+                        className="w-12 h-12 rounded-lg object-cover border border-white/10 shadow-sm"
+                      />
+                      <span
+                        className="absolute -bottom-1 -right-1 w-2.5 h-2.5 rounded-full border-2 border-[#141414]"
+                        style={{ backgroundColor: palette.fill }}
+                      />
+                    </div>
+
+                    {/* Nombre */}
+                    <h4 className="text-[11px] font-bold text-white leading-tight mt-2 line-clamp-2">
+                      {breed.breed}
+                    </h4>
+
+                    {/* Botón Ficha */}
+                    <button
+                      type="button"
+                      onClick={() => onSelectBreed(breed)}
+                      className="mt-1.5 px-2 py-0.5 text-[9px] font-bold text-black bg-amber-500 hover:bg-amber-400 rounded-full transition-all cursor-pointer shadow-sm active:scale-95"
+                    >
+                      Ficha
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Iteración por Parámetros */}
+            <div className="pt-2 space-y-1">
+              
+              {/* Parámetro 1: Arquetipos Psicológicos */}
+              <div>
+                <div className="w-full text-center text-[10px] text-amber-500 font-bold uppercase tracking-widest py-2 bg-neutral-900/50 my-2 rounded">
+                  Arquetipos Psicológicos
+                </div>
+                <div className="flex gap-2 items-stretch">
+                  {comparedBreeds.map((breed) => (
+                    <div key={`mob-arq-${breed.id}`} className="flex-1 bg-neutral-900/30 p-2 rounded-lg text-center flex flex-col justify-center gap-1">
+                      {breed.archetypes.map((a) => (
+                        <span
+                          key={a}
+                          className="px-1.5 py-0.5 bg-purple-500/10 text-purple-300 rounded text-[9px] font-semibold border border-purple-500/20 leading-tight"
+                        >
+                          {a}
+                        </span>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Parámetro 2: Resiliencia Emocional */}
+              <div>
+                <div className="w-full text-center text-[10px] text-amber-500 font-bold uppercase tracking-widest py-2 bg-neutral-900/50 my-2 rounded flex items-center justify-center gap-1">
+                  <Shield className="w-3 h-3 text-emerald-400 shrink-0" />
+                  <span>Resiliencia Emocional</span>
+                </div>
+                <div className="flex gap-2 items-stretch">
+                  {comparedBreeds.map((breed) => (
+                    <div key={`mob-res-${breed.id}`} className="flex-1 bg-neutral-900/30 p-2 rounded-lg text-center flex flex-col justify-center">
+                      <span className="text-[11px] font-bold text-white leading-tight">
+                        {breed.metrics.resiliencia_emocional}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Parámetro 3: Sociabilidad */}
+              <div>
+                <div className="w-full text-center text-[10px] text-amber-500 font-bold uppercase tracking-widest py-2 bg-neutral-900/50 my-2 rounded flex items-center justify-center gap-1">
+                  <Users className="w-3 h-3 text-blue-400 shrink-0" />
+                  <span>Sociabilidad</span>
+                </div>
+                <div className="flex gap-2 items-stretch">
+                  {comparedBreeds.map((breed) => (
+                    <div key={`mob-soc-${breed.id}`} className="flex-1 bg-neutral-900/30 p-2 rounded-lg text-center flex flex-col justify-center">
+                      <span className="text-[11px] font-bold text-white leading-tight">
+                        {breed.metrics.sociabilidad}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Parámetro 4: Independencia Cognitiva */}
+              <div>
+                <div className="w-full text-center text-[10px] text-amber-500 font-bold uppercase tracking-widest py-2 bg-neutral-900/50 my-2 rounded flex items-center justify-center gap-1">
+                  <Brain className="w-3 h-3 text-purple-400 shrink-0" />
+                  <span>Independencia Cognitiva</span>
+                </div>
+                <div className="flex gap-2 items-stretch">
+                  {comparedBreeds.map((breed) => (
+                    <div key={`mob-ind-${breed.id}`} className="flex-1 bg-neutral-900/30 p-2 rounded-lg text-center flex flex-col justify-center">
+                      <span className="text-[11px] font-bold text-white leading-tight">
+                        {breed.metrics.independencia_cognitiva}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Parámetro 5: Umbral de Estimulación */}
+              <div>
+                <div className="w-full text-center text-[10px] text-amber-500 font-bold uppercase tracking-widest py-2 bg-neutral-900/50 my-2 rounded flex items-center justify-center gap-1">
+                  <Activity className="w-3 h-3 text-amber-400 shrink-0" />
+                  <span>Umbral Estimulación</span>
+                </div>
+                <div className="flex gap-2 items-stretch">
+                  {comparedBreeds.map((breed) => (
+                    <div key={`mob-umb-${breed.id}`} className="flex-1 bg-neutral-900/30 p-2 rounded-lg text-center flex flex-col justify-center">
+                      <span className="text-[11px] font-bold text-white leading-tight">
+                        {breed.metrics.umbral_de_estimulacion}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Parámetro 6: Motivación Intrínseca */}
+              <div>
+                <div className="w-full text-center text-[10px] text-amber-500 font-bold uppercase tracking-widest py-2 bg-neutral-900/50 my-2 rounded flex items-center justify-center gap-1">
+                  <Heart className="w-3 h-3 text-rose-400 shrink-0" />
+                  <span>Motivación Intrínseca</span>
+                </div>
+                <div className="flex gap-2 items-stretch">
+                  {comparedBreeds.map((breed) => (
+                    <div key={`mob-mot-${breed.id}`} className="flex-1 bg-neutral-900/30 p-2 rounded-lg text-center flex flex-col justify-center">
+                      <span className="text-[11px] font-medium text-slate-300 leading-snug">
+                        {breed.metrics.motivacion_intrinseca}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
       )}
 
