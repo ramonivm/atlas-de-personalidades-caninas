@@ -881,74 +881,77 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
             </div>
           </div>
 
-          {/* Recharts Bar Chart Container */}
-          <div className="w-full h-64 sm:h-72 mt-4">
-            <ResponsiveContainer width="100%" height="100%">
-              <RadarChart cx="50%" cy="50%" outerRadius="70%" data={chartData}>
-                <PolarGrid stroke="#333333" />
-                <PolarAngleAxis
-                  dataKey="metric"
-                  tick={{ fill: '#A3A3A3', fontSize: 11, fontWeight: 600 }}
-                />
-                <PolarRadiusAxis
-                  angle={90}
-                  domain={[0, 5]}
-                  tick={{ fill: '#737373', fontSize: 10 }}
-                  tickCount={6}
-                  axisLine={false}
-                />
-                <Tooltip
-                  content={<CustomChartTooltip />}
-                  cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }}
-                />
-                {comparedBreeds.map((breed, index) => {
-                  const palette = BREED_PALETTE[index % BREED_PALETTE.length];
-                  return (
-                    <Radar
-                      key={breed.id}
-                      dataKey={breed.id}
-                      name={breed.breed}
-                      stroke={palette.fill}
-                      fill={palette.fill}
-                      fillOpacity={0.4}
-                      strokeWidth={2}
-                      animationDuration={800}
-                    />
-                  );
-                })}
-              </RadarChart>
-            </ResponsiveContainer>
-          </div>
+          {/* Contenedor Principal Gráfico Radial + Tarjetas de Métricas */}
+          <div className="flex flex-col lg:flex-row gap-6 mt-6 items-stretch">
+            {/* Recharts Radar Chart Container */}
+            <div className="w-full lg:w-1/2 h-72 lg:h-[400px] bg-neutral-900/30 rounded-2xl border border-white/5 p-4 flex items-center justify-center">
+              <ResponsiveContainer width="100%" height="100%">
+                <RadarChart cx="50%" cy="50%" outerRadius="70%" data={chartData}>
+                  <PolarGrid stroke="#333333" />
+                  <PolarAngleAxis
+                    dataKey="metric"
+                    tick={{ fill: '#A3A3A3', fontSize: 11, fontWeight: 600 }}
+                  />
+                  <PolarRadiusAxis
+                    angle={90}
+                    domain={[0, 5]}
+                    tick={{ fill: '#737373', fontSize: 10 }}
+                    tickCount={6}
+                    axisLine={false}
+                  />
+                  <Tooltip
+                    content={<CustomChartTooltip />}
+                    cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }}
+                  />
+                  {comparedBreeds.map((breed, index) => {
+                    const palette = BREED_PALETTE[index % BREED_PALETTE.length];
+                    return (
+                      <Radar
+                        key={breed.id}
+                        dataKey={breed.id}
+                        name={breed.breed}
+                        stroke={palette.fill}
+                        fill={palette.fill}
+                        fillOpacity={0.4}
+                        strokeWidth={2}
+                        animationDuration={800}
+                      />
+                    );
+                  })}
+                </RadarChart>
+              </ResponsiveContainer>
+            </div>
 
-          {/* Temperament Highlights Card */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 pt-2">
-            {METRICS_CONFIG.map((m) => {
-              const Icon = m.icon;
-              return (
-                <div key={m.key} className="bg-neutral-900/80 border border-white/5 p-3.5 rounded-2xl">
-                  <div className="flex items-center gap-2 mb-1.5">
-                    <Icon className="w-3.5 h-3.5 text-amber-400" />
-                    <span className="text-xs font-bold text-white">{m.label}</span>
+            {/* Temperament Highlights Card */}
+            <div className="w-full lg:w-1/2 flex flex-col gap-3 justify-center">
+              {METRICS_CONFIG.map((m) => {
+                const Icon = m.icon;
+                return (
+                  <div key={m.key} className="bg-neutral-900/80 border border-white/5 p-3.5 rounded-2xl">
+                    <div className="flex items-center gap-2 mb-1.5">
+                      <Icon className="w-3.5 h-3.5 text-amber-400" />
+                      <span className="text-xs font-bold text-white">{m.label}</span>
+                    </div>
+                    <div className="space-y-1 text-[11px]">
+                      {comparedBreeds.map((b, idx) => {
+                        const palette = BREED_PALETTE[idx % BREED_PALETTE.length];
+                        const raw = b.metrics[m.metricKey];
+                        return (
+                          <div key={b.id} className="flex justify-between items-center text-neutral-300">
+                            <span className="text-neutral-400 font-medium pr-4">
+                              {b.breed}:
+                            </span>
+                            <span className={`font-bold ${palette.text} text-right text-balance`}>
+                              {raw}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
-                  <div className="space-y-1 text-[11px]">
-                    {comparedBreeds.map((b, idx) => {
-                      const palette = BREED_PALETTE[idx % BREED_PALETTE.length];
-                      const raw = b.metrics[m.metricKey];
-                      return (
-                        <div key={b.id} className="flex justify-between items-center text-neutral-300">
-                          <span className="truncate max-w-[110px] text-neutral-400 font-medium">
-                            {b.breed}:
-                          </span>
-                          <span className={`font-bold ${palette.text} truncate max-w-[110px] text-right`}>
-                            {raw}
-                          </span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
 
         </div>

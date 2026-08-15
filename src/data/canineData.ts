@@ -6152,14 +6152,14 @@ export const canineData: CanineDatabase = {
     "akcGroup": "Toy Group",
     "archetypes": [
       "Terriers Instrumentales",
-      "Protección Estructurada Moderna",
+      "Apego Extremo (Fusión Emocional)",
       "Hiperreactividad Ornamental"
     ],
     "motivations": [
       "Alarma",
       "Acción",
       "Atención",
-      "Custodia"
+      "Lealtad"
     ],
     "traits": [
       "Alerta",
@@ -6167,37 +6167,37 @@ export const canineData: CanineDatabase = {
       "Inteligencia",
       "Energía",
       "Tenacidad",
-      "Lealtad"
+      "Apego"
     ],
     "sourceValues": null,
     "metrics": {
       "umbral_de_estimulacion": "Bajo",
-      "motivacion_intrinseca": "Vigilancia y Protección del Espacio",
-      "resiliencia_emocional": "Alta",
+      "motivacion_intrinseca": "Atencion, Vigilancia y Protección del Espacio",
+      "resiliencia_emocional": "Baja",
       "sociabilidad": "Media – Evaluador y Guardián Compacto",
-      "independencia_cognitiva": "Media-Alta"
+      "independencia_cognitiva": "Baja"
     },
-    "summary": "El Pinscher Miniatura es una raza menuda pero de temperamento ardiente, desarrollada en Alemania para el control de roedores y la vigilancia doméstica. Posee un cuerpo compacto, musculado y de líneas elegantes, complementado por una mirada vivaz y orejas erguidas. Su psicología destaca por un temperamento valiente, umbral de estimulación bajo ante ruidos ambientales, curiosidad inagotable y un instinto de guarda desproporcionado a su tamaño.",
+    "summary": "El Pinscher Miniatura es una contradicción con patas: tamaño mínimo, energía máxima. Es actualmente el motor de conflicto, movimiento y ruido emocional de la casa. Su genética no le permite pasar desapercibido; es un perro de alta demanda emocional, diseñado para estar siempre en primer plano.",
     "sections": [
       {
         "title": "Personalidad",
         "sourceLevel": 1,
-        "content": "Su temperamento es audaz, intrépido, dinámico, curioso y caracterizado por una alerta constante hacia todo lo que sucede a su alrededor. El Pinscher Miniatura se comporta con la seguridad de un perro grande, patrullando el hogar con orgullo y vivacidad. Muestra una actitud sumamente recelosa ante personas desconocidas, anunciando cualquier presencia extraña con ladridos potentes. En la intimidad familiar se revela como un compañero alegre y sumamente juguetón."
+        "content": "Es intrépido, desafiante y valiente hasta rozar la imprudencia. Su autoconfianza es tan sólida que ignora su tamaño real. No se percibe como un perro pequeño: se mueve, decide y enfrenta el mundo con la autoridad psicológica de un perro de 40 kilos. Su carácter es intenso, reactivo y teatral. No observa el entorno: lo confronta.Posee una inteligencia rápida pero orientada a sus propios intereses, lo que lo convierte en un perro manipulador y encantador a partes iguales."
       },
       {
         "title": "El vínculo con su humano",
         "sourceLevel": 1,
-        "content": "Construye una relación de lealtad apasionada, cariño profundo y devoción entrañable con sus cuidadores de referencia. Le encanta ser el centro de atención en el hogar y participar activamente en todas las rutinas diarias. Su adiestramiento requiere consistencia, paciencia y métodos de refuerzo positivo suave, ya que posee una mente astuta que intentará poner a prueba los límites si detecta inconsistencias o vacíos en las normas establecidas."
+        "content": "El vínculo es de codependencia activa. No solo te ve como su humano, sino como su recurso principal, su centro de gravedad y su razón de ser. Su apego es posesivo y absorbente; necesita contacto constante, seguimiento visual y validación permanente. Es un compañero leal pero demandante, que requiere un guía con sentido del humor y firmeza. Para él, tú no eres compañía, eres misión."
       },
       {
         "title": "Lo positivo",
         "sourceLevel": 1,
-        "content": "Aporta una capacidad de aviso sonoro y vigilancia doméstica excepcional, detectando cualquier anomalía antes que otros perros. Su tamaño compacto facilita la vida en pisos pequeños y el transporte en viajes cotidianos. Posee un pelaje liso de bajísimo mantenimiento que requiere solo cepillados ocasionales. Su salud atlética, gran vivacidad y dinamismo divertido llenan la casa de energía y momentos entretenidos para tutores activos."
+        "content": "Su agudeza mental es sorprendente. Aprende con una rapidez casi insolente: tres repeticiones bastan para que incorpore un truco. Es un perro extremadamente atento, siempre presente y emocionalmente involucrado. Aporta una chispa constante de vida, juego y movimiento. Con él, el aburrimiento es estructuralmente imposible. Además, su valentía lo convierte en un compañero de aventuras incansable"
       },
       {
         "title": "Lo negativo",
         "sourceLevel": 1,
-        "content": "Su tendencia a la hipervigilancia puede derivar en ladridos excesivos y molestos si no se educa adecuadamente desde temprana edad. Su fuerte carácter y terquedad ocasional pueden convertirlo en un perro tiránico si no se le marcan límites claros. Además, su alta reactividad ante pequeños animales o extraños exige pasearlo con correa y supervisar sus interacciones en entornos urbanos ruidosos o concurridos."
+        "content": "La ansiedad por separación es su punto más frágil. La distancia física o emocional la vive como una amenaza real. A esto se suma una fuerte tendencia a la protección de recursos, especialmente tu atención. Los celos no son un rasgo ocasional: son parte de su sistema operativo. Sin manejo consciente, puede escalar fácilmente en conductas demandantes o disruptivas."
       },
       {
         "title": "Habilidades características",
@@ -6205,7 +6205,6 @@ export const canineData: CanineDatabase = {
         "content": "Sobresale en la detección de roedores y pequeños intrusos con una rapidez y agilidad física impresionantes. Destaca de forma estelar en competencias deportivas como agility toy y aprendizaje de trucos complejos por su agudeza cognitiva. En el hogar, su habilidad principal es ofrecer una guardia ligera y aviso sonoro sumamente efectivo, combinado con una capacidad atlética sorprendente para saltar y correr."
       }
     ],
-    "imageUrl": "https://images.dog.ceo/breeds/pinscher-miniature/n02107312_4057.jpg"
   },
   {
     "id": "kerry-blue-terrier",
@@ -7344,17 +7343,17 @@ export const canineData: CanineDatabase = {
         {
           "title": "Dinámica Psicológica",
           "sourceLevel": 1,
-          "content": "El centro de regulación es exclusivamente externo. Ante la ausencia del humano, el perro carece de herramientas de autorregulación, lo que genera una desorganización sistémica."
+          "content": "Su identidad está tercerizada. El guía funciona como su córtex prefrontal externo, decidiendo qué es seguro. Sin él, el sistema colapsa emocionalmente al carecer de mecanismos internos para procesar la existencia de forma aislada. No es extrañar; es perder la fuente de seguridad vital."
         },
         {
           "title": "Rasgos Clave",
           "sourceLevel": 1,
-          "content": "- Ancla de Baseline: Necesidad de contacto físico para bajar revoluciones.\n- Hipervigilancia de movimientos: El sistema monitorea al guía como fuente única de seguridad.\n- Presente de Urgencia: Incapacidad de proyectar el regreso del humano."
+          "content": "Demuestran hipervigilancia extrema al rastrear constantemente al guía. Su calma depende totalmente de la presencia cercana de su referente humano. Presentan una fragilidad estructural significativa, desorganizándose emocionalmente ante cualquier cambio en su rutina o ante la separación."
         },
         {
           "title": "Riesgos",
           "sourceLevel": 1,
-          "content": "- Ansiedad severa ante la separación.\n- Comportamientos de control por pánico.\n- Fragilidad absoluta ante cambios en la rutina."
+          "content": "El riesgo principal es la desorganización sistémica (pánico) ante la separación. El perro queda desconfigurado, derivando en vocalizaciones extremas o destrucción. Es un sistema con margen de error mínimo que requiere trabajar la autonomía para evitar la ansiedad crónica."
         }
       ]
     },
@@ -7373,7 +7372,12 @@ export const canineData: CanineDatabase = {
         {
           "title": "Rasgos Clave",
           "sourceLevel": 2,
-          "content": "- Resiliencia Crítica: Muy baja tolerancia al conflicto o tonos de voz elevados.\n- Empatía Pasiva: Refleja el estrés del guía sin procesarlo.\n- Repliegue como defensa: Búsqueda de invisibilidad ante la presión."
+          "content": "Poseen una mínima tolerancia al conflicto, recurriendo a la inhibición ante tensiones. Su empatía pasiva refleja el estrés del guía, mientras buscan la invisibilidad física para gestionar la saturación sensorial cuando el entorno se vuelve caótico."
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El riesgo es la somatización. Al no tener válvulas de escape externas, la tensión se manifiesta en problemas digestivos, alergias o debilidad inmunológica. Son propensos a miedos crónicos en entornos agresivos o volátiles."
         }
       ]
     },
@@ -7387,12 +7391,17 @@ export const canineData: CanineDatabase = {
         {
           "title": "Dinámica Psicológica",
           "sourceLevel": 2,
-          "content": "Son psicológicamente flexibles y poseen una alta plasticidad cognitiva que les permite adaptarse a diversos contextos y situaciones."
+          "content": "Su equilibrio depende de la acción coordinada. Poseen alta Plasticidad Cognitiva, aprendiendo y transfiriendo funciones con facilidad. El éxito reside en completar secuencias de trabajo validadas por el guía, más que en el afecto pasivo."
         },
         {
           "title": "Rasgos Clave",
           "sourceLevel": 2,
-          "content": "- Contacto Visual Referencial: El perro busca la sintonía antes de actuar.\n- Tiempo Secuencial: Entiende perfectamente el ciclo (inicio, desarrollo, cierre).\n- Refuerzo Social: La aprobación humana es un combustible biológico efectivo."
+          "content": "Buscan contacto visual referencial para sincronizarse antes de actuar. Su estructura mental lógica facilita el aprendizaje de secuencias complejas. Además, demuestran alta resiliencia social, adaptándose bien a cambios mientras mantengan una función o misión clara."
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El peligro es la atrofia funcional. Diseñados para actuar, la falta de desafíos los sume en apatía o aburrimiento crónico. Sin una Misión Compartida, pierden su brillo y pueden desarrollar conductas destructivas por inactividad."
         }
       ]
     },
@@ -7406,12 +7415,17 @@ export const canineData: CanineDatabase = {
         {
           "title": "Dinámica Psicológica",
           "sourceLevel": 2,
-          "content": "Regulación centrada en la tarea. El perro necesita \"hacer\" para \"ser\". Poseen una baja tolerancia al vacío y un umbral de estimulación muy bajo ante objetos en movimiento o problemas complejos."
+          "content": "Su bienestar depende de un bucle: Percepción-Acción-Resultado. Al completarse, el sistema libera neurotransmisores de calma. Sin este ciclo, el perro permanece en tensión constante, ya que para él la inactividad es desorden."
         },
         {
           "title": "Rasgos Clave",
           "sourceLevel": 2,
-          "content": "- Focalización (Tackling): Mirada fija y bloqueo del entorno para priorizar la tarea.\n- Latencia Cero: Capacidad de activarse instantáneamente tras el descanso.\n- Persistencia Física: Ignora el agotamiento mientras la tarea siga no haya terminado."
+          "content": "Poseen un hiperfoco capaz de bloquear distracciones ambientales. Muestran persistencia física excesiva, ignorando el agotamiento para completar tareas. Su capacidad de anticipación cognitiva les permite predecir órdenes del guía basándose en micro-gestos y patrones del entorno."
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El riesgo es la neurosis funcional. Sin escape operativo, pastorean estímulos inapropiados. Carecen de un botón de apagado natural; el guía debe enseñarles activamente a descansar y procesar la calma."
         }
       ]
     },
@@ -7425,7 +7439,17 @@ export const canineData: CanineDatabase = {
         {
           "title": "Dinámica Psicológica",
           "sourceLevel": 2,
-          "content": "Evaluación contextual y discernimiento de amenazas. El perro actúa como filtro de seguridad en coordinación con el referente humano."
+          "content": "Opera bajo un modelo jerárquico estratégico. Prioriza la evaluación y espera la confirmación del guía para escalar su respuesta. Si el humano no gestiona el espacio con coherencia, el perro asume el mando defensivo por obligación sistémica."
+        },
+        {
+          "title": "Rasgos Clave",
+          "sourceLevel": 2,
+          "content": "Este arquetipo distingue con precisión rutinas de intrusos mediante micro-señales ambientales. Su autocontrol sostenido gestiona altos niveles de tensión evitando respuestas agresivas salvo fallo de seguridad. Su ejecución es eficiente y limpia, interviniendo solo con la intensidad necesaria para neutralizar conflictos y evitando el desperdicio de energía."
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El riesgo surge ante un guía errático. Si el referente no toma decisiones, el sistema activa un mando defensivo autónomo, lo que puede derivar en protección excesiva o reactividad ante extraños al perderse el filtro de seguridad del guía."
         }
       ]
     },
@@ -7439,7 +7463,17 @@ export const canineData: CanineDatabase = {
         {
           "title": "Dinámica Psicológica",
           "sourceLevel": 2,
-          "content": "Codificación estricta entre propio e intruso. Alta respuesta ante violaciones del perímetro conocido."
+          "content": "Su regulación es espacial; recupera el centro vigilando el perímetro. Su vínculo se basa en la propiedad: el guía es un activo a preservar. Su diseño mental es de exclusión, dividiendo el mundo entre familia e intrusos."
+        },
+        {
+          "title": "Rasgos Clave",
+          "sourceLevel": 2,
+          "content": "Este arquetipo actúa con autonomía, interviniendo rápidamente ante intrusiones. Su círculo social es cerrado, diferenciando tajantemente entre familia y extraños, mientras mantiene una vigilancia pasiva constante y altamente eficiente sobre la seguridad de su territorio"
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El desafío es su integración urbana. Su lógica binaria lee lo cotidiano como invasión. Requieren guías que respeten su necesidad de distancia y gestionen las interacciones sociales de forma muy estructurada para evitar conflictos reactivos."
         }
       ]
     },
@@ -7453,7 +7487,17 @@ export const canineData: CanineDatabase = {
         {
           "title": "Dinámica Psicológica",
           "sourceLevel": 2,
-          "content": "Economía de energía en grandes espacios. Vigilancia pasiva en stand-by que se transforma en intervención decidida."
+          "content": "Su regulación es interna y autónoma. El equilibrio nace de la inmovilidad y la observación silenciosa. No busca tareas constantes; su estabilidad reside en estar presente, gestionando su propio enfriamiento emocional sin necesidad de validación externa."
+        },
+        {
+          "title": "Rasgos Clave",
+          "sourceLevel": 2,
+          "content": "Estos perros poseen un umbral de estimulación altísimo, ignorando lo trivial para conservar energía. Su autonomía decisional y presencia disuasoria permiten gestionar conflictos mediante la calma y la observación, priorizando la eficacia instintiva sobre la acción reactiva innecesaria."
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El riesgo es la incomprensión del guía. Su ritmo lento y economía de movimientos se confunden con falta de inteligencia. Forzar una obediencia dinámica daña el vínculo; su biología está hecha para resistencia emocional y autonomía decisional."
         }
       ]
     },
@@ -7467,7 +7511,17 @@ export const canineData: CanineDatabase = {
         {
           "title": "Dinámica Psicológica",
           "sourceLevel": 2,
-          "content": "Masa estabilizadora que ralentiza el entorno. Alta tolerancia y absorción de la tensión emocional de la casa."
+          "content": "Funcionan como amortiguadores emocionales. Su baja reactividad les permite absorber el caos ambiental sin alterar su centro. Regulan el entorno mediante una presencia pasiva que disuade el conflicto por mero volumen y calma estructural."
+        },
+        {
+          "title": "Rasgos Clave",
+          "sourceLevel": 2,
+          "content": "Gracias a su paciencia estructural, toleran manipulaciones y juegos intensos sin inmutarse. Su baja reactividad sensorial les permite evaluar situaciones con calma, mientras su imponente volumen físico establece límites naturales, protegiendo el espacio sin necesidad de recurrir al ladrido."
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El riesgo es la invisibilidad de su sufrimiento. Al absorber estrés sin vocalizar, los guías pueden ignorar señales sutiles de angustia o dolor. El desafío es no abusar de su paciencia y asegurarles momentos de descarga real."
         }
       ]
     },
@@ -7481,7 +7535,17 @@ export const canineData: CanineDatabase = {
         {
           "title": "Dinámica Psicológica",
           "sourceLevel": 2,
-          "content": "Soberanía de carácter. El perro coexiste sin someterse, con baja necesidad de validación o aprobación externa."
+          "content": "Posee una psicología de baja dependencia y autorregulación interna. El humano es un aliado, no el centro del universo. Operan bajo una agenda propia; si una orden choca con su lógica instintiva, elegirán ignorarla para mantener su integridad."
+        },
+        {
+          "title": "Rasgos Clave",
+          "sourceLevel": 2,
+          "content": "Estos perros destacan por su silencio comunicativo mediante micro-gestos, un afecto selectivo que nace de la voluntad real y no de la dependencia, y una gran resiliencia que les permite gestionar la soledad con dignidad sin requerir constante entretenimiento externo."
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El riesgo es la ruptura del vínculo por autoritarismo. Los métodos basados en la fuerza se perciben como traiciones al respeto mutuo. No se someten; se cierran emocionalmente. El éxito requiere invitar, no mandar, respetando sus límites."
         }
       ]
     },
@@ -7496,6 +7560,16 @@ export const canineData: CanineDatabase = {
           "title": "Dinámica Psicológica",
           "sourceLevel": 2,
           "content": "Toma de decisiones autónoma enfocada en el rastreo y la persecución de presas en solitario."
+        },
+        {
+          "title": "Rasgos Clave",
+          "sourceLevel": 2,
+          "content": "Presentan sordera funcional al enfocarse en rastros y autonomía exploratoria de gran rango. Su energía corporal se proyecta siempre hacia adelante, manteniendo un foco intenso y constante en el horizonte, ignorando el entorno social cuando persiguen estímulos."
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El desafío principal son las fugas y la falta de control. Su desconexión biológica ante el rastro es innegociable. El guía debe gestionar su libertad y construir canales de comunicación que resistan la potencia de sus instintos de exploración."
         }
       ]
     },
@@ -7509,7 +7583,17 @@ export const canineData: CanineDatabase = {
         {
           "title": "Dinámica Psicológica",
           "sourceLevel": 2,
-          "content": "Inmersión en el mundo aromático. El perro procesa la realidad como capas de datos olfativos pasados y presentes."
+          "content": "El olfato es su pensamiento principal. El rastro actúa como ansiolítico, estabilizando su ritmo cardíaco y mente. Es una meditación en movimiento donde la verdadera conversación ocurre con el suelo, no con el guía."
+        },
+        {
+          "title": "Rasgos Clave",
+          "sourceLevel": 2,
+          "content": "Hiperconexión olfativa donde lo visual es secundario. Poseen una persistencia monótona, capaz de seguir pistas durante horas. Muestran una baja urgencia emocional, manteniendo un temperamento estable y pausado, inalterable ante ruidos o movimientos bruscos del entorno."
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El desafío es la desconexión por saturación. Cuando la nariz se activa, el canal auditivo se bloquea físicamente. Es un estado de flujo profundo que el guía debe respetar como alimento emocional necesario para su equilibrio sistémico."
         }
       ]
     },
@@ -7523,7 +7607,17 @@ export const canineData: CanineDatabase = {
         {
           "title": "Dinámica Psicológica",
           "sourceLevel": 2,
-          "content": "Contraste extremo entre sprint de alta velocidad e inercia de reposo profundo en sofá."
+          "content": "Se estabilizan a través del silencio y la inactividad en el hogar. Poseen una psicología binaria: del reposo felino a la intensidad máxima en segundos. Su vínculo es paralelo, basado en la compañía silenciosa y el respeto mutuo."
+        },
+        {
+          "title": "Rasgos Clave",
+          "sourceLevel": 2,
+          "content": "Activación visual instantánea mediante radar de movimiento. En casa, muestran un letargo basal extremo, siendo sumamente silenciosos. Al correr, inician una persecución con autonomía total, entrando en un túnel sensorial que anula cualquier intento de control externo."
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El riesgo son las fugas visuales. El movimiento anula su seguridad personal. Son sensibles a la rudeza y ambientes caóticos. Su afecto es sutil; requiere un refugio de paz y la gestión cuidadosa de su libertad en espacios abiertos."
         }
       ]
     },
@@ -7537,7 +7631,17 @@ export const canineData: CanineDatabase = {
         {
           "title": "Dinámica Psicológica",
           "sourceLevel": 2,
-          "content": "Tenacidad física y foco en modificar el entorno a través de la presa, la excavación y el trabajo."
+          "content": "La regulación depende de la resolución física. Necesitan que su esfuerzo modifique el entorno para equilibrar su química interna. El vínculo es operativo: respetan al guía como socio, pero mantienen autonomía total en la ejecución táctica."
+        },
+        {
+          "title": "Rasgos Clave",
+          "sourceLevel": 2,
+          "content": "Poseen baja inhibición ante el riesgo, priorizando objetivos sobre la autoprotección. Su tenacidad física les permite ignorar fatiga y dolor. Son expertos en inteligencia práctica, utilizando su cuerpo de forma creativa para superar obstáculos físicos y resolver problemas."
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El riesgo es la escalada de intensidad sin escape. Sin tareas, resuelven problemas inexistentes destructivamente. Su falta de interruptor de apagado exige que el guía dirija su energía hacia retos constructivos para evitar la neurosis funcional."
         }
       ]
     },
@@ -7551,7 +7655,17 @@ export const canineData: CanineDatabase = {
         {
           "title": "Dinámica Psicológica",
           "sourceLevel": 2,
-          "content": "Sistema nervioso de gatillo rápido en cuerpos pequeños, con alta expresividad y respuesta ante cambios sociales o de entorno."
+          "content": "Regulación mixta: descarga funcional (morder/traccionar) y sintonía con el guía. Son dependientes emocionales; si el guía es inestable, el perro se vuelve errático. Su psicología es de entrega total en cada acción."
+        },
+        {
+          "title": "Rasgos Clave",
+          "sourceLevel": 2,
+          "content": "Demuestran resiliencia física extrema ante estímulos negativos. Son hiper-responsivos al lenguaje no verbal del guía. Su instinto los lleva a utilizar la boca como herramienta principal para gestionar la excitación, canalizando energía a través del agarre."
+        },
+        {
+          "title": "Riesgos",
+          "sourceLevel": 2,
+          "content": "El riesgo es la sobreexcitación mal gestionada. Su intensidad suele malinterpretarse como agresión. El desafío es educar en el autocontrol y la calma, proporcionando canales seguros para su necesidad de agarre y una estructura de vida predecible."
         }
       ]
     }
