@@ -7675,23 +7675,33 @@ export const canineData: CanineDatabase = {
       "id": "regulacion-emocional",
       "number": 1,
       "title": "Regulación Emocional",
-      "signature": "Autorregulación vs Externalizada",
-      "summary": "Mecanismos por los cuales un perro recupera su centro emocional tras un estímulo o estrés.",
+      "signature": "¿Cómo recupera mi perro la calma tras reaccionar a un estímulo?",
+      "summary": "La regulación emocional es la capacidad del sistema nervioso canino para volver a la calma tras una activación. Cada perro utiliza vías distintas para lograr este retorno. Identificar el método específico es fundamental, ya que aplicar una estrategia incompatible con su biología aumenta la frustración y la incomunicación.",
       "sections": [
         {
-          "title": "1.1 Regulación Externa (Humana)",
+          "title": "1. Regulación Externa (Humana)",
           "sourceLevel": 2,
-          "content": "Dependencia del guía para bajar pulsaciones y recuperar la calma."
+          "content": "El perro depende del guía para recuperar la calma emocional. Ante situaciones estresantes, necesita la mirada, contacto físico o confirmación verbal del humano, ya que no puede gestionar su estado de ánimo por cuenta propia.\nSEÑAL: Si el perro busca proximidad o contacto visual contigo ante eventos estresantes, su regulación es externa. Sin tu intervención, no logra recuperar la calma por sí mismo."
         },
         {
-          "title": "1.2 Autorregulación (Interna)",
+          "title": "2. Autorregulación (Interna)",
           "sourceLevel": 2,
-          "content": "Mecanismos autónomos (olfateo, alejamiento, sacudida, pausas) para volver al equilibrio."
+          "content": "El perro gestiona el estrés de forma autónoma. No necesita validación externa para recuperar la calma; emplea mecanismos propios como alejarse, olfatear o pausar su actividad para procesar la información de forma independiente.\nSEÑAL: Tras momentos de tensión, el perro se aleja, se sacude o realiza pausas sin solicitar ayuda. Es un proceso biológico independiente que no requiere intervención externa."
         },
         {
-          "title": "1.3 Regulación por Tarea (Funcional)",
+          "title": "3. Regulación por Tarea (Funcional)",
           "sourceLevel": 2,
-          "content": "Acción dirigida y resolución de problemas como vía para descargar la tensión."
+          "content": "El perro recupera la calma mediante acciones dirigidas. Necesita un objetivo o problema que resolver para gestionar la energía de un estímulo. La inactividad le causa estrés, por lo que requiere realizar tareas para liberar tensión.\nSEÑAL: El perro gestiona su estrés mediante actividades dirigidas como morder u objetos portadores. La inactividad lo mantiene tenso; requiere un objetivo específico para regular su estado."
+        },
+        {
+          "title": "4. Regulación Territorial",
+          "sourceLevel": 2,
+          "content": "La estabilidad depende de la seguridad del espacio y del control del entorno. El perro se calma al verificar que su territorio es predecible y que sus fronteras están bajo supervisión constante.\nSEÑAL: El perro recupera su equilibrio patrullando o vigilando puntos altos. Su estabilidad depende de supervisar el entorno; si pierde el control visual, su recuperación se dificulta."
+        },
+        {
+          "title": "5. Inmersión Sensorial",
+          "sourceLevel": 2,
+          "content": "El perro recobra la calma mediante el uso de sus sentidos, principalmente el olfato. Esta conducta no busca evitar el estímulo, sino procesar la información del entorno a través de la exploración olfativa.\nSEÑAL: Ante el estrés, el perro explora rastros olfativos. La recolección de información química le permite procesar el entorno y reducir su activación emocional de forma independiente."
         }
       ]
     },
@@ -7699,109 +7709,164 @@ export const canineData: CanineDatabase = {
       "id": "tipo-de-vinculo",
       "number": 2,
       "title": "Tipo de Vínculo",
-      "signature": "Formas de Relación Humano-Canina",
-      "summary": "Estructuras de apego y dinámicas de interacción entre el perro y su guía.",
+      "signature": "¿Cuál es la naturaleza de la conexión entre mi perro y yo y qué espera él de nuestra interacción diaria?",
+      "summary": "El mecanismo de gestión del estrés y la convivencia determina cómo el perro se relaciona contigo. Entender esta dinámica permite ajustar las expectativas, la demanda y el contacto físico. Al conocer el tipo de vínculo, puedes adaptar tu comportamiento para mejorar la interacción diaria y fortalecer la relación con tu perro.",
       "sections": [
         {
-          "title": "2.1 Vínculo de Fusión (Simbiosis)",
+          "title": "1. Vínculo de Fusión (Simbiosis)",
           "sourceLevel": 2,
-          "content": "Alta intensidad emocional y necesidad constante de proximidad física."
+          "content": "Es una relación intensa donde el perro pierde su individualidad. Depende totalmente de tu presencia y estado de ánimo, sin marcar límites claros entre ambos.\nSEÑAL: El perro orbita cerca de ti, reflejando tus tensiones. Su lealtad absoluta implica fragilidad: la distancia física o emocional es percibida como una falla de seguridad vital."
         },
         {
-          "title": "2.2 Vínculo Cooperativo (Equipo)",
+          "title": "2. Vínculo Cooperativo (Equipo)",
           "sourceLevel": 2,
-          "content": "Paridad operativa basada en metas compartidas y comunicación bidireccional."
+          "content": "Aquí, el perro y tú son socios. Existe una comunicación constante donde el perro observa tus acciones para coordinarse contigo. Ambos trabajan juntos para lograr metas compartidas mediante la cooperación mutua.\nSEÑAL: Disfruta la tarea compartida y mantiene una sintonía constante. Ofrece conductas esperando tu respuesta para coordinarse. Es un vínculo funcional de alta cooperación y mutuo respeto operativo."
         },
         {
-          "title": "2.3 Vínculo Paralelo (Coexistencia)",
+          "title": "3. Vínculo Funcional (Referencial)",
           "sourceLevel": 2,
-          "content": "Autonomía social respetuosa donde se comparte espacio con agendas independientes."
+          "content": "El humano es el guía que dicta normas y recursos. La relación es práctica y jerárquica. El perro respeta las reglas y sigue tus instrucciones para obtener seguridad y estructura.\nSEÑAL: El perro es obediente y respeta las normas buscando previsibilidad. No requiere contacto emocional profundo; te sigue porque eres el director que otorga estructura y estabilidad."
+        },
+        {
+          "title": "4. Vínculo Paralelo (Coexistencia)",
+          "sourceLevel": 2,
+          "content": "Esta conexión destaca por la autonomía. Ambos comparten espacio y tiempo, pero mantienen vidas independientes. La relación no necesita una interacción constante para ser válida, basada en la convivencia respetuosa.\nSEÑAL: Coexiste pacíficamente sin demandar atención constante. Valora su autonomía y espacio personal. Su lealtad se manifiesta en un pacto silencioso de convivencia respetuosa y cercanía no invasiva."
+        },
+        {
+          "title": "5. Vínculo Territorial (Patrimonial)",
+          "sourceLevel": 2,
+          "content": "El perro te protege porque te considera parte importante de su entorno. Su lealtad se muestra a través de la vigilancia y la protección física, priorizando tu seguridad antes que el afecto social.\nSEÑAL: Se muestra vigilante y protector, priorizando tu seguridad sobre el afecto social. Te integra en su instinto de propiedad como un activo valioso que debe ser preservado."
         }
       ]
     },
     {
       "id": "fuente-de-motivacion",
       "number": 3,
-      "title": "Fuente de Motivación",
-      "signature": "Motores Biológicos y De Aprendizaje",
-      "summary": "Estímulos principales que encienden el interés y el aprendizaje del individuo.",
+      "title": "Motivaciones",
+      "signature": "¿Cuál es el motor biológico que realmente enciende el sistema de recompensa y acción de mi perro?",
+      "summary": "Los perros tienen diferentes preferencias biológicas que activan su sistema de recompensa. Identificar qué gratifica específicamente a tu perro permite proponer actividades alineadas con sus necesidades, mejorando la convivencia. Entender estas motivaciones evita frustraciones cuando los premios habituales, como la comida, no resultan efectivos para el aprendizaje o la colaboración.",
       "sections": [
         {
-          "title": "3.1 Afecto y Cercanía",
+          "title": "1. Afecto y Cercanía",
           "sourceLevel": 2,
-          "content": "Validación social y caricias como mayor recompensa."
+          "content": "Estos perros buscan interacción social. La gratificación proviene de la validación del guía mediante contacto físico, palabras de aprobación y proximidad, que funcionan como sus recompensas principales.\nSEÑAL: El perro prefiere caricias antes que juguetes o comida. Su prioridad es la interacción afectiva y sentirse seguro dentro de su grupo social."
         },
         {
-          "title": "3.2 Exploración Olfativa",
+          "title": "2. Cooperación Social",
           "sourceLevel": 2,
-          "content": "Decodificación química del ambiente como motor primario."
+          "content": "La satisfacción surge de la coordinación con el guía. Realizar actividades en conjunto resulta más gratificante para el perro que obtener un premio material al finalizar la tarea.\nSEÑAL: El perro colabora activamente en tareas coordinadas. Encuentra agrado en la ejecución de acciones compartidas junto a su guía por sobre otros estímulos."
         },
         {
-          "title": "3.3 Resolución Instrumental",
+          "title": "3. Control y Orden",
           "sourceLevel": 2,
-          "content": "Uso de la fuerza física, mandíbula o astucia para superar un obstáculo."
+          "content": "Perros de pastoreo o guardia se satisfacen gestionando su entorno. Prefieren dirigir movimientos ajenos o supervisar la integridad de un espacio físico determinado.\nSEÑAL: El perro busca detener movimientos o vigilar áreas. El orden ambiental funciona como su refuerzo positivo, mientras que el descontrol le provoca malestar."
+        },
+        {
+          "title": "4. Activación Visual",
+          "sourceLevel": 2,
+          "content": "La recompensa es el movimiento observado. El perro busca perseguir estímulos visuales por la acción misma, sin necesidad de capturar o morder el objeto seguido.\nSEÑAL: El perro reacciona ante objetos móviles. Correr tras un estímulo visual constituye su satisfacción principal, independientemente de si logra atraparlo o morderlo."
+        },
+        {
+          "title": "5. Exploración Olfativa",
+          "sourceLevel": 2,
+          "content": "El mundo se decodifica a través de la nariz. Para estos perros, recolectar datos químicos del entorno es una necesidad vital y una fuente de placer profundo.\nSEÑAL: Este perro prioriza explorar rastros olfativos sobre cualquier otra actividad. Leer el entorno mediante su nariz es su fuente principal de satisfacción."
+        },
+        {
+          "title": "6. Resolución Instrumental",
+          "sourceLevel": 2,
+          "content": "Es la tenacidad física y mental llevada al extremo. El perro disfruta usando su fuerza, su mandíbula o su astucia para modificar el mundo físico.\nSEÑAL: Estos perros disfrutan manipular objetos, excavar o tirar de cuerdas. Su satisfacción proviene de superar obstáculos físicos usando su potencia y mandíbula."
+        },
+        {
+          "title": "7. Autonomía",
+          "sourceLevel": 2,
+          "content": "La recompensa es el ejercicio de la voluntad propia. Hacer lo que ellos quieren, cuando ellos quieren, sin supervisión ni instrucciones.\nSEÑAL: El perro está más equilibrado cuando toma sus propias decisiones y explora a su antojo. La libertad de elección mantiene su motivación alta."
         }
       ]
     },
     {
       "id": "gestion-del-estimulo",
       "number": 4,
-      "title": "Gestión del Estímulo",
-      "signature": "Protocolos de Respuesta ante la Presión",
-      "summary": "Estrategias innatas para afrontar sorpresas, amenazas o sobrecarga sensorial.",
+      "title": "Gestión de estímulos",
+      "signature": "¿Cómo reacciona el sistema de mi perro si la información externa supera su tolerancia?",
+      "summary": "El sistema nervioso del perro tiene una capacidad límite para procesar estímulos diarios. Cuando la información sobrepasa este umbral, se activa una respuesta automática de emergencia para evitar el colapso. Estos comportamientos suelen malinterpretarse como problemas de conducta, cuando en realidad son mecanismos fisiológicos necesarios para que el perro gestione la sobrecarga informativa.",
       "sections": [
         {
-          "title": "4.1 Escalamiento / Vocalización",
+          "title": "1. Escalamiento",
           "sourceLevel": 2,
-          "content": "Aumento del volumen o intensidad (ladridos, saltos) para tomar control del evento."
+          "content": "El perro aumenta su intensidad de respuesta ante estímulos fuertes. Este incremento físico en su comportamiento le permite gestionar la energía y recuperar el control ante la presión ambiental.\nSEÑAL: Ladridos, saltos o excitación alta. El perro aumenta su actividad física y vocal para gestionar la presión externa mediante una descarga de energía directa."
         },
         {
-          "title": "4.2 Repliegue / Evitación",
+          "title": "2. Repliegue",
           "sourceLevel": 2,
-          "content": "Distancia o invisibilidad emocional como estrategia de autoprotección."
+          "content": "El perro elige alejarse para evitar la sobrecarga. Esta conducta defensiva busca crear distancia física y limitar la interacción social para reducir el estrés causado por el entorno.\nSEÑAL: El perro se esconde, se aleja o evita el contacto visual. Entra en un estado de protección emocional al no poder gestionar la saturación ambiental."
         },
         {
-          "title": "4.3 Contención / Buffer",
+          "title": "3. Contención",
           "sourceLevel": 2,
-          "content": "Evaluación en tensión controlada manteniendo la posición sin sobreactivarse."
+          "content": "El perro mantiene su posición sin reaccionar de inmediato. Se encuentra en un estado de vigilancia y tensión contenida mientras analiza la situación antes de decidir cómo responder.\nSEÑAL: El perro permanece quieto, en tensión y observa atentamente. Mantiene el control de la situación mediante una respuesta interna de alta intensidad y baja expresión."
+        },
+        {
+          "title": "4. Intervención",
+          "sourceLevel": 2,
+          "content": "El perro realiza acciones físicas directas sobre el estímulo. Su conducta busca cambiar o desplazar el elemento del entorno que le genera conflicto, intentando neutralizar el problema de inmediato.\nSEÑAL: El perro interfiere físicamente, bloqueando el paso o empujando. Actúa directamente sobre el entorno para neutralizar o modificar el estímulo que percibe como un problema."
+        },
+        {
+          "title": "5. Desconexión",
+          "sourceLevel": 2,
+          "content": "El perro decide que el estímulo no requiere una respuesta. Opta por ignorar el entorno para conservar su energía y mantener un estado interno de calma y equilibrio estable.\nSEÑAL: El perro ignora activamente el entorno estresante. Utiliza un filtro de atención selectivo para mantener su equilibrio y protegerse de estímulos que considera irrelevantes."
+        },
+        {
+          "title": "6. Absorción",
+          "sourceLevel": 2,
+          "content": "Ante estímulos intensos, el perro no muestra cambios conductuales. Debido a su alta tolerancia, el sistema nervioso procesa el evento sin necesidad de reaccionar visiblemente ante la situación externa.\nSEÑAL: El perro mantiene su calma habitual ante estímulos intensos. No reacciona al evento, ya que su sistema no lo clasifica como un conflicto necesario."
         }
       ]
     },
     {
       "id": "tiempo-y-recuperacion",
       "number": 5,
-      "title": "Tiempo y Recuperación",
-      "signature": "Reloj Biológico y Desintoxicación Química",
-      "summary": "Velocidad a la que el sistema procesa sucesos y retorna al baseline en reposo.",
+      "title": "Tiempo y recuperación",
+      "signature": "¿Cuál es el margen de tiempo de mi perro y cuánto tarda en volver a la calma tras un evento intenso?",
+      "summary": "La capacidad de cada perro para procesar emociones y recuperar la calma tras un evento varía considerablemente. Este parámetro, fundamental para la convivencia, determina cuánto tiempo persiste un estado emocional. Aunque es común esperar reacciones uniformes, la realidad biológica de cada perro es distinta, influyendo directamente en su tiempo de procesamiento.",
       "sections": [
         {
-          "title": "5.1 Tiempo Corto",
+          "title": "1. Tiempo Corto (Inmediato)",
           "sourceLevel": 2,
-          "content": "Reacciones inmediatas con rápida capacidad de olvido y reseteo."
+          "content": "Estos perros reaccionan rápidamente a los estímulos. Su capacidad para olvidar eventos pasados es alta, evitando que los estados emocionales persistan entre diferentes experiencias.\nSEÑAL: Tras una experiencia intensa, el perro recupera su comportamiento normal rápidamente sin mostrar efectos persistentes del evento previo."
         },
         {
-          "title": "5.2 Tiempo Largo",
+          "title": "2. Tiempo Medio (Secuencial)",
           "sourceLevel": 2,
-          "content": "Memoria emocional sostenida que requiere días o rutinas estables para asimilar picos de estrés."
+          "content": "Estos perros vinculan eventos lógicamente, comprendiendo secuencias. Su nivel de atención les permite mantener el foco durante actividades prolongadas y tareas complejas.\nSEÑAL: El perro mantiene la atención durante secuencias largas y predice rutinas con estabilidad, facilitando el aprendizaje de tareas complejas."
+        },
+        {
+          "title": "3. Tiempo Largo (Estacionario)",
+          "sourceLevel": 2,
+          "content": "Estos perros procesan eventos como estados duraderos. Una experiencia afecta su conducta durante horas o días, demostrando una memoria emocional prolongada que condiciona sus respuestas.\nSEÑAL: Perros sensibles que tardan días en procesar un evento negativo. Su sistema emocional \"rumia\" los sucesos, requiriendo guías pacientes para recuperar la calma con lentitud."
+        },
+        {
+          "title": "4. Tasa de Recuperación",
+          "sourceLevel": 2,
+          "content": "La recuperación mide la velocidad química de retorno al reposo. Los perros con recuperación rápida se calman al terminar el estímulo, mientras que otros requieren más tiempo."
         }
       ]
     },
     {
       "id": "plasticidad-vs-rigidez",
       "number": 6,
-      "title": "Plasticidad vs. Rigidez",
-      "signature": "Generalista vs. Especialista",
-      "summary": "Nivel de flexibilidad del perro ante variaciones de contexto y entorno.",
+      "title": "Plasticidad y rigidez",
+      "signature": "¿Qué tan capaz es mi perro de adaptarse a nuevos contextos sin colapsar?",
+      "summary": "La resiliencia canina define la capacidad de un perro para adaptarse a nuevos contextos o cambios en su rutina sin sufrir estrés. Mientras algunos individuos se ajustan fácilmente a diversas situaciones cotidianas, otros muestran dificultad para gestionar variaciones, sintiéndose inseguros o superados ante cualquier alteración de su entorno habitual.",
       "sections": [
         {
-          "title": "6.1 Plasticidad Alta",
+          "title": "1. Plasticidad Alta (El Generalista)",
           "sourceLevel": 2,
-          "content": "Capacidad multitarea y rápida adaptación a nuevas personas, lugares y normas."
+          "content": "Estos perros poseen gran versatilidad. Aprenden tareas opuestas y cambian entre ellas sin conflictos internos, manteniendo estabilidad emocional ante diversos contextos y situaciones nuevas.\nSEÑAL: Se adapta fácilmente a diversos entornos y rutinas sin estrés. Gestiona cambios con curiosidad y flexibilidad, demostrando gran versatilidad en su comportamiento diario."
         },
         {
-          "title": "6.2 Rigidez Especializada",
+          "title": "2. Rigidez Especializada (El Especialista)",
           "sourceLevel": 2,
-          "content": "Especialización extrema que requiere previsibilidad y rutinas constantes."
+          "content": "Estos perros están especializados en funciones específicas como correr o rastrear. Su sistema tolera poco las variaciones; fuera de su actividad habitual, muestran inseguridad y estrés significativo.\nSEÑAL: Depende estrictamente de la previsibilidad. Cambios mínimos en su rutina o entorno le generan alertas desproporcionadas, mostrando incapacidad para gestionar situaciones fuera de su especialidad."
         }
       ]
     }

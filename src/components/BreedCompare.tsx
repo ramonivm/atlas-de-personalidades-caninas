@@ -16,7 +16,12 @@ import {
   LayoutGrid, 
   Layers,
   Sparkles,
-  Info
+  Info,
+  Table,
+  TrendingUp,
+  Award,
+  SlidersHorizontal,
+  Compass
 } from 'lucide-react';
 import {
   ResponsiveContainer,
@@ -156,7 +161,7 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [viewMode, setViewMode] = useState<'both' | 'chart' | 'matrix'>('both');
+  const [viewMode, setViewMode] = useState<'both' | 'chart' | 'table' | 'matrix'>('both');
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Close dropdown on outside click
@@ -393,7 +398,7 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
                   ? 'bg-amber-500 text-black shadow-md'
                   : 'text-neutral-400 hover:text-white'
               }`}
-              title="Mostrar gráfico y fichas"
+              title="Mostrar todo (combinado)"
             >
               <Layers className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Combinada</span>
@@ -405,10 +410,22 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
                   ? 'bg-amber-500 text-black shadow-md'
                   : 'text-neutral-400 hover:text-white'
               }`}
-              title="Mostrar solo gráfico de barras"
+              title="Mostrar gráfico radial y métricas"
             >
               <BarChart3 className="w-3.5 h-3.5" />
               <span>Gráfico</span>
+            </button>
+            <button
+              onClick={() => setViewMode('table')}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full font-semibold transition-all cursor-pointer ${
+                viewMode === 'table'
+                  ? 'bg-amber-500 text-black shadow-md'
+                  : 'text-neutral-400 hover:text-white'
+              }`}
+              title="Mostrar tabla resumen comparativa"
+            >
+              <Table className="w-3.5 h-3.5" />
+              <span>Tabla</span>
             </button>
             <button
               onClick={() => setViewMode('matrix')}
@@ -844,8 +861,8 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
         </div>
       )}
 
-      {/* SECCIÓN DEL GRÁFICO COMPARATIVO (RECHARTS) */}
-      {(viewMode === 'both' || viewMode === 'chart') && (
+      {/* SECCIÓN DEL GRÁFICO COMPARATIVO Y TABLA RESUMEN */}
+      {(viewMode === 'both' || viewMode === 'chart' || viewMode === 'table') && (
         <div className="bg-[#141414] border border-white/5 rounded-[2.5rem] p-5 sm:p-7 shadow-2xl space-y-6">
           
           <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-white/5">
@@ -881,76 +898,268 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
             </div>
           </div>
 
-          {/* Contenedor Principal Gráfico Radial + Tarjetas de Métricas */}
-          <div className="flex flex-col lg:flex-row gap-6 mt-6 items-stretch">
-            {/* Recharts Radar Chart Container */}
-            <div className="w-full lg:w-1/2 h-72 lg:h-[400px] bg-neutral-900/30 rounded-2xl border border-white/5 p-4 flex items-center justify-center">
-              <ResponsiveContainer width="100%" height="100%">
-                <RadarChart cx="50%" cy="50%" outerRadius="70%" data={chartData}>
-                  <PolarGrid stroke="#333333" />
-                  <PolarAngleAxis
-                    dataKey="metric"
-                    tick={{ fill: '#A3A3A3', fontSize: 11, fontWeight: 600 }}
-                  />
-                  <PolarRadiusAxis
-                    angle={90}
-                    domain={[0, 5]}
-                    tick={{ fill: '#737373', fontSize: 10 }}
-                    tickCount={6}
-                    axisLine={false}
-                  />
-                  <Tooltip
-                    content={<CustomChartTooltip />}
-                    cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }}
-                  />
-                  {comparedBreeds.map((breed, index) => {
-                    const palette = BREED_PALETTE[index % BREED_PALETTE.length];
-                    return (
-                      <Radar
-                        key={breed.id}
-                        dataKey={breed.id}
-                        name={breed.breed}
-                        stroke={palette.fill}
-                        fill={palette.fill}
-                        fillOpacity={0.4}
-                        strokeWidth={2}
-                        animationDuration={800}
-                      />
-                    );
-                  })}
-                </RadarChart>
-              </ResponsiveContainer>
+          {/* Gráfico Radial + Tarjetas de Métricas (Oculto en modo exclusivo 'table') */}
+          {viewMode !== 'table' && (
+            <div className="flex flex-col lg:flex-row gap-6 mt-6 items-stretch">
+              {/* Recharts Radar Chart Container */}
+              <div className="w-full lg:w-1/2 h-72 lg:h-[400px] bg-neutral-900/30 rounded-2xl border border-white/5 p-4 flex items-center justify-center">
+                <ResponsiveContainer width="100%" height="100%">
+                  <RadarChart cx="50%" cy="50%" outerRadius="70%" data={chartData}>
+                    <PolarGrid stroke="#333333" />
+                    <PolarAngleAxis
+                      dataKey="metric"
+                      tick={{ fill: '#A3A3A3', fontSize: 11, fontWeight: 600 }}
+                    />
+                    <PolarRadiusAxis
+                      angle={90}
+                      domain={[0, 5]}
+                      tick={{ fill: '#737373', fontSize: 10 }}
+                      tickCount={6}
+                      axisLine={false}
+                    />
+                    <Tooltip
+                      content={<CustomChartTooltip />}
+                      cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }}
+                    />
+                    {comparedBreeds.map((breed, index) => {
+                      const palette = BREED_PALETTE[index % BREED_PALETTE.length];
+                      return (
+                        <Radar
+                          key={breed.id}
+                          dataKey={breed.id}
+                          name={breed.breed}
+                          stroke={palette.fill}
+                          fill={palette.fill}
+                          fillOpacity={0.4}
+                          strokeWidth={2}
+                          animationDuration={800}
+                        />
+                      );
+                    })}
+                  </RadarChart>
+                </ResponsiveContainer>
+              </div>
+
+              {/* Temperament Highlights Card */}
+              <div className="w-full lg:w-1/2 flex flex-col gap-3 justify-center">
+                {METRICS_CONFIG.map((m) => {
+                  const Icon = m.icon;
+                  return (
+                    <div key={m.key} className="bg-neutral-900/80 border border-white/5 p-3.5 rounded-2xl">
+                      <div className="flex items-center gap-2 mb-1.5">
+                        <Icon className="w-3.5 h-3.5 text-amber-400" />
+                        <span className="text-xs font-bold text-white">{m.label}</span>
+                      </div>
+                      <div className="space-y-1 text-[11px]">
+                        {comparedBreeds.map((b, idx) => {
+                          const palette = BREED_PALETTE[idx % BREED_PALETTE.length];
+                          const raw = b.metrics[m.metricKey];
+                          return (
+                            <div key={b.id} className="flex justify-between items-center text-neutral-300">
+                              <span className="text-neutral-400 font-medium pr-4">
+                                {b.breed}:
+                              </span>
+                              <span className={`font-bold ${palette.text} text-right text-balance`}>
+                                {raw}
+                              </span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* TABLA RESUMEN COMPARATIVA DE MÉTRICAS NUMÉRICAS */}
+          <div className="mt-8 pt-6 border-t border-white/5 space-y-4">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div className="flex items-center gap-2">
+                <Table className="w-4 h-4 text-amber-400" />
+                <h4 className="text-sm font-bold text-white tracking-tight">
+                  Tabla Resumen: Comparativa Numérica de Temperamento
+                </h4>
+              </div>
+              <span className="text-[11px] text-neutral-400 bg-neutral-900/90 border border-white/5 px-3 py-1 rounded-full">
+                Escala cuantitativa estandarizada de 1.0 a 5.0
+              </span>
             </div>
 
-            {/* Temperament Highlights Card */}
-            <div className="w-full lg:w-1/2 flex flex-col gap-3 justify-center">
-              {METRICS_CONFIG.map((m) => {
-                const Icon = m.icon;
-                return (
-                  <div key={m.key} className="bg-neutral-900/80 border border-white/5 p-3.5 rounded-2xl">
-                    <div className="flex items-center gap-2 mb-1.5">
-                      <Icon className="w-3.5 h-3.5 text-amber-400" />
-                      <span className="text-xs font-bold text-white">{m.label}</span>
-                    </div>
-                    <div className="space-y-1 text-[11px]">
-                      {comparedBreeds.map((b, idx) => {
-                        const palette = BREED_PALETTE[idx % BREED_PALETTE.length];
-                        const raw = b.metrics[m.metricKey];
-                        return (
-                          <div key={b.id} className="flex justify-between items-center text-neutral-300">
-                            <span className="text-neutral-400 font-medium pr-4">
-                              {b.breed}:
-                            </span>
-                            <span className={`font-bold ${palette.text} text-right text-balance`}>
-                              {raw}
-                            </span>
+            <div className="overflow-x-auto rounded-2xl border border-white/5 bg-neutral-900/40">
+              <table className="w-full text-left border-collapse min-w-[620px]">
+                <thead>
+                  <tr className="border-b border-white/5 bg-neutral-900/80 text-xs font-semibold text-neutral-400">
+                    <th className="py-3.5 px-4 w-1/3">Dimensión Psico-Etológica</th>
+                    {comparedBreeds.map((breed, idx) => {
+                      const palette = BREED_PALETTE[idx % BREED_PALETTE.length];
+                      return (
+                        <th key={breed.id} className="py-3.5 px-4 text-left">
+                          <div className="flex items-center gap-2.5">
+                            <img
+                              src={breed.imageUrl || getBreedImageUrl(breed.id)}
+                              alt={breed.breed}
+                              className="w-7 h-7 rounded-lg object-cover bg-neutral-800 border border-white/10"
+                            />
+                            <div className="min-w-0">
+                              <span className={`block font-bold text-xs ${palette.text} truncate`}>
+                                {breed.breed}
+                              </span>
+                              <span className="text-[10px] text-neutral-400 block truncate max-w-[130px]">
+                                {breed.fciGroup?.split(':')[0] || breed.akcGroup}
+                              </span>
+                            </div>
                           </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                );
-              })}
+                        </th>
+                      );
+                    })}
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/5 text-xs">
+                  {METRICS_CONFIG.map((m) => {
+                    const Icon = m.icon;
+                    // Find max score among compared breeds for this metric to highlight leader
+                    const scores = comparedBreeds.map((b) => parseMetricScore(b.metrics[m.metricKey]));
+                    const maxScore = Math.max(...scores);
+                    const hasLeader = comparedBreeds.length > 1 && new Set(scores).size > 1;
+
+                    return (
+                      <tr key={m.key} className="hover:bg-white/[0.02] transition-colors">
+                        <td className="py-4 px-4 align-top">
+                          <div className="flex items-start gap-2.5">
+                            <div className="p-1.5 rounded-lg bg-neutral-800/80 border border-white/5 text-amber-400 shrink-0 mt-0.5">
+                              <Icon className="w-3.5 h-3.5" />
+                            </div>
+                            <div>
+                              <p className="font-bold text-white text-xs">{m.label}</p>
+                              <p className="text-[11px] text-neutral-400 leading-snug mt-0.5 max-w-xs">
+                                {m.description}
+                              </p>
+                            </div>
+                          </div>
+                        </td>
+
+                        {comparedBreeds.map((breed, idx) => {
+                          const palette = BREED_PALETTE[idx % BREED_PALETTE.length];
+                          const raw = breed.metrics[m.metricKey];
+                          const score = parseMetricScore(raw);
+                          const isLeader = hasLeader && score === maxScore;
+                          const pct = Math.min(100, Math.max(10, (score / 5) * 100));
+
+                          return (
+                            <td key={breed.id} className="py-4 px-4 align-top">
+                              <div className="space-y-2">
+                                <div className="flex items-baseline justify-between gap-2">
+                                  <div className="flex items-baseline gap-1">
+                                    <span className="text-base font-extrabold text-white font-mono tabular-nums">
+                                      {score.toFixed(1)}
+                                    </span>
+                                    <span className="text-[10px] text-neutral-500 font-medium">/ 5.0</span>
+                                  </div>
+
+                                  {isLeader && (
+                                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/25 flex items-center gap-1 shrink-0">
+                                      <Award className="w-2.5 h-2.5" />
+                                      Mayor
+                                    </span>
+                                  )}
+                                </div>
+
+                                {/* Mini Progress Bar */}
+                                <div className="w-full bg-neutral-800/80 h-1.5 rounded-full overflow-hidden">
+                                  <div
+                                    className="h-full rounded-full transition-all duration-500"
+                                    style={{
+                                      width: `${pct}%`,
+                                      backgroundColor: palette.fill
+                                    }}
+                                  />
+                                </div>
+
+                                {/* Qualitative descriptor */}
+                                <p className="text-[11px] text-neutral-300 leading-tight">
+                                  {raw || 'No especificado'}
+                                </p>
+                              </div>
+                            </td>
+                          );
+                        })}
+                      </tr>
+                    );
+                  })}
+
+                  {/* Fila Resumen: Promedio de Intensidad Etológica */}
+                  <tr className="bg-neutral-900/60 font-semibold border-t-2 border-white/10">
+                    <td className="py-3.5 px-4">
+                      <div className="flex items-center gap-2">
+                        <TrendingUp className="w-4 h-4 text-amber-400" />
+                        <div>
+                          <span className="text-xs font-bold text-white block">
+                            Índice Promedio de Intensidad
+                          </span>
+                          <span className="text-[10px] text-neutral-400 font-normal">
+                            Media aritmética de las 4 dimensiones clave
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+
+                    {comparedBreeds.map((breed, idx) => {
+                      const palette = BREED_PALETTE[idx % BREED_PALETTE.length];
+                      const totalScore = METRICS_CONFIG.reduce(
+                        (acc, m) => acc + parseMetricScore(breed.metrics[m.metricKey]),
+                        0
+                      );
+                      const avgScore = (totalScore / METRICS_CONFIG.length).toFixed(2);
+                      const avgPct = (Number(avgScore) / 5) * 100;
+
+                      return (
+                        <td key={breed.id} className="py-3.5 px-4">
+                          <div className="space-y-1.5">
+                            <div className="flex items-baseline gap-1">
+                              <span className={`text-base font-black font-mono tabular-nums ${palette.text}`}>
+                                {avgScore}
+                              </span>
+                              <span className="text-[10px] text-neutral-500">/ 5.00</span>
+                            </div>
+                            <div className="w-full bg-neutral-800 h-1.5 rounded-full overflow-hidden">
+                              <div
+                                className="h-full rounded-full"
+                                style={{
+                                  width: `${avgPct}%`,
+                                  backgroundColor: palette.fill
+                                }}
+                              />
+                            </div>
+                          </div>
+                        </td>
+                      );
+                    })}
+                  </tr>
+
+                  {/* Fila Resumen: Motivación Intrínseca */}
+                  <tr className="bg-neutral-900/30">
+                    <td className="py-3.5 px-4 text-xs font-bold text-neutral-300">
+                      <div className="flex items-center gap-2">
+                        <Compass className="w-3.5 h-3.5 text-amber-400" />
+                        <span>Motivación Intrínseca</span>
+                      </div>
+                    </td>
+
+                    {comparedBreeds.map((breed, idx) => {
+                      const palette = BREED_PALETTE[idx % BREED_PALETTE.length];
+                      return (
+                        <td key={breed.id} className="py-3.5 px-4">
+                          <span className={`text-[11px] font-medium ${palette.text}`}>
+                            {breed.metrics.motivacion_intrinseca || 'No especificada'}
+                          </span>
+                        </td>
+                      );
+                    })}
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
 
