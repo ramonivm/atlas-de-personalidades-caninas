@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Framework } from '../../types';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { canineData } from '../../data/canineData';
+import { ChevronLeft, ChevronRight, Network } from 'lucide-react';
+import { FrameworkParametersModal } from './FrameworkParametersModal';
 
 interface FrameworkExperienceProps {
   framework: Framework;
@@ -80,6 +82,7 @@ export const FrameworkExperience: React.FC<FrameworkExperienceProps> = ({ framew
   const [imgSrc, setImgSrc] = useState<string>('');
   const [imgError, setImgError] = useState<boolean>(false);
   const [isImageLoaded, setIsImageLoaded] = useState<boolean>(false);
+  const [isMapModalOpen, setIsMapModalOpen] = useState<boolean>(false);
 
   // Reiniciar selección al cambiar de marco
   useEffect(() => {
@@ -310,6 +313,24 @@ export const FrameworkExperience: React.FC<FrameworkExperienceProps> = ({ framew
         </div>
 
       </div>
+
+      {/* Botón de acceso al mapa de marcos psicológicos (Desktop Only) */}
+      <div className="flex justify-end pt-1">
+        <button
+          onClick={() => setIsMapModalOpen(true)}
+          className="hidden lg:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-neutral-900/60 hover:bg-neutral-800 hover:border-amber-500/40 text-neutral-300 hover:text-amber-400 text-xs font-mono tracking-wider transition-all duration-200 cursor-pointer group shadow-sm hover:shadow-amber-500/5"
+        >
+          <Network className="w-3.5 h-3.5 text-amber-500 group-hover:scale-110 transition-transform" />
+          <span>Ver mapa de marcos psicológicos</span>
+        </button>
+      </div>
+
+      {/* Modal Infográfico Editorial de Parámetros */}
+      <FrameworkParametersModal
+        isOpen={isMapModalOpen}
+        onClose={() => setIsMapModalOpen(false)}
+        frameworks={canineData.frameworks}
+      />
 
     </div>
   );

@@ -1,184 +1,225 @@
-import React, { useState } from 'react';
-import { Archetype, Breed } from '../types';
-import { Layers, Sparkles, ChevronRight, Dog, ArrowRight } from 'lucide-react';
-import { getBreedImageUrl } from '../utils/breedImages';
+import React, { useState, useEffect } from 'react';
+import { Archetype } from '../types';
+import { motion, AnimatePresence } from 'motion/react';
+import { 
+  Layers, 
+  Brain, 
+  List, 
+  AlertTriangle, 
+  ChevronRight
+} from 'lucide-react';
 
 interface ArchetypeExplorerProps {
   archetypes: Archetype[];
-  breeds: Breed[];
-  onSelectBreed: (breed: Breed) => void;
+  breeds?: any[]; 
+  onSelectBreed?: (breed: any) => void;
   selectedArchetypeFilter?: string;
 }
 
-export const ArchetypeExplorer: React.FC<ArchetypeExplorerProps> = ({
+const archetypeImageMap: Record<string, string> = {
+  "Apego Extremo (Fusión Emocional)": "apego_extremo",
+  "Apego Frágil Afiliativo": "apego_fragil_afiliativo",
+  "Autonomía Primitiva / Dignidad": "autonomia_primitiva",
+  "Contención Pesada / Calma Profunda": "contencion_pesada",
+  "Cooperación Humana Clásica": "cooperacion_humana_clasica",
+  "Guardia Ancestral de Tiempo Largo": "guardia_ancestral_de_tiempo_largo",
+  "Hiperreactividad Ornamental": "hiperreactividad_ornamental",
+  "Independencia Cazadora Solitaria": "independencia_cazadora_solitaria",
+  "Inteligencia Funcional Obsesiva": "inteligencia_funcional_obsesiva",
+  "Lebreles (Desapego y Movimiento)": "lebreles_desapego_movimiento",
+  "Protección Estructurada Moderna": "proteccion_estructurada_moderna",
+  "Protección Territorial Absoluta": "proteccion_territorial_absoluta",
+  "Sensorialidad Olfativa Profunda": "sensorialidad_olfativa_profunda",
+  "Terriers Instrumentales": "terriers_instrumentales"
+};
+
+export const ArchetypeExplorer: React.FC<ArchetypeExplorerProps> = ({ 
   archetypes,
-  breeds,
-  onSelectBreed,
-  selectedArchetypeFilter
+  selectedArchetypeFilter 
 }) => {
-  const [selectedArchId, setSelectedArchId] = useState<string>(
-    selectedArchetypeFilter 
-      ? (archetypes.find(a => a.title.toLowerCase().includes(selectedArchetypeFilter.toLowerCase()))?.id || archetypes[0].id)
-      : archetypes[0].id
-  );
+  const initialArchetype = archetypes.find(a => a.title === selectedArchetypeFilter) || archetypes[0];
+  const [selectedArchetype, setSelectedArchetype] = useState<Archetype>(initialArchetype);
 
-  const currentArchetype = archetypes.find(a => a.id === selectedArchId) || archetypes[0];
+  useEffect(() => {
+    if (selectedArchetypeFilter) {
+      const found = archetypes.find(a => a.title === selectedArchetypeFilter);
+      if (found) setSelectedArchetype(found);
+    }
+  }, [selectedArchetypeFilter, archetypes]);
 
-  // Find breeds belonging to current archetype
-  const matchingBreeds = breeds.filter(b => 
-    b.archetypes.some(a => 
-      a.toLowerCase() === currentArchetype.title.toLowerCase() ||
-      currentArchetype.title.toLowerCase().includes(a.toLowerCase()) ||
-      a.toLowerCase().includes(currentArchetype.title.toLowerCase())
-    )
-  );
+  if (!archetypes || archetypes.length === 0) return null;
+
+  const dinamica = selectedArchetype.sections[0];
+  const rasgos = selectedArchetype.sections[1];
+  const riesgos = selectedArchetype.sections[2];
+
+  const imageName = archetypeImageMap[selectedArchetype.title];
+  const imagePath = imageName ? `/images/arquetipos/${imageName}.webp` : '';
 
   return (
-    <div className="space-y-6">
+    <div className="flex flex-col lg:flex-row gap-8 items-start">
       
-      {/* Hero Banner for Archetypes */}
-      <div className="bg-[#141414] text-white p-6 sm:p-8 rounded-[2.5rem] border border-white/5 shadow-2xl relative overflow-hidden">
-        <div className="relative z-10 max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-500/10 text-purple-300 text-xs font-bold border border-purple-500/20 mb-3">
-            <Layers className="w-3.5 h-3.5" />
-            <span>14 Arquetipos Psicodiferenciales</span>
-          </div>
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
-            Los 14 Arquetipos de la Personalidad Canina
-          </h2>
-          <p className="text-sm text-neutral-400 mt-2 leading-relaxed">
-            Cada raza canina posee una firma sistémica y un patrón de regulación emocional, motivación y respuesta al entorno. Explora los 14 perfiles psicológicos fundamentales.
-          </p>
-        </div>
-      </div>
-
-      {/* Grid Layout: Sidebar with 14 archetypes list + Main details */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        
-        {/* Archetype Selector List */}
-        <div className="lg:col-span-4 bg-[#141414] border border-white/5 rounded-[2rem] p-4 shadow-xl space-y-1.5 max-h-[620px] overflow-y-auto">
-          <h3 className="text-[10px] font-bold text-amber-500 uppercase tracking-[0.2em] px-3 py-2">
-            Selecciona un Arquetipo
+      <nav 
+        aria-label="Navegación de Arquetipos"
+        className="w-full lg:w-72 shrink-0 flex lg:flex-col overflow-x-auto lg:overflow-visible gap-2 lg:sticky lg:top-24 pb-4 lg:pb-0 custom-scrollbar"
+      >
+        <div className="hidden lg:flex items-center gap-2 mb-4 px-2">
+          <Layers className="w-5 h-5 text-amber-500"/>
+          <h3 className="text-sm font-bold text-white uppercase tracking-widest">
+            14 Arquetipos
           </h3>
-          {archetypes.map((arch) => {
-            const isSelected = arch.id === currentArchetype.id;
-            const count = breeds.filter(b => 
-              b.archetypes.some(a => 
-                a.toLowerCase() === arch.title.toLowerCase() ||
-                arch.title.toLowerCase().includes(a.toLowerCase()) ||
-                a.toLowerCase().includes(arch.title.toLowerCase())
-              )
-            ).length;
-
-            return (
-              <button
-                key={arch.id}
-                onClick={() => setSelectedArchId(arch.id)}
-                className={`w-full text-left px-3.5 py-3 rounded-2xl text-xs font-bold transition-all flex items-center justify-between gap-2 cursor-pointer ${
-                  isSelected
-                    ? 'bg-amber-500 text-black shadow-md shadow-amber-500/10'
-                    : 'text-slate-300 hover:bg-neutral-900 hover:text-white'
-                }`}
-              >
-                <div className="flex items-center gap-2.5 truncate">
-                  <span className={`w-5 h-5 rounded-full text-[10px] font-bold flex items-center justify-center flex-shrink-0 ${
-                    isSelected ? 'bg-black text-amber-400' : 'bg-neutral-800 text-neutral-400'
-                  }`}>
-                    {arch.number}
-                  </span>
-                  <span className="truncate">{arch.title}</span>
-                </div>
-                <span className={`text-[10px] px-2.5 py-0.5 rounded-full font-bold flex-shrink-0 ${
-                  isSelected ? 'bg-black/20 text-black' : 'bg-neutral-900 text-neutral-400'
-                }`}>
-                  {count} razas
-                </span>
-              </button>
-            );
-          })}
         </div>
 
-        {/* Selected Archetype Details */}
-        <div className="lg:col-span-8 bg-[#141414] border border-white/5 rounded-[2.5rem] p-6 sm:p-8 shadow-xl space-y-6">
-          
-          {/* Header */}
-          <div className="border-b border-white/5 pb-5">
-            <div className="flex items-center gap-2 text-[10px] font-bold text-amber-500 uppercase tracking-[0.2em] mb-1">
-              <span>Arquetipo #{currentArchetype.number}</span>
-            </div>
-            <h3 className="text-2xl font-bold text-white tracking-tight">
-              {currentArchetype.title}
-            </h3>
-            {currentArchetype.signature && (
-              <p className="text-sm font-semibold text-purple-300 mt-1 italic">
-                "{currentArchetype.signature}"
-              </p>
-            )}
-          </div>
-
-          {/* Sections */}
-          <div className="space-y-4">
-            {currentArchetype.sections.map((sec, idx) => (
-              <div key={idx} className="bg-neutral-900/90 border border-white/5 rounded-2xl p-5">
-                <h4 className="text-sm font-bold text-white mb-2 flex items-center gap-2">
-                  <Sparkles className="w-4 h-4 text-purple-400" />
-                  <span>{sec.title}</span>
-                </h4>
-                <p className="text-sm text-slate-300 leading-relaxed whitespace-pre-line">
-                  {sec.content}
-                </p>
+        {archetypes.map((arch) => {
+          const isSelected = selectedArchetype.id === arch.id;
+          return (
+            <button
+              key={arch.id}
+              onClick={() => setSelectedArchetype(arch)}
+              className={`flex-shrink-0 lg:w-full flex items-center justify-between text-left px-4 py-3 sm:py-4 rounded-2xl transition-all cursor-pointer border ${
+                isSelected 
+                  ? 'bg-amber-500 text-black border-amber-400 shadow-md shadow-amber-500/10 font-bold' 
+                  : 'bg-[#141414] text-slate-400 border-white/5 hover:bg-neutral-800 hover:text-white font-medium'
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                <span className={`text-[10px] sm:text-xs px-2 py-0.5 rounded-full font-bold ${
+                  isSelected ? 'bg-black/20 text-black' : 'bg-neutral-800 text-neutral-500'
+                }`}>
+                  #{arch.number}
+                </span>
+                <span className="text-xs sm:text-sm whitespace-nowrap lg:whitespace-normal line-clamp-2">
+                  {arch.title}
+                </span>
               </div>
-            ))}
-          </div>
+              <ChevronRight className={`hidden lg:block w-4 h-4 shrink-0 transition-transform ${
+                isSelected ? 'translate-x-1' : 'opacity-0 -translate-x-2'
+              }`}/>
+            </button>
+          );
+        })}
+      </nav>
 
-          {/* Breeds with this Archetype */}
-          <div className="pt-5 border-t border-white/5">
-            <h4 className="text-sm font-bold text-white mb-4 flex items-center justify-between">
-              <span className="flex items-center gap-2">
-                <Dog className="w-4 h-4 text-amber-500" />
-                <span>Razas asociadas a este arquetipo ({matchingBreeds.length})</span>
-              </span>
-            </h4>
+      <main className="flex-1 min-w-0 w-full">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={selectedArchetype.id}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -15 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="space-y-6"
+          >
+            
+            <div className="flex flex-col-reverse lg:flex-row gap-6">
+              
+              <div className="flex-1 bg-[#141414] border border-white/5 rounded-[2.5rem] p-8 sm:p-10 flex flex-col justify-center shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+                
+                <span className="text-amber-500 text-xs font-bold uppercase tracking-[0.2em] mb-3 block">
+                  Arquetipo #{selectedArchetype.number}
+                </span>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4 text-balance">
+                  {selectedArchetype.title}
+                </h1>
+                {selectedArchetype.signature && (
+                  <p className="text-lg sm:text-xl text-purple-400 font-serif italic text-balance">
+                    "{selectedArchetype.signature}"
+                  </p>
+                )}
+              </div>
 
-            {matchingBreeds.length === 0 ? (
-              <p className="text-xs text-neutral-500 italic bg-neutral-900 p-4 rounded-2xl border border-white/5">
-                No hay razas asociadas directamente a esta etiqueta en el filtro actual.
-              </p>
-            ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {matchingBreeds.map(breed => (
-                  <div
-                    key={breed.id}
-                    onClick={() => onSelectBreed(breed)}
-                    className="flex items-center gap-3 p-3 bg-neutral-900 hover:bg-neutral-800 border border-white/5 hover:border-amber-500/40 rounded-2xl cursor-pointer transition-all group"
-                  >
-                    <img
-                      src={breed.imageUrl || getBreedImageUrl(breed.id)}
-                      alt={`Fotografía de ${breed.breed}`}
-                      className="w-12 h-12 aspect-square rounded-xl object-cover flex-shrink-0"
-                      onError={(e) => {
-                        e.currentTarget.onerror = null;
-                        e.currentTarget.src = "https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg";
-                      }}
-                    />
-                    <div className="flex-1 min-w-0">
-                      <h5 className="text-xs font-bold text-white group-hover:text-amber-400 truncate">
-                        {breed.breed}
-                      </h5>
-                      <p className="text-[11px] text-neutral-400 italic truncate">
-                        "{breed.epithet}"
-                      </p>
+              <div className="w-full lg:w-[40%] aspect-square lg:aspect-auto lg:min-h-[320px] bg-[#141414] border border-white/5 rounded-[2.5rem] flex flex-col items-center justify-center relative overflow-hidden shadow-inner shrink-0 group">
+                {imagePath ? (
+                  <img 
+                    src={imagePath} 
+                    alt={`Ilustración del arquetipo ${selectedArchetype.title}`}
+                    className="w-full h-full object-cover opacity-75 transition-transform duration-700 group-hover:scale-105"
+                    loading="eager"
+                  />
+                ) : (
+                  <div className="text-center px-6 z-10">
+                    <span className="text-[10px] font-bold text-neutral-600 uppercase tracking-widest block">
+                      Imagen no disponible
+                    </span>
+                  </div>
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-[#141414]/30 to-transparent pointer-events-none" />
+              </div>
+
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              
+              {dinamica && (
+                <div className="lg:col-span-2 bg-[#141414] border border-white/5 rounded-[2.5rem] p-8 sm:p-10 shadow-xl">
+                  <div className="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
+                    <div className="p-2.5 bg-blue-500/10 rounded-xl border border-blue-500/20">
+                      <Brain className="w-5 h-5 text-blue-400"/>
                     </div>
-                    <ChevronRight className="w-4 h-4 text-neutral-500 group-hover:text-amber-400 flex-shrink-0" />
+                    <h2 className="text-xl font-bold text-white tracking-tight">
+                      {dinamica.title || 'Dinámica Psicológica'}
+                    </h2>
+                  </div>
+                  <div className="prose prose-invert max-w-none text-slate-300 leading-relaxed text-[15px] whitespace-pre-line">
+                    {dinamica.content}
+                  </div>
+                </div>
+              )}
+
+              <div className="lg:col-span-1 flex flex-col gap-6">
+                
+                {rasgos && (
+                  <div className="flex-1 bg-[#141414] border border-white/5 rounded-[2.5rem] p-6 sm:p-8 shadow-xl">
+                    <div className="flex items-center gap-3 mb-5">
+                      <div className="p-2 bg-emerald-500/10 rounded-xl border border-emerald-500/20">
+                        <List className="w-4 h-4 text-emerald-400"/>
+                      </div>
+                      <h3 className="text-base font-bold text-white">
+                        {rasgos.title || 'Rasgos Clave'}
+                      </h3>
+                    </div>
+                    <div className="prose prose-invert max-w-none text-slate-400 text-sm leading-relaxed whitespace-pre-line">
+                      {rasgos.content}
+                    </div>
+                  </div>
+                )}
+
+                {riesgos && (
+                  <div className="flex-1 bg-rose-500/5 border border-rose-500/20 rounded-[2.5rem] p-6 sm:p-8 shadow-xl">
+                    <div className="flex items-center gap-3 mb-5">
+                      <div className="p-2 bg-rose-500/20 rounded-xl border border-rose-500/30">
+                        <AlertTriangle className="w-4 h-4 text-rose-400"/>
+                      </div>
+                      <h3 className="text-base font-bold text-rose-300">
+                        {riesgos.title || 'Riesgos'}
+                      </h3>
+                    </div>
+                    <div className="prose prose-invert max-w-none text-rose-200/80 text-sm leading-relaxed whitespace-pre-line">
+                      {riesgos.content}
+                    </div>
+                  </div>
+                )}
+                
+              </div>
+            </div>
+
+            {selectedArchetype.sections.length > 3 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                {selectedArchetype.sections.slice(3).map((section, idx) => (
+                  <div key={idx} className="bg-[#141414] border border-white/5 rounded-[2.5rem] p-8">
+                    <h3 className="text-lg font-bold text-white mb-4">{section.title}</h3>
+                    <div className="prose prose-invert max-w-none text-slate-300 text-sm leading-relaxed whitespace-pre-line">
+                      {section.content}
+                    </div>
                   </div>
                 ))}
               </div>
             )}
-          </div>
 
-        </div>
-
-      </div>
+          </motion.div>
+        </AnimatePresence>
+      </main>
 
     </div>
   );
