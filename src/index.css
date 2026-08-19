@@ -35,8 +35,26 @@
   will-change: opacity, transform;
 }
 
+/* Smooth content fade in for tab/parameter transitions */
+@keyframes contentFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-content-fade-in {
+  animation: contentFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+  will-change: opacity, transform;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .animate-card-fade-in {
+  .animate-card-fade-in,
+  .animate-content-fade-in {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
