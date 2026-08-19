@@ -149,60 +149,64 @@ export const ArchetypeExplorer: React.FC<ArchetypeExplorerProps> = ({
 
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {/* Fila intermedia: Dinámica Psicológica (flex-1) y Rasgos Clave (40%) con la misma altura */}
+            <div className="flex flex-col lg:flex-row gap-6 items-stretch">
               
               {dinamica && (
-                <div className="lg:col-span-2 bg-[#141414] border border-white/5 rounded-[2.5rem] p-8 sm:p-10 shadow-xl">
-                  <div className="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
-                    <div className="p-2.5 bg-blue-500/10 rounded-xl border border-blue-500/20">
-                      <Brain className="w-5 h-5 text-blue-400"/>
+                <div className="flex-1 bg-[#141414] border border-white/5 rounded-[2.5rem] p-8 sm:p-10 shadow-xl flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
+                      <div className="p-2.5 bg-blue-500/10 rounded-xl border border-blue-500/20">
+                        <Brain className="w-5 h-5 text-blue-400"/>
+                      </div>
+                      <h2 className="text-xl font-bold text-white tracking-tight">
+                        {dinamica.title || 'Dinámica Psicológica'}
+                      </h2>
                     </div>
-                    <h2 className="text-xl font-bold text-white tracking-tight">
-                      {dinamica.title || 'Dinámica Psicológica'}
-                    </h2>
-                  </div>
-                  <div className="prose prose-invert max-w-none text-slate-300 leading-relaxed text-[15px] whitespace-pre-line">
-                    {dinamica.content}
+                    <div className="prose prose-invert max-w-none text-slate-300 leading-relaxed text-[15px] whitespace-pre-line">
+                      {dinamica.content}
+                    </div>
                   </div>
                 </div>
               )}
 
-              <div className="lg:col-span-1 flex flex-col gap-6">
-                
-                {rasgos && (
-                  <div className="flex-1 bg-[#141414] border border-white/5 rounded-[2.5rem] p-6 sm:p-8 shadow-xl">
-                    <div className="flex items-center gap-3 mb-5">
-                      <div className="p-2 bg-emerald-500/10 rounded-xl border border-emerald-500/20">
-                        <List className="w-4 h-4 text-emerald-400"/>
+              {rasgos && (
+                <div className="w-full lg:w-[40%] shrink-0 bg-[#141414] border border-white/5 rounded-[2.5rem] p-8 sm:p-10 shadow-xl flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
+                      <div className="p-2.5 bg-emerald-500/10 rounded-xl border border-emerald-500/20">
+                        <List className="w-5 h-5 text-emerald-400"/>
                       </div>
-                      <h3 className="text-base font-bold text-white">
+                      <h3 className="text-xl font-bold text-white tracking-tight">
                         {rasgos.title || 'Rasgos Clave'}
                       </h3>
                     </div>
-                    <div className="prose prose-invert max-w-none text-slate-400 text-sm leading-relaxed whitespace-pre-line">
+                    <div className="prose prose-invert max-w-none text-slate-300 text-[15px] leading-relaxed whitespace-pre-line">
                       {rasgos.content}
                     </div>
                   </div>
-                )}
+                </div>
+              )}
 
-                {riesgos && (
-                  <div className="flex-1 bg-rose-500/5 border border-rose-500/20 rounded-[2.5rem] p-6 sm:p-8 shadow-xl">
-                    <div className="flex items-center gap-3 mb-5">
-                      <div className="p-2 bg-rose-500/20 rounded-xl border border-rose-500/30">
-                        <AlertTriangle className="w-4 h-4 text-rose-400"/>
-                      </div>
-                      <h3 className="text-base font-bold text-rose-300">
-                        {riesgos.title || 'Riesgos'}
-                      </h3>
-                    </div>
-                    <div className="prose prose-invert max-w-none text-rose-200/80 text-sm leading-relaxed whitespace-pre-line">
-                      {riesgos.content}
-                    </div>
-                  </div>
-                )}
-                
-              </div>
             </div>
+
+            {/* Fila inferior: Riesgos ocupando el ancho total (cubriendo ambos contenedores superiores) */}
+            {riesgos && (
+              <div className="w-full bg-rose-500/5 border border-rose-500/20 rounded-[2.5rem] p-8 sm:p-10 shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-rose-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+                <div className="flex items-center gap-3 mb-6 border-b border-rose-500/20 pb-4">
+                  <div className="p-2.5 bg-rose-500/20 rounded-xl border border-rose-500/30">
+                    <AlertTriangle className="w-5 h-5 text-rose-400"/>
+                  </div>
+                  <h3 className="text-xl font-bold text-rose-300 tracking-tight">
+                    {riesgos.title || 'Riesgos'}
+                  </h3>
+                </div>
+                <div className="prose prose-invert max-w-none text-rose-200/90 text-[15px] leading-relaxed whitespace-pre-line">
+                  {riesgos.content}
+                </div>
+              </div>
+            )}
 
             {selectedArchetype.sections.length > 3 && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
