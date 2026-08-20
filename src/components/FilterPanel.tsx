@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Filter, RotateCcw, SlidersHorizontal, ChevronDown, ChevronUp, HelpCircle } from 'lucide-react';
+import { Filter, RotateCcw, SlidersHorizontal, ChevronDown, ChevronUp, HelpCircle, Search, X } from 'lucide-react';
 import { FilterState, Facets, Breed } from '../types';
 import { canineData } from '../data/canineData';
 import { parseMetricLevel, mapMotivationGroup, mapTraitGroup } from '../utils/dataParser';
@@ -13,6 +13,8 @@ interface FilterPanelProps {
   totalBreeds: number;
   filteredCount: number;
   resetFilters: () => void;
+  searchQuery?: string;
+  setSearchQuery?: (q: string) => void;
 }
 
 export const FilterPanel: React.FC<FilterPanelProps> = ({
@@ -21,10 +23,21 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
   setFilters,
   totalBreeds,
   filteredCount,
-  resetFilters
+  resetFilters,
+  searchQuery,
+  setSearchQuery
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isGuideOpen, setIsGuideOpen] = useState(false);
+
+  const currentSearch = searchQuery !== undefined ? searchQuery : filters.searchQuery;
+
+  const handleSearchChange = (val: string) => {
+    if (setSearchQuery) {
+      setSearchQuery(val);
+    }
+    setFilters(prev => ({ ...prev, searchQuery: val }));
+  };
 
   const breedList = breeds || canineData.breeds;
 
@@ -59,7 +72,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
     filters.resilienceLevel,
     filters.sociabilityLevel,
     filters.independenceLevel,
-    filters.searchQuery
+    currentSearch
   ].filter(Boolean).length;
 
   const handleFilterChange = (key: keyof FilterState, value: string) => {
@@ -132,6 +145,32 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             <span>{isOpen ? 'Ocultar' : 'Filtros'}</span>
             {isOpen ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
           </button>
+        </div>
+      </div>
+
+      {/* Second Search Bar inside the Dynamic Filter Box */}
+      <div className="mt-5">
+        <div className="relative flex items-center">
+          <Search className="w-4 h-4 absolute left-4 text-neutral-400 pointer-events-none" />
+          <input
+            id="filter-search-box-input"
+            type="text"
+            placeholder="Buscar por raza, arquetipo psicológico, rasgo o motivación..."
+            aria-label="Buscar por raza, arquetipo psicológico, rasgo o motivación"
+            value={currentSearch}
+            onChange={(e) => handleSearchChange(e.target.value)}
+            className="w-full bg-neutral-900 border border-neutral-800 text-slate-200 placeholder-neutral-500 text-xs sm:text-sm rounded-2xl pl-11 pr-10 py-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus:border-amber-500/50 transition-all min-h-[46px]"
+          />
+          {currentSearch && (
+            <button 
+              type="button"
+              onClick={() => handleSearchChange('')}
+              aria-label="Limpiar búsqueda"
+              className="absolute right-3 min-h-[32px] min-w-[32px] flex items-center justify-center text-neutral-400 hover:text-white text-xs cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-full hover:bg-neutral-800 transition-colors"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          )}
         </div>
       </div>
 
@@ -252,6 +291,12 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
       {activeFilterCount > 0 && (
         <div className="mt-4 pt-4 border-t border-white/5 flex flex-wrap items-center gap-2">
           <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mr-1">Filtros activos:</span>
+          {currentSearch && (
+            <span className="inline-flex items-center gap-1.5 bg-amber-500/10 text-amber-300 text-xs px-3 py-1.5 rounded-full border border-amber-500/30 font-medium">
+              Búsqueda: &ldquo;{currentSearch}&rdquo;
+              <button onClick={() => handleSearchChange('')} aria-label="Eliminar filtro de búsqueda" className="hover:text-white font-bold ml-1 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-full px-1">✕</button>
+            </span>
+          )}
           {filters.archetype && (
             <span className="inline-flex items-center gap-1.5 bg-purple-500/10 text-purple-300 text-xs px-3 py-1.5 rounded-full border border-purple-500/30 font-medium">
               Arquetipo: {filters.archetype}

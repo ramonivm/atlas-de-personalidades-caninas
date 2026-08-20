@@ -6,6 +6,7 @@ import { mapMotivationGroup, mapTraitGroup } from './utils/dataParser';
 import { Header } from './components/Header';
 import { FilterPanel } from './components/FilterPanel';
 import { BreedCard } from './components/BreedCard';
+import { BreedTableView } from './components/BreedTableView';
 import { BreedDetailModal } from './components/BreedDetailModal';
 import { ArchetypeExplorer } from './components/ArchetypeExplorer';
 import { FrameworksView } from './components/FrameworksView';
@@ -21,7 +22,9 @@ import {
   SlidersHorizontal,
   Info,
   Check,
-  ChevronUp
+  ChevronUp,
+  LayoutGrid,
+  Table
 } from 'lucide-react';
 
 export default function App() {
@@ -56,6 +59,23 @@ export default function App() {
 
   // Selected breed for detail modal
   const [selectedBreed, setSelectedBreed] = useState<Breed | null>(null);
+
+  // View Mode: 'grid' (cards) vs 'table' (compact scanning table)
+  const [viewMode, setViewMode] = useState<'grid' | 'table'>(() => {
+    try {
+      const saved = localStorage.getItem('canine_atlas_view_mode');
+      return saved === 'table' ? 'table' : 'grid';
+    } catch {
+      return 'grid';
+    }
+  });
+
+  // Sync viewMode to localStorage
+  useEffect(() => {
+    try {
+      localStorage.setItem('canine_atlas_view_mode', viewMode);
+    } catch {}
+  }, [viewMode]);
 
   // Favorites & Compared Breed IDs (persisted in localStorage)
   const [favorites, setFavorites] = useState<string[]>(() => {
@@ -305,9 +325,59 @@ export default function App() {
               totalBreeds={canineData.breeds.length}
               filteredCount={filteredBreeds.length}
               resetFilters={resetFilters}
+              searchQuery={searchQuery}
+              setSearchQuery={setSearchQuery}
             />
 
-            {/* Breeds Cards Grid */}
+            {/* Results Header Bar with View Switcher */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pt-2">
+              <div className="flex items-center gap-2">
+                <span className="text-xs sm:text-sm font-bold text-slate-200">
+                  {filteredBreeds.length === canineData.breeds.length
+                    ? `${filteredBreeds.length} razas registradas`
+                    : `Mostrando ${filteredBreeds.length} de ${canineData.breeds.length} razas`}
+                </span>
+                {filteredBreeds.length < canineData.breeds.length && (
+                  <span className="text-[10px] font-semibold px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                    Filtros aplicados
+                  </span>
+                )}
+              </div>
+
+              {/* View Switcher Controls */}
+              <div className="inline-flex items-center p-1 bg-[#141414] border border-white/10 rounded-2xl shadow-inner">
+                <button
+                  type="button"
+                  onClick={() => setViewMode('grid')}
+                  aria-label="Ver en cuadrícula de tarjetas"
+                  aria-pressed={viewMode === 'grid'}
+                  className={`min-h-[38px] flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                    viewMode === 'grid'
+                      ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/20'
+                      : 'text-neutral-400 hover:text-white'
+                  }`}
+                >
+                  <LayoutGrid className="w-4 h-4 shrink-0" />
+                  <span className="whitespace-nowrap">Tarjetas</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setViewMode('table')}
+                  aria-label="Ver en tabla compacta"
+                  aria-pressed={viewMode === 'table'}
+                  className={`min-h-[38px] flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                    viewMode === 'table'
+                      ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/20'
+                      : 'text-neutral-400 hover:text-white'
+                  }`}
+                >
+                  <Table className="w-4 h-4 shrink-0" />
+                  <span className="whitespace-nowrap">Tabla Compacta</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Breeds Output: Grid or Table */}
             {filteredBreeds.length === 0 ? (
               <div className="bg-[#141414] border border-white/5 rounded-[2.5rem] p-12 text-center max-w-lg mx-auto my-8 shadow-2xl space-y-4">
                 <div className="w-12 h-12 bg-amber-500/10 text-amber-500 border border-amber-500/20 rounded-2xl flex items-center justify-center mx-auto">
@@ -326,8 +396,8 @@ export default function App() {
                   Restablecer Filtros
                 </button>
               </div>
-            ) : (
-              <div key={filterSignature} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            ) : viewMode === 'grid' ? (
+              <div key={`grid-${filterSignature}`} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {filteredBreeds.map((breed, index) => (
                   <BreedCard
                     key={breed.id}
@@ -347,6 +417,19 @@ export default function App() {
                   />
                 ))}
               </div>
+            ) : (
+              <BreedTableView
+                key={`table-${filterSignature}`}
+                breeds={filteredBreeds}
+                onSelect={setSelectedBreed}
+                favorites={favorites}
+                onToggleFavorite={toggleFavorite}
+                comparedIds={comparedIds}
+                onToggleCompare={toggleCompare}
+                onSelectArchetypeFilter={(arch) => {
+                  setFilters(prev => ({ ...prev, archetype: arch }));
+                }}
+              />
             )}
 
           </div>
@@ -429,21 +512,67 @@ export default function App() {
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {favoriteBreeds.map((breed, index) => (
-                  <BreedCard
-                    key={breed.id}
-                    breed={breed}
-                    style={{
-                      animationDelay: `${Math.min(index, 15) * 35}ms`
-                    }}
+              <div className="space-y-4">
+                <div className="flex items-center justify-end">
+                  <div className="inline-flex items-center p-1 bg-[#141414] border border-white/10 rounded-2xl shadow-inner">
+                    <button
+                      type="button"
+                      onClick={() => setViewMode('grid')}
+                      aria-label="Ver en cuadrícula de tarjetas"
+                      aria-pressed={viewMode === 'grid'}
+                      className={`min-h-[36px] flex items-center gap-2 px-3 py-1 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                        viewMode === 'grid'
+                          ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/20'
+                          : 'text-neutral-400 hover:text-white'
+                      }`}
+                    >
+                      <LayoutGrid className="w-3.5 h-3.5 shrink-0" />
+                      <span className="whitespace-nowrap">Tarjetas</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setViewMode('table')}
+                      aria-label="Ver en tabla compacta"
+                      aria-pressed={viewMode === 'table'}
+                      className={`min-h-[36px] flex items-center gap-2 px-3 py-1 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                        viewMode === 'table'
+                          ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/20'
+                          : 'text-neutral-400 hover:text-white'
+                      }`}
+                    >
+                      <Table className="w-3.5 h-3.5 shrink-0" />
+                      <span className="whitespace-nowrap">Tabla</span>
+                    </button>
+                  </div>
+                </div>
+
+                {viewMode === 'grid' ? (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    {favoriteBreeds.map((breed, index) => (
+                      <BreedCard
+                        key={breed.id}
+                        breed={breed}
+                        style={{
+                          animationDelay: `${Math.min(index, 15) * 35}ms`
+                        }}
+                        onSelect={setSelectedBreed}
+                        isFavorite={true}
+                        onToggleFavorite={toggleFavorite}
+                        isCompared={comparedIds.includes(breed.id)}
+                        onToggleCompare={toggleCompare}
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <BreedTableView
+                    breeds={favoriteBreeds}
                     onSelect={setSelectedBreed}
-                    isFavorite={true}
+                    favorites={favorites}
                     onToggleFavorite={toggleFavorite}
-                    isCompared={comparedIds.includes(breed.id)}
+                    comparedIds={comparedIds}
                     onToggleCompare={toggleCompare}
                   />
-                ))}
+                )}
               </div>
             )}
           </div>

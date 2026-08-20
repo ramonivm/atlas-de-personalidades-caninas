@@ -79,7 +79,12 @@ const DEFAULT_PLACEHOLDER = 'https://images.unsplash.com/photo-1543466835-00a790
 
 export const FrameworkExperience: React.FC<FrameworkExperienceProps> = ({ framework }) => {
   const [selectedSectionIndex, setSelectedSectionIndex] = useState<number>(0);
-  const [imgSrc, setImgSrc] = useState<string>('');
+  const sections = framework.sections || [];
+  const currentSection = sections[selectedSectionIndex] || sections[0];
+
+  const [imgSrc, setImgSrc] = useState<string>(() => {
+    return currentSection ? getParameterImageUrl(currentSection.title) : DEFAULT_PLACEHOLDER;
+  });
   const [imgError, setImgError] = useState<boolean>(false);
   const [isImageLoaded, setIsImageLoaded] = useState<boolean>(false);
   const [isMapModalOpen, setIsMapModalOpen] = useState<boolean>(false);
@@ -88,9 +93,6 @@ export const FrameworkExperience: React.FC<FrameworkExperienceProps> = ({ framew
   useEffect(() => {
     setSelectedSectionIndex(0);
   }, [framework.id]);
-
-  const sections = framework.sections || [];
-  const currentSection = sections[selectedSectionIndex] || sections[0];
 
   // Actualizar imagen al cambiar de sección o marco
   useEffect(() => {
@@ -227,16 +229,18 @@ export const FrameworkExperience: React.FC<FrameworkExperienceProps> = ({ framew
               key={`img-container-${framework.id}-${selectedSectionIndex}`}
               className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 group shadow-inner animate-content-fade-in"
             >
-              <img
-                src={imgSrc}
-                alt={cleanSectionTitle || framework.title}
-                onLoad={() => setIsImageLoaded(true)}
-                onError={handleImageError}
-                className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-[1.02] ${
-                  isImageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-[0.99]'
-                }`}
-                loading="lazy"
-              />
+              {imgSrc ? (
+                <img
+                  src={imgSrc}
+                  alt={cleanSectionTitle || framework.title}
+                  onLoad={() => setIsImageLoaded(true)}
+                  onError={handleImageError}
+                  className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-[1.02] ${
+                    isImageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-[0.99]'
+                  }`}
+                  loading="lazy"
+                />
+              ) : null}
             </div>
           </div>
 
