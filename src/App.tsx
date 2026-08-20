@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, Suspense } from 'react';
 import { canineData } from './data/canineData';
 import { Breed, FilterState } from './types';
 import { normalizeText, parseMetricLevel } from './utils/textUtils';
@@ -6,12 +6,34 @@ import { mapMotivationGroup, mapTraitGroup } from './utils/dataParser';
 import { Header } from './components/Header';
 import { FilterPanel } from './components/FilterPanel';
 import { BreedCard } from './components/BreedCard';
-import { BreedTableView } from './components/BreedTableView';
-import { BreedDetailModal } from './components/BreedDetailModal';
-import { ArchetypeExplorer } from './components/ArchetypeExplorer';
-import { FrameworksView } from './components/FrameworksView';
-import { BreedCompare } from './components/BreedCompare';
-import { AffinityQuiz } from './components/AffinityQuiz';
+
+// Lazy-loaded components for optimal bundle splitting and deferred script evaluation
+const BreedTableView = React.lazy(() => 
+  import('./components/BreedTableView').then(m => ({ default: m.BreedTableView }))
+);
+const BreedDetailModal = React.lazy(() => 
+  import('./components/BreedDetailModal').then(m => ({ default: m.BreedDetailModal }))
+);
+const ArchetypeExplorer = React.lazy(() => 
+  import('./components/ArchetypeExplorer').then(m => ({ default: m.ArchetypeExplorer }))
+);
+const FrameworksView = React.lazy(() => 
+  import('./components/FrameworksView').then(m => ({ default: m.FrameworksView }))
+);
+const BreedCompare = React.lazy(() => 
+  import('./components/BreedCompare').then(m => ({ default: m.BreedCompare }))
+);
+const AffinityQuiz = React.lazy(() => 
+  import('./components/AffinityQuiz').then(m => ({ default: m.AffinityQuiz }))
+);
+
+// Minimalistic loading fallback for lazy sections
+const TabLoadingFallback = () => (
+  <div className="flex flex-col items-center justify-center py-20 min-h-[300px] text-center space-y-3">
+    <div className="w-8 h-8 rounded-full border-2 border-amber-500/20 border-t-amber-500 animate-spin" />
+    <span className="text-xs font-medium text-neutral-400">Cargando sección etológica...</span>
+  </div>
+);
 import { 
   Dog, 
   Sparkles, 
@@ -418,18 +440,20 @@ export default function App() {
                 ))}
               </div>
             ) : (
-              <BreedTableView
-                key={`table-${filterSignature}`}
-                breeds={filteredBreeds}
-                onSelect={setSelectedBreed}
-                favorites={favorites}
-                onToggleFavorite={toggleFavorite}
-                comparedIds={comparedIds}
-                onToggleCompare={toggleCompare}
-                onSelectArchetypeFilter={(arch) => {
-                  setFilters(prev => ({ ...prev, archetype: arch }));
-                }}
-              />
+              <Suspense fallback={<TabLoadingFallback />}>
+                <BreedTableView
+                  key={`table-${filterSignature}`}
+                  breeds={filteredBreeds}
+                  onSelect={setSelectedBreed}
+                  favorites={favorites}
+                  onToggleFavorite={toggleFavorite}
+                  comparedIds={comparedIds}
+                  onToggleCompare={toggleCompare}
+                  onSelectArchetypeFilter={(arch) => {
+                    setFilters(prev => ({ ...prev, archetype: arch }));
+                  }}
+                />
+              </Suspense>
             )}
 
           </div>
@@ -437,37 +461,45 @@ export default function App() {
 
         {/* VIEW 2: AFFINITY QUIZ */}
         {activeTab === 'quiz' && (
-          <AffinityQuiz
-            breeds={canineData.breeds}
-            onSelectBreed={setSelectedBreed}
-          />
+          <Suspense fallback={<TabLoadingFallback />}>
+            <AffinityQuiz
+              breeds={canineData.breeds}
+              onSelectBreed={setSelectedBreed}
+            />
+          </Suspense>
         )}
 
         {/* VIEW 3: COMPARE */}
         {activeTab === 'compare' && (
-          <BreedCompare
-            comparedBreeds={comparedBreedsList}
-            onRemoveCompare={toggleCompare}
-            onClearCompare={() => setComparedIds([])}
-            onSelectBreed={setSelectedBreed}
-            allBreeds={canineData.breeds}
-            onAddBreedToCompare={addBreedToCompare}
-          />
+          <Suspense fallback={<TabLoadingFallback />}>
+            <BreedCompare
+              comparedBreeds={comparedBreedsList}
+              onRemoveCompare={toggleCompare}
+              onClearCompare={() => setComparedIds([])}
+              onSelectBreed={setSelectedBreed}
+              allBreeds={canineData.breeds}
+              onAddBreedToCompare={addBreedToCompare}
+            />
+          </Suspense>
         )}
 
         {/* VIEW 4: ARCHETYPES */}
         {activeTab === 'archetypes' && (
-          <ArchetypeExplorer
-            archetypes={canineData.archetypes}
-            breeds={canineData.breeds}
-            onSelectBreed={setSelectedBreed}
-            selectedArchetypeFilter={filters.archetype}
-          />
+          <Suspense fallback={<TabLoadingFallback />}>
+            <ArchetypeExplorer
+              archetypes={canineData.archetypes}
+              breeds={canineData.breeds}
+              onSelectBreed={setSelectedBreed}
+              selectedArchetypeFilter={filters.archetype}
+            />
+          </Suspense>
         )}
 
         {/* VIEW 5: FRAMEWORKS */}
         {activeTab === 'frameworks' && (
-          <FrameworksView frameworks={canineData.frameworks} />
+          <Suspense fallback={<TabLoadingFallback />}>
+            <FrameworksView frameworks={canineData.frameworks} />
+          </Suspense>
         )}
 
         {/* VIEW 6: FAVORITES / SAVED BREEDS */}
@@ -564,14 +596,16 @@ export default function App() {
                     ))}
                   </div>
                 ) : (
-                  <BreedTableView
-                    breeds={favoriteBreeds}
-                    onSelect={setSelectedBreed}
-                    favorites={favorites}
-                    onToggleFavorite={toggleFavorite}
-                    comparedIds={comparedIds}
-                    onToggleCompare={toggleCompare}
-                  />
+                  <Suspense fallback={<TabLoadingFallback />}>
+                    <BreedTableView
+                      breeds={favoriteBreeds}
+                      onSelect={setSelectedBreed}
+                      favorites={favorites}
+                      onToggleFavorite={toggleFavorite}
+                      comparedIds={comparedIds}
+                      onToggleCompare={toggleCompare}
+                    />
+                  </Suspense>
                 )}
               </div>
             )}
@@ -582,19 +616,21 @@ export default function App() {
 
       {/* Breed Detail Modal */}
       {selectedBreed && (
-        <BreedDetailModal
-          key={selectedBreed.id}
-          breed={selectedBreed}
-          onClose={() => setSelectedBreed(null)}
-          isFavorite={favorites.includes(selectedBreed.id)}
-          onToggleFavorite={toggleFavorite}
-          isCompared={comparedIds.includes(selectedBreed.id)}
-          onToggleCompare={toggleCompare}
-          onSelectArchetype={(arch) => {
-            setFilters(prev => ({ ...prev, archetype: arch }));
-            setActiveTab('explore');
-          }}
-        />
+        <Suspense fallback={null}>
+          <BreedDetailModal
+            key={selectedBreed.id}
+            breed={selectedBreed}
+            onClose={() => setSelectedBreed(null)}
+            isFavorite={favorites.includes(selectedBreed.id)}
+            onToggleFavorite={toggleFavorite}
+            isCompared={comparedIds.includes(selectedBreed.id)}
+            onToggleCompare={toggleCompare}
+            onSelectArchetype={(arch) => {
+              setFilters(prev => ({ ...prev, archetype: arch }));
+              setActiveTab('explore');
+            }}
+          />
+        </Suspense>
       )}
 
       {/* Footer */}

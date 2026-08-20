@@ -375,7 +375,7 @@ export const AffinityQuiz: React.FC<AffinityQuizProps> = ({ breeds, onSelectBree
                     className="w-16 h-16 aspect-square rounded-2xl object-cover border border-white/5 shrink-0"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
-                      e.currentTarget.src = "https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg";
+                      e.currentTarget.src = "/images/breeds/golden-retriever.webp";
                     }}
                   />
                   <div className="flex flex-col items-start gap-1.5 min-w-0">

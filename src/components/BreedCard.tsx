@@ -16,7 +16,7 @@ interface BreedCardProps {
   className?: string;
 }
 
-const FALLBACK_DOG_IMAGE = "https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg";
+const FALLBACK_DOG_IMAGE = "/images/breeds/golden-retriever.webp";
 
 const formatMetric = (val: string) => val ? val.split(/ \– | \- | \(/)[0].trim() : '';
 

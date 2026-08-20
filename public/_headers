@@ -1,0 +1,29 @@
+# ==============================================================================
+# Reglas de Caché y Compresión de Alto Rendimiento para atlascanino.cl
+# ==============================================================================
+
+# 1. Recursos Estáticos con Hash de Compilación (/assets/*.js, /assets/*.css)
+# Inmutables por 1 año para máxima velocidad y ahorro de transferencia.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# 2. Archivos multimedia estáticos (imágenes, favicons, vectores, fuentes)
+/assets/*.png
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/assets/*.svg
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/images/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/favicon*.png
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/favicon*.ico
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+# 3. Documento Principal HTML (index.html) y SPA Root
+# Siempre revalida para que las nuevas actualizaciones se reflejen inmediatamente.
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/*
+  Cache-Control: public, max-age=0, must-revalidate

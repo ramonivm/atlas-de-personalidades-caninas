@@ -20,7 +20,7 @@ interface BreedTableViewProps {
   onSelectArchetypeFilter?: (archetype: string) => void;
 }
 
-const FALLBACK_DOG_IMAGE = "https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg";
+const FALLBACK_DOG_IMAGE = "/images/breeds/golden-retriever.webp";
 
 /**
  * Returns color-coded style classes based on sanitized metric level

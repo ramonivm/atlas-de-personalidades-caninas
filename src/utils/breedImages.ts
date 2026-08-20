@@ -125,13 +125,13 @@ export const breedPhotoMap: Record<string, string> = {
   "chinese-crested": "/images/breeds/chinese-crested.webp"
 };
 
-// Fallback high quality dog photos
+// Fallback high quality local dog photos
 const fallbackDogPhotos = [
-  "https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg",
-  "https://images.dog.ceo/breeds/germanshepherd/n02106662_16147.jpg",
-  "https://images.dog.ceo/breeds/pembroke/n02113023_4373.jpg",
-  "https://images.dog.ceo/breeds/labrador/n02099712_7418.jpg",
-  "https://images.dog.ceo/breeds/husky/n02110185_10047.jpg"
+  "/images/breeds/golden-retriever.webp",
+  "/images/breeds/pastor-aleman.webp",
+  "/images/breeds/corgi-pembroke.webp",
+  "/images/breeds/labrador-retriever.webp",
+  "/images/breeds/siberian-husky.webp"
 ];
 
 /**
@@ -159,24 +159,8 @@ export function getBreedImageUrl(breedInput: string | { id: string; imageUrl?: s
 }
 
 /**
- * Fetch a fresh, real dog photo dynamically from Dog CEO API based on breed name or slug.
+ * Returns a local breed photo based on breed name or slug.
  */
 export async function fetchBreedImageFromApi(breedNameOrSlug: string): Promise<string> {
-  try {
-    const slug = breedNameOrSlug.toLowerCase().replace(/[^a-z]/g, "");
-    const res = await fetch(`https://dog.ceo/api/breed/${slug}/images/random`);
-    const data = await res.json();
-    if (data.status === "success" && data.message) {
-      return data.message;
-    }
-    // Try general random image
-    const fallbackRes = await fetch("https://dog.ceo/api/breeds/image/random");
-    const fallbackData = await fallbackRes.json();
-    if (fallbackData.status === "success" && fallbackData.message) {
-      return fallbackData.message;
-    }
-  } catch (err) {
-    console.warn("Could not fetch dynamic breed image:", err);
-  }
   return getBreedImageUrl(breedNameOrSlug);
 }

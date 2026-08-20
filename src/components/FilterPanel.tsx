@@ -1,9 +1,12 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, Suspense } from 'react';
 import { Filter, RotateCcw, SlidersHorizontal, ChevronDown, ChevronUp, HelpCircle, Search, X } from 'lucide-react';
 import { FilterState, Facets, Breed } from '../types';
 import { canineData } from '../data/canineData';
 import { parseMetricLevel, mapMotivationGroup, mapTraitGroup } from '../utils/dataParser';
-import { FilterGuideModal } from './FilterGuideModal';
+
+const FilterGuideModal = React.lazy(() => 
+  import('./FilterGuideModal').then(m => ({ default: m.FilterGuideModal }))
+);
 
 interface FilterPanelProps {
   facets?: Facets;
@@ -338,7 +341,9 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
 
       {/* Filter Guide Modal */}
       {isGuideOpen && (
-        <FilterGuideModal onClose={() => setIsGuideOpen(false)} />
+        <Suspense fallback={null}>
+          <FilterGuideModal onClose={() => setIsGuideOpen(false)} />
+        </Suspense>
       )}
     </div>
   );

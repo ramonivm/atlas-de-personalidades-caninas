@@ -31,7 +31,7 @@ interface BreedDetailModalProps {
   onSelectArchetype?: (archetype: string) => void;
 }
 
-const FALLBACK_DOG_IMAGE = "https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg";
+const FALLBACK_DOG_IMAGE = "/images/breeds/golden-retriever.webp";
 
 export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
   breed,

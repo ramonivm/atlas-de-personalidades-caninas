@@ -1,0 +1,79 @@
+# ==============================================================================
+# Configuración de Servidor Web (Nginx / Apache) para atlascanino.cl
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Compresión del Servidor: Brotli & Gzip / Deflate
+# ------------------------------------------------------------------------------
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript
+  AddOutputFilterByType BROTLI_COMPRESS application/javascript application/x-javascript application/json application/xml application/rss+xml
+  AddOutputFilterByType BROTLI_COMPRESS image/svg+xml font/woff2
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json application/xml application/rss+xml
+  AddOutputFilterByType DEFLATE image/svg+xml image/x-icon font/woff2 application/vnd.ms-fontobject font/ttf
+</IfModule>
+
+# Servir archivos estáticos precomprimidos con Brotli (.br) o Gzip (.gz) si existen
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Servir .br si el navegador soporta Brotli
+  RewriteCond %{HTTP:Accept-Encoding} br
+  RewriteCond %{REQUEST_FILENAME}\.br -f
+  RewriteRule ^(.*)$ $1\.br [L]
+  <FilesMatch "\.js\.br$">
+    ForceType application/javascript
+    Header set Content-Encoding br
+  </FilesMatch>
+  <FilesMatch "\.css\.br$">
+    ForceType text/css
+    Header set Content-Encoding br
+  </FilesMatch>
+
+  # Servir .gz si el navegador soporta Gzip
+  RewriteCond %{HTTP:Accept-Encoding} gzip
+  RewriteCond %{REQUEST_FILENAME}\.gz -f
+  RewriteRule ^(.*)$ $1\.gz [L]
+  <FilesMatch "\.js\.gz$">
+    ForceType application/javascript
+    Header set Content-Encoding gzip
+  </FilesMatch>
+  <FilesMatch "\.css\.gz$">
+    ForceType text/css
+    Header set Content-Encoding gzip
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_headers.c>
+  # 1. Recursos empaquetados por Vite con Hash (/assets/*) -> Inmutables 1 año
+  <FilesMatch "\.(js|css)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # 2. Fuentes y archivos multimedia estáticos -> 30 días con revalidación
+  <FilesMatch "\.(ico|jpg|jpeg|png|gif|svg|webp|avif|woff|woff2|ttf|eot)$">
+    Header set Cache-Control "public, max-age=2592000, stale-while-revalidate=86400"
+  </FilesMatch>
+
+  # 3. HTML y Documentos raíz -> Revalidación instantánea
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 0 seconds"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>

@@ -75,7 +75,7 @@ const getParameterImageUrl = (sectionTitle: string): string => {
 };
 
 // Placeholder canino por defecto en caso de ausencia de imagen local
-const DEFAULT_PLACEHOLDER = 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1200&q=80';
+const DEFAULT_PLACEHOLDER = '/images/breeds/border-collie.webp';
 
 export const FrameworkExperience: React.FC<FrameworkExperienceProps> = ({ framework }) => {
   const [selectedSectionIndex, setSelectedSectionIndex] = useState<number>(0);
