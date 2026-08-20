@@ -2,27 +2,12 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vite';
-import { compression } from 'vite-plugin-compression2';
 
 export default defineConfig(() => {
   return {
     plugins: [
       react(), 
       tailwindcss(),
-      // Pre-compress static assets using Gzip (.gz)
-      compression({
-        algorithms: ['gzip'],
-        exclude: [/\.(br)$/, /\.(gz)$/],
-        threshold: 1024,
-        deleteOriginalAssets: false,
-      }),
-      // Pre-compress static assets using Brotli (.br) for modern browsers
-      compression({
-        algorithms: ['brotliCompress'],
-        exclude: [/\.(br)$/, /\.(gz)$/],
-        threshold: 1024,
-        deleteOriginalAssets: false,
-      }),
     ],
     resolve: {
       alias: {
