@@ -6,36 +6,43 @@ import { mapMotivationGroup, mapTraitGroup } from './utils/dataParser';
 import { Header } from './components/Header';
 import { FilterPanel } from './components/FilterPanel';
 import { BreedCard } from './components/BreedCard';
+import { ErrorBoundary } from './components/ErrorBoundary';
+import { lazyWithRetry } from './utils/lazyWithRetry';
 
-// Lazy-loaded components for optimal bundle splitting and deferred script evaluation
-const BreedTableView = React.lazy(() => 
+// Robust lazy-loaded components with auto-retry and chunk failure recovery
+const BreedTableView = lazyWithRetry(() => 
   import('./components/BreedTableView').then(m => ({ default: m.BreedTableView }))
 );
-const BreedDetailModal = React.lazy(() => 
+const BreedDetailModal = lazyWithRetry(() => 
   import('./components/BreedDetailModal').then(m => ({ default: m.BreedDetailModal }))
 );
-const ArchetypeExplorer = React.lazy(() => 
+const ArchetypeExplorer = lazyWithRetry(() => 
   import('./components/ArchetypeExplorer').then(m => ({ default: m.ArchetypeExplorer }))
 );
-const FrameworksView = React.lazy(() => 
+const FrameworksView = lazyWithRetry(() => 
   import('./components/FrameworksView').then(m => ({ default: m.FrameworksView }))
 );
-const BreedCompare = React.lazy(() => 
+const OriginsView = lazyWithRetry(() => 
+  import('./components/OriginsView').then(m => ({ default: m.OriginsView }))
+);
+const BreedCompare = lazyWithRetry(() => 
   import('./components/BreedCompare').then(m => ({ default: m.BreedCompare }))
 );
-const AffinityQuiz = React.lazy(() => 
+const AffinityQuiz = lazyWithRetry(() => 
   import('./components/AffinityQuiz').then(m => ({ default: m.AffinityQuiz }))
 );
 
 // Minimalistic loading fallback for lazy sections
-const TabLoadingFallback = () => (
+const TabLoadingFallback: React.FC<{ message?: string }> = ({ 
+  message = 'Cargando sección etológica...' 
+}) => (
   <div className="flex flex-col items-center justify-center py-20 min-h-[300px] text-center space-y-3">
     <div className="w-8 h-8 rounded-full border-2 border-amber-500/20 border-t-amber-500 animate-spin" />
-    <span className="text-xs font-medium text-neutral-400">Cargando sección etológica...</span>
+    <span className="text-xs font-medium text-neutral-400">{message}</span>
   </div>
 );
 import { 
-  Dog, 
+  Dog,
   Sparkles, 
   Bookmark, 
   GitCompare, 
@@ -51,7 +58,7 @@ import {
 
 export default function App() {
   // Navigation active tab
-  const [activeTab, setActiveTab] = useState<'explore' | 'quiz' | 'compare' | 'archetypes' | 'frameworks' | 'favorites'>('explore');
+  const [activeTab, setActiveTab] = useState<'explore' | 'quiz' | 'compare' | 'archetypes' | 'frameworks' | 'origins' | 'favorites'>('explore');
 
   // Scroll to top button visibility state
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -73,6 +80,7 @@ export default function App() {
     archetype: '',
     motivation: '',
     trait: '',
+    origin: '',
     resilienceLevel: '',
     sociabilityLevel: '',
     independenceLevel: '',
@@ -178,6 +186,7 @@ export default function App() {
       archetype: '',
       motivation: '',
       trait: '',
+      origin: '',
       resilienceLevel: '',
       sociabilityLevel: '',
       independenceLevel: '',
@@ -199,11 +208,17 @@ export default function App() {
         normalizeText(b.epithet).includes(q) ||
         normalizeText(b.summary).includes(q) ||
         normalizeText(b.fciGroup).includes(q) ||
+        (b.origen && normalizeText(b.origen).includes(q)) ||
         (b.akcGroup && normalizeText(b.akcGroup).includes(q)) ||
         b.archetypes.some(a => normalizeText(a).includes(q)) ||
         b.traits.some(t => normalizeText(t).includes(q)) ||
         b.motivations.some(m => normalizeText(m).includes(q))
       );
+    }
+
+    // Origin
+    if (filters.origin) {
+      list = list.filter(b => b.origen === filters.origin);
     }
 
     // FCI Group
@@ -309,12 +324,8 @@ export default function App() {
             {/* Hero / Intro Banner */}
             <div className="bg-[#141414] text-white p-6 sm:p-8 rounded-[2.5rem] shadow-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border border-white/5">
               <div className="max-w-2xl space-y-2">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-bold border border-amber-500/20">
-                  <Dog className="w-3.5 h-3.5" />
-                  <span>Base de Datos Etológica Oficial</span>
-                </div>
                 <h2 className="text-2xl sm:text-3xl font-bold tracking-tight leading-tight">
-                  Explora el Mapa Mental de 121 Razas Caninas
+                  Explora el Mapa Mental de {canineData.breeds.length} Razas Caninas
                 </h2>
                 <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed">
                   Filtra en tiempo real por arquetipos psicológicos, grupos FCI/AKC, umbrales de estimulación, motivación intrínseca e independencia cognitiva.
@@ -440,20 +451,25 @@ export default function App() {
                 ))}
               </div>
             ) : (
-              <Suspense fallback={<TabLoadingFallback />}>
-                <BreedTableView
-                  key={`table-${filterSignature}`}
-                  breeds={filteredBreeds}
-                  onSelect={setSelectedBreed}
-                  favorites={favorites}
-                  onToggleFavorite={toggleFavorite}
-                  comparedIds={comparedIds}
-                  onToggleCompare={toggleCompare}
-                  onSelectArchetypeFilter={(arch) => {
-                    setFilters(prev => ({ ...prev, archetype: arch }));
-                  }}
-                />
-              </Suspense>
+              <ErrorBoundary 
+                fallbackTitle="Error al cargar la tabla de razas"
+                fallbackDescription="No se pudo cargar la vista tabular de razas. Puedes reintentar la descarga o cambiar al modo de tarjetas."
+              >
+                <Suspense fallback={<TabLoadingFallback message="Cargando tabla de razas..." />}>
+                  <BreedTableView
+                    key={`table-${filterSignature}`}
+                    breeds={filteredBreeds}
+                    onSelect={setSelectedBreed}
+                    favorites={favorites}
+                    onToggleFavorite={toggleFavorite}
+                    comparedIds={comparedIds}
+                    onToggleCompare={toggleCompare}
+                    onSelectArchetypeFilter={(arch) => {
+                      setFilters(prev => ({ ...prev, archetype: arch }));
+                    }}
+                  />
+                </Suspense>
+              </ErrorBoundary>
             )}
 
           </div>
@@ -461,45 +477,88 @@ export default function App() {
 
         {/* VIEW 2: AFFINITY QUIZ */}
         {activeTab === 'quiz' && (
-          <Suspense fallback={<TabLoadingFallback />}>
-            <AffinityQuiz
-              breeds={canineData.breeds}
-              onSelectBreed={setSelectedBreed}
-            />
-          </Suspense>
+          <ErrorBoundary 
+            fallbackTitle="Error al cargar el Test de Afinidad"
+            fallbackDescription="No se pudo descargar el módulo del test de afinidad canina. Comprueba tu conexión o reintenta la carga."
+          >
+            <Suspense fallback={<TabLoadingFallback message="Cargando test de afinidad..." />}>
+              <AffinityQuiz
+                breeds={canineData.breeds}
+                onSelectBreed={setSelectedBreed}
+              />
+            </Suspense>
+          </ErrorBoundary>
         )}
 
         {/* VIEW 3: COMPARE */}
         {activeTab === 'compare' && (
-          <Suspense fallback={<TabLoadingFallback />}>
-            <BreedCompare
-              comparedBreeds={comparedBreedsList}
-              onRemoveCompare={toggleCompare}
-              onClearCompare={() => setComparedIds([])}
-              onSelectBreed={setSelectedBreed}
-              allBreeds={canineData.breeds}
-              onAddBreedToCompare={addBreedToCompare}
-            />
-          </Suspense>
+          <ErrorBoundary 
+            fallbackTitle="Error al cargar el Comparador"
+            fallbackDescription="No se pudo cargar el módulo de comparación de razas. Puedes reintentar o recargar la página."
+          >
+            <Suspense fallback={<TabLoadingFallback message="Cargando comparador etológico..." />}>
+              <BreedCompare
+                comparedBreeds={comparedBreedsList}
+                onRemoveCompare={toggleCompare}
+                onClearCompare={() => setComparedIds([])}
+                onSelectBreed={setSelectedBreed}
+                allBreeds={canineData.breeds}
+                onAddBreedToCompare={addBreedToCompare}
+              />
+            </Suspense>
+          </ErrorBoundary>
         )}
 
         {/* VIEW 4: ARCHETYPES */}
         {activeTab === 'archetypes' && (
-          <Suspense fallback={<TabLoadingFallback />}>
-            <ArchetypeExplorer
-              archetypes={canineData.archetypes}
-              breeds={canineData.breeds}
-              onSelectBreed={setSelectedBreed}
-              selectedArchetypeFilter={filters.archetype}
-            />
-          </Suspense>
+          <ErrorBoundary 
+            fallbackTitle="Error al cargar el Explorador de Arquetipos"
+            fallbackDescription="No se pudo descargar el explorador de los 14 arquetipos psicológicos caninos."
+          >
+            <Suspense fallback={<TabLoadingFallback message="Cargando explorador de arquetipos..." />}>
+              <ArchetypeExplorer
+                archetypes={canineData.archetypes}
+                breeds={canineData.breeds}
+                onSelectBreed={setSelectedBreed}
+                selectedArchetypeFilter={filters.archetype}
+              />
+            </Suspense>
+          </ErrorBoundary>
         )}
 
         {/* VIEW 5: FRAMEWORKS */}
         {activeTab === 'frameworks' && (
-          <Suspense fallback={<TabLoadingFallback />}>
-            <FrameworksView frameworks={canineData.frameworks} />
-          </Suspense>
+          <ErrorBoundary 
+            fallbackTitle="Error al cargar los Marcos Etológicos"
+            fallbackDescription="No se pudo descargar el atlas interactivo de los 6 marcos etológicos."
+          >
+            <Suspense fallback={<TabLoadingFallback message="Cargando marcos etológicos..." />}>
+              <FrameworksView frameworks={canineData.frameworks} />
+            </Suspense>
+          </ErrorBoundary>
+        )}
+
+        {/* VIEW: ORIGINS (Cartografía Etológica Mundial) */}
+        {activeTab === 'origins' && (
+          <ErrorBoundary 
+            fallbackTitle="Error al cargar la Cartografía de Orígenes"
+            fallbackDescription="No se pudo cargar el mapa radar de orígenes territoriales caninos."
+          >
+            <Suspense fallback={<TabLoadingFallback message="Cargando radar de orígenes mundiales..." />}>
+              <OriginsView
+                onSelectBreed={setSelectedBreed}
+                favorites={favorites}
+                toggleFavorite={toggleFavorite}
+                comparedBreeds={comparedIds}
+                toggleCompare={toggleCompare}
+                onExploreWithFilter={(originName) => {
+                  setFilters(prev => ({ ...prev, origin: originName }));
+                  setActiveTab('explore');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+              />
+            </Suspense>
+          </ErrorBoundary>
         )}
 
         {/* VIEW 6: FAVORITES / SAVED BREEDS */}
@@ -596,16 +655,21 @@ export default function App() {
                     ))}
                   </div>
                 ) : (
-                  <Suspense fallback={<TabLoadingFallback />}>
-                    <BreedTableView
-                      breeds={favoriteBreeds}
-                      onSelect={setSelectedBreed}
-                      favorites={favorites}
-                      onToggleFavorite={toggleFavorite}
-                      comparedIds={comparedIds}
-                      onToggleCompare={toggleCompare}
-                    />
-                  </Suspense>
+                  <ErrorBoundary 
+                    fallbackTitle="Error al cargar la tabla de favoritos"
+                    fallbackDescription="No se pudo cargar la vista tabular de favoritos."
+                  >
+                    <Suspense fallback={<TabLoadingFallback message="Cargando tabla de favoritos..." />}>
+                      <BreedTableView
+                        breeds={favoriteBreeds}
+                        onSelect={setSelectedBreed}
+                        favorites={favorites}
+                        onToggleFavorite={toggleFavorite}
+                        comparedIds={comparedIds}
+                        onToggleCompare={toggleCompare}
+                      />
+                    </Suspense>
+                  </ErrorBoundary>
                 )}
               </div>
             )}
@@ -616,21 +680,35 @@ export default function App() {
 
       {/* Breed Detail Modal */}
       {selectedBreed && (
-        <Suspense fallback={null}>
-          <BreedDetailModal
-            key={selectedBreed.id}
-            breed={selectedBreed}
-            onClose={() => setSelectedBreed(null)}
-            isFavorite={favorites.includes(selectedBreed.id)}
-            onToggleFavorite={toggleFavorite}
-            isCompared={comparedIds.includes(selectedBreed.id)}
-            onToggleCompare={toggleCompare}
-            onSelectArchetype={(arch) => {
-              setFilters(prev => ({ ...prev, archetype: arch }));
-              setActiveTab('explore');
-            }}
-          />
-        </Suspense>
+        <ErrorBoundary 
+          isModal={true}
+          fallbackTitle="Error al abrir la ficha de la raza"
+          fallbackDescription="No se pudo descargar el detalle de la raza seleccionada. Puedes reintentar o recargar la página."
+          onReset={() => setSelectedBreed(null)}
+        >
+          <Suspense fallback={
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+              <div className="flex flex-col items-center gap-3 bg-[#141414] p-6 rounded-3xl border border-white/10">
+                <div className="w-8 h-8 rounded-full border-2 border-amber-500/20 border-t-amber-500 animate-spin" />
+                <span className="text-xs text-neutral-300 font-medium">Cargando ficha etológica...</span>
+              </div>
+            </div>
+          }>
+            <BreedDetailModal
+              key={selectedBreed.id}
+              breed={selectedBreed}
+              onClose={() => setSelectedBreed(null)}
+              isFavorite={favorites.includes(selectedBreed.id)}
+              onToggleFavorite={toggleFavorite}
+              isCompared={comparedIds.includes(selectedBreed.id)}
+              onToggleCompare={toggleCompare}
+              onSelectArchetype={(arch) => {
+                setFilters(prev => ({ ...prev, archetype: arch }));
+                setActiveTab('explore');
+              }}
+            />
+          </Suspense>
+        </ErrorBoundary>
       )}
 
       {/* Footer */}

@@ -47,7 +47,7 @@ const containerVariants = {
     y: -8,
     transition: {
       duration: 0.2,
-      ease: "easeInOut"
+      ease: "easeInOut" as const
     }
   }
 };
@@ -59,7 +59,7 @@ const cardVariants = {
     y: 0,
     transition: {
       duration: 0.45,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.22, 1, 0.36, 1] as const
     }
   }
 };

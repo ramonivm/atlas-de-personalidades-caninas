@@ -61,7 +61,7 @@ export const BreedCard: React.FC<BreedCardProps> = ({
         {/* Top Header Controls (Category Badge + Action Buttons) */}
         <div className="absolute top-3.5 left-3.5 right-3.5 flex justify-between items-start gap-2 z-10">
           {/* Category Tag */}
-          <div className="max-w-[60%] truncate">
+          <div className="flex flex-col items-start gap-1.5 max-w-[60%]">
             {breed.akcGroup && (
               <span className="inline-block text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-black/60 text-slate-300 backdrop-blur-md border border-white/5 truncate max-w-full">
                 {breed.akcGroup}

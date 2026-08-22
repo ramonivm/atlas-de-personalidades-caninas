@@ -18,7 +18,8 @@ import {
   Link,
   Check,
   Facebook,
-  Twitter
+  Twitter,
+  MapPin
 } from 'lucide-react';
 
 interface BreedDetailModalProps {
@@ -120,13 +121,19 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
           </button>
 
           {/* Top Info Overlay */}
-          <div className="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+          <div className="absolute top-4 left-4 flex flex-wrap items-center gap-2 z-10">
             <span className="text-xs font-bold px-3 py-1 rounded-full bg-amber-500 text-black shadow-md shadow-amber-500/20">
               {breed.fciGroup}
             </span>
             {breed.akcGroup && (
               <span className="text-xs font-bold px-3 py-1 rounded-full bg-black/80 text-slate-300 backdrop-blur-md border border-white/10">
                 AKC: {breed.akcGroup}
+              </span>
+            )}
+            {breed.origen && (
+              <span className="text-xs font-bold px-3 py-1 rounded-full bg-black/80 text-slate-200 backdrop-blur-md border border-white/10 inline-flex items-center gap-1.5 shadow-sm">
+                <MapPin className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                <span>{breed.origen}</span>
               </span>
             )}
           </div>

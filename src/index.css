@@ -76,3 +76,97 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #f59e0b;
 }
+
+/* Leaflet Dark Map Customization */
+@import "leaflet/dist/leaflet.css";
+
+.leaflet-container {
+  background-color: #0c0c0d !important;
+  font-family: inherit;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+/* Dark mode attribution & controls */
+.leaflet-control-attribution {
+  background: rgba(10, 10, 10, 0.8) !important;
+  color: #737373 !important;
+  font-size: 9px !important;
+  border-radius: 6px;
+  margin: 4px !important;
+}
+.leaflet-control-attribution a {
+  color: #f59e0b !important;
+}
+
+.leaflet-bar {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+.leaflet-bar a {
+  background-color: #171717 !important;
+  color: #f59e0b !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  transition: all 0.2s ease;
+}
+.leaflet-bar a:hover {
+  background-color: #262626 !important;
+  color: #fbbf24 !important;
+}
+
+/* Custom Marker Styling */
+.atlas-map-pin {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.atlas-pin-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.atlas-pin-wrapper:hover {
+  transform: translate(-50%, -50%) scale(1.18);
+  z-index: 999;
+}
+
+.atlas-pin-pulse {
+  position: absolute;
+  inset: -4px;
+  border-radius: 9999px;
+  animation: atlasPinPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  opacity: 0.75;
+}
+
+@keyframes atlasPinPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.atlas-pin-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-weight: 900;
+  font-size: 11px;
+  color: #000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6), 0 0 10px rgba(245, 158, 11, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease;
+}
+

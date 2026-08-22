@@ -22,6 +22,7 @@ export interface Breed {
   breed: string;
   title?: string;
   epithet: string;
+  origen?: string;
   fciGroup: string;
   akcGroup: string | null;
   archetypes: string[];
@@ -94,6 +95,7 @@ export interface Facets {
   archetypes: string[];
   motivations: string[];
   traits: string[];
+  origins: string[];
 }
 
 export interface CanineDatabase {
@@ -125,6 +127,7 @@ export interface FilterState {
   archetype: string;
   motivation: string;
   trait: string;
+  origin: string;
   resilienceLevel: string;
   sociabilityLevel: string;
   independenceLevel: string;

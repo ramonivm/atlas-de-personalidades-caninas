@@ -1,0 +1,27 @@
+# AtlasCanino - Diccionario Etológico y Mapa Mental de Razas Caninas
+
+> AtlasCanino (https://atlascanino.cl) es una plataforma interactiva de referencia científica y etológica que analiza la personalidad, dimensiones psicométricas, resiliencia emocional, motivaciones y arquetipos de comportamiento de más de 120 razas de perros.
+
+## Resumen de la Plataforma y Módulos
+
+AtlasCanino estructura el conocimiento etológico en módulos y marcos analíticos:
+
+- [Explorador de Razas](https://atlascanino.cl/#explore): Directorio exhaustivo con fichas técnicas, métricas biopsicosociales (tolerancia a frustración, gregarismo, presa, custodia), nivel de energía y cuidados.
+- [Test de Afinidad Canina](https://atlascanino.cl/#quiz): Algoritmo de ponderación etológica que calcula la compatibilidad entre el estilo de vida de una persona y los perfiles caninos.
+- [Comparador Etológico](https://atlascanino.cl/#compare): Herramienta de visualización dimensional para comparar simultáneamente múltiples razas frente a frente.
+- [Explorador de Arquetipos Psicológicos](https://atlascanino.cl/#archetypes): 14 arquetipos de personalidad canina clasificados según su impulso primario y estilo cognitivo.
+- [Marcos Teóricos y Etológicos](https://atlascanino.cl/#frameworks): Atlas interactivo de 6 marcos científicos (Polivagal Canina, Umweltausrichtung, Sistemas Emocionales de Panksepp, Neurobiología del Estrés, etc.).
+
+## Estructura de Datos y Dimensiones Evaluadas
+
+Cada perfil canino en AtlasCanino contiene dimensiones cuantificadas de 1 a 5:
+- **Resiliencia Emocional**: Umbral de reactividad, recuperación tras estímulos aversivos.
+- **Impulso de Presa / Motor**: Fase de la secuencia motora depredadora predominante (fijar, acechar, perseguir, capturar).
+- **Gregarismo y Sociabilidad**: Orientación hacia congéneres y humanos.
+- **Tolerancia a la Frustración**: Capacidad de inhibición de respuesta y demora de gratificación.
+- **Necesidades Cognitivas y Físicas**: Requerimientos de estimulación mental y gasto energético diario.
+
+## Vínculos y Recursos Oficiales
+
+- [Sitio Web Principal](https://atlascanino.cl/): Acceso a la aplicación completa de AtlasCanino.
+- [Glosario y Criterios Etológicos](https://atlascanino.cl/#frameworks): Documentación de variables psicométricas y etogramas.

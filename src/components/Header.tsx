@@ -6,13 +6,14 @@ import {
   Sparkles, 
   Bookmark, 
   Brain,
+  Globe2,
   Menu,
   X
 } from 'lucide-react';
 
 interface HeaderProps {
-  activeTab: 'explore' | 'quiz' | 'compare' | 'archetypes' | 'frameworks' | 'favorites';
-  setActiveTab: (tab: 'explore' | 'quiz' | 'compare' | 'archetypes' | 'frameworks' | 'favorites') => void;
+  activeTab: 'explore' | 'quiz' | 'compare' | 'archetypes' | 'frameworks' | 'origins' | 'favorites';
+  setActiveTab: (tab: 'explore' | 'quiz' | 'compare' | 'archetypes' | 'frameworks' | 'origins' | 'favorites') => void;
   breedCount: number;
   filteredCount: number;
   searchQuery: string;
@@ -33,13 +34,14 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleTabClick = (tab: 'explore' | 'quiz' | 'compare' | 'archetypes' | 'frameworks' | 'favorites') => {
+  const handleTabClick = (tab: 'explore' | 'quiz' | 'compare' | 'archetypes' | 'frameworks' | 'origins' | 'favorites') => {
     setActiveTab(tab);
     setIsMobileMenuOpen(false);
   };
 
   const navItems = [
     { id: 'explore', label: 'Explorador', icon: Search, count: filteredCount, showCount: true },
+    { id: 'origins', label: 'Orígenes', icon: Globe2, showCount: false },
     { id: 'quiz', label: 'Test Afinidad', icon: Sparkles, showCount: false },
     { id: 'compare', label: 'Comparar', icon: GitCompare, count: compareCount, showCount: compareCount > 0 },
     { id: 'archetypes', label: '14 Arquetipos', icon: Layers, showCount: false },
@@ -166,6 +168,18 @@ export const Header: React.FC<HeaderProps> = ({
                   {filteredCount}
                 </span>
               )}
+            </button>
+
+            <button
+              onClick={() => handleTabClick('origins')}
+              className={`min-h-[44px] flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                activeTab === 'origins'
+                  ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
+                  : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
+              }`}
+            >
+              <Globe2 className="w-3.5 h-3.5" />
+              <span>Orígenes</span>
             </button>
 
             <button

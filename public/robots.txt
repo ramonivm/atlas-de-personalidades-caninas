@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Directivas para rastreadores de IA y LLMs
+# Archivo de contexto semántico para LLMs (estándar llms.txt)
+# https://llmstxt.org/
