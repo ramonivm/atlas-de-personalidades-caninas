@@ -476,5 +476,21 @@ export const COUNTRIES_DATA: Record<string, CountryOriginData> = {
     primarySelectionGoal: 'Tiro de trineo ligero, pastoreo ártico y termorregulación familiar.',
     dominantArchetype: 'El Conductor Operante',
     accentColor: '#38BDF8'
+  },
+  'Chile': {
+    id: 'chile',
+    name: 'Chile',
+    code: 'CL',
+    flag: '🇨🇱',
+    region: 'América',
+    coordinates: { x: 30.0, y: 78.0 },
+    lat: -35.6751,
+    lng: -71.5430,
+    summary: 'Vigilancia rústica, control de roedores en fundos y herencia terrier.',
+    historicalContext: 'Desarrollado en los fundos y campos chilenos mediante el cruce de Fox Terriers europeos y Bodegueros con perros locales para el control implacable de alimañas y guardia de aviso.',
+    climateAndGeography: 'Valles centrales fértiles, cordillera andina y clima mediterráneo templado.',
+    primarySelectionGoal: 'Caza de roedores, centinela de alerta y compañía rústica.',
+    dominantArchetype: 'Terriers Instrumentales',
+    accentColor: '#E11D48'
   }
 };

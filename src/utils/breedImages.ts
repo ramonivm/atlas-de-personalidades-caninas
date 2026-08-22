@@ -122,7 +122,23 @@ export const breedPhotoMap: Record<string, string> = {
   "tolling-retriever": "/images/breeds/tolling-retriever.webp",
   "lhasa-apso": "/images/breeds/lhasa-apso.webp",
   "pekingese": "/images/breeds/pekingese.webp",
-  "chinese-crested": "/images/breeds/chinese-crested.webp"
+  "chinese-crested": "/images/breeds/chinese-crested.webp",
+  "bichon-habanero": "/images/breeds/bichon-habanero.webp",
+  "braco-aleman-pelo-duro": "/images/breeds/braco-aleman-pelo-duro.webp",
+  "bulldog-ingles": "/images/breeds/bulldog-ingles.webp",
+  "chesapeake-bay-retriever": "/images/breeds/chesapeake-bay-retriever.webp",
+  "collie-pelo-largo": "/images/breeds/collie-pelo-largo.webp",
+  "coton-de-tulear": "/images/breeds/coton-de-tulear.webp",
+  "fox-terrier-chileno": "/images/breeds/fox-terrier-chileno.webp",
+  "kuvasz": "/images/breeds/kuvasz.webp",
+  "mastin-ingles": "/images/breeds/mastin-ingles.webp",
+  "mastin-tibetano": "/images/breeds/mastin-tibetano.webp",
+  "norfolk-terrier": "/images/breeds/norfolk-terrier.webp",
+  "pastor-americano-miniatura": "/images/breeds/pastor-americano-miniatura.webp",
+  "perro-de-montana-de-los-pirineos": "/images/breeds/perro-de-montana-de-los-pirineos.webp",
+  "schipperke": "/images/breeds/schipperke.webp",
+  "soft-coated-wheaten-terrier": "/images/breeds/soft-coated-wheaten-terrier.webp",
+  "spitz-japones": "/images/breeds/spitz-japones.webp"
 };
 
 // Fallback high quality local dog photos

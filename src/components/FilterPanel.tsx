@@ -60,10 +60,6 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
     return Array.from(new Set(breedList.map(b => parseMetricLevel(b.metrics?.resiliencia_emocional)).filter(Boolean))).sort();
   }, [breedList]);
 
-  const origins = useMemo(() => {
-    return Array.from(new Set(breedList.map(b => b.origen).filter(Boolean) as string[])).sort((a,b) => a.localeCompare(b, 'es'));
-  }, [breedList]);
-
   const sociabilityLevels = useMemo(() => {
     return Array.from(new Set(breedList.map(b => parseMetricLevel(b.metrics?.sociabilidad)).filter(Boolean))).sort();
   }, [breedList]);
@@ -238,23 +234,6 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
           </select>
         </div>
 
-        {/* 4. Origin (País de Origen) */}
-        <div>
-          <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-500 mb-2 block">
-            País de Origen
-          </label>
-          <select
-            value={filters.origin || ''}
-            aria-label="Filtrar por País de Origen"
-            onChange={(e) => handleFilterChange('origin', e.target.value)}
-            className="w-full bg-neutral-900 border border-neutral-800 rounded-2xl px-3.5 py-2.5 text-xs text-slate-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus:border-amber-500/50 cursor-pointer min-h-[44px]"
-          >
-            <option value="" className="bg-neutral-900">Todos los orígenes ({origins.length})</option>
-            {origins.map(orig => (
-              <option key={orig} value={orig} className="bg-neutral-900">{orig}</option>
-            ))}
-          </select>
-        </div>
 
         {/* 4. Resilience Level */}
         <div>
@@ -338,12 +317,6 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             <span className="inline-flex items-center gap-1.5 bg-emerald-500/10 text-emerald-300 text-xs px-3 py-1.5 rounded-full border border-emerald-500/30 font-medium">
               Rasgo: {filters.trait}
               <button onClick={() => handleFilterChange('trait', '')} aria-label="Eliminar filtro de rasgo" className="hover:text-white font-bold ml-1 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-full px-1">✕</button>
-            </span>
-          )}
-          {filters.origin && (
-            <span className="inline-flex items-center gap-1.5 bg-amber-500/10 text-amber-300 text-xs px-3 py-1.5 rounded-full border border-amber-500/30 font-medium">
-              Origen: {filters.origin}
-              <button onClick={() => handleFilterChange('origin', '')} aria-label="Eliminar filtro de origen" className="hover:text-white font-bold ml-1 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-full px-1">✕</button>
             </span>
           )}
           {filters.resilienceLevel && (
