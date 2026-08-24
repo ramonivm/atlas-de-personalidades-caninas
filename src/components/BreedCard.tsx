@@ -46,8 +46,8 @@ export const BreedCard: React.FC<BreedCardProps> = ({
       className={`group bg-[#141414] rounded-[2rem] border border-white/5 hover:border-amber-500/40 shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden relative cursor-pointer animate-card-fade-in ${className}`}
     >
       
-      {/* Top Banner Image with Overlay Actions */}
-      <div className="relative h-52 w-full aspect-[16/9] bg-neutral-900 overflow-hidden">
+      {/* Top Banner Image */}
+      <div className="relative h-48 sm:h-52 w-full aspect-[16/9] bg-neutral-900 overflow-hidden">
         <img
           src={imageUrl}
           alt={`Fotografía de la raza ${breed.breed}`}
@@ -57,53 +57,6 @@ export const BreedCard: React.FC<BreedCardProps> = ({
           onError={handleImageError}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-[#141414]/30 to-transparent" />
-
-        {/* Top Header Controls (Category Badge + Action Buttons) */}
-        <div className="absolute top-3.5 left-3.5 right-3.5 flex justify-between items-start gap-2 z-10">
-          {/* Category Tag */}
-          <div className="flex flex-col items-start gap-1.5 max-w-[60%]">
-            {breed.akcGroup && (
-              <span className="inline-block text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-black/60 text-slate-300 backdrop-blur-md border border-white/5 truncate max-w-full">
-                {breed.akcGroup}
-              </span>
-            )}
-          </div>
-
-          {/* Action Buttons Top Right */}
-          <div className="flex items-center gap-2 flex-shrink-0">
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                onToggleCompare(breed.id);
-              }}
-              aria-label={isCompared ? `Quitar a ${breed.breed} de la comparación` : `Añadir a ${breed.breed} para comparar`}
-              title={isCompared ? 'Quitar de comparación' : 'Comparar esta raza'}
-              className={`min-h-[44px] min-w-[44px] flex items-center justify-center p-2.5 rounded-full text-xs backdrop-blur-md border transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-                isCompared
-                  ? 'bg-amber-500 text-black border-amber-400 font-bold shadow-md shadow-amber-500/20'
-                  : 'bg-black/60 text-slate-200 border-white/10 hover:bg-neutral-800'
-              }`}
-            >
-              <GitCompare className="w-4 h-4" />
-            </button>
-
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                onToggleFavorite(breed.id);
-              }}
-              aria-label={isFavorite ? `Quitar a ${breed.breed} de favoritos` : `Guardar a ${breed.breed} en favoritos`}
-              title={isFavorite ? 'Quitar de favoritos' : 'Guardar en favoritos'}
-              className={`min-h-[44px] min-w-[44px] flex items-center justify-center p-2.5 rounded-full text-xs backdrop-blur-md border transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-                isFavorite
-                  ? 'bg-rose-500 text-white border-rose-400 shadow-md shadow-rose-500/20'
-                  : 'bg-black/60 text-slate-200 border-white/10 hover:bg-neutral-800'
-              }`}
-            >
-              <Bookmark className={`w-4 h-4 ${isFavorite ? 'fill-current' : ''}`} />
-            </button>
-          </div>
-        </div>
 
         {/* Breed Name & Epithet Banner */}
         <div className="absolute bottom-3.5 left-4 right-4 text-white">
@@ -117,41 +70,19 @@ export const BreedCard: React.FC<BreedCardProps> = ({
       </div>
 
       {/* Card Content Body */}
-      <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
+      <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3.5">
         
-        {/* Archetypes */}
-        {breed.archetypes.length > 0 && (
-          <div className="flex flex-wrap gap-1.5">
-            {breed.archetypes.map((arch) => (
-              <button
-                key={arch}
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onSelectArchetypeFilter?.(arch);
-                }}
-                aria-label={`Filtrar por arquetipo ${arch}`}
-                className="text-[10px] font-semibold px-3 py-1 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20 hover:bg-purple-500/20 cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 inline-flex items-center gap-1"
-                title={`Filtrar por arquetipo: ${arch}`}
-              >
-                <img src="/assets/archetype.svg" alt="" className="w-3 h-3 object-contain shrink-0" />
-                <span>{arch}</span>
-              </button>
-            ))}
-          </div>
-        )}
-
         {/* Short Summary */}
         <p className="text-xs text-slate-400 line-clamp-3 leading-relaxed">
           {breed.summary}
         </p>
 
         {/* Key Traits Pills */}
-        <div className="flex flex-wrap gap-1.5 pt-1">
+        <div className="flex flex-wrap gap-1.5 pt-0.5">
           {breed.traits.slice(0, 4).map((trait) => (
             <span
               key={trait}
-              className="text-[10px] font-medium px-2.5 py-0.5 rounded-full bg-neutral-900 text-slate-300 border border-white/5"
+              className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-neutral-900 text-slate-300 border border-white/5"
             >
               #{trait}
             </span>
@@ -164,7 +95,7 @@ export const BreedCard: React.FC<BreedCardProps> = ({
         </div>
 
         {/* Quick Metrics Bar */}
-        <div className="grid grid-cols-2 gap-2 text-[11px] bg-neutral-900/80 p-3 rounded-2xl border border-white/5 text-slate-300">
+        <div className="grid grid-cols-2 gap-2 text-[11px] bg-neutral-900/80 p-2.5 rounded-xl border border-white/5 text-slate-300">
           <div className="flex items-center gap-1.5 truncate" title={`Resiliencia: ${breed.metrics.resiliencia_emocional}`}>
             <Shield className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
             <span className="truncate text-neutral-400">Resiliencia: <span className="font-bold text-white">{formatMetric(breed.metrics.resiliencia_emocional)}</span></span>
@@ -188,11 +119,45 @@ export const BreedCard: React.FC<BreedCardProps> = ({
 
       </div>
 
-      {/* Footer Action */}
-      <div className="px-5 py-3.5 bg-neutral-900/50 border-t border-white/5 flex items-center justify-end">
+      {/* Footer Actions (Compact: Compare & Bookmark on the Left, Ver Detalles on the Right) */}
+      <div className="px-4 py-2.5 bg-neutral-900/60 border-t border-white/5 flex items-center justify-between gap-2">
+        <div className="flex items-center gap-1.5">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onToggleCompare(breed.id);
+            }}
+            aria-label={isCompared ? `Quitar a ${breed.breed} de la comparación` : `Añadir a ${breed.breed} para comparar`}
+            title={isCompared ? 'Quitar de comparación' : 'Comparar esta raza'}
+            className={`min-h-[34px] min-w-[34px] h-[34px] w-[34px] flex items-center justify-center rounded-full text-xs border transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+              isCompared
+                ? 'bg-amber-500 text-black border-amber-400 font-bold shadow-sm shadow-amber-500/20'
+                : 'bg-neutral-800/90 text-neutral-300 border-white/10 hover:text-white hover:bg-neutral-700'
+            }`}
+          >
+            <GitCompare className="w-3.5 h-3.5" />
+          </button>
+
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onToggleFavorite(breed.id);
+            }}
+            aria-label={isFavorite ? `Quitar a ${breed.breed} de favoritos` : `Guardar a ${breed.breed} en favoritos`}
+            title={isFavorite ? 'Quitar de favoritos' : 'Guardar en favoritos'}
+            className={`min-h-[34px] min-w-[34px] h-[34px] w-[34px] flex items-center justify-center rounded-full text-xs border transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+              isFavorite
+                ? 'bg-rose-500 text-white border-rose-400 shadow-sm shadow-rose-500/20'
+                : 'bg-neutral-800/90 text-neutral-300 border-white/10 hover:text-white hover:bg-neutral-700'
+            }`}
+          >
+            <Bookmark className={`w-3.5 h-3.5 ${isFavorite ? 'fill-current' : ''}`} />
+          </button>
+        </div>
+
         <button
           onClick={() => onSelect(breed)}
-          className="min-h-[44px] w-full sm:w-auto flex items-center justify-center gap-1.5 text-xs font-bold text-black bg-amber-500 hover:bg-amber-400 px-4 py-2.5 rounded-full transition-all cursor-pointer shadow-md shadow-amber-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+          className="min-h-[34px] flex items-center justify-center gap-1 text-xs font-bold text-black bg-amber-500 hover:bg-amber-400 px-3.5 py-1.5 rounded-full transition-all cursor-pointer shadow-sm shadow-amber-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 shrink-0"
         >
           <span>Ver Detalles</span>
           <ChevronRight className="w-3.5 h-3.5" />

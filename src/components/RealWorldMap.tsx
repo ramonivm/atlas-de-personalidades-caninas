@@ -7,11 +7,8 @@ import {
   Plus, 
   Minus, 
   Layers, 
-  Compass, 
   Maximize2, 
-  Minimize2,
-  Sparkles,
-  MapPin
+  Minimize2
 } from 'lucide-react';
 
 interface RealWorldMapProps {
@@ -238,15 +235,6 @@ export const RealWorldMap: React.FC<RealWorldMapProps> = ({
         ref={mapContainerRef} 
         className="w-full h-full z-0 cursor-grab active:cursor-grabbing"
       />
-
-      {/* Map Header Overlay */}
-      <div className="absolute top-3.5 left-3.5 z-10 flex items-center gap-2 pointer-events-auto">
-        <div className="px-3 py-1.5 rounded-full bg-black/80 backdrop-blur-md border border-white/10 text-white text-xs font-bold flex items-center gap-2 shadow-lg">
-          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span className="hidden sm:inline">Mapa Real Interactivo</span>
-          <span className="text-amber-400 font-mono text-[11px]">{countries.length} Países</span>
-        </div>
-      </div>
 
       {/* Floating Control Toolbar (Top Right) */}
       <div className="absolute top-3.5 right-3.5 z-10 flex flex-col gap-2 pointer-events-auto">

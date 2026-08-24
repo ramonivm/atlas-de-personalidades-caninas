@@ -91,10 +91,10 @@ export const BreedTableView: React.FC<BreedTableViewProps> = ({
                   <span>Umbral</span>
                 </span>
               </th>
-              <th scope="col" className="py-3 pl-1 pr-3 sm:pr-5 text-center w-[75px]">
-                <span className="inline-flex items-center gap-0.5 justify-center" title="Motivación Intrínseca">
+              <th scope="col" className="py-3 pl-2 pr-3 sm:pr-5 min-w-[130px] sm:min-w-[160px]">
+                <span className="inline-flex items-center gap-1" title="Motivación Intrínseca">
                   <Flame className="w-3 h-3 text-rose-400 shrink-0" />
-                  <span>Motiv.</span>
+                  <span>Motivación</span>
                 </span>
               </th>
             </tr>
@@ -108,7 +108,6 @@ export const BreedTableView: React.FC<BreedTableViewProps> = ({
               const socLevel = parseMetricLevel(breed.metrics.sociabilidad) || 'Media';
               const indLevel = parseMetricLevel(breed.metrics.independencia_cognitiva) || 'Media';
               const umbLevel = parseMetricLevel(breed.metrics.umbral_de_estimulacion) || 'Media';
-              const motLevel = parseMetricLevel(breed.metrics.motivacion_intrinseca) || 'Media';
 
               return (
                 <tr
@@ -211,12 +210,12 @@ export const BreedTableView: React.FC<BreedTableViewProps> = ({
                   </td>
 
                   {/* Intrinsic Motivation */}
-                  <td className="py-2.5 pl-1 pr-3 sm:pr-5 text-center w-[75px]">
+                  <td className="py-2.5 pl-2 pr-3 sm:pr-5">
                     <span 
                       title={`Motivación intrínseca: ${breed.metrics.motivacion_intrinseca}`}
-                      className={`inline-block text-[9.5px] font-bold px-1.5 py-0.5 rounded border whitespace-nowrap ${getMetricBadgeClass(breed.metrics.motivacion_intrinseca)}`}
+                      className="inline-flex items-center text-[10px] font-medium px-2 py-0.5 rounded-full bg-rose-500/10 text-rose-300 border border-rose-500/20 max-w-[130px] sm:max-w-[170px] truncate"
                     >
-                      {motLevel}
+                      <span className="truncate">{breed.metrics.motivacion_intrinseca}</span>
                     </span>
                   </td>
                 </tr>

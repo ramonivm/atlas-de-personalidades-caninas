@@ -312,6 +312,8 @@ export default function App() {
         setSearchQuery={setSearchQuery}
         favoritesCount={favorites.length}
         compareCount={comparedIds.length}
+        archetypeCount={canineData.archetypes.length}
+        frameworkCount={canineData.frameworks.length}
       />
 
       {/* Main Content Area */}

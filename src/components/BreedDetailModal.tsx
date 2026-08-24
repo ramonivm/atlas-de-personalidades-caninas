@@ -18,8 +18,7 @@ import {
   Link,
   Check,
   Facebook,
-  Twitter,
-  MapPin
+  Twitter
 } from 'lucide-react';
 
 interface BreedDetailModalProps {
@@ -101,7 +100,7 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
       >
         
         {/* Header / Hero Section */}
-        <div className="relative h-64 sm:h-72 w-full aspect-[16/9] bg-neutral-900 overflow-hidden flex-shrink-0">
+        <div className="relative h-48 sm:h-56 w-full bg-neutral-900 overflow-hidden flex-shrink-0">
           <img
             src={imageUrl}
             alt={`Fotografía en alta resolución de ${breed.breed}`}
@@ -119,24 +118,6 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
           >
             <X className="w-5 h-5" />
           </button>
-
-          {/* Top Info Overlay */}
-          <div className="absolute top-4 left-4 flex flex-wrap items-center gap-2 z-10">
-            <span className="text-xs font-bold px-3 py-1 rounded-full bg-amber-500 text-black shadow-md shadow-amber-500/20">
-              {breed.fciGroup}
-            </span>
-            {breed.akcGroup && (
-              <span className="text-xs font-bold px-3 py-1 rounded-full bg-black/80 text-slate-300 backdrop-blur-md border border-white/10">
-                AKC: {breed.akcGroup}
-              </span>
-            )}
-            {breed.origen && (
-              <span className="text-xs font-bold px-3 py-1 rounded-full bg-black/80 text-slate-200 backdrop-blur-md border border-white/10 inline-flex items-center gap-1.5 shadow-sm">
-                <MapPin className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                <span>{breed.origen}</span>
-              </span>
-            )}
-          </div>
 
           {/* Title and Epithet */}
           <div className="absolute bottom-4 left-6 right-6 text-white z-10">
@@ -249,36 +230,36 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
         </div>
 
         {/* Tab Navigation in Modal */}
-        <div className="flex border-b border-white/5 bg-[#141414] px-6 py-3 gap-2 flex-shrink-0 overflow-x-auto">
+        <div className="flex border-b border-white/5 bg-[#141414] px-5 py-2 gap-1.5 flex-shrink-0 overflow-x-auto">
           <button
             onClick={() => setActiveTab('overview')}
-            className={`px-4 py-2 text-xs font-bold rounded-full transition-all cursor-pointer ${
+            className={`px-3.5 py-1.5 text-xs font-bold rounded-full transition-all cursor-pointer whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
               activeTab === 'overview'
-                ? 'bg-amber-500 text-black shadow-md shadow-amber-500/10'
+                ? 'bg-amber-500 text-black shadow-sm shadow-amber-500/10'
                 : 'text-neutral-400 hover:text-white hover:bg-neutral-800'
             }`}
           >
-            Visión General
+            General
           </button>
           <button
             onClick={() => setActiveTab('sections')}
-            className={`px-4 py-2 text-xs font-bold rounded-full transition-all cursor-pointer ${
+            className={`px-3.5 py-1.5 text-xs font-bold rounded-full transition-all cursor-pointer whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
               activeTab === 'sections'
-                ? 'bg-amber-500 text-black shadow-md shadow-amber-500/10'
+                ? 'bg-amber-500 text-black shadow-sm shadow-amber-500/10'
                 : 'text-neutral-400 hover:text-white hover:bg-neutral-800'
             }`}
           >
-            Análisis de Personalidad ({breed.sections.length})
+            Personalidad
           </button>
           <button
             onClick={() => setActiveTab('metrics')}
-            className={`px-4 py-2 text-xs font-bold rounded-full transition-all cursor-pointer ${
+            className={`px-3.5 py-1.5 text-xs font-bold rounded-full transition-all cursor-pointer whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
               activeTab === 'metrics'
-                ? 'bg-amber-500 text-black shadow-md shadow-amber-500/10'
+                ? 'bg-amber-500 text-black shadow-sm shadow-amber-500/10'
                 : 'text-neutral-400 hover:text-white hover:bg-neutral-800'
             }`}
           >
-            Métricas de Temperamento
+            Temperamento
           </button>
         </div>
 
@@ -376,18 +357,32 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
                 </div>
               </div>
 
-              {/* Motivations & Traits */}
+              {/* Classification & Traits */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-[#141414] border border-white/5 p-5 rounded-2xl">
                   <h4 className="text-[10px] font-bold text-amber-500 uppercase tracking-[0.2em] mb-3">
-                    Motivadores Principales
+                    Clasificación Oficial
                   </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {breed.motivations.map(m => (
-                      <span key={m} className="px-3 py-1 bg-blue-500/10 text-blue-300 text-xs font-semibold rounded-full border border-blue-500/20">
-                        {m}
-                      </span>
-                    ))}
+                  <div className="flex flex-col gap-2.5">
+                    {breed.fciGroup && (
+                      <div className="flex items-center gap-2 min-w-0" title={`Grupo FCI: ${breed.fciGroup}`}>
+                        <span className="text-[11px] font-bold text-neutral-400 shrink-0">FCI:</span>
+                        <code className="bg-black px-2.5 py-1 rounded text-amber-400 font-mono text-[11px] border border-white/5 truncate max-w-full">
+                          {breed.fciGroup}
+                        </code>
+                      </div>
+                    )}
+                    {breed.akcGroup && (
+                      <div className="flex items-center gap-2 min-w-0" title={`Grupo AKC: ${breed.akcGroup}`}>
+                        <span className="text-[11px] font-bold text-neutral-400 shrink-0">AKC:</span>
+                        <code className="bg-black px-2.5 py-1 rounded text-amber-400 font-mono text-[11px] border border-white/5 truncate max-w-full">
+                          {breed.akcGroup}
+                        </code>
+                      </div>
+                    )}
+                    {!breed.fciGroup && !breed.akcGroup && (
+                      <span className="text-xs text-neutral-500 italic">No clasificado</span>
+                    )}
                   </div>
                 </div>
 
@@ -503,19 +498,6 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
             </div>
           )}
 
-        </div>
-
-        {/* Modal Footer */}
-        <div className="p-4 bg-[#141414] border-t border-white/5 flex items-center justify-between text-xs text-neutral-500 flex-shrink-0">
-          <span>
-            Ref ID: <code className="bg-black px-2 py-1 rounded text-amber-400 font-mono text-[11px] border border-white/5">{breed.id}</code>
-          </span>
-          <button
-            onClick={onClose}
-            className="px-5 py-2.5 bg-amber-500 text-black hover:bg-amber-400 font-bold rounded-full transition-all cursor-pointer shadow-md shadow-amber-500/10"
-          >
-            Cerrar Ficha
-          </button>
         </div>
 
       </div>
