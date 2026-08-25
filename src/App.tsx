@@ -53,7 +53,10 @@ import {
   Check,
   ChevronUp,
   LayoutGrid,
-  Table
+  Table,
+  Tablet,
+  Search,
+  Users
 } from 'lucide-react';
 
 export default function App() {
@@ -299,6 +302,31 @@ export default function App() {
     return canineData.breeds.filter(b => comparedIds.includes(b.id));
   }, [comparedIds]);
 
+  // Active list for modal navigation (preserves currently filtered search results)
+  const modalBreedsList = useMemo(() => {
+    if (!selectedBreed) return [];
+    if (activeTab === 'favorites') {
+      return favoriteBreeds;
+    }
+    if (activeTab === 'compare') {
+      return comparedBreedsList;
+    }
+    if (filteredBreeds.some(b => b.id === selectedBreed.id)) {
+      return filteredBreeds;
+    }
+    return canineData.breeds;
+  }, [selectedBreed, filteredBreeds, favoriteBreeds, comparedBreedsList, activeTab]);
+
+  const currentBreedModalIndex = useMemo(() => {
+    if (!selectedBreed) return -1;
+    return modalBreedsList.findIndex(b => b.id === selectedBreed.id);
+  }, [selectedBreed, modalBreedsList]);
+
+  const hasPrevBreed = currentBreedModalIndex > 0;
+  const hasNextBreed = currentBreedModalIndex >= 0 && currentBreedModalIndex < modalBreedsList.length - 1;
+  const prevBreedItem = hasPrevBreed ? modalBreedsList[currentBreedModalIndex - 1] : null;
+  const nextBreedItem = hasNextBreed ? modalBreedsList[currentBreedModalIndex + 1] : null;
+
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-slate-200 font-sans flex flex-col selection:bg-amber-500 selection:text-black">
       
@@ -324,29 +352,77 @@ export default function App() {
           <div className="space-y-6">
             
             {/* Hero / Intro Banner */}
-            <div className="bg-[#141414] text-white p-6 sm:p-8 rounded-[2.5rem] shadow-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border border-white/5">
-              <div className="max-w-2xl space-y-2">
-                <h2 className="text-2xl sm:text-3xl font-bold tracking-tight leading-tight">
-                  Explora el Mapa Mental de {canineData.breeds.length} Razas Caninas
-                </h2>
-                <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed">
-                  Filtra en tiempo real por arquetipos psicológicos, grupos FCI/AKC, umbrales de estimulación, motivación intrínseca e independencia cognitiva.
-                </p>
+            <div className="bg-[#121212] border border-white/5 rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-7 shadow-2xl grid grid-cols-1 lg:grid-cols-2 items-start gap-6 lg:gap-10">
+              {/* Left Column: Title, Description and Breed Count (50%) */}
+              <div className="flex flex-col justify-between self-stretch space-y-4">
+                <div className="space-y-2.5">
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight">
+                    Explora la personalidad de cada raza
+                  </h2>
+                  <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal">
+                    AtlasCanino explora la personalidad, el comportamiento, las motivaciones, los vínculos y la respuesta al entorno de cada raza para ayudarte a comprender sus diferencias más allá de la apariencia.
+                  </p>
+                </div>
+
+                <div className="flex flex-row items-baseline justify-center sm:justify-start gap-2 pt-1 sm:flex-col sm:space-y-0.5 sm:gap-0">
+                  <div className="text-2xl sm:text-4xl font-black text-amber-500 tracking-tight">
+                    {canineData.breeds.length}
+                  </div>
+                  <div className="text-[10px] sm:text-[11px] font-bold text-neutral-500 uppercase tracking-[0.18em]">
+                    RAZAS PARA EXPLORAR
+                  </div>
+                </div>
               </div>
 
-              {/* Quick Stat Counter */}
-              <div className="grid grid-cols-3 gap-3 bg-neutral-900/90 p-4 rounded-2xl border border-white/5 text-center w-full md:w-auto flex-shrink-0">
-                <div>
-                  <div className="text-xl font-bold text-amber-500">{canineData.breeds.length}</div>
-                  <div className="text-[10px] text-neutral-400 uppercase font-bold tracking-wider">Razas</div>
+              {/* Right Column: "Qué puedes hacer" items (50%) */}
+              <div className="w-full space-y-2.5">
+                <div className="text-[11px] font-bold text-neutral-400 uppercase tracking-[0.2em] px-1">
+                  QUÉ PUEDES HACER
                 </div>
-                <div>
-                  <div className="text-xl font-bold text-purple-400">14</div>
-                  <div className="text-[10px] text-neutral-400 uppercase font-bold tracking-wider">Arquetipos</div>
+
+                {/* Feature 1 */}
+                <div className="bg-[#181818] border border-white/5 rounded-xl p-3 sm:p-3.5 flex items-center gap-3 transition-colors">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                    <Tablet className="w-4 h-4 sm:w-5 sm:h-5" />
+                  </div>
+                  <div className="space-y-0.5 min-w-0">
+                    <h3 className="text-xs sm:text-sm font-bold text-white tracking-tight">
+                      Conocer una raza
+                    </h3>
+                    <p className="text-[11px] sm:text-xs text-neutral-400 leading-snug">
+                      Descubre su personalidad, comportamiento y forma de relacionarse.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-xl font-bold text-emerald-400">6</div>
-                  <div className="text-[10px] text-neutral-400 uppercase font-bold tracking-wider">Marcos</div>
+
+                {/* Feature 2 */}
+                <div className="bg-[#181818] border border-white/5 rounded-xl p-3 sm:p-3.5 flex items-center gap-3 transition-colors">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center shrink-0">
+                    <Search className="w-4 h-4 sm:w-5 sm:h-5" />
+                  </div>
+                  <div className="space-y-0.5 min-w-0">
+                    <h3 className="text-xs sm:text-sm font-bold text-white tracking-tight">
+                      Explorar y descubrir
+                    </h3>
+                    <p className="text-[11px] sm:text-xs text-neutral-400 leading-snug">
+                      Filtra por características para encontrar razas que quizás no conocías.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Feature 3 */}
+                <div className="bg-[#181818] border border-white/5 rounded-xl p-3 sm:p-3.5 flex items-center gap-3 transition-colors">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                    <Users className="w-4 h-4 sm:w-5 sm:h-5" />
+                  </div>
+                  <div className="space-y-0.5 min-w-0">
+                    <h3 className="text-xs sm:text-sm font-bold text-white tracking-tight">
+                      Comparar y encontrar afinidades
+                    </h3>
+                    <p className="text-[11px] sm:text-xs text-neutral-400 leading-snug">
+                      Compara perfiles y descubre similitudes, diferencias y afinidades.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -708,6 +784,12 @@ export default function App() {
                 setFilters(prev => ({ ...prev, archetype: arch }));
                 setActiveTab('explore');
               }}
+              onPrevBreed={hasPrevBreed && prevBreedItem ? () => setSelectedBreed(prevBreedItem) : undefined}
+              onNextBreed={hasNextBreed && nextBreedItem ? () => setSelectedBreed(nextBreedItem) : undefined}
+              prevBreedName={prevBreedItem?.breed}
+              nextBreedName={nextBreedItem?.breed}
+              currentIndex={currentBreedModalIndex !== -1 ? currentBreedModalIndex : undefined}
+              totalBreeds={modalBreedsList.length}
             />
           </Suspense>
         </ErrorBoundary>
