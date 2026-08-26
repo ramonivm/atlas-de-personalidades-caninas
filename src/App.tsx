@@ -349,7 +349,7 @@ export default function App() {
         
         {/* VIEW 1: EXPLORE BREEDS */}
         {activeTab === 'explore' && (
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             
             {/* Hero / Intro Banner */}
             <div className="bg-[#121212] border border-white/5 rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-7 shadow-2xl grid grid-cols-1 lg:grid-cols-2 items-start gap-6 lg:gap-10">
@@ -441,7 +441,7 @@ export default function App() {
             />
 
             {/* Results Header Bar with View Switcher */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pt-2">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pt-0 sm:pt-2">
               <div className="flex items-center gap-2">
                 <span className="text-xs sm:text-sm font-bold text-slate-200">
                   {filteredBreeds.length === canineData.breeds.length
@@ -455,8 +455,8 @@ export default function App() {
                 )}
               </div>
 
-              {/* View Switcher Controls */}
-              <div className="inline-flex items-center p-1 bg-[#141414] border border-white/10 rounded-2xl shadow-inner">
+              {/* View Switcher Controls (Desktop only) */}
+              <div className="hidden sm:inline-flex items-center p-1 bg-[#141414] border border-white/10 rounded-2xl shadow-inner">
                 <button
                   type="button"
                   onClick={() => setViewMode('grid')}

@@ -83,11 +83,11 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
   };
 
   return (
-    <div className="bg-[#141414] border border-white/5 rounded-[2.5rem] p-6 shadow-2xl mb-8 transition-all">
-      {/* Top summary bar */}
-      <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-white/5">
+    <div className="bg-[#141414] border border-white/5 rounded-[2.5rem] p-5 sm:p-6 shadow-2xl mb-4 sm:mb-8 transition-all">
+      {/* Top summary bar (Desktop & Mobile Header) */}
+      <div className="flex items-center justify-between gap-4 pb-4 border-b border-white/5">
         <div className="flex items-center gap-3">
-          <div className="p-2.5 bg-amber-500/10 rounded-2xl text-amber-500 border border-amber-500/20">
+          <div className="p-2.5 bg-amber-500/10 rounded-2xl text-amber-500 border border-amber-500/20 flex-shrink-0">
             <Filter className="w-4 h-4" />
           </div>
           <div>
@@ -95,13 +95,15 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
               Filtros Dinámicos
             </h2>
             <p className="text-xs text-neutral-400">
-              Mostrando <span className="font-bold text-amber-400">{filteredCount}</span> de {totalBreeds} razas en tiempo real
+              Mostrando <span className="font-bold text-amber-400">{filteredCount}</span> de {totalBreeds} razas
+              <span className="hidden sm:inline"> en tiempo real</span>
             </p>
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2">
-          {/* Entender Filtros button */}
+        {/* Desktop Controls in Top Bar */}
+        <div className="hidden md:flex items-center gap-2">
+          {/* Entender Filtros button (Desktop) */}
           <button
             onClick={() => setIsGuideOpen(true)}
             className="flex items-center gap-1.5 text-xs text-amber-400 hover:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 px-3.5 py-2 rounded-full border border-amber-500/30 font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
@@ -111,9 +113,9 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             <span>Entender Filtros</span>
           </button>
 
-          {/* Quick Sort dropdown */}
+          {/* Quick Sort dropdown (Desktop) */}
           <div className="flex items-center gap-2 text-xs text-neutral-300 bg-neutral-900 px-4 py-2 rounded-full border border-neutral-800">
-            <span className="font-semibold text-slate-400 hidden sm:inline">Orden:</span>
+            <span className="font-semibold text-slate-400">Orden:</span>
             <select
               value={filters.sortBy}
               aria-label="Ordenar resultados por"
@@ -127,7 +129,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             </select>
           </div>
 
-          {/* Reset Filters button */}
+          {/* Reset Filters button (Desktop) */}
           {activeFilterCount > 0 && (
             <button
               onClick={resetFilters}
@@ -138,21 +140,55 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
               <span>Limpiar ({activeFilterCount})</span>
             </button>
           )}
-
-          {/* Mobile toggle button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden flex items-center gap-1.5 text-xs font-semibold text-slate-300 bg-neutral-900 hover:bg-neutral-800 px-4 py-2 rounded-full border border-neutral-800 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
-          >
-            <SlidersHorizontal className="w-3.5 h-3.5" />
-            <span>{isOpen ? 'Ocultar' : 'Filtros'}</span>
-            {isOpen ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
-          </button>
         </div>
+
+        {/* Mobile Reset shortcut if filters are active */}
+        {activeFilterCount > 0 && (
+          <button
+            onClick={resetFilters}
+            className="md:hidden flex items-center gap-1 text-[11px] text-amber-400 hover:text-white bg-amber-500/10 px-2.5 py-1.5 rounded-xl border border-amber-500/30 font-bold cursor-pointer"
+            title="Restablecer todos los filtros"
+          >
+            <RotateCcw className="w-3 h-3" />
+            <span>Limpiar ({activeFilterCount})</span>
+          </button>
+        )}
       </div>
 
-      {/* Second Search Bar inside the Dynamic Filter Box */}
-      <div className="mt-5">
+      {/* Mobile Primary Controls Row: [ Filtros v ] [ ? ] */}
+      <div className="md:hidden mt-4 flex items-center gap-2.5">
+        {/* Main Filter Button (takes almost full width) */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          aria-expanded={isOpen}
+          aria-label="Abrir u ocultar panel de filtros"
+          className="flex-1 flex items-center justify-between bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-bold text-xs sm:text-sm px-4 py-3 rounded-2xl transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 min-h-[46px]"
+        >
+          <div className="flex items-center gap-2.5">
+            <SlidersHorizontal className="w-4 h-4 text-white" />
+            <span className="tracking-wide">{isOpen ? 'Ocultar Filtros' : 'Filtros'}</span>
+            {activeFilterCount > 0 && !isOpen && (
+              <span className="bg-amber-500 text-black text-[10px] font-black px-1.5 py-0.5 rounded-full">
+                {activeFilterCount}
+              </span>
+            )}
+          </div>
+          {isOpen ? <ChevronUp className="w-4 h-4 text-neutral-400" /> : <ChevronDown className="w-4 h-4 text-neutral-400" />}
+        </button>
+
+        {/* Small square Help Button */}
+        <button
+          onClick={() => setIsGuideOpen(true)}
+          aria-label="Guía interactiva para entender los filtros etológicos"
+          className="w-[46px] h-[46px] flex-shrink-0 flex items-center justify-center bg-neutral-900 hover:bg-neutral-800 text-amber-500 hover:text-amber-400 border border-neutral-800 rounded-2xl transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+          title="Guía interactiva para entender los filtros"
+        >
+          <HelpCircle className="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Search Bar inside the Dynamic Filter Box */}
+      <div className="mt-3.5 sm:mt-5">
         <div className="relative flex items-center">
           <Search className="w-4 h-4 absolute left-4 text-neutral-400 pointer-events-none" />
           <input
@@ -174,6 +210,30 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
               <X className="w-4 h-4" />
             </button>
           )}
+        </div>
+      </div>
+
+      {/* Mobile Sort Row: [ Ordenar por ] [ Nombre (A-Z) <> ] */}
+      <div className="md:hidden mt-3.5 flex items-center justify-between pt-1">
+        <span className="text-xs sm:text-sm text-neutral-400 font-medium">
+          Ordenar por
+        </span>
+        <div className="relative inline-flex items-center">
+          <select
+            value={filters.sortBy}
+            aria-label="Ordenar resultados por"
+            onChange={(e) => handleFilterChange('sortBy', e.target.value as FilterState['sortBy'])}
+            className="appearance-none bg-neutral-900 border border-neutral-800 text-slate-200 font-bold text-xs rounded-xl pl-3.5 pr-8 py-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 cursor-pointer min-h-[38px]"
+          >
+            <option value="name-asc" className="bg-neutral-900">Nombre (A-Z)</option>
+            <option value="name-desc" className="bg-neutral-900">Nombre (Z-A)</option>
+            <option value="fci" className="bg-neutral-900">Grupo FCI</option>
+            <option value="traits-count" className="bg-neutral-900">Más rasgos</option>
+          </select>
+          <div className="pointer-events-none absolute right-2.5 flex flex-col items-center justify-center text-neutral-400">
+            <ChevronUp className="w-2.5 h-2.5 -mb-1" />
+            <ChevronDown className="w-2.5 h-2.5" />
+          </div>
         </div>
       </div>
 

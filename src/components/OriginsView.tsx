@@ -13,10 +13,8 @@ import {
   Sparkles,
   ArrowRight,
   Filter,
-  TrendingUp,
   LayoutGrid,
-  Map as MapIcon,
-  Award
+  Map as MapIcon
 } from 'lucide-react';
 
 interface OriginsViewProps {
@@ -28,7 +26,7 @@ interface OriginsViewProps {
   onExploreWithFilter?: (origin: string) => void;
 }
 
-type ViewMode = 'map' | 'cards' | 'ranking';
+type ViewMode = 'map' | 'cards';
 
 export const OriginsView: React.FC<OriginsViewProps> = ({
   onSelectBreed,
@@ -119,7 +117,7 @@ export const OriginsView: React.FC<OriginsViewProps> = ({
         title="Vista de Mapa Interactivo"
       >
         <MapIcon className="w-3.5 h-3.5" />
-        <span>Mapa Radar</span>
+        <span>Mapa</span>
       </button>
 
       <button
@@ -133,19 +131,6 @@ export const OriginsView: React.FC<OriginsViewProps> = ({
       >
         <LayoutGrid className="w-3.5 h-3.5" />
         <span>Pasaportes</span>
-      </button>
-
-      <button
-        onClick={() => setViewMode('ranking')}
-        className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-          currentMode === 'ranking'
-            ? 'bg-amber-500 text-black shadow-md'
-            : 'text-neutral-400 hover:text-white'
-        }`}
-        title="Vista de Aportes Genéticos / Ranking"
-      >
-        <TrendingUp className="w-3.5 h-3.5" />
-        <span>Top Aporte</span>
       </button>
     </div>
   );
@@ -161,11 +146,11 @@ export const OriginsView: React.FC<OriginsViewProps> = ({
 
         <div className="relative z-10 space-y-3 max-w-3xl">
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
-            Orígenes Territoriales
+            Origen de las Razas
           </h1>
           
           <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed">
-            Explora cómo el clima, el relieve montañoso, las faenas agrícolas y las tradiciones culturales de cada país esculpieron la genética, la resiliencia y los arquetipos de {totalBreedsWithOrigin} razas en {totalCountries} regiones del planeta.
+            Explora cómo el clima, el relieve montañoso, las faenas agrícolas y las tradiciones culturales de cada país definieron la personalidad y carácter de las diferentes razas de perros.
           </p>
         </div>
       </section>
@@ -494,84 +479,6 @@ export const OriginsView: React.FC<OriginsViewProps> = ({
                 </div>
               );
             })}
-          </div>
-        </div>
-      )}
-
-      {/* 4. MODE: RANKING / GENETIC HERITAGE VIEW */}
-      {viewMode === 'ranking' && (
-        <div className="space-y-6">
-          {/* Top Bar for Subviews */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-[#141414] rounded-2xl p-4 border border-white/5">
-            {renderModeSwitcher('ranking')}
-
-            <div className="text-xs font-mono font-bold text-amber-400 px-3 py-1 bg-amber-500/10 rounded-full border border-amber-500/20">
-              {totalCountries} Países Totales
-            </div>
-          </div>
-
-          <div className="bg-[#141414] rounded-[2.5rem] border border-white/5 p-6 sm:p-8 shadow-2xl space-y-6">
-            <div className="flex items-center justify-between">
-              <div>
-                <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                  <Award className="w-5 h-5 text-amber-400" />
-                  <span>Jerarquía de Aporte Genético Mundial</span>
-                </h3>
-                <p className="text-xs text-neutral-400 mt-1">
-                  Países clasificados por volumen de razas estandarizadas e integradas en AtlasCanino
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-3">
-              {countriesList.map((country, idx) => {
-                const maxBreeds = countriesList[0]?.count || 1;
-                const percentage = Math.round((country.count / maxBreeds) * 100);
-
-                return (
-                  <div
-                    key={country.id}
-                    onClick={() => {
-                      setSelectedCountryName(country.name);
-                      setViewMode('map');
-                    }}
-                    className="group bg-neutral-900/60 hover:bg-neutral-800/80 p-4 rounded-2xl border border-white/5 hover:border-amber-500/30 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4 cursor-pointer"
-                  >
-                    <div className="flex items-center gap-4 min-w-[240px]">
-                      <span className="w-6 text-center font-mono font-bold text-sm text-neutral-500 group-hover:text-amber-400">
-                        #{idx + 1}
-                      </span>
-                      <span className="text-2xl">{country.flag}</span>
-                      <div>
-                        <div className="text-sm font-bold text-white group-hover:text-amber-400 transition-colors">
-                          {country.name}
-                        </div>
-                        <div className="text-[11px] text-neutral-400">
-                          {country.region} · {country.dominantArchetype}
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Relative progress bar */}
-                    <div className="flex-1 max-w-md hidden md:block">
-                      <div className="h-2 w-full bg-black/60 rounded-full overflow-hidden border border-white/5">
-                        <div 
-                          className="h-full rounded-full transition-all duration-500 bg-gradient-to-r from-amber-600 to-amber-400"
-                          style={{ width: `${percentage}%` }}
-                        />
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-4 justify-between sm:justify-end">
-                      <span className="text-sm font-bold font-mono text-amber-300">
-                        {country.count} {country.count === 1 ? 'raza' : 'razas'}
-                      </span>
-                      <ChevronRight className="w-4 h-4 text-neutral-500 group-hover:text-amber-400 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
           </div>
         </div>
       )}
