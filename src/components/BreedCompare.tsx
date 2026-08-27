@@ -15,12 +15,9 @@ import {
   BarChart3, 
   LayoutGrid, 
   Layers,
-  Sparkles,
-  Info,
   Table,
   TrendingUp,
   Award,
-  SlidersHorizontal,
   Compass
 } from 'lucide-react';
 import {
@@ -231,7 +228,7 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
           </div>
 
           <div className="space-y-2 pt-2 border-t border-white/10">
-            {payload.map((entry: any, i: number) => {
+            {payload.map((entry: any) => {
               const breedId = entry.dataKey;
               const breed = comparedBreeds.find((b) => b.id === breedId);
               const rawVal = entry.payload[`${breedId}_raw`];

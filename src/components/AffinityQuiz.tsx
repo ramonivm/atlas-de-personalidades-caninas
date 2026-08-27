@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Breed, QuizAnswers, PriorityTrait } from '../types';
-import { Sparkles, Check, RotateCcw, Dog, ChevronRight, Award, Shield, Heart } from 'lucide-react';
+import { Sparkles, RotateCcw, ChevronRight, Award } from 'lucide-react';
 import { getBreedImageUrl } from '../utils/breedImages';
 
 interface AffinityQuizProps {

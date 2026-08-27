@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ParsedFrameworkSection } from '../frameworkTypes';
 import { motion, AnimatePresence } from 'motion/react';
-import { SlidersHorizontal, Shuffle, Layers, Shield } from 'lucide-react';
+import { Shuffle } from 'lucide-react';
 
 interface PlasticityMapProps {
   sections: ParsedFrameworkSection[];

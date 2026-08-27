@@ -1,7 +1,7 @@
 import React from 'react';
 import { ParsedFrameworkSection } from '../frameworkTypes';
 import { motion, AnimatePresence } from 'motion/react';
-import { User, Dog as DogIcon, Shield, Layers, Repeat, ArrowRight, ShieldAlert, Sparkles } from 'lucide-react';
+import { User, Shield, Repeat } from 'lucide-react';
 
 interface BondRelationshipMapProps {
   sections: ParsedFrameworkSection[];

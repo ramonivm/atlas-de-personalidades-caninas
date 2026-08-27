@@ -43,20 +43,12 @@ const TabLoadingFallback: React.FC<{ message?: string }> = ({
 );
 import { 
   Dog,
-  Sparkles, 
   Bookmark, 
   GitCompare, 
-  Layers, 
   Brain, 
-  SlidersHorizontal,
-  Info,
-  Check,
   ChevronUp,
   LayoutGrid,
   Table,
-  Tablet,
-  Search,
-  Users,
   Compass
 } from 'lucide-react';
 
@@ -353,13 +345,13 @@ export default function App() {
           <div className="space-y-4 sm:space-y-6">
             
             {/* Hero / Intro Section Redesign */}
-            <section aria-label="Introducción a AtlasCanino" className="w-full relative overflow-hidden bg-[#121212] border border-white/5 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 pt-12 shadow-2xl">
+            <section aria-label="Introducción a AtlasCanino" className="w-full relative overflow-hidden bg-[#121212] border border-white/5 rounded-2xl sm:rounded-3xl px-6 sm:px-8 lg:px-12 py-[44px] mb-[24px] shadow-2xl">
               {/* Centered AtlasCanino Master Logo */}
-              <div className="w-full flex justify-center mb-[40px] lg:mb-12">
+              <div className="w-full flex justify-center mb-[46px]">
                 <img
                   src="/assets/master_logotipo_atlascanino.svg"
                   alt="Atlas Canino"
-                  className="w-[500px] max-w-full h-[120px] lg:w-full lg:max-w-[720px] lg:h-auto object-contain drop-shadow-[0_0_25px_rgba(245,158,11,0.35)]"
+                  className="w-[500px] max-w-full h-auto object-contain drop-shadow-[0_0_25px_rgba(245,158,11,0.35)]"
                 />
               </div>
 
@@ -368,22 +360,22 @@ export default function App() {
                 {/* Left Column: Title, Descriptive Paragraphs and Dynamic Counter */}
                 <div className="lg:col-span-7 flex flex-col justify-between h-full space-y-6">
                   <div className="space-y-5">
-                    <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-white leading-[1.08] tracking-tight uppercase drop-shadow-md">
+                    <h1 className="text-[46px] leading-[50px] font-black text-white tracking-tight uppercase drop-shadow-md">
                       Explora la personalidad <br className="hidden sm:inline" />
                       <span className="text-amber-500">de cada raza</span>
                     </h1>
                     
-                    <p className="text-[16px] leading-[25px] lg:text-lg lg:leading-relaxed text-white/90 font-normal">
+                    <p className="text-[16px] leading-[25px] mb-[15px] text-white/90 font-normal">
                       Detrás de cada raza hay mucho más que un tamaño, una forma o un tipo de pelaje. Aquí puedes descubrir su carácter y personalidad, qué la motiva, cómo se relaciona con las personas y cómo responde a lo que ocurre a su alrededor. Entiende esas diferencias que muchas veces no se ven a simple vista, pero que pueden cambiar por completo la convivencia con un perro.
                     </p>
                     
-                    <p className="text-[14px] leading-[24px] lg:text-base lg:leading-relaxed text-white/70 font-light">
+                    <p className="text-[14px] leading-[22px] text-white/70 font-light">
                       Recorre las razas, filtra según su personalidad y comportamiento, compáralas y descubre qué tienen en común y qué las diferencia. También puedes descubrir cuáles podrían tener mayor afinidad contigo, usando herramientas pensadas para hacer el recorrido más simple, visual y entretenido.
                     </p>
                   </div>
 
                   {/* Dynamic Breed Counter */}
-                  <div className="pt-[10px] mt-0 lg:pt-4 flex flex-col items-center lg:items-start w-full lg:w-auto">
+                  <div className="pt-[20px] mt-0 flex flex-col items-center lg:items-start w-full lg:w-auto">
                     <div className="flex items-center lg:items-baseline justify-center lg:justify-start gap-3 sm:gap-4">
                       <span className="text-5xl sm:text-6xl lg:text-7xl font-black text-amber-500 leading-none tracking-tight drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]">
                         {canineData.breeds.length}
@@ -412,12 +404,12 @@ export default function App() {
                         </div>
                         {/* Connecting Line between icon and card (Mobile only) */}
                         <div aria-hidden="true" className="w-0.5 h-4 bg-amber-500/40 sm:hidden" />
-                        <div className="flex-1 w-full bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-white/10 group-hover:border-amber-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-center sm:text-left">
+                        <div className="flex-1 w-full bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 py-[20px] border border-white/10 group-hover:border-amber-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-center sm:text-left">
                           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-amber-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           <h3 className="font-bold text-base sm:text-lg leading-[25px] text-white mb-1.5 tracking-tight group-hover:text-amber-400 transition-colors relative z-10">
                             Conocer una raza
                           </h3>
-                          <p className="text-xs sm:text-sm leading-[21px] lg:leading-relaxed text-white/70 relative z-10">
+                          <p className="text-xs sm:text-sm leading-[20px] text-white/70 relative z-10">
                             Descubre su personalidad, comportamiento y forma de relacionarse.
                           </p>
                         </div>
@@ -430,12 +422,12 @@ export default function App() {
                         </div>
                         {/* Connecting Line between icon and card (Mobile only) */}
                         <div aria-hidden="true" className="w-0.5 h-4 bg-emerald-500/40 sm:hidden" />
-                        <div className="flex-1 w-full bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-white/10 group-hover:border-emerald-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-center sm:text-left">
+                        <div className="flex-1 w-full bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 py-[20px] pl-[24px] border border-white/10 group-hover:border-emerald-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-center sm:text-left">
                           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           <h3 className="font-bold text-base sm:text-lg leading-[25px] text-white mb-1.5 tracking-tight group-hover:text-amber-400 transition-colors relative z-10">
                             Explorar y descubrir
                           </h3>
-                          <p className="text-xs sm:text-sm leading-[21px] lg:leading-relaxed text-white/70 relative z-10">
+                          <p className="text-xs sm:text-sm leading-[20px] text-white/70 relative z-10">
                             Filtra por características para encontrar razas que quizás no conocías.
                           </p>
                         </div>
@@ -448,12 +440,12 @@ export default function App() {
                         </div>
                         {/* Connecting Line between icon and card (Mobile only) */}
                         <div aria-hidden="true" className="w-0.5 h-4 bg-purple-500/40 sm:hidden" />
-                        <div className="flex-1 w-full bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-white/10 group-hover:border-purple-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-center sm:text-left">
+                        <div className="flex-1 w-full bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 py-[20px] border border-white/10 group-hover:border-purple-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-center sm:text-left">
                           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           <h3 className="font-bold text-base sm:text-lg leading-[25px] text-white mb-1.5 tracking-tight group-hover:text-amber-400 transition-colors relative z-10">
                             Comparar
                           </h3>
-                          <p className="text-xs sm:text-sm leading-[21px] lg:leading-relaxed text-white/70 relative z-10">
+                          <p className="text-xs sm:text-sm leading-[20px] text-white/70 relative z-10">
                             Compara perfiles y descubre similitudes, diferencias y afinidades.
                           </p>
                         </div>
@@ -559,9 +551,6 @@ export default function App() {
                     onToggleFavorite={toggleFavorite}
                     isCompared={comparedIds.includes(breed.id)}
                     onToggleCompare={toggleCompare}
-                    onSelectArchetypeFilter={(arch) => {
-                      setFilters(prev => ({ ...prev, archetype: arch }));
-                    }}
                   />
                 ))}
               </div>

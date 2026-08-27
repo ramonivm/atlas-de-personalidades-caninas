@@ -1,5 +1,5 @@
 import { CanineDatabase } from '../types';
-import { getBreedImageUrl } from '../utils/breedImages';
+
 
 export const canineData: CanineDatabase = {
   "meta": {
@@ -8,7 +8,7 @@ export const canineData: CanineDatabase = {
     "generatedAt": "2026-08-11T03:44:29+00:00",
     "source": "Exportación local de Notion",
     "counts": {
-      "breeds": 138,
+      "breeds": 153,
       "archetypes": 14,
       "frameworks": 6,
       "lifeStages": 3,
@@ -7654,1474 +7654,351 @@ export const canineData: CanineDatabase = {
           "content": "Su temperamento base es activo, seguro y determinado. Tiende a enfrentarse al entorno con curiosidad, iniciativa y una fuerte disposición para trabajar, especialmente cuando puede utilizar el olfato y perseguir objetivos concretos. No es un perro de energía dispersa: cuando una tarea despierta su interés puede sostenerla con gran concentración y persistencia. Conserva suficiente autonomía para buscar, rastrear y resolver situaciones a distancia del guía, aunque mantiene una referencia frecuente hacia él. Puede mostrarse reservado con desconocidos y necesita socialización temprana para que su vigilancia natural permanezca equilibrada y funcional."
         },
         {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Forma un vínculo intenso y cooperativo con su humano, especialmente cuando la relación incluye actividad compartida y objetivos claros. No suele conformarse con una convivencia pasiva: necesita participar, acompañar y utilizar sus capacidades junto a su guía. Aprende con rapidez y responde bien a una conducción consistente, firme y positiva, pero puede cuestionar ejercicios repetitivos o poco significativos. Su autonomía durante el trabajo no implica desapego; combina iniciativa propia con una marcada orientación hacia su referente. La relación funciona mejor cuando existe estructura, movimiento y oportunidades para resolver tareas reales."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Destaca por su versatilidad, resistencia y enorme disposición para trabajar. Puede pasar de la búsqueda y muestra al rastreo, cobro o trabajo en agua sin perder concentración, lo que refleja una mente flexible pero orientada a objetivos. Su lealtad y capacidad de cooperación permiten construir una relación muy estrecha con personas activas. También posee suficiente iniciativa para resolver situaciones sin depender de instrucciones constantes, convirtiéndose en un compañero especialmente completo para actividades de campo, entrenamiento avanzado y deportes caninos."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su intensidad y necesidad de actividad pueden resultar exigentes en hogares sedentarios. Sin ejercicio físico, exploración y trabajo mental suficientes puede desarrollar inquietud, conductas destructivas o una búsqueda constante de estímulos. El instinto de caza puede complicar la convivencia con animales pequeños si no existe manejo adecuado. Su reserva con extraños requiere socialización cuidadosa. El pelaje áspero necesita mantenimiento periódico, pero este aspecto es secundario frente a su necesidad de trabajo, estructura y participación cotidiana."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "El Braco Alemán de Pelo Duro surgió en Alemania a partir de distintas líneas de perros de muestra de pelo áspero y del Braco Alemán de Pelo Corto, buscando reunir versatilidad, resistencia y eficacia cinegética. Está preparado para localizar, mostrar, rastrear y cobrar piezas tanto en tierra como en agua, antes y después del disparo. Su combinación de olfato, persistencia y cooperación también favorece actividades de rastreo, pruebas de campo y deportes que exijan resistencia, concentración y resolución autónoma de problemas."
-        }
-      ],
-      "imageUrl": "/images/breeds/braco-aleman-pelo-duro.webp",
-      "origen": "Alemania"
-    },
-    {
-      "id": "bulldog-ingles",
-      "breed": "Bulldog Inglés",
-      "title": "Bulldog Inglés: La Tenacidad en Reposo",
-      "epithet": "La Tenacidad en Reposo",
-      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
-      "akcGroup": "Non-Sporting Group",
-      "archetypes": [
-        "Contención Pesada / Calma Profunda"
-      ],
-      "motivations": [
-        "Afecto",
-        "Cercanía",
-        "Confort"
-      ],
-      "traits": [
-        "Calma",
-        "Ternura",
-        "Tenacidad",
-        "Valentía",
-        "Dignidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Afecto",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Alta",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "El Bulldog Inglés es un moloso británico de temperamento sereno, afectuoso y determinado, cuya personalidad moderna contrasta con la dureza de sus antiguos usos. Suele desenvolverse con calma en el hogar, busca cercanía con su familia y necesita menos actividad continua que muchas razas de tamaño similar. Bajo su ritmo pausado conserva tenacidad, valentía y una voluntad firme, combinando sociabilidad, dignidad y una notable capacidad para disfrutar de rutinas estables.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es tranquilo, seguro y amistoso, con una tendencia natural a observar antes de reaccionar. No suele necesitar estímulos constantes para mantenerse equilibrado y puede mostrarse cómodo dentro de rutinas domésticas previsibles. Conserva, sin embargo, una voluntad marcada: cuando decide mantener una conducta puede resultar obstinado y poco receptivo a la repetición mecánica. Su valentía histórica permanece más como firmeza y seguridad que como búsqueda de confrontación. Es un perro expresivo y afectuoso, cuya estabilidad depende especialmente de una convivencia clara, cercana y sin exigencias físicas desproporcionadas."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Forma un vínculo cercano y físicamente afectuoso con sus humanos, disfrutando de compartir espacios, rutinas y momentos de descanso. Busca compañía con frecuencia, pero su relación no se basa necesariamente en obediencia constante ni en una dependencia emocional extrema. Responde mejor a una guía paciente, coherente y positiva, capaz de motivarlo sin convertir cada interacción en una disputa de voluntad. La confianza y la previsibilidad favorecen su cooperación. Su tendencia a la obstinación requiere constancia, mientras que la presión excesiva suele reducir su disposición a participar."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Destaca por su calma doméstica, afectuosidad y capacidad para integrarse en rutinas moderadas. Suele disfrutar intensamente de la convivencia familiar sin exigir actividad continua, y su presencia física transmite seguridad y firmeza. Puede ser sociable, paciente y muy expresivo con quienes conoce. Su ritmo pausado facilita momentos de tranquilidad en casa, mientras que su tenacidad y valentía aportan una personalidad sólida, reconocible y poco propensa a respuestas nerviosas innecesarias."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su firmeza puede transformarse en obstinación si el entrenamiento es repetitivo, poco motivador o basado en confrontación. Necesita aprender autocontrol y buenos hábitos desde joven, porque incluso con actividad moderada puede desarrollar conductas difíciles de modificar cuando se consolidan. Su hocico muy corto también puede limitar la tolerancia al calor y al esfuerzo intenso, por lo que el ejercicio debe adaptarse a sus capacidades. La prioridad cotidiana sigue siendo una educación paciente, estable y consistente."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "El Bulldog Inglés nació de antiguos perros británicos utilizados en prácticas de enfrentamiento con toros, hoy desaparecidas y prohibidas. Con el tiempo, la selección hacia la compañía transformó profundamente su función y temperamento. De aquella historia conserva principalmente determinación, coraje y persistencia, no una necesidad de combate. En la convivencia moderna destaca por su presencia firme, capacidad de adaptación a rutinas domésticas y disposición para aprender ejercicios sencillos cuando el entrenamiento es breve, motivador y compatible con sus limitaciones físicas."
-        }
-      ],
-      "imageUrl": "/images/breeds/bulldog-ingles.webp",
-      "origen": "Reino Unido"
-    },
-    {
-      "id": "chesapeake-bay-retriever",
-      "breed": "Chesapeake Bay Retriever",
-      "title": "Chesapeake Bay Retriever: El Cobrador de las Aguas Heladas",
-      "epithet": "El Cobrador de las Aguas Heladas",
-      "fciGroup": "Grupo 8: Perros Cobradores levantadores de caza y de agua",
-      "akcGroup": "Sporting Group",
-      "archetypes": [
-        "Cooperación Humana Clásica"
-      ],
-      "motivations": [
-        "Cobro",
-        "Trabajo",
-        "Cooperación"
-      ],
-      "traits": [
-        "Tenacidad",
-        "Valentía",
-        "Lealtad",
-        "Vigilancia",
-        "Rusticidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Cobro y trabajo cooperativo en agua",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Media – Reservada con extraños",
-        "independencia_cognitiva": "Media-Alta"
-      },
-      "summary": "El Chesapeake Bay Retriever es un cobrador estadounidense desarrollado para trabajar en las aguas frías y difíciles de la bahía de Chesapeake. Potente, resistente y decidido, combina la cooperación propia de los retrievers con una autonomía y una capacidad de vigilancia más marcadas que las de muchos de sus parientes. Es afectuoso y leal con su familia, reservado con extraños y especialmente motivado por el cobro, el agua y el trabajo sostenido junto a su guía.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento es enérgico, seguro, inteligente y determinado. El Chesapeake posee una disposición alegre, pero suele mostrar más reserva y criterio propio que otros retrievers. Fue seleccionado para soportar frío, viento, mareas y largas jornadas de cobro, por lo que destaca por su resistencia física y mental. Mantiene una atención activa sobre el entorno y puede adoptar una actitud protectora ante situaciones que considera relevantes. No es un perro pasivo ni complaciente por defecto: necesita actividad con propósito, oportunidades de trabajo y una educación coherente que canalice su persistencia sin apagar su iniciativa."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Construye un vínculo leal, cercano y cooperativo con su familia, aunque conserva suficiente independencia para tomar decisiones durante el trabajo. Tiende a involucrarse intensamente en actividades compartidas y responde especialmente bien cuando comprende el propósito de una tarea. Puede ser afectuoso sin mostrar la apertura social indiscriminada de otros retrievers, manteniendo cierta reserva frente a desconocidos. Necesita un guía consistente, paciente y activo, capaz de combinar estructura con refuerzo positivo. La relación mejora cuando dispone de objetivos claros, ejercicio suficiente y oportunidades regulares para utilizar su capacidad de cobro y resolución."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Destaca por su enorme resistencia, versatilidad y disposición para trabajar en condiciones exigentes. Es un nadador poderoso, un cobrador persistente y un compañero extremadamente leal con su núcleo familiar. Su inteligencia práctica y fortaleza emocional permiten afrontar tareas largas sin perder concentración. También posee una vigilancia natural mayor que la habitual entre retrievers, aportando cierta capacidad disuasoria. Para personas activas que disfrutan del entrenamiento, el agua y las actividades al aire libre, ofrece una combinación excepcional de cooperación, potencia y autonomía."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su energía, fuerza física y determinación pueden resultar difíciles en hogares poco activos o sin experiencia con perros de trabajo. Necesita ejercicio diario, entrenamiento y tareas que canalicen su impulso de cobro; el aburrimiento puede favorecer inquietud o conductas destructivas. Su reserva y tendencia protectora requieren socialización temprana y cuidadosa. El manto doble muda y necesita mantenimiento regular. En crianza responsable conviene realizar controles para displasia de cadera y codo, enfermedades oculares hereditarias, colapso inducido por ejercicio y mielopatía degenerativa."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "Fue desarrollado específicamente para recuperar aves acuáticas en la bahía de Chesapeake, trabajando durante largas jornadas entre agua helada, viento, hielo y fuertes mareas. Su manto doble aceitoso ofrece aislamiento, mientras su potencia, resistencia y afinidad por el agua permiten realizar cobros repetidos en condiciones severas. Posee una boca suficientemente suave para transportar aves sin dañarlas y un buen olfato para localizarlas. Además del trabajo cinegético, puede destacar en pruebas de cobro, obediencia, rastreo y deportes acuáticos que aprovechen su perseverancia y capacidad de colaboración."
-        }
-      ],
-      "imageUrl": "/images/breeds/chesapeake-bay-retriever.webp",
-      "origen": "Estados Unidos"
-    },
-    {
-      "id": "collie-pelo-largo",
-      "breed": "Collie de Pelo Largo",
-      "title": "Collie de Pelo Largo: El Pastor de la Mirada Sensible",
-      "epithet": "El Pastor de la Mirada Sensible",
-      "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
-      "akcGroup": "Herding Group",
-      "archetypes": [
-        "Cooperación Humana Clásica",
-        "Apego Frágil Afiliativo"
-      ],
-      "motivations": [
-        "Trabajo conjunto",
-        "Aprobación social",
-        "Familia"
-      ],
-      "traits": [
-        "Apego",
-        "Lealtad",
-        "Vigilancia",
-        "Inteligencia",
-        "Amabilidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio-Bajo",
-        "motivacion_intrinseca": "Trabajo conjunto y aprobación social",
-        "resiliencia_emocional": "Media",
-        "sociabilidad": "Alta – Afiliativa",
-        "independencia_cognitiva": "Baja-Media"
-      },
-      "summary": "El Collie de Pelo Largo es un pastor británico elegante, sensible y profundamente orientado a la cooperación humana. Su temperamento combina inteligencia, atención al entorno y una marcada disposición a vincularse con su familia. Aprende con rapidez, responde con precisión a señales sociales y suele mostrar una actitud amable y vigilante. Conserva aptitudes de pastoreo, pero en la convivencia moderna destaca especialmente por su empatía, adaptabilidad y deseo de participar activamente junto a sus humanos.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es atento, receptivo y emocionalmente sensible. Observa con rapidez los cambios del entorno y de las personas, respondiendo mejor a contextos previsibles y a una comunicación clara. Posee inteligencia funcional y buena capacidad de aprendizaje, pero no necesita trabajar con la intensidad obsesiva de otros pastores especializados. Su disposición natural es cooperativa, amable y vigilante, con escasa tendencia a la confrontación. Puede mostrarse reservado ante situaciones nuevas, especialmente si la socialización es insuficiente, y las correcciones bruscas suelen afectar más su rendimiento que una guía tranquila, consistente y basada en refuerzo positivo."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Construye un vínculo estrecho y muy atento con su familia, buscando participar en la actividad cotidiana y mantenerse conectado con las señales de sus referentes. Su cooperación nace tanto del aprendizaje como de una fuerte sensibilidad social: observa gestos, tonos de voz y rutinas con notable precisión. Suele responder con entusiasmo a la aprobación y al trabajo compartido. Necesita una relación estable, afectuosa y coherente, porque la dureza innecesaria puede generar inhibición o inseguridad. Tolera cierta autonomía, pero prospera especialmente cuando se siente integrado y útil dentro del grupo."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Destaca por su combinación de inteligencia, sensibilidad, amabilidad y disposición para cooperar. Aprende con rapidez, suele adaptarse bien a la vida familiar y puede mantener una vigilancia atenta sin una agresividad marcada. Su capacidad para interpretar señales humanas facilita el entrenamiento y favorece una convivencia muy comunicativa. Puede disfrutar del juego, las caminatas, el aprendizaje de habilidades y actividades de pastoreo o deportivas, ofreciendo un equilibrio atractivo entre participación, elegancia conductual y cercanía afectiva."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su sensibilidad puede convertirse en inseguridad, vocalización o sobrealerta cuando vive con estímulos mal gestionados, rutinas caóticas o correcciones demasiado duras. Necesita socialización, ejercicio y trabajo mental suficientes para evitar conductas repetitivas o una vigilancia excesiva. El abundante pelaje requiere cepillado regular, pero este aspecto es secundario frente a su necesidad de estabilidad emocional y participación familiar. Conviene además considerar controles genéticos y oculares propios de la raza, especialmente relacionados con CEA y sensibilidad MDR1."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "Fue desarrollado a partir de perros pastores de Escocia y conserva una marcada capacidad para controlar y acompañar ganado mediante atención, movimiento y cooperación con el guía. Su inteligencia social y facilidad de aprendizaje también favorecen el desempeño en obediencia, rally, agility, pastoreo recreativo y aprendizaje de secuencias complejas. Más que resolver tareas desde una independencia extrema, destaca interpretando indicaciones humanas y ajustando su conducta con rapidez. Su combinación de sensibilidad, memoria y orientación al trabajo compartido constituye el núcleo de sus habilidades características."
-        }
-      ],
-      "imageUrl": "/images/breeds/collie-pelo-largo.webp",
-      "origen": "Reino Unido"
-    },
-    {
-      "id": "coton-de-tulear",
-      "breed": "Coton de Tuléar",
-      "title": "Coton de Tuléar: La Alegría Algodonosa de Madagascar",
-      "epithet": "La Alegría Algodonosa de Madagascar",
-      "fciGroup": "Grupo 9: Perros de Compañía",
-      "akcGroup": "Non-Sporting Group",
-      "archetypes": [
-        "Apego Frágil Afiliativo",
-        "Cooperación Humana Clásica"
-      ],
-      "motivations": [
-        "Afecto",
-        "Compañía",
-        "Juego"
-      ],
-      "traits": [
-        "Alegría",
-        "Ternura",
-        "Amabilidad",
-        "Inteligencia",
-        "Rusticidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Afecto",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Muy Alta",
-        "independencia_cognitiva": "Media-Baja"
-      },
-      "summary": "El Coton de Tuléar es un pequeño perro de compañía originario de Madagascar, alegre, estable y extraordinariamente sociable. Su psicología está fuertemente orientada hacia las personas: busca cercanía, participación y juego, pero conserva una notable capacidad de adaptación a distintas rutinas. Inteligente y expresivo, aprende con facilidad mediante interacción positiva. Su carácter combina afecto, vivacidad y suavidad emocional, convirtiendo la convivencia y el vínculo cotidiano en el centro de su comportamiento.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es alegre, equilibrado y abierto al contacto social. Tiende a aproximarse al entorno con curiosidad y una disposición amistosa, mostrando especial interés por las personas y otros perros. Posee una inteligencia despierta y una expresividad marcada, pero normalmente no necesita controlar el ambiente ni resolver tareas con independencia extrema. Puede alternar momentos de juego enérgico con periodos de calma, adaptándose bien al ritmo del hogar. Su sensibilidad social hace que responda especialmente a la atención, el tono de voz y la participación, por lo que una convivencia distante suele resultarle menos satisfactoria."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Forma un vínculo muy cercano y participativo con sus humanos, buscando acompañarlos y mantenerse integrado en sus actividades cotidianas. La proximidad, el afecto y la interacción funcionan como recompensas potentes, y suele aprender con facilidad cuando el entrenamiento se convierte en una experiencia compartida. No necesita una conducción rígida, sino una guía amable, coherente y suficientemente estimulante. Su fuerte orientación social hace recomendable enseñarle autonomía desde temprano, de modo que pueda permanecer solo durante periodos razonables sin convertir la ausencia de compañía en una fuente persistente de inquietud."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Destaca por su sociabilidad, adaptabilidad y capacidad para integrarse en estilos de vida diversos. Es afectuoso sin perder vivacidad, inteligente sin necesitar una actividad laboral intensa y suficientemente juguetón para mantener una convivencia dinámica. Suele responder bien al entrenamiento positivo y disfruta aprendiendo habilidades cuando existe interacción con su humano. Su estabilidad y apertura social facilitan la convivencia con personas y otros perros, especialmente cuando ha recibido una socialización adecuada desde joven."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su fuerte necesidad de compañía puede favorecer dependencia, vocalización o inquietud si nunca aprende a tolerar separaciones graduales. También puede convertirse en un perro demandante cuando descubre que insistir garantiza atención. Necesita juego, aprendizaje y participación cotidiana, pero también entrenamiento específico de calma y autonomía. Su largo manto algodonoso requiere cepillado frecuente para evitar nudos; fuera de este mantenimiento, el eje de su manejo debe estar en preservar un vínculo cercano sin fomentar una dependencia excesiva."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "El Coton de Tuléar se consolidó en Madagascar como perro de compañía, función que sigue definiendo gran parte de sus capacidades. Destaca por interpretar señales sociales, adaptarse a rutinas y aprender conductas mediante atención, juego y aprobación. Su inteligencia y agilidad también pueden aprovecharse en obediencia, rally, agility y aprendizaje de trucos. Más que especializarse en una tarea de trabajo autónomo, su fortaleza está en la interacción: mantiene la atención sobre las personas, responde con rapidez a la enseñanza y convierte la cooperación social en su principal herramienta de aprendizaje."
-        }
-      ],
-      "imageUrl": "/images/breeds/coton-de-tulear.webp",
-      "origen": "Madagascar"
-    },
-    {
-      "id": "fox-terrier-chileno",
-      "breed": "Fox Terrier Chileno",
-      "title": "Fox Terrier Chileno: El Pequeño Centinela de Chile",
-      "epithet": "El Pequeño Centinela de Chile",
-      "fciGroup": "Raza no reconocida por FCI",
-      "akcGroup": "Raza no reconocida por AKC",
-      "archetypes": [
-        "Terriers Instrumentales"
-      ],
-      "motivations": [
-        "Caza",
-        "Exploración",
-        "Atención"
-      ],
-      "traits": [
-        "Energía",
-        "Vigilancia",
-        "Tenacidad",
-        "Valentía",
-        "Rusticidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Caza",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Media",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "El Fox Terrier Chileno es un pequeño terrier originario de Chile, vivaz, alerta y profundamente curioso. Surgió de cruces entre Fox Terrier de Pelo Liso, Bodegueros Andaluces y perros locales, conservando una marcada aptitud para la caza de roedores y la vigilancia doméstica. Es activo, valiente y adaptable, con fuerte iniciativa propia. Su psicología combina rapidez de reacción, persistencia y lealtad, necesitando actividad, exploración y una relación cercana con su familia.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es despierto, valiente y muy atento al entorno. Detecta con rapidez sonidos, movimientos y cambios en el espacio, reaccionando con curiosidad y disposición inmediata a investigar. Conserva una fuerte iniciativa típica de los terriers, especialmente frente a estímulos pequeños y móviles que pueden activar conductas de persecución. Es vivaz sin ser necesariamente inestable y suele mostrar reserva frente a desconocidos mientras mantiene una relación cercana con su grupo. Necesita oportunidades para explorar, jugar y utilizar su energía de forma funcional, porque la falta de actividad puede convertir su vigilancia natural en inquietud o vocalización excesiva."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Forma un vínculo leal, cercano y participativo con su familia, pero conserva suficiente autonomía para actuar por iniciativa propia. Suele mantenerse pendiente de lo que ocurre alrededor de sus humanos y puede asumir espontáneamente un papel de aviso ante ruidos, visitas o situaciones inusuales. Aprende con rapidez cuando el entrenamiento es dinámico y tiene un propósito claro, aunque puede perder interés frente a repeticiones mecánicas. Responde mejor a una guía coherente, positiva y activa, capaz de canalizar su energía sin intentar eliminar la independencia que forma parte de su carácter terrier."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Destaca por su inteligencia práctica, valentía y enorme capacidad de adaptación. Puede desenvolverse con soltura tanto en ambientes urbanos como rurales, siempre que disponga de actividad suficiente. Su tamaño compacto contrasta con una personalidad decidida, activa y vigilante. Es un compañero participativo, buen avisador y un perro con gran disposición para juegos de búsqueda, exploración y aprendizaje. Su rusticidad y energía permiten integrarlo bien a familias que disfrutan de una convivencia dinámica."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su rapidez de reacción y fuerte impulso de persecución pueden dificultar la convivencia con pequeños animales si no existe manejo adecuado. También puede desarrollar ladridos frecuentes, conductas de vigilancia excesiva o intentos de escapar cuando el entorno resulta poco estimulante. Necesita ejercicio, exploración y entrenamiento de calma, no sólo actividad física. Su carácter decidido requiere límites consistentes desde joven. El pelo corto demanda poco mantenimiento, por lo que las principales exigencias de convivencia son conductuales y no de higiene."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "El Terrier Chileno se formó en los campos y asentamientos de Chile como cazador de ratones y otros pequeños roedores, además de cumplir funciones de vigilancia y compañía. Su agudo oído, rapidez de reacción y persistencia le permiten detectar movimientos con facilidad y actuar con decisión. Históricamente trabajó tanto en fundos como en entornos urbanos, adaptándose a tareas de control de alimañas. Estas capacidades también pueden canalizarse mediante juegos de olfato, búsqueda, agility y ejercicios que combinen velocidad, exploración y resolución de problemas."
-        }
-      ],
-      "imageUrl": "/images/breeds/fox-terrier-chileno.webp",
-      "origen": "Chile"
-    },
-    {
-      "id": "kuvasz",
-      "breed": "Kuvasz",
-      "title": "Kuvasz: El Guardián Blanco de Hungría",
-      "epithet": "El Guardián Blanco de Hungría",
-      "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
-      "akcGroup": "Working Group",
-      "archetypes": [
-        "Guardia Ancestral de Tiempo Largo",
-        "Protección Territorial Absoluta"
-      ],
-      "motivations": [
-        "Custodia",
-        "Protección territorial",
-        "Autonomía"
-      ],
-      "traits": [
-        "Independencia",
-        "Valentía",
-        "Lealtad",
-        "Calma",
-        "Dignidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Custodia",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Media-Baja",
-        "independencia_cognitiva": "Muy Alta"
-      },
-      "summary": "El Kuvasz es un antiguo perro guardián húngaro, poderoso, autónomo y profundamente comprometido con aquello que considera bajo su protección. Durante siglos custodió rebaños frente a depredadores y ladrones, tarea que favoreció una psicología independiente, paciente y capaz de tomar decisiones sin supervisión constante. Con su familia puede mostrarse afectuoso y leal, pero mantiene una reserva marcada ante desconocidos. Su calma es vigilante: observa, evalúa y actúa cuando considera que una amenaza lo justifica.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es seguro, atento y notablemente independiente. El Kuvasz no necesita permanecer en actividad continua para vigilar eficazmente: puede observar durante largos periodos y reservar su energía hasta detectar una situación relevante. Posee una fuerte capacidad para evaluar por sí mismo personas, movimientos y cambios dentro de su territorio, por lo que no responde siempre de manera automática a las indicaciones humanas. Con los suyos puede ser tranquilo y afectuoso, mientras que frente a desconocidos suele adoptar una actitud reservada y analítica. Su valentía aparece acompañada de criterio propio más que de impulsividad."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Forma un vínculo profundo y protector con su familia, aunque mantiene una autonomía considerable incluso dentro de relaciones muy cercanas. No depende de la aprobación humana constante para tomar decisiones y puede interpretar una situación de manera diferente a su guía si considera que existe una amenaza. Necesita una relación basada en confianza, coherencia y límites claros desde joven. La confrontación directa suele ser poco productiva con una personalidad tan segura e independiente. Una buena socialización le permite distinguir con mayor precisión entre situaciones normales y aquellas que realmente requieren vigilancia o intervención."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Su principal fortaleza es la combinación de estabilidad, valentía y capacidad para proteger sin necesitar supervisión continua. Puede permanecer tranquilo durante largos periodos mientras mantiene conocimiento de lo que ocurre a su alrededor. Es profundamente leal con su núcleo y posee suficiente seguridad para actuar frente a situaciones difíciles sin depender constantemente de instrucciones. Su inteligencia autónoma, resistencia y paciencia hacen del Kuvasz un guardián excepcional cuando vive con personas capaces de comprender y canalizar correctamente su naturaleza protectora."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su autonomía y fuerte instinto de custodia pueden convertirse en problemas cuando carece de socialización, límites territoriales o una guía experimentada. Puede desconfiar de desconocidos, decidir por sí mismo cuándo una situación merece intervención y mostrarse poco interesado en obedecer órdenes que considera innecesarias. Necesita espacio seguro, educación temprana y exposición controlada a personas y contextos diversos. Por su gran tamaño también conviene controlar salud articular y condición física, pero el desafío principal de convivencia sigue siendo comprender y manejar correctamente su independencia protectora."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "El Kuvasz llegó con los magiares a la cuenca de los Cárpatos y durante siglos acompañó rebaños, protegiéndolos de depredadores y ladrones mediante vigilancia, disuasión y acción autónoma. También fue utilizado históricamente para la caza y la protección de propiedades y personas. Su especialidad consiste en permanecer atento sin instrucciones permanentes, evaluar amenazas y decidir cuándo intervenir. Esa capacidad de custodia independiente, acompañada de valentía, resistencia y paciencia, explica tanto su extraordinaria eficacia como guardián como las exigencias particulares que plantea su convivencia moderna."
-        }
-      ],
-      "imageUrl": "/images/breeds/kuvasz.webp",
-      "origen": "Hungría"
-    },
-    {
-      "id": "mastin-ingles",
-      "breed": "Mastín Inglés",
-      "title": "Mastín Inglés: La Fortaleza Serena",
-      "epithet": "La Fortaleza Serena",
-      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
-      "akcGroup": "Working Group",
-      "archetypes": [
-        "Contención Pesada / Calma Profunda"
-      ],
-      "motivations": [
-        "Familia",
-        "Protección",
-        "Reposo"
-      ],
-      "traits": [
-        "Calma",
-        "Lealtad",
-        "Paciencia",
-        "Dignidad",
-        "Valentía"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Familia y protección",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Selectiva",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "El Mastín Inglés es un moloso británico de enorme presencia, temperamento sereno y fuerte apego a su familia. Su psicología combina dignidad, paciencia y valentía con una tendencia natural a observar antes de intervenir. No necesita una actividad constante para mantenerse equilibrado y suele mostrarse indiferente o reservado con desconocidos. Su capacidad protectora nace más de la seguridad, la presencia física y la estabilidad emocional que de una vigilancia nerviosa o una reacción impulsiva.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es calmado, afectuoso y seguro, con una notable capacidad para mantenerse estable frente a estímulos cotidianos. Tiende a evaluar antes de actuar y rara vez necesita responder con rapidez si no percibe una amenaza real. Esa combinación de serenidad, masa física y valentía encaja especialmente con la Contención Pesada / Calma Profunda. Puede mostrarse indiferente con extraños, pero mantiene una atención suficiente para proteger cuando considera necesario. Su carácter no debe confundirse con pasividad: detrás de su ritmo pausado existe determinación, sensibilidad hacia su familia y una fuerte conciencia de su propia presencia."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Forma un vínculo profundo, estable y afectuoso con su familia, buscando cercanía sin necesidad de una interacción permanente. Suele disfrutar de permanecer próximo a sus humanos y participar de la vida doméstica desde una presencia tranquila. Responde mejor a una guía paciente, coherente y respetuosa que a métodos duros o repetitivos. Por su enorme tamaño, necesita aprender desde joven autocontrol, manejo corporal y normas claras de convivencia. Su relación ideal no se basa en obediencia mecánica, sino en confianza, previsibilidad y una estructura cotidiana que le permita sentirse seguro."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Su principal fortaleza es la combinación de calma, lealtad y poder contenido. Puede convivir con gran serenidad en el hogar, mostrar paciencia con su grupo y ofrecer una presencia naturalmente disuasoria sin permanecer en estado de alerta constante. Su estabilidad emocional favorece respuestas más medidas que impulsivas y su fuerte orientación familiar puede convertirlo en un compañero profundamente cercano. Para quienes valoran perros tranquilos, afectuosos y seguros, ofrece una convivencia de enorme presencia pero generalmente poco frenética."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su tamaño convierte cualquier problema de manejo en algo importante: saltos, tirones, miedo, sobreprotección o falta de autocontrol pueden ser difíciles de corregir en la adultez. Necesita socialización temprana para que su reserva natural no evolucione hacia desconfianza excesiva. Puede ser obstinado ante ejercicios repetitivos y no tolera bien una educación basada en confrontación. El peso corporal también exige cuidar articulaciones, condición física y alimentación, pero estos aspectos son secundarios frente a la necesidad de educación, estabilidad y manejo responsable."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "El Mastín surgió en las Islas Británicas como un gran perro de guarda, protección y, en distintos periodos históricos, apoyo en actividades de caza y defensa. Su función moderna se relaciona principalmente con la compañía y la protección del hogar mediante presencia, seguridad y capacidad disuasoria. No destaca por velocidad ni por trabajo repetitivo de alta intensidad; su fortaleza está en permanecer estable, interpretar situaciones y responder con firmeza cuando es necesario. Su combinación de tamaño, autocontrol y valentía constituye la esencia funcional de la raza."
-        }
-      ],
-      "imageUrl": "/images/breeds/mastin-ingles.webp",
-      "origen": "Reino Unido"
-    },
-    {
-      "id": "mastin-tibetano",
-      "breed": "Mastín Tibetano",
-      "title": "Mastín Tibetano: El Guardián del Techo del Mundo",
-      "epithet": "El Guardián del Techo del Mundo",
-      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
-      "akcGroup": "Working Group",
-      "archetypes": [
-        "Guardia Ancestral de Tiempo Largo",
-        "Protección Territorial Absoluta",
-        "Autonomía Primitiva / Dignidad"
-      ],
-      "motivations": [
-        "Territorialidad",
-        "Custodia",
-        "Autonomía"
-      ],
-      "traits": [
-        "Independencia",
-        "Dignidad",
-        "Reserva",
-        "Calma",
-        "Valentía"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Custodia territorial",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Selectiva",
-        "independencia_cognitiva": "Muy Alta"
-      },
-      "summary": "El Mastín Tibetano es un antiguo guardián del Tíbet, poderoso, reservado y profundamente independiente. Seleccionado para proteger hogares, campamentos y monasterios, combina una calma imponente con una vigilancia territorial persistente. Se muestra leal con su grupo y distante con los extraños, tomando decisiones con criterio propio. Su psicología está marcada por la autonomía, la dignidad y la custodia: observa durante largos periodos y actúa con firmeza cuando considera que su territorio o los suyos están amenazados.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es sereno, vigilante y autosuficiente. Puede permanecer tranquilo durante largos periodos, pero conserva una atención constante sobre el perímetro y suele intensificar su actividad de guardia al anochecer. No reacciona por necesidad de estímulo continuo, sino por evaluación propia de aquello que considera relevante. Es fuerte de carácter, reservado con desconocidos y poco inclinado a obedecer de manera automática. Su combinación de vigilancia prolongada, territorialidad y decisión independiente lo sitúa entre la Guardia Ancestral de Tiempo Largo, la Protección Territorial Absoluta y la Autonomía Primitiva/Dignidad."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Forma vínculos sólidos y leales con su familia, pero mantiene una independencia poco compatible con relaciones basadas en obediencia constante o búsqueda permanente de aprobación. Puede ser afectuoso con los suyos sin perder distancia ni criterio propio. Tiende a asumir responsabilidades de vigilancia sobre personas, animales y territorio, interpretando el entorno según sus propios parámetros. Necesita una guía experimentada, calmada y coherente, junto con socialización temprana y límites claros. La confianza funciona mejor que la confrontación, porque su fuerza de voluntad puede convertir una disputa directa en resistencia sostenida."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Su principal fortaleza es una capacidad de custodia extraordinaria combinada con calma y autocontrol. Su tamaño, voz y presencia ejercen una potente disuasión sin necesidad de actividad constante. Es leal con su núcleo, resistente al frío y capaz de observar durante periodos prolongados antes de actuar. Su autonomía le permite desenvolverse sin instrucciones continuas y su reserva frente a desconocidos puede resultar valiosa en contextos donde se busca un verdadero perro guardián."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "No es una raza sencilla para propietarios sin experiencia. Su territorialidad, enorme fuerza física e independencia exigen socialización temprana, manejo responsable y límites muy seguros. Puede mostrarse poco receptivo a órdenes repetitivas, ampliar por iniciativa propia el territorio que considera suyo y vocalizar con intensidad, especialmente de noche. El abundante manto requiere mantenimiento y tolera mal los climas cálidos. Como perro de gran tamaño, también necesita atención preventiva frente a problemas articulares y otras patologías asociadas a razas grandes."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "Durante siglos fue utilizado como guardián de hogares, campamentos y monasterios tibetanos, y la FCI lo define actualmente como perro de compañía, guardia y protección. Su trabajo tradicional exigía detectar intrusos, controlar accesos y defender aquello que consideraba bajo su custodia sin depender de instrucciones humanas continuas. Destaca por su vigilancia territorial, resistencia a condiciones frías, potente ladrido y capacidad de intimidación. Su especialidad no es ejecutar órdenes complejas, sino evaluar el entorno de manera autónoma, advertir primero y responder con determinación cuando interpreta una amenaza real."
-        }
-      ],
-      "imageUrl": "/images/breeds/mastin-tibetano.webp",
-      "origen": "Tíbet"
-    },
-    {
-      "id": "norfolk-terrier",
-      "breed": "Norfolk Terrier",
-      "title": "Norfolk Terrier: El Pequeño Aventurero de Norfolk",
-      "epithet": "El Pequeño Aventurero de Norfolk",
-      "fciGroup": "Grupo 3: Terriers",
-      "akcGroup": "Terrier Group",
-      "archetypes": [
-        "Terriers Instrumentales"
-      ],
-      "motivations": [
-        "Caza",
-        "Exploración",
-        "Juego"
-      ],
-      "traits": [
-        "Valentía",
-        "Tenacidad",
-        "Energía",
-        "Amabilidad",
-        "Curiosidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Caza",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Alta",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "El Norfolk Terrier es un pequeño terrier británico, intrépido, sociable y lleno de iniciativa. Surgió en el este de Inglaterra como perro de granja capaz de controlar roedores y trabajar frente a presas mayores en madrigueras. Su psicología combina curiosidad, valentía y persistencia con una disposición sorprendentemente amistosa. Es activo, atento y muy participativo, pero conserva suficiente independencia para investigar, perseguir y resolver situaciones por cuenta propia.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es despierto, seguro y decidido. Tiende a investigar rápidamente aquello que llama su atención y posee una respuesta especialmente intensa frente a movimientos, rastros y oportunidades de persecución. Aunque es uno de los terriers más pequeños, su conducta no es tímida: históricamente debía entrar en madrigueras y sostener el trabajo incluso ante adversarios difíciles. Al mismo tiempo, suele mostrar una sociabilidad mayor que la imagen clásica del terrier pendenciero. Puede ser juguetón, curioso y afectuoso, pero necesita actividad y exploración para que su energía encuentre una salida funcional."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Forma un vínculo leal, cercano y alegre con su familia, disfrutando tanto del contacto como de las actividades compartidas. Suele responder bien al entrenamiento cuando las sesiones son dinámicas, breves y acompañadas de recompensas significativas. Sin embargo, conserva una mente terrier: puede abandonar una instrucción si aparece un olor, movimiento o estímulo que considera más interesante. Necesita una guía coherente que trabaje especialmente llamada, autocontrol y capacidad de desconexión. La relación funciona mejor cuando puede participar activamente sin perder oportunidades de explorar y tomar pequeñas decisiones por sí mismo."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Destaca por reunir valentía, sociabilidad y una gran capacidad de adaptación en un cuerpo muy pequeño. Es curioso, resistente y dispuesto a participar en juegos, caminatas y entrenamiento, manteniendo además una relación afectuosa con su familia. Su seguridad y entusiasmo facilitan una convivencia dinámica sin exigir la intensidad física de terriers de mayor tamaño. Cuando dispone de actividad suficiente, puede alternar exploración y juego con una presencia doméstica cercana y agradable."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su impulso de persecución puede activarse con rapidez frente a roedores y otros animales pequeños, por lo que la llamada y el manejo en espacios abiertos requieren trabajo constante. El aburrimiento puede favorecer excavación, ladridos o búsquedas insistentes de estímulos. También puede mostrarse obstinado cuando una tarea carece de interés. Necesita socialización, ejercicio y entrenamiento de autocontrol. Su manto áspero requiere cepillado y mantenimiento periódico, aunque estas demandas son secundarias frente a sus necesidades conductuales."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "El Norfolk Terrier se formó en el este de Inglaterra a partir de pequeños terriers de granja utilizados para controlar ratas y trabajar sobre zorros y tejones. Su tamaño le permitía entrar en madrigueras, mientras su valentía y persistencia sostenían el trabajo frente a animales mucho mayores. También podía trabajar solo o junto a otros perros. Actualmente esas aptitudes aparecen en juegos de búsqueda, rastreo, deportes de tierra, agility y actividades que aprovechan su curiosidad, velocidad de reacción y determinación para perseguir objetivos."
-        }
-      ],
-      "imageUrl": "/images/breeds/norfolk-terrier.webp",
-      "origen": "Reino Unido"
-    },
-    {
-      "id": "pastor-americano-miniatura",
-      "breed": "Pastor Americano Miniatura",
-      "title": "Pastor Americano Miniatura: El Pastor Compacto de Mirada Atenta",
-      "epithet": "El Pastor Compacto de Mirada Atenta",
-      "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
-      "akcGroup": "Herding Group",
-      "archetypes": [
-        "Cooperación Humana Clásica",
-        "Inteligencia Funcional Obsesiva"
-      ],
-      "motivations": [
-        "Trabajo conjunto",
-        "Desafío mental",
-        "Movimiento coordinado"
-      ],
-      "traits": [
-        "Inteligencia",
-        "Energía",
-        "Vigilancia",
-        "Foco",
-        "Lealtad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Trabajo conjunto",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Media",
-        "independencia_cognitiva": "Media-Alta"
-      },
-      "summary": "El Pastor Americano Miniatura es un pequeño perro pastor estadounidense, ágil, inteligente y fuertemente orientado al trabajo conjunto. Surgió en California a partir de ejemplares pequeños de Pastor Australiano, conservando buena parte de su energía, capacidad de aprendizaje y aptitud para el pastoreo. Es atento, leal y muy participativo, con una mente que necesita objetivos. Combina cooperación con iniciativa propia y suele mantenerse pendiente tanto de su guía como de los movimientos del entorno.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es activo, atento y altamente receptivo al aprendizaje. Detecta cambios con rapidez, anticipa movimientos y suele involucrarse de inmediato cuando percibe una tarea, un juego o una oportunidad de interacción. Posee una inteligencia práctica estrechamente ligada al movimiento y al control del entorno, herencia directa de su función pastoril. Puede mostrarse reservado con desconocidos sin ser tímido y necesita una socialización adecuada para mantener respuestas equilibradas. Su energía mental es considerable: cuando carece de objetivos puede inventar actividades propias, vigilar en exceso o intentar controlar movimientos dentro del hogar."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Forma un vínculo estrecho y cooperativo con su humano, al que observa con atención y utiliza como referencia durante el trabajo y la vida cotidiana. Aprende rápidamente patrones, gestos y rutinas, por lo que responde especialmente bien a una guía clara, dinámica y consistente. Busca participar más que limitarse a recibir afecto: necesita actividades compartidas, entrenamiento y oportunidades para resolver situaciones. Aunque mantiene iniciativa propia, su orientación social es marcada. Puede desarrollar conductas demandantes o excesiva dependencia del guía si toda su estimulación depende exclusivamente de la interacción humana."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Destaca por su versatilidad, rapidez de aprendizaje y disposición para trabajar junto a las personas. Su tamaño compacto conserva una notable capacidad atlética y le permite adaptarse a distintos contextos sin perder funcionalidad. Disfruta aprendiendo, resolviendo problemas y participando en actividades dinámicas, lo que facilita una convivencia muy enriquecedora para personas activas. Su atención al entorno, lealtad y sensibilidad hacia el guía permiten construir una comunicación precisa y un repertorio conductual amplio."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su inteligencia y energía requieren dedicación real: la falta de ejercicio, desafíos mentales o estructura puede favorecer ladridos, persecución de movimientos, conductas de pastoreo hacia personas u otros animales y dificultad para relajarse. Su sensibilidad ambiental también puede traducirse en sobrealerta si no aprende a desconectarse. Necesita entrenamiento de calma además de actividad. En salud conviene mantener controles oculares y articulares y considerar posibles sensibilidades hereditarias a ciertos medicamentos, sin convertir estos cuidados en el eje de su manejo cotidiano."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "Surgió en California durante la segunda mitad del siglo XX a partir de perros Pastor Australiano de menor tamaño, conservando capacidad para trabajar con ganado y desenvolverse como compañero activo. Puede reunir y mover ovejas, cabras y animales mayores mediante atención, presión espacial y movimiento coordinado. Su rapidez mental y agilidad también favorecen disciplinas como agility, obediencia, rally, pruebas de pastoreo y aprendizaje de habilidades complejas. Su principal fortaleza funcional es combinar cooperación estrecha con iniciativa suficiente para responder rápidamente a situaciones cambiantes."
-        }
-      ],
-      "imageUrl": "/images/breeds/pastor-americano-miniatura.webp",
-      "origen": "Estados Unidos"
-    },
-    {
-      "id": "perro-de-montana-de-los-pirineos",
-      "breed": "Perro de Montaña de los Pirineos",
-      "title": "Perro de Montaña de los Pirineos: El Centinela Blanco de las Alturas",
-      "epithet": "El Centinela Blanco de las Alturas",
-      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
-      "akcGroup": "Working Group",
-      "archetypes": [
-        "Guardia Ancestral de Tiempo Largo",
-        "Protección Territorial Absoluta"
-      ],
-      "motivations": [
-        "Custodia",
-        "Protección territorial",
-        "Autonomía"
-      ],
-      "traits": [
-        "Calma",
-        "Independencia",
-        "Paciencia",
-        "Protección",
-        "Valentía"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Alto",
-        "motivacion_intrinseca": "Custodia autónoma del rebaño y territorio",
-        "resiliencia_emocional": "Muy Alta",
-        "sociabilidad": "Media-Selectiva",
-        "independencia_cognitiva": "Muy Alta"
-      },
-      "summary": "El Perro de Montaña de los Pirineos es un gran guardián de rebaños francés, sereno, poderoso y profundamente autónomo. Seleccionado durante siglos para vigilar ganado en zonas montañosas, combina una presencia tranquila con una vigilancia territorial constante. Su temperamento es paciente y afectuoso con su grupo, pero reservado ante extraños. Piensa por sí mismo, administra su energía con economía y puede pasar de la calma absoluta a una intervención firme cuando percibe una amenaza real.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es tranquilo, seguro y observador. No necesita actividad constante para mantenerse equilibrado: puede permanecer largos periodos en aparente reposo mientras supervisa el entorno y conserva energía. Esa economía conductual encaja con la Guardia Ancestral de Tiempo Largo, mientras su fuerte conciencia del perímetro aproxima su conducta a la Protección Territorial Absoluta. Es paciente y tolerante con aquello que reconoce como propio, pero conserva una notable reserva frente a desconocidos. Su independencia no es desinterés ni falta de inteligencia; responde a una selección histórica que favoreció la toma autónoma de decisiones ante posibles amenazas."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Desarrolla una relación profunda de pertenencia y protección con su familia, pero no basa su estabilidad en obedecer de forma constante ni en buscar aprobación continua. Tiende a considerar a sus humanos, animales y espacio cotidiano como un conjunto que debe vigilar. Puede ser afectuoso y cercano, aunque conserva criterio propio y una fuerte autonomía decisional. Necesita una guía serena, coherente y paciente, capaz de establecer límites sin recurrir a confrontaciones. La educación funciona mejor cuando existe confianza, previsibilidad y respeto por una mente seleccionada para actuar sin instrucciones permanentes."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Aporta una combinación poco común de calma doméstica, paciencia y capacidad protectora. Su presencia física resulta fuertemente disuasoria, pero su estrategia habitual consiste en observar, advertir y administrar el espacio antes que reaccionar de manera impulsiva. Puede convivir con gran cercanía con su familia y con animales que reconoce como parte de su grupo. Su resistencia climática, estabilidad emocional y autonomía le permiten mantener una vigilancia prolongada sin requerir estimulación o supervisión humana constantes."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su independencia puede resultar difícil para quien espera obediencia inmediata y repetitiva. La vigilancia territorial suele expresarse mediante ladridos potentes, especialmente durante la noche, y necesita límites físicos seguros porque su impulso de patrullar puede llevarlo a ampliar su perímetro. El gran tamaño y el abundante manto doble aumentan las exigencias de espacio, cepillado y manejo del calor. También conviene vigilar especialmente la salud articular y los riesgos asociados a perros de gran talla, incluida la dilatación-torsión gástrica."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "Fue desarrollado como guardián pastoral de montaña, trabajando junto a rebaños y tomando decisiones sin supervisión humana continua frente a depredadores o intrusos. Su especialidad no es conducir el ganado, sino permanecer con él, patrullar grandes perímetros y detectar alteraciones a distancia. Combina resistencia al clima frío, vigilancia prolongada, ladrido de advertencia y una poderosa presencia disuasoria. Históricamente también fue utilizado como guardián de castillos. Su habilidad central sigue siendo proteger mediante observación, prevención y autonomía, interviniendo con firmeza cuando la amenaza supera la fase de advertencia."
-        }
-      ],
-      "imageUrl": "/images/breeds/perro-de-montana-de-los-pirineos.webp",
-      "origen": "Francia"
-    },
-    {
-      "id": "schipperke",
-      "breed": "Schipperke",
-      "title": "Schipperke: El Pequeño Centinela Negro",
-      "epithet": "El Pequeño Centinela Negro",
-      "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
-      "akcGroup": "Non-Sporting Group",
-      "archetypes": [
-        "Terriers Instrumentales",
-        "Protección Territorial Absoluta"
-      ],
-      "motivations": [
-        "Custodia",
-        "Exploración",
-        "Acción"
-      ],
-      "traits": [
-        "Vigilancia",
-        "Energía",
-        "Independencia",
-        "Inteligencia",
-        "Lealtad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Bajo",
-        "motivacion_intrinseca": "Custodia y exploración",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Media",
-        "independencia_cognitiva": "Alta"
-      },
-      "summary": "El Schipperke es un pequeño perro belga de carácter intenso, curioso y extraordinariamente vigilante. Bajo su silueta compacta existe una personalidad segura, independiente y siempre pendiente de lo que ocurre a su alrededor. Históricamente combinó funciones de guarda y control de alimañas, rasgos que todavía aparecen en su rapidez para investigar, avisar y actuar. Es leal con su familia, reservado con desconocidos y necesita actividad, exploración y objetivos que mantengan ocupada su mente.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es vivaz, seguro y permanentemente curioso. El Schipperke presta atención a movimientos, sonidos y novedades con enorme rapidez, investigando aquello que despierta su interés en lugar de esperar pasivamente indicaciones humanas. Posee iniciativa propia, confianza y una tendencia natural a vigilar el espacio que considera suyo. Su antigua función como controlador de roedores también aporta persistencia, velocidad de reacción y gusto por perseguir pequeños estímulos móviles. Aunque puede relajarse en casa cuando sus necesidades están cubiertas, conserva una mente activa que busca información y oportunidades para intervenir."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Construye un vínculo leal y participativo con su familia, pero conserva una independencia considerable. Disfruta acompañar, jugar y compartir actividades sin convertirse necesariamente en un perro que espere instrucciones para cada decisión. Suele estar pendiente de los movimientos de sus humanos y puede asumir espontáneamente un papel de aviso ante cualquier novedad. Aprende con rapidez, aunque su inteligencia también le permite cuestionar ejercicios repetitivos o buscar alternativas propias. Necesita una guía coherente, dinámica y positiva, capaz de canalizar su iniciativa sin intentar eliminar la autonomía que forma parte central de su personalidad."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Aporta una combinación notable de inteligencia, energía y vigilancia en un cuerpo pequeño y resistente. Es curioso, aprende con rapidez y suele involucrarse con entusiasmo en juegos, entrenamiento y exploraciones. Su atención al entorno lo convierte en un excelente perro de aviso, mientras que su lealtad favorece una relación estrecha con su familia. Para personas activas que disfrutan de un perro despierto y participativo, ofrece mucha personalidad, versatilidad y capacidad de aprendizaje sin necesitar un gran tamaño físico."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su vigilancia constante puede traducirse en ladridos frecuentes o una atención excesiva hacia ruidos, visitas y movimientos si no aprende a desconectarse. La independencia y curiosidad también pueden favorecer escapadas, persecución de animales pequeños o poca disposición a obedecer órdenes sin sentido para él. Necesita actividad física y mental regular. En salud conviene considerar controles de rótulas, ojos y tiroides, además de pruebas genéticas para la mucopolisacaridosis tipo IIIB, una enfermedad hereditaria que afecta progresivamente al sistema nervioso."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "El Schipperke surgió en Bélgica a partir de antiguos perros pastores de pequeño tamaño y fue apreciado como guardián doméstico y cazador de ratones, ratas y otras alimañas. Esa combinación funcional todavía se refleja en su vigilancia, rapidez de reacción y persistencia frente a estímulos móviles. Puede destacar en agility, obediencia, rally, rastreo y deportes que premien agilidad e iniciativa. Su habilidad más característica es detectar rápidamente cambios en el entorno y decidir intervenir, alternando entre exploración activa, persecución y aviso territorial con una autonomía muy marcada para su tamaño."
-        }
-      ],
-      "imageUrl": "/images/breeds/schipperke.webp",
-      "origen": "Bélgica"
-    },
-    {
-      "id": "soft-coated-wheaten-terrier",
-      "breed": "Soft Coated Wheaten Terrier",
-      "title": "Soft Coated Wheaten Terrier: El Terrier de Espíritu Alegre",
-      "epithet": "El Terrier de Espíritu Alegre",
-      "fciGroup": "Grupo 3: Terriers",
-      "akcGroup": "Terrier Group",
-      "archetypes": [
-        "Terriers Instrumentales",
-        "Cooperación Humana Clásica"
-      ],
-      "motivations": [
-        "Caza",
-        "Trabajo",
-        "Compañía"
-      ],
-      "traits": [
-        "Alegría",
-        "Ternura",
-        "Amabilidad",
-        "Rusticidad",
-        "Tenacidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio",
-        "motivacion_intrinseca": "Trabajo",
-        "resiliencia_emocional": "Alta",
-        "sociabilidad": "Alta",
-        "independencia_cognitiva": "Media"
-      },
-      "summary": "El Soft Coated Wheaten Terrier es un terrier irlandés alegre, afectuoso y versátil, cuya historia estuvo ligada al trabajo cotidiano en granjas. Combina la energía y persistencia propias de los terriers con una sociabilidad especialmente marcada y una fuerte orientación hacia su familia. Es curioso, inteligente y participativo, disfruta aprender y mantenerse activo, pero también busca cercanía. Su equilibrio depende de combinar ejercicio, interacción social y oportunidades para explorar y resolver pequeñas tareas.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es vivaz, seguro y amistoso. Mantiene la curiosidad y la iniciativa propias de un terrier, pero suele expresarlas con una sociabilidad más abierta que la de muchas razas del grupo. Explora, investiga y responde con rapidez a oportunidades de juego o actividad, aunque conserva suficiente estabilidad para adaptarse a la convivencia familiar. Es inteligente y puede mostrarse obstinado cuando una tarea pierde sentido o resulta repetitiva. Necesita movimiento, novedades y participación cotidiana, pero también aprende a relajarse cuando cuenta con una rutina clara y suficiente estimulación."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Construye un vínculo cercano, alegre y muy participativo con su familia. Suele buscar contacto, acompañar actividades y responder con entusiasmo a la atención de sus humanos. La cooperación funciona especialmente bien cuando el aprendizaje incorpora juego, movimiento y recompensas claras. Aunque puede tomar decisiones por iniciativa propia, no es un perro distante: disfruta sentirse incluido y tiende a mantener una referencia frecuente hacia sus personas. Necesita una guía coherente y positiva que canalice su energía sin entrar en confrontaciones innecesarias, especialmente frente a la obstinación típica que puede aparecer en los terriers."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Destaca por combinar energía, sociabilidad y adaptabilidad en un temperamento generalmente alegre. Puede disfrutar de caminatas, juegos, entrenamiento y actividades familiares sin necesitar una función especializada para sentirse involucrado. Su inteligencia facilita el aprendizaje y su disposición amistosa suele favorecer una convivencia cercana con personas. Conserva además suficiente iniciativa y resistencia para afrontar actividades variadas, lo que lo convierte en un compañero versátil para hogares activos que disfrutan de un perro expresivo y participativo."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su energía y curiosidad pueden convertirse en inquietud, persecución o conductas destructivas cuando carece de actividad y desafíos suficientes. El instinto terrier puede aparecer frente a animales pequeños, y su entusiasmo requiere trabajar autocontrol desde joven. También puede desarrollar hábitos demandantes si aprende que insistir siempre produce atención. Su manto necesita cepillado frecuente, y conviene mantener controles veterinarios por algunas predisposiciones hereditarias renales y digestivas, aunque el principal reto cotidiano sigue siendo canalizar adecuadamente su energía e iniciativa."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "El Soft Coated Wheaten Terrier surgió en Irlanda como un perro de granja polivalente. Ayudaba a controlar alimañas, participaba en la caza de pequeños animales, vigilaba propiedades y podía colaborar con el manejo de ganado. Esa versatilidad todavía aparece en su disposición para perseguir objetivos, aprender y trabajar junto a las personas. Actualmente puede disfrutar de agility, obediencia, rally, rastreo y juegos de búsqueda. Su fortaleza funcional está en combinar iniciativa terrier, resistencia y cooperación social dentro de actividades variadas y dinámicas."
-        }
-      ],
-      "imageUrl": "/images/breeds/soft-coated-wheaten-terrier.webp",
-      "origen": "Irlanda"
-    },
-    {
-      "id": "spitz-japones",
-      "breed": "Spitz Japonés",
-      "title": "Spitz Japonés: La Alegría Blanca de Japón",
-      "epithet": "La Alegría Blanca de Japón",
-      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
-      "akcGroup": "Foundation Stock Service (FSS)",
-      "archetypes": [
-        "Cooperación Humana Clásica"
-      ],
-      "motivations": [
-        "Afecto",
-        "Compañía",
-        "Aprobación social"
-      ],
-      "traits": [
-        "Alegría",
-        "Ternura",
-        "Inteligencia",
-        "Vigilancia",
-        "Amabilidad"
-      ],
-      "sourceValues": null,
-      "metrics": {
-        "umbral_de_estimulacion": "Medio-Bajo",
-        "motivacion_intrinseca": "Compañía, interacción y aprobación social",
-        "resiliencia_emocional": "Media-Alta",
-        "sociabilidad": "Alta – Afiliativa",
-        "independencia_cognitiva": "Media-Baja"
-      },
-      "summary": "El Spitz Japonés es un perro de compañía vivaz, inteligente y profundamente orientado a las personas. Desarrollado en Japón a partir de líneas de spitz blancos, combina alegría, atención al entorno y una marcada disposición a compartir actividades con su familia. Su psicología es sociable y adaptable: busca interacción, aprende con rapidez y suele mantenerse alerta sin perder estabilidad. Necesita cercanía, juego y participación cotidiana para expresar plenamente su carácter luminoso y cooperativo.",
-      "sections": [
-        {
-          "title": "Personalidad",
-          "sourceLevel": 1,
-          "content": "Su temperamento base es alegre, despierto y seguro, con una sensibilidad ambiental suficiente para detectar cambios sin convertir necesariamente cada estímulo en una reacción desbordada. Tiende a observar, acercarse e involucrarse, mostrando curiosidad y rapidez para aprender reglas sociales y rutinas. Su inteligencia funciona mejor en interacción con las personas que en tareas autónomas prolongadas. Conserva cierta iniciativa propia típica de los spitz, pero su selección como perro de compañía favoreció una personalidad mucho más afiliativa y flexible que la de razas primitivas marcadamente independientes. La sociabilidad bien desarrollada suele acompañarse de una actitud juguetona y expresiva."
-        },
-        {
-          "title": "El vínculo con su humano",
-          "sourceLevel": 1,
-          "content": "Forma un vínculo cercano, leal y participativo con su familia. No se limita a buscar contacto físico: disfruta especialmente ser incluido en paseos, juegos, entrenamiento y actividades cotidianas, utilizando la interacción humana como fuente de motivación. Su atención hacia el guía facilita el aprendizaje mediante refuerzo positivo y sesiones breves y variadas. Puede tolerar momentos de autonomía, pero no prospera con aislamiento prolongado o una convivencia distante. Necesita sentirse parte activa del grupo y responde mejor a una guía amable, coherente y predecible que a métodos duros o excesivamente repetitivos."
-        },
-        {
-          "title": "Lo positivo",
-          "sourceLevel": 1,
-          "content": "Destaca por combinar tamaño manejable, inteligencia, alegría y una elevada capacidad de adaptación social. Suele integrarse bien a diferentes rutinas familiares y puede disfrutar tanto de actividades dinámicas como de momentos tranquilos en casa. Aprende con rapidez, busca cooperación y mantiene una vigilancia útil sobre el entorno sin requerir una función de trabajo especializada. Su carácter expresivo, afectuoso y participativo favorece una convivencia muy interactiva con personas que disfrutan involucrar al perro en su vida diaria."
-        },
-        {
-          "title": "Lo negativo",
-          "sourceLevel": 1,
-          "content": "Su necesidad de interacción y estimulación puede transformarse en frustración, ladridos de aviso o conductas demandantes si pasa demasiado tiempo sin actividad o compañía. Su inteligencia también facilita que aprenda hábitos inconvenientes cuando recibe atención por ellos. Conviene trabajar desde temprano la calma, la autonomía y el control de la vocalización. El abundante manto blanco requiere cepillado periódico, aunque el mantenimiento físico no es especialmente complejo. La socialización insuficiente puede volver más marcada su cautela o respuesta de alerta ante novedades."
-        },
-        {
-          "title": "Habilidades características",
-          "sourceLevel": 1,
-          "content": "Aunque fue desarrollado principalmente como perro de compañía y no para una función laboral específica, posee una notable facilidad para aprender secuencias, trucos y ejercicios de obediencia mediante interacción social. Su agilidad, vivacidad y deseo de participar pueden trasladarse bien a actividades recreativas como rally, agility, juegos de búsqueda y aprendizaje de habilidades. También funciona como un buen avisador doméstico gracias a su atención al entorno. Su principal capacidad funcional es la plasticidad: adapta su conducta rápidamente a rutinas, contextos y tareas cuando existe una relación cooperativa con su guía."
-        }
-      ],
-      "imageUrl": "/images/breeds/spitz-japones.webp",
-      "origen": "Japón"
-    }
-  ],
-  "archetypes": [
-    {
-      "id": "apego-extremo-fusion-emocional",
-      "number": 1,
-      "title": "Apego Extremo (Fusión Emocional)",
-      "signature": "Regulación Externalizada / Homeostasis Simbiótica.",
-      "summary": "Firma Sistémica: Regulación Externalizada / Homeostasis Simbiótica.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 1,
-          "content": "Su identidad está tercerizada. El guía funciona como su córtex prefrontal externo, decidiendo qué es seguro. Sin él, el sistema colapsa emocionalmente al carecer de mecanismos internos para procesar la existencia de forma aislada. No es extrañar; es perder la fuente de seguridad vital."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 1,
-          "content": "Demuestran hipervigilancia extrema al rastrear constantemente al guía. Su calma depende totalmente de la presencia cercana de su referente humano. Presentan una fragilidad estructural significativa, desorganizándose emocionalmente ante cualquier cambio en su rutina o ante la separación."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 1,
-          "content": "El riesgo principal es la desorganización sistémica (pánico) ante la separación. El perro queda desconfigurado, derivando en vocalizaciones extremas o destrucción. Es un sistema con margen de error mínimo que requiere trabajar la autonomía para evitar la ansiedad crónica."
-        }
-      ]
-    },
-    {
-      "id": "apego-fragil-afiliativo",
-      "number": 2,
-      "title": "Apego Frágil Afiliativo",
-      "signature": "Espejo Emocional / Ausencia de Buffers Defensivos.",
-      "summary": "Firma Sistémica: Espejo Emocional / Ausencia de Buffers Defensivos.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "Poseen una empatía elevada que los hace absorber el clima emocional del hogar. Su centro de regulación es el humano, pero su respuesta ante el conflicto no es el control, sino el repliegue."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Poseen una mínima tolerancia al conflicto, recurriendo a la inhibición ante tensiones. Su empatía pasiva refleja el estrés del guía, mientras buscan la invisibilidad física para gestionar la saturación sensorial cuando el entorno se vuelve caótico."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El riesgo es la somatización. Al no tener válvulas de escape externas, la tensión se manifiesta en problemas digestivos, alergias o debilidad inmunológica. Son propensos a miedos crónicos en entornos agresivos o volátiles."
-        }
-      ]
-    },
-    {
-      "id": "cooperacion-humana-clasica",
-      "number": 3,
-      "title": "Cooperación Humana Clásica",
-      "signature": "Plasticidad Cognitiva / Operación en Equipo.",
-      "summary": "Firma Sistémica: Plasticidad Cognitiva / Operación en Equipo.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "Su equilibrio depende de la acción coordinada. Poseen alta Plasticidad Cognitiva, aprendiendo y transfiriendo funciones con facilidad. El éxito reside en completar secuencias de trabajo validadas por el guía, más que en el afecto pasivo."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Buscan contacto visual referencial para sincronizarse antes de actuar. Su estructura mental lógica facilita el aprendizaje de secuencias complejas. Además, demuestran alta resiliencia social, adaptándose bien a cambios mientras mantengan una función o misión clara."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El peligro es la atrofia funcional. Diseñados para actuar, la falta de desafíos los sume en apatía o aburrimiento crónico. Sin una Misión Compartida, pierden su brillo y pueden desarrollar conductas destructivas por inactividad."
-        }
-      ]
-    },
-    {
-      "id": "inteligencia-funcional-obsesiva",
-      "number": 4,
-      "title": "Inteligencia Funcional Obsesiva",
-      "signature": "Hiperfoco Operativo / Bucle de Retroalimentación de Tarea.",
-      "summary": "Firma Sistémica: Hiperfoco Operativo / Bucle de Retroalimentación de Tarea.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "Su bienestar depende de un bucle: Percepción-Acción-Resultado. Al completarse, el sistema libera neurotransmisores de calma. Sin este ciclo, el perro permanece en tensión constante, ya que para él la inactividad es desorden."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Poseen un hiperfoco capaz de bloquear distracciones ambientales. Muestran persistencia física excesiva, ignorando el agotamiento para completar tareas. Su capacidad de anticipación cognitiva les permite predecir órdenes del guía basándose en micro-gestos y patrones del entorno."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El riesgo es la neurosis funcional. Sin escape operativo, pastorean estímulos inapropiados. Carecen de un botón de apagado natural; el guía debe enseñarles activamente a descansar y procesar la calma."
-        }
-      ]
-    },
-    {
-      "id": "proteccion-estructurada-moderna",
-      "number": 5,
-      "title": "Protección Estructurada Moderna",
-      "signature": "Inhibición Reflexiva / Guardia con Referencia.",
-      "summary": "Firma Sistémica: Inhibición Reflexiva / Guardia con Referencia.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "Opera bajo un modelo jerárquico estratégico. Prioriza la evaluación y espera la confirmación del guía para escalar su respuesta. Si el humano no gestiona el espacio con coherencia, el perro asume el mando defensivo por obligación sistémica."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Este arquetipo distingue con precisión rutinas de intrusos mediante micro-señales ambientales. Su autocontrol sostenido gestiona altos niveles de tensión evitando respuestas agresivas salvo fallo de seguridad. Su ejecución es eficiente y limpia, interviniendo solo con la intensidad necesaria para neutralizar conflictos y evitando el desperdicio de energía."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El riesgo surge ante un guía errático. Si el referente no toma decisiones, el sistema activa un mando defensivo autónomo, lo que puede derivar en protección excesiva o reactividad ante extraños al perderse el filtro de seguridad del guía."
-        }
-      ]
-    },
-    {
-      "id": "proteccion-territorial-absoluta",
-      "number": 6,
-      "title": "Protección Territorial Absoluta",
-      "signature": "Lógica Binaria / Codificación de Perímetro.",
-      "summary": "Firma Sistémica: Lógica Binaria / Codificación de Perímetro.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "Su regulación es espacial; recupera el centro vigilando el perímetro. Su vínculo se basa en la propiedad: el guía es un activo a preservar. Su diseño mental es de exclusión, dividiendo el mundo entre familia e intrusos."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Este arquetipo actúa con autonomía, interviniendo rápidamente ante intrusiones. Su círculo social es cerrado, diferenciando tajantemente entre familia y extraños, mientras mantiene una vigilancia pasiva constante y altamente eficiente sobre la seguridad de su territorio"
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El desafío es su integración urbana. Su lógica binaria lee lo cotidiano como invasión. Requieren guías que respeten su necesidad de distancia y gestionen las interacciones sociales de forma muy estructurada para evitar conflictos reactivos."
-        }
-      ]
-    },
-    {
-      "id": "guardia-ancestral-de-tiempo-largo",
-      "number": 7,
-      "title": "Guardia Ancestral de Tiempo Largo",
-      "signature": "Vigilancia Estocástica / Tiempo Geológico.",
-      "summary": "Firma Sistémica: Vigilancia Estocástica / Tiempo Geológico.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "Su regulación es interna y autónoma. El equilibrio nace de la inmovilidad y la observación silenciosa. No busca tareas constantes; su estabilidad reside en estar presente, gestionando su propio enfriamiento emocional sin necesidad de validación externa."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Estos perros poseen un umbral de estimulación altísimo, ignorando lo trivial para conservar energía. Su autonomía decisional y presencia disuasoria permiten gestionar conflictos mediante la calma y la observación, priorizando la eficacia instintiva sobre la acción reactiva innecesaria."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El riesgo es la incomprensión del guía. Su ritmo lento y economía de movimientos se confunden con falta de inteligencia. Forzar una obediencia dinámica daña el vínculo; su biología está hecha para resistencia emocional y autonomía decisional."
-        }
-      ]
-    },
-    {
-      "id": "contencion-pesada-calma-profunda",
-      "number": 8,
-      "title": "Contención Pesada / Calma Profunda",
-      "signature": "Regulación por Absorción / Masa Estabilizadora.",
-      "summary": "Firma Sistémica: Regulación por Absorción / Masa Estabilizadora.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "Funcionan como amortiguadores emocionales. Su baja reactividad les permite absorber el caos ambiental sin alterar su centro. Regulan el entorno mediante una presencia pasiva que disuade el conflicto por mero volumen y calma estructural."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Gracias a su paciencia estructural, toleran manipulaciones y juegos intensos sin inmutarse. Su baja reactividad sensorial les permite evaluar situaciones con calma, mientras su imponente volumen físico establece límites naturales, protegiendo el espacio sin necesidad de recurrir al ladrido."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El riesgo es la invisibilidad de su sufrimiento. Al absorber estrés sin vocalizar, los guías pueden ignorar señales sutiles de angustia o dolor. El desafío es no abusar de su paciencia y asegurarles momentos de descarga real."
-        }
-      ]
-    },
-    {
-      "id": "autonomia-primitiva-dignidad",
-      "number": 9,
-      "title": "Autonomía Primitiva / Dignidad",
-      "signature": "Cierre Sistémico / Autorregulación Interna.",
-      "summary": "Firma Sistémica: Cierre Sistémico / Autorregulación Interna.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "Posee una psicología de baja dependencia y autorregulación interna. El humano es un aliado, no el centro del universo. Operan bajo una agenda propia; si una orden choca con su lógica instintiva, elegirán ignorarla para mantener su integridad."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Estos perros destacan por su silencio comunicativo mediante micro-gestos, un afecto selectivo que nace de la voluntad real y no de la dependencia, y una gran resiliencia que les permite gestionar la soledad con dignidad sin requerir constante entretenimiento externo."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El riesgo es la ruptura del vínculo por autoritarismo. Los métodos basados en la fuerza se perciben como traiciones al respeto mutuo. No se someten; se cierran emocionalmente. El éxito requiere invitar, no mandar, respetando sus límites."
-        }
-      ]
-    },
-    {
-      "id": "independencia-cazadora-solitaria",
-      "number": 10,
-      "title": "Independencia Cazadora Solitaria",
-      "signature": "Radar Externo / Desconexión del Vínculo.",
-      "summary": "Firma Sistémica: Radar Externo / Desconexión del Vínculo.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "Toma de decisiones autónoma enfocada en el rastreo y la persecución de presas en solitario."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Presentan sordera funcional al enfocarse en rastros y autonomía exploratoria de gran rango. Su energía corporal se proyecta siempre hacia adelante, manteniendo un foco intenso y constante en el horizonte, ignorando el entorno social cuando persiguen estímulos."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El desafío principal son las fugas y la falta de control. Su desconexión biológica ante el rastro es innegociable. El guía debe gestionar su libertad y construir canales de comunicación que resistan la potencia de sus instintos de exploración."
-        }
-      ]
-    },
-    {
-      "id": "sensorialidad-olfativa-profunda",
-      "number": 11,
-      "title": "Sensorialidad Olfativa Profunda",
-      "signature": "Inmersión Química / Tiempo Circular.",
-      "summary": "Firma Sistémica: Inmersión Química / Tiempo Circular.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "El olfato es su pensamiento principal. El rastro actúa como ansiolítico, estabilizando su ritmo cardíaco y mente. Es una meditación en movimiento donde la verdadera conversación ocurre con el suelo, no con el guía."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Hiperconexión olfativa donde lo visual es secundario. Poseen una persistencia monótona, capaz de seguir pistas durante horas. Muestran una baja urgencia emocional, manteniendo un temperamento estable y pausado, inalterable ante ruidos o movimientos bruscos del entorno."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El desafío es la desconexión por saturación. Cuando la nariz se activa, el canal auditivo se bloquea físicamente. Es un estado de flujo profundo que el guía debe respetar como alimento emocional necesario para su equilibrio sistémico."
-        }
-      ]
-    },
-    {
-      "id": "lebreles-desapego-y-movimiento",
-      "number": 12,
-      "title": "Lebreles (Desapego y Movimiento)",
-      "signature": "Activación Binaria / Regulación por Reposo.",
-      "summary": "Firma Sistémica: Activación Binaria / Regulación por Reposo.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "Se estabilizan a través del silencio y la inactividad en el hogar. Poseen una psicología binaria: del reposo felino a la intensidad máxima en segundos. Su vínculo es paralelo, basado en la compañía silenciosa y el respeto mutuo."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Activación visual instantánea mediante radar de movimiento. En casa, muestran un letargo basal extremo, siendo sumamente silenciosos. Al correr, inician una persecución con autonomía total, entrando en un túnel sensorial que anula cualquier intento de control externo."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El riesgo son las fugas visuales. El movimiento anula su seguridad personal. Son sensibles a la rudeza y ambientes caóticos. Su afecto es sutil; requiere un refugio de paz y la gestión cuidadosa de su libertad en espacios abiertos."
-        }
-      ]
-    },
-    {
-      "id": "terriers-instrumentales",
-      "number": 13,
-      "title": "Terriers Instrumentales",
-      "signature": "Bucle Acción-Resolución / Tenacidad Física.",
-      "summary": "Firma Sistémica: Bucle Acción-Resolución / Tenacidad Física.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "La regulación depende de la resolución física. Necesitan que su esfuerzo modifique el entorno para equilibrar su química interna. El vínculo es operativo: respetan al guía como socio, pero mantienen autonomía total en la ejecución táctica."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Poseen baja inhibición ante el riesgo, priorizando objetivos sobre la autoprotección. Su tenacidad física les permite ignorar fatiga y dolor. Son expertos en inteligencia práctica, utilizando su cuerpo de forma creativa para superar obstáculos físicos y resolver problemas."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El riesgo es la escalada de intensidad sin escape. Sin tareas, resuelven problemas inexistentes destructivamente. Su falta de interruptor de apagado exige que el guía dirija su energía hacia retos constructivos para evitar la neurosis funcional."
-        }
-      ]
-    },
-    {
-      "id": "hiperreactividad-ornamental",
-      "number": 14,
-      "title": "Hiperreactividad Ornamental",
-      "signature": "Amplificación Sensorial / Fragilidad de Baseline.",
-      "summary": "Firma Sistémica: Amplificación Sensorial / Fragilidad de Baseline.",
-      "sections": [
-        {
-          "title": "Dinámica Psicológica",
-          "sourceLevel": 2,
-          "content": "Regulación mixta: descarga funcional (morder/traccionar) y sintonía con el guía. Son dependientes emocionales; si el guía es inestable, el perro se vuelve errático. Su psicología es de entrega total en cada acción."
-        },
-        {
-          "title": "Rasgos Clave",
-          "sourceLevel": 2,
-          "content": "Demuestran resiliencia física extrema ante estímulos negativos. Son hiper-responsivos al lenguaje no verbal del guía. Su instinto los lleva a utilizar la boca como herramienta principal para gestionar la excitación, canalizando energía a través del agarre."
-        },
-        {
-          "title": "Riesgos",
-          "sourceLevel": 2,
-          "content": "El riesgo es la sobreexcitación mal gestionada. Su intensidad suele malinterpretarse como agresión. El desafío es educar en el autocontrol y la calma, proporcionando canales seguros para su necesidad de agarre y una estructura de vida predecible."
-        }
-      ]
-    }
-  ],
-  "frameworks": [
-    {
-      "id": "regulacion-emocional",
-      "number": 1,
-      "title": "Regulación Emocional",
-      "signature": "¿Cómo recupera mi perro la calma tras reaccionar a un estímulo?",
-      "summary": "La regulación emocional es la capacidad del sistema nervioso canino para volver a la calma tras una activación. Cada perro utiliza vías distintas para lograr este retorno. Identificar el método específico es fundamental, ya que aplicar una estrategia incompatible con su biología aumenta la frustración y la incomunicación.",
-      "sections": [
-        {
-          "title": "1. Regulación Externa (Humana)",
-          "sourceLevel": 2,
-          "content": "El perro depende del guía para recuperar la calma emocional. Ante situaciones estresantes, necesita la mirada, contacto físico o confirmación verbal del humano, ya que no puede gestionar su estado de ánimo por cuenta propia.\nSEÑAL: Si el perro busca proximidad o contacto visual contigo ante eventos estresantes, su regulación es externa. Sin tu intervención, no logra recuperar la calma por sí mismo."
-        },
-        {
-          "title": "2. Autorregulación (Interna)",
-          "sourceLevel": 2,
-          "content": "El perro gestiona el estrés de forma autónoma. No necesita validación externa para recuperar la calma; emplea mecanismos propios como alejarse, olfatear o pausar su actividad para procesar la información de forma independiente.\nSEÑAL: Tras momentos de tensión, el perro se aleja, se sacude o realiza pausas sin solicitar ayuda. Es un proceso biológico independiente que no requiere intervención externa."
-        },
-        {
-          "title": "3. Regulación por Tarea (Funcional)",
-          "sourceLevel": 2,
-          "content": "El perro recupera la calma mediante acciones dirigidas. Necesita un objetivo o problema que resolver para gestionar la energía de un estímulo. La inactividad le causa estrés, por lo que requiere realizar tareas para liberar tensión.\nSEÑAL: El perro gestiona su estrés mediante actividades dirigidas como morder u objetos portadores. La inactividad lo mantiene tenso; requiere un objetivo específico para regular su estado."
-        },
-        {
-          "title": "4. Regulación Territorial",
-          "sourceLevel": 2,
-          "content": "La estabilidad depende de la seguridad del espacio y del control del entorno. El perro se calma al verificar que su territorio es predecible y que sus fronteras están bajo supervisión constante.\nSEÑAL: El perro recupera su equilibrio patrullando o vigilando puntos altos. Su estabilidad depende de supervisar el entorno; si pierde el control visual, su recuperación se dificulta."
-        },
-        {
-          "title": "5. Inmersión Sensorial",
-          "sourceLevel": 2,
-          "content": "El perro recobra la calma mediante el uso de sus sentidos, principalmente el olfato. Esta conducta no busca evitar el estímulo, sino procesar la información del entorno a través de la exploración olfativa.\nSEÑAL: Ante el estrés, el perro explora rastros olfativos. La recolección de información química le permite procesar el entorno y reducir su activación emocional de forma independiente."
-        }
-      ]
-    },
-    {
-      "id": "tipo-de-vinculo",
-      "number": 2,
-      "title": "Tipo de Vínculo",
-      "signature": "¿Cuál es la naturaleza de la conexión entre mi perro y yo y qué espera él de nuestra interacción diaria?",
-      "summary": "El mecanismo de gestión del estrés y la convivencia determina cómo el perro se relaciona contigo. Entender esta dinámica permite ajustar las expectativas, la demanda y el contacto físico. Al conocer el tipo de vínculo, puedes adaptar tu comportamiento para mejorar la interacción diaria y fortalecer la relación con tu perro.",
-      "sections": [
-        {
-          "title": "1. Vínculo de Fusión (Simbiosis)",
-          "sourceLevel": 2,
-          "content": "Es una relación intensa donde el perro pierde su individualidad. Depende totalmente de tu presencia y estado de ánimo, sin marcar límites claros entre ambos.\nSEÑAL: El perro orbita cerca de ti, reflejando tus tensiones. Su lealtad absoluta implica fragilidad: la distancia física o emocional es percibida como una falla de seguridad vital."
-        },
-        {
-          "title": "2. Vínculo Cooperativo (Equipo)",
-          "sourceLevel": 2,
-          "content": "Aquí, el perro y tú son socios. Existe una comunicación constante donde el perro observa tus acciones para coordinarse contigo. Ambos trabajan juntos para lograr metas compartidas mediante la cooperación mutua.\nSEÑAL: Disfruta la tarea compartida y mantiene una sintonía constante. Ofrece conductas esperando tu respuesta para coordinarse. Es un vínculo funcional de alta cooperación y mutuo respeto operativo."
-        },
-        {
-          "title": "3. Vínculo Funcional (Referencial)",
-          "sourceLevel": 2,
-          "content": "El humano es el guía que dicta normas y recursos. La relación es práctica y jerárquica. El perro respeta las reglas y sigue tus instrucciones para obtener seguridad y estructura.\nSEÑAL: El perro es obediente y respeta las normas buscando previsibilidad. No requiere contacto emocional profundo; te sigue porque eres el director que otorga estructura y estabilidad."
-        },
-        {
-          "title": "4. Vínculo Paralelo (Coexistencia)",
-          "sourceLevel": 2,
-          "content": "Esta conexión destaca por la autonomía. Ambos comparten espacio y tiempo, pero mantienen vidas independientes. La relación no necesita una interacción constante para ser válida, basada en la convivencia respetuosa.\nSEÑAL: Coexiste pacíficamente sin demandar atención constante. Valora su autonomía y espacio personal. Su lealtad se manifiesta en un pacto silencioso de convivencia respetuosa y cercanía no invasiva."
-        },
-        {
-          "title": "5. Vínculo Territorial (Patrimonial)",
-          "sourceLevel": 2,
-          "content": "El perro te protege porque te considera parte importante de su entorno. Su lealtad se muestra a través de la vigilancia y la protección física, priorizando tu seguridad antes que el afecto social.\nSEÑAL: Se muestra vigilante y protector, priorizando tu seguridad sobre el afecto social. Te integra en su instinto de propiedad como un activo valioso que debe ser preservado."
-        }
-      ]
-    },
-    {
-      "id": "fuente-de-motivacion",
-      "number": 3,
-      "title": "Motivaciones",
-      "signature": "¿Cuál es el motor biológico que realmente enciende el sistema de recompensa y acción de mi perro?",
-      "summary": "Los perros tienen diferentes preferencias biológicas que activan su sistema de recompensa. Identificar qué gratifica específicamente a tu perro permite proponer actividades alineadas con sus necesidades, mejorando la convivencia. Entender estas motivaciones evita frustraciones cuando los premios habituales, como la comida, no resultan efectivos para el aprendizaje o la colaboración.",
-      "sections": [
-        {
-          "title": "1. Afecto y Cercanía",
-          "sourceLevel": 2,
-          "content": "Estos perros buscan interacción social. La gratificación proviene de la validación del guía mediante contacto físico, palabras de aprobación y proximidad, que funcionan como sus recompensas principales.\nSEÑAL: El perro prefiere caricias antes que juguetes o comida. Su prioridad es la interacción afectiva y sentirse seguro dentro de su grupo social."
-        },
-        {
-          "title": "2. Cooperación Social",
-          "sourceLevel": 2,
-          "content": "La satisfacción surge de la coordinación con el guía. Realizar actividades en conjunto resulta más gratificante para el perro que obtener un premio material al finalizar la tarea.\nSEÑAL: El perro colabora activamente en tareas coordinadas. Encuentra agrado en la ejecución de acciones compartidas junto a su guía por sobre otros estímulos."
-        },
-        {
-          "title": "3. Control y Orden",
-          "sourceLevel": 2,
-          "content": "Perros de pastoreo o guardia se satisfacen gestionando su entorno. Prefieren dirigir movimientos ajenos o supervisar la integridad de un espacio físico determinado.\nSEÑAL: El perro busca detener movimientos o vigilar áreas. El orden ambiental funciona como su refuerzo positivo, mientras que el descontrol le provoca malestar."
-        },
-        {
-          "title": "4. Activación Visual",
-          "sourceLevel": 2,
-          "content": "La recompensa es el movimiento observado. El perro busca perseguir estímulos visuales por la acción misma, sin necesidad de capturar o morder el objeto seguido.\nSEÑAL: El perro reacciona ante objetos móviles. Correr tras un estímulo visual constituye su satisfacción principal, independientemente de si logra atraparlo o morderlo."
-        },
-        {
-          "title": "5. Exploración Olfativa",
-          "sourceLevel": 2,
-          "content": "El mundo se decodifica a través de la nariz. Para estos perros, recolectar datos químicos del entorno es una necesidad vital y una fuente de placer profundo.\nSEÑAL: Este perro prioriza explorar rastros olfativos sobre cualquier otra actividad. Leer el entorno mediante su nariz es su fuente principal de satisfacción."
-        },
-        {
-          "title": "6. Resolución Instrumental",
-          "sourceLevel": 2,
-          "content": "Es la tenacidad física y mental llevada al extremo. El perro disfruta usando su fuerza, su mandíbula o su astucia para modificar el mundo físico.\nSEÑAL: Estos perros disfrutan manipular objetos, excavar o tirar de cuerdas. Su satisfacción proviene de superar obstáculos físicos usando su potencia y mandíbula."
-        },
-        {
-          "title": "7. Autonomía",
-          "sourceLevel": 2,
-          "content": "La recompensa es el ejercicio de la voluntad propia. Hacer lo que ellos quieren, cuando ellos quieren, sin supervisión ni instrucciones.\nSEÑAL: El perro está más equilibrado cuando toma sus propias decisiones y explora a su antojo. La libertad de elección mantiene su motivación alta."
-        }
-      ]
-    },
-    {
-      "id": "gestion-del-estimulo",
-      "number": 4,
-      "title": "Gestión de estímulos",
-      "signature": "¿Cómo reacciona el sistema de mi perro si la información externa supera su tolerancia?",
-      "summary": "El sistema nervioso del perro tiene una capacidad límite para procesar estímulos diarios. Cuando la información sobrepasa este umbral, se activa una respuesta automática de emergencia para evitar el colapso. Estos comportamientos suelen malinterpretarse como problemas de conducta, cuando en realidad son mecanismos fisiológicos necesarios para que el perro gestione la sobrecarga informativa.",
-      "sections": [
-        {
-          "title": "1. Escalamiento",
-          "sourceLevel": 2,
-          "content": "El perro aumenta su intensidad de respuesta ante estímulos fuertes. Este incremento físico en su comportamiento le permite gestionar la energía y recuperar el control ante la presión ambiental.\nSEÑAL: Ladridos, saltos o excitación alta. El perro aumenta su actividad física y vocal para gestionar la presión externa mediante una descarga de energía directa."
-        },
-        {
-          "title": "2. Repliegue",
-          "sourceLevel": 2,
-          "content": "El perro elige alejarse para evitar la sobrecarga. Esta conducta defensiva busca crear distancia física y limitar la interacción social para reducir el estrés causado por el entorno.\nSEÑAL: El perro se esconde, se aleja o evita el contacto visual. Entra en un estado de protección emocional al no poder gestionar la saturación ambiental."
-        },
-        {
-          "title": "3. Contención",
-          "sourceLevel": 2,
-          "content": "El perro mantiene su posición sin reaccionar de inmediato. Se encuentra en un estado de vigilancia y tensión contenida mientras analiza la situación antes de decidir cómo responder.\nSEÑAL: El perro permanece quieto, en tensión y observa atentamente. Mantiene el control de la situación mediante una respuesta interna de alta intensidad y baja expresión."
-        },
-        {
-          "title": "4. Intervención",
-          "sourceLevel": 2,
-          "content": "El perro realiza acciones físicas directas sobre el estímulo. Su conducta busca cambiar o desplazar el elemento del entorno que le genera conflicto, intentando neutralizar el problema de inmediato.\nSEÑAL: El perro interfiere físicamente, bloqueando el paso o empujando. Actúa directamente sobre el entorno para neutralizar o modificar el estímulo que percibe como un problema."
-        },
-        {
-          "title": "5. Desconexión",
-          "sourceLevel": 2,
-          "content": "El perro decide que el estímulo no requiere una respuesta. Opta por ignorar el entorno para conservar su energía y mantener un estado interno de calma y equilibrio estable.\nSEÑAL: El perro ignora activamente el entorno estresante. Utiliza un filtro de atención selectivo para mantener su equilibrio y protegerse de estímulos que considera irrelevantes."
-        },
-        {
-          "title": "6. Absorción",
-          "sourceLevel": 2,
-          "content": "Ante estímulos intensos, el perro no muestra cambios conductuales. Debido a su alta tolerancia, el sistema nervioso procesa el evento sin necesidad de reaccionar visiblemente ante la situación externa.\nSEÑAL: El perro mantiene su calma habitual ante estímulos intensos. No reacciona al evento, ya que su sistema no lo clasifica como un conflicto necesario."
-        }
-      ]
-    },
-    {
-      "id": "tiempo-y-recuperacion",
-      "number": 5,
-      "title": "Tiempo y recuperación",
-      "signature": "¿Cuál es el margen de tiempo de mi perro y cuánto tarda en volver a la calma tras un evento intenso?",
-      "summary": "La capacidad de cada perro para procesar emociones y recuperar la calma tras un evento varía considerablemente. Este parámetro, fundamental para la convivencia, determina cuánto tiempo persiste un estado emocional. Aunque es común esperar reacciones uniformes, la realidad biológica de cada perro es distinta, influyendo directamente en su tiempo de procesamiento.",
-      "sections": [
-        {
-          "title": "1. Tiempo Corto (Inmediato)",
-          "sourceLevel": 2,
-          "content": "Estos perros reaccionan rápidamente a los estímulos. Su capacidad para olvidar eventos pasados es alta, evitando que los estados emocionales persistan entre diferentes experiencias.\nSEÑAL: Tras una experiencia intensa, el perro recupera su comportamiento normal rápidamente sin mostrar efectos persistentes del evento previo."
-        },
-        {
-          "title": "2. Tiempo Medio (Secuencial)",
-          "sourceLevel": 2,
-          "content": "Estos perros vinculan eventos lógicamente, comprendiendo secuencias. Su nivel de atención les permite mantener el foco durante actividades prolongadas y tareas complejas.\nSEÑAL: El perro mantiene la atención durante secuencias largas y predice rutinas con estabilidad, facilitando el aprendizaje de tareas complejas."
-        },
-        {
-          "title": "3. Tiempo Largo (Estacionario)",
-          "sourceLevel": 2,
-          "content": "Estos perros procesan eventos como estados duraderos. Una experiencia afecta su conducta durante horas o días, demostrando una memoria emocional prolongada que condiciona sus respuestas.\nSEÑAL: Perros sensibles que tardan días en procesar un evento negativo. Su sistema emocional \"rumia\" los sucesos, requiriendo guías pacientes para recuperar la calma con lentitud."
-        },
-        {
-          "title": "4. Tasa de Recuperación",
-          "sourceLevel": 2,
-          "content": "La recuperación mide la velocidad química de retorno al reposo. Los perros con recuperación rápida se calman al terminar el estímulo, mientras que otros requieren más tiempo."
-        }
-      ]
-    },
-    {
-      "id": "plasticidad-vs-rigidez",
-      "number": 6,
-      "title": "Plasticidad y rigidez",
-      "signature": "¿Qué tan capaz es mi perro de adaptarse a nuevos contextos sin colapsar?",
-      "summary": "La resiliencia canina define la capacidad de un perro para adaptarse a nuevos contextos o cambios en su rutina sin sufrir estrés. Mientras algunos individuos se ajustan fácilmente a diversas situaciones cotidianas, otros muestran dificultad para gestionar variaciones, sintiéndose inseguros o superados ante cualquier alteración de su entorno habitual.",
-      "sections": [
-        {
-          "title": "1. Plasticidad Alta (El Generalista)",
-          "sourceLevel": 2,
-          "content": "Estos perros poseen gran versatilidad. Aprenden tareas opuestas y cambian entre ellas sin conflictos internos, manteniendo estabilidad emocional ante diversos contextos y situaciones nuevas.\nSEÑAL: Se adapta fácilmente a diversos entornos y rutinas sin estrés. Gestiona cambios con curiosidad y flexibilidad, demostrando gran versatilidad en su comportamiento diario."
-        },
-        {
-          "title": "2. Rigidez Especializada (El Especialista)",
-          "sourceLevel": 2,
-          "content": "Estos perros están especializados en funciones específicas como correr o rastrear. Su sistema tolera poco las variaciones; fuera de su actividad habitual, muestran inseguridad y estrés significativo.\nSEÑAL: Depende estrictamente de la previsibilidad. Cambios mínimos en su rutina o entorno le generan alertas desproporcionadas, mostrando incapacidad para gestionar situaciones fuera de su especialidad."
-        }
-      ]
-    }
-  ],
-  "lifeStages": [
-    {
-      "id": "infancia-y-juventud",
-      "number": 1,
-      "title": "Infancia y Juventud",
-      "signature": "Plasticidad Explosiva",
-      "summary": "Alta capacidad de aprendizaje, desarrollo neurosensorial, baja inhibición fina e identidad en formación.",
-      "sections": []
-    },
-    {
-      "id": "adultez",
-      "number": 2,
-      "title": "Adultez: La Consolidación",
-      "signature": "Consolidación de Criterio",
-      "summary": "Criterio, consistencia conductual, eficiencia energética y máxima especialización de rol.",
-      "sections": []
-    },
-    {
-      "id": "vejez",
-      "number": 3,
-      "title": "Vejez: La Síntesis",
-      "signature": "Tiempo Geológico",
-      "summary": "Ahorro de energía, necesidad de estabilidad, sabiduría ambiental y tasa de recuperación más lenta.",
-      "sections": []
-    }
-  ],
-  "energyBiases": [
-    {
-      "id": "femenino",
-      "number": 1,
-      "title": "Femenino: Centralidad y Perímetro Interno",
-      "signature": "Núcleo + Selectividad",
-      "summary": "Enfoque en la regulación vincular, lectura de microgestos y protección del perímetro interno.",
-      "sections": []
-    },
-    {
-      "id": "masculino",
-      "number": 2,
-      "title": "Masculino: Expansión y Movimiento",
-      "signature": "Mapa + Desplazamiento",
-      "summary": "Enfoque en la delimitación externa, exploración espacial y marcas territoriales del mapa.",
-      "sections": []
-    }
-  ]
-};
+          "title": "El v�x��͎�V�&��OAh�
+0��sq���UfJY�i�J�T�4pq�`�3"�E'�Hg�<�;��R-
+�i�o2O2��I�T*#0w��JEx���s�}�}���m��/6}W�Sq;�������
+�_��4l�o껺��E�O�w�g��;�Ͽx���������g��������:4w�'�E=��MS�;x���LU�틶*���6����f�NǺ�6��Ͷ��[���p��{�W�j|�ش�Џϋ?��u[�G]�U
+#�.����k��>��WcsW�(�zS�� �i�J�8���߫>d:4m��9N�9�.
+.��wSw�
+���t��z^��u���}�����={��USwE����6�%��c3⽬��v5�Ѿ���+,�{}��j|ߩM������a��}��p�>�+�
+܃�k��
+�v�-o���}���:��4Tx��8�U��/:xd�}Q�W���M�{��W
+\l���[�]�}S������Q�|��<��
+o0ܕ����Zϋo�S��������~�_��7�a�6�Ĳ��w��R�����͇�o9��]=�j�+�U[�Ͽ�e��ӊ�o~���jk\���z�?n�	�[�M�k�o�2V�^�"K�<z�x;�E���h�͈��w��?�jx^|GO�&<`�l���/����;|��������am�+X�=G\`7���Å��{W������NxG|8m��W#o@���+�;����'Wi��Jj�.�/po�n(h��F�/V��:-nx��@���n:ң�7����/FX#��
+>��
+�����P]���Е��<ɩµ+o��F�7a�D+K~Kׅ�`,9.�����G�M��Bb ދ,P�/��$}��&xS��n��
+nx�U�x���{_mq��2������X������
+ώ�2=���>y|)�R���N�ܘ7��G�1��
+�5����mC�n������o�	?��^W���(�EX��y��0�C�B,����ԇi[J�<Tx98���E�+*m{��m����vp��}�ҳo�I�z_i<�9�
+�������	�L����{\R(%P�ᫀl��ր;Sw������φ�� K��U���	�w?Vt�{�����a��g��S�q~�����	�R�=����L�LqM��O���I�.�④'�Kp�6UW=d������G+���`9��V�G�Y�1��m��e[�NpK��þ�<��X\��{xd��О�`��VK�IMKo�
+�/���CxO���M�>�5l_�sWӸ�ck��L�G~<�iY5�O?�݀GK��5���D�������k�p��\�=�c�����j����5���	 I�,�*�~:�8�w��2%Z�r��ӆ�׷�Ձ����������w��?;���T_U)&�؇��wU��T�U�:����	�O���5�W��C�������
+|S�ˀ�������z���YE��>�g����k}��u�����uu��6�o�9[|��Զ���Y��@�H�B��/x�/(���I��퓽��M�ם��h��pL���z�nk�)���z��a�=���O�?�(��!D�
+>�C?�"��Ƶ�vs�U�{��{ѱx�k�>o��}�C�׍������[|�p+
+�iz� �8���(�_{x_��=Ϗ�;8 ���x
+gnU|7��Ӿ�=�]�g��ٻ���x�"���x�:H��J8���`sȯ/������A�?�'����̺C��_b��/�}6GF����Qk"}��04�q��_L;X���o��� N=J�x�ƛ����x������n̶�����������_�5��K�o:���6=|m�|��������
+�vPX5��=�gdg;Z����@�t���C��P���r��Q�_m�G�@LL;��m�c�i']=�)�\�0��A�R�?�@���
+�c1��c�	����(
+��sC�v"�]J���(6�� ��D��`�N}��1Խ�d�;wd͐WT�9�BT�L�x,$^a��Xs���2�x�`�D��AWiY����J�:|�	�~.DK=$������ׯ�]�*�RI@��7��t�z��`��5�j��3�����;��>6
+N)L1+¤���1�7��`����Jރ.墫0qj�>��:ș�_������a��>������;��-"L��j�ʁSV�
+p��~����k�����9�����ݐ��(�8�wW�p_-<w)�_hY�m����zq�4�*��\`l09��{�~*v�����ƭ(I��n����,"+�id`#�7�,��j�gD+
+��2�\���oaܠ�+�ow�5>HD��ɫ\�Ǭ ��p�O���Φ��L��z���K�P��VǶzP�������Ǜ"���7EP��Q>u,m�J1tW8�|���#�]�p�A�>�G������նE(]6�d������A���m�{
+��T����*V�II�5\�W�;�
+;רX��9dM�16���{~!�6�-[������
+:e���U�ˤ�{BPV�C%П^d�p�oud�K�A� >��l/����ց��iG�8E[O�&��r��6S�	�m'���/�[w�D�������,�>"ǧn
+�)��*;��y�pDE�C+e�=�x���!��BA�Y>X�[5?�K�c�3�pt����vԨ��P��-�F]�]lÍ�Z�~S3H��k��2�;�(�Z"W�B�)���)�W��W��Cv5�~�`uLWCX�����.�ρ��b���l�n�LO>���Xg��Xc��^�j�З�u9Bla�R��ρ��pb�I����
+�����-ܹ�����Ӈ���W������3�c��D�uy/ omk`Q������:
+��s��9�#��[x���&
+���Ǵ��l;�-\ ���l�%'��z����A�/��5�[���M�j�GQ��������ygas�/<�-c����/I* ֟yt(,��x�|�5��[�0����	�����$#�B	u��29��۷��{AՀ) ��Mo����������Ԅx�C!Pn|�
+�m�⽔�E��:É]r����<{X���ӬR!����3)���!�c��JL�d�(�9v����U�64.vK��!�0�d\�̏� �讽G�R� ���s�A]��r�;� �io@�hJ��Z��V����
+���Z�?�mn��X��~vU�
+�s�W`���R�s����^j{p��/p�Si%���xy3���#d�[�C=�v������������<����0ۣ���đ���2��p`���Ľ*^�PP�� ��W �﹉��Q�aj��e�p�1�����ӿL��~sh
+��˰5�s�����_�}��}�!j�����۬�d�}�=����n������=�>��և����Ϊhg]Ù)��g#��n��P�K��"�6(/&�!�O8
+�}Ú�
+��Ա�o1����x�pgK��
+AQ���n���k����IȄ)���!��v�s��c�M�	@�T�2A��/��Ic�7n˜��4�9j9�~n��ɠ\I�a�-��RխG�
+h��
+�
+��p��U�g�M\8B!����J��s��0��x��$�>}g�y$�
+�'�`��;:�K\5-hH�o����p NB�a��7�9|_Q+ƣ4ԟ�b��W�0�.NPI�3���94���0m��#�9	eh�X�p�j�^�!V3��v(q�z�^�Ѯe�NOj88�U��醟~�_��ğԾ�}�����5V�7�^��&V�yo����$�Žf�̱p�ҁrT:����s���2��X����4#?�9%�y�}C�'B$�Jm$	�G݅�o"獞�#��$��?`�|pz抰�˃)L�3�]�b�\Dc`�~�f��K���z�oK%VP�
+6�m}cN LIXŖ؅�X�)1&�{����;LPΝ�S.�&XK��Xƕ#�20�XG�S�},]i�~Λ ���ࡅ�ȍ9���ׁDPO�s�,��ŔO(�h$~�I{�D0E�c�G� ��X蠻��6�:֟���M[��BbG�D-��ó�E�)a�ơ�2�����u�<)C��ծ:�����H��R[��"�^�&n�4#diX��6ś�����.qPB��S��C8��Z3 nt��uM�n�8�
+��{�g�R#���3#��7���-���莈Ōz�^ǽ#�#��hFbX"�%���s^Bk�'������!Jk����v�->����4FO�P��	G�+�_��]�¥ گ�rf�7�"�nGԨ-�� ����z �I@$����5V���QR��b
+��j��+��H��YS[����xk^��F"/&)[DB��اm��ľ�f��������:p�s������'#�LY
+G���k�
+3w3�n���w�f:}`�����"���M'�$&y��Q��-�/)þ���16��9�u�E��5�5�T��ZP�V掽9��W]7̀�R�.Ƃ�[.W������шQ��;��W��gp
+��-�������J\g,��z�)����e��?�嶦bg���DO�"D;x'F*�ժ,�@�ӧ�s(�`G�՛[�%xP�7W�a�>��J��P�A��P�WQ�V�g�JX�MͼA\��LI�1��7�e	�\x���U�v��mC횷HކŻ�N^�7sp�����71��2�G�<>
+�0��(=)�@j�J��s':{/G*�7��#\#���_i�����7��]]ҕ~B��������͑�g�2�v��o'F��wq�$��=�A/��_�$�oS=��N�������8�u��v��"n��ޕ�d��@EB*�c8\+	��B(=b�A���wMG9�Xgx���L9C,T��;�5����$�o��<:T��5*E�͔[��^�P
+����
+�6�"V��ߎӟR�jW��ı�R�T�	�4���6�u�O3�D�;�PN~Y{ϋ?_%}�
+�3��^?jy%+GZTZ���g�C	Nt�? �qq�k�5u�lHs�L%���S^B��sc��w
+�vN�b���m�J	��D>2G��hK�[۴����2��)E�p
+�V/�;��6V9q*'e|��00?J��������P�<25R\R�WJ5�釡V��ՀL���e�X�bք
+�
+��ӭD\S6+,�A��(�a�'���V���
+j�8�xxY� GO�����)
+���ccr�Q�3.�C_���[��L@�K���x%�Pq��<+F���X(xuJ�N!\ij�y+��NP��;9���Ml�Ԓ� �"���t\�
+�n|�D�w�-)&�tEP I$��X���y�=�gJ��ʠ! �M_�����9�J�#"��C�&�t[�`����Lw� �68V��8e
++�=���#%�3���*�ܓ�`H���&�����d�����3+�,R��8%�p�f9&mYβffH��H4�*�����It.>P�����a"�\Ǧ�K�K=�P('�@�cF�o`!�*-}D&����LR�9��&:*����Q�O�M�P��X!,3����b�ƝZ=7��*̻����&r����'�o��ό��ۢ����xr�*;'1�%	��!p��i�b���L�bu�9?%�,�M$j��,�W(s�� uf���Tx��d%��uf=Py�mtFb�	�䮶�)PM��*����3}��K�^�E�����Ez� �4�7�J[�f�5V��&R�t� ��+J�1��G��[�Z��
+S&�-$�I��(�q�9�շ�vXAa�� @L�m�p��`�=�)���¶�j#��*/���&���ŵž�s�I�U�A[����*�t`���Fe=�Z�M#��J��CmQ���l���o�%YLwX9��Z�ڴ�����R�hT2�5s��$�ٶ~v�ںZ$L�+�;}?���E�d�R�D��M/ۛ~��(�a��.�� �aȇ����O�|m��O�4^�W����4� C�!��Ɣ�B�Q��=Bd�%^�<>9��'�#/�&�e>"�x?���q��.DHP��c<�n���~�m��XiIw@$�Q��oS���=ڬ�=��)�� �e&+#�'(�E�D.��i4�2᠜K}g|��!���ށ����J弳��N>;X�^N�vRn��j]�S)�&�ݝ	��mөd�S�ᘯ1�!��z�qoLl˅5���j���� "��Q�2�y*����n�a�V89(�4�:�8�wD�Y-]�yI�M�I� Q�B�F��fd�¾o�������O֐�C
+\v��z�1%sX�-�YV��u1�ђ�j�[A6G[&QV�����^���NA��6�⚼U�V�h�/�D��kM��ɱzR6��]8���V���N�w2��/3$>C
+�x��9@OH�LX�Q'�;�1n�2��j%&L�濎�GUv���Q\i��އx��y�(!
+#w���u@�dډ1qP��k��Q�+áV�q�	)Y������6Ξ���m���Uf=��s΂& �!B-%�!/��n |I:_P'@O��To�/E�ȋwO��
+@�l�($��҅{Nm�(�Ɲ3�m��-��_��Pt����b4���dg5���Z��j2"��υ	�nh�k$��+�ǅ69>3��U���Zy7�L�����p�E���a'���X7��fFP	(Ԛ��P�/ʰWC������㌂����n���[�D�%"
+/yf�#��ӽA��-�捝K*u��@w��1��D�=����,T8��2��0,Od�阯KX�I^8�|N�̈́
+	VM��n�����TEJ���u=IM��5�J��-S��U��$���*���%(R4��'�g7A��==�J��:�!KYK�+&�����.D�Z�n��C0
+\SR$A fQ�>��zV�95;�	�ڌ��j�L�erD ]��FZ X���JA��#�b�D�e��'?����GrVX;s���(!nݨ����9��4��Ç�io{R�^ڣf(��<;��ܺ�3���	�鯈�YѦ��f�8�p%%O9�G��U���ށ�s���ho)t�������1Ƚ�g�ۦ��%�����{~U�:��ɅW1iQ���5�ԭp{�3��K��ÄA�tכ�Ȗ�Л�_/c�+��ϯ��
+�;���DJ�R=>D7
+���)n �t�^~%���ن�K�?
+x1�0�u���3��%��՟���2��^���{��͈�B�X(�dw[UGke���7c���W���Cʗ�~-��Q�`� �k:�� E[_B��x�vh���lQpd�uH���z��Z�q%�
+�J�ę���THO��V=�����H^Z�����3#�HlQ϶�A���<ž��uL���ab����j�󞺓#�LdtSL��d_�mp���5�XS�P7��4�d<�{�<m���]f�5�� �q�8�|G�(-�U����d��8y��d����C�G�Y�h���{u�1)�#d������(LY�ߐL��3��q{PNM����
+A�$W��>&���Q�\2���%�`�m8լÛ��B�m��B���[8�
+�-���v�/2�Lj|8j�?���CW˒$~����Euў���������倉��t�(���l�3�B���FV�Wh���d�|��o{D}?���s<�����Q���Zd}b�p[�DkK2��k_���qU��+ITzDXoY0m{E�֎3��̠�]��G^;"��W�*��X�yÈ^_���&+i��A���f�0a�9+�,ŧ{$y�Nb�՘ɯ��.Y�{C���Ϣb|Π��N3�����#����t�e͙�O�U��B���3C�7?/~��f����~�9�.�`y����&j����Axޜ����o�q>�}�3Ai�!��l�bB�[�����vz�HbM�>D�N?�.U�w��V���浐�4V#����sC�;y0TS<&#��z|�(la�����@���w��J �o�6��l//�F����0fO�+���r8Z)��
+�9���@�T��u�j
+T��Մdͺ�|	Z�S�n&x���'T��l�P��8&,[�뇐��f�QS�
+������js6�8�'��X�j��;�vd]�*����N��=��ѡ���r\ю�N�e��:����3:Dq��j��L�Y,��(��' �����sf����:�U��4_�n�_��x��gԼ�eG��SYb�v��|��釿>���WV/�
+
+�u�=��fjx�w���b����>�Ã�
+�P�3�ȿ�!�}���R����'�cz8�B��,��_�h�|�	|����x����\�olwܞ~��M���zs����]��bq��3˴+�αO��9γ�
+{��}�=�Wl�� HH�U���=��Q���V+�=%�Y�['BCgZeE���`4���F�����0��T�ΆRug 	W��Cr�쭷ު�{=���Ds��":�"%"�����+�	��-��2��l�I�}�t(��Q)�
+N�H)�,e�ts$o�F�5͑��������ۿ�'h3M��Es,�
+�K�[��,U!�#<y@�=�O�����OTA���S�kFn�Jo�L�PȠ^bv�9�g�AKZV��:A�g�.5�f��
+��q��ӱ�	�%��"�	�������v�����{;�t�ONa��:q�dJfb��V�V;^O	Ɠ�*�m�f�`O!�8��v>¸j��刴	)�
+Vlb�c_X�U���S�[�ST0Ϸ�����ϵӃ1�56Y�j�E�U�n�uot�����ab�%yƚ�\�W8PC�(.rڰe�e41
+ep-y���9"���̔
+a����X|��s��
+�{�����M�U��mj%��4�;e�|F��gx������#�E0��gn�!c��'86u8)����y���XB?2��A߄���i�9�8��f�xX>�)�Rp�ya�m]�ϙ16w2����	���U�6����A5�����F�x���^MQ����m����i��l���̸apŶ.��+�����gU��k|�m�Y�e
+Y��U��1���;V�8؛� �u�m)�[�b�k�v�]���ti!R`�2]����Z'� U�����a[�͓�X�2r��@gq��������ȥ3wI��︵@����lTO��#�aۂ����1�d_Gv�2U�Lj�
+~ػ����~�JX�/-�����V�o�?�vo��*��d���!�5�(PMk��קþ�uK>��\�WJ(��䭎N[,���N�RZ����F�:���#��93Ge��0���0��oj5S�(4i��I�A1�v:r��ᾝ��.�a�_KI�x�1oaݴ�=:e2"�FY
+�e�v��F|Fi^�X �����@A:�?1-q��������D�{e},b� �*Hi���"5���	��VH���L8�^A:�7�����l�<���8���p��O:�X
+�1������a�3Hqv�N��"���c>	<���/ߨ�&�ő�(�ȝ0��K���P�K�SVV��
+&�+�;�[��O��b�Q�>"�:��K��zu
+n`c�*/��}6%eA�2)�K�u�6�h������|�F��&�AUr�u�b(�jj�)����GZ���l�E��|�N(tK>�U�Nwlǻ.���@`e�>��htf,G"�7x�^D $#����,�����V<fp�f�clVxA����e��}��q'gH�p,�gh��}�2�D̃5\Z�\ �Ղw�b��l��qA��A{A��va��Gy�Nc
+�L^���qHoːOC^pL�^	��TU������������?4���ԓ���e���.�GO
+gf
+�3�q���H��><��}h&A�x�
+N9���,��� �G�����pO*�##}�_�h+2R@�P��'nftm|DQ8G�4��,�~���I�F�K<F:�98p>YLQhJB�'�M�*�����W�X�,p
+{�|JcJ������Ys�"и%�T�Ɗ���5�x��M�x.5#3Un:��SЍ�Im���Amv ���\�L3uۋ���cw�Y�2(E3�����&v�:��w��w�Ơ8��<#䣄]7�Py��sd����DUi�[-�jc�3R[HZ�Y���˔�Q�y��3	�<&�;ֻ��,8$�0�DApX���n���vc+��	��Wҡ�͇1���,3�`4@e��b0
+�����(�N.�2���L3�f��&�w0&���i�$#&��T��)@?<[�[�.����f���H�d}�hm6�7]|�I�e=��,�
+�i�6�DKfV~=��}�uZ%|�I"�i�	�� �q\�:'�f�aq=�b:��ܵ��{��
+b�!Y�z����1�,ɬ��/�|���O?�~y>5V�ݨz迃?P�oZ�����+z`D�SqU���1�t»2��<{ΎL�`�8�P �� Պ�E��7?�@ܯu�7;@�t�E��ܿ��d��K2j".������-&��s������>-�q�l�%������u�����I9�����d,�%�P&�%9>1TQ��+����ݙ�o�;���Ǆ��ǌ��v6� 
+�^W'��)qk�}""(�i:3�WFs��N�Ysw�{2�e���^`hb�fڱs�ry���<$��,��E%0��]�o��G�6����:�N9���*���
+R��O����>�1(W���)�7^P�p�ʒ}eB��l����b�HX����##a֚�!I�����q �E��)�i-���*������$_�;2�W���
+ڗ�
+lã6�T���Ȇ\̅�n��mQ��VD8_�Q;�b܅$
+An����\�3�=?i7�wp�.[:2���cC���#I��`���3�*X8#E��Y�[�9�\���v@�t6�,��&�-�b�"����0K�N3��n��V�Y������55�1�|�͸S�A�r�����~��v���)E��E��'<a��� ��niK� �.�U4��j75��R�ˁ�^�Lͯά�
+���se��~$���o�LN��(�jd�
+	@[>
+�O�Tb^x\��i��M�D,6=Gf��/t()�.[�@���Ҡ��bF���B'�dC��e�)�y~lPtϹ3J�4�u/!�<�.#����rȘ2_�{4vJ`���ۙr�s"��uaI]Гn����}�@#��y��d�pT�
+�f���"��*{mӗ��H9Dw��P���U�=�ƕ�l�=�K����R��8`�F�B'��BNKn²E��6��!4�r�|TlG�P����?�-��_W=�F,"�zD��aG{+~%'��R����UI����'!�2��Џ�1�L��x�����R��9#��Cw4L�ȝPB�!k������y�1z���`+��`�<�\�)�����Tb����^%���Ɲ�m���h��mܞ��JanzO�������"�V_�̞��	�G�����PS�6�MW�ƣ�\��pe�W[9����P���l��T�)1�#~
+�km�d@�	!��o�����O�
+��/ ��+��K��P�*���kIx�_�!����~�
+���B����#H�ʋ6�K.�˓I^����aރ=r	��-�5��D��h8��o�M��C�P ǌ�weK���ǧ?�+|�*;-��|W97&��2Ц���I<t�A���Ȋ΅�_�%&�(~
+~�����bb��TlMn��Y�-�j�U�l��6x�TX��혆L�fNdec~bO�s΃���~������a�	>�Ow��w��dN5^�gfF�~�e�-��E���Z��{�6��{�rQ�0��1�w�� ��R��c|�#h��b����W�$�K\�XyQ�]ӹ�y��Q٪����I�nE�t �,��}�}��tP��f�YE��]���=�c��Z�F3OV���
+�c�Z�|S���M���e�:M
+�����9��g.^������L��t�8'D�n���/��'�fyj��K�&�F�)YFV9��"#���2:?����"� ͣĘ�
+����g�7�&&>�[	q{S{y�B�v�J�വ�H�[��b��
+-���3�e
+��o�b:��䖋���dy�s���vR��p	,�L��T���18�pთ<���|G*�W�}	�
+�ݞ��h��UBI ��Bc�
+�Y�l U�ѽ��Z�H�Ռ+*�ӌ�oe�Rb��iBv�ױj�'�Qs�٘zE��u:R�xÐ,���ⵌ� ��:~��>��ʜ�����m:¯�̢�?��eL}��Y�@���i�M�#۰��N�`h����m�?(J�Q���  MM�.�[à�+�[R����L��f��w2��ZAܤy�&�/1�$�I����B�s?�"g����#D�������-��&Sl�H��կ���1��L���cS��*x.Aq��:��/���xc>Lx��f�����'�X�jG��Y��W�Mg33N�E�����'���l��&�^I���o��wu���)ϭ�*����a�T���<�9i�R��{��(��i����� ������	:��c �ՍF:�F��3�ց�n�ջ����e�֯e�� �g��`������/ gb��R_\|;q�#W_�x������]����xIn˫����I<�Xc��"�3�~v���o���竑H��ߥ��vM�ȩ��}�Wߦ�z�sOt{!h�6���A"o��XR	?	���
+�,sCا�o}�-O��.�,3pLQY���8��8 ��������5$p�uM<� ������N��_ND�ih�֏������TW�̪�08-LA.�L�g����?��:M�wV*V��7F ����g�A5�񒱿��ɱ�J~t q�t���yb������6Y�}n���
+�=����'�'���)���0��RB˓C,���]�~K�
+\�pN�*mK�+�K��
+6�|��aV �AsCv9��*�:�
+��ɕ���)�f+dmK�jm�y;�OǏ0�HN��X��d:E[�ʫ��p|�j&.�x/�K�W��{`
+~�h�!c�$eHof��*�l7����I�O��B^~n�mbo3���o=�-I!#}�m�H�ߥ�GS뚎4M�8:D9�ݰ�ꨃ C%l���9SC�l鐍�9�P!��>�1�H�a�i(�p��p�<ˬ*�1{Z�K]C� 9��/
+�:�i���&
+l�� 	��
+��\�f�x���H)Sb�:���FCY���LXx��"�u8���3����|f��}Z�����s?�<���-R��j7?�2	��a��K ^o�� �R���2�2�n;��9�]6�"�3����x��*Ց��ưߢ1*w�$�����>�@��05:%y7u�
+@�(���860,a/� {(�����.��*s�zk��)/�+7�C���B��kPq~�)bWFL�Nk�R܄�a���3�g9���1�A�j$kq������ʤ/��EF\��#($*w�6I�����9�'$���A$~j�-oȬ;��ۨrz�=M��H��Tb������DZ<�-
+Q�6�������)�|��
+y�F��#��A�Q���"*�Q�ـ#Y����B����-C	��WV�8���ȑ����w,2�IC�1��O~��ޤ�� =��dB<���AmS]q7;a�B�X�8�=	n
+���t�Nr�H��4�X�0�!P�M��jA˥���a���m<Qƿ+%�I(T�$��_�d�PMj�����yOj�F�D��P�EI��B��X�*
+�A
+#��Y �-N(�a绫�P ?�7p��~�#�;%}�r��Yc~7�_��'� �4�S��4�l\�&/����(�@.�<CSfr�U}�M�E�S�՗���
+*�O<\�߻k�$zA ���'�#O?b� Q%ϔ�6�%S!g.�a��p����n�ڏU&F^�ͺO�]� G���]���LY�V	<b�@��p^7Ċ,$�cx'��_�;��s��Vj�h�a�%�x�JNefvM��%�.rɟ�iaG_������HiK��3n�/��S$��m�%��ɐ*:��-��W��L��>;v-L��obK(�-�f}wxɏ/����C����Dz��i��H��:��ڨ
+�t�K�m��j�Ļ�#6L݄�PڮI��/E��3_9�Tc��|�R��?B��/^CZ�o��A�_��1�4�J1��]M���^%w=�ꍙ�Z��<g7m,x�
+aĊ
+x��ՙ��0���4�
+�B����%��W*+���:&�\l)�t���i�
+@��F#�eU�TtN�ʦ##
+,*�Rg�¦��f���`��k���CvxdK��Tӹc��m���Kr�S4,9�:��$�\t:^�	��07֑���<�d���*4�ޤ譀;��;u�ѝ�,
+�����������sc�'������"�k���z��t�����▬��r�.AOYV��%d��u
+9住�m�IM]�������V�����*��s�� �hC����J�ɍ��؄��FV-�8�&̊ľ�oFZ��u�눺��x�g���+��[�)A���D�h�k�/�<�q�R�-"��x(��)
+����H��=�6��@OkcFRy�0�k���Ǜ����/E�>�d��������7��/ӛӇ���e�f�]���1$�(�FB�F�H�N�n�%#��ɴIy(���ޤ�k�ZNO
+�\ө�N��1��~����:E��V�(T@0[��*ٙ$I���qg߇r�G5�[��pv���6�����l����`|�Bݶ�h�'쓎
+�0���,x���]7��{\q��t:�g�VզZ��Aŝ惸���X�=p�*��f`���s��6{������ۅ_�vM����<���V���'�L�������<��kr旂�]�/.���������I�$
+b����Ε�<L�f�yU�7<��f�����h�Q�,���c��T*�+T~�fi��,����hcd�϶��@̃9�+���hc�;;sb.�42]��կ���0��Vwn,����^�I�+��ϓ�PfkdU�Y�9zV悥D)S
+O
+�a�7f_1��n���h��;�0����x�Q��V+���&,�����j�è�q)�Q���af�Ȯx2��Z�@=�p%ȥ��C=�Q��c�L.���=�qu֏eͩ6��1م|F�Ė�&�-��M�eiM�ռ׮��p�`t#�"	7o�
+�ٝ~��5�;Z�	]�L�ђ�%W/���f"M�
+f�Y���
+a���#�6Ŝ��&%=@��E�z&�.2��2�D��=��3�T�<��ލ��	7�S�Md�ͥ[V8�P�t`q�m.E2,�'��*��m;�<�r�WX�����Ҩ��r�}�A��4q��� ���Լ:ǌ3e��1�6H f$he^@oX+�J���D����|�r@eRKךM���52G��1.�
+3��%	cL��}
+8��!��A�:mG_�i�%0G����j����|`�v��s����&'\b������ؖ�*�ȥE�Ͳ����E�{�����-�#��S{��)MN/�<�TT,Ɣ�<���s��l�K+"%��gF�Zr=����{x�ZX����8�Le&�B"�bT��~�G���Yf���+�G����9�s�w��x���TS�YGI����~�����M�K�m6@�@��9�u��x�?�op�;F����=�'Y*��Fg�6D)��-d���4����_�<ȥ���^�71(Y�zM���7C��;Bq ��l���2#cR�椼�gs����ň^U�J���ځ��,�	}��]��a����_VVP����!��Z��~V]���I�R_�iˎD�3� �^��2RS( S�t5����&�RҔ����?��Kf�� @Z��瞹������/!�kA�0���D�9�h��B��Y8J���h8���y�f�_1�EM6>9L��*F��,H�_�mz���g�����{���-��xM�.������W���~�����N�K�/Z�/���s9th�Y�� ���Od����2�n��q輾�X�=�˄.�i�R�-aCD�$���~�ML>�+8T۳f�0�E��=��|[��o��_ӱ"�
+ ��6A���IJ�D���'0n+_�@�.-0�7D#]p`�-I�z�xTo���X`D�x�Co�h�8̎��ra��-�cp�ܡ�\ӛn� ��P˨���"6�,�L �\�H-��F����xN�ϋoU��zWKV�ΰ�QJ Y&�)���ZY=t���Q�VI[)�F1�&U#s9�����"��������P��9�I <7��DN��F]��ܤ��-�˭��t$��	��w<��j�T��u{F�L����"UN	WT�5�}�c/Kr����(\�&�Hr쐸`�0+�h j#f��� ޗ�Z;���H�l#.'�5\�`<�Y����7x<&/�2�x[EA�a�l����-��6�K L�"�b�#,TR(120����@ ;�@���b��'ho�<����2"\��3���)[U�"���ʯP��X<������NǗ��dV���u���F�򶱊��6��r���Dã !�r-�ͼOeSZ[�-�$/��&wζ
+�Ќ�*��P�\(�����Ӻ|�Ǆ�(�f���1�n���������m/`�Ni	 ���X���*ɇ0��,�}f�Х�.���MjD�q��Yn�p�XIM���'���&vzb#�E������=���s�9<9�X�7�B��z�W7<~f��nO�n�$�r����3�R_��8���P�xbZ�-�s�*��C�9"'0�^O5fj�Zܲ�Bj�9G?#���S���W*���6�,#4oo�쑣��ϔz`�������[=B�l����q���������*N�����Q��R��t营�l���7��Nv6�xe���튜�!��ܓc����u�=�ޤq??�.� ,y��zZ7۱�"��:>�cJ'Ţ�	-�~� ������:����<���g�*�^�I�����qI_��^ŢX�L�~�)^ ������c�B�Z�uE�,C�e`�M��n,͋���Z��^��x���?�J���a��dX���y���x�}RLp�4��Gt�o>��S�F4�T]r�..''�{p�����Y�����!�ez���c�a��J͏�R�'�&�<ٹ1f��KO����0��Z(�kF�(lW�T�Dʕ��r���x���Y?u�m3�ݳ��~���>�(�l����<¨N7f��P"W��(��X��C�Ɋ}�E�f9�:�NPq��/�=1@QakO�`t1�_����#��ӆ^��ɘU�h���:�pA��l�b�D�N�Fϋ*��b)�cL�����jI�P���$�s�[(Y���bhb�tڃL�FNb^7�3ԧ�S疡�b�O{5� ��xm�����b�M��=솷�4�7����u�Y�-mg�,@��9=��	�c��e7����c�N��LMxJގ�W^@f$_�Q�a1g����Nq������$�����]�:��vf�?�W����E=��DM�A�!����g�ijB�(��ig4�V������3ʤ��b6�Ipڌ�ދ4
+W�K�0�C-5�Ű�>(�[�i��{V;<�2!62�7��pH͏rsؒ�1yC�U��,�T�U���"MQ�Ih��6���g�p�U����,�(�m��ƍ�=y�Ւf��l�X���-�����B��>���q^��ҝ~A��G.��^]��mmm߀��Ki�A���CM`In2�H�ⴈ=:����,OpH�#Q����3�anvV
+D������J�w�t �b��N��l�g#1�xb=τS���kN�L��K2��B��G�¢d�[�!Řu�����0R)��{3�)3f4i�����eb����q�\,�sY��f#^�Xӑ��Ho�>�ə�A�`��e�A�V�{:���w������3�v[o�v�u��6h���d��p	C�-���O�l>a���/�E�z���+o����<�O�[{;�h�ܨ��e
+�ע�7�gi# cBw�H� 2h���5c��.@�g�o9��8f�ElD�L���!d7:.��3w�t�wG� �V��z!�bpCʌ͑{c�G-*��J$ȧ��8�|4b��U�R��3�zF>�ǿ6��ٶ�Y5t�
+�&��i�Ū�����_d���K{d�^p/������0���}׫�	���߼���ɢ?Y�RL���c��-;ˈc�ws,^��)�$S>��5��x���'��PG�����\~�'A)�6�����1ˀe<�e*HD+�c���E��kG6ϕ�\Y��� W���TuV&���A��?�q��ӀX@9��1��jE<�Ŝ�K�#� >ї��P�I'*G�@P<%�O�t#��#d@J�e�����~:x%����=~w�q����o�i�����!��t@ ��5_�=C�,�4��,<��2��i�fD2f�`o�\�*�!�D�X<�3�\���2�[���̝�Y�RmE��
+��ʭ7������6}%?�D����c��m24T�w�ݐ�L.>-D�ϋWMݥ�aۧ�#zP��CMgkѸ?*�p9�a�`/�a�̧E!��a��2?��1��R��BS%�r���Qѧ�J.Rk�$,&�����l,O��8^����ƿ蜄�	c�s���.]{�@�lڵ��l,3��Ƶ�����N�0�՜��c�耊@5��4'\���ؖ�9?�y�/KjcUf��T
+2���g�Q�����cc��n���H���0�O~%�yN��uu���CD�����͵��j�T + Qe3�֦Ck����aǅ�5>M�К��������P�Rn���5H��ӛ��~�@7��*`Qf�cck5�v %�ҩ壮C,lhv>�/�����DWK#}N����"Q������4��󢕄�r���[��З�g��f�bz����W|�i7.&}S�`�|��dNJ��W����
+�����a�sy�W����j�?�ͺ����+(��Gg�e� ���2��PΈbJΝ��}Cb��Ӈ��(13{�y�I��N
+�H׃Zn�����1\=�6D.���I���!>�F�Y{��ₑ<;��2�)î����'H+k�NQ>���
+���g5�Q�u���X!G\�_�$�3��v�$����Ũ:`7��O:�����Æ�c��z�}�bKY���
+���VE×��N����444v�)��'��X����ЖI��\f,���u`X.x�����#8}�m�]*�E�'P�"��#�����������f���ʶ�����?x��̮����g����נ��s�Ic@�:[G�A���&��\ b���d�pat!��U8���}бx���zA��t����&�}Y��3|�o���u����K����!��!��%��ߔx��_����͵�g���EMq�"'ƄT8C�4�4t�Κ��\&Z3?�[��%
+�ܼP�\�]՞~I�Y�𑌈v�%��H�����]���A�� !Bn�Ln�6�s GAf#���ĝ'v:ď���[nҔّ�� ��V�~\��(d��9>��کTL�sLac��Y'�57.t�))9(=��eF�#�l�L�ދq{8�IFr�E�ed�a��5+��il�Hl�m#��&���2j��).&밀S�RބΌ���6sN�181�p�H���ft���H��1�q�k�Q"�p�յ�=�4)e�TBȐ��l��t8�E�R��BO;��z�b~QnԶ;�
+�����i�%����5��
+�!�y�H��|��g������f�3��=�)�z�P�8�t��m�ؙ�v/��d�	�����o��_��E�1�	����˨e��FjdG��]R�۰�|XݭTG�Ut���l{�D<UEPߋ���>�N�P�fdذ��бv$�=�l["�zz������<�;�\��F�yf�u�G#e0%��`�Ժ��l"��o������C8��N���N��FM�6S����0�X.�-��}���2��%�bŐoP�L���-�.0E�i�/�<�ĺQ�vA#�9A��p7�s'}۠�aqx1BNE[�#2j`�q���=	�2�Y��ب�&x����m��g�<�Żov�I�Wwn ;��I�
+�ݻ%l�w�u�dDNT�y����:f���8�wefv!Z�\C�;/O���$�1���c良F��v)I9� \̢�6�lG��	S�)w���`��Ia�C�g��,#��'��O�3�t��ρ��kw^
+~%��0��B|��n̦X]G���vS}����[`�Vx:U��i{�@�f�U�1N\����/�p��Io%fJ3�4;��6��"
+8�i֔o���(W�z���NP$������\�ѓ�]˱p�y�t�K630��{j[n�隦�Қ�`F]�fƳ�B�J㗀�H�P*��ˌ�j��>P���/�}]��N��0A����[+�Jp^=75�c�RE5WҴ�ρ��ۦ;�K
+�>'K���)����esC�Cc�Nz�����ɏ�Y�PF���x)F�r�J�7��<��:�[lmBxDG��=�sA��c��v�ş���m������꯳���w_b���!�_�����J���\���Y�����3���7Qk j��Xܒq�M����qٯ���z��9�"Dx$0�c'n+jO��}wٹ W�����<�OK㵉/�8�XH
+�o���l7<����폚��|��<e��c�w�J�
+*gl�<�i�4���uX�Sq2sB�ǖ�t���ԀK��h�U{�F�/���ݦ��&�*xm�KZJA�Nk�ۏ�a�ڏzW�X�������'�z�'ƯInq!���ayxn�2��y�d�tp�(2M�C��俲z����Z��?�։]������IlD��Ǔ�W�<՛�Ơ�{ 0:�f���lQ�Q��R�߃������Z�	w&�sS(ѽ�er��c����Y�:�1���`Ms[oڐ�T&"� Q%0-8cc;��0�&��������28EJ�&DOPG]2n�-�P9�ɲ8*2���D.����
+dD�5��?.�k���1i�!���1.��Hr����]��+���6�qB��v����܉�L�֞9�j�j>��xim"��n>3"�tC~J[rH��nn �#��LZ��;��6��Dn>Ch�}��35w2C��L��h#>'�q�F8,a�AXD��t�2��W���w�ϩ�K��I�-�����WwM�?#d�Bk!�65v��)%���9��i.Q��\��~^�o!�̜#S��'�w����)6DH�ǃ�[f�_ݹ�?�q|�c�AD�Zoq��TUcts!�t�S[��8	ez������!s<��?(`
+���Ѿ8:Z�O9C�����;�zF`=���9���%�D�@1���et%��3�A<�{��&rӖM3sԱ�Ȳ�p&�|z�ݨ����J�[�'�������d/�*@S�r͑KGs[767-�
+M�������XA5���73�Plk+H���+��"�����2T+F�U�gq��K�s!���c�F?�.�N�-�E�jj���b35j�r�F]�A,�m��*��)�f<�'v��`��E��?47�Fq�v�xK6N��yP�W(����k��gm���N�v_�F~U�i:X���-���K�g|���̀��l��^�I��X#�s˨��(}�����ﮔ���B�#���8�G��U[�I�ӌ�`{��G&^n���,줠��p�v�ء�dz�KI����~�a.2��r�q��ɉ�q͇i�YD)�;�\�+��٩��3Z�a 
+��!ڗ��7W���P�&�����r}8첱�Jv��ő~���x����
+6x�:G�H��:�p�	2���
+���IG�]��V��8[�Q��fu�+�Z"�[je+9i4W7��m��P]��kYD=[���'W+�%�j�-�(P6իQ*���S�<����<NL���w��{k��n����
+۰��� ! �3�QU�C���BG2�)M���[�b
+oR�h��\;VW~l��q�h*>^��t\�p2j��a\zZt�D *���|l�G}�QI}c�s��➉}`�8��_�N8�����mU����H�4L��r}v���L~	>E'��A��O�Tg�l:�p5�)0�#ș�ev�n�o��L�3��|3�Z�V�3ʔ����,�?(6	����8��26�(j��@�'����	���Y��'��1fR��c�R F���G6'>�Dv�_:��Rf��&��ⱄ]����N79�<�Bw\�st��:�Y��|���:ǘ���{1�ى��H�W��!�!%�:[݆���_/2���#2���̏ �vQ~�eF��\�*�Vט���D�k�fͺ9ڛ�Q��FW�c��)��-<\Rb�l��
+�a��L���\R��߷����i]���,�f�iس�x����� �U�ON�ju��v�d8�,IpZn��&�1wԔi։��Z�ْ��#ph.�f�B�S=���Tx��zNJ��9��z"�)x�E���W��
+ֽ��Md-�����ȥ*�7$�[Cu�i#�))��<Q5�-[	\�38�CB]:B]�.}�*j��B�
+����z=FGL��E�L�Xa��o2��n-��>C��!�������S�5���6�GkÄ���)�݀k�YW'�zi�̂������Ϥp�p,q�v��]�u>�̱�UXR�ls���O��U�}�l����4�����5p��kl��^C�i�pI��=J�a��l��a'�\�sp�?�(���}���1ɦ7�dQ�vs�U�{��{�Q�v��]�h�@A�%"���7G:M|�9����Cz�,�^��W��>����.?�3x�9�q��-栾�G_*��87�&�b�!u���.���^��kd 	v{~
+�7C��9~�tAuX�	���Ymz�@��,�H��K�j�oA ��@IB&WD�,l}��|2�s�*�q@������q�,�MdR�:'��]���I�MOh<M@)U��]P�g��*���H��$�~_͑��Ty,�d���#15�d��}EmR�侴�J���ժy &�&���>Q��~�(�XX���giJ|-�#�m:�ѩ���t�i�Z�s
+���k�Am�CL�o)���! ���d|�w|��pn>Ûٹ'�&���J{
+	q�����
+d:B�J7���_)j�P�_E���Έ+H�Mp��ϋojr����ˠ�0�z�]<���9�9�pi�����t�SҢ����/LT*(ji:�>92r�^H��>xY0�V�E�se�1���q&u�K�Hy��^x��&N��3�y��V�"#�0F[^�f����k��6�e.De��gƴ���LaL&��暏���g��,Ls���l�٪|g��_�,�8lV?�Q����VZT�kc�%U0�b�4b�=!X���>���ߴs�qUS��pdA��<��g ���u�5[ �=��,e�����?G��@%+zi�K���X����.n��8��Yu�&=3-���c"nX��*ju��YP���~?9K��˕H�¥B�Mqu���]�Gw��(������+#z+�szDb�M?�e��#'j,�5T���/Q�h�^��F$�q��~���Rwƨ�L��:�&C���Ѩ�:��� �w!**��z	����1.�d(�AI"{�~i��,�s	j����mk����:�����A6�jP��P�	~I�E�~ָ0��E���7
+�^�-v���$��X��gq���X٦�#�"H)-�ݸ�Zz	�v����Z�sT�����#�R���LBue���ef@��1<��cs�w϶�3$Cº�7��HF��������W1Ru�Rrn���SƋ�����o>����
+n�:UVx�����L�6�b-��]F�ܳT���=�!y�<�3���o	1^>wF�9m凎�y��3�nY�|U�7U�e��dcf���N�gvy�p��,Z�W��N�L<j�j�2��bBt���߲�L+�M�Ɛ�G�U���I���RXl�t3Hq(����4[`�n�����ފ��;�U7��}�SQɑ�?j��Ч!hb�t�E�~mS��b!�OR��W���X᷈s�mA�@��@|��l,݇P���_#��^��/)͆4S�QiU%Pх�=�V�ײ)q�nS3{J0n��!/��I&�GO�޷b�6;����9k��jM�,�,)���:���0�Չ�����U�?�!�a荛�㽌6��gAăx��c�1q�jvhϨJ���fc�c��Cƕx�����N���-���YvEd�Ahr�| ���\�٣� ΧM+� ���pfM�eV�\�I�~�[H<�*�"#�/��G������!闌vF�0��6eēٌ�g-��N^;�����6�x/�����H�j=��4ԫ����MXA��$�G"f�jf#�26����w� j\�^����ƐM�|����8�)�4��%�X�0�'���v~����Io��Ʊ,����d�ZA�߼�����Q������.f=rN�2�baD�Z���ETI�eN�y|�q���`ӧ>L8�֏�,��7#�K:d?�^����i_�P)� ����q��u��<;�֔�+��3�7dÔ�O1�d$-At*Uu�fS$3�C
+�}cs�U�Lâ0w��SdFt_�>���V������LK�&A�?/r��M�g�T�׬{<���t��4���#�v��hd��
+�:����������Ǳ���w��j��ў3�T�Rc��z���{���z��8c��񜧶e���bl��u���>��{��ܙui��~g#A��é�Y��B%�P�*��ƴ��ф�%��ao��j�T6*�в�f���k�SvԝA��0�+Q��-`>��A�U�Ζ�?�r��s��_�z��E��<��m4�[b��խ1�^WԥZu���,�������94GpƧ��|����v?D�'??��S+�/��t�mr��8���\Z*�!��|t�c��
+�JUm1����c�Up����ni����e��݂j:*{T4�`S�j�e��q�`Rζ�rJ:X�8��\N/��C�4d�s.K�;s����-1̨VZ?#�>W;E��e�>!�.�}V�rq��0S)[m� �����b�8jb���������k����	b�Ô��
+'G=�l	!�I���Q�#�#���aӴ싅?� u>g���g2ǋU|�5������h�x3��I.m�^.U>&&C��TY��{fX*q��c����`@�I�������?S����e��B ��F�#�4����	Ьyx�$�b$��/��I`��l	˜��+�Z�w�T� K��nD3EȍB�̬5��DK}(n����cv��K�<}�eAt[y4���a�����.`[4��H� #QZ�Ά��O�d�����1h�xk&���2c�
+A�;Y0��p�iO�|�ҙ]�#MŴz��>���^�����:�t�.�����-�9A�k.NS`���&�y�۲�ł����:E[ڂՁ�c��8�IA�vM0/sW����KZ��{�,K��>���*��z�V�Z�#��M�-9Iq~T)5�	�bmA�eӥ�
+�%��/D&.�X}��!P)P$)C������v35�c�(�O�<r7.�-$#4�a`���sqK;��d�E�x�~�b���P��d�6�Ò~ȱ̥wI�X'��P7uKy_"��0�w3AvB���1��H�����d�3�Ɨ|����87f��%�}�4S<=����������|�k$I�#�����"�}G�!Y�G�%�˅��ˎ��d��P�|��6uG�p
+����#�ц��`a�a]�
+͐�KM"+D�#�z������?�y	�W0��� ,�;�D�j����)��������ؠ"x��`X��j�g�Oa2���٣��"ȟ^����E� �ɰoMB|џ����>��G��D+�H~����̲��e8qe���~}?������Y̭>���5�>�o�<?�H7�h>BD3
+�+3��������:����)^yO����_�7���d0�|k�Rcsi��y�+n��\���߶��`0�
+T6�VB�>E?�M�J�L歚�9Ku����Jƥ���؞=T�� �iU�Y��ƌi�b�_)�uLU*[|��
+N����m��-�F)���p7��p�R�g���)I-;��u]P��CB���%���wO�D�p�P��}���	������ԇtrV0:�l��3�������RKs�����Ã�s�Λ�ָ�S=����bq��ǅ	c"æ�6a�A12{�tu��AĞNƔ]pZ���������($���)�\3�Ԗ���`���H�!�O�~���9,N4���5�-�]	c}��%1�d�r�R��nCe�LCW��;B�FYZѫ(���#�E��CϻJ�8GK��Ǖ:u�'=0,������xHX���&�,uG���9}�^k�����ٞ�T�
+�⧨ ����/Yr4��6�p���\�"�A���l�9��lD9��Uv����FU���
+�X!R՟����"�)�H��r	 W��j�w�MD@1P�2
+ð���ś��N��T}��]�`�ꕴ(	�:�g�b��Y��;ν�B��d?1��5���x��M�HRt����ϩL�CձI�s���d-ũ���<E���M����k���ƭ��r�jl��19L+�؉�ᖧ#��@�xg0��M������xE�"~���Lf������r�yw�X�a�l;��M�}��D��\
+�(��9���X����d,^�ģV^R3x�pR�'40��H�ǉÈI7�]�����8����RC��k�����=q�.(�>`��.�zc�G8d�Hpፊ�Z�;�&5���a>�[�E�8�������/4.�Rj�:c�Ug�O�Fb��EB!먾��ҷ$+�@~-���%VOz����.i_�=\{��j)�^B�'�~%�@�����߂)��l��
+�"DX��C}U1$w);����O����o��:��Q6�R�Ѽ%�jq��XB����%�\< ���-ا��.VFr����j/���p��2S��se�>@��|H�!����i�i�R��~�*K�����vɭ�i�P�{I��G2�2d����u���\C�p]$mkQ� ��S���xh�b�"��Tϡ�mu�����M׷K��7���/�׸i/�k�<I2D���ď�?c�_�O^�s@�? ����K�a�+(u�`��0���b2s3���ʰDq7����A���X�>#�wߧ	$��%���?
+	��|ml�Kf�,"��%����1�~^ =�7��پx(�ت���)&`�5k�@a�Q'�q�X�u�gQ�&�̃zV�-Z]��*����gK��q�#~N�_W�_ƿ��Mʒ"��pL�P����YB��_����d&�B�Ln�]����Lt��a'�<���TT���8���?9��Jnu�� ��Q
+����y��T3��66�:�J�l6I�L��蜳pc�%�V
+�
+�u���8e��(b�t#&W#���`�DfL�,{�� H/�3ԩ�!��O!=rDw��B��`˅8��$09Me���,���#
+��	��1^��/r�}����=�z�1F��떫5�T�WZM��,֋�\A��r�I�π��i&�1=�R�OA-�wv8ՒnmȯU�K��i�&��g��6��l�M�b/���ʜ��lJ�6��)�!8� �~<���Lv}���(���Ԇ{���nRBAXTc]���c��q@à�p��)���?�����7�b�T��j�s➯������u��u�I 0��<�ݏ�έu��b
+[7�Q�m7#��C��e�ҟC	s��S��i�q�R8�XƇc/���X���cw)'�Sxt}�ge�X�بs��y-��&�HپV��i��ǆ�O��}���]��-m2�l��6�i#���Vcf�H�z�v{�n�m<dH�L�kEj'�p鈜�ɝݖ�Pf3\�_��Z���b阴�ޯ��-[�]F�n6��#�I{���
+�y��>��k��_�Iΰ����$@?e��:=����v=2Z�оb	��-ߜW�k~��%�S��#���P,������W:�����g>d�a� ��;1˴��r֝�3��x	'�~�A͎6�x����(��Fq�gT���дyeq?cՑF�$�{?�ڙ٘���h4�B��B���K�c�L�#f�t7N?]7��D\���r���3;Jma/�5P��W�"	`�p}$�9C+W�ϯ	�(�A�Y�875���nz���jֶ*���e$�w�zͽ���>��^gb��;���&X���O>'u�Ɍ�^�{��ę���?zn�E����o��{�p��gL�~
+���`�g��Y^��>�� ���'�J�񙉔�#�TL
+[�;�(�	S��e�
+����bMRn����#]��[B��eŲu�^&Y��N��"��!����n��̲��ZR/�s�u�����iJ��L�p��w�
+dHY���l�	�)q�qӍ̪I#i�I
++� x�'��|*�*���l�J��XH;��O0�-gkO�񖸧�9��ڬ�!�A��1�W�1�
+��]6ol�NXfZo �H���<}i�*'��T��H"ϻ��	�j�@��a��C��^�N�J�8����G���Ir���ḄrܐT��`q��#��R6���c�	_��!��zr�P���(E�K�(��(%ݞw�X��0et{\+�����6�(�5��$�#��[:��B��8ȀgNY�po��x�)ЋK����젌(=_]�"��Ps!(�IkN��g�N��^P��Ke����8�rhZ�6e��FG�#�y+�AQ�U�pb%>$�[Ǒ��<r�I՞~Bz7K�Q�[y_&;�r]�~\hўڹk��B�H��!��Y��
+�gJt
+M�m��Qs�TS�u5�Ѕi2�'Se�g�2_��ۨ++�1?����\Ģ� :5�dǶe����5gz(�I��a�=���4Yk��� {7<F&·Ǽ��H��m:��R��|4.c F�|H;r=���}CaS�F8a/R��I�����s$���h�~v���Yf�e�+Y�(^d���Yݯ8i���>@�^����B��3Jɋi����z
+SM�9����
+��//H�-KF.�'�����h��*�/�1��ʆd�-oD��F�JB5_5�!�L-�
+HX�n"z�4��9ٱQ�PϠ@�{1F��6�r{�Aޣf���Z�D_ ���ᤨ�l���z�;�TnNN��p�7�}�\��;����S����/�=�omW��
+�
+_6����Q����d���^�w]Ѻ�y���$��KNy���&+1ج����ڜ3=?�y����r������㚗)ۙ|���惝6/6ݾ�`��g�١�<���W�4���#���H[@\)pɼy3av6��9��Y8�gCm�n!Y~��K��s<S�$���9�8qP��kZ����f�i�:wTȊK<��� �0�|[/قn���a�Ɍ\-�d��A7��8�ϛ�V)%2��`tA)�8��@Vpp���&�w�L�1C�9��W�Z��LPc�Z�mVP�nc�Oܷ�O?��$��M��x=��R�Ѓ�l�^o���)#O��=ҥ��n
+���5�{@<�]���^�>�6S� n<���G����v��;PVV�0Z_e4>��쉐�܎Z�fдi�������
+�h0֏�j�gq��P�đ�9	�%҂��FZ#l�Ԍ:�`�&},՚r�GB���W��me���2�Di��8r#Adϋo��͞�d�uC��L9Yz	&�6q������Fj���EXV %ā�܅ty'�'��s�y��AFJ+u[�F;tx\e��";���� �JsM�U"�#��e��j��  ���}M��V��޿��+US�ruuMK�	Y�]���j�U��
+�DRP�  �EȄ����^i��DL��y����)�rez"z�.1Ax�{�=����Owl�!��W[�O;�?Lp	
+���UV3wJ�IF�
+vKqMm{���uӷd������Ky��y2�TY�8�6�ϳ����7"n�r�l�6B�,Mf⑞\��;�(ܦ�2&�,d'���P"G=�v��c�Q�9q�9�����GKY�9S؆���C�D�f��p��_�`��<|;f6'!��)x�I��1���qWy�p��忑,���8�-�����@�t����,���$$R�t���m���%X�f]���M�+S�H+��'�t"Õ�o��H�[�D�*U3=��t�"�����ic�+�3zk��q�9J�~�WNB�}wbN(��5�@[�X֕L�Ͻ���E��D�	�`����O���D2�:q=W��>ع�f��Ha�4M)tw s���{1�7-��KL�ǁ)]d����:�>�p�&�Ʃ�-  SK���~8F��*�D���x]b��4r�l[�1%i��f ��8����f2���uJE�L�0�z��|�ކ��7M�{_v��R};���S�)ۊ�����I��*-�CқG���=�Un��j�O+ie�}�g/ڴzڊ����/�jOk>��_��5��x��l�����z4ğ��t{���L��]:�d>��G�����vF�<�|n���H�ϲ�ؑ���FG�7m���fR�FF�fCC|��'z���Y*�����8�$�rj�k���Zz|�#ې�9�� �ݲ�����E-ռ���!Tg��ݙ�o���T�7�>&ɳ�MM�Ki"wE$��|17��NG�Q(����� �C��N �� ��e4 ���P�zo�8@?�G���������ȷ��2�5���%�(��t��6����o�;�i���ޤ���ќ�j�]���%nU��E����V��v4?d騿�,52�0�����k�!����s�+�Jowה�ݣ{�Q�ݵCGN�,&1��mǐ	_O"���F"�8�(�i� �Xm�G
+�pW��鼰�6� ���FQ���Y!��n��L
+�x�o�*R���d�e�5{HդR��`�������e�;�c���#r�6^�l���n����F{X���}�z�
+&/gZ��E�k���6�Ƶ'���)[)ynl�s��2v�q�/2Hh�:1�3Ys&��,�~�l��U)�P�����1Jd_E�R�y����7��-&k�6��6I�㘑&����ޘn��e���apk��F�'+j����w�l9����v�}�U��dN!���� �k�ǊU�Q�'P���e�{�d
+�d�f �lr����xJ��n��q�*�l9�	Q��K�C��o:���~�L
+�$���h|��� �+�,Cx|*������`dL��<�FJ��C:);��mX`Q�&����*�&%���=q�N�HB�h�;mm�?D(��8���wh0	φ�Q����G�.�o�
+����07��'�xN���8���򗷑�oU�!0�X�M�tF����S��tDD` ��-@���h
+�G(븼���kę �V<��)K�V�r��AS^�(�F��}7�������x�^a��E:�^SB;�
+tħǸ��T�����y������x���Q��Ӵ1iY�i�Byf��LJ�COXm�K���8|�wFt�$�8�G�ymY幄e��z욡�Z&�8�q�E:c�%�楢�.Xn��
+2%H�& �4���� ��x�Xn�N�ګ�����I"���_Q�C9<����jg�w����Q�����i��!ǟ!lT㜷�q&���of��Hy;=00�.4�1����ڭ]���W]�˨Ɗ�rJ_3�sn� �-��r���m#B�����)���J�2�s�@�d{ mdn�9L>!;������V*�%�Sd()�\RU��2į��F��6�����3�� ���cPt�fE�ϦQ���q��]R��t����"�*�xt!���8�U��j�|£gi���7@��Qݫk�(8ۈ��v����r��ٱ�{�'�wH��|�̦�9T��b��!P�-�D���L�^C�<��m���� ���}��i�[�ɕC��
+$C����=��at�����G�~Vd�u�G%��Bd��遇%��@�ٍ�<�1�h���~B�D�tGd�`��)���|cgC��+p��̂�F���j&s�.\o0����m3ƹF&r%��	56yÒ��zkP,�
+Ӊ�qO�ih=,^X`����x�~���l���Q퓢9+�@n����q�β���0��|>�����e���U
+�Xqp�1�>	�p
+�,��n	���T�S׺�A�	�%N:*��ԣǓk]�c~�C{��Kw���ʁ�.ֳqjMz��8I�f�M�>c
+&��dSG�,܍�eYJ�wmC���4�����Ds�T)n�v�����4T�r�67�\WX��EK���f�	�AW�@�ht�Awe������z+8`Y�JJ��A��̶L�x����ui�Ҵ/V���Ł�! �T�qĴ5/!g�Џ�k�����b������MD��%s�,Y������F8o�`�4B�E�QN��]8�)��̨Qn�=�8����_�	�����'��Ø��MPKȜ���店�
+�x���խԨ�%	��#�r=jhoǺql��UD�\�s|�D��qj�oٸ�:�������
+�F��6�F�i�R)�?�>br�F(�XM�B�/�*���1^����=�Ӑ�_���T��^R�	�◩�X5��Ƈ����̀'w9�u���y�#��$�w�fT��=����K'$��Yy�0�Tr��;�:�q���$�n��G���\����Ss�Ǜ��u�c�����ݠ�!����lab�T�Y\f�!&�1
+��L#e�2�7ߴpR\��U��%��,��q�~h�T)I�����[�P}By��>����3o���γa:V�� �('d1��E��$��h�Y�k:��������"��\#�BmA��1��%����7�(��7�)�)��u�3�!sRR�_�X�}	����s��m =����0�-G��eᩨɩ��ÎF*#�|0[��ck0�[F$G,K��X��4�4�<t���ɭ�4���ȡ��H�
+9�-M�k!c�hQ�8$IE��O�@�q��a4�B6����w&���N	}B 
+��n+m�N�Q�D���(Ga�).���j���ݣh�;.�ue�$�+���ڽj!0b�`��H<2��pR�X�.������(M���>��4��!4t�8S
+=�V����	9��Ƹ���T.�_B�x�,ex��R<-RB���o>ҏ��õ9ݡQ� is�H'�-?uy9��N~��ar������/o��7*��1��E��y4O���-���=k%�T��E����V;�ћy��g�"�H��#
++o��d�"FTz����kr.� �9m�M��2�=Vύ`G�tL��k Rw��9���#k���sl��6��)� �r���xM��Qx�ug��$�
+=V���H�V��7����-�'��������X�U_�Z�Zy�'ȯ:�����d�q(�(�8�۸(7U]K��}�����\�VG��q,�|L�0�H;�Co�|�Ly�v��5�\����:Mg��I�
+A�R�t_��]<c�5��S,iE��?]B��l�:��!D�Z�s�X���aTʏ��6�՛���ʿ��F���]���k4^gC��C��l�m��Hd�fV��QǞ硓6��SԹ�67-&�i3&C#q'7A?�K�P��y��C�-�u��f�7�0�ު�2���]Ý1��!O眉]ǃ�%��ك�o�M�j��UW�����b�V��.V]uu�6p��_$y!<�"I��YJ�'��O���Lz�q,��QzXa��q���c��?E߼Z�'��Q3��]e�s��̣�u~5f�?�X��lH�D�-�d�rn��׀6��� a��l@�`Q�QO(�
+�P]I��
+h�5�i�E�3�l`'i�a���A/��fA=�(\�Jzk�h>�o�`�))�X���r��P����+��v�1�ө�:�>_�l����@�r ҆R�=hN:&o��H��0�5Mc-zGw���M�X�o�/�}�!<��T�;�i(�RC��f|;�iP� M�o����
+����0���2A�D���cc�:��`�A�f�<�9tRDJ�ہ�x��z�)o?����px�O��&��#�$*�zG������y5��-c������!�A�М�G5e9�*���)�.05"��n�@��F+e�ls�O��Ew`�EU����A	��1H:t����i8E�^j(#0��RƊ�� ���PA���Qzg��J6x�uh�G��|�8�
+�wGlAA-�
+�
+F�-��G�e�+e4/�+È��A[�w�|��'s�q�1���c��)c��\(Rl}��*���:�P�q��㜑WEƋia!��C�FB�A�zz%$Y8�i��,�'�4MG�y?@ۆ�kؚ�k��1�|1��CJ�  e��AlE��DY,�����A���i���`���H�$� ��>�<[��K�k�P�%pF��	'��1��*w���� _s&�Sn �u��ܜ[�#��>� 7��dZ��L����L�{hS��X�},M�7Lcn�#�<Z�n�eW��'�� !��%�ʔ�(ФK
+
+R17φO�f��L��=�լ�V��⺂r���9�:�K�4&��r�����OU�Z�
+��0��B"B�+�͋_T�ت�z��M~���N�f|c�#k�K��q���lf�<Wa �P4�	QJ�+���EdoNԓT���O1-�7�tv̵|_�O���LjQ��!2��'` q��Ȉ�f�v���"��#+n�]���dE���-x�A4�.���B�i
+L��Ŧ\��:k/�v�i^8�b_��֗e��o�'t�Tz�����P|�W	��) �d30�D��#PN ���u
+Y�T�)PS��H�$��ΐ�e�>���O���G�ϼ��������@�9{I�����*$O:���+�F�R�}���ܒ4��S�c
+8��8�+�O�m(�/��^2�7?�sZ��ٰ!�}y����c�O:�� ȱ�h/����4^,Ka*�Q'GJ��P�x��YW;=�p�x $Wr�Lȫ����Ӻ�.�z�J����M����q�����hŤxt�^[�:Ux��@���H��HjO3d��%>�-�L��L#׵�]��<x�Bcۭ�{ov���pY\����׀B�G=�6���O>�_U%��sO��.q���^�-�l@Fk7y봛��C���$�Ķ���c�˜
+	��g�{`�5a+ѼJ�B/F�EB?����J'��_#:��IIHj�.}��|��
+ő���EqE�N��{���P�������z�d⯳��<%)�� E�'�ނ�׻�+��~��wC*O��q��.����_Z�п)�T�n�4@�\i�=;�i-_�p�X�r�oSРq41�^�9Z��
+���WA��9�e^WTA3u�'�T���M]�k�D�96��x��c��sn}d����Gռ�.���0nð����Y��B+����x:LBv��1p��'�����b���'�s��I4�^�!A�,U��X���	�I�����c�p�A�o�i/��������`��͇����ңؔ�Y[�.�!�O�r1�:�dЄ&̲��` ��V��N}�U��5����-
+zxĻH/!{b��O1�3Mj�x��Q%M{F�
+K�/s1/�G�-�����xTo:��/�����T[�)���"g�tBl�c��׼���c��q>���*Z��p�v`�?�LJ��4XI�pe/:�.T[㛟�U<�Z�=�s ��Bs@
+��k.��+/�
+��A��T�8���ύ�_s�2�4����˨�_�ҩT0T���%hDD`�B>��~��gxj��OiRne�5^g���Q�c4_!O����� �J�ae�$�"�wW7Dh�4����U:v �`c�OU�Ì�+�C&f��z*��jsI��\��cx!���iD�i�[rB��[]�:��i�RӺ.�e&;�"����\#�������I<a�ya��on�at�,���ʶ+���`�+_�$q�n����H�޵E���#������7�W �}ų!����L�E��m_<�|�DzR{���E��	��w]�8�6�r'Q�r�)�٢Z�d�
+�Y��'͛Q�E�d�n~�99s���7[Z����2Z�E�pmݦ{. h��
+յ6.'e�/4(f��4u6e>K+\��(�ڭQ��8N�.����;��I��K���ʆz4 r�d�c�V
+HHn�N����ǚ�f�����ˏP��y�!�
+D��Ml�E�\RV�+xLvH�U��M����{O�"��I��^���aʏ��	�����b�Fn�
+7k1���?�c�'mr���w��zUb�Y緢�L��+'QXϿ�SD���$�����n>t)�]�5A:�Z�~Is/�Ǫu�S�qԒ�T;��=���eŰPZ;u�e>-n� ����\4@���ý!��i���U�Pp��Z�Z�0�;����(��,yjcU��t8]�B��0��Vqj��p���0���G�9����S�F�+U�S>��xLǳ\�6�4%�UQ_�	f��'js����	����>��k�c����ٷB���/��fx��ط�܎�a�靖,��C����a����k��:m^�iQ�
+��v4�����R���C<3v�h)����s�N!_X*��A��q��6�B8^3FҸwAD-���窪�������:�M�/*�w۩��/����*�'��dq�{��U�b��v���%�/��Nl�!��/z_)�aE�c� H�j�O��כֿ���FU�r�0�S��y��i��7����,Q@�Z��\�;�v�>��)G
+��;�Z-�d�q�>�w�}7��9�=�a�
+�Ц�[w\�DB8�� �z8�B�km�����=����y�.��Vh�	��JK{�ra��,�TY��vr{wqV1��ٹRLp�]B�Wl�R�g]�<#��t��&j�2O_�]��O�ʖ�LHϧ�z�b��j�ځ�%�mn�0f�Ys,�o��m@o	�b�q���Z}�,/XK��z��O�X��>�ˠ��ef���bm��Lۤ]�|`��/���-%�iϼ�o$�2� #�rd3"@�M�P��j��E�tj���|�� ���;@KǅTe���]�?f����@h>�ʡ�ؓ>xE�e.Žu�Q�k���y�q�)i-x~��<Qr �6B (er�!ń-I�)��3�Cj:-�lM�0��|�%��)�ЄvZ�ؖ�k�<~��<�e�!cDh�`�kT��D�����X�+���f5&��2o-Å?��Ũ7ES��1\9�gߴ�{�1�toz�����-}p�JՇxA�
+Fz�"AЗ�~z�ܠkp�oJb�]`
+\l�����T���)����XL#w��L5*�)u��?����t�DpϢ��z�{��
+�7�	k"\�H����%9��n��"Ę��6㈙�eτj���i5���)��8Nф�no�|�`T�C˘T�0A� Ш�4(K�T�@Q'�x;s�B�Ͼٙƴ
+����QO���pfB|%* �]����eƔA�I����>B��Y�Ephl�QT���>QTjtJ
+��"}rQ92?8��wWڂC#���I�)m��{�H�,}7>L��aQ�n��nE��Qo��4ހ�'��
+��=�5d+&�[v��n�|*����:85�J�(⊶��R�EǱ�_'d��'���O��^z�l��J[?���5�DsϽ����8��R|�RC�x���A��I��zl��P 3���du�7؞�5
+@�QD;�K+��pC�1)!s@Wy�&-t��k	�9asi�w��/���iyM:l0�m:,Ѝ��h�`#��dh2���x�����3>
+!E/T(VҠ?�`ze���e��TG�?R#��:����A��tg�g�W ��=������6��,C���M>Q�ξ�2@�1��\0&�w�,��Cbj������Zk�%h�y�c�!RL!2��c$Θ�i��#$�]:��)	��\�o�z��̗��B�h��
+�G1�����N1&bt��	Ǘ�3݂�/yd�"�3�{g���
+��s�{��?rK!\�@�}��ܲV"�a=�%��=��K�[��	��E�yh'�O�9u����^��RV�����K��vHF�1�������R�iQa$�J�#T/m�E'41��o������71&V�2���0�Yj��	}����n�.X��%F���v��Z�Oek�� �&��$tS�a,?
+�V!y�𦢩�.syl��b1�>�CQLGX��|eNk}�e��)��*��O��k�9�(�E�w�o;��}ZQ��g&�x�{	f�Mم�
+��U"QV)���0��PYO��t|m1�[!�'#Q)�,������=��S~�t7�):%Zp5t�hf��C8�
+u���Rg�i����8���?ߡ�n���cuZ��ga�!cs�	�)7L�|6X��A"���2J��U��l�ؚ�I=n������
+��S����&"�P�n���]𖷀���,Ξ��W
+�G���]�ɷ[��Iot�L�AǷ�y���U�{�����O�r�$|���yF�_e����hƣiO�uy�傞�����"��D��r�كgr��B^�U��>Y�x�o�q�W��NϽ�����gP����!��#V�d5���!���u}�Ku������q2�����;��5�R��~����%���-�w�X�6/��2��% ����CSA��D��0-��l��r�ʌ#x:}�ZiA��>z��4����l��p��s�O�̊΋R����a8+䕚]]�I[�PQQS�������b�x��/ d�H
+*ȃ[j�˂��`Y�l�&v���	��?{����n��4:+����a���o{���wR��+*���a��#8Z'��D�O���_g�����w�r-�o��:6��}�{���Q�h��u���v%�F��^������Y��"�ET�U�h�Q�>��Ȁ��:�e�V�B�� a7�<�d#z��Y9s�B�feK
+y�E�m�~]�H�N�,(V�0�6:(q^Aљ[-R=ɶ�b`#>�N��IWJ��Hoy�:1H-�4���,���@㗾T?�z_�'�֗�c����T`�
+�E�
+Ǳڪ�
+ڳy-IfIj+v�;�YY\JGX�*Ok��zˉ��<��t��<�)VC���q�Ӣ.�fB��"�݂��T����
+�&����m��S�R����5HZ��)+�Nj?����c½��m��J���k`�_�S�����"C�P�c�s8��?P�q��^�Fj�0��c������eUW!���ϝ�� �7>�%�1��>o��z=?6���	wt�Վ�lӡ�٥hC8K���0
+&h�إ�ܫK��jv �+p9V4(�-Ιs--��BD^�����������r:�k�=K}Hq���F��t<�(�J�G�w2��q��ahdo��y���� ����"�[M��I0�^�=�W��
+,k�����]��m��տ4�:]�+��ic���yJ(N�_W����Z	n)P-����'c� kt�E�O�̣φ4�.��d�T��ԣ
+��� ��L`��UP���xR���:��,qpRA7��^t"��$�L������33��|b٤k����D���/�Sȸd�ǜ�'�wh<Dߛ�
+�	p�����S2k�,��sw�
+�k
+�ͽ��II�z�z��K��WMPӮi�0w�e/����dUZG�J���Y���CR�Z�c�Ňo^?���O�$sM�����>�.����7@4r%R\�I�����~<�"cN'E��ZX��ֱX�,P֛�ILa} ���1��0j>sY���ۣ�rN�K�D� \ZL�I'��d
+wL���-��;:4��2���4d�rxK�Z��oY��l��+�G���N�ngC�ؑ0&�%�pS�C�.�Yz��-���Z�:����*���v�����ՅiF6C�ȳև1��
+9���qV4P�����A�Z���Q)Ǚ�&@<n��#�K�އ�فг<_yu&��g	�:[ a��w ��B��t^͜��v��
+��%[�
+�c��6������Lv�[p<e��s�b���@S�ȁ�|\S��{���w��ϿU���J�C^�)�(o	\�2���[�?�̪�]�����V}�`"-�]��q:q�CT�4���L=�NX�g�jc=� 'G��@|7��6À'�������0vڭ|���@"�сȏ,GN/���|��.�	3�s(N�	.x�Oj�]�[NG*c)�ŗ3.\�����+,v<�_�Gմykӓ�u*Q�!�F����}��}��
+�r�\8yҝ�W���+���IV�����/;\��n>hѠL���<o:�Ȩ�.�پ���.v�Ѥ�jD��f�+j�M2�b�|c�	�-��{��+ q�4�g�����М�zd�S@U�|lC�&�D�lZ�P�s�G�����5k�sl��+�>�<�W+	JC�r��&*���D���ё[+\,X$ح]��ٚ�����.�sU�~ yh�4�LK��	��	3{�%�8���3��b�H�_S���cm�e?�9�f;�.:�l�}`d��&�����|��Y��\�21D��c.�If��uSM��9��?���_��ڼdg�.�"�\]�J
+'�@^�S7�=`��^���!��ߋ*zB�6Uou>]�b��`�(#��2]�2�b����	�A�n؆&���V�Xn0D��z�R���y��2).Ct�8�A����[0���H^BA�v���6�F�τ�����`�{�'�%�D\[���_��؅�<��9C�.�/��u��̡|�>�y��P�0�~�M��|��ٍ�[�oB�ڗS{)3���l�TP�n(ψB� ~��7x��0-�B�ݓ���}���33I�ZR?�T�C���vKr��������^�Ka��<m]��ܘ��Y�2�6f�޺�Շ�	�:����Y"5\2M�{�e��ƞE�
+�l�a!O3�e�#cX��h���qi�Xv�
+����O����$~����	��Br�ph&n�h�PՇ���W\�Z��b�:^�+������c�bo˕� v�$���]��Y���E�KR�a5TL�"?c�@r,��md��>��u�	<��i��g����-99�>�F�NO\KfjL�J��c�9��C�-�[bk�egb:�S9�lIAE���'��>�j�P����Dnf�`+������I�]�M�`�ˁ�ϾI�ќ-c��	b�r��)����(�̻,�D&��	|,8iĸ� ,�ӕX
+Juk���%�P�C8�?��K�ݻ$<�,�b �庂J�%�0ƌ��dJ�O��PFMq����<����?��b.�O5�}���g�������v�5A	/i�ƍe��t7�s�
+5�o/-��F���*�7�k�w����jh%s
+�JI��X�v����V�&��DOvX���aLk�sn�Ζ:L(x���;�f�$�_�
+�"���*/R{
+np��e�s	^)�K����B�|lKhu
+�Ku`�ݔ��<+H�����	(7�ޡ�LF�l\�G���2��b�9�9p�!K�`�)mG��`j��7`�z�J�����#񙑜(��+�U�{�f(Rd��K�
+�4�l�#E(v>د���i��<Wն��Q�`�xw�҇h�/T\����r�4���r�^��l�8��'<0�'^�0!5���4�uR����}>�Վi=�\-�2��-L�sL	��r���X(w�'��HRcQ`κ�Y��lt~xi��+c����x
+�����0��	��жNKq�۳rF�,n��Ơ���uJ��շn��듊�?�9:�������b�qa����Fz��rV�Sv��;������q+�k(�k�%� wI��d�j�t|�(���a�:u$���B��x����e�5 �h'&�x�Pn�Ye�2񧼹���9��T.*��5���.Ğ��FT��ٮ�����}Q�{��%
+I����-T�w-�seN�г7�(��WE:݀s�����)�bG���p�y�v+K��M���:����y \��j3��B%�����kf�f�u`���7w��I"v[�*ΦA1@C�c�D��o�>1e�|W���1s�A~�o�3`3,(�27��X�'Q1h�Q�JV����Bt���i��o�)�O2���ȋU�QxtC���[K�M���F���城T;#P�"�N8[�s��M�f7�@�)��Q�x���N��c�ki��,�ߺ�!�ȡGo��7��,࠷�zf�6��qˑw_�
+�Khi"���
+l�}fU�Wɧ2�IiL[��˳Ao��j�9F"3�'�uS��c�1}�����7�����$W��gyM�HǠm��Ӽ�}�����`�?�R�h�g�3b���|�ؼ�gS��9;~�A�l��dw��.�3��@����+:��Q��^-&���7�@�9�g�|!	��S3��'	�}����&f=����g��L˭�s������F�w{-^Z�'��Naoo�f:��O)`޷!Îö���N�`����4��T���p�R�a�
+�S����`�h��kC^�a��������$�9�h�"=�ID�\�(� G��V��n.5A�:��Bw�(�M�=b�"��ACd��T_J*t^�������\�?`�Vdc�6zG�]���u���E��L*��0�j�˱Jba���Q�P�����0����*�x�x�F���JH��ѷ 4lv J 2 =������R㭵y��4�*X���#N,�����$��öv��4��b��2��c�ç�R�qq�R����{��
+���G�%�|���H�E�2���*c$Xe���t����a���v�:�1���]l�U]k�f�wD�����Z��j������S#Fٳ�𬼬���"DyޞٳX�.�7�=��d`�< ��VwuɠB�T>�����
+���A���\0�Ko��?B�C38����zÖS�L|����9��m�	7/��4_�6 ʹ��?�������@/+eI�88>��U��1�̞n�CV�򌳜����Cߙ"�r���t�H��.}��,�8s%��y8�TK���`T�)�8��kQ����	��ux��ҩd��UhA	.$����vU���3��.V���#��s4�8KPK�<rj�M�q���Y3p|A�5t\r/Cf3�T�t6�QaP�)�ᕺ���F��EJ�
+]ph�o?���D����;CԌ��A��T��b7[
+���[�7��`	�թ�Y�_�w�^�k5�=���"����^��`I���@���"/�j��5$�`M�p�����dZ�u۬��{[P��o;�"|�^;���J�բ4�9�L��67Wd��̍�G7uZ�df��峱�56�	}8�t��CIa���_��pY�ZnG;��iJ��X�,SG`��Pޡ�Fp�k
+����^x��u�!p��lj�{�Ս? tܞ�r9��N��O�n]�'qa�Q94nR^'��*�^,D��Ј*�2�H)ǩ�8z5y���/�T ��X�Pm�cisˬ��Y �/ʯ&a�f� �#��p&��r[�3#) �|v������F���G��K��^�t�-�љ�`GRگ�&�9wh䚟�6%�b��(o��2��T�U5�p�e��J�~sky;�ä�q�Uf^�p�� �z�k��\��Q?�hg��Ў��i��`�0����M��C`�>b�H����'6��O�����k����p����g�@q�<��A:L��PS��k�aj��2�V��Op�8�U�ѽ�%���u]�J3%���\-4���e��Kh��[ZaY(~�kre��	�d�r��䑬�ou�5T���R3Bv&�������Mc���9��x�J�MI�������y�2�Y����*��TѬXH��P%�H=Ҹ
+O�jт�6�c�=T@���M���l�0.�.'�5/�0?"cK���ʒ�6=�	����7?��� :��w
+ᣓ���P�
+"+K�1�R6�W
+A�!,���f	���W�S��z[���WI��T���Qڱ��K��W�N�0=��1���0�	�>�Z⹂x�;�{v:��MZ��Q�J^:r;��c�|D�������V��e:&����'�aj�QO��
+������?�*���J�q��j7;�5W�O�0��I�tL��w�})i���h�˷�f�j�7�(�봙���~���< �WL�߻�z��sY�ӧ�7%��1�b�R�c�IY�ć��͆;������� ����@?�o�ӏfO����Ks��C����eQ��쿤��q���Q�(4W-���a�4���<�J�z������Ӫ7~�r�����E��w�aM���Ge
+�s��Н�ҋp�z&]��g=��Cщ���y>�n�htt�lK���?�ľ�_���   �� t2ٿ

@@ -1,4 +1,3 @@
-import { Framework, FrameworkSection } from '../../types';
 import { LucideIcon } from 'lucide-react';
 
 export interface ParsedFrameworkSection {

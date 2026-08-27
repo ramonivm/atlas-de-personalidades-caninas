@@ -100,10 +100,6 @@ export const OriginsView: React.FC<OriginsViewProps> = ({
     }
   };
 
-  // Summary statistics
-  const totalCountries = countriesList.length;
-  const totalBreedsWithOrigin = canineData.breeds.length;
-
   // Render view mode switcher segmented control
   const renderModeSwitcher = (currentMode: ViewMode) => (
     <div className="bg-neutral-900/80 p-1 rounded-2xl border border-white/10 flex items-center gap-1 backdrop-blur-md w-full sm:w-auto justify-center sm:justify-start">

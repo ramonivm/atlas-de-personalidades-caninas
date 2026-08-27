@@ -10,7 +10,6 @@ interface BreedCardProps {
   onToggleFavorite: (breedId: string) => void;
   isCompared: boolean;
   onToggleCompare: (breedId: string) => void;
-  onSelectArchetypeFilter?: (archetype: string) => void;
   priority?: boolean;
   style?: React.CSSProperties;
   className?: string;
@@ -27,7 +26,6 @@ export const BreedCard: React.FC<BreedCardProps> = ({
   onToggleFavorite,
   isCompared,
   onToggleCompare,
-  onSelectArchetypeFilter,
   priority = false,
   style,
   className = ''
