@@ -56,7 +56,8 @@ import {
   Table,
   Tablet,
   Search,
-  Users
+  Users,
+  Compass
 } from 'lucide-react';
 
 export default function App() {
@@ -351,81 +352,117 @@ export default function App() {
         {activeTab === 'explore' && (
           <div className="space-y-4 sm:space-y-6">
             
-            {/* Hero / Intro Banner */}
-            <div className="bg-[#121212] border border-white/5 rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-7 shadow-2xl grid grid-cols-1 lg:grid-cols-2 items-start gap-6 lg:gap-10">
-              {/* Left Column: Title, Description and Breed Count (50%) */}
-              <div className="flex flex-col justify-between self-stretch space-y-4">
-                <div className="space-y-2.5">
-                  <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight">
-                    Explora la personalidad de cada raza
-                  </h2>
-                  <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal">
-                    AtlasCanino explora la personalidad, el comportamiento, las motivaciones, los vínculos y la respuesta al entorno de cada raza para ayudarte a comprender sus diferencias más allá de la apariencia.
-                  </p>
+            {/* Hero / Intro Section Redesign */}
+            <section aria-label="Introducción a AtlasCanino" className="w-full relative overflow-hidden bg-[#121212] border border-white/5 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 pt-12 shadow-2xl">
+              {/* Centered AtlasCanino Master Logo */}
+              <div className="w-full flex justify-center mb-[40px] lg:mb-12">
+                <img
+                  src="/assets/master_logotipo_atlascanino.svg"
+                  alt="Atlas Canino"
+                  className="w-[500px] max-w-full h-[120px] lg:w-full lg:max-w-[720px] lg:h-auto object-contain drop-shadow-[0_0_25px_rgba(245,158,11,0.35)]"
+                />
+              </div>
+
+              {/* 2-Column Composition */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                {/* Left Column: Title, Descriptive Paragraphs and Dynamic Counter */}
+                <div className="lg:col-span-7 flex flex-col justify-between h-full space-y-6">
+                  <div className="space-y-5">
+                    <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-white leading-[1.08] tracking-tight uppercase drop-shadow-md">
+                      Explora la personalidad <br className="hidden sm:inline" />
+                      <span className="text-amber-500">de cada raza</span>
+                    </h1>
+                    
+                    <p className="text-[16px] leading-[25px] lg:text-lg lg:leading-relaxed text-white/90 font-normal">
+                      Detrás de cada raza hay mucho más que un tamaño, una forma o un tipo de pelaje. Aquí puedes descubrir su carácter y personalidad, qué la motiva, cómo se relaciona con las personas y cómo responde a lo que ocurre a su alrededor. Entiende esas diferencias que muchas veces no se ven a simple vista, pero que pueden cambiar por completo la convivencia con un perro.
+                    </p>
+                    
+                    <p className="text-[14px] leading-[24px] lg:text-base lg:leading-relaxed text-white/70 font-light">
+                      Recorre las razas, filtra según su personalidad y comportamiento, compáralas y descubre qué tienen en común y qué las diferencia. También puedes descubrir cuáles podrían tener mayor afinidad contigo, usando herramientas pensadas para hacer el recorrido más simple, visual y entretenido.
+                    </p>
+                  </div>
+
+                  {/* Dynamic Breed Counter */}
+                  <div className="pt-[10px] mt-0 lg:pt-4 flex flex-col items-center lg:items-start w-full lg:w-auto">
+                    <div className="flex items-center lg:items-baseline justify-center lg:justify-start gap-3 sm:gap-4">
+                      <span className="text-5xl sm:text-6xl lg:text-7xl font-black text-amber-500 leading-none tracking-tight drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]">
+                        {canineData.breeds.length}
+                      </span>
+                      <span className="text-xs sm:text-sm font-bold text-white/80 uppercase tracking-[0.2em] text-center lg:text-left">
+                        RAZAS PARA EXPLORAR
+                      </span>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="flex flex-row items-baseline justify-center sm:justify-start gap-2 pt-1 sm:flex-col sm:space-y-0.5 sm:gap-0">
-                  <div className="text-2xl sm:text-4xl font-black text-amber-500 tracking-tight">
-                    {canineData.breeds.length}
-                  </div>
-                  <div className="text-[10px] sm:text-[11px] font-bold text-neutral-500 uppercase tracking-[0.18em]">
-                    RAZAS PARA EXPLORAR
+                {/* Right Column: 3 Connected Action Cards */}
+                <div className="lg:col-span-5 w-full flex flex-col justify-center relative">
+                  <div className="relative w-full">
+                    {/* Matrix Connecting Line between icons (Desktop only) */}
+                    <div 
+                      aria-hidden="true" 
+                      className="absolute left-[28px] sm:left-[32px] lg:left-[40px] top-[36px] bottom-[36px] w-0.5 bg-gradient-to-b from-amber-500/50 via-emerald-500/50 to-purple-400/50 opacity-60 hidden sm:block" 
+                    />
+
+                    <div className="flex flex-col gap-6 sm:gap-6">
+                      {/* Block 1: Conocer una raza */}
+                      <div className="relative flex flex-col sm:flex-row items-center gap-0 sm:gap-5 group">
+                        <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 shrink-0 rounded-2xl bg-[#1c1b1b] border border-amber-500/40 flex items-center justify-center relative z-10 shadow-[0_0_25px_rgba(245,158,11,0.15)] group-hover:shadow-[0_0_35px_rgba(245,158,11,0.35)] group-hover:scale-105 group-hover:bg-amber-500/10 transition-all duration-300 text-amber-400">
+                          <Brain className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
+                        </div>
+                        {/* Connecting Line between icon and card (Mobile only) */}
+                        <div aria-hidden="true" className="w-0.5 h-4 bg-amber-500/40 sm:hidden" />
+                        <div className="flex-1 w-full bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-white/10 group-hover:border-amber-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-center sm:text-left">
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-amber-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          <h3 className="font-bold text-base sm:text-lg leading-[25px] text-white mb-1.5 tracking-tight group-hover:text-amber-400 transition-colors relative z-10">
+                            Conocer una raza
+                          </h3>
+                          <p className="text-xs sm:text-sm leading-[21px] lg:leading-relaxed text-white/70 relative z-10">
+                            Descubre su personalidad, comportamiento y forma de relacionarse.
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Block 2: Explorar y descubrir */}
+                      <div className="relative flex flex-col sm:flex-row items-center gap-0 sm:gap-5 group">
+                        <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 shrink-0 rounded-2xl bg-[#1c1b1b] border border-emerald-500/40 flex items-center justify-center relative z-10 shadow-[0_0_25px_rgba(16,185,129,0.15)] group-hover:shadow-[0_0_35px_rgba(16,185,129,0.35)] group-hover:scale-105 group-hover:bg-emerald-500/10 transition-all duration-300 text-emerald-400">
+                          <Compass className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
+                        </div>
+                        {/* Connecting Line between icon and card (Mobile only) */}
+                        <div aria-hidden="true" className="w-0.5 h-4 bg-emerald-500/40 sm:hidden" />
+                        <div className="flex-1 w-full bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-white/10 group-hover:border-emerald-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-center sm:text-left">
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          <h3 className="font-bold text-base sm:text-lg leading-[25px] text-white mb-1.5 tracking-tight group-hover:text-amber-400 transition-colors relative z-10">
+                            Explorar y descubrir
+                          </h3>
+                          <p className="text-xs sm:text-sm leading-[21px] lg:leading-relaxed text-white/70 relative z-10">
+                            Filtra por características para encontrar razas que quizás no conocías.
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Block 3: Comparar */}
+                      <div className="relative flex flex-col sm:flex-row items-center gap-0 sm:gap-5 group">
+                        <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 shrink-0 rounded-2xl bg-[#1c1b1b] border border-purple-500/40 flex items-center justify-center relative z-10 shadow-[0_0_25px_rgba(168,85,247,0.15)] group-hover:shadow-[0_0_35px_rgba(168,85,247,0.35)] group-hover:scale-105 group-hover:bg-purple-500/10 transition-all duration-300 text-purple-400">
+                          <GitCompare className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
+                        </div>
+                        {/* Connecting Line between icon and card (Mobile only) */}
+                        <div aria-hidden="true" className="w-0.5 h-4 bg-purple-500/40 sm:hidden" />
+                        <div className="flex-1 w-full bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-white/10 group-hover:border-purple-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-center sm:text-left">
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          <h3 className="font-bold text-base sm:text-lg leading-[25px] text-white mb-1.5 tracking-tight group-hover:text-amber-400 transition-colors relative z-10">
+                            Comparar
+                          </h3>
+                          <p className="text-xs sm:text-sm leading-[21px] lg:leading-relaxed text-white/70 relative z-10">
+                            Compara perfiles y descubre similitudes, diferencias y afinidades.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              {/* Right Column: "Qué puedes hacer" items (50%) */}
-              <div className="w-full space-y-2.5">
-                <div className="text-[11px] font-bold text-neutral-400 uppercase tracking-[0.2em] px-1">
-                  QUÉ PUEDES HACER
-                </div>
-
-                {/* Feature 1 */}
-                <div className="bg-[#181818] border border-white/5 rounded-xl p-3 sm:p-3.5 flex items-center gap-3 transition-colors">
-                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
-                    <Tablet className="w-4 h-4 sm:w-5 sm:h-5" />
-                  </div>
-                  <div className="space-y-0.5 min-w-0">
-                    <h3 className="text-xs sm:text-sm font-bold text-white tracking-tight">
-                      Conocer una raza
-                    </h3>
-                    <p className="text-[11px] sm:text-xs text-neutral-400 leading-snug">
-                      Descubre su personalidad, comportamiento y forma de relacionarse.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Feature 2 */}
-                <div className="bg-[#181818] border border-white/5 rounded-xl p-3 sm:p-3.5 flex items-center gap-3 transition-colors">
-                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center shrink-0">
-                    <Search className="w-4 h-4 sm:w-5 sm:h-5" />
-                  </div>
-                  <div className="space-y-0.5 min-w-0">
-                    <h3 className="text-xs sm:text-sm font-bold text-white tracking-tight">
-                      Explorar y descubrir
-                    </h3>
-                    <p className="text-[11px] sm:text-xs text-neutral-400 leading-snug">
-                      Filtra por características para encontrar razas que quizás no conocías.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Feature 3 */}
-                <div className="bg-[#181818] border border-white/5 rounded-xl p-3 sm:p-3.5 flex items-center gap-3 transition-colors">
-                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
-                    <Users className="w-4 h-4 sm:w-5 sm:h-5" />
-                  </div>
-                  <div className="space-y-0.5 min-w-0">
-                    <h3 className="text-xs sm:text-sm font-bold text-white tracking-tight">
-                      Comparar y encontrar afinidades
-                    </h3>
-                    <p className="text-[11px] sm:text-xs text-neutral-400 leading-snug">
-                      Compara perfiles y descubre similitudes, diferencias y afinidades.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </section>
 
             {/* Filter Panel */}
             <FilterPanel
