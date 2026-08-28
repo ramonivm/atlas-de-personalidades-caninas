@@ -100,6 +100,10 @@ export const OriginsView: React.FC<OriginsViewProps> = ({
     }
   };
 
+  // Summary statistics
+  const totalCountries = countriesList.length;
+  const totalBreedsWithOrigin = canineData.breeds.length;
+
   // Render view mode switcher segmented control
   const renderModeSwitcher = (currentMode: ViewMode) => (
     <div className="bg-neutral-900/80 p-1 rounded-2xl border border-white/10 flex items-center gap-1 backdrop-blur-md w-full sm:w-auto justify-center sm:justify-start">
@@ -356,9 +360,6 @@ export const OriginsView: React.FC<OriginsViewProps> = ({
                           alt={breed.breed}
                           className="w-14 h-14 rounded-xl object-cover bg-black flex-shrink-0 border border-white/10 group-hover:scale-105 transition-transform"
                           loading="lazy"
-                          decoding="async"
-                          width={56}
-                          height={56}
                         />
                         <div className="overflow-hidden flex-1">
                           <h4 className="text-sm font-bold text-white group-hover:text-amber-400 transition-colors truncate">

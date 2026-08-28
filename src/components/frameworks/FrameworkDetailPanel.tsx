@@ -1,18 +1,25 @@
 import React from 'react';
-import { ParsedFrameworkSection } from './frameworkTypes';
+import { ParsedFrameworkSection, FrameworkMetaConfig } from './frameworkTypes';
 import { ObservableSignal } from './ObservableSignal';
 import { motion, AnimatePresence } from 'motion/react';
+import { Sparkles, ArrowRight } from 'lucide-react';
 
 interface FrameworkDetailPanelProps {
   frameworkNumber: number | null;
+  meta?: FrameworkMetaConfig;
   section: ParsedFrameworkSection;
   totalSections: number;
+  onNextSection?: () => void;
+  onPrevSection?: () => void;
 }
 
 export const FrameworkDetailPanel: React.FC<FrameworkDetailPanelProps> = ({
   frameworkNumber,
+  meta,
   section,
-  totalSections
+  totalSections,
+  onNextSection,
+  onPrevSection
 }) => {
   return (
     <div className="bg-[#141414] border border-white/5 rounded-[2.5rem] p-5 sm:p-8 flex flex-col justify-between h-full shadow-xl relative overflow-hidden">

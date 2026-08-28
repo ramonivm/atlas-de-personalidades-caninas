@@ -1,7 +1,7 @@
 import React from 'react';
 import { ParsedFrameworkSection } from '../frameworkTypes';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowRight, Zap } from 'lucide-react';
+import { Timer, ArrowRight, Zap, RefreshCw, Layers } from 'lucide-react';
 
 interface RecoveryTimelineProps {
   sections: ParsedFrameworkSection[];

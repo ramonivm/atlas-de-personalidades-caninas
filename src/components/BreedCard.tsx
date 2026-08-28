@@ -10,6 +10,7 @@ interface BreedCardProps {
   onToggleFavorite: (breedId: string) => void;
   isCompared: boolean;
   onToggleCompare: (breedId: string) => void;
+  onSelectArchetypeFilter?: (archetype: string) => void;
   priority?: boolean;
   style?: React.CSSProperties;
   className?: string;
@@ -26,6 +27,7 @@ export const BreedCard: React.FC<BreedCardProps> = ({
   onToggleFavorite,
   isCompared,
   onToggleCompare,
+  onSelectArchetypeFilter,
   priority = false,
   style,
   className = ''
@@ -51,9 +53,6 @@ export const BreedCard: React.FC<BreedCardProps> = ({
           alt={`Fotografía de la raza ${breed.breed}`}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading={priority ? undefined : "lazy"}
-          decoding="async"
-          width={640}
-          height={360}
           {...(priority ? { fetchPriority: "high" } : {})}
           onError={handleImageError}
         />

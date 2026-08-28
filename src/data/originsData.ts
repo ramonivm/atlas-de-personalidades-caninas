@@ -1,4 +1,4 @@
-
+import { Breed } from '../types';
 
 export interface CountryOriginData {
   id: string;
@@ -492,5 +492,37 @@ export const COUNTRIES_DATA: Record<string, CountryOriginData> = {
     primarySelectionGoal: 'Caza de roedores, centinela de alerta y compañía rústica.',
     dominantArchetype: 'Terriers Instrumentales',
     accentColor: '#E11D48'
+  },
+  'Finlandia': {
+    id: 'finlandia',
+    name: 'Finlandia',
+    code: 'FI',
+    flag: '🇫🇮',
+    region: 'Europa',
+    coordinates: { x: 53.0, y: 15.0 },
+    lat: 61.9241,
+    lng: 25.7482,
+    summary: 'Spitz nórdicos, resistencia al frío extremo y pastoreo de renos.',
+    historicalContext: 'Crianza ligada a las comunidades sami en Laponia para la supervivencia, la caza y el pastoreo en la tundra ártica.',
+    climateAndGeography: 'Clima subártico, densos bosques boreales (taiga) y extensos paisajes nevados.',
+    primarySelectionGoal: 'Supervivencia, trabajo continuo en nieve y pastoreo rústico.',
+    dominantArchetype: 'Cooperación Humana Clásica',
+    accentColor: '#3B82F6'
+  },
+  'Polonia': {
+    id: 'polonia',
+    name: 'Polonia',
+    code: 'PL',
+    flag: '🇵🇱',
+    region: 'Europa',
+    coordinates: { x: 53.0, y: 20.0 },
+    lat: 51.9194,
+    lng: 19.1451,
+    summary: 'Pastoreo vigilante, resistencia y adaptabilidad a las llanuras.',
+    historicalContext: 'Crianza histórica en las extensas llanuras y montañas de Europa del Este, enfocada en la custodia y conducción de rebaños de manera autónoma.',
+    climateAndGeography: 'Llanuras extensas, clima continental templado con inviernos fríos.',
+    primarySelectionGoal: 'Pastoreo, vigilancia y trabajo resistente.',
+    dominantArchetype: 'Cooperación Humana Clásica',
+    accentColor: '#DC2626'
   }
 };
