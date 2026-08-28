@@ -352,6 +352,8 @@ export default function App() {
                   src="/assets/master_logotipo_atlascanino.svg"
                   alt="Atlas Canino"
                   className="w-[500px] max-w-full h-auto object-contain drop-shadow-[0_0_25px_rgba(245,158,11,0.35)]"
+                  width={500}
+                  height={150}
                 />
               </div>
 
@@ -829,6 +831,8 @@ export default function App() {
               src="/assets/logoisotipo_atlascanino.svg" 
               alt="AtlasCanino Logo" 
               className="w-5 h-5 object-contain" 
+              width={20}
+              height={20}
             />
             <span className="font-bold text-white">
               Atlas de Personalidades Caninas

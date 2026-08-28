@@ -356,6 +356,9 @@ export const OriginsView: React.FC<OriginsViewProps> = ({
                           alt={breed.breed}
                           className="w-14 h-14 rounded-xl object-cover bg-black flex-shrink-0 border border-white/10 group-hover:scale-105 transition-transform"
                           loading="lazy"
+                          decoding="async"
+                          width={56}
+                          height={56}
                         />
                         <div className="overflow-hidden flex-1">
                           <h4 className="text-sm font-bold text-white group-hover:text-amber-400 transition-colors truncate">

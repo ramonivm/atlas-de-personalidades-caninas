@@ -202,6 +202,10 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
             src={imageUrl}
             alt={`Fotografía en alta resolución de ${breed.breed}`}
             className="w-full h-full object-cover opacity-80"
+            loading="lazy"
+            decoding="async"
+            width={800}
+            height={400}
             onError={handleImageError}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/30 to-black/70 sm:via-[#0A0A0A]/20 sm:to-transparent" />

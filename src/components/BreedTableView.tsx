@@ -127,6 +127,9 @@ export const BreedTableView: React.FC<BreedTableViewProps> = ({
                           alt={breed.breed}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           loading="lazy"
+                          decoding="async"
+                          width={40}
+                          height={40}
                           onError={handleImageError}
                         />
                       </div>
@@ -161,7 +164,7 @@ export const BreedTableView: React.FC<BreedTableViewProps> = ({
                         title={`Filtrar por arquetipo: ${mainArchetype}`}
                         className="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20 hover:bg-purple-500/20 hover:border-purple-400/40 transition-all cursor-pointer text-left max-w-[130px] sm:max-w-[150px] truncate"
                       >
-                        <img src="/assets/archetype.svg" alt="" className="w-2.5 h-2.5 object-contain shrink-0" />
+                        <img src="/assets/archetype.svg" alt="" className="w-2.5 h-2.5 object-contain shrink-0" width={10} height={10} />
                         <span className="truncate">{mainArchetype}</span>
                       </button>
                     ) : (

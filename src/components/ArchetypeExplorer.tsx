@@ -174,6 +174,8 @@ export const ArchetypeExplorer: React.FC<ArchetypeExplorerProps> = ({
                     alt={`Ilustración del arquetipo ${selectedArchetype.title}`}
                     className="w-full h-full object-cover opacity-75 transition-transform duration-700 group-hover:scale-105"
                     loading="eager"
+                    width={600}
+                    height={600}
                   />
                 ) : (
                   <div className="text-center px-6 z-10">

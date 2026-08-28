@@ -323,6 +323,10 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
                         src={b.imageUrl || getBreedImageUrl(b.id)}
                         alt={b.breed}
                         className="w-10 h-10 rounded-xl object-cover bg-neutral-800 border border-white/10"
+                        loading="lazy"
+                        decoding="async"
+                        width={40}
+                        height={40}
                       />
                       <div>
                         <p className="text-sm font-bold text-white group-hover:text-amber-400 transition-colors">
@@ -478,6 +482,10 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
                           src={b.imageUrl || getBreedImageUrl(b.id)}
                           alt={b.breed}
                           className="w-8 h-8 rounded-lg object-cover bg-neutral-800 border border-white/10"
+                          loading="lazy"
+                          decoding="async"
+                          width={32}
+                          height={32}
                         />
                         <div className="flex-1 min-w-0">
                           <p className="text-xs font-bold text-white group-hover:text-amber-400 truncate">
@@ -548,6 +556,10 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
                               src={imageUrl}
                               alt={breed.breed}
                               className="w-14 h-14 aspect-square object-cover rounded-xl border border-white/10 shadow-sm"
+                              loading="lazy"
+                              decoding="async"
+                              width={56}
+                              height={56}
                             />
                             <span
                               className="absolute -bottom-1 -right-1 w-3 h-3 rounded-full border-2 border-[#141414]"
@@ -717,6 +729,10 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
                         src={imageUrl}
                         alt={breed.breed}
                         className="w-12 h-12 rounded-lg object-cover border border-white/10 shadow-sm"
+                        loading="lazy"
+                        decoding="async"
+                        width={48}
+                        height={48}
                       />
                       <span
                         className="absolute -bottom-1 -right-1 w-2.5 h-2.5 rounded-full border-2 border-[#141414]"
@@ -998,6 +1014,10 @@ export const BreedCompare: React.FC<BreedCompareProps> = ({
                               src={breed.imageUrl || getBreedImageUrl(breed.id)}
                               alt={breed.breed}
                               className="w-7 h-7 rounded-lg object-cover bg-neutral-800 border border-white/10"
+                              loading="lazy"
+                              decoding="async"
+                              width={28}
+                              height={28}
                             />
                             <div className="min-w-0">
                               <span className={`block font-bold text-xs ${palette.text} truncate`}>

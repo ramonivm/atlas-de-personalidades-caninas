@@ -267,6 +267,9 @@ export const FilterGuideModal: React.FC<FilterGuideModalProps> = ({ onClose }) =
                     aria-hidden="true"
                     className="w-full h-full object-contain select-none pointer-events-none"
                     loading="lazy"
+                    decoding="async"
+                    width={300}
+                    height={300}
                   />
                 )}
               </div>

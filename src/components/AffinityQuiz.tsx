@@ -373,6 +373,10 @@ export const AffinityQuiz: React.FC<AffinityQuizProps> = ({ breeds, onSelectBree
                     src={breed.imageUrl || getBreedImageUrl(breed.id)}
                     alt={`Fotografía de la raza ${breed.breed}`}
                     className="w-16 h-16 aspect-square rounded-2xl object-cover border border-white/5 shrink-0"
+                    loading="lazy"
+                    decoding="async"
+                    width={64}
+                    height={64}
                     onError={(e) => {
                       e.currentTarget.onerror = null;
                       e.currentTarget.src = "/images/breeds/golden-retriever.webp";
