@@ -144,7 +144,7 @@ export const OriginsView: React.FC<OriginsViewProps> = ({
         <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20" />
         <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative z-10 space-y-3 max-w-3xl">
+        <div className="relative z-10 space-y-3 w-full">
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
             Origen de las Razas
           </h1>
@@ -180,46 +180,49 @@ export const OriginsView: React.FC<OriginsViewProps> = ({
 
             </div>
 
-            {/* Real World Interactive Map Component (Widescreen Full-Width) */}
-            <div className="w-full">
-              <RealWorldMap
-                countries={filteredCountries}
-                selectedCountryName={selectedCountryName}
-                onSelectCountry={(name) => setSelectedCountryName(name)}
-                hoveredCountryName={hoveredCountryName}
-                onHoverCountry={(name) => setHoveredCountryName(name)}
-              />
-            </div>
-
-            {/* Quick Country Pill Selector (Horizontal Carousel Under Map) */}
-            <div className="mt-5 pt-4 border-t border-white/5">
-              <div className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-2.5 flex items-center justify-between">
-                <span>Selección Rápida de Territorios ({filteredCountries.length})</span>
-                <span className="text-amber-400 font-mono text-[11px]">{selectedCountryName} seleccionado</span>
+            <div className="flex flex-col lg:flex-row gap-6 w-full">
+              {/* Real World Interactive Map Component (Widescreen Full-Width) */}
+              <div className="w-full lg:flex-1">
+                <RealWorldMap
+                  countries={filteredCountries}
+                  selectedCountryName={selectedCountryName}
+                  onSelectCountry={(name) => setSelectedCountryName(name)}
+                  hoveredCountryName={hoveredCountryName}
+                  onHoverCountry={(name) => setHoveredCountryName(name)}
+                />
               </div>
-              <div className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar">
-                {filteredCountries.map(country => {
-                  const isSelected = country.name === selectedCountryName;
-                  return (
-                    <button
-                      key={country.id}
-                      onClick={() => setSelectedCountryName(country.name)}
-                      className={`inline-flex items-center gap-2 px-3.5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
-                        isSelected
-                          ? 'bg-amber-500 text-black font-extrabold shadow-lg shadow-amber-500/20 scale-105'
-                          : 'bg-neutral-900/90 text-neutral-300 hover:text-white hover:bg-neutral-800 border border-white/5'
-                      }`}
-                    >
-                      <span className="text-sm">{country.flag}</span>
-                      <span>{country.name}</span>
-                      <span className={`text-[10px] px-2 py-0.5 rounded-full font-mono ${
-                        isSelected ? 'bg-black text-white font-bold' : 'bg-neutral-800 text-neutral-400'
-                      }`}>
-                        {country.count}
-                      </span>
-                    </button>
-                  );
-                })}
+
+              {/* Quick Country Pill Selector */}
+              <div className="mt-5 pt-4 lg:mt-0 lg:pt-0 border-t lg:border-t-0 lg:border-l border-white/5 lg:w-[230px] lg:pl-6 shrink-0 flex flex-col lg:h-[540px]">
+                <div className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-2.5 flex flex-col lg:flex-col items-start lg:items-start justify-between gap-1">
+                  <span>Lugar de Origen</span>
+                </div>
+                <div className="flex lg:flex-col items-center lg:items-stretch gap-2 overflow-x-auto lg:overflow-x-hidden lg:overflow-y-auto pb-2 lg:pb-0 lg:pr-2 custom-scrollbar">
+                  {filteredCountries.map(country => {
+                    const isSelected = country.name === selectedCountryName;
+                    return (
+                      <button
+                        key={country.id}
+                        onClick={() => setSelectedCountryName(country.name)}
+                        className={`inline-flex items-center justify-between gap-2 px-3.5 py-2 rounded-full lg:rounded-xl text-xs font-semibold whitespace-nowrap lg:whitespace-normal transition-all cursor-pointer text-left ${
+                          isSelected
+                            ? 'bg-amber-500 text-black font-extrabold shadow-lg shadow-amber-500/20 scale-105 lg:scale-100 lg:translate-x-1'
+                            : 'bg-neutral-900/90 text-neutral-300 hover:text-white hover:bg-neutral-800 border border-white/5'
+                        }`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <span className="text-sm">{country.flag}</span>
+                          <span>{country.name}</span>
+                        </div>
+                        <span className={`text-[10px] px-2 py-0.5 rounded-full font-mono shrink-0 ${
+                          isSelected ? 'bg-black text-white font-bold' : 'bg-neutral-800 text-neutral-400'
+                        }`}>
+                          {country.count}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             </div>
 
@@ -352,13 +355,13 @@ export const OriginsView: React.FC<OriginsViewProps> = ({
                     <div
                       key={breed.id}
                       onClick={() => onSelectBreed(breed)}
-                      className="group p-3.5 bg-neutral-900/90 hover:bg-neutral-800/90 border border-white/5 hover:border-amber-500/40 rounded-2xl transition-all flex flex-col justify-between gap-3 cursor-pointer hover:shadow-xl hover:shadow-amber-500/5 relative overflow-hidden"
+                      className="group p-2.5 bg-neutral-900/90 hover:bg-neutral-800/90 border border-white/5 hover:border-amber-500/40 rounded-2xl transition-all flex flex-col justify-between gap-2 cursor-pointer hover:shadow-xl hover:shadow-amber-500/5 relative overflow-hidden"
                     >
-                      <div className="flex items-start gap-3.5">
+                      <div className="flex items-center gap-3">
                         <img
                           src={imageUrl}
                           alt={breed.breed}
-                          className="w-14 h-14 rounded-xl object-cover bg-black flex-shrink-0 border border-white/10 group-hover:scale-105 transition-transform"
+                          className="w-10 h-10 rounded-lg object-cover bg-black flex-shrink-0 border border-white/10 group-hover:scale-105 transition-transform"
                           loading="lazy"
                         />
                         <div className="overflow-hidden flex-1">
@@ -368,20 +371,10 @@ export const OriginsView: React.FC<OriginsViewProps> = ({
                           <p className="text-[11px] text-amber-300/85 italic truncate mt-0.5">
                             "{breed.epithet}"
                           </p>
-                          <div className="flex items-center gap-1.5 mt-2 flex-wrap">
-                            <span className="text-[9px] font-bold px-2 py-0.5 rounded-md bg-white/5 text-neutral-400 border border-white/5">
-                              {breed.fciGroup}
-                            </span>
-                            {breed.archetypes[0] && (
-                              <span className="text-[9px] font-bold px-2 py-0.5 rounded-md bg-purple-500/10 text-purple-300 border border-purple-500/20 truncate max-w-[130px]">
-                                {breed.archetypes[0]}
-                              </span>
-                            )}
-                          </div>
                         </div>
                       </div>
 
-                      <div className="pt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                      <div className="pt-2 mt-1 border-t border-white/5 flex items-center justify-between text-xs">
                         <span className="text-[11px] text-neutral-400 group-hover:text-amber-300 transition-colors flex items-center gap-1">
                           Ver ficha <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                         </span>

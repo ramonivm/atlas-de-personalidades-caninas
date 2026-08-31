@@ -540,8 +540,8 @@ export const RealWorldMap: React.FC<RealWorldMapProps> = ({
       {/* Floating Active Country Ribbon (Bottom Left) */}
       <div className="absolute bottom-3.5 left-3.5 z-10 pointer-events-auto max-w-[calc(100%-110px)] sm:max-w-xs">
         {countries.find(c => c.name === selectedCountryName) && (
-          <div className="p-2.5 sm:p-3 rounded-2xl bg-neutral-950/90 border border-amber-500/30 backdrop-blur-md shadow-2xl flex items-center gap-3 animate-fade-in">
-            <span className="text-2xl select-none">
+          <div className="py-1.5 px-3 rounded-xl bg-neutral-950/90 border border-amber-500/30 backdrop-blur-md shadow-2xl flex items-center gap-2.5 animate-fade-in">
+            <span className="text-xl sm:text-2xl select-none">
               {countries.find(c => c.name === selectedCountryName)?.flag}
             </span>
             <div className="overflow-hidden">
@@ -550,9 +550,6 @@ export const RealWorldMap: React.FC<RealWorldMapProps> = ({
                 <span className="text-[10px] px-1.5 py-0.2 rounded-md bg-amber-500/20 text-amber-400 font-mono">
                   {countries.find(c => c.name === selectedCountryName)?.count} razas
                 </span>
-              </div>
-              <div className="text-[10px] text-neutral-400 truncate">
-                {countries.find(c => c.name === selectedCountryName)?.dominantArchetype}
               </div>
             </div>
           </div>

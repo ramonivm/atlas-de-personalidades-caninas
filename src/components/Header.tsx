@@ -107,8 +107,8 @@ export const Header: React.FC<HeaderProps> = ({
             />
           </div>
 
-          {/* Menú de navegación Desktop (>= md) ubicado en el medio */}
-          <div className="hidden md:flex items-center justify-center flex-1" ref={desktopNavRef}>
+          {/* Menú de navegación Desktop (>= md) alineado a la izquierda */}
+          <div className="hidden md:flex items-center justify-start flex-1 ml-4 lg:ml-8" ref={desktopNavRef}>
             <nav className="flex items-center gap-1 bg-neutral-900/90 p-1 rounded-full border border-neutral-800/80 shrink-0 shadow-lg shadow-black/30">
               {/* 1. Explorador */}
               <button
@@ -122,11 +122,6 @@ export const Header: React.FC<HeaderProps> = ({
               >
                 <Search className="w-3.5 h-3.5" />
                 <span>Explorador</span>
-                {activeTab === 'explore' && (
-                  <span className="text-[10px] bg-black/30 text-black font-bold px-1.5 py-0.2 rounded-full">
-                    {filteredCount}
-                  </span>
-                )}
               </button>
 
               {/* 2. Orígenes */}
@@ -160,13 +155,6 @@ export const Header: React.FC<HeaderProps> = ({
                   }`}
                 >
                   <span>Herramientas</span>
-                  {compareCount > 0 && (
-                    <span className={`text-[10px] font-bold px-1.5 py-0.2 rounded-full ${
-                      isToolsActive ? 'bg-black/30 text-black' : 'bg-black text-amber-400'
-                    }`}>
-                      {compareCount}
-                    </span>
-                  )}
                   <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${
                     openPopover === 'tools' ? 'rotate-180' : ''
                   }`} />
@@ -398,29 +386,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Zona Derecha: Búsqueda rápida y Botón Hamburguesa */}
           <div className="flex items-center gap-2 shrink-0">
-            {/* Quick Search */}
-            {activeTab === 'explore' && (
-              <div className="relative max-w-[150px] sm:max-w-[190px]">
-                <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-400 pointer-events-none" />
-                <input
-                  type="text"
-                  placeholder="Buscar razas..."
-                  aria-label="Buscar razas o características caninas"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full bg-neutral-900 border border-neutral-800 text-slate-200 placeholder-neutral-400 text-xs rounded-full pl-9 pr-8 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus:border-amber-500/50 transition-colors min-h-[40px]"
-                />
-                {searchQuery && (
-                  <button 
-                    onClick={() => setSearchQuery('')}
-                    aria-label="Limpiar campo de búsqueda"
-                    className="absolute right-1 top-1/2 -translate-y-1/2 min-h-[36px] min-w-[36px] flex items-center justify-center text-neutral-400 hover:text-white text-xs cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-full"
-                  >
-                    ✕
-                  </button>
-                )}
-              </div>
-            )}
+            {/* Quick Search removed */}
 
             {/* Botón Hamburguesa para Mobile (< md) */}
             <button
@@ -452,13 +418,6 @@ export const Header: React.FC<HeaderProps> = ({
                   <Search className="w-4 h-4 shrink-0" />
                   <span>Explorador</span>
                 </div>
-                {filteredCount > 0 && (
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                    activeTab === 'explore' ? 'bg-black/30 text-black' : 'bg-neutral-800 text-amber-400 border border-white/5'
-                  }`}>
-                    {filteredCount}
-                  </span>
-                )}
               </button>
 
               {/* 2. Orígenes */}
