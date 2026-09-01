@@ -134,7 +134,7 @@ export const AffinityQuiz: React.FC<AffinityQuizProps> = ({ breeds, onSelectBree
         <div className="relative z-10 max-w-2xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-bold border border-amber-500/20 mb-3">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Algoritmo de Compatibilidad Etológica</span>
+            <span>Test de Afinidad</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
             Descubre las Razas con Mayor Afinidad Contigo

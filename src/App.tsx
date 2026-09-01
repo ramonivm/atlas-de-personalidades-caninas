@@ -353,7 +353,7 @@ export default function App() {
           <div className="space-y-4 sm:space-y-6">
             
             {/* Hero / Intro Section Redesign */}
-            <section aria-label="Introducción a AtlasCanino" className="w-full relative overflow-hidden bg-[#121212] border border-white/5 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 pt-12 shadow-2xl">
+            <section aria-label="Introducción a AtlasCanino" className="w-full relative overflow-hidden bg-[#121212] border border-white/5 rounded-2xl sm:rounded-3xl p-[30px] shadow-2xl">
               {/* Centered AtlasCanino Master Logo */}
               <div className="w-full flex justify-center mb-[40px] lg:mb-12">
                 <img
