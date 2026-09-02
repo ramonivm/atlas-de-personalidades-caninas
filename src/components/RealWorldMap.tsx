@@ -208,6 +208,18 @@ export const RealWorldMap: React.FC<RealWorldMapProps> = ({
       
       const baseSize = isSelected ? 38 : (isHovered ? 34 : Math.min(32, Math.max(22, 18 + count * 1.3)));
 
+      const tooltipBreeds = country.breeds ? country.breeds.slice(0, 2) : [];
+      const tooltipBreedsHtml = tooltipBreeds.length > 0 ? `
+        <div class="flex flex-col gap-1 mt-1 pt-1.5 border-t border-white/10 w-full min-w-[120px]">
+          ${tooltipBreeds.map(b => `
+            <div class="flex items-center gap-1.5 max-w-[160px]">
+              <svg class="w-1.5 h-1.5 text-white/40 shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/></svg>
+              <span class="truncate text-[10px] text-white/70 font-medium leading-none">${b.breed}</span>
+            </div>
+          `).join('')}
+        </div>
+      ` : '';
+
       // Create interactive DOM element
       const pinWrapper = document.createElement('div');
       pinWrapper.className = 'atlas-pin-wrapper group relative cursor-pointer select-none';
@@ -234,10 +246,13 @@ export const RealWorldMap: React.FC<RealWorldMapProps> = ({
           </span>
         </div>
         
-        <div class="atlas-pin-tooltip hidden sm:group-hover:flex absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-2.5 py-1 rounded-xl bg-neutral-950/95 border border-white/20 text-white text-[11px] font-bold whitespace-nowrap shadow-2xl items-center gap-1.5 pointer-events-none backdrop-blur-md z-50">
-          <span>${country.flag}</span>
-          <span>${country.name}</span>
-          <span class="text-amber-400">(${count} ${count === 1 ? 'raza' : 'razas'})</span>
+        <div class="atlas-pin-tooltip hidden sm:group-hover:flex flex-col absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-3 py-2 rounded-xl bg-neutral-950/95 border border-white/20 text-white shadow-2xl pointer-events-none backdrop-blur-md z-50">
+          <div class="flex items-center gap-1.5 text-[11px] font-bold whitespace-nowrap">
+            <span>${country.flag}</span>
+            <span>${country.name}</span>
+            <span class="text-amber-400">(${count} ${count === 1 ? 'raza' : 'razas'})</span>
+          </div>
+          ${tooltipBreedsHtml}
         </div>
       `;
 
@@ -285,6 +300,18 @@ export const RealWorldMap: React.FC<RealWorldMapProps> = ({
       
       const baseSize = isSelected ? 38 : (isHovered ? 34 : Math.min(32, Math.max(22, 18 + count * 1.3)));
 
+      const tooltipBreeds = country.breeds ? country.breeds.slice(0, 2) : [];
+      const tooltipBreedsHtml = tooltipBreeds.length > 0 ? `
+        <div class="flex flex-col gap-1 mt-1 pt-1.5 border-t border-white/10 w-full min-w-[120px]">
+          ${tooltipBreeds.map(b => `
+            <div class="flex items-center gap-1.5 max-w-[160px]">
+              <svg class="w-1.5 h-1.5 text-white/40 shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/></svg>
+              <span class="truncate text-[10px] text-white/70 font-medium leading-none">${b.breed}</span>
+            </div>
+          `).join('')}
+        </div>
+      ` : '';
+
       const markerHtml = `
         <div class="atlas-pin-wrapper group" style="width: ${baseSize}px; height: ${baseSize}px;">
           ${isSelected ? `
@@ -304,10 +331,13 @@ export const RealWorldMap: React.FC<RealWorldMapProps> = ({
             </span>
           </div>
           
-          <div class="atlas-pin-tooltip hidden sm:group-hover:flex absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-2.5 py-1 rounded-xl bg-neutral-950/95 border border-white/20 text-white text-[11px] font-bold whitespace-nowrap shadow-2xl items-center gap-1.5 pointer-events-none backdrop-blur-md z-50">
-            <span>${country.flag}</span>
-            <span>${country.name}</span>
-            <span class="text-amber-400">(${count} ${count === 1 ? 'raza' : 'razas'})</span>
+          <div class="atlas-pin-tooltip hidden sm:group-hover:flex flex-col absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-3 py-2 rounded-xl bg-neutral-950/95 border border-white/20 text-white shadow-2xl pointer-events-none backdrop-blur-md z-50">
+            <div class="flex items-center gap-1.5 text-[11px] font-bold whitespace-nowrap">
+              <span>${country.flag}</span>
+              <span>${country.name}</span>
+              <span class="text-amber-400">(${count} ${count === 1 ? 'raza' : 'razas'})</span>
+            </div>
+            ${tooltipBreedsHtml}
           </div>
         </div>
       `;

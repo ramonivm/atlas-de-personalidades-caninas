@@ -134,12 +134,64 @@ export interface FilterState {
   sortBy: 'name-asc' | 'name-desc' | 'fci' | 'traits-count';
 }
 
-export type PriorityTrait = 'affection' | 'protection' | 'independence' | 'trainability' | 'calm';
+export type AffinityLevel = 1 | 2 | 3 | 4 | 5;
 
-export interface QuizAnswers {
-  experience: 'novice' | 'intermediate' | 'expert' | null;
-  activity: 'low' | 'moderate' | 'high' | 'extreme' | null;
-  space: 'apartment' | 'house_yard' | 'rural_nature' | null;
-  timeWithDog: 'few_hours' | 'part_time' | 'full_time' | null;
-  priorityTraits: PriorityTrait[];
+export type AffinitySize = 'small' | 'medium' | 'large' | 'giant' | 'varies';
+
+export type AffinityExperience = 'first_dog' | 'some_experience' | 'experienced' | 'advanced';
+export type AffinityActivity = 'low' | 'moderate' | 'high' | 'very_high';
+export type AffinityMentalTime = 'low' | 'moderate' | 'high' | 'very_high';
+export type AffinityAloneTime = 'rarely' | 'short' | 'half_day' | 'full_day';
+export type AffinityEnvironment = 'quiet_apartment' | 'urban_flexible' | 'residential_house' | 'rural';
+export type AffinityHousehold = 'young_children' | 'dogs' | 'cats_small_animals';
+export type AffinityPreference =
+  | 'closeness'
+  | 'calm'
+  | 'cooperation'
+  | 'independence'
+  | 'protection'
+  | 'sport_work';
+
+export interface AffinityAnswers {
+  experience: AffinityExperience;
+  activity: AffinityActivity;
+  mentalTime: AffinityMentalTime;
+  aloneTime: AffinityAloneTime;
+  environment: AffinityEnvironment;
+  household: AffinityHousehold[];
+  preferences: AffinityPreference[];
+}
+
+export interface AffinityProfile {
+  breedId: string;
+  exerciseDemand: AffinityLevel;
+  mentalStimulationDemand: AffinityLevel;
+  guidanceDemand: AffinityLevel;
+  stimulusSensitivity: AffinityLevel;
+  recoveryCapacity: AffinityLevel;
+  aloneTolerance: AffinityLevel;
+  urbanAdaptability: AffinityLevel;
+  vocality: AffinityLevel;
+  closenessNeed: AffinityLevel;
+  cooperativeness: AffinityLevel;
+  independence: AffinityLevel;
+  guardingTendency: AffinityLevel;
+  preyDrive: AffinityLevel;
+  humanSociability: AffinityLevel;
+  dogSociability: AffinityLevel;
+  youngChildSuitability: AffinityLevel;
+  calmness: AffinityLevel;
+  workDrive: AffinityLevel;
+  size: AffinitySize;
+  confidence: 'low' | 'medium' | 'high';
+}
+
+export interface AffinityResult {
+  breedId: string;
+  rawScore: number;
+  displayScore: number;
+  strengths: string[];
+  considerations: string[];
+  criticalMismatchCount: number;
+  maximumLoss: number;
 }
