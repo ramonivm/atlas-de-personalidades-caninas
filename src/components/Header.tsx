@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { 
   Search, 
   Layers, 
@@ -12,6 +13,7 @@ import {
   ChevronDown
 } from 'lucide-react';
 import { canineData } from '../data/canineData';
+import { Breed } from '../types';
 
 interface HeaderProps {
   activeTab: 'explore' | 'quiz' | 'compare' | 'archetypes' | 'frameworks' | 'origins' | 'favorites';
@@ -21,6 +23,7 @@ interface HeaderProps {
   searchQuery: string;
   setSearchQuery: (query: string) => void;
   favoritesCount: number;
+  favoriteBreeds?: Breed[];
   compareCount: number;
   archetypeCount?: number;
   frameworkCount?: number;
@@ -34,6 +37,7 @@ export const Header: React.FC<HeaderProps> = ({
   searchQuery,
   setSearchQuery,
   favoritesCount,
+  favoriteBreeds = [],
   compareCount,
   archetypeCount = canineData.archetypes?.length || 14,
   frameworkCount = canineData.frameworks?.length || 6
@@ -360,33 +364,76 @@ export const Header: React.FC<HeaderProps> = ({
                   </div>
                 )}
               </div>
+            </nav>
+          </div>
 
-              {/* 5. Guardados */}
+          {/* Zona Derecha: Botón Guardados (sólo icono alineado a la derecha con estilo propio) y Botón Hamburguesa */}
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            {/* Botón Guardados (Icono independiente con Tooltip en Desktop) */}
+            <div className="relative group">
               <button
                 type="button"
                 onClick={() => handleTabClick('favorites')}
-                className={`min-h-[36px] flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                aria-label={favoritesCount > 0 ? `Ver ${favoritesCount} razas guardadas` : "Ver razas guardadas"}
+                className={`relative min-h-[38px] min-w-[38px] sm:min-h-[40px] sm:min-w-[40px] flex items-center justify-center p-2 rounded-xl sm:rounded-full transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
                   activeTab === 'favorites'
-                    ? 'bg-amber-500 text-black font-bold shadow-sm shadow-amber-500/10'
-                    : 'text-neutral-300 hover:text-white hover:bg-neutral-800/80'
+                    ? 'bg-amber-500 text-black shadow-md shadow-amber-500/20 font-bold border border-amber-400'
+                    : 'bg-neutral-900/90 text-neutral-300 hover:text-white hover:bg-neutral-800 border border-neutral-800/80 hover:border-neutral-700 shadow-sm'
                 }`}
               >
-                <Bookmark className="w-3.5 h-3.5" />
-                <span>Guardados</span>
+                <Bookmark className={`w-4 h-4 sm:w-[18px] sm:h-[18px] ${activeTab === 'favorites' ? 'fill-current' : ''}`} />
+
                 {favoritesCount > 0 && (
-                  <span className={`text-[10px] font-bold px-1.5 py-0.2 rounded-full ${
-                    activeTab === 'favorites' ? 'bg-black/30 text-black' : 'bg-black text-amber-400'
-                  }`}>
+                  <span
+                    className={`absolute -top-1 -right-1 text-[10px] font-bold h-4 min-w-[16px] px-1 rounded-full flex items-center justify-center border shadow-sm ${
+                      activeTab === 'favorites'
+                        ? 'bg-black text-amber-400 border-amber-500'
+                        : 'bg-amber-500 text-black border-neutral-950'
+                    }`}
+                  >
                     {favoritesCount}
                   </span>
                 )}
               </button>
-            </nav>
-          </div>
 
-          {/* Zona Derecha: Búsqueda rápida y Botón Hamburguesa */}
-          <div className="flex items-center gap-2 shrink-0">
-            {/* Quick Search removed */}
+              {/* Tooltip en versión Desktop (>= md) con viñetas e icono */}
+              <div
+                role="tooltip"
+                className="hidden md:group-hover:flex flex-col absolute top-full right-0 mt-2 w-max min-w-[190px] max-w-[230px] bg-neutral-950/95 border border-neutral-800/90 rounded-xl p-2.5 shadow-2xl backdrop-blur-xl z-50 pointer-events-none animate-content-fade-in"
+              >
+                <div className="flex items-center justify-between gap-2 pb-1.5 mb-1.5 border-b border-white/10 select-none">
+                  <span className="text-[10px] font-bold tracking-wider text-neutral-400 uppercase">
+                    Guardados ({favoritesCount})
+                  </span>
+                </div>
+
+                {favoriteBreeds && favoriteBreeds.length > 0 ? (
+                  <ul className="space-y-1.5">
+                    {favoriteBreeds.slice(0, 3).map((b) => (
+                      <li key={b.id} className="flex items-center gap-2 text-left">
+                        <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
+                        <Bookmark className="w-3 h-3 text-amber-400/80 shrink-0 fill-amber-400/20" />
+                        <span
+                          className="text-xs text-neutral-200 truncate max-w-[145px] font-medium"
+                          title={b.breed}
+                        >
+                          {b.breed}
+                        </span>
+                      </li>
+                    ))}
+                    {favoriteBreeds.length > 3 && (
+                      <li className="pt-1 text-[10px] text-neutral-400 italic">
+                        +{favoriteBreeds.length - 3} más...
+                      </li>
+                    )}
+                  </ul>
+                ) : (
+                  <p className="text-xs text-neutral-400 italic py-0.5">
+                    No tienes razas guardadas
+                  </p>
+                )}
+              </div>
+            </div>
 
             {/* Botón Hamburguesa para Mobile (< md) */}
             <button
@@ -394,159 +441,148 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label={isMobileMenuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
               aria-expanded={isMobileMenuOpen}
-              className="md:hidden min-h-[40px] min-w-[40px] flex items-center justify-center p-2 rounded-xl bg-neutral-900 border border-neutral-800 text-slate-200 hover:text-white hover:bg-neutral-800 transition-colors cursor-pointer shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+              className="md:hidden min-h-[38px] min-w-[38px] sm:min-h-[40px] sm:min-w-[40px] flex items-center justify-center p-2 rounded-xl bg-neutral-900 border border-neutral-800 text-slate-200 hover:text-white hover:bg-neutral-800 transition-colors cursor-pointer shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
 
-        {/* Menú de Navegación Vertical para Mobile (< md) */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden pt-2.5 pb-1 border-t border-neutral-800/80 animate-content-fade-in mt-2">
-            <nav className="flex flex-col gap-1 bg-neutral-900/95 p-2 rounded-2xl border border-neutral-800/80">
-              {/* 1. Explorador */}
-              <button
-                onClick={() => handleTabClick('explore')}
-                className={`min-h-[44px] w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-                  activeTab === 'explore'
-                    ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
-                    : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <Search className="w-4 h-4 shrink-0" />
-                  <span>Explorador</span>
+        {/* Menú de Navegación Vertical para Mobile (< md) con expansión suave */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              key="mobile-nav-menu"
+              initial={{ opacity: 0, height: 0, marginTop: 0 }}
+              animate={{ opacity: 1, height: 'auto', marginTop: 8 }}
+              exit={{ opacity: 0, height: 0, marginTop: 0 }}
+              transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
+              className="md:hidden overflow-hidden border-t border-neutral-800/80 pt-2.5 pb-1"
+            >
+              <nav className="flex flex-col gap-1 bg-neutral-900/95 p-2 rounded-2xl border border-neutral-800/80 shadow-2xl shadow-black/80">
+                {/* 1. Explorador */}
+                <button
+                  type="button"
+                  onClick={() => handleTabClick('explore')}
+                  className={`min-h-[44px] w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                    activeTab === 'explore'
+                      ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
+                      : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <Search className="w-4 h-4 shrink-0" />
+                    <span>Explorador</span>
+                  </div>
+                </button>
+
+                {/* 2. Orígenes */}
+                <button
+                  type="button"
+                  onClick={() => handleTabClick('origins')}
+                  className={`min-h-[44px] w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                    activeTab === 'origins'
+                      ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
+                      : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
+                  }`}
+                >
+                  <Globe2 className="w-4 h-4 shrink-0" />
+                  <span>Orígenes</span>
+                </button>
+
+                {/* GRUPO: HERRAMIENTAS */}
+                <div className="pt-3 pb-1 px-4 text-[10px] font-bold tracking-widest text-neutral-500 uppercase select-none">
+                  HERRAMIENTAS
                 </div>
-              </button>
 
-              {/* 2. Orígenes */}
-              <button
-                onClick={() => handleTabClick('origins')}
-                className={`min-h-[44px] w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-                  activeTab === 'origins'
-                    ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
-                    : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
-                }`}
-              >
-                <Globe2 className="w-4 h-4 shrink-0" />
-                <span>Orígenes</span>
-              </button>
+                {/* Test Afinidad */}
+                <button
+                  type="button"
+                  onClick={() => handleTabClick('quiz')}
+                  className={`min-h-[44px] w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                    activeTab === 'quiz'
+                      ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
+                      : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
+                  }`}
+                >
+                  <Sparkles className="w-4 h-4 shrink-0" />
+                  <span>Test Afinidad</span>
+                </button>
 
-              {/* GRUPO: HERRAMIENTAS */}
-              <div className="pt-3 pb-1 px-4 text-[10px] font-bold tracking-widest text-neutral-500 uppercase select-none">
-                HERRAMIENTAS
-              </div>
+                {/* Comparar */}
+                <button
+                  type="button"
+                  onClick={() => handleTabClick('compare')}
+                  className={`min-h-[44px] w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                    activeTab === 'compare'
+                      ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
+                      : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <GitCompare className="w-4 h-4 shrink-0" />
+                    <span>Comparar</span>
+                  </div>
+                  {compareCount > 0 && (
+                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                      activeTab === 'compare' ? 'bg-black/30 text-black' : 'bg-neutral-800 text-amber-400 border border-white/5'
+                    }`}>
+                      {compareCount}
+                    </span>
+                  )}
+                </button>
 
-              {/* Test Afinidad */}
-              <button
-                onClick={() => handleTabClick('quiz')}
-                className={`min-h-[44px] w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-                  activeTab === 'quiz'
-                    ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
-                    : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
-                }`}
-              >
-                <Sparkles className="w-4 h-4 shrink-0" />
-                <span>Test Afinidad</span>
-              </button>
-
-              {/* Comparar */}
-              <button
-                onClick={() => handleTabClick('compare')}
-                className={`min-h-[44px] w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-                  activeTab === 'compare'
-                    ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
-                    : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <GitCompare className="w-4 h-4 shrink-0" />
-                  <span>Comparar</span>
+                {/* GRUPO: MODELO CONDUCTUAL */}
+                <div className="pt-3 pb-1 px-4 text-[10px] font-bold tracking-widest text-neutral-500 uppercase select-none">
+                  MODELO CONDUCTUAL
                 </div>
-                {compareCount > 0 && (
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                    activeTab === 'compare' ? 'bg-black/30 text-black' : 'bg-neutral-800 text-amber-400 border border-white/5'
+
+                {/* 14 Arquetipos */}
+                <button
+                  type="button"
+                  onClick={() => handleTabClick('archetypes')}
+                  className={`min-h-[44px] w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                    activeTab === 'archetypes'
+                      ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
+                      : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <Layers className="w-4 h-4 shrink-0" />
+                    <span>14 Arquetipos</span>
+                  </div>
+                  <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${
+                    activeTab === 'archetypes' ? 'bg-black/30 text-black font-bold' : 'bg-neutral-800/80 text-neutral-400 border border-white/5'
                   }`}>
-                    {compareCount}
+                    {archetypeCount}
                   </span>
-                )}
-              </button>
+                </button>
 
-              {/* GRUPO: MODELO CONDUCTUAL */}
-              <div className="pt-3 pb-1 px-4 text-[10px] font-bold tracking-widest text-neutral-500 uppercase select-none">
-                MODELO CONDUCTUAL
-              </div>
-
-              {/* 14 Arquetipos */}
-              <button
-                onClick={() => handleTabClick('archetypes')}
-                className={`min-h-[44px] w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-                  activeTab === 'archetypes'
-                    ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
-                    : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <Layers className="w-4 h-4 shrink-0" />
-                  <span>14 Arquetipos</span>
-                </div>
-                <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${
-                  activeTab === 'archetypes' ? 'bg-black/30 text-black font-bold' : 'bg-neutral-800/80 text-neutral-400 border border-white/5'
-                }`}>
-                  {archetypeCount}
-                </span>
-              </button>
-
-              {/* Marcos */}
-              <button
-                onClick={() => handleTabClick('frameworks')}
-                className={`min-h-[44px] w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-                  activeTab === 'frameworks'
-                    ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
-                    : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <Brain className="w-4 h-4 shrink-0" />
-                  <span>Marcos</span>
-                </div>
-                <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${
-                  activeTab === 'frameworks' ? 'bg-black/30 text-black font-bold' : 'bg-neutral-800/80 text-neutral-400 border border-white/5'
-                }`}>
-                  {frameworkCount}
-                </span>
-              </button>
-
-              {/* Separador */}
-              <div className="my-1 border-t border-white/5" />
-
-              {/* Guardados */}
-              <button
-                onClick={() => handleTabClick('favorites')}
-                className={`min-h-[44px] w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-                  activeTab === 'favorites'
-                    ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
-                    : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <Bookmark className="w-4 h-4 shrink-0" />
-                  <span>Guardados</span>
-                </div>
-                {favoritesCount > 0 && (
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                    activeTab === 'favorites' ? 'bg-black/30 text-black' : 'bg-neutral-800 text-amber-400 border border-white/5'
+                {/* Marcos */}
+                <button
+                  type="button"
+                  onClick={() => handleTabClick('frameworks')}
+                  className={`min-h-[44px] w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                    activeTab === 'frameworks'
+                      ? 'bg-amber-500 text-black font-bold shadow-md shadow-amber-500/10'
+                      : 'text-neutral-300 hover:text-white hover:bg-neutral-800'
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <Brain className="w-4 h-4 shrink-0" />
+                    <span>Marcos</span>
+                  </div>
+                  <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${
+                    activeTab === 'frameworks' ? 'bg-black/30 text-black font-bold' : 'bg-neutral-800/80 text-neutral-400 border border-white/5'
                   }`}>
-                    {favoritesCount}
+                    {frameworkCount}
                   </span>
-                )}
-              </button>
-            </nav>
-          </div>
-        )}
+                </button>
+              </nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );
 };
-

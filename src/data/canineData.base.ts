@@ -594,6 +594,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "australian-cattle-dog",
+      "origen": "Australia",
       "breed": "Australian Cattle Dog",
       "title": "Australian Cattle Dog: El Centinela de Hierro",
       "epithet": "El Centinela de Hierro",
@@ -652,6 +653,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "azawakh",
+      "origen": "Malí",
       "breed": "Azawakh",
       "title": "Azawakh: La Elegancia Defensiva del Sahel",
       "epithet": "La Elegancia Defensiva del Sahel",
@@ -711,6 +713,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "barbet",
+      "origen": "Francia",
       "breed": "Barbet",
       "title": "Barbet: El Alma del Pantano",
       "epithet": "El Alma del Pantano",
@@ -770,6 +773,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "basenji",
+      "origen": "República Democrática del Congo",
       "breed": "Basenji",
       "title": "Basenji: El Primitivo Autónomo",
       "epithet": "El Primitivo Autónomo",
@@ -1066,6 +1070,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "boyero-de-berna",
+      "origen": "Suiza",
       "breed": "Boyero de Berna",
       "title": "Boyero de Berna: El Gigante de Corazón de Oro",
       "epithet": "El Gigante de Corazón de Oro",
@@ -1422,6 +1427,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "dachshund",
+      "origen": "Alemania",
       "breed": "Dachshund",
       "title": "Dachshund: El Guerrero del Inframundo",
       "epithet": "El Guerrero del Inframundo",
@@ -1541,6 +1547,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "doberman",
+      "origen": "Alemania",
       "breed": "Doberman",
       "title": "Doberman: El Centinela Emocional",
       "epithet": "El Centinela Emocional",
@@ -1660,6 +1667,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "german-pinscher",
+      "origen": "Alemania",
       "breed": "German Pinscher",
       "title": "German Pinscher: La Agudeza del Equilibrio Funcional",
       "epithet": "La Agudeza del Equilibrio Funcional",
@@ -1955,7 +1963,7 @@ export const canineData: CanineDatabase = {
         }
       ],
       "imageUrl": "/images/breeds/labrador-retriever.webp",
-      "origen": "Reino Unido"
+      "origen": "Canadá"
     },
     {
       "id": "pastor-aleman",
@@ -2081,6 +2089,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "poodle",
+      "origen": "Francia",
       "breed": "Poodle (Caniche)",
       "title": "Poodle (Caniche): El Intelectual Emocional",
       "epithet": "El Intelectual Emocional",
@@ -2317,10 +2326,11 @@ export const canineData: CanineDatabase = {
         }
       ],
       "imageUrl": "/images/breeds/samoyedo.webp",
-      "origen": "Siberia"
+      "origen": "Rusia"
     },
     {
       "id": "shiba-inu",
+      "origen": "Japón",
       "breed": "Shiba Inu",
       "title": "Shiba Inu: El Espíritu Indómito de Japón",
       "epithet": "El Espíritu Indómito de Japón",
@@ -2378,6 +2388,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "siberian-husky",
+      "origen": "Estados Unidos",
       "breed": "Siberian Husky",
       "title": "Siberian Husky: El Espíritu del Viento",
       "epithet": "El Espíritu del Viento",
@@ -2437,6 +2448,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "vizsla",
+      "origen": "Hungría",
       "breed": "Vizsla",
       "title": "Vizsla (Braco Húngaro): El Atleta de Cristal",
       "epithet": "El Atleta de Cristal",
@@ -2555,6 +2567,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "xoloitzcuintle",
+      "origen": "México",
       "breed": "Xoloitzcuintle",
       "title": "Xoloitzcuintle: El Guardián Místico de Piel Caliente",
       "epithet": "El Guardián Místico de Piel Caliente",
@@ -2675,6 +2688,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "belgian-malinois",
+      "origen": "Bélgica",
       "breed": "Pastor Belga Malinois",
       "title": "Pastor Belga Malinois: La Furia Táctica Conducida",
       "epithet": "La Furia Táctica Conducida",
@@ -2796,6 +2810,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "pastor-de-shetland",
+      "origen": "Reino Unido",
       "breed": "Pastor de Shetland (Shetland Sheepdog)",
       "title": "Shetland Sheepdog: La Sensibilidad Armónica",
       "epithet": "La Sensibilidad Armónica",
@@ -2978,6 +2993,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "bouvier-des-flandres",
+      "origen": "Bélgica / Francia",
       "breed": "Boyero de Flandes",
       "title": "Boyero de Flandes: La Muralla Inquebrantable",
       "epithet": "La Muralla Inquebrantable",
@@ -3099,6 +3115,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "komondor",
+      "origen": "Hungría",
       "breed": "Komondor",
       "title": "Komondor: El Guardián Acorazado de Rebaños",
       "epithet": "El Guardián Acorazado de Rebaños",
@@ -3647,6 +3664,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "terranova",
+      "origen": "Canadá",
       "breed": "Terranova (Newfoundland)",
       "title": "Terranova: El Gigante Amable de las Aguas",
       "epithet": "El Gigante Amable de las Aguas",
@@ -3707,6 +3725,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "shar-pei",
+      "origen": "China",
       "breed": "Shar Pei",
       "title": "Shar Pei: La Dignidad Oriental Arrugada",
       "epithet": "La Dignidad Oriental Arrugada",
@@ -3767,6 +3786,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "presa-canario",
+      "origen": "España",
       "breed": "Dogo Canario / Presa Canario",
       "title": "Presa Canario: El Guardián de las Islas",
       "epithet": "El Guardián de las Islas",
@@ -3827,6 +3847,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "bull-terrier",
+      "origen": "Reino Unido",
       "breed": "Bull Terrier",
       "title": "Bull Terrier: El Gladiador Alegre de Cabeza Ovoide",
       "epithet": "El Gladiador Alegre",
@@ -3887,6 +3908,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "staffordshire-bull-terrier",
+      "origen": "Reino Unido",
       "breed": "Staffordshire Bull Terrier",
       "title": "Staffordshire Bull Terrier: El Nanny Dog Corajudo",
       "epithet": "El Nanny Dog Corajudo",
@@ -3947,6 +3969,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "west-highland-white-terrier",
+      "origen": "Reino Unido",
       "breed": "West Highland White Terrier (Westie)",
       "title": "West Highland White Terrier: El Espirituoso Blanco de las Tierras Altas",
       "epithet": "El Espirituoso Blanco",
@@ -4007,6 +4030,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "yorkshire-terrier",
+      "origen": "Reino Unido",
       "breed": "Yorkshire Terrier",
       "title": "Yorkshire Terrier: La Chispa Dinámica en Miniatura",
       "epithet": "La Chispa Dinámica",
@@ -4128,6 +4152,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "dachshund-pelo-duro",
+      "origen": "Alemania",
       "breed": "Teckel / Dachshund de Pelo Duro",
       "title": "Teckel de Pelo Duro: El Cazador Barbudo de Toperas",
       "epithet": "El Cazador Barbudo de Toperas",
@@ -4188,6 +4213,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "dachshund-pelo-largo",
+      "origen": "Alemania",
       "breed": "Teckel / Dachshund de Pelo Largo",
       "title": "Teckel de Pelo Largo: La Dulzura Sedosa del Rastro",
       "epithet": "La Dulzura Sedosa del Rastro",
@@ -4248,6 +4274,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "akita-americano",
+      "origen": "Estados Unidos",
       "breed": "Akita Americano",
       "title": "Akita Americano: El Centinela de Mirada Imperial",
       "epithet": "El Centinela de Mirada Imperial",
@@ -4369,6 +4396,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "podenco-canario",
+      "origen": "España",
       "breed": "Podenco Canario",
       "title": "Podenco Canario: El Rastreador del Malpaís Volcánico",
       "epithet": "El Rastreador del Malpaís Volcánico",
@@ -4612,6 +4640,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "setter-ingles",
+      "origen": "Reino Unido",
       "breed": "Setter Inglés",
       "title": "Setter Inglés: La Elegancia de Manto Moteado",
       "epithet": "La Elegancia de Manto Moteado",
@@ -4672,6 +4701,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "setter-irlandes",
+      "origen": "Irlanda",
       "breed": "Setter Irlandés Rojo",
       "title": "Setter Irlandés: El Fuego Rojo de las Praderas",
       "epithet": "El Fuego Rojo de las Praderas",
@@ -4732,6 +4762,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "epagneul-breton",
+      "origen": "Francia",
       "breed": "Epagneul Breton (Spaniel Bretón)",
       "title": "Spaniel Bretón: El Inagotable Todoterreno Francés",
       "epithet": "El Inagotable Todoterreno Francés",
@@ -4792,6 +4823,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "perro-de-agua-espanol",
+      "origen": "España",
       "breed": "Perro de Agua Español",
       "title": "Perro de Agua Español: El Rústico de Rizos Infinitos",
       "epithet": "El Rústico de Rizos Infinitos",
@@ -4852,6 +4884,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "perro-de-agua-portugues",
+      "origen": "Portugal",
       "breed": "Perro de Agua Portugués",
       "title": "Perro de Agua Portugués: El Marineros de las Olas",
       "epithet": "El Marineros de las Olas",
@@ -5095,6 +5128,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "shih-tzu",
+      "origen": "China",
       "breed": "Shih Tzu",
       "title": "Shih Tzu: El Pequeño León Sagrado de los Palacios",
       "epithet": "El Pequeño León Sagrado",
@@ -5521,6 +5555,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "whippet",
+      "origen": "Reino Unido",
       "breed": "Whippet",
       "title": "Whippet: La Gracia Veloz en Miniatura",
       "epithet": "La Gracia Veloz en Miniatura",
@@ -5581,6 +5616,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "afghan-hound",
+      "origen": "Afganistán",
       "breed": "Lebrel Afgano (Afghan Hound)",
       "title": "Lebrel Afgano: La Majestad Sedosa del Desierto",
       "epithet": "La Majestad Sedosa del Desierto",
@@ -5763,6 +5799,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "italian-greyhound",
+      "origen": "Italia",
       "breed": "Pequeño Lebrel Italiano (Piccolo Levriero)",
       "title": "Pequeño Lebrel Italiano: La Escultura de Cristal y Viento",
       "epithet": "La Escultura de Cristal y Viento",
@@ -5823,6 +5860,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "pastor-de-anatolia",
+      "origen": "Turquía",
       "breed": "Pastor de Anatolia (Kangal)",
       "title": "Kangal: El Guardián de los Toros de Turquía",
       "epithet": "El Guardián de Turquía",
@@ -5881,6 +5919,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "briard",
+      "origen": "Francia",
       "breed": "Pastor de Brie (Briard)",
       "title": "Briard: Corazón Envalentonado bajo Pelaje Mop",
       "epithet": "Corazón Envalentonado",
@@ -5938,6 +5977,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "pastor-de-los-pirineos",
+      "origen": "Francia",
       "breed": "Pastor de los Pirineos",
       "title": "Pastor de los Pirineos: La Centella de la Montaña",
       "epithet": "La Centella de la Montaña",
@@ -6053,6 +6093,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "hovawart",
+      "origen": "Alemania",
       "breed": "Hovawart",
       "title": "Hovawart: El Guardián de la Granja",
       "epithet": "El Guardián de la Granja",
@@ -6168,6 +6209,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "landseer",
+      "origen": "Alemania / Suiza",
       "breed": "Landseer",
       "title": "Landseer: El Guardián Blanco y Negro del Agua",
       "epithet": "El Guardián del Agua",
@@ -6225,6 +6267,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "dogo-de-palma",
+      "origen": "España",
       "breed": "Ca de Bou (Dogo Mallorquín)",
       "title": "Ca de Bou: El Guardián Balear",
       "epithet": "El Guardián Balear",
@@ -6282,6 +6325,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "pinscher-mediano",
+      "origen": "Alemania",
       "breed": "Pinscher Alemán",
       "title": "Pinscher Alemán: La Elegancia Atlética",
       "epithet": "La Elegancia Atlética",
@@ -6520,6 +6564,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "fox-terrier-pelo-duro",
+      "origen": "Reino Unido",
       "breed": "Fox Terrier de Pelo Duro",
       "title": "Fox Terrier: El Nervio del Cazador de Zorreras",
       "epithet": "El Nervio del Cazador de Zorreras",
@@ -6693,6 +6738,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "irish-terrier",
+      "origen": "Irlanda",
       "breed": "Terrier Irlandés",
       "title": "Irish Terrier: El Temerario Rojo",
       "epithet": "El Temerario Rojo",
@@ -6750,6 +6796,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "welsh-terrier",
+      "origen": "Reino Unido",
       "breed": "Welsh Terrier",
       "title": "Welsh Terrier: El Espíritu Galés Negro y Fuego",
       "epithet": "El Espíritu Galés",
@@ -6807,6 +6854,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "finnish-spitz",
+      "origen": "Finlandia",
       "breed": "Finnish Spitz",
       "title": "Finnish Spitz: El Cantante de los Bosques",
       "epithet": "El Cantante de los Bosques",
@@ -6864,6 +6912,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "norwegian-elkhound",
+      "origen": "Noruega",
       "breed": "Norwegian Elkhound",
       "title": "Norwegian Elkhound: El Cazador de Alces Noruego",
       "epithet": "El Cazador de Alces",
@@ -6921,6 +6970,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "kishu-ken",
+      "origen": "Japón",
       "breed": "Kishu Ken",
       "title": "Kishu Ken: La Pureza Blanca de la Caza Japonesa",
       "epithet": "La Pureza Blanca",
@@ -6978,6 +7028,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "sabueso-espanol",
+      "origen": "España",
       "breed": "Sabueso Español",
       "title": "Sabueso Español: La Voz Profunda del Rastro Cantábrico",
       "epithet": "La Voz Profunda del Rastro",
@@ -7035,6 +7086,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "basset-leonado",
+      "origen": "Francia",
       "breed": "Basset Leonado de Bretaña",
       "title": "Basset Leonado: El Pequeño Rústico de Monte Bajo",
       "epithet": "El Pequeño Rústico",
@@ -7092,6 +7144,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "petit-basset",
+      "origen": "Francia",
       "breed": "Petit Basset Griffon Vendéen",
       "title": "Petit Basset Griffon: La Energía Despeinada",
       "epithet": "La Energía Despeinada",
@@ -7149,6 +7202,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "setter-gordon",
+      "origen": "Reino Unido",
       "breed": "Setter Gordon",
       "title": "Setter Gordon: El Caballero Negro y Fuego de Escocia",
       "epithet": "El Caballero Escocés",
@@ -7206,6 +7260,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "braco-aleman",
+      "origen": "Alemania",
       "breed": "Braco Alemán de Pelo Corto (GSP)",
       "title": "Braco Alemán: El Atleta Total de la Caza",
       "epithet": "El Atleta Total",
@@ -7324,6 +7379,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "tolling-retriever",
+      "origen": "Canadá",
       "breed": "Nova Scotia Duck Tolling Retriever",
       "title": "Nova Scotia Duck Tolling Retriever: El Pequeño Zorro Cobrador",
       "epithet": "El Pequeño Zorro Cobrador",
@@ -7441,6 +7497,7 @@ export const canineData: CanineDatabase = {
     },
     {
       "id": "pekingese",
+      "origen": "China",
       "breed": "Pekinés (Pekingese)",
       "title": "Pekinés: El León Sagrado en Miniatura",
       "epithet": "El León Sagrado en Miniatura",

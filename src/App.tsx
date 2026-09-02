@@ -41,6 +41,7 @@ const TabLoadingFallback: React.FC<{ message?: string }> = ({
     <span className="text-xs font-medium text-neutral-400">{message}</span>
   </div>
 );
+import { AnimatedCounter } from './components/AnimatedCounter';
 import { 
   Dog,
   Sparkles, 
@@ -340,6 +341,7 @@ export default function App() {
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
         favoritesCount={favorites.length}
+        favoriteBreeds={favoriteBreeds}
         compareCount={comparedIds.length}
         archetypeCount={canineData.archetypes.length}
         frameworkCount={canineData.frameworks.length}
@@ -373,21 +375,19 @@ export default function App() {
                       <span className="text-amber-500">de cada raza</span>
                     </h1>
                     
-                    <p className="text-[16px] leading-[25px] lg:text-lg lg:leading-relaxed text-white/90 font-normal">
-                      Detrás de cada raza hay mucho más que un tamaño, una forma o un tipo de pelaje. Aquí puedes descubrir su carácter y personalidad, qué la motiva, cómo se relaciona con las personas y cómo responde a lo que ocurre a su alrededor. Entiende esas diferencias que muchas veces no se ven a simple vista, pero que pueden cambiar por completo la convivencia con un perro.
+                    <p className="hidden sm:block text-[16px] leading-[25px] lg:text-lg lg:leading-relaxed text-white/90 font-normal">
+                      Cada raza de perro tiene un carácter y personalidad únicos, más allá de su apariencia física. Comprender estas diferencias es crucial para una buena convivencia.
                     </p>
                     
                     <p className="text-[14px] leading-[24px] lg:text-base lg:leading-relaxed text-white/70 font-light">
-                      Recorre las razas, filtra según su personalidad y comportamiento, compáralas y descubre qué tienen en común y qué las diferencia. También puedes descubrir cuáles podrían tener mayor afinidad contigo, usando herramientas pensadas para hacer el recorrido más simple, visual y entretenido.
+                      Explora razas, filtra por personalidad y comportamiento, compara y descubre similitudes y diferencias.
                     </p>
                   </div>
 
                   {/* Dynamic Breed Counter */}
                   <div className="pt-[10px] mt-0 lg:pt-4 flex flex-col items-center lg:items-start w-full lg:w-auto">
                     <div className="flex items-center lg:items-baseline justify-center lg:justify-start gap-3 sm:gap-4">
-                      <span className="text-5xl sm:text-6xl lg:text-7xl font-black text-amber-500 leading-none tracking-tight drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]">
-                        {canineData.breeds.length}
-                      </span>
+                      <AnimatedCounter targetValue={canineData.breeds.length} />
                       <span className="text-xs sm:text-sm font-bold text-white/80 uppercase tracking-[0.2em] text-center lg:text-left">
                         RAZAS PARA EXPLORAR
                       </span>
@@ -406,54 +406,51 @@ export default function App() {
 
                     <div className="flex flex-col gap-6 sm:gap-6">
                       {/* Block 1: Conocer una raza */}
-                      <div className="relative flex flex-col sm:flex-row items-center gap-0 sm:gap-5 group">
-                        <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 shrink-0 rounded-2xl bg-[#1c1b1b] border border-amber-500/40 flex items-center justify-center relative z-10 shadow-[0_0_25px_rgba(245,158,11,0.15)] group-hover:shadow-[0_0_35px_rgba(245,158,11,0.35)] group-hover:scale-105 group-hover:bg-amber-500/10 transition-all duration-300 text-amber-400">
-                          <Brain className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
+                      <div className="relative flex flex-row items-center gap-0 sm:gap-5 group">
+                        <div className="w-[58px] h-[58px] sm:w-16 sm:h-16 lg:w-20 lg:h-20 shrink-0 rounded-xl sm:rounded-2xl bg-[#1c1b1b] border border-amber-500/40 flex items-center justify-center relative z-10 shadow-[0_0_25px_rgba(245,158,11,0.15)] group-hover:shadow-[0_0_35px_rgba(245,158,11,0.35)] group-hover:scale-105 group-hover:bg-amber-500/10 transition-all duration-300 text-amber-400">
+                          <Brain className="w-6 h-6 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
                         </div>
-                        {/* Connecting Line between icon and card (Mobile only) */}
-                        <div aria-hidden="true" className="w-0.5 h-4 bg-amber-500/40 sm:hidden" />
-                        <div className="flex-1 w-full bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-white/10 group-hover:border-amber-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-center sm:text-left">
+                        <div aria-hidden="true" className="w-3 h-px bg-amber-500/40 sm:hidden shrink-0" />
+                        <div className="flex-1 flex flex-col justify-center w-full min-h-[58px] sm:min-h-0 bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-amber-500/40 sm:border-white/10 group-hover:border-amber-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-left">
                           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-amber-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                          <h3 className="font-bold text-base sm:text-lg leading-[25px] text-white mb-1.5 tracking-tight group-hover:text-amber-400 transition-colors relative z-10">
+                          <h3 className="font-bold text-base sm:text-lg leading-[25px] text-white tracking-tight group-hover:text-amber-400 transition-colors relative z-10 m-0 sm:mb-1.5">
                             Conocer una raza
                           </h3>
-                          <p className="text-xs sm:text-sm leading-[21px] lg:leading-relaxed text-white/70 relative z-10">
+                          <p className="hidden sm:block text-xs sm:text-sm leading-[21px] lg:leading-relaxed text-white/70 relative z-10">
                             Descubre su personalidad, comportamiento y forma de relacionarse.
                           </p>
                         </div>
                       </div>
 
                       {/* Block 2: Explorar y descubrir */}
-                      <div className="relative flex flex-col sm:flex-row items-center gap-0 sm:gap-5 group">
-                        <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 shrink-0 rounded-2xl bg-[#1c1b1b] border border-emerald-500/40 flex items-center justify-center relative z-10 shadow-[0_0_25px_rgba(16,185,129,0.15)] group-hover:shadow-[0_0_35px_rgba(16,185,129,0.35)] group-hover:scale-105 group-hover:bg-emerald-500/10 transition-all duration-300 text-emerald-400">
-                          <Compass className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
+                      <div className="relative flex flex-row items-center gap-0 sm:gap-5 group">
+                        <div className="w-[58px] h-[58px] sm:w-16 sm:h-16 lg:w-20 lg:h-20 shrink-0 rounded-xl sm:rounded-2xl bg-[#1c1b1b] border border-emerald-500/40 flex items-center justify-center relative z-10 shadow-[0_0_25px_rgba(16,185,129,0.15)] group-hover:shadow-[0_0_35px_rgba(16,185,129,0.35)] group-hover:scale-105 group-hover:bg-emerald-500/10 transition-all duration-300 text-emerald-400">
+                          <Compass className="w-6 h-6 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
                         </div>
-                        {/* Connecting Line between icon and card (Mobile only) */}
-                        <div aria-hidden="true" className="w-0.5 h-4 bg-emerald-500/40 sm:hidden" />
-                        <div className="flex-1 w-full bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-white/10 group-hover:border-emerald-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-center sm:text-left">
+                        <div aria-hidden="true" className="w-3 h-px bg-emerald-500/40 sm:hidden shrink-0" />
+                        <div className="flex-1 flex flex-col justify-center w-full min-h-[58px] sm:min-h-0 bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-emerald-500/40 sm:border-white/10 group-hover:border-emerald-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-left">
                           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                          <h3 className="font-bold text-base sm:text-lg leading-[25px] text-white mb-1.5 tracking-tight group-hover:text-amber-400 transition-colors relative z-10">
+                          <h3 className="font-bold text-base sm:text-lg leading-[25px] text-white tracking-tight group-hover:text-amber-400 transition-colors relative z-10 m-0 sm:mb-1.5">
                             Explorar y descubrir
                           </h3>
-                          <p className="text-xs sm:text-sm leading-[21px] lg:leading-relaxed text-white/70 relative z-10">
+                          <p className="hidden sm:block text-xs sm:text-sm leading-[21px] lg:leading-relaxed text-white/70 relative z-10">
                             Filtra por características para encontrar razas que quizás no conocías.
                           </p>
                         </div>
                       </div>
 
                       {/* Block 3: Comparar */}
-                      <div className="relative flex flex-col sm:flex-row items-center gap-0 sm:gap-5 group">
-                        <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 shrink-0 rounded-2xl bg-[#1c1b1b] border border-purple-500/40 flex items-center justify-center relative z-10 shadow-[0_0_25px_rgba(168,85,247,0.15)] group-hover:shadow-[0_0_35px_rgba(168,85,247,0.35)] group-hover:scale-105 group-hover:bg-purple-500/10 transition-all duration-300 text-purple-400">
-                          <GitCompare className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
+                      <div className="relative flex flex-row items-center gap-0 sm:gap-5 group">
+                        <div className="w-[58px] h-[58px] sm:w-16 sm:h-16 lg:w-20 lg:h-20 shrink-0 rounded-xl sm:rounded-2xl bg-[#1c1b1b] border border-purple-500/40 flex items-center justify-center relative z-10 shadow-[0_0_25px_rgba(168,85,247,0.15)] group-hover:shadow-[0_0_35px_rgba(168,85,247,0.35)] group-hover:scale-105 group-hover:bg-purple-500/10 transition-all duration-300 text-purple-400">
+                          <GitCompare className="w-6 h-6 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
                         </div>
-                        {/* Connecting Line between icon and card (Mobile only) */}
-                        <div aria-hidden="true" className="w-0.5 h-4 bg-purple-500/40 sm:hidden" />
-                        <div className="flex-1 w-full bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-white/10 group-hover:border-purple-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-center sm:text-left">
+                        <div aria-hidden="true" className="w-3 h-px bg-purple-500/40 sm:hidden shrink-0" />
+                        <div className="flex-1 flex flex-col justify-center w-full min-h-[58px] sm:min-h-0 bg-[#1c1b1b] rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-purple-500/40 sm:border-white/10 group-hover:border-purple-500/50 transition-all duration-300 shadow-lg relative overflow-hidden text-left">
                           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                          <h3 className="font-bold text-base sm:text-lg leading-[25px] text-white mb-1.5 tracking-tight group-hover:text-amber-400 transition-colors relative z-10">
-                            Comparar
+                          <h3 className="font-bold text-base sm:text-lg leading-[25px] text-white tracking-tight group-hover:text-amber-400 transition-colors relative z-10 m-0 sm:mb-1.5">
+                            Comparar razas
                           </h3>
-                          <p className="text-xs sm:text-sm leading-[21px] lg:leading-relaxed text-white/70 relative z-10">
+                          <p className="hidden sm:block text-xs sm:text-sm leading-[21px] lg:leading-relaxed text-white/70 relative z-10">
                             Compara perfiles y descubre similitudes, diferencias y afinidades.
                           </p>
                         </div>
