@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  Search, 
-  Layers, 
-  GitCompare, 
-  Sparkles, 
-  Bookmark, 
+import {
+  Search,
+  Layers,
+  GitCompare,
+  Sparkles,
+  Bookmark,
   Brain,
   Globe2,
   Menu,
@@ -44,10 +44,9 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openPopover, setOpenPopover] = useState<'tools' | 'behavioral' | null>(null);
-  
+
   const desktopNavRef = useRef<HTMLDivElement>(null);
 
-  const isToolsActive = activeTab === 'quiz' || activeTab === 'compare';
   const isBehavioralActive = activeTab === 'archetypes' || activeTab === 'frameworks';
 
   // Handle outside click and Escape key to close popovers
@@ -89,8 +88,8 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Fila superior / barra unificada: Logo, Navegación al medio y Búsqueda a la derecha */}
         <div className="flex items-center justify-between gap-3 sm:gap-4">
           {/* Logo & Title */}
-          <div 
-            className="cursor-pointer flex items-center shrink-0 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500" 
+          <div
+            className="cursor-pointer flex items-center shrink-0 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
             onClick={() => handleTabClick('explore')}
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') {
@@ -102,9 +101,9 @@ export const Header: React.FC<HeaderProps> = ({
             tabIndex={0}
             aria-label="Ir a la página de inicio del explorador de razas"
           >
-            <img 
-              src="/assets/logonavbaratlascanino.svg" 
-              alt="AtlasCanino Logo" 
+            <img
+              src="/assets/logonavbaratlascanino.svg"
+              alt="AtlasCanino Logo"
               className="h-8 sm:h-10 md:h-11 w-auto object-contain"
               width="200"
               height="48"
@@ -142,118 +141,44 @@ export const Header: React.FC<HeaderProps> = ({
                 <span>Orígenes</span>
               </button>
 
-              {/* 3. Herramientas Popover Trigger */}
-              <div className="relative">
-                <button
-                  type="button"
-                  onClick={() => togglePopover('tools')}
-                  aria-expanded={openPopover === 'tools'}
-                  aria-haspopup="true"
-                  aria-controls="popover-tools"
-                  className={`min-h-[36px] flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-                    isToolsActive
-                      ? 'bg-amber-500 text-black font-bold shadow-sm shadow-amber-500/10'
-                      : openPopover === 'tools'
-                      ? 'bg-neutral-800 text-white'
-                      : 'text-neutral-300 hover:text-white hover:bg-neutral-800/80'
-                  }`}
-                >
-                  <span>Herramientas</span>
-                  <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                    openPopover === 'tools' ? 'rotate-180' : ''
-                  }`} />
-                </button>
+              {/* 3. Test de afinidad */}
+              <button
+                type="button"
+                onClick={() => handleTabClick('quiz')}
+                className={`min-h-[36px] flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                  activeTab === 'quiz'
+                    ? 'bg-amber-500 text-black font-bold shadow-sm shadow-amber-500/10'
+                    : 'text-neutral-300 hover:text-white hover:bg-neutral-800/80'
+                }`}
+              >
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Test de afinidad</span>
+              </button>
 
-                {/* Popover de Herramientas */}
-                {openPopover === 'tools' && (
-                  <div 
-                    id="popover-tools"
-                    role="menu"
-                    aria-orientation="vertical"
-                    className="absolute top-full mt-2.5 left-1/2 -translate-x-1/2 w-80 sm:w-[340px] bg-neutral-950/95 p-3 rounded-2xl border border-neutral-800/90 shadow-2xl shadow-black/80 backdrop-blur-xl z-50 animate-content-fade-in"
-                  >
-                    {/* Cabecera Informativa */}
-                    <div className="px-2 pt-1 pb-2.5 mb-1.5 border-b border-white/5 select-none">
-                      <div className="text-[10px] font-bold tracking-widest text-neutral-400 uppercase">
-                        HERRAMIENTAS
-                      </div>
-                      <p className="text-[11px] text-neutral-400 mt-0.5 leading-tight">
-                        Interactúa con los datos del Atlas.
-                      </p>
-                    </div>
-
-                    {/* Opciones */}
-                    <div className="space-y-1">
-                      {/* Test Afinidad */}
-                      <button
-                        type="button"
-                        role="menuitem"
-                        onClick={() => handleTabClick('quiz')}
-                        className={`w-full flex items-start gap-3 p-2.5 rounded-xl text-left transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-                          activeTab === 'quiz'
-                            ? 'bg-amber-500/15 border border-amber-500/30 text-white'
-                            : 'hover:bg-neutral-900 border border-transparent text-neutral-300 hover:text-white'
-                        }`}
-                      >
-                        <div className={`p-2 rounded-lg shrink-0 mt-0.5 ${
-                          activeTab === 'quiz' ? 'bg-amber-500 text-black font-bold' : 'bg-neutral-900 text-neutral-300 border border-white/5'
-                        }`}>
-                          <Sparkles className="w-4 h-4" />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center justify-between gap-2">
-                            <span className={`text-xs font-bold leading-none ${
-                              activeTab === 'quiz' ? 'text-amber-400' : 'text-slate-100'
-                            }`}>
-                              Test Afinidad
-                            </span>
-                          </div>
-                          <p className="text-[11px] text-neutral-400 mt-1 leading-snug">
-                            Encuentra las razas más afines a ti.
-                          </p>
-                        </div>
-                      </button>
-
-                      {/* Comparar */}
-                      <button
-                        type="button"
-                        role="menuitem"
-                        onClick={() => handleTabClick('compare')}
-                        className={`w-full flex items-start gap-3 p-2.5 rounded-xl text-left transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-                          activeTab === 'compare'
-                            ? 'bg-amber-500/15 border border-amber-500/30 text-white'
-                            : 'hover:bg-neutral-900 border border-transparent text-neutral-300 hover:text-white'
-                        }`}
-                      >
-                        <div className={`p-2 rounded-lg shrink-0 mt-0.5 ${
-                          activeTab === 'compare' ? 'bg-amber-500 text-black font-bold' : 'bg-neutral-900 text-neutral-300 border border-white/5'
-                        }`}>
-                          <GitCompare className="w-4 h-4" />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center justify-between gap-2">
-                            <span className={`text-xs font-bold leading-none ${
-                              activeTab === 'compare' ? 'text-amber-400' : 'text-slate-100'
-                            }`}>
-                              Comparar
-                            </span>
-                            {compareCount > 0 && (
-                              <span className="text-[10px] bg-neutral-800 text-amber-400 font-bold px-1.5 py-0.5 rounded-full border border-white/5">
-                                {compareCount}
-                              </span>
-                            )}
-                          </div>
-                          <p className="text-[11px] text-neutral-400 mt-1 leading-snug">
-                            Contrasta razas lado a lado.
-                          </p>
-                        </div>
-                      </button>
-                    </div>
-                  </div>
+              {/* 4. Comparar */}
+              <button
+                type="button"
+                onClick={() => handleTabClick('compare')}
+                className={`min-h-[36px] flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+                  activeTab === 'compare'
+                    ? 'bg-amber-500 text-black font-bold shadow-sm shadow-amber-500/10'
+                    : 'text-neutral-300 hover:text-white hover:bg-neutral-800/80'
+                }`}
+              >
+                <GitCompare className="w-3.5 h-3.5" />
+                <span>Comparar</span>
+                {compareCount > 0 && (
+                  <span className={`text-[10px] flex items-center justify-center w-4 h-4 rounded-full ml-1 ${
+                    activeTab === 'compare'
+                      ? 'bg-black/20 text-black'
+                      : 'bg-neutral-800 text-amber-400 border border-white/5'
+                  }`}>
+                    {compareCount}
+                  </span>
                 )}
-              </div>
+              </button>
 
-              {/* 4. Modelo conductual Popover Trigger */}
+              {/* 5. Modelo conductual Popover Trigger */}
               <div className="relative">
                 <button
                   type="button"
@@ -277,7 +202,7 @@ export const Header: React.FC<HeaderProps> = ({
 
                 {/* Popover de Modelo conductual */}
                 {openPopover === 'behavioral' && (
-                  <div 
+                  <div
                     id="popover-behavioral"
                     role="menu"
                     aria-orientation="vertical"
@@ -490,12 +415,7 @@ export const Header: React.FC<HeaderProps> = ({
                   <span>Orígenes</span>
                 </button>
 
-                {/* GRUPO: HERRAMIENTAS */}
-                <div className="pt-3 pb-1 px-4 text-[10px] font-bold tracking-widest text-neutral-500 uppercase select-none">
-                  HERRAMIENTAS
-                </div>
-
-                {/* Test Afinidad */}
+                {/* Test de afinidad */}
                 <button
                   type="button"
                   onClick={() => handleTabClick('quiz')}
@@ -506,7 +426,7 @@ export const Header: React.FC<HeaderProps> = ({
                   }`}
                 >
                   <Sparkles className="w-4 h-4 shrink-0" />
-                  <span>Test Afinidad</span>
+                  <span>Test de afinidad</span>
                 </button>
 
                 {/* Comparar */}
