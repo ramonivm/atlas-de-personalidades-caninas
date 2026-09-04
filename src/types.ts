@@ -143,7 +143,7 @@ export type AffinityActivity = 'low' | 'moderate' | 'high' | 'very_high';
 export type AffinityMentalTime = 'low' | 'moderate' | 'high' | 'very_high';
 export type AffinityAloneTime = 'rarely' | 'short' | 'half_day' | 'full_day';
 export type AffinityEnvironment = 'quiet_apartment' | 'urban_flexible' | 'residential_house' | 'rural';
-export type AffinityHousehold = 'young_children' | 'dogs' | 'cats_small_animals';
+export type AffinityHousehold = 'adults_only' | 'young_children' | 'dogs' | 'cats_small_animals';
 export type AffinityPreference =
   | 'closeness'
   | 'calm'
