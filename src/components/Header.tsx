@@ -102,7 +102,7 @@ export const Header: React.FC<HeaderProps> = ({
             aria-label="Ir a la página de inicio del explorador de razas"
           >
             <img
-              src="/assets/logonavbaratlascanino.svg"
+              src="/assets/master_logotipo_atlascanino_header.svg"
               alt="AtlasCanino Logo"
               className="h-8 sm:h-10 md:h-11 w-auto object-contain"
               width="200"
