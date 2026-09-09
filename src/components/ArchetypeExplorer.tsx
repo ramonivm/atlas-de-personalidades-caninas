@@ -141,16 +141,13 @@ export const ArchetypeExplorer: React.FC<ArchetypeExplorerProps> = ({
             exit="exit"
             className="space-y-6"
           >
-            
-            {/* Fila superior: Cabecera de Identidad y Fotografía */}
+            {/* Header with Title and Image */}
             <div className="flex flex-col-reverse lg:flex-row gap-6">
-              
               <motion.div 
                 variants={cardVariants}
                 className="flex-1 bg-[#141414] border border-white/5 rounded-[2.5rem] p-8 sm:p-10 flex flex-col justify-center shadow-xl relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
-                
                 <span className="text-amber-500 text-xs font-bold uppercase tracking-[0.2em] mb-3 block">
                   Arquetipo #{selectedArchetype.number}
                 </span>
@@ -184,29 +181,25 @@ export const ArchetypeExplorer: React.FC<ArchetypeExplorerProps> = ({
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-[#141414]/30 to-transparent pointer-events-none" />
               </motion.div>
-
             </div>
 
-            {/* Fila intermedia: Dinámica Psicológica (flex-1) y Rasgos Clave (40%) con la misma altura */}
+            {/* Psychological Dynamics and Key Traits */}
             <div className="flex flex-col lg:flex-row gap-6 items-stretch">
-              
               {dinamica && (
                 <motion.div 
                   variants={cardVariants}
-                  className="flex-1 bg-[#141414] border border-white/5 rounded-[2.5rem] p-8 sm:p-10 shadow-xl flex flex-col justify-between"
+                  className="flex-1 bg-[#141414] border border-white/5 rounded-[2.5rem] p-8 sm:p-10 shadow-xl flex flex-col"
                 >
-                  <div>
-                    <div className="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
-                      <div className="p-2.5 bg-blue-500/10 rounded-xl border border-blue-500/20">
-                        <Brain className="w-5 h-5 text-blue-400"/>
-                      </div>
-                      <h2 className="text-xl font-bold text-white tracking-tight">
-                        {dinamica.title || 'Dinámica Psicológica'}
-                      </h2>
+                  <div className="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
+                    <div className="p-2.5 bg-blue-500/10 rounded-xl border border-blue-500/20">
+                      <Brain className="w-5 h-5 text-blue-400"/>
                     </div>
-                    <div className="prose prose-invert max-w-none text-slate-300 leading-relaxed text-[15px] whitespace-pre-line">
-                      {dinamica.content}
-                    </div>
+                    <h2 className="text-xl font-bold text-white tracking-tight">
+                      {dinamica.title || 'Dinámica Psicológica'}
+                    </h2>
+                  </div>
+                  <div className="prose prose-invert max-w-none text-slate-300 leading-relaxed text-[15px] whitespace-pre-line">
+                    {dinamica.content}
                   </div>
                 </motion.div>
               )}
@@ -214,31 +207,28 @@ export const ArchetypeExplorer: React.FC<ArchetypeExplorerProps> = ({
               {rasgos && (
                 <motion.div 
                   variants={cardVariants}
-                  className="w-full lg:w-[40%] shrink-0 bg-[#141414] border border-white/5 rounded-[2.5rem] p-8 sm:p-10 shadow-xl flex flex-col justify-between"
+                  className="w-full lg:w-[40%] shrink-0 bg-[#141414] border border-white/5 rounded-[2.5rem] p-8 sm:p-10 shadow-xl flex flex-col"
                 >
-                  <div>
-                    <div className="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
-                      <div className="p-2.5 bg-emerald-500/10 rounded-xl border border-emerald-500/20">
-                        <List className="w-5 h-5 text-emerald-400"/>
-                      </div>
-                      <h3 className="text-xl font-bold text-white tracking-tight">
-                        {rasgos.title || 'Rasgos Clave'}
-                      </h3>
+                  <div className="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
+                    <div className="p-2.5 bg-emerald-500/10 rounded-xl border border-emerald-500/20">
+                      <List className="w-5 h-5 text-emerald-400"/>
                     </div>
-                    <div className="prose prose-invert max-w-none text-slate-300 text-[15px] leading-relaxed whitespace-pre-line">
-                      {rasgos.content}
-                    </div>
+                    <h3 className="text-xl font-bold text-white tracking-tight">
+                      {rasgos.title || 'Rasgos Clave'}
+                    </h3>
+                  </div>
+                  <div className="prose prose-invert max-w-none text-slate-300 text-[15px] leading-relaxed whitespace-pre-line">
+                    {rasgos.content}
                   </div>
                 </motion.div>
               )}
-
             </div>
 
-            {/* Fila inferior: Riesgos ocupando el ancho total (cubriendo ambos contenedores superiores) */}
+            {/* Risks Section */}
             {riesgos && (
               <motion.div 
                 variants={cardVariants}
-                className="w-full bg-rose-500/5 border border-rose-500/20 rounded-[2.5rem] p-8 sm:p-10 shadow-xl relative overflow-hidden"
+                className="bg-rose-500/5 border border-rose-500/20 rounded-[2.5rem] p-8 sm:p-10 shadow-xl relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-64 h-64 bg-rose-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
                 <div className="flex items-center gap-3 mb-6 border-b border-rose-500/20 pb-4">
@@ -255,8 +245,9 @@ export const ArchetypeExplorer: React.FC<ArchetypeExplorerProps> = ({
               </motion.div>
             )}
 
+            {/* Additional Sections Grid */}
             {selectedArchetype.sections.length > 3 && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {selectedArchetype.sections.slice(3).map((section, idx) => (
                   <motion.div 
                     key={idx} 
@@ -271,7 +262,6 @@ export const ArchetypeExplorer: React.FC<ArchetypeExplorerProps> = ({
                 ))}
               </div>
             )}
-
           </motion.div>
         </AnimatePresence>
       </main>
