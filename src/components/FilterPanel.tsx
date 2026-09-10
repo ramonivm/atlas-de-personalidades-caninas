@@ -95,7 +95,11 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
               Filtros Dinámicos
             </h2>
             <p className="text-xs text-neutral-400">
-              Mostrando <span className="font-bold text-amber-400">{filteredCount}</span> de {totalBreeds} razas
+              {filteredCount === totalBreeds ? (
+                <><span className="font-bold text-amber-400">{totalBreeds}</span> razas disponibles</>
+              ) : (
+                <><span className="font-bold text-amber-400">{filteredCount}</span> de {totalBreeds} razas coinciden</>
+              )}
               <span className="hidden sm:inline"> en tiempo real</span>
             </p>
           </div>
@@ -124,8 +128,6 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             >
               <option value="name-asc" className="bg-neutral-900">Nombre (A-Z)</option>
               <option value="name-desc" className="bg-neutral-900">Nombre (Z-A)</option>
-              <option value="fci" className="bg-neutral-900">Grupo FCI</option>
-              <option value="traits-count" className="bg-neutral-900">Más rasgos</option>
             </select>
           </div>
 
@@ -227,8 +229,6 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
           >
             <option value="name-asc" className="bg-neutral-900">Nombre (A-Z)</option>
             <option value="name-desc" className="bg-neutral-900">Nombre (Z-A)</option>
-            <option value="fci" className="bg-neutral-900">Grupo FCI</option>
-            <option value="traits-count" className="bg-neutral-900">Más rasgos</option>
           </select>
           <div className="pointer-events-none absolute right-2.5 flex flex-col items-center justify-center text-neutral-400">
             <ChevronUp className="w-2.5 h-2.5 -mb-1" />

@@ -131,7 +131,7 @@ export interface FilterState {
   resilienceLevel: string;
   sociabilityLevel: string;
   independenceLevel: string;
-  sortBy: 'name-asc' | 'name-desc' | 'fci' | 'traits-count';
+  sortBy: 'name-asc' | 'name-desc';
 }
 
 export type AffinityLevel = 1 | 2 | 3 | 4 | 5;

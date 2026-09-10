@@ -92,6 +92,10 @@ export default function App() {
     sortBy: 'name-asc'
   });
 
+  // Progressive disclosure for the main breed-card grid.
+  const [visibleBreedCount, setVisibleBreedCount] = useState(15);
+  const [loadIncrement, setLoadIncrement] = useState<15 | 30>(15);
+
   // Selected breed for detail modal
   const [selectedBreed, setSelectedBreed] = useState<Breed | null>(null);
 
@@ -283,16 +287,28 @@ export default function App() {
     return list.slice().sort((a, b) => {
       if (filters.sortBy === 'name-asc') return a.breed.localeCompare(b.breed);
       if (filters.sortBy === 'name-desc') return b.breed.localeCompare(a.breed);
-      if (filters.sortBy === 'fci') return a.fciGroup.localeCompare(b.fciGroup);
-      if (filters.sortBy === 'traits-count') return b.traits.length - a.traits.length;
       return 0;
     });
   }, [filters]);
 
   // Active filter signature for triggering staggered entrance transitions
   const filterSignature = useMemo(() => {
-    return `${filters.fciGroup}|${filters.akcGroup}|${filters.archetype}|${filters.motivation}|${filters.trait}|${filters.resilienceLevel}|${filters.sociabilityLevel}|${filters.independenceLevel}|${filters.sortBy}|${filters.searchQuery}`;
+    return `${filters.fciGroup}|${filters.akcGroup}|${filters.archetype}|${filters.motivation}|${filters.trait}|${filters.origin}|${filters.resilienceLevel}|${filters.sociabilityLevel}|${filters.independenceLevel}|${filters.sortBy}|${filters.searchQuery}`;
   }, [filters]);
+
+  // A new search, filter or sort starts again from the first 15 cards.
+  useEffect(() => {
+    setVisibleBreedCount(15);
+  }, [filterSignature]);
+
+  const visibleBreeds = useMemo(
+    () => filteredBreeds.slice(0, visibleBreedCount),
+    [filteredBreeds, visibleBreedCount]
+  );
+
+  const displayedBreedCount = viewMode === 'grid'
+    ? visibleBreeds.length
+    : filteredBreeds.length;
 
   // Favorites Breeds List
   const favoriteBreeds = useMemo(() => {
@@ -479,8 +495,8 @@ export default function App() {
               <div className="flex items-center gap-2">
                 <span className="text-xs sm:text-sm font-bold text-slate-200">
                   {filteredBreeds.length === canineData.breeds.length
-                    ? `${filteredBreeds.length} razas registradas`
-                    : `Mostrando ${filteredBreeds.length} de ${canineData.breeds.length} razas`}
+                    ? `Mostrando ${displayedBreedCount} de ${filteredBreeds.length} razas`
+                    : `Mostrando ${displayedBreedCount} de ${filteredBreeds.length} resultados`}
                 </span>
                 {filteredBreeds.length < canineData.breeds.length && (
                   <span className="text-[10px] font-semibold px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">
@@ -542,25 +558,51 @@ export default function App() {
                 </button>
               </div>
             ) : viewMode === 'grid' ? (
-              <div key={`grid-${filterSignature}`} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {filteredBreeds.map((breed, index) => (
-                  <BreedCard
-                    key={breed.id}
-                    breed={breed}
-                    priority={index < 4}
-                    style={{
-                      animationDelay: `${Math.min(index, 15) * 35}ms`
-                    }}
-                    onSelect={setSelectedBreed}
-                    isFavorite={favorites.includes(breed.id)}
-                    onToggleFavorite={toggleFavorite}
-                    isCompared={comparedIds.includes(breed.id)}
-                    onToggleCompare={toggleCompare}
-                    onSelectArchetypeFilter={(arch) => {
-                      setFilters(prev => ({ ...prev, archetype: arch }));
-                    }}
-                  />
-                ))}
+              <div className="space-y-6">
+                <div key={`grid-${filterSignature}`} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {visibleBreeds.map((breed, index) => (
+                    <BreedCard
+                      key={breed.id}
+                      breed={breed}
+                      priority={index < 4}
+                      style={{
+                        animationDelay: `${Math.min(index, 15) * 35}ms`
+                      }}
+                      onSelect={setSelectedBreed}
+                      isFavorite={favorites.includes(breed.id)}
+                      onToggleFavorite={toggleFavorite}
+                      isCompared={comparedIds.includes(breed.id)}
+                      onToggleCompare={toggleCompare}
+                      onSelectArchetypeFilter={(arch) => {
+                        setFilters(prev => ({ ...prev, archetype: arch }));
+                      }}
+                    />
+                  ))}
+                </div>
+
+                {visibleBreeds.length < filteredBreeds.length && (
+                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
+                    <button
+                      type="button"
+                      onClick={() => setVisibleBreedCount(count => count + loadIncrement)}
+                      className="min-h-[44px] px-6 py-2.5 rounded-full bg-amber-500 hover:bg-amber-400 text-black text-sm font-bold shadow-lg shadow-amber-500/10 transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                    >
+                      Mostrar más razas
+                    </button>
+                    <label className="flex items-center justify-center gap-2 text-xs text-neutral-400">
+                      <span>Cargar</span>
+                      <select
+                        value={loadIncrement}
+                        onChange={(event) => setLoadIncrement(Number(event.target.value) as 15 | 30)}
+                        aria-label="Cantidad de razas que se cargarán"
+                        className="min-h-[40px] rounded-xl border border-neutral-800 bg-neutral-900 px-3 py-2 font-bold text-slate-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                      >
+                        <option value={15}>+15</option>
+                        <option value={30}>+30</option>
+                      </select>
+                    </label>
+                  </div>
+                )}
               </div>
             ) : (
               <ErrorBoundary 
