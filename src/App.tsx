@@ -372,15 +372,6 @@ export default function App() {
             
             {/* Hero / Intro Section Redesign */}
             <section aria-label="Introducción a AtlasCanino" className="w-full relative overflow-hidden bg-[#121212] border border-white/5 rounded-2xl sm:rounded-3xl p-[30px] shadow-2xl">
-              {/* Centered AtlasCanino Master Logo */}
-              <div className="w-full flex justify-center mb-[40px] lg:mb-12">
-                <img
-                  src="/assets/master_logotipo_atlascanino.svg"
-                  alt="Atlas Canino"
-                  className="w-[500px] max-w-full h-[120px] lg:w-full lg:max-w-[720px] lg:h-auto object-contain drop-shadow-[0_0_25px_rgba(245,158,11,0.35)]"
-                />
-              </div>
-
               {/* 2-Column Composition */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
                 {/* Left Column: Title, Descriptive Paragraphs and Dynamic Counter */}
