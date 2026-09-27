@@ -19,8 +19,8 @@ const balancedAnswers: AffinityAnswers = {
   preferences: ['closeness', 'calm'],
 };
 
-test('the normalized catalog covers all 153 breeds with valid profiles', () => {
-  assert.equal(Object.keys(affinityProfiles).length, 153);
+test('the normalized catalog covers all 168 breeds with valid profiles', () => {
+  assert.equal(Object.keys(affinityProfiles).length, 168);
   assert.deepEqual(validateAffinityProfiles(affinityProfiles), []);
 
   const breedIds = new Set(canineData.breeds.map(breed => breed.id));
