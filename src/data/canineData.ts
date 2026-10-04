@@ -8,7 +8,7 @@ export const canineData: CanineDatabase = {
     "generatedAt": "2026-08-11T03:44:29+00:00",
     "source": "Exportación local de Notion",
     "counts": {
-      "breeds": 168,
+      "breeds": 183,
       "archetypes": 14,
       "frameworks": 6,
       "lifeStages": 3,
@@ -10634,6 +10634,1088 @@ export const canineData: CanineDatabase = {
         ]
       },
       "imageUrl": "/images/breeds/treeing-walker-coonhound.webp"
+    },
+    {
+      "id": "affenpinscher",
+      "breed": "Affenpinscher",
+      "title": "Affenpinscher: El Ratonero de Criterio Firme",
+      "epithet": "El Ratonero de Criterio Firme",
+      "origen": "Alemania",
+      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
+      "akcGroup": "Toy Group",
+      "archetypes": [
+        "Terriers Instrumentales"
+      ],
+      "motivations": [
+        "Caza",
+        "Exploración",
+        "Juego"
+      ],
+      "traits": [
+        "Curiosidad",
+        "Vigilancia",
+        "Autoconfianza",
+        "Tenacidad",
+        "Vivacidad"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Bajo",
+        "motivacion_intrinseca": "Caza",
+        "resiliencia_emocional": "Alta",
+        "sociabilidad": "Media",
+        "independencia_cognitiva": "Media-Alta"
+      },
+      "summary": "El Affenpinscher es un pequeño perro alemán de origen ratonero, curioso, seguro y dotado de una personalidad mucho más intensa de lo que su tamaño sugiere. Conserva una marcada disposición a investigar, perseguir y resolver situaciones por iniciativa propia, combinada con un vínculo estrecho hacia su familia. Es vivaz, vigilante y decidido, pero no especialmente complaciente. Necesita juego, exploración, límites coherentes y oportunidades para utilizar su inteligencia práctica.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es alerta, curioso y confiado. Tiende a investigar rápidamente aquello que cambia en su entorno y puede responder con sorprendente decisión cuando percibe una amenaza, aunque en situaciones habituales suele mostrarse estable y entretenido. Posee iniciativa, tenacidad y una veta obstinada que recuerda su pasado como controlador de roedores. Aprende con rapidez, pero no siempre acepta repeticiones carentes de sentido. Su energía aparece en ráfagas activas más que como necesidad de movimiento continuo. Bien socializado, combina audacia, humor y autocontrol sin perder una personalidad claramente independiente."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "Forma un vínculo cercano y leal con su familia, disfrutando de la compañía y la participación cotidiana sin convertirse necesariamente en un perro dependiente. Suele responder mejor a una guía consistente, entretenida y basada en recompensas que a correcciones duras o insistencia mecánica. Su inteligencia práctica hace que aprenda tanto las reglas como las excepciones, por lo que la coherencia resulta importante. Puede mostrarse posesivo con su espacio o atención si no existen límites claros. La relación funciona mejor cuando el humano combina afecto, estructura y respeto por su iniciativa."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Su pequeño tamaño convive con una personalidad segura, despierta y entretenida. Es atento al entorno, aprende con rapidez y puede adaptarse bien a la vida doméstica cuando recibe suficiente interacción y actividad. Su curiosidad lo convierte en un compañero divertido para juegos, entrenamiento y pequeñas tareas de búsqueda. También suele desarrollar una relación muy comprometida con su familia. Bien canalizado, ofrece una combinación atractiva de autonomía, vigilancia y cercanía sin necesitar ejercicio físico extremo."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su valentía y seguridad pueden hacerlo olvidar su tamaño, llevándolo a enfrentarse verbalmente o físicamente a situaciones poco convenientes. El instinto de persecución hacia roedores y otros animales pequeños puede seguir presente, y su obstinación complica el entrenamiento si las reglas son inconsistentes. Puede mostrarse reservado o reactivo ante interacciones invasivas y no siempre tolera manipulaciones bruscas. El aburrimiento favorece ladridos, conductas demandantes o exploración oportunista, por lo que necesita estimulación diaria."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "El Affenpinscher tiene sus raíces en pequeños pinschers de pelo áspero utilizados en Alemania para controlar ratas y otros roedores en establos, comercios y hogares. Esa función favoreció rapidez de reacción, curiosidad, persistencia y disposición para investigar espacios reducidos por iniciativa propia. Con el tiempo ganó importancia como perro de compañía sin perder por completo su carácter funcional. Actualmente puede disfrutar de obediencia recreativa, trucos, agility y juegos de búsqueda que aprovechen su agilidad mental, tenacidad y entusiasmo por resolver problemas."
+        }
+      ],
+      "sourceValues": null,
+      "imageUrl": "/images/breeds/affenpinscher.webp"
+    },
+    {
+      "id": "chinook",
+      "breed": "Chinook",
+      "title": "Chinook: El Compañero de Resistencia Serena",
+      "epithet": "El Compañero de Resistencia Serena",
+      "origen": "Estados Unidos (New Hampshire)",
+      "fciGroup": "Raza no reconocida por FCI",
+      "akcGroup": "Working Group",
+      "archetypes": [
+        "Cooperación Humana Clásica"
+      ],
+      "motivations": [
+        "Trabajo",
+        "Movimiento coordinado",
+        "Familia"
+      ],
+      "traits": [
+        "Cooperación",
+        "Paciencia",
+        "Lealtad",
+        "Resiliencia",
+        "Vitalidad"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Medio",
+        "motivacion_intrinseca": "Trabajo",
+        "resiliencia_emocional": "Alta",
+        "sociabilidad": "Alta",
+        "independencia_cognitiva": "Media"
+      },
+      "summary": "El Chinook es un perro de trineo estadounidense creado para combinar fuerza, resistencia y velocidad con un temperamento cooperativo y familiar. Su psicología se orienta al trabajo en equipo, la constancia y la relación cercana con las personas, sin perder capacidad para desenvolverse con seguridad durante actividades exigentes. Suele ser paciente, sociable y adaptable. Necesita ejercicio regular, participación cotidiana y tareas que aprovechen su disposición a colaborar y moverse con propósito.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es estable, paciente y dispuesto a cooperar. Frente a la actividad suele mostrar energía sostenida más que impulsividad, administrando el esfuerzo con constancia. Aprende con facilidad y tiende a responder bien cuando comprende el objetivo de una tarea, especialmente si puede realizarla junto a personas u otros perros. Habitualmente es sociable y tolerante, aunque algunos individuos pueden mostrarse inicialmente reservados con desconocidos. Su equilibrio depende de una combinación de movimiento, interacción y participación familiar; una rutina demasiado pasiva puede desaprovechar una mente criada para trabajar de manera coordinada."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "El Chinook suele construir una relación cercana, confiada y muy cooperativa con su familia. Su historia como perro de tiro favoreció una disposición a trabajar dentro de un equipo y a mantener atención sobre las señales humanas sin necesitar una supervisión rígida. Responde especialmente bien a una educación clara, positiva y consistente. Busca participar más que obedecer de forma mecánica, por lo que el entrenamiento funciona mejor cuando existe propósito. Puede convivir estrechamente con varias personas y perros, integrándose a la dinámica familiar sin concentrar necesariamente todo su apego en un único referente."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Destaca por combinar capacidad de trabajo con un temperamento generalmente amable y manejable. Su paciencia, resistencia y disposición cooperativa permiten compartir senderismo, tiro recreativo, deportes y actividades familiares sin la intensidad psicológica de razas más especializadas. Suele relacionarse bien con otros perros y aprende con rapidez cuando las tareas tienen sentido. Su adaptabilidad facilita alternar ejercicio vigoroso con periodos de calma, siempre que disponga de suficiente participación, movimiento y contacto cotidiano con su grupo."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su aspecto sereno puede llevar a subestimar la cantidad de actividad física y participación que necesita. Si pasa demasiado tiempo sin ejercicio o interacción puede aburrirse, perder condición o desarrollar conductas oportunistas. Su carácter sociable tampoco significa ausencia de criterio propio: puede distraerse o tomar decisiones durante actividades al aire libre. Algunos ejemplares son reservados inicialmente con desconocidos. Además, su fuerte orientación al grupo hace poco conveniente una rutina basada en aislamiento prolongado o escasa convivencia."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "El Chinook surgió en New Hampshire como perro de trineo capaz de combinar la potencia necesaria para transportar carga con velocidad y resistencia para recorrer largas distancias. Su selección favoreció trabajo coordinado, capacidad para mantener ritmos sostenidos y buena convivencia dentro de equipos numerosos. Actualmente puede destacar en tiro de trineo, skijoring, bikejoring, senderismo, transporte recreativo y otras actividades de resistencia. Su principal fortaleza funcional es trabajar durante periodos prolongados manteniendo cooperación, estabilidad y disposición para seguir avanzando junto a su guía."
+        }
+      ],
+      "sourceValues": null,
+      "imageUrl": "/images/breeds/chinook.webp"
+    },
+    {
+      "id": "dandie-dinmont-terrier",
+      "breed": "Dandie Dinmont Terrier / Dandie Dinmont Terrier",
+      "title": "Dandie Dinmont Terrier: El Noble Señor de las Madrigueras",
+      "epithet": "El Noble Señor de las Madrigueras",
+      "origen": "Reino Unido",
+      "fciGroup": "Grupo 3: Terriers",
+      "akcGroup": "Terrier Group",
+      "archetypes": [
+        "Terriers Instrumentales"
+      ],
+      "motivations": [
+        "Caza",
+        "Resolución de problemas",
+        "Persistencia"
+      ],
+      "traits": [
+        "Tenacidad",
+        "Dignidad",
+        "Independencia",
+        "Persistencia",
+        "Autonomía"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Medio",
+        "motivacion_intrinseca": "Caza",
+        "resiliencia_emocional": "Alta",
+        "sociabilidad": "Media",
+        "independencia_cognitiva": "Alta"
+      },
+      "summary": "El Dandie Dinmont Terrier es un terrier de distintiva apariencia alargada y copete sedoso, originario de las zonas fronterizas entre Escocia e Inglaterra. Destaca por su notable tenacidad, una dignidad casi aristocrática y un fuerte instinto de caza enfocado en la madriguera. A diferencia de otros terriers más hiperactivos, posee un temperamento más sosegado pero igualmente decidido. Requiere un guía respetuoso que entienda su profunda independencia y canalice su firmeza mediante una estructura clara y justa.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es digno, valiente y sumamente reflexivo. No muestra la nerviosis o reactividad caótica de otras razas de su grupo; mantiene una compostura serena, casi señorial, que le ha valido el título apócrifo de \"el caballero de los terriers\". Sin embargo, bajo esa apariencia reposada late una determinación de acero y un impulso de caza implacable. Es un perro observador, que evalúa las situaciones con criterio propio antes de actuar. Muestra una clara reserva frente a los extraños, sin llegar a ser hostil, y defiende su espacio con una autoridad natural e inquebrantable."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "Establece un vínculo profundo, leal y muy estrecho con su familia, a la que considera su círculo de pertenencia indiscutible. Su relación con el guía se basa en el respeto mutuo: no acepta imposiciones basadas en la fuerza bruta ni órdenes mecánicas carentes de sentido. Su aprendizaje es efectivo cuando se aborda desde la cooperación y el estímulo inteligente, pero ignorará de inmediato cualquier intento de dominación autoritaria. Su forma de demostrar afecto es mediante una compañía fiel, constante y silenciosa, valorando enormemente la comodidad y la cercanía de su hogar."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Destaca por su equilibrio interno, siendo un terrier inusualmente tranquilo, calmado y de modales pausados dentro del hogar, lo que facilita su adaptación a la vida urbana si cuenta con los paseos adecuados. Su apariencia singular contrasta con un carácter valiente, decidido y sumamente leal. No es un ladrador compulsivo, limitando sus avisos a situaciones reales o estímulos justificados. Su inteligencia práctica y su capacidad de resiliencia emocional lo convierten en un compañero maduro, estable y dotado de una personalidad fascinante y entrañable."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su tremenda tenacidad puede transformarse con facilidad en terquedad o cerrazón mental si el entrenamiento resulta monótono o coercitivo. Su fuerte instinto de caza y su pasado como cazador de tejones y zorros hacen que sea peligroso para roedores u otros animales pequeños, exigiendo precaución en su manejo al aire libre. La falta de estimulación mental y de retos adecuados puede llevarlo a cavar o buscar distracciones por cuenta propia. Además, su dignidad requiere un trato justo; si se siente vulnerado o tratado con rudeza, se cerrará emocionalmente y perderá el interés en cooperar."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "Surgido en las tierras fronterizas escocesas y popularizado por la novela *Guy Mannering* de Sir Walter Scott, este terrier fue seleccionado específicamente para la caza subterránea de alimañas y tejones en terrenos rocosos y difíciles. Su estructura anatómica alargada y baja, combinada con una potencia de mandíbula descomunal y una valentía a toda prueba, le permitía ingresar a las madrigueras y enfrentar a presas fieras. Hoy en día, aunque su rol utilitario ha disminuido, mantiene intacta esa agudeza mental, destacando en actividades de rastreo, juegos de resolución de problemas y como un compañero de hogar lleno de carácter e historia."
+        }
+      ],
+      "sourceValues": {
+        "fciGroup": "Grupo 3: Terriers[cite: 4]",
+        "akcGroup": "Terrier Group[cite: 4]",
+        "archetypes": [
+          "Terriers Instrumentales[cite: 4]"
+        ],
+        "motivations": [
+          "Caza[cite: 4]",
+          "Resolución de problemas[cite: 4]",
+          "Persistencia[cite: 4]"
+        ],
+        "traits": [
+          "Tenacidad[cite: 4]",
+          "Dignidad[cite: 4]",
+          "Independencia[cite: 4]",
+          "Determinación[cite: 4]",
+          "Autonomía[cite: 4]"
+        ],
+        "metrics": {
+          "motivacion_intrinseca": "Caza[cite: 4]",
+          "resiliencia_emocional": "Alta[cite: 4]",
+          "sociabilidad": "Media[cite: 4]",
+          "independencia_cognitiva": "Alta[cite: 4]"
+        }
+      },
+      "imageUrl": "/images/breeds/dandie-dinmont-terrier.webp"
+    },
+    {
+      "id": "eurasier",
+      "breed": "Eurasier",
+      "title": "Eurasier: El Spitz de Vínculo Sereno",
+      "epithet": "El Spitz de Vínculo Sereno",
+      "origen": "Alemania",
+      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
+      "akcGroup": "Foundation Stock Service (FSS)",
+      "archetypes": [
+        "Autonomía Primitiva / Dignidad"
+      ],
+      "motivations": [
+        "Familia",
+        "Cercanía",
+        "Exploración"
+      ],
+      "traits": [
+        "Serenidad",
+        "Reserva",
+        "Lealtad",
+        "Sensibilidad",
+        "Vigilancia"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Alto",
+        "motivacion_intrinseca": "Familia",
+        "resiliencia_emocional": "Media-Alta",
+        "sociabilidad": "Media",
+        "independencia_cognitiva": "Media-Alta"
+      },
+      "summary": "El Eurasier es un spitz alemán de compañía, sereno, reservado y profundamente vinculado a su familia. Combina sensibilidad social con una independencia moderada que le permite observar y decidir sin buscar aprobación constante. Frente a desconocidos suele mantener distancia antes que mostrar efusividad, mientras que en casa destaca por su estabilidad y cercanía. Necesita convivencia real, socialización cuidadosa y una rutina equilibrada que incluya paseos, exploración y participación cotidiana.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es tranquilo, atento y contenido. Tiende a observar antes de acercarse y rara vez necesita responder de forma impulsiva a los estímulos cotidianos. Su reserva con desconocidos forma parte de una actitud selectiva más que de una hostilidad natural. Es sensible al ambiente emocional y a cambios en la dinámica familiar, pero conserva suficiente autonomía para retirarse, descansar o explorar por cuenta propia. No suele buscar actividad frenética ni trabajo repetitivo; funciona mejor con una vida estable, variedad moderada y experiencias positivas que refuercen seguridad sin presionarlo socialmente."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "El Eurasier construye un vínculo estrecho y constante con su familia, a la que utiliza como referencia emocional sin convertirse necesariamente en un perro dependiente. Disfruta permanecer cerca, acompañar rutinas y compartir paseos, pero también conserva momentos de autonomía. Su sensibilidad hace que responda mejor a una guía tranquila, coherente y respetuosa que a métodos bruscos. Aprende con facilidad cuando existe confianza y motivación, aunque puede perder interés ante ejercicios repetitivos. La relación funciona especialmente bien cuando recibe cercanía cotidiana sin invasión y límites previsibles sin confrontación."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Destaca por su serenidad doméstica, fuerte lealtad familiar y capacidad para convivir sin exigir una actividad extrema. Suele regular bien su energía, disfruta de paseos y exploraciones moderadas y puede ofrecer una presencia atenta sin recurrir continuamente a la vocalización. Su sensibilidad facilita una comunicación fina con personas conocidas. Para hogares que valoran un perro cercano pero no permanentemente demandante, combina afecto, reserva y autonomía de una manera especialmente equilibrada."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su reserva natural puede transformarse en inseguridad o evitación si la socialización es escasa o demasiado invasiva. Tampoco suele disfrutar de interacciones indiscriminadas con desconocidos, por lo que no conviene forzar el contacto. Su fuerte vínculo familiar puede hacer poco adecuada una vida de aislamiento prolongado. La sensibilidad frente a correcciones duras puede reducir la cooperación, mientras que su independencia moderada exige paciencia. Su abundante manto también requiere mantenimiento regular, especialmente durante los periodos de muda."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "El Eurasier surgió en Alemania durante la segunda mitad del siglo XX a partir de cruces entre perros tipo Wolfspitz y Chow Chow, incorporándose posteriormente Samoyedos para consolidar un compañero familiar equilibrado. A diferencia de razas seleccionadas para una tarea especializada, su función principal ha sido la convivencia cercana. Puede disfrutar de obediencia recreativa, senderismo, rastreo lúdico y ejercicios de aprendizaje. Sus principales capacidades son la observación, la adaptación a rutinas familiares y una comunicación social sensible con sus personas de referencia."
+        }
+      ],
+      "sourceValues": null,
+      "imageUrl": "/images/breeds/eurasier.webp"
+    },
+    {
+      "id": "fila-brasileiro",
+      "breed": "Fila Brasileiro / Mastín Brasileño",
+      "title": "Fila Brasileiro: El Guardián Intransigente",
+      "epithet": "El Guardián Intransigente",
+      "origen": "Brasil",
+      "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos",
+      "akcGroup": "Foundation Stock Service (FSS)",
+      "archetypes": [
+        "Protección Territorial Absoluta"
+      ],
+      "motivations": [
+        "Protección territorial",
+        "Custodia",
+        "Familia"
+      ],
+      "traits": [
+        "Protección",
+        "Lealtad",
+        "Fiereza",
+        "Reserva"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Bajo",
+        "motivacion_intrinseca": "Protección territorial",
+        "resiliencia_emocional": "Alta",
+        "sociabilidad": "Muy Baja",
+        "independencia_cognitiva": "Media"
+      },
+      "summary": "El Fila Brasileiro es un imponente mastín de trabajo originario de Brasil, mundialmente reconocido por su instinto de guarda insobornable y su legendaria aversión hacia los extraños. No es un perro de compañía convencional; su psicología opera bajo una lógica de protección binaria donde el mundo se divide estrictamente entre su núcleo familiar y las posibles amenazas externas. Combina una lealtad absoluta y dócil hacia los suyos con una fiereza instintiva frente a intrusos. Requiere un guía con experiencia sólida en molosos, capaz de gestionar de manera responsable su enorme potencia física y su profunda territorialidad.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal en el hogar es pacífico, seguro y de movimientos pesados, pero posee una capacidad de activación explosiva si percibe una invasión de su espacio. Es famoso por la \"ojeriza\", un rasgo conductual biológico que define su profunda desconfianza e intolerancia instintiva hacia las personas ajenas a su entorno. No avisa con ladridos constantes ni busca intimidar a la distancia; su reacción ante una amenaza es directa, frontal y sin previo aviso. Carece del deseo de interactuar socialmente fuera de su círculo, manteniendo una reserva infranqueable. Su energía se canaliza íntegramente hacia el control de su perímetro, mostrando una contención que impone respeto absoluto."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "Desarrolla un nivel de devoción tan profundo hacia su núcleo familiar que ha originado el popular dicho brasileño \"fiel como un Fila\". Con su guía y los miembros de la casa, incluyendo niños, muestra una ternura asombrosa, una paciencia infinita y una docilidad que contrasta radicalmente con su actitud hacia el exterior. No cuestiona el liderazgo si este proviene de un dueño firme, calmado y coherente, sometiéndose voluntariamente a su referente humano. Su necesidad de contacto físico con los suyos es altísima, buscando siempre estar recostado cerca o sobre los pies de su familia, demostrando un apego incondicional."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Destaca como uno de los perros de protección territorial más eficientes y disuasorios del mundo, cumpliendo su labor por puro instinto sin necesidad de adiestramiento defensivo. Dentro del hogar, es un animal sumamente tranquilo, silencioso y de baja demanda de ejercicio aeróbico intenso, prefiriendo los paseos pausados de patrullaje. Su tolerancia y delicadeza con los niños de su propia familia son excepcionales, asumiendo un rol de custodio pasivo y devoto. Para quienes viven en propiedades extensas o rurales y necesitan seguridad real, ofrece una lealtad inquebrantable y una eficacia funcional inigualable."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su insobornable hostilidad hacia los extraños lo convierte en un perro de altísimo riesgo legal y social en entornos urbanos densos si no se maneja con responsabilidad extrema. Recibir visitas en casa, acudir al veterinario o pasear por calles concurridas puede ser un desafío monumental debido a su rechazo visceral al contacto ajeno. Su tamaño y potencia física hacen que cualquier error de manejo o falta de previsión tenga consecuencias gravísimas. Exige una socialización exhaustiva desde cachorro, no para volverlo amigable, sino estrictamente para enseñarle a tolerar la presencia humana en situaciones inevitables sin reaccionar de forma agresiva."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "Forjado en las grandes haciendas y selvas de Brasil, fue seleccionado históricamente para tareas de extrema dureza, como el rastreo de jaguares, el control de ganado semi-salvaje y la custodia inflexible de propiedades. Su estructura anatómica le proporciona un paso amblador característico (moviendo las dos patas del mismo lado simultáneamente), el cual le permite recorrer largas distancias economizando energía. Hoy en día, su función principal sigue siendo la guardia instintiva y la protección territorial absoluta, labores donde su olfato, contención física y arrojo siguen intactos como en sus orígenes."
+        }
+      ],
+      "sourceValues": {
+        "fciGroup": "Grupo 2: Molosoides tipo Pinscher y Schnauzer Molosoides y Boyeros Suizos[cite: 4]",
+        "akcGroup": "Foundation Stock Service (FSS)[cite: 4]",
+        "archetypes": [
+          "Protección Territorial Absoluta[cite: 4]"
+        ],
+        "motivations": [
+          "Protección territorial[cite: 4]",
+          "Custodia[cite: 4]",
+          "Familia[cite: 4]"
+        ],
+        "traits": [
+          "Territorialidad[cite: 4]",
+          "Lealtad[cite: 4]",
+          "Fiereza[cite: 4]",
+          "Reserva[cite: 4]",
+          "Protección[cite: 4]"
+        ],
+        "metrics": {
+          "motivacion_intrinseca": "Protección territorial[cite: 4]",
+          "resiliencia_emocional": "Alta[cite: 4]",
+          "sociabilidad": "Muy Baja[cite: 4]",
+          "independencia_cognitiva": "Media[cite: 4]"
+        }
+      },
+      "imageUrl": "/images/breeds/fila-brasileiro.webp"
+    },
+    {
+      "id": "karelian-bear-dog",
+      "breed": "Perro de Osos de Carelia / Karelian Bear Dog",
+      "title": "Perro de Osos de Carelia: El Cazador de los Bosques Carelios",
+      "epithet": "El Cazador de los Bosques Carelios",
+      "origen": "Finlandia",
+      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
+      "akcGroup": "Foundation Stock Service (FSS)",
+      "archetypes": [
+        "Autonomía Primitiva / Dignidad",
+        "Independencia Cazadora Solitaria"
+      ],
+      "motivations": [
+        "Caza",
+        "Rastreo",
+        "Autonomía"
+      ],
+      "traits": [
+        "Independencia",
+        "Valentía",
+        "Persistencia",
+        "Reserva",
+        "Vigilancia"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Medio",
+        "motivacion_intrinseca": "Caza",
+        "resiliencia_emocional": "Muy Alta",
+        "sociabilidad": "Media-Baja",
+        "independencia_cognitiva": "Muy Alta"
+      },
+      "summary": "El Perro de Osos de Carelia es un cazador nórdico de gran presa, independiente, valiente y extraordinariamente persistente. Su función histórica favoreció una mente capaz de rastrear, localizar y mantener a distancia animales poderosos mediante movimiento y ladrido, sin depender de instrucciones continuas. Con su familia puede ser leal y cercano, pero conserva fuerte criterio propio. Necesita actividad, exploración y una guía coherente que respete su autonomía sin renunciar al control.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es seguro, alerta y decidido. Tiende a explorar con iniciativa y puede concentrarse intensamente cuando detecta un rastro o estímulo relacionado con la caza. Posee coraje, resistencia a la presión y una marcada capacidad para sostener una tarea incluso frente a situaciones exigentes. No suele ser un perro indiscriminadamente sociable y puede mostrarse reservado con desconocidos o territorial frente a otros perros. Su independencia no equivale a desconexión: observa, evalúa y actúa según su propio juicio. Necesita socialización temprana y experiencias variadas para desarrollar respuestas proporcionadas fuera del contexto de trabajo."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "Construye un vínculo leal y sólido con sus personas de referencia, pero rara vez basa su conducta en la necesidad constante de aprobación. Puede cooperar eficazmente con el humano durante la caza y otras actividades, aunque conserva una elevada autonomía para tomar decisiones a distancia. Aprende mejor con reglas consistentes, recompensas relevantes y objetivos claros que con repetición mecánica o presión coercitiva. La confianza es fundamental: cuando comprende el marco de trabajo, puede colaborar con gran compromiso sin perder iniciativa. Su relación ideal combina cercanía, respeto por su independencia y límites muy bien establecidos."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Destaca por su valentía, resistencia y extraordinaria persistencia frente a tareas complejas. Su autonomía le permite desenvolverse con seguridad en espacios amplios y resolver situaciones sin necesitar supervisión constante. Es atento, físicamente resistente y capaz de mantener la concentración durante búsquedas prolongadas. Con una socialización adecuada puede establecer una relación muy leal con su familia. Para personas activas y experimentadas, ofrece un compañero sobrio, capaz y especialmente estimulante en actividades de exploración, rastreo y trabajo al aire libre."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su fuerte impulso de caza y elevada independencia pueden dificultar la llamada cuando detecta fauna o un rastro atractivo. Puede mostrarse reservado con desconocidos y competitivo o territorial con otros perros, especialmente del mismo sexo. No es adecuado para una vida sedentaria ni para entornos donde deba relacionarse indiscriminadamente con muchos animales. Requiere manejo preventivo, socialización cuidadosa y espacios seguros, porque su iniciativa y persistencia pueden llevarlo a perseguir estímulos mucho más allá de lo previsto."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "El Perro de Osos de Carelia se consolidó en Finlandia como un spitz de caza especializado en gran presa, especialmente alces y osos. Su trabajo consiste en localizar al animal, seguirlo y mantenerlo ocupado a distancia mediante desplazamientos y ladridos hasta la llegada del cazador. Esta función exige orientación, valentía, persistencia y capacidad para decidir sin instrucciones constantes. Actualmente también puede destacar en rastreo, búsqueda y actividades de campo que aprovechen su resistencia, su agudo sentido del olfato y su independencia funcional."
+        }
+      ],
+      "sourceValues": null,
+      "imageUrl": "/images/breeds/karelian-bear-dog.webp"
+    },
+    {
+      "id": "mountain-cur",
+      "breed": "Mountain Cur",
+      "title": "Mountain Cur: El Cazador de la Frontera Rural",
+      "epithet": "El Cazador de la Frontera Rural",
+      "origen": "Estados Unidos (regiones montañosas del sur)",
+      "fciGroup": "Raza no reconocida por FCI",
+      "akcGroup": "Foundation Stock Service (FSS)",
+      "archetypes": [
+        "Sensorialidad Olfativa Profunda",
+        "Independencia Cazadora Solitaria"
+      ],
+      "motivations": [
+        "Caza",
+        "Rastreo",
+        "Trabajo"
+      ],
+      "traits": [
+        "Persistencia",
+        "Inteligencia",
+        "Vigilancia",
+        "Rusticidad",
+        "Lealtad"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Medio",
+        "motivacion_intrinseca": "Caza",
+        "resiliencia_emocional": "Alta",
+        "sociabilidad": "Media",
+        "independencia_cognitiva": "Alta"
+      },
+      "summary": "El Mountain Cur es un perro estadounidense de trabajo y caza, resistente, decidido y especialmente orientado al rastreo y la persecución de presas. Su historia junto a familias pioneras favoreció una mente versátil, capaz de cazar, vigilar y colaborar en tareas rurales sin depender de instrucciones constantes. Combina fuerte iniciativa con lealtad hacia su grupo humano. Necesita actividad con propósito, exploración y desafíos que canalicen su energía y persistencia.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es alerta, seguro y muy orientado a la acción. Cuando detecta un rastro o una tarea interesante puede concentrarse con gran intensidad y sostener el esfuerzo durante largos periodos. Posee iniciativa propia, rapidez para evaluar situaciones y una notable determinación frente a obstáculos físicos o ambientales. Aunque suele responder bien a la guía humana, no es un perro pasivo ni dependiente de órdenes continuas. Puede mostrarse reservado con desconocidos y necesita socialización temprana para equilibrar vigilancia y apertura. Sin suficiente actividad, su energía y persistencia pueden dirigirse hacia conductas difíciles de interrumpir."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "Construye un vínculo sólido y funcional con su familia, especialmente cuando participa en actividades compartidas. Suele ser leal, atento y dispuesto a colaborar, pero conserva suficiente independencia para tomar decisiones durante la caza, la exploración o el trabajo rural. Aprende mejor mediante objetivos claros, recompensas relevantes y experiencias variadas que mediante repetición mecánica. Su deseo de trabajar con las personas convive con una fuerte iniciativa propia, por lo que la educación debe combinar cooperación y límites consistentes. El contacto frecuente con su familia favorece una relación más estable y receptiva."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Destaca por su versatilidad, resistencia y capacidad para mantener la concentración en tareas exigentes. Puede combinar caza, rastreo, vigilancia y actividad familiar con una notable disposición para aprender. Su inteligencia práctica y rusticidad lo hacen especialmente competente en entornos rurales y actividades al aire libre. Cuando recibe suficiente ejercicio y propósito, puede mostrarse estable, leal y participativo, ofreciendo una relación dinámica a personas que disfrutan trabajar y explorar junto a su perro."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su fuerte impulso de caza y elevada persistencia pueden dificultar la llamada cuando encuentra un rastro atractivo. Necesita mucho ejercicio y estimulación mental; una vida sedentaria favorece frustración, persecución o conductas destructivas. Puede mostrarse reservado con desconocidos y territorial si la socialización es insuficiente. Su iniciativa también exige una educación constante, porque aprende rápidamente a actuar por cuenta propia. Los hogares con animales pequeños deben considerar cuidadosamente su marcada motivación predatoria."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "El Mountain Cur acompañó a familias pioneras de Estados Unidos como perro polivalente de caza y trabajo. Se utilizó para rastrear y hacer subir a los árboles ardillas y mapaches, además de perseguir distintas piezas de caza mayor, vigilar propiedades y colaborar en tareas rurales. Su trabajo favoreció olfato, resistencia, velocidad y capacidad para actuar con iniciativa. Actualmente destaca en rastreo, pruebas de treeing, búsqueda, senderismo y actividades que combinen esfuerzo físico, resolución de problemas y cooperación con el guía."
+        }
+      ],
+      "sourceValues": {
+        "traits": [
+          "Determinación",
+          "Inteligencia",
+          "Vigilancia",
+          "Rusticidad",
+          "Lealtad"
+        ]
+      },
+      "imageUrl": "/images/breeds/mountain-cur.webp"
+    },
+    {
+      "id": "norwegian-lundehund",
+      "breed": "Lundehund Noruego / Norwegian Lundehund",
+      "title": "Lundehund Noruego: El Cazador de los Acantilados",
+      "epithet": "El Cazador de los Acantilados",
+      "origen": "Noruega (isla de Værøy, archipiélago de Lofoten)",
+      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
+      "akcGroup": "Non-Sporting Group",
+      "archetypes": [
+        "Autonomía Primitiva / Dignidad",
+        "Independencia Cazadora Solitaria"
+      ],
+      "motivations": [
+        "Caza",
+        "Exploración",
+        "Autonomía"
+      ],
+      "traits": [
+        "Independencia",
+        "Vigilancia",
+        "Curiosidad",
+        "Lealtad",
+        "Vivacidad"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Medio",
+        "motivacion_intrinseca": "Caza",
+        "resiliencia_emocional": "Media-Alta",
+        "sociabilidad": "Media",
+        "independencia_cognitiva": "Alta"
+      },
+      "summary": "El Lundehund Noruego es un pequeño spitz de caza, alerta, curioso y sorprendentemente autónomo, cuya psicología se formó alrededor de una tarea excepcional: localizar y recuperar frailecillos en los acantilados de la costa noruega. Combina iniciativa, agilidad mental y fuerte interés exploratorio con una relación leal hacia su familia. No suele ser indiscriminadamente sociable y necesita actividad, variedad y una guía paciente que canalice su independencia sin anularla.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es vivaz, atento y explorador. Percibe rápidamente novedades y tiende a investigar el entorno por iniciativa propia, especialmente cuando encuentra espacios, olores o recorridos que despiertan su curiosidad. Conserva una independencia marcada y puede mostrarse obstinado cuando una actividad carece de interés para él. Frente a desconocidos suele ser prudente o reservado más que abiertamente expansivo. Su energía es activa, pero no necesariamente frenética: funciona mejor cuando puede moverse, resolver pequeñas dificultades y participar en experiencias variadas. La socialización temprana ayuda a evitar que la cautela natural se transforme en inseguridad."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "Con su familia desarrolla un vínculo leal y cercano, aunque conserva una identidad claramente autónoma. Puede disfrutar mucho de la compañía, el juego y las actividades compartidas sin necesitar aprobación constante para cada decisión. Aprende con rapidez cuando el entrenamiento resulta variado, breve y significativo, pero la repetición mecánica puede reducir su cooperación. La relación funciona mejor con paciencia, refuerzo positivo y límites consistentes. Su tendencia a explorar exige trabajar desde joven la llamada y el autocontrol, construyendo cooperación sin esperar una obediencia automática propia de razas más orientadas al guía."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Destaca por su curiosidad, capacidad de adaptación y una forma de inteligencia práctica muy ligada a la exploración. Su tamaño moderado y agilidad facilitan actividades variadas, desde senderismo hasta juegos de búsqueda y resolución de problemas. Con sus personas puede ser afectuoso, juguetón y leal, manteniendo al mismo tiempo una autonomía saludable. Cuando dispone de suficiente actividad mental y física, suele ofrecer una convivencia dinámica, entretenida y menos demandante de atención constante que otras razas de compañía."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su independencia puede dificultar la llamada y volverlo poco receptivo cuando encuentra algo más interesante que la instrucción humana. La reserva frente a desconocidos requiere socialización cuidadosa, y el aburrimiento puede favorecer exploraciones no deseadas, escapes o conductas oportunistas. También puede resultar obstinado ante rutinas repetitivas. Su anatomía excepcional no elimina la necesidad de manejo preventivo: es un perro ágil y curioso, capaz de acceder a espacios o superar obstáculos que otros perros de tamaño similar no intentarían."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "El Lundehund Noruego tiene sus orígenes en las islas costeras de Noruega, donde durante siglos se utilizó para capturar frailecillos en riscos y cavidades estrechas. Debía trepar por superficies abruptas, introducirse en madrigueras sinuosas y regresar con las aves, una tarea que favoreció enorme flexibilidad, equilibrio, iniciativa y resolución espacial. Aunque esa caza pertenece al pasado, actualmente puede disfrutar de senderismo, agility, búsqueda y juegos de exploración que aprovechen su movilidad, curiosidad y capacidad para resolver recorridos complejos."
+        }
+      ],
+      "sourceValues": null,
+      "imageUrl": "/images/breeds/norwegian-lundehund.webp"
+    },
+    {
+      "id": "otterhound",
+      "breed": "Otterhound / Sabueso Nutriero",
+      "title": "Otterhound: El Rastreador de las Aguas",
+      "epithet": "El Rastreador de las Aguas",
+      "origen": "Reino Unido",
+      "fciGroup": "Grupo 6: Perros Tipo Sabueso rastro y semejantes",
+      "akcGroup": "Hound Group",
+      "archetypes": [
+        "Sensorialidad Olfativa Profunda"
+      ],
+      "motivations": [
+        "Olfato",
+        "Exploración",
+        "Trabajo conjunto"
+      ],
+      "traits": [
+        "Rusticidad",
+        "Sociabilidad",
+        "Persistencia",
+        "Independencia",
+        "Amabilidad"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Medio",
+        "motivacion_intrinseca": "Olfato",
+        "resiliencia_emocional": "Alta",
+        "sociabilidad": "Alta",
+        "independencia_cognitiva": "Alta"
+      },
+      "summary": "El Otterhound (o Sabueso Nutriero) es un perro de jauría originario del Reino Unido, diseñado biológicamente para rastrear en condiciones anfibias. Destaca por su profunda motivación olfativa, una rusticidad extrema y un temperamento profundamente afable. Al igual que otros grandes sabuesos, no es un animal orientado a la obediencia mecánica; su psicología está cableada para el trabajo autónomo en la naturaleza. Requiere un entorno que tolere su naturaleza tosca, su afición por el agua y su gran tamaño, siendo ideal para guías que priorizan el compañerismo rural por encima del control estricto.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es jovial, bullicioso y profundamente inmersivo. Posee una energía física de gran fondo que, combinada con su pasión por el agua y el barro, lo convierte en un perro de exterior por excelencia. Su mente opera bajo el radar olfativo: cuando capta un rastro interesante, activa un estado de flujo sensorial que bloquea temporalmente las directrices de su humano. En el hogar, siempre que haya quemado su energía, se muestra plácido y relajado, aunque su tamaño lo hace naturalmente torpe. No posee instinto de guarda; recibe tanto a conocidos como a extraños con la misma actitud amistosa y un ladrido profundo."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "Desarrolla un vínculo cálido, amigable y muy tolerante, pero completamente libre de sumisión o apego ansioso. Trata a su humano como un compañero de aventuras, participando alegremente de la vida familiar sin exigir contacto físico constante ni exclusividad. Su proceso de aprendizaje es sumamente independiente: si una orden choca contra un estímulo olfativo, el instinto ganará la partida. Responde favorablemente a la motivación mediante premios o juegos, pero ignorará por completo la imposición por la fuerza. Su lealtad no se demuestra con obediencia ciega, sino con una actitud bondadosa y desprovista de malicia."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Destaca por su excelente sociabilidad, siendo sumamente pacífico tanto con las personas como con otros perros, un rasgo forjado en su historia de trabajo en jauría. Es excepcionalmente resistente a los climas fríos y adversos, lo que lo hace un compañero inmejorable para montañeros o personas que viven en zonas húmedas y rurales. Su carácter desenfadado y alegre aporta un sentido del humor único a la convivencia. Además, carece por completo de las neurosis territoriales o reactividades defensivas que suelen presentar otras razas de mayor protección o guarda."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su poderoso olfato y alta independencia hacen que dejarlo suelto en espacios abiertos sea un riesgo altísimo, pues la llamada suele ser ignorada. Es un perro sumamente ruidoso, con un aullido potente que no es apto para la vida en ciudad. A nivel doméstico, es un perro desordenado: su pelaje áspero y aceitoso retiene suciedad, olores y agua, ensuciando constantemente el hogar. Su instinto de persecución dificulta la convivencia con mascotas pequeñas si no crecen juntos, y su tamaño y terquedad pueden desbordar por completo a dueños inexpertos o muy meticulosos con la limpieza."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "Criado selectivamente en la Inglaterra medieval para cazar nutrias en ríos helados, su anatomía y mente están diseñadas para el agua. Cuenta con patas palmeadas, un manto doble altamente impermeable y un olfato capaz de seguir rastros disipados en el agua, una rareza en el mundo canino. Esta especialización biológica extrema forjó un nadador de resistencia insuperable. Hoy en día, aunque la caza de nutrias está prohibida, esta herencia genética lo hace brillar en actividades como el *mantrailing*, las pruebas de rastro avanzado y cualquier deporte que implique largas jornadas de natación y rastreo."
+        }
+      ],
+      "sourceValues": null,
+      "imageUrl": "/images/breeds/otterhound.webp"
+    },
+    {
+      "id": "pastor-islandes",
+      "breed": "Pastor Islandés / Icelandic Sheepdog",
+      "title": "Pastor Islandés: El Pastor de los Fiordos",
+      "epithet": "El Pastor de los Fiordos",
+      "origen": "Islandia",
+      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
+      "akcGroup": "Herding Group",
+      "archetypes": [
+        "Cooperación Humana Clásica"
+      ],
+      "motivations": [
+        "Trabajo conjunto",
+        "Movimiento coordinado",
+        "Compañía"
+      ],
+      "traits": [
+        "Alegría",
+        "Vigilancia",
+        "Cooperación",
+        "Energía",
+        "Vocalización"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Medio",
+        "motivacion_intrinseca": "Trabajo conjunto",
+        "resiliencia_emocional": "Alta",
+        "sociabilidad": "Alta",
+        "independencia_cognitiva": "Media"
+      },
+      "summary": "El Pastor Islandés es un perro de trabajo nórdico, único canino autóctono de Islandia, criado durante siglos para conducir rebaños y caballos en terrenos escarpados. Destaca por su carácter alegre, su inagotable energía y una fuerte necesidad de cooperación social. A diferencia de otros perros de pastoreo más serios o controladores, opera desde la vivacidad y el uso funcional del ladrido. Requiere una convivencia dinámica y participativa, siendo ideal para guías que busquen un compañero entusiasta, comunicativo y siempre dispuesto al trabajo en equipo.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es profundamente alegre, curioso y extrovertido. Posee un umbral de estimulación medio que lo mantiene atento a los cambios en el entorno, respondiendo con agilidad y entusiasmo ante cualquier estímulo visual o sonoro. Su energía es vibrante y sostenida, moviéndose con rapidez y soltura en espacios abiertos. Es un perro muy expresivo que utiliza la vocalización de manera constante y natural; el ladrido es su herramienta biológica para gestionar emociones, pastorear y alertar. No presenta la reserva o desconfianza típica de otras razas nórdicas, mostrando en cambio una disposición amigable y abierta hacia el mundo exterior."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "Desarrolla un vínculo sumamente estrecho, afectuoso y dependiente con su familia, necesitando sentirse parte integral de las actividades diarias. Entiende la relación como una sociedad colaborativa donde el trabajo conjunto es la mayor recompensa. Su proceso de aprendizaje es rápido gracias a su inteligencia y su enorme deseo de agradar, respondiendo de manera excelente al refuerzo positivo y a una comunicación lúdica. No tolera el aislamiento ni los métodos coercitivos, los cuales apagan su entusiasmo natural. Su forma de mostrar afecto es física, cercana y constante, buscando siempre el contacto visual y la aprobación de su guía."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Destaca por su excepcional sociabilidad, siendo amigable y tolerante tanto con personas desconocidas como con otros animales. Su alegría de vivir y su optimismo son contagiosos, aportando un ambiente dinámico y afectuoso al hogar. Es un perro extremadamente rústico y saludable, adaptado para soportar climas muy fríos e inclemencias del tiempo sin perder su vitalidad. Su inteligencia funcional lo hace brillar en deportes de agilidad, obediencia y pastoreo, siendo un compañero inmejorable para familias activas que disfrutan de la vida al aire libre."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su fuerte tendencia a la vocalización es quizás el mayor desafío; ladrará por alegría, aburrimiento, alerta o instinto de pastoreo, lo que puede resultar insostenible en entornos urbanos densos o apartamentos. Su alta necesidad de pertenencia lo predispone a sufrir ansiedad por separación si se le deja solo durante jornadas prolongadas. Requiere altos niveles de estimulación física y mental para evitar conductas destructivas motivadas por la frustración. Además, su instinto de alerta hacia el cielo (heredado de su función protectora) puede hacerlo ladrar incesantemente a pájaros o aviones si no se le establecen límites claros."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "Llegó a Islandia con los colonos vikingos en el siglo IX y fue moldeado por el duro entorno volcánico para reunir ovejas y caballos en extensos y accidentados pastizales. Su técnica de pastoreo no se basa en el acecho silencioso ni en la mordida, sino en un movimiento ágil y un ladrido agudo y rítmico, diseñado originariamente para ahuyentar a las aves de presa que atacaban a los corderos recién nacidos. Esta genética lo dota de una coordinación motriz excepcional y una resistencia aeróbica encomiable. Hoy en día, esa herencia se canaliza perfectamente en pruebas de pastoreo, agility y actividades que demanden velocidad y obediencia cooperativa."
+        }
+      ],
+      "sourceValues": {
+        "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo[cite: 4]",
+        "akcGroup": "Herding Group[cite: 4]",
+        "archetypes": [
+          "Cooperación Humana Clásica[cite: 4]"
+        ],
+        "motivations": [
+          "Trabajo conjunto[cite: 4]",
+          "Movimiento coordinado[cite: 4]",
+          "Compañía[cite: 4]"
+        ],
+        "traits": [
+          "Alegría[cite: 4]",
+          "Vigilancia[cite: 4]",
+          "Cooperación[cite: 4]",
+          "Energía[cite: 4]",
+          "Vocalización[cite: 4]"
+        ],
+        "metrics": {
+          "motivacion_intrinseca": "Trabajo conjunto[cite: 4]",
+          "resiliencia_emocional": "Alta[cite: 4]",
+          "sociabilidad": "Alta[cite: 4]",
+          "independencia_cognitiva": "Media[cite: 4]"
+        }
+      },
+      "imageUrl": "/images/breeds/pastor-islandes.webp"
+    },
+    {
+      "id": "perro-lobo-checoslovaco",
+      "breed": "Perro Lobo Checoslovaco / Czechoslovakian Wolfdog",
+      "title": "Perro Lobo Checoslovaco: El Espíritu de la Manada",
+      "epithet": "El Espíritu de la Manada",
+      "origen": "Checoslovaquia (actual República Checa y Eslovaquia)",
+      "fciGroup": "Grupo 1: Perros de Pastor y Boyeros",
+      "akcGroup": "Foundation Stock Service (FSS)",
+      "archetypes": [
+        "Autonomía Primitiva / Dignidad",
+        "Apego Extremo (Fusión Emocional)"
+      ],
+      "motivations": [
+        "Pertenencia",
+        "Exploración",
+        "Movimiento"
+      ],
+      "traits": [
+        "Autonomía",
+        "Lealtad",
+        "Reserva",
+        "Energía",
+        "Inteligencia"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Bajo",
+        "motivacion_intrinseca": "Pertenencia",
+        "resiliencia_emocional": "Media",
+        "sociabilidad": "Baja",
+        "independencia_cognitiva": "Alta"
+      },
+      "summary": "El Perro Lobo Checoslovaco es una raza de trabajo creada a partir del cruce experimental entre el Pastor Alemán y el lobo de los Cárpatos. Heredero de una genética primitiva, destaca por su inagotable resistencia física, una aguda inteligencia funcional y un instinto gregario excepcionalmente marcado. No es un perro doméstico convencional, ya que opera bajo las complejas reglas sociales y de supervivencia de una manada. Requiere un guía sumamente experimentado, capaz de ofrecer un liderazgo coherente, para gestionar su intensa necesidad de pertenencia y su natural desconfianza hacia lo desconocido.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es altamente perceptivo, reservado y de reacciones rápidas ante cualquier cambio en el entorno. Conserva un lenguaje corporal primitivo y muy rico, utilizando posturas, gruñidos y aullidos mucho más que el ladrido tradicional. Posee un umbral de estimulación bajo frente a novedades, evaluando todo con una mirada analítica y cautelosa antes de acercarse. Su energía es monumental pero sumamente eficiente, moviéndose con una fluidez incansable. Su independencia cognitiva lo lleva a cuestionar el sentido de las órdenes, actuando solo cuando comprende y acepta la lógica de la tarea propuesta."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "Desarrolla un nivel de apego extremo hacia su núcleo humano, al cual percibe literalmente como su manada indispensable para la supervivencia. Este vínculo no se basa en la obediencia servil, sino en una lealtad profunda y estructural hacia quien demuestre ser un referente justo, seguro y emocionalmente estable. Rechaza por completo la violencia o la imposición autoritaria, cerrándose emocionalmente si percibe traición. Su necesidad de pertenencia es tan radical que la exclusión física o el aislamiento detonan en él un pánico sistémico. Es un compañero de una sintonía emocional intensa, pero que exige una presencia y compromiso absolutos."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Sobresale por su inquebrantable salud, su rusticidad extrema y su capacidad para soportar condiciones climáticas adversas sin inmutarse. Para los amantes de la naturaleza y las largas travesías, ofrece una resistencia aeróbica y una lealtad que no tienen punto de comparación. Posee un instinto de orientación y un olfato formidables. Cuando es criado en un entorno equilibrado y comprende su lugar en la familia, es un perro de una nobleza profunda, que ofrece una conexión casi salvaje y extraordinariamente auténtica a quienes logran entender su complejo lenguaje."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su intensa dependencia de la manada lo predispone a sufrir una ansiedad por separación devastadora, convirtiéndose en un escapista experto (abriendo puertas, saltando vallas o destruyendo barreras) si se le deja solo. Su reserva natural puede derivar en reactividad o pánico si no se realiza un trabajo de socialización temprano, masivo y constante durante toda su vida. Conserva un fortísimo instinto de caza que puede dirigir hacia animales pequeños o en movimiento. Su terquedad y altísima exigencia de tiempo, espacio y comprensión psicológica lo hacen totalmente incompatible con dueños primerizos o estilos de vida sedentarios."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "Surgió en la década de 1950 en la antigua Checoslovaquia como un experimento militar para crear un perro de patrulla fronteriza que combinara la entrenabilidad del Pastor Alemán con la resistencia, el olfato y la adaptabilidad al frío del lobo. Aunque el proyecto demostró que el animal era demasiado independiente para el trabajo policial rutinario, heredó una capacidad biomecánica perfecta para el trote prolongado. Actualmente, destaca en pruebas de resistencia extrema, *mantrailing* (rastro de personas) y senderismo de alta exigencia, siendo capaz de recorrer decenas de kilómetros recuperando su frecuencia cardíaca en minutos."
+        }
+      ],
+      "sourceValues": {
+        "fciGroup": "Grupo 1: Perros de Pastor y Boyeros[cite: 4]",
+        "akcGroup": "Foundation Stock Service (FSS)[cite: 4]",
+        "archetypes": [
+          "Autonomía Primitiva / Dignidad[cite: 4]",
+          "Apego Extremo (Fusión Emocional)[cite: 4]"
+        ],
+        "motivations": [
+          "Pertenencia[cite: 4]",
+          "Exploración[cite: 4]",
+          "Movimiento[cite: 4]"
+        ],
+        "traits": [
+          "Autonomía[cite: 4]",
+          "Lealtad[cite: 4]",
+          "Reserva[cite: 4]",
+          "Energía[cite: 4]",
+          "Inteligencia[cite: 4]"
+        ],
+        "metrics": {
+          "motivacion_intrinseca": "Pertenencia[cite: 4]"
+        }
+      },
+      "imageUrl": "/images/breeds/perro-lobo-checoslovaco.webp"
+    },
+    {
+      "id": "pharaoh-hound",
+      "breed": "Perro del Faraón / Pharaoh Hound",
+      "title": "Perro del Faraón: El Cazador Primitivo del Mediterráneo",
+      "epithet": "El Cazador Primitivo del Mediterráneo",
+      "origen": "Malta",
+      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
+      "akcGroup": "Hound Group",
+      "archetypes": [
+        "Lebreles (Desapego y Movimiento)"
+      ],
+      "motivations": [
+        "Caza visual",
+        "Movimiento",
+        "Libertad"
+      ],
+      "traits": [
+        "Independencia",
+        "Velocidad",
+        "Sensibilidad",
+        "Alerta",
+        "Elegancia"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Medio",
+        "motivacion_intrinseca": "Caza visual",
+        "resiliencia_emocional": "Media",
+        "sociabilidad": "Media",
+        "independencia_cognitiva": "Alta"
+      },
+      "summary": "El Perro del Faraón es un sabueso primitivo originario de Malta, diseñado biológicamente para la caza rápida en terrenos pedregosos. Destaca por su aguda percepción sensorial, su velocidad explosiva y una notable autonomía cognitiva. No es un animal orientado a la obediencia mecánica, sino que opera con la independencia típica de los lebreles, alternando una calma letárgica en interiores con un instinto de persecución incontenible al aire libre. Requiere un guía que entienda su profunda sensibilidad y gestione responsablemente su intensa necesidad de movimiento libre.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es equilibrado, silencioso y muy reflexivo. En el hogar, muestra una actitud sosegada, buscando siempre el confort y el calor. Sin embargo, su mente funciona con una activación binaria: el menor estímulo en movimiento desencadena una respuesta biológica inmediata de alerta y persecución. Es un perro de alta sensibilidad que se estresa fácilmente ante ruidos fuertes, tensiones ambientales o el trato rudo. Posee la peculiaridad fisiológica de \"sonrojarse\" (su trufa y orejas se vuelven rosadas) cuando está excitado, pero mantiene siempre una reserva digna ante situaciones o personas que desconoce."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "Desarrolla un afecto profundo, leal y juguetón con su familia, pero carece por completo de la dependencia emocional o la sumisión ciega que presentan las razas de pastoreo. Su relación se basa en un compañerismo respetuoso; no obedece simplemente por complacer, sino cuando la interacción le resulta estimulante. Responde de forma excelente a los métodos de refuerzo positivo, pero se bloqueará y desconectará de inmediato si percibe injusticia, aburrimiento o repetición mecánica. Disfruta de la compañía humana, manteniendo siempre una elegante distancia emocional que no debe confundirse con desapego."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Es un perro excepcionalmente limpio, que apenas desprende olor corporal y es sumamente tranquilo dentro de casa, aportando una presencia estética y serena. Su carencia de agresividad territorial lo convierte en un compañero pacífico que evita los conflictos innecesarios, mostrándose amigable aunque distante con las visitas. Para personas muy activas que disfrutan de correr o hacer deporte en espacios controlados, ofrece un atletismo inigualable. Además, su enorme sensibilidad lo hace un perro muy empático, capaz de sintonizar rápidamente con el estado de ánimo de su núcleo familiar."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su instinto de caza visual es biológicamente innegociable; dejarlo suelto en espacios abiertos no delimitados es un riesgo crítico, ya que la orden de llamada será completamente ignorada si entra en modo de persecución. Es un escapista excepcional, capaz de saltar cercas de gran altura sin necesidad de tomar impulso. Su falta de grasa corporal y su pelaje corto lo hacen extremadamente vulnerable al frío, necesitando abrigo en invierno. Finalmente, su fuerte impulso predatorio dificulta enormemente la convivencia con gatos, conejos o animales pequeños si no crecen juntos desde el primer día."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "Considerado uno de los sabuesos más antiguos del mundo, su genética se conservó en aislamiento en la isla de Malta durante siglos. A diferencia de otros lebreles que cazan exclusivamente con la vista, el Perro del Faraón utiliza un sistema sensorial combinado: rastrea con el olfato y utiliza su prodigioso oído (captando vibraciones a través de sus grandes orejas erguidas) para detectar presas ocultas entre las rocas antes de iniciar el sprint final. En la actualidad, esta hiperespecialización primitiva lo hace brillar de forma espectacular en los deportes de *lure coursing* (carrera de señuelo) y agilidad pura."
+        }
+      ],
+      "sourceValues": {
+        "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo[cite: 4]",
+        "akcGroup": "Hound Group[cite: 4]",
+        "archetypes": [
+          "Lebreles (Desapego y Movimiento)[cite: 4]"
+        ],
+        "motivations": [
+          "Caza visual[cite: 4]",
+          "Movimiento[cite: 4]",
+          "Libertad[cite: 4]"
+        ],
+        "traits": [
+          "Independencia[cite: 4]",
+          "Velocidad[cite: 4]",
+          "Sensibilidad[cite: 4]",
+          "Alerta[cite: 4]",
+          "Elegancia[cite: 4]"
+        ],
+        "metrics": {
+          "motivacion_intrinseca": "Caza visual[cite: 4]",
+          "resiliencia_emocional": "Media[cite: 4]",
+          "sociabilidad": "Media[cite: 4]",
+          "independencia_cognitiva": "Alta[cite: 4]"
+        }
+      },
+      "imageUrl": "/images/breeds/pharaoh-hound.webp"
+    },
+    {
+      "id": "skye-terrier",
+      "breed": "Skye Terrier",
+      "title": "Skye Terrier: El Terrier de Coraje Sereno",
+      "epithet": "El Terrier de Coraje Sereno",
+      "origen": "Escocia (isla de Skye)",
+      "fciGroup": "Grupo 3: Terriers",
+      "akcGroup": "Terrier Group",
+      "archetypes": [
+        "Terriers Instrumentales"
+      ],
+      "motivations": [
+        "Caza",
+        "Exploración",
+        "Afecto"
+      ],
+      "traits": [
+        "Lealtad",
+        "Reserva",
+        "Tenacidad",
+        "Valentía",
+        "Dignidad"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Medio",
+        "motivacion_intrinseca": "Caza",
+        "resiliencia_emocional": "Alta",
+        "sociabilidad": "Media-Baja",
+        "independencia_cognitiva": "Media-Alta"
+      },
+      "summary": "El Skye Terrier es un terrier escocés de carácter firme, leal y reservado, cuya historia como cazador de alimañas entre rocas y madrigueras favoreció valentía, persistencia e iniciativa. Más sereno que muchos terriers, observa antes de actuar y establece vínculos profundos con su círculo cercano. No suele entregarse de inmediato a desconocidos y necesita socialización temprana, actividad moderada y una educación coherente que respete su dignidad sin ceder ante su obstinación.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es seguro, contenido y decidido. Aunque conserva la tenacidad típica de los terriers, suele expresarla con menos agitación que razas más explosivas del grupo. Observa con atención, evalúa a personas y situaciones nuevas y puede mantener una distancia prudente antes de confiar. Es valiente y persistente cuando algo despierta su interés, pero también posee una marcada dignidad y no responde bien a presiones excesivas. Su inteligencia práctica favorece decisiones propias y cierta obstinación. Con buena socialización puede desenvolverse de forma estable sin perder la reserva y selectividad que forman parte de su carácter."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "El Skye Terrier suele construir un vínculo especialmente fuerte con una o pocas personas de referencia. Su lealtad puede ser profunda sin transformarse necesariamente en dependencia constante: disfruta de la cercanía, pero conserva criterio propio y momentos de autonomía. Aprende bien cuando la relación se basa en confianza, consistencia y recompensas claras. Las correcciones bruscas pueden reducir su cooperación, mientras que una guía firme y respetuosa favorece respuestas más estables. Con su familia puede ser afectuoso y participativo, aunque no suele extender la misma apertura de manera automática a personas desconocidas."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Destaca por combinar lealtad, valentía y una energía doméstica relativamente contenida. No necesita actividad extrema para mantenerse equilibrado y puede disfrutar de paseos, juegos y entrenamiento sin exigir movimiento constante. Su tamaño manejable, atención al entorno y fuerte vínculo familiar favorecen una convivencia cercana. Bien socializado, puede ser un compañero estable y observador, con suficiente independencia para no requerir atención permanente y suficiente disposición para participar en actividades compartidas."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su reserva natural puede intensificarse hasta convertirse en desconfianza si la socialización es insuficiente. La tenacidad terrier también puede aparecer como obstinación, especialmente ante métodos coercitivos o reglas inconsistentes. Conserva impulso de persecución hacia animales pequeños y puede mostrarse poco tolerante frente a determinadas interacciones caninas. Su estructura larga y baja aconseja evitar esfuerzos repetitivos de alto impacto, mientras que su abundante pelaje requiere mantenimiento regular para preservar comodidad y movilidad."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "El Skye Terrier surgió en las islas del noroeste de Escocia como un perro capaz de perseguir zorros, tejones, nutrias y otras alimañas entre terrenos rocosos y refugios estrechos. Ese trabajo favoreció coraje, persistencia, capacidad para internarse en espacios difíciles y decisión frente a animales potencialmente peligrosos. Actualmente puede disfrutar de pruebas de earthdog, obediencia, agility adaptado y juegos de búsqueda. Su fortaleza funcional reside en combinar tenacidad terrier, inteligencia práctica y una sorprendente serenidad fuera del trabajo."
+        }
+      ],
+      "sourceValues": null,
+      "imageUrl": "/images/breeds/skye-terrier.webp"
+    },
+    {
+      "id": "stabyhoun",
+      "breed": "Stabyhoun / Perro de Muestra Frisón",
+      "title": "Stabyhoun: El Cazador Versátil de Frisia",
+      "epithet": "El Cazador Versátil de Frisia",
+      "origen": "Países Bajos",
+      "fciGroup": "Grupo 7: Perros de Muestra",
+      "akcGroup": "Foundation Stock Service (FSS)",
+      "archetypes": [
+        "Cooperación Humana Clásica"
+      ],
+      "motivations": [
+        "Trabajo conjunto",
+        "Caza",
+        "Exploración"
+      ],
+      "traits": [
+        "Versatilidad",
+        "Cooperación",
+        "Alerta",
+        "Afiliación",
+        "Independencia"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Medio",
+        "motivacion_intrinseca": "Trabajo conjunto",
+        "resiliencia_emocional": "Alta",
+        "sociabilidad": "Alta",
+        "independencia_cognitiva": "Media-Alta"
+      },
+      "summary": "El Stabyhoun es un perro de muestra y cobro originario de la provincia de Frisia, en los Países Bajos, valorado históricamente por su inmensa versatilidad en las granjas. Destaca por su naturaleza pacífica, su aguda inteligencia funcional y un marcado espíritu de colaboración. No es un perro de caza hiperactivo ni un guardián reactivo; opera bajo un equilibrio entre el instinto de trabajo y una profunda necesidad de conexión familiar. Requiere un guía empático que valore su autonomía cognitiva y le proporcione tareas variadas sin caer en la imposición mecánica.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es calmado, reflexivo y sumamente adaptable. Evalúa su entorno con una curiosidad silenciosa y mantiene un nivel de alerta natural frente a situaciones inusuales, utilizando el ladrido como aviso pero sin mostrar agresividad defensiva. Posee un fuerte instinto de exploración y caza, especialmente orientado hacia pequeños roedores, lo que lo mantiene muy conectado a los estímulos olfativos y visuales del suelo. Aunque es muy cooperativo, conserva una notable independencia de criterio que a menudo se confunde con terquedad, decidiendo por sí mismo cómo resolver problemas si percibe que la orden humana carece de lógica."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "Desarrolla un lazo de profundo apego y devoción hacia su núcleo familiar, buscando integrarse activamente en la rutina diaria sin llegar a presentar una dependencia patológica. Concibe la relación como una sociedad equitativa; responde de manera brillante al refuerzo positivo y a la persuasión amable, pero se cerrará emocionalmente si se le somete a tratos rudos o autoritarios. Su aprendizaje es rápido, pero detesta la repetición aburrida. Su forma de demostrar afiliación es constante y afectuosa, disfrutando del contacto físico y de la cercanía, siempre y cuando se respete su dignidad y su espacio."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Sobresale por ser un animal excepcionalmente equilibrado en el interior del hogar; cuando sus necesidades de ejercicio están cubiertas, es un perro tranquilo, silencioso y muy limpio. Su alta sociabilidad lo convierte en un excelente compañero para niños y suele convivir pacíficamente con otros perros. Es un animal rústico, de salud sólida, cuya tremenda versatilidad funcional le permite adaptarse con éxito a casi cualquier entorno, desde la vida en una granja hasta un entorno semiurbano activo, aportando siempre un temperamento estable, afectuoso y desprovisto de tensiones neuróticas."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su instinto cazador y rastreador (históricamente utilizado para atrapar topos) sigue muy vigente, por lo que es propenso a excavar agujeros profundos en el jardín si se aburre o detecta actividad subterránea. Su autonomía cognitiva hace que el adiestramiento tradicional de obediencia perfecta sea un reto; si una tarea no le resulta estimulante, simplemente dejará de prestar atención. La falta de estimulación mental y física adecuada puede derivar en frustración, vocalizaciones innecesarias o conductas destructivas. Además, su fuerte instinto de presa exige suma precaución si debe convivir con animales pequeños o aves."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "Desarrollado en las áreas rurales de Frisia como el \"perro del hombre pobre\", su genética fue moldeada para que un solo animal pudiera hacerlo todo: mostrar la caza, cobrar aves en el agua, cazar alimañas, tirar de pequeños carros y vigilar la propiedad. Este perfil de generalista extremo forjó un perro con una plasticidad cognitiva sobresaliente y una boca muy suave para el cobro. En la actualidad, esta herencia lo hace brillar no solo en pruebas de campo y rastro, sino en agility y obediencia dinámica, destacando en cualquier deporte que valore la resolución de problemas y el trabajo en equipo."
+        }
+      ],
+      "sourceValues": {
+        "origen": "Países Bajos[cite: 4]",
+        "fciGroup": "Grupo 7: Perros de Muestra[cite: 4]",
+        "akcGroup": "Foundation Stock Service (FSS)[cite: 4]",
+        "archetypes": [
+          "Cooperación Humana Clásica[cite: 4]"
+        ],
+        "motivations": [
+          "Trabajo conjunto[cite: 4]",
+          "Caza[cite: 4]",
+          "Exploración[cite: 4]"
+        ],
+        "traits": [
+          "Versatilidad[cite: 4]",
+          "Cooperación[cite: 4]",
+          "Alerta[cite: 4]",
+          "Afiliación[cite: 4]",
+          "Independencia[cite: 4]"
+        ],
+        "metrics": {
+          "motivacion_intrinseca": "Trabajo conjunto[cite: 4]",
+          "resiliencia_emocional": "Alta[cite: 4]",
+          "sociabilidad": "Alta[cite: 4]",
+          "independencia_cognitiva": "Media-Alta[cite: 4]"
+        }
+      },
+      "imageUrl": "/images/breeds/stabyhoun.webp"
+    },
+    {
+      "id": "thai-ridgeback",
+      "breed": "Ridgeback Tailandés / Thai Ridgeback",
+      "title": "Ridgeback Tailandés: El Cazador de Instinto Antiguo",
+      "epithet": "El Cazador de Instinto Antiguo",
+      "origen": "Tailandia",
+      "fciGroup": "Grupo 5: Perros tipo Spitz y tipo Primitivo",
+      "akcGroup": "Raza no reconocida por AKC",
+      "archetypes": [
+        "Autonomía Primitiva / Dignidad",
+        "Independencia Cazadora Solitaria"
+      ],
+      "motivations": [
+        "Caza",
+        "Autonomía",
+        "Exploración"
+      ],
+      "traits": [
+        "Independencia",
+        "Autonomía",
+        "Reserva",
+        "Atención",
+        "Vigilancia",
+        "Rusticidad",
+        "Adaptabilidad",
+        "Agilidad"
+      ],
+      "metrics": {
+        "umbral_de_estimulacion": "Medio",
+        "motivacion_intrinseca": "Caza",
+        "resiliencia_emocional": "Alta",
+        "sociabilidad": "Media-Baja",
+        "independencia_cognitiva": "Muy Alta"
+      },
+      "summary": "El Ridgeback Tailandés es una raza primitiva de caza originaria de Tailandia, marcada por una fuerte autonomía, gran capacidad física y una relación selectiva con su entorno. Su psicología combina vigilancia, reserva y decisión propia con un vínculo leal hacia su familia. No suele buscar aprobación constante y conserva un notable instinto de exploración y persecución. Necesita socialización temprana, actividad regular y una guía coherente que respete su independencia.",
+      "sections": [
+        {
+          "title": "Personalidad",
+          "sourceLevel": 1,
+          "content": "Su temperamento basal es seguro, reservado y muy autónomo. Tiende a evaluar antes de acercarse y suele mantener cierta distancia frente a personas o situaciones desconocidas. Posee iniciativa propia, gran agilidad y una respuesta rápida cuando algo despierta su interés, especialmente movimientos o rastros vinculados a la caza. No es un perro naturalmente complaciente: aprende, pero decide con frecuencia si una acción merece su participación. Su estabilidad mejora con experiencias variadas desde joven, ya que una socialización limitada puede reforzar desconfianza, territorialidad o respuestas defensivas innecesarias."
+        },
+        {
+          "title": "El vínculo con su humano",
+          "sourceLevel": 1,
+          "content": "Con su familia puede formar un vínculo profundo y leal, aunque rara vez basado en dependencia o búsqueda constante de contacto. Suele respetar la cercanía de sus personas sin renunciar a su criterio propio, y puede mostrarse especialmente reservado con quienes no conoce. Aprende mejor mediante una guía tranquila, consistente y basada en refuerzo positivo. La presión excesiva suele generar resistencia. Su relación con el humano funciona cuando existe confianza mutua, límites claros y espacio suficiente para explorar, tomar decisiones y regresar voluntariamente a la cooperación."
+        },
+        {
+          "title": "Lo positivo",
+          "sourceLevel": 1,
+          "content": "Destaca por su autonomía, resistencia y capacidad para desenvolverse con seguridad en contextos variados. Puede ser muy leal con su familia, mantenerse atento al entorno sin requerir interacción constante y disfrutar intensamente de actividades físicas y exploratorias. Su agilidad, inteligencia práctica y rusticidad favorecen una buena adaptación a tareas que impliquen movimiento, búsqueda y resolución independiente. Para personas que valoran un perro sobrio, observador y poco dependiente, ofrece una relación especialmente interesante."
+        },
+        {
+          "title": "Lo negativo",
+          "sourceLevel": 1,
+          "content": "Su elevada independencia puede dificultar la llamada, la obediencia sostenida y el manejo en espacios abiertos cuando aparece un estímulo de caza. La reserva frente a desconocidos puede convertirse en desconfianza excesiva si la socialización es pobre. También puede mostrar territorialidad y una baja tolerancia a interacciones invasivas. No suele responder bien a métodos coercitivos ni a rutinas monótonas. Requiere ejercicio, control preventivo y experiencia suficiente para manejar un perro capaz de tomar decisiones por sí mismo."
+        },
+        {
+          "title": "Habilidades características",
+          "sourceLevel": 1,
+          "content": "Históricamente, el Ridgeback Tailandés fue utilizado en el este de Tailandia para la caza, la vigilancia y el acompañamiento de carretas. Estas funciones favorecieron resistencia, agilidad, capacidad de salto y una marcada autonomía para actuar sin supervisión constante. Su instinto de persecución y exploración sigue siendo relevante. Actualmente puede disfrutar de actividades de rastreo, carreras, senderismo y juegos de búsqueda, especialmente cuando combinan movimiento, resolución de problemas y libertad controlada para utilizar su iniciativa natural."
+        }
+      ],
+      "sourceValues": {
+        "fciGroup": "Grupo 5: Perros tipo Spitz y tipo primitivo",
+        "traits": [
+          "Independencia y Autonomía",
+          "Reserva",
+          "Atención y Vigilancia",
+          "Rusticidad y Adaptabilidad",
+          "Agilidad"
+        ]
+      },
+      "imageUrl": "/images/breeds/thai-ridgeback.webp"
     }
   ],
   "archetypes": [

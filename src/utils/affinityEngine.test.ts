@@ -19,13 +19,18 @@ const balancedAnswers: AffinityAnswers = {
   preferences: ['closeness', 'calm'],
 };
 
-test('the normalized catalog covers all 168 breeds with valid profiles', () => {
-  assert.equal(Object.keys(affinityProfiles).length, 168);
+test('the normalized catalog covers every breed with valid profiles', () => {
+  assert.equal(Object.keys(affinityProfiles).length, canineData.breeds.length);
+  assert.equal(canineData.meta.counts.breeds, canineData.breeds.length);
   assert.deepEqual(validateAffinityProfiles(affinityProfiles), []);
 
   const breedIds = new Set(canineData.breeds.map(breed => breed.id));
   assert.deepEqual(
     Object.keys(affinityProfiles).filter(id => !breedIds.has(id)),
+    [],
+  );
+  assert.deepEqual(
+    [...breedIds].filter(id => !affinityProfiles[id]),
     [],
   );
 });
