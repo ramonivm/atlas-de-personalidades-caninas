@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
+import { BreedOverviewMetrics } from './BreedOverviewMetrics';
+import { BreedOriginPanel } from './BreedOriginPanel';
+import { getBreedOrigin } from '../utils/breedOrigin';
 import { Breed } from '../types';
 import { getBreedImageUrl } from '../utils/breedImages';
 import { 
@@ -56,23 +59,70 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
   currentIndex,
   totalBreeds
 }) => {
-  if (!breed) return null;
-
-  const imageUrl = breed.imageUrl || getBreedImageUrl(breed.id);
-  const [activeTab, setActiveTab] = useState<'overview' | 'sections' | 'metrics'>('overview');
+  const imageUrl = breed ? breed.imageUrl || getBreedImageUrl(breed.id) : FALLBACK_DOG_IMAGE;
+  const [activeTab, setActiveTab] = useState<'overview' | 'sections' | 'metrics' | 'origin'>('overview');
   const [showShareMenu, setShowShareMenu] = useState(false);
   const [copied, setCopied] = useState(false);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
   const [touchStartY, setTouchStartY] = useState<number | null>(null);
 
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const bodyRef = useRef<HTMLDivElement>(null);
+  const origin = getBreedOrigin(breed?.origen);
+  const tabs = [
+    { id: 'overview', label: 'General' },
+    { id: 'sections', label: 'Personalidad' },
+    { id: 'metrics', label: 'Temperamento' },
+    { id: 'origin', label: `Origen: ${origin.flag ? `${origin.flag} ` : ''}${origin.name}` },
+  ] as const;
+
+  // Scope focus and background scrolling to this dialog; restore both on close.
+  const isOpen = Boolean(breed);
+  useEffect(() => {
+    if (!isOpen) return;
+    const previousFocus = document.activeElement as HTMLElement | null;
+    const previousOverflow = document.body.style.overflow;
+    const dialog = dialogRef.current;
+    const siblings = Array.from(dialog?.parentElement?.children || [])
+      .filter((element): element is HTMLElement => element instanceof HTMLElement && element !== dialog);
+    const backgroundStates = siblings.map(element => ({
+      element, inert: element.hasAttribute('inert'), ariaHidden: element.getAttribute('aria-hidden'),
+    }));
+    siblings.forEach(element => {
+      element.setAttribute('inert', '');
+      element.setAttribute('aria-hidden', 'true');
+    });
+    document.body.style.overflow = 'hidden';
+    dialog?.querySelector<HTMLButtonElement>('[aria-label="Cerrar modal de detalles"]')?.focus({ preventScroll: true });
+    const containFocus = (event: FocusEvent) => {
+      if (dialog && !dialog.contains(event.target as Node)) dialog.focus({ preventScroll: true });
+    };
+    document.addEventListener('focusin', containFocus);
+    return () => {
+      document.removeEventListener('focusin', containFocus);
+      document.body.style.overflow = previousOverflow;
+      backgroundStates.forEach(({ element, inert, ariaHidden }) => {
+        if (!inert) element.removeAttribute('inert');
+        if (ariaHidden === null) element.removeAttribute('aria-hidden');
+        else element.setAttribute('aria-hidden', ariaHidden);
+      });
+      if (previousFocus?.isConnected) previousFocus.focus({ preventScroll: true });
+    };
+  }, [isOpen]);
+
+  useLayoutEffect(() => {
+    bodyRef.current?.scrollTo({ top: 0, behavior: 'instant' });
+  }, [activeTab, breed?.id]);
+
   // Ensure active tab resets to overview whenever a new breed is loaded
   useEffect(() => {
     setActiveTab('overview');
     setShowShareMenu(false);
-  }, [breed.id]);
+  }, [breed?.id]);
 
   // Touch swipe handling for mobile
   const handleTouchStart = (e: React.TouchEvent) => {
+    if ((e.target as HTMLElement).closest('[role="tablist"], button, a, input, select, textarea')) return;
     setTouchStartX(e.touches[0].clientX);
     setTouchStartY(e.touches[0].clientY);
   };
@@ -96,7 +146,23 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
 
   // Keyboard navigation for Escape, ArrowLeft and ArrowRight
   useEffect(() => {
+    if (!isOpen) return;
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.defaultPrevented) return;
+      if (e.key === 'Tab') {
+        const focusable = Array.from(dialogRef.current?.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), a[href], input, select, textarea, [tabindex="0"]'
+        ) || []).filter(element => element.getClientRects().length > 0 && element.tabIndex >= 0);
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && (document.activeElement === first || document.activeElement === dialogRef.current)) {
+          e.preventDefault(); last?.focus();
+        } else if (!e.shiftKey && (document.activeElement === last || document.activeElement === dialogRef.current)) {
+          e.preventDefault(); first?.focus();
+        }
+        return;
+      }
+      if ((e.target as HTMLElement).closest('input, textarea, select, [role="tablist"]') && e.key !== 'Escape') return;
       if (e.key === 'Escape') {
         onClose();
       } else if (e.key === 'ArrowLeft' && onPrevBreed) {
@@ -110,7 +176,9 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [onClose, onPrevBreed, onNextBreed]);
+  }, [onClose, onPrevBreed, onNextBreed, isOpen]);
+
+  if (!breed) return null;
 
   const handleShare = async () => {
     const shareData = {
@@ -147,9 +215,14 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
   };
 
   return (
-    <div 
+    <div
+      ref={dialogRef}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="breed-modal-title"
+      tabIndex={-1}
       onClick={onClose}
-      className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-xl flex flex-col items-center justify-center p-3 sm:px-6 sm:pb-6 sm:pt-3.5 lg:px-12 lg:pb-12 lg:pt-7 animate-fade-in"
+      className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-xl flex flex-col items-center justify-center p-3 sm:px-6 sm:pb-6 sm:pt-3.5 md:px-20 lg:px-24 lg:pb-12 lg:pt-7 animate-fade-in"
     >
       {/* Indicador de gesto Swipe para versión móvil ubicado en el espacio libre sobre el modal */}
       {(onPrevBreed || onNextBreed) && (
@@ -220,7 +293,7 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
           <div className="absolute bottom-3 left-4 right-4 sm:bottom-4 sm:left-6 sm:right-6 text-white z-10">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
               <div>
-                <h2 className="text-xl sm:text-3xl font-bold tracking-tight text-white leading-tight">
+                <h2 id="breed-modal-title" className="text-xl sm:text-3xl font-bold tracking-tight text-white leading-tight">
                   {breed.breed}
                 </h2>
                 <p className="text-xs sm:text-base text-amber-400 font-serif italic mt-0.5">
@@ -423,43 +496,46 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
           </div>
         </div>
 
-        {/* Tab Navigation in Modal */}
-        <div className="flex border-b border-white/5 bg-[#141414] px-5 py-2 gap-1.5 flex-shrink-0 overflow-x-auto">
-          <button
-            onClick={() => setActiveTab('overview')}
-            className={`px-3.5 py-1.5 text-xs font-bold rounded-full transition-all cursor-pointer whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-              activeTab === 'overview'
+        {/* One accessible tab system, including long geographic names on mobile. */}
+        <div role="tablist" aria-label="Apartados de la ficha" className="flex flex-wrap border-b border-white/5 bg-[#141414] px-5 py-2 gap-1.5 flex-shrink-0"
+          onTouchStart={event => event.stopPropagation()}
+          onTouchEnd={event => event.stopPropagation()}
+        >
+          {tabs.map((tab, index) => <button
+            key={tab.id}
+            id={`breed-tab-${tab.id}`}
+            role="tab"
+            aria-selected={activeTab === tab.id}
+            aria-controls={`breed-panel-${tab.id}`}
+            tabIndex={activeTab === tab.id ? 0 : -1}
+            onClick={() => setActiveTab(tab.id)}
+            onKeyDown={event => {
+              let next = index;
+              if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+              else if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+              else if (event.key === 'Home') next = 0;
+              else if (event.key === 'End') next = tabs.length - 1;
+              else return;
+              event.preventDefault();
+              event.stopPropagation();
+              setActiveTab(tabs[next].id);
+              document.getElementById(`breed-tab-${tabs[next].id}`)?.focus();
+            }}
+            className={`max-w-full px-3.5 py-1.5 text-xs font-bold rounded-full transition-all cursor-pointer text-left break-words focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
+              activeTab === tab.id
                 ? 'bg-amber-500 text-black shadow-sm shadow-amber-500/10'
                 : 'text-neutral-400 hover:text-white hover:bg-neutral-800'
             }`}
-          >
-            General
-          </button>
-          <button
-            onClick={() => setActiveTab('sections')}
-            className={`px-3.5 py-1.5 text-xs font-bold rounded-full transition-all cursor-pointer whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-              activeTab === 'sections'
-                ? 'bg-amber-500 text-black shadow-sm shadow-amber-500/10'
-                : 'text-neutral-400 hover:text-white hover:bg-neutral-800'
-            }`}
-          >
-            Personalidad
-          </button>
-          <button
-            onClick={() => setActiveTab('metrics')}
-            className={`px-3.5 py-1.5 text-xs font-bold rounded-full transition-all cursor-pointer whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
-              activeTab === 'metrics'
-                ? 'bg-amber-500 text-black shadow-sm shadow-amber-500/10'
-                : 'text-neutral-400 hover:text-white hover:bg-neutral-800'
-            }`}
-          >
-            Temperamento
-          </button>
+          >{tab.label}</button>)}
         </div>
 
+        {tabs.filter(tab => tab.id !== activeTab).map(tab => (
+          <div key={tab.id} role="tabpanel" id={`breed-panel-${tab.id}`} aria-labelledby={`breed-tab-${tab.id}`} hidden />
+        ))}
+
         {/* Modal Body Content */}
-        <div className="p-6 overflow-y-auto flex-1 space-y-6">
-          
+        <div key={activeTab} ref={bodyRef} role="tabpanel" id={`breed-panel-${activeTab}`} aria-labelledby={`breed-tab-${activeTab}`} tabIndex={0} className="p-6 overflow-y-auto overscroll-contain flex-1 min-h-0 space-y-6 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-amber-500">
+
           {activeTab === 'overview' && (
             <div className="space-y-6">
               
@@ -491,111 +567,32 @@ export const BreedDetailModal: React.FC<BreedDetailModalProps> = ({
               <div className="bg-[#141414] border border-amber-500/20 rounded-[2rem] p-5 shadow-lg">
                 <h4 className="text-[10px] font-bold text-amber-400 uppercase tracking-[0.2em] mb-2 flex items-center gap-2">
                   <Target className="w-4 h-4 text-amber-400" />
-                  <span>Resumen Etológico</span>
+                  <span>Resumen</span>
                 </h4>
                 <p className="text-sm text-slate-300 leading-relaxed">
                   {breed.summary}
                 </p>
               </div>
 
-              {/* Quick Metrics Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-                <div className="bg-[#141414] border border-white/5 p-4 rounded-2xl">
-                  <div className="flex items-center gap-2 text-xs text-neutral-400 font-medium mb-1">
-                    <Shield className="w-4 h-4 text-emerald-400" />
-                    <span>Resiliencia Emocional</span>
-                  </div>
-                  <p className="text-base font-bold text-white">
-                    {breed.metrics.resiliencia_emocional}
-                  </p>
-                </div>
+              <BreedOverviewMetrics metrics={breed.metrics} />
 
-                <div className="bg-[#141414] border border-white/5 p-4 rounded-2xl">
-                  <div className="flex items-center gap-2 text-xs text-neutral-400 font-medium mb-1">
-                    <Users className="w-4 h-4 text-blue-400" />
-                    <span>Sociabilidad</span>
-                  </div>
-                  <p className="text-base font-bold text-white">
-                    {breed.metrics.sociabilidad}
-                  </p>
+              <section className="bg-[#141414] border border-white/5 p-5 rounded-2xl flex flex-col sm:flex-row sm:items-center gap-4">
+                <h4 className="text-[10px] font-bold text-amber-500 uppercase tracking-[0.2em] shrink-0">
+                  Rasgos Característicos
+                </h4>
+                <div className="flex flex-wrap gap-2 min-w-0 sm:justify-end sm:ml-auto">
+                  {breed.traits.map(t => (
+                    <span key={t} className="max-w-full break-words px-3 py-1 bg-emerald-500/10 text-emerald-300 text-xs font-semibold rounded-full border border-emerald-500/20">
+                      #{t}
+                    </span>
+                  ))}
                 </div>
-
-                <div className="bg-[#141414] border border-white/5 p-4 rounded-2xl">
-                  <div className="flex items-center gap-2 text-xs text-neutral-400 font-medium mb-1">
-                    <Brain className="w-4 h-4 text-purple-400" />
-                    <span>Independencia Cognitiva</span>
-                  </div>
-                  <p className="text-base font-bold text-white">
-                    {breed.metrics.independencia_cognitiva}
-                  </p>
-                </div>
-
-                <div className="bg-[#141414] border border-white/5 p-4 rounded-2xl">
-                  <div className="flex items-center gap-2 text-xs text-neutral-400 font-medium mb-1">
-                    <Activity className="w-4 h-4 text-amber-400" />
-                    <span>Umbral de Estimulación</span>
-                  </div>
-                  <p className="text-base font-bold text-white">
-                    {breed.metrics.umbral_de_estimulacion}
-                  </p>
-                </div>
-
-                <div className="bg-[#141414] border border-white/5 p-4 rounded-2xl col-span-1 sm:col-span-2">
-                  <div className="flex items-center gap-2 text-xs text-neutral-400 font-medium mb-1">
-                    <Heart className="w-4 h-4 text-rose-400" />
-                    <span>Motivación Intrínseca</span>
-                  </div>
-                  <p className="text-base font-bold text-white">
-                    {breed.metrics.motivacion_intrinseca}
-                  </p>
-                </div>
-              </div>
-
-              {/* Classification & Traits */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="bg-[#141414] border border-white/5 p-5 rounded-2xl">
-                  <h4 className="text-[10px] font-bold text-amber-500 uppercase tracking-[0.2em] mb-3">
-                    Clasificación Oficial
-                  </h4>
-                  <div className="flex flex-col gap-2.5">
-                    {breed.fciGroup && (
-                      <div className="flex items-center gap-2 min-w-0" title={`Grupo FCI: ${breed.fciGroup}`}>
-                        <span className="text-[11px] font-bold text-neutral-400 shrink-0">FCI:</span>
-                        <code className="bg-black px-2.5 py-1 rounded text-amber-400 font-mono text-[11px] border border-white/5 truncate max-w-full">
-                          {breed.fciGroup}
-                        </code>
-                      </div>
-                    )}
-                    {breed.akcGroup && (
-                      <div className="flex items-center gap-2 min-w-0" title={`Grupo AKC: ${breed.akcGroup}`}>
-                        <span className="text-[11px] font-bold text-neutral-400 shrink-0">AKC:</span>
-                        <code className="bg-black px-2.5 py-1 rounded text-amber-400 font-mono text-[11px] border border-white/5 truncate max-w-full">
-                          {breed.akcGroup}
-                        </code>
-                      </div>
-                    )}
-                    {!breed.fciGroup && !breed.akcGroup && (
-                      <span className="text-xs text-neutral-500 italic">No clasificado</span>
-                    )}
-                  </div>
-                </div>
-
-                <div className="bg-[#141414] border border-white/5 p-5 rounded-2xl">
-                  <h4 className="text-[10px] font-bold text-amber-500 uppercase tracking-[0.2em] mb-3">
-                    Rasgos Característicos
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {breed.traits.map(t => (
-                      <span key={t} className="px-3 py-1 bg-emerald-500/10 text-emerald-300 text-xs font-semibold rounded-full border border-emerald-500/20">
-                        #{t}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              </section>
 
             </div>
           )}
+
+          {activeTab === 'origin' && <BreedOriginPanel origin={breed.origen} />}
 
           {activeTab === 'sections' && (
             <div className="space-y-4">

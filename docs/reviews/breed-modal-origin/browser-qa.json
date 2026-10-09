@@ -1,0 +1,683 @@
+[
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 3,
+    "name": "Setter Inglés",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇬🇧\nReino Unido\n\nEpicentro histórico de la caza selectiva, pastoreo de colina y terriers de foso.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nLa aristocracia y granjas rurales victorianas estandarizaron razas especializadas: perros de muestra, cobradores de agua y pequeños terriers implacables contra alimañas subterráneas.\n\nGEOGRAFÍA Y CLIMA\n\nClima oceánico templado húmedo, colinas abiertas, brezales y pastizales.\n\nARQUETIPO DOMINANTE\n\nEl Conductor Operante & El Rastreador Persistente\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nCaza de pluma y liebre, cobro acuático, pastoreo de campo abierto y compañía.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 3,
+    "name": "Grifón de Muestra de Pelo Duro / Wirehaired Pointing Griffon",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇫🇷\nFrancia\n\nElegancia, caza aristocrática y pastores rústicos de gran resistencia.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nFrancia desarrolló tanto galgos y bracos de cortes reales como pastores rústicos (Beauceron, Pirineos) capaces de enfrentar predadores en llanuras y alta montaña.\n\nGEOGRAFÍA Y CLIMA\n\nTransición atlántica a mediterránea y cordilleras alpinas/pirenaicas.\n\nARQUETIPO DOMINANTE\n\nEl Explorador Sensorial & El Protector Territorial\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nMuestra olfativa, pastoreo mayor, protección de rebaños y compañía refinada.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 3,
+    "name": "Pinscher Miniatura",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇩🇪\nAlemania\n\nCuna de la cinofilia de trabajo y protección sistemática.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nLa consolidación de bosques centroeuropeos y la rápida industrialización exigieron perros versátiles con altísima resiliencia nerviosa, mordida controlada y apego operativo al guía.\n\nGEOGRAFÍA Y CLIMA\n\nBosques templados densos, valles fluviales y climas de inviernos rigurosos.\n\nARQUETIPO DOMINANTE\n\nEl Protector Territorial & El Conductor Operante\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nGuarda utilitaria, defensa civil, cobro en bosque y pastoreo de contención.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 3,
+    "name": "Fila Brasileiro / Mastín Brasileño",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇧🇷\nBrasil\n\nGuardia perimetral de plantaciones y ojeriza ancestral.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nHaciendas coloniales donde se seleccionó un moloso rústico con proverbial desconfianza hacia los extraños (ojeriza) pero devoción absoluta hacia su núcleo familiar.\n\nGEOGRAFÍA Y CLIMA\n\nClima tropical húmedo, selvas y llanuras de pastoreo.\n\nARQUETIPO DOMINANTE\n\nEl Protector Territorial\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nRastreo de fugitivos, control de jaguares y custodia perimetral.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 3,
+    "name": "Bull Terrier",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇬🇧\nReino Unido\n\nEpicentro histórico de la caza selectiva, pastoreo de colina y terriers de foso.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nLa aristocracia y granjas rurales victorianas estandarizaron razas especializadas: perros de muestra, cobradores de agua y pequeños terriers implacables contra alimañas subterráneas.\n\nGEOGRAFÍA Y CLIMA\n\nClima oceánico templado húmedo, colinas abiertas, brezales y pastizales.\n\nARQUETIPO DOMINANTE\n\nEl Conductor Operante & El Rastreador Persistente\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nCaza de pluma y liebre, cobro acuático, pastoreo de campo abierto y compañía.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 2,
+    "name": "Grifón de Bruselas / Brussels Griffon",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇧🇪\nBélgica\n\nMáxima reactividad cognitiva y destreza deportiva de élite.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nLa cría rigurosa a finales del siglo XIX agrupó pastores de agilidad sobrehumana y perros de compañía miniatura de gran temple.\n\nGEOGRAFÍA Y CLIMA\n\nLlanuras húmedas, bosques de las Ardenas y entorno templado.\n\nARQUETIPO DOMINANTE\n\nEl Conductor Operante\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nPastoreo de alta velocidad, guardia de servicio y rastreo forense.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 3,
+    "name": "Crestado Chino (Chinese Crested)",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇨🇳\nChina\n\nAntigüedad dinástica, perros sagrados de templo y compañía imperial.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nMilenios de cría en la corte imperial (Pequinés, Pug) y perros de utilidad dual en el sur de China para guardia y caza rústica (Chow Chow).\n\nGEOGRAFÍA Y CLIMA\n\nVastas regiones desde planicies tropicales hasta la meseta oriental.\n\nARQUETIPO DOMINANTE\n\nEl Guardián Ancestral & El Compañero de Alarma\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nCompañía dinástica de palacio, custodia espiritual y caza.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 1,
+    "name": "American Pit Bull Terrier",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇺🇸\nEstados Unidos\n\nPotencia atlética, tenacidad y adaptación a vastos territorios.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nLa expansión de colonos y ganadería extensiva exigió perros atléticos con alta tenacidad muscular, cobradores de bahía y guardianes de rancho de temperamento equilibrado.\n\nGEOGRAFÍA Y CLIMA\n\nMicroclimas diversos: desde pantanos del sur hasta tundras y praderas.\n\nARQUETIPO DOMINANTE\n\nEl Centinela Autónomo & El Conductor Operante\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nTrabajo pesado de rancho, cobro en aguas gélidas y defensa.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 3,
+    "name": "Perro Lobo Checoslovaco / Czechoslovakian Wolfdog",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "Checoslovaquia (actual República Checa y Eslovaquia)\n\nLa información de este origen no está disponible todavía.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 2,
+    "name": "Basset Hound",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇬🇧\nReino Unido\n\nEpicentro histórico de la caza selectiva, pastoreo de colina y terriers de foso.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nLa aristocracia y granjas rurales victorianas estandarizaron razas especializadas: perros de muestra, cobradores de agua y pequeños terriers implacables contra alimañas subterráneas.\n\nGEOGRAFÍA Y CLIMA\n\nClima oceánico templado húmedo, colinas abiertas, brezales y pastizales.\n\nARQUETIPO DOMINANTE\n\nEl Conductor Operante & El Rastreador Persistente\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nCaza de pluma y liebre, cobro acuático, pastoreo de campo abierto y compañía.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 1,
+    "name": "Azawakh",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇲🇱\nMalí\n\nOrígenes africanos de lebreles nómadas.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nCrianza histórica por los pueblos nómadas del Sahara.\n\nGEOGRAFÍA Y CLIMA\n\nClima desértico y semiárido, estepas y dunas.\n\nARQUETIPO DOMINANTE\n\nEl Atleta Solitario\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nCaza a la carrera visual y vigilancia de campamentos.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 3,
+    "name": "Basenji",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇨🇩\nRepública Democrática del Congo\n\nCazadores primitivos de las selvas del Congo.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nPerros primitivos que cazaban junto a las tribus de las selvas centroafricanas.\n\nGEOGRAFÍA Y CLIMA\n\nSelvas densas ecuatoriales, clima cálido y muy húmedo.\n\nARQUETIPO DOMINANTE\n\nAutonomía Primitiva / Dignidad\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nCaza silenciosa y alerta en selva cerrada.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 3,
+    "name": "Papillon (Epagneul Enano Continental)",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇧🇪\nBélgica\n\nMáxima reactividad cognitiva y destreza deportiva de élite.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nLa cría rigurosa a finales del siglo XIX agrupó pastores de agilidad sobrehumana y perros de compañía miniatura de gran temple.\n\nGEOGRAFÍA Y CLIMA\n\nLlanuras húmedas, bosques de las Ardenas y entorno templado.\n\nARQUETIPO DOMINANTE\n\nEl Conductor Operante\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nPastoreo de alta velocidad, guardia de servicio y rastreo forense.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 3,
+    "name": "Mastín Tibetano",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🏔️\nTíbet\n\nMonasterios del Himalaya, guardia nocturna y perros centinela.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nAislamiento en las alturas del Himalaya donde los mastines cuidaban campamentos nómadas contra leopardos de las nieves y los pequeños Lhasa Apso daban la alarma en monasterios.\n\nGEOGRAFÍA Y CLIMA\n\nMeseta de altitud extrema (>4.000m), oxígeno reducido y frío ártico.\n\nARQUETIPO DOMINANTE\n\nEl Guardián Ancestral\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nDisuasión de predadores y centinela de alerta budista.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 3,
+    "name": "Saluki (Galgo Persa)",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🏜️\nOriente Medio\n\nLos lebreles de la realeza faraónica y beduina del desierto.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nEl Saluki, conocido como \"el noble\" por las tribus beduinas, era el único perro admitido dentro de las tiendas por su velocidad para cazar gacelas en la arena suelta.\n\nGEOGRAFÍA Y CLIMA\n\nDesiertos cálidos, dunas y oasis.\n\nARQUETIPO DOMINANTE\n\nEl Atleta Solitario\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nCaza a la carrera visual de presas veloces en desierto.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 3,
+    "name": "Chinook",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "Estados Unidos (New Hampshire)\n\nLa información de este origen no está disponible todavía.",
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1000,
+    "meters": 2,
+    "name": "Puli",
+    "overflow": false,
+    "tabs": 4,
+    "w": 1440,
+    "origin": "🇭🇺\nHungría\n\nLos rebaños de la Puszta húngara y guardias de manto blanco.\n\nHISTORIA Y PRESIÓN DE SELECCIÓN\n\nLas tribus magiares llevaron a las llanuras húngaras perros blancos gigantescos (Kuvasz) para diferenciarse de los lobos en la noche y defender el ganado.\n\nGEOGRAFÍA Y CLIMA\n\nLlanuras de la estepa húngara (Puszta) con veranos secos e inviernos fríos.\n\nARQUETIPO DOMINANTE\n\nEl Guardián Ancestral\n\nOBJETIVO PRIMARIO DE SELECCIÓN\n\nDefensa de ganado frente a lobos y osos.",
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Setter Inglés",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Grifón de Muestra de Pelo Duro / Wirehaired Pointing Griffon",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Pinscher Miniatura",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Fila Brasileiro / Mastín Brasileño",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Bull Terrier",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Grifón de Bruselas / Brussels Griffon",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Crestado Chino (Chinese Crested)",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "American Pit Bull Terrier",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 455,
+    "clipped": [],
+    "h": 845,
+    "name": "Perro Lobo Checoslovaco / Czechoslovakian Wolfdog",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Basset Hound",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Azawakh",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Basenji",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Papillon (Epagneul Enano Continental)",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Mastín Tibetano",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Saluki (Galgo Persa)",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Chinook",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Puli",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Boyero de Flandes",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "bodyHeight": 471,
+    "clipped": [],
+    "h": 845,
+    "name": "Landseer",
+    "overflow": false,
+    "titleCloseOverlap": false,
+    "w": 390,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Setter Inglés",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Grifón de Muestra de Pelo Duro / Wirehaired Pointing Griffon",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Pinscher Miniatura",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Fila Brasileiro / Mastín Brasileño",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Bull Terrier",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Grifón de Bruselas / Brussels Griffon",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Crestado Chino (Chinese Crested)",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "American Pit Bull Terrier",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Perro Lobo Checoslovaco / Czechoslovakian Wolfdog",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Basset Hound",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Azawakh",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Basenji",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Papillon (Epagneul Enano Continental)",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Mastín Tibetano",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Saluki (Galgo Persa)",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Chinook",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Puli",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Boyero de Flandes",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1025,
+    "name": "Landseer",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Setter Inglés",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Grifón de Muestra de Pelo Duro / Wirehaired Pointing Griffon",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Pinscher Miniatura",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Fila Brasileiro / Mastín Brasileño",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Bull Terrier",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Grifón de Bruselas / Brussels Griffon",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Crestado Chino (Chinese Crested)",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "American Pit Bull Terrier",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Perro Lobo Checoslovaco / Czechoslovakian Wolfdog",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Basset Hound",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Azawakh",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Basenji",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Papillon (Epagneul Enano Continental)",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Mastín Tibetano",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Saluki (Galgo Persa)",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Chinook",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Puli",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Boyero de Flandes",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  },
+  {
+    "clipped": [],
+    "h": 1024,
+    "name": "Landseer",
+    "overflow": false,
+    "w": 768,
+    "originOverflow": false
+  }
+]

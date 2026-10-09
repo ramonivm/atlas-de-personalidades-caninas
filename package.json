@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
-    "test:affinity": "node --import tsx --test src/utils/affinityEngine.test.ts"
+    "test:affinity": "node --import tsx --test src/utils/affinityEngine.test.ts",
+    "test:breed-modal": "node --import tsx --test src/utils/breedModal.test.tsx"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
